@@ -1,0 +1,178 @@
+% ============================================================
+%  MATH HOMEWORK — COMBINED 2-PAGE DOCUMENT
+%  Page 1 = Front (Spiral Review, two-column minipage)
+%  Page 2 = Back  (Lesson Practice, single-column minipage)
+%  All <<PLACEHOLDERS>> filled by latex_builder.py
+% ============================================================
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  top=0.80in,
+  bottom=0.45in,
+  left=0.60in,
+  right=0.60in
+]{geometry}
+
+% --- Math ---
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, shapes.geometric, patterns, positioning}
+
+% --- Layout ---
+\usepackage[inline]{enumitem}
+\usepackage{array, tabularx, booktabs}
+\usepackage{graphicx, wrapfig}
+\usepackage{mdframed}
+\setlength{\parindent}{0pt}
+
+% --- Color ---
+\usepackage{xcolor}
+\definecolor{headerblue}{RGB}{30, 70, 140}
+\definecolor{honorsgreen}{RGB}{20, 110, 60}
+\definecolor{colrule}{RGB}{190, 190, 190}
+\definecolor{probrule}{RGB}{220, 220, 220}
+\definecolor{challengebg}{RGB}{240, 253, 244}
+\colorlet{medgray}{colrule}
+
+% --- Header / footer ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{40pt}
+\setlength{\headsep}{8pt}
+\renewcommand{\headrulewidth}{1.2pt}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{headerblue}\leaders\hrule height \headrulewidth\hfill}}
+\cfoot{}
+
+% ============================================================
+%  MACROS
+% ============================================================
+
+\newcounter{prob}
+
+% Front problem: text + vfill (stretches in [s] minipage) + thin rule
+\newcommand{\frontproblem}[1]{%
+  \stepcounter{prob}%
+  \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
+  \vfill
+  \noindent{\color{probrule}\hrule height 0.5pt}%
+  \vspace{2pt}%
+}
+
+% Back problem: identical — vfill stretches in [s] minipage
+\newcommand{\backproblem}[1]{%
+  \stepcounter{prob}%
+  \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
+  \vfill
+  \noindent{\color{probrule}\hrule height 0.5pt}%
+  \vspace{2pt}%
+}
+
+% Challenge block — sits below back minipage, full page width
+% Fixed 1.0in work space per problem so block height is predictable.
+\newcommand{\challengeblock}[1]{%
+  \vspace{5pt}%
+  \begin{mdframed}[
+    backgroundcolor=challengebg,
+    linecolor=honorsgreen,
+    linewidth=1.0pt,
+    roundcorner=3pt,
+    innertopmargin=5pt,
+    innerbottommargin=5pt,
+    innerleftmargin=9pt,
+    innerrightmargin=9pt,
+    nobreak=true
+  ]%
+    \noindent
+    {\normalsize\textbf{\textcolor{honorsgreen}{$\bigstar$\ Challenge}}}%
+    \hfill
+    {\small\textit{\textcolor{honorsgreen}{Stretch your thinking}}}%
+    \vspace{3pt}
+    {\color{honorsgreen}\hrule height 0.5pt}%
+    \vspace{5pt}
+    #1
+  \end{mdframed}%
+}
+
+% Header band — bordered box, black text, B&W-safe
+% #1 = label   #2 = subtitle (pass {} to omit)
+\newcommand{\headerbar}[2]{%
+  \noindent
+  \fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+    \vspace{2pt}\centering
+    {\normalsize\bfseries #1}%
+    \if\relax\detokenize{#2}\relax\else
+      \enspace{\normalsize|}\enspace{\small #2}%
+    \fi
+    \vspace{2pt}%
+  }}%
+  \vspace{4pt}%
+}
+
+% ============================================================
+%  COLUMN HEIGHTS
+%  \textheight minus the fixed overhead shared by both pages:
+%  headheight + headsep + headerbar (~0.35in) + vspace (4pt)
+%  + bottom fudge to keep content off the margin edge.
+%  Tweak the subtracted constant if spacing looks off.
+% ============================================================
+\newlength{\bodycolht}
+\setlength{\bodycolht}{\dimexpr\textheight-\headheight-\headsep-1.25in\relax}
+
+% ============================================================
+%  PAGE 1 — SPIRAL REVIEW (Front, two-column)
+% ============================================================
+
+\fancyhead[L]{%
+  \textbf{\textcolor{headerblue}{\small <<COURSE_NAME>>}}\\[-1pt]
+  {\small Homework \#\,<<HW_NUMBER>>\hspace{8pt}<<DATE>>}}
+\fancyhead[R]{%
+  {\small Name:\;\underline{\hspace{5.2cm}}}\\[-1pt]
+  {\small Period:\;\underline{\hspace{1.3cm}}}}
+
+\begin{document}
+
+\headerbar{Spiral Review}{}
+
+% Two fixed-height [s] minipages — \vfill distributes work space
+% evenly among 5 problems per column.
+\noindent
+\begin{minipage}[t][\bodycolht][s]{0.464\linewidth}
+<<FRONT_COL_LEFT>>
+\end{minipage}%
+\hfill%
+{\color{colrule}\vrule}%
+\hfill%
+\begin{minipage}[t][\bodycolht][s]{0.464\linewidth}
+<<FRONT_COL_RIGHT>>
+\end{minipage}
+
+% ============================================================
+%  PAGE 2 — LESSON PRACTICE (Back, single-column)
+% ============================================================
+\newpage
+
+\fancyhead[L]{%
+  \textbf{\textcolor{headerblue}{\small <<COURSE_NAME>>}}\\[-1pt]
+  {\small Homework \#\,<<HW_NUMBER>>\hspace{8pt}<<DATE>>}}
+\fancyhead[R]{%
+  {\small Lesson(s):\;\textbf{<<LESSON_NUMBERS>>}}\\[-1pt]
+  {\small\textcolor{medgray}{<<LESSON_TITLE>>}}}
+
+\headerbar{Lesson Practice}{<<LESSON_TITLE>>}
+
+% Single-column fixed-height [s] minipage — \vfill distributes work
+% space evenly among back problems.
+% <<BACK_COL_HT>> is either \bodycolht (grade_level)
+%                        or \dimexpr\bodycolht-3.10in\relax (honors,
+%                           reserving ~3.1in for the challenge block).
+\begin{minipage}[t][<<BACK_COL_HT>>][s]{\linewidth}
+<<BACK_PROBLEMS>>
+\end{minipage}
+
+% Challenge block — honors only; empty string for grade_level.
+% Sits in the reserved space below the back minipage.
+<<CHALLENGE_BLOCK>>
+
+\end{document}
