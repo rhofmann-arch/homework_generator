@@ -19,7 +19,7 @@ class GenerateRequest(BaseModel):
     grade: Literal["5", "6", "7", "8"]
     class_type: Literal["grade_level", "honors"]
 
-@router.post("/api/generate")
+@router.post("/generate")
 async def generate_homework(req: GenerateRequest):
     try:
         logger.info(f"Request: {req.week_start} grade={req.grade} type={req.class_type}")
