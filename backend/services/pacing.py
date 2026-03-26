@@ -19,7 +19,7 @@ PACING_DIR = (
 )
 
 GUIDE_FILES = {
-    "6": "6th_Grade_Math_Pacing_Guide_20262027.xlsx",
+    "6": "6th_Grade_Math_Pacing_Guide_2026-2027.xlsx",
 }
 
 # Canonical column names used throughout this module
