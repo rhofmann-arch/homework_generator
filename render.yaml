@@ -1,11 +1,18 @@
 services:
   - type: web
-    name: math-homework-backend
+    name: homework_generator
     runtime: python
     rootDir: backend
-    buildCommand: bash build.sh
+    buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: ANTHROPIC_API_KEY
-        sync: false   # set manually in Render dashboard
+        sync: false
     plan: free
+    packages:
+      - texlive-latex-base
+      - texlive-latex-extra
+      - texlive-fonts-recommended
+      - texlive-science
+      - texlive-pictures
+      - lmodern
