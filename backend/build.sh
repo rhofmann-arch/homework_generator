@@ -6,7 +6,7 @@
 set -e
 
 echo "==> Installing Python dependencies"
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 
 echo "==> Installing TeX Live (minimal + required packages)"
 apt-get update -qq
