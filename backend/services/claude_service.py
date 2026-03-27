@@ -1,12 +1,8 @@
-"""
-Calls the Anthropic API to generate math problems as LaTeX.
-Front + challenge run concurrently; back runs after front (reuses spiral_topics).
-"""
-
-import os, json, re, asyncio
+import os, json, re, asyncio, logging
 import anthropic
 from services.pacing import WeekContext
 
+logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 MODEL  = "claude-sonnet-4-6"
 
@@ -29,20 +25,18 @@ OUTPUT: Return ONLY the raw JSON object. No preamble, no explanation,
 no markdown fences (no ```json). Pure JSON, nothing else.
 """
 
-def _front_prompt(grade: str, covered: str, current: str) -> tuple[str, str]:
+def _front_prompt(grade, covered, current):
     system = STYLE_NOTES + """
 Return this JSON structure exactly:
 {
   "spiral_topics": "3-6 word comma-separated topic summary",
-  "problem_count": <integer, 10 or 12>,
   "problems": [ {"latex": "..."}, ... ]
 }
 
 SPIRAL REVIEW RULES:
-- Choose problem_count: use 10 if any problem needs a diagram or multi-line
-  expression; use 12 if all problems are short single-line computations.
+- Generate exactly 10 problems.
 - Problems must ONLY cover topics already in covered_topics.
-- Weight toward the 8 most recently covered topics (~8 recent, ~2-4 earlier).
+- Weight toward the 8 most recently covered topics.
 - Vary types: computation, short explanation, fill-in, true/false with reason.
 - No multi-step word problems. Each problem should take 60-90 seconds.
 - If using tikz for a diagram, keep it compact (under 4cm tall).
@@ -51,21 +45,19 @@ SPIRAL REVIEW RULES:
         f"Grade: {grade}\n"
         f"Covered topics (oldest first, most recent last): {covered}\n"
         f"Current week lessons (do NOT include — too new): {current}\n"
-        "Generate spiral review problems."
+        "Generate 10 spiral review problems."
     )
     return system, user
 
-
-def _back_prompt(grade: str, class_type: str, current: str,
-                 spiral_topics: str) -> tuple[str, str]:
+def _back_prompt(grade, class_type, current, spiral_topics):
     if class_type == "honors":
-        n_rule  = "Generate 5–7 problems (leave room for the challenge block below)."
-        d_rule  = "Challenge students — less scaffolding, multi-step reasoning welcome."
+        n_rule   = "Generate 5-7 problems (leave room for the challenge block below)."
+        d_rule   = "Challenge students — less scaffolding, multi-step reasoning welcome."
         col_note = "Layout is SINGLE-COLUMN. Problems may be longer."
     else:
-        n_rule  = "Generate 8–10 problems to fill a full page."
-        d_rule  = "Provide clear scaffolding. Avoid ambiguity."
-        col_note = "Layout is TWO-COLUMN. Keep each problem to 2-3 lines max."
+        n_rule   = "Generate 8-10 problems to fill a full page."
+        d_rule   = "Provide clear scaffolding. Avoid ambiguity."
+        col_note = "Layout is SINGLE-COLUMN. Keep each problem to 2-3 lines max."
 
     system = STYLE_NOTES + f"""
 Return this JSON structure exactly:
@@ -90,8 +82,7 @@ LESSON PRACTICE RULES:
     )
     return system, user
 
-
-def _challenge_prompt(current: str) -> tuple[str, str]:
+def _challenge_prompt(current):
     system = STYLE_NOTES + """
 Return this JSON structure exactly:
 {
@@ -111,23 +102,25 @@ CHALLENGE RULES:
     user = f"Current lessons: {current}\nGenerate 2 challenge problems."
     return system, user
 
-
-def _parse_json(text: str) -> dict:
+def _parse_json(text):
     text = text.strip()
     text = re.sub(r'^```(?:json)?\s*', '', text)
     text = re.sub(r'\s*```$', '', text)
-    return json.loads(text.strip())
+    text = text.strip()
+    if not text:
+        raise ValueError("Claude returned an empty response")
+    return json.loads(text)
 
-
-async def _call(system: str, user: str) -> dict:
+async def _call(system, user):
     response = await client.messages.create(
         model=MODEL,
         max_tokens=2000,
         system=system,
         messages=[{"role": "user", "content": user}],
     )
-    return _parse_json(response.content[0].text)
-
+    raw = response.content[0].text
+    logger.info(f"Claude raw response (first 200 chars): {raw[:200]}")
+    return _parse_json(raw)
 
 async def generate_problems(context: WeekContext, class_type: str) -> dict:
     covered = ", ".join(context.covered_topics[-20:])
@@ -136,7 +129,6 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     front_sys, front_usr = _front_prompt(context.grade, covered, current)
     chal_sys,  chal_usr  = _challenge_prompt(current)
 
-    # Front and challenge are independent — run concurrently for honors
     if class_type == "honors":
         front_data, challenge_data = await asyncio.gather(
             _call(front_sys, front_usr),
@@ -146,9 +138,9 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
         front_data     = await _call(front_sys, front_usr)
         challenge_data = {"problems": []}
 
-    spiral_topics        = front_data.get("spiral_topics", "")
-    back_sys, back_usr   = _back_prompt(context.grade, class_type, current, spiral_topics)
-    back_data            = await _call(back_sys, back_usr)
+    spiral_topics      = front_data.get("spiral_topics", "")
+    back_sys, back_usr = _back_prompt(context.grade, class_type, current, spiral_topics)
+    back_data          = await _call(back_sys, back_usr)
 
     return {
         "spiral_topics":      spiral_topics,
