@@ -1,9 +1,28 @@
 const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 
 export interface GenerateRequest {
-  week_start: string         // "YYYY-MM-DD" — Monday of target week
+  week_start: string
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors'
+  specific_date?: string   // YYYY-MM-DD; if set, generates one day only
+}
+
+export interface SchoolDay {
+  date: string   // YYYY-MM-DD
+  dow: string    // e.g. "Monday"
+  day_num: string
+}
+
+export interface SchoolWeek {
+  week_start: string   // YYYY-MM-DD (Monday)
+  days: SchoolDay[]
+}
+
+export async function fetchSchoolWeeks(grade: string): Promise<SchoolWeek[]> {
+  const res = await fetch(`${API_URL}/api/weeks/${grade}`)
+  if (!res.ok) throw new Error('Failed to load school calendar')
+  const data = await res.json()
+  return data.weeks
 }
 
 export async function generateHomework(req: GenerateRequest): Promise<Blob> {

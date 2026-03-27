@@ -1,9 +1,6 @@
 """
 Reads the pacing guide Excel and returns the context needed
-to generate one week of homework:
-  - which lessons are being taught this week
-  - which topics have been covered so far (for spiral review)
-  - homework day numbers for the week
+to generate one week (or one day) of homework.
 """
 
 import pandas as pd
@@ -22,7 +19,6 @@ GUIDE_FILES = {
     "6": "6th_Grade_Math_Pacing_Guide_2026-2027.xlsx",
 }
 
-# Canonical column names used throughout this module
 COLS = ["day_num", "date", "dow", "notes", "lesson", "topic",
         "hw_front", "hw_back", "extensions", "hm"]
 
@@ -40,14 +36,7 @@ class WeekContext:
 
 
 def _load_sheet(xl: pd.ExcelFile, sheet_name: str) -> pd.DataFrame:
-    """
-    Load one sheet and normalize to COLS.
-    First Semester has a header row; Second Semester does not.
-    First Semester has 10 data columns; Second Semester has 7.
-    """
     raw = pd.read_excel(xl, sheet_name=sheet_name, header=None)
-
-    # Drop header row if present (identified by the string 'Lesson' in row 0)
     has_header = any(
         isinstance(v, str) and v.strip() == "Lesson"
         for v in raw.iloc[0].tolist()
@@ -56,54 +45,60 @@ def _load_sheet(xl: pd.ExcelFile, sheet_name: str) -> pd.DataFrame:
         raw = raw.iloc[1:].reset_index(drop=True)
 
     n_cols = raw.shape[1]
-
     if n_cols >= 10:
-        # Full layout: day_num, date, dow, notes, lesson, topic,
-        #              hw_front, hw_back, extensions, hm
         col_map = {0: "day_num", 1: "date", 2: "dow", 3: "notes",
                    4: "lesson", 5: "topic", 6: "hw_front",
                    7: "hw_back", 8: "extensions", 9: "hm"}
     else:
-        # Compact layout (Second Semester): day_num, date, dow, notes,
-        #                                   lesson, (blank col 5), hw_front
         col_map = {0: "day_num", 1: "date", 2: "dow", 3: "notes",
                    4: "lesson", 6: "hw_front"}
 
     raw = raw.rename(columns=col_map)
     keep = [c for c in COLS if c in raw.columns]
     df = raw[keep].copy()
-
-    # Add any missing canonical columns as empty
     for c in COLS:
         if c not in df.columns:
             df[c] = None
-
     return df[COLS]
 
 
-def get_week_context(week_start: str, grade: str) -> WeekContext:
+def _load_full_df(grade: str) -> pd.DataFrame:
     guide_file = PACING_DIR / GUIDE_FILES[grade]
     if not guide_file.exists():
         raise FileNotFoundError(f"Pacing guide not found: {guide_file}")
-
-    monday = datetime.strptime(week_start, "%Y-%m-%d").date()
-    friday = monday + timedelta(days=4)
-
     xl = pd.ExcelFile(guide_file)
     frames = []
     for sheet_name in xl.sheet_names:
         df = _load_sheet(xl, sheet_name)
         df["_sheet"] = sheet_name
         frames.append(df)
-
     df = pd.concat(frames, ignore_index=True)
     df["date"] = pd.to_datetime(df["date"], errors="coerce").dt.date
     df = df.dropna(subset=["date"])
+    return df
+
+
+def get_week_context(week_start: str, grade: str,
+                     specific_date: str | None = None) -> WeekContext:
+    """
+    Returns context for a full week, or for a single day if specific_date
+    (YYYY-MM-DD) is provided.  Spiral review always draws on all prior topics.
+    """
+    monday = datetime.strptime(week_start, "%Y-%m-%d").date()
+    friday = monday + timedelta(days=4)
+
+    df = _load_full_df(grade)
 
     week_mask  = (df["date"] >= monday) & (df["date"] <= friday)
     week_rows  = df[week_mask].copy()
     prior_rows = df[df["date"] <= friday].dropna(subset=["lesson"])
-    hw_week    = week_rows[week_rows["hw_front"].notna()].copy()
+
+    # If a specific day was requested, narrow week_rows to just that date
+    if specific_date:
+        target = datetime.strptime(specific_date, "%Y-%m-%d").date()
+        week_rows = week_rows[week_rows["date"] == target].copy()
+
+    hw_week = week_rows[week_rows["hw_front"].notna()].copy()
 
     hw_days = [
         {
@@ -163,3 +158,36 @@ def get_week_context(week_start: str, grade: str) -> WeekContext:
         lesson_title=lesson_title,
         hw_numbers=hw_numbers,
     )
+
+
+def get_all_weeks(grade: str) -> dict:
+    """
+    Returns every week in the pacing guide that has at least one homework day,
+    along with the individual school days within that week.
+    Used by the frontend to populate and filter the week picker.
+    """
+    df = _load_full_df(grade)
+    hw_rows = df[df["hw_front"].notna()].copy()
+
+    # Group by the Monday of each week
+    def _to_monday(d):
+        return d - timedelta(days=d.weekday())
+
+    hw_rows["week_start"] = hw_rows["date"].apply(_to_monday)
+
+    weeks = []
+    for week_start, group in hw_rows.groupby("week_start"):
+        days = []
+        for _, row in group.sort_values("date").iterrows():
+            days.append({
+                "date":    str(row["date"]),
+                "dow":     str(row["dow"]) if pd.notna(row["dow"]) else "",
+                "day_num": str(row["hw_front"]),
+            })
+        weeks.append({
+            "week_start": str(week_start),
+            "days": days,
+        })
+
+    weeks.sort(key=lambda w: w["week_start"])
+    return {"weeks": weeks}

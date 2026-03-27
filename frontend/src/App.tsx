@@ -1,9 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
-import { generateHomework, checkHealth, type GenerateRequest } from './api'
-import {
-  getMonday, formatWeekRange, formatISO,
-  nextWeek, prevWeek, schoolYearWeeks,
-} from './dates'
+import { generateHomework, checkHealth, fetchSchoolWeeks, type GenerateRequest, type SchoolWeek } from './api'
+import { getMonday, formatWeekRange, formatISO, shortDow } from './dates'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -13,9 +10,10 @@ type Status = 'idle' | 'loading' | 'done' | 'error'
 
 interface Assignment {
   weekStart: string
+  specificDate?: string
   grade: Grade
   classType: ClassType
-  label: string   // e.g. "Week of Sep 22–26 · Grade 6 · Honors"
+  label: string
   pdfUrl: string
 }
 
@@ -49,48 +47,104 @@ function StatusDot({ online }: { online: boolean | null }) {
 function WeekPicker({
   value,
   onChange,
+  schoolWeeks,
 }: {
-  value: Date
-  onChange: (d: Date) => void
+  value: string
+  onChange: (weekStart: string) => void
+  schoolWeeks: SchoolWeek[]
 }) {
-  const weeks = schoolYearWeeks()
+  if (schoolWeeks.length === 0) {
+    return <p className="text-sm text-slate-400">Loading calendar…</p>
+  }
+
+  const currentIndex = schoolWeeks.findIndex(w => w.week_start === value)
 
   return (
     <div className="flex items-center gap-2">
       <button
-        onClick={() => onChange(prevWeek(value))}
-        className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition"
+        onClick={() => {
+          if (currentIndex > 0) onChange(schoolWeeks[currentIndex - 1].week_start)
+        }}
+        disabled={currentIndex <= 0}
+        className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition disabled:opacity-30"
         title="Previous week"
       >
         ◀
       </button>
 
       <select
-        value={formatISO(value)}
-        onChange={e => {
-            // Parse as local date by appending midday time, avoiding UTC midnight shift
-            const d = new Date(e.target.value + 'T12:00:00')
-            onChange(getMonday(d))
-          }}
+        value={value}
+        onChange={e => onChange(e.target.value)}
         className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
       >
-        {weeks.map(w => {
-          const iso = formatISO(w)
-          return (
-            <option key={iso} value={iso}>
-              {formatWeekRange(w)}
-            </option>
-          )
-        })}
+        {schoolWeeks.map(w => (
+          <option key={w.week_start} value={w.week_start}>
+            {formatWeekRange(w.week_start)}
+          </option>
+        ))}
       </select>
 
       <button
-        onClick={() => onChange(nextWeek(value))}
-        className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition"
+        onClick={() => {
+          if (currentIndex < schoolWeeks.length - 1) onChange(schoolWeeks[currentIndex + 1].week_start)
+        }}
+        disabled={currentIndex >= schoolWeeks.length - 1}
+        className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition disabled:opacity-30"
         title="Next week"
       >
         ▶
       </button>
+    </div>
+  )
+}
+
+// ─── Day Picker ───────────────────────────────────────────────────────────────
+
+function DayPicker({
+  schoolWeeks,
+  selectedWeek,
+  selectedDate,
+  onChange,
+}: {
+  schoolWeeks: SchoolWeek[]
+  selectedWeek: string
+  selectedDate: string | null
+  onChange: (date: string | null) => void
+}) {
+  const week = schoolWeeks.find(w => w.week_start === selectedWeek)
+  if (!week) return null
+
+  return (
+    <div>
+      <SectionLabel>Day</SectionLabel>
+      <div className="flex gap-2 flex-wrap">
+        <button
+          onClick={() => onChange(null)}
+          className={[
+            'px-3 py-2 rounded-lg border text-sm font-medium transition',
+            selectedDate === null
+              ? 'bg-brand-600 border-brand-600 text-white shadow-sm'
+              : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400 hover:text-brand-600',
+          ].join(' ')}
+        >
+          Full week
+        </button>
+        {week.days.map(day => (
+          <button
+            key={day.date}
+            onClick={() => onChange(day.date)}
+            className={[
+              'px-3 py-2 rounded-lg border text-sm font-medium transition',
+              selectedDate === day.date
+                ? 'bg-brand-600 border-brand-600 text-white shadow-sm'
+                : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400 hover:text-brand-600',
+            ].join(' ')}
+          >
+            {shortDow(day.dow)}
+            <span className="ml-1 text-xs opacity-70">#{day.day_num}</span>
+          </button>
+        ))}
+      </div>
     </div>
   )
 }
@@ -110,9 +164,9 @@ function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => voi
         </div>
       </div>
       <div className="flex items-center gap-2 ml-3">
-        <a
+        
           href={item.pdfUrl}
-          download={`hw_grade${item.grade}_${item.weekStart}.pdf`}
+          download={`hw_grade${item.grade}_${item.specificDate ?? item.weekStart}.pdf`}
           className="text-xs font-medium text-brand-600 hover:text-brand-800 underline"
         >
           Download
@@ -132,13 +186,15 @@ function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => voi
 // ─── Main App ─────────────────────────────────────────────────────────────────
 
 export default function App() {
-  const [online, setOnline] = useState<boolean | null>(null)
-  const [week, setWeek] = useState<Date>(() => getMonday(new Date()))
-  const [grade, setGrade] = useState<Grade>('6')
-  const [classType, setClassType] = useState<ClassType>('grade_level')
-  const [status, setStatus] = useState<Status>('idle')
-  const [errorMsg, setErrorMsg] = useState('')
-  const [history, setHistory] = useState<Assignment[]>([])
+  const [online, setOnline]               = useState<boolean | null>(null)
+  const [schoolWeeks, setSchoolWeeks]     = useState<SchoolWeek[]>([])
+  const [selectedWeek, setSelectedWeek]   = useState<string>('')
+  const [selectedDate, setSelectedDate]   = useState<string | null>(null)
+  const [grade, setGrade]                 = useState<Grade>('6')
+  const [classType, setClassType]         = useState<ClassType>('grade_level')
+  const [status, setStatus]               = useState<Status>('idle')
+  const [errorMsg, setErrorMsg]           = useState('')
+  const [history, setHistory]             = useState<Assignment[]>([])
   const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null)
 
   // Check backend health on mount
@@ -146,25 +202,55 @@ export default function App() {
     checkHealth().then(setOnline)
   }, [])
 
+  // Load school weeks whenever grade changes
+  useEffect(() => {
+    setSchoolWeeks([])
+    setSelectedWeek('')
+    setSelectedDate(null)
+    fetchSchoolWeeks(grade)
+      .then(weeks => {
+        setSchoolWeeks(weeks)
+        // Default to the week closest to today
+        const todayISO = formatISO(getMonday(new Date()))
+        const best = weeks.find(w => w.week_start >= todayISO) ?? weeks[0]
+        if (best) setSelectedWeek(best.week_start)
+      })
+      .catch(() => {/* backend may be cold-starting; user can retry */})
+  }, [grade])
+
+  // Reset selected date when week changes
+  useEffect(() => {
+    setSelectedDate(null)
+  }, [selectedWeek])
+
   const handleGenerate = useCallback(async () => {
+    if (!selectedWeek) return
     setStatus('loading')
     setErrorMsg('')
     setPdfPreviewUrl(null)
 
     const req: GenerateRequest = {
-      week_start: formatISO(week),
+      week_start:    selectedWeek,
       grade,
-      class_type: classType,
+      class_type:    classType,
+      specific_date: selectedDate ?? undefined,
     }
 
     try {
       const blob = await generateHomework(req)
-      const url = URL.createObjectURL(blob)
+      const url  = URL.createObjectURL(blob)
       setPdfPreviewUrl(url)
 
-      const label = `${formatWeekRange(week)} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+      const weekLabel = formatWeekRange(selectedWeek)
+      const dayLabel  = selectedDate
+        ? schoolWeeks.find(w => w.week_start === selectedWeek)
+            ?.days.find(d => d.date === selectedDate)
+            ?.dow ?? selectedDate
+        : 'Full week'
+      const label = `${weekLabel} · ${dayLabel} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+
       setHistory(prev => [
-        { weekStart: formatISO(week), grade, classType, label, pdfUrl: url },
+        { weekStart: selectedWeek, specificDate: selectedDate ?? undefined, grade, classType, label, pdfUrl: url },
         ...prev,
       ])
       setStatus('done')
@@ -172,7 +258,7 @@ export default function App() {
       setErrorMsg(e instanceof Error ? e.message : 'Unknown error')
       setStatus('error')
     }
-  }, [week, grade, classType])
+  }, [selectedWeek, selectedDate, grade, classType, schoolWeeks])
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -198,8 +284,22 @@ export default function App() {
             {/* Week picker */}
             <div>
               <SectionLabel>Week</SectionLabel>
-              <WeekPicker value={week} onChange={setWeek} />
+              <WeekPicker
+                value={selectedWeek}
+                onChange={setSelectedWeek}
+                schoolWeeks={schoolWeeks}
+              />
             </div>
+
+            {/* Day picker */}
+            {schoolWeeks.length > 0 && selectedWeek && (
+              <DayPicker
+                schoolWeeks={schoolWeeks}
+                selectedWeek={selectedWeek}
+                selectedDate={selectedDate}
+                onChange={setSelectedDate}
+              />
+            )}
 
             {/* Grade */}
             <div>
@@ -209,7 +309,7 @@ export default function App() {
                   <button
                     key={g}
                     onClick={() => setGrade(g)}
-                    disabled={g === '5' || g === '7' || g === '8'}  // enable as guides are added
+                    disabled={g === '5' || g === '7' || g === '8'}
                     className={[
                       'py-2 rounded-lg border text-sm font-medium transition',
                       grade === g
@@ -232,7 +332,7 @@ export default function App() {
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { val: 'grade_level' as ClassType, label: 'Grade Level', sub: '20 min · 10–12 problems' },
-                  { val: 'honors' as ClassType,      label: 'Honors',      sub: '30 min · challenge problems' },
+                  { val: 'honors'      as ClassType, label: 'Honors',      sub: '30 min · challenge problems' },
                 ].map(({ val, label, sub }) => (
                   <button
                     key={val}
@@ -259,7 +359,12 @@ export default function App() {
             <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
               <span className="font-medium">Generating: </span>
               Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
-              {formatWeekRange(week)}
+              {selectedWeek ? formatWeekRange(selectedWeek) : '…'}
+              {selectedDate && (
+                <span className="ml-1 text-brand-600 font-medium">
+                  · {schoolWeeks.find(w => w.week_start === selectedWeek)?.days.find(d => d.date === selectedDate)?.dow ?? selectedDate}
+                </span>
+              )}
             </div>
 
             {/* Error */}
@@ -272,12 +377,12 @@ export default function App() {
             {/* Generate button */}
             <button
               onClick={handleGenerate}
-              disabled={status === 'loading' || !online}
+              disabled={status === 'loading' || !online || !selectedWeek}
               className={[
                 'w-full py-3 rounded-xl text-sm font-semibold transition shadow-sm',
                 status === 'loading'
                   ? 'bg-brand-400 text-white cursor-wait'
-                  : !online
+                  : !online || !selectedWeek
                     ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
                     : 'bg-brand-600 text-white hover:bg-brand-700 active:scale-[0.99]',
               ].join(' ')}
@@ -317,9 +422,9 @@ export default function App() {
             <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
               <h2 className="text-sm font-semibold text-slate-700">Preview</h2>
               {pdfPreviewUrl && (
-                <a
+                
                   href={pdfPreviewUrl}
-                  download={`hw_grade${grade}_${formatISO(week)}.pdf`}
+                  download={`hw_grade${grade}_${selectedDate ?? selectedWeek}.pdf`}
                   className="text-xs font-medium text-brand-600 hover:text-brand-800 flex items-center gap-1"
                 >
                   ↓ Download PDF
