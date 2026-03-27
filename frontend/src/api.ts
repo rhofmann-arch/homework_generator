@@ -6,6 +6,7 @@ export interface GenerateRequest {
   week_start: string
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors'
+  specific_date?: string   // YYYY-MM-DD; if set, generate one day only
 }
 
 export async function generateHomework(req: GenerateRequest): Promise<Blob> {
