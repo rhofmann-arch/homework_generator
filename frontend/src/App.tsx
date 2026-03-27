@@ -221,36 +221,37 @@ export default function App() {
     setErrorMsg('')
     setPdfPreviewUrl(null)
 
-    const req: GenerateRequest = {
-      week_start:    selectedWeek,
-      grade,
-      class_type:    classType,
-      specific_date: selectedDate ?? undefined,
-    }
+    const week = schoolWeeks.find(w => w.week_start === selectedWeek)
+    const daysToGenerate = selectedDate
+      ? [{ date: selectedDate, dow: week?.days.find(d => d.date === selectedDate)?.dow ?? selectedDate }]
+      : (week?.days ?? []).map(d => ({ date: d.date, dow: d.dow }))
 
     try {
-      const blob = await generateHomework(req)
-      const url  = URL.createObjectURL(blob)
-      setPdfPreviewUrl(url)
-
       const weekLabel = formatWeekRange(selectedWeek)
-      const dayLabel  = selectedDate
-        ? schoolWeeks.find(w => w.week_start === selectedWeek)
-            ?.days.find(d => d.date === selectedDate)
-            ?.dow ?? selectedDate
-        : 'Full week'
-      const label = `${weekLabel} · ${dayLabel} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+      const newItems: typeof history = []
 
-      setHistory(prev => [
-        { weekStart: selectedWeek, specificDate: selectedDate ?? undefined, grade, classType, label, pdfUrl: url },
-        ...prev,
-      ])
+      for (const day of daysToGenerate) {
+        const req: GenerateRequest = {
+          week_start:    selectedWeek,
+          grade,
+          class_type:    classType,
+          specific_date: day.date,
+        }
+        const blob = await generateHomework(req)
+        const url  = URL.createObjectURL(blob)
+        const label = `${weekLabel} · ${day.dow} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+        newItems.push({ weekStart: selectedWeek, specificDate: day.date, grade, classType, label, pdfUrl: url })
+        // Show the last generated PDF in the preview pane as we go
+        setPdfPreviewUrl(url)
+      }
+
+      setHistory(prev => [...newItems.reverse(), ...prev])
       setStatus('done')
     } catch (e: unknown) {
       setErrorMsg(e instanceof Error ? e.message : 'Unknown error')
       setStatus('error')
     }
-  }, [selectedWeek, selectedDate, grade, classType, schoolWeeks])
+  }, [selectedWeek, selectedDate, grade, classType, schoolWeeks, history])
 
   return (
     <div className="min-h-screen flex flex-col">
