@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0070",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Multi-step equations with distributive property and combining like terms",
+  "latex": "Solve for $x$.\n$$-2(-x - 2) - x + 2 = 8$$",
+  "answer_latex": "x = 2",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 70,
+  "approved": false,
+  "notes": ""
+}

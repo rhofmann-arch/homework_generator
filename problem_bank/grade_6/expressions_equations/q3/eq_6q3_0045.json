@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0045",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equation with fractions",
+  "latex": "Solve for $x$.\n$$47 = -\\frac{x}{11} + 43$$",
+  "answer_latex": "$x = -44$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 45,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q3_0026",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Counting principle and permutations",
+  "latex": "Carson is organizing textbooks on his bookshelf. He has a Spanish textbook, a math textbook, a history textbook, and a health textbook. How many different ways can he line the textbooks up on his bookshelf?",
+  "answer_latex": "24",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 26,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0033",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step equation, addition/subtraction with integers",
+  "latex": "What value of $x$ is the solution to the equation below?\n$$x + 7 = -14$$",
+  "answer_latex": "$x = -21$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 33,
+  "approved": false,
+  "notes": ""
+}

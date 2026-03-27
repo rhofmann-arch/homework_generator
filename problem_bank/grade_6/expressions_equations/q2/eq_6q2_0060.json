@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0060",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "One-step equation with fractions",
+  "latex": "Solve for $y$. Express your answer as a proper or improper fraction in simplest terms.\n$$\\frac{1}{4}y + \\frac{2}{3} = \\frac{1}{4}$$",
+  "answer_latex": "y = -\\frac{5}{3}",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 60,
+  "approved": false,
+  "notes": ""
+}

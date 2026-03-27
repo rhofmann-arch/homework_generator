@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0061",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Area of rectangles, word problem",
+  "latex": "At Avani's school they're setting up a play space on an unused parking lot outside. The first thing they want to do is lay down some rubber tiles for safety. How many one-foot square rubber tiles would they need to cover a rectangular space that is $16$ feet long and $9$ feet wide?",
+  "answer_latex": "144 \\text{ one-foot squares}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 61,
+  "approved": false,
+  "notes": ""
+}

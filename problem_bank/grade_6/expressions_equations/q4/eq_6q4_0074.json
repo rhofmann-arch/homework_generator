@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0074",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Multi-step equations with fractions and distributive property",
+  "latex": "Solve for $x$ in simplest form.\n$$16 = \\frac{4}{7}(2x + 35)$$",
+  "answer_latex": "x = -\\frac{7}{2}",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 74,
+  "approved": false,
+  "notes": ""
+}

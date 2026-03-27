@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0080",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words (addition/sum)",
+  "latex": "Write an expression for the sum of some number $z$ and $1$.",
+  "answer_latex": "$z + 1$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 5,
+  "approved": false,
+  "notes": ""
+}

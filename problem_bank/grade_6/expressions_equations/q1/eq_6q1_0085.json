@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0085",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying parts of expressions (variables)",
+  "latex": "Identify the variable in the expression below.\n$$12 + 10t$$",
+  "answer_latex": "t",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "notes": ""
+}

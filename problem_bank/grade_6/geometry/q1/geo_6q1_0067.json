@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0067",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of a composite or irregular polygon",
+  "latex": "Find the perimeter of the shape below.\n\n[DIAGRAM]\n\nAn arrow-shaped polygon (concave pentagon) with sides labeled $10$, $4$, $5$, $2$, and $5$.",
+  "answer_latex": "26",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 67,
+  "approved": false,
+  "notes": ""
+}

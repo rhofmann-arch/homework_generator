@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0053",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Classifying angles as acute, right, or obtuse",
+  "latex": "Fill in the blanks to complete a true statement about angle $ABC$ below.\n\n[DIAGRAM]\n\nAngle $ABC$ is \\_\\_\\_\\_\\_\\_ because it is \\_\\_\\_\\_\\_\\_ than a \\_\\_\\_\\_\\_\\_ angle.",
+  "answer_latex": "Angle $ABC$ is \\underline{acute} because it is \\underline{smaller} than a \\underline{$90^\\circ$} angle.",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 53,
+  "approved": false,
+  "notes": ""
+}

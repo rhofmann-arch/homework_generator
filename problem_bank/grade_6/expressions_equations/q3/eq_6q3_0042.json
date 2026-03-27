@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0042",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equation with fractions",
+  "latex": "Solve for $z$.\n$$51 = 45 + \\frac{z}{11}$$",
+  "answer_latex": "$z = 66$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 42,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q1_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Describing probability using words from percent",
+  "latex": "Mila is playing a board game. The probability that Mila will lose a turn on her next turn is $93\\%$. Which word or phrase describes the probability that Mila will lose a turn?\n\nA. likely\n\nB. impossible\n\nC. unlikely\n\nD. certain",
+  "answer_latex": "A. likely",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 6,
+  "approved": false,
+  "notes": ""
+}

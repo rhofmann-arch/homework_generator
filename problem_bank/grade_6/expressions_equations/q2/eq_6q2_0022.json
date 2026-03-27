@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0022",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "one-step division equation with fractions and integers",
+  "latex": "Solve for $w$. You must write your answer in fully simplified form.\n$$-17 = -7w$$",
+  "answer_latex": "\\frac{17}{7} = w",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 22,
+  "approved": false,
+  "notes": ""
+}

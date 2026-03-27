@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q1_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Describing probability using words (certain event)",
+  "latex": "Gabriella's school is selling 100 raffle-tickets to raise money for a new gymnasium. The grand-prize is a ten-speed mountain bike. Which word or phrase describes the probability that she will win the raffle if she buys all the tickets?\n\nA. impossible \\quad B. certain\n\nC. an equal chance or 50-50 \\quad D. unlikely",
+  "answer_latex": "B. certain",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "notes": ""
+}

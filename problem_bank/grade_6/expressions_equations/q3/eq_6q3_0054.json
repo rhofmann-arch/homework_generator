@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0054",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equations with fractions",
+  "latex": "Solve for $b$.\n$$\\frac{1}{4}b + 10 = 15$$",
+  "answer_latex": "$b = 20$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 54,
+  "approved": false,
+  "notes": ""
+}

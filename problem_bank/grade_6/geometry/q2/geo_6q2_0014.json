@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q2_0014",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Area of composite figures made of rectangles",
+  "latex": "The figure below, made up of rectangles, represents a room in a house. Micaela wants to lay down carpeting. How much carpeting will she need? Note: All units are in terms of feet.\n\n[DIAGRAM]\n\nThe figure shows an L-shaped room with dimensions: top rectangle is $12$ ft wide and $3$ ft tall, with a notch cut out. The left side has dimensions $5$ ft, $3$ ft, and $5$ ft marked vertically. The bottom portion is $12$ ft wide and $7$ ft tall. The middle section shows a width of $13$ ft on the right side.",
+  "answer_latex": "141 \\text{ square feet}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 14,
+  "approved": false,
+  "notes": ""
+}

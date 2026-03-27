@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0075",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Multi-step equation with fractions and distributive property",
+  "latex": "Solve for $x$ in simplest form.\n$$8 = \\frac{3}{5}(x + 25)$$",
+  "answer_latex": "x = -\\frac{35}{3}",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 75,
+  "approved": false,
+  "notes": ""
+}

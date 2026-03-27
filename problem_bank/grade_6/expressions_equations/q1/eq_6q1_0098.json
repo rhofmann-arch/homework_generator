@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0098",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing algebraic expressions from words",
+  "latex": "Represent the following phrase as an algebraic expression, where \"a number\" is the letter $x$. You do not need to simplify.\n\n$9$ is added to five times a number.",
+  "answer_latex": "$5x + 9$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 23,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0055",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equations with fractions",
+  "latex": "Solve for $y$.\n$$7 + \\frac{9}{10}y = 16$$",
+  "answer_latex": "$y = 10$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 55,
+  "approved": false,
+  "notes": ""
+}

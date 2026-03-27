@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0004",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "one-step division equation, whole numbers",
+  "latex": "Find the value of $x$ in the equation below.\n$$\\frac{x}{5} = 6$$",
+  "answer_latex": "x = 30",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "notes": ""
+}

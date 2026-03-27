@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q2_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Perimeter of composite figures made of rectangles",
+  "latex": "Find the perimeter of the figure made up of rectangles below.\n\n[DIAGRAM]\n\nThe composite figure has dimensions: $15$, $6$, $4$, $14$, $8$, and $11$.",
+  "answer_latex": "58 \\text{ units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 12,
+  "approved": false,
+  "notes": ""
+}

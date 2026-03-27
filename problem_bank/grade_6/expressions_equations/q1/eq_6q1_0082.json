@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0082",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Identifying parts of expressions (constant term)",
+  "latex": "Identify the constant term in the expression below.\n$$11 + 7q$$",
+  "answer_latex": "$11$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "notes": ""
+}

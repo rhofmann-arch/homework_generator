@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0051",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Classifying angles as acute or obtuse based on comparison to 90 degrees",
+  "latex": "Fill in the blanks to complete a true statement about angle $BCD$ below.\n\n[DIAGRAM]\n\nAngle $BCD$ is \\underline{\\hspace{1cm}} because it is \\underline{\\hspace{1cm}} than a \\underline{\\hspace{1cm}} angle.\n\nThis word bank also applies to questions 52 - 55.\n\nWord bank 1: (a) acute, (b) obtuse\n\nWord bank 2: (a) smaller, (b) larger\n\nWord bank 3: (a) $90^\\circ$, (b) $180^\\circ$",
+  "answer_latex": "\\text{obtuse}; \\text{larger}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 51,
+  "approved": false,
+  "notes": ""
+}

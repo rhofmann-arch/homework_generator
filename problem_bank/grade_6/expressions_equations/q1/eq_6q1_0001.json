@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step addition equation, whole numbers",
+  "latex": "Find the value of $x$ in the equation below.\n$$17 = x + 13$$",
+  "answer_latex": "x = 4",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "notes": ""
+}

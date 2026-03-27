@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0055",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Classifying angles as acute, right, or obtuse",
+  "latex": "Fill in the blanks to complete a true statement about angle $BCD$ below.\n\n[DIAGRAM]\n\nAngle $BCD$ is \\_\\_\\_\\_\\_\\_ because it is \\_\\_\\_\\_\\_\\_ than a \\_\\_\\_\\_\\_\\_ angle.",
+  "answer_latex": "Angle $BCD$ is \\underline{acute} because it is \\underline{smaller} than a $90^\\circ$ angle.",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 55,
+  "approved": false,
+  "notes": ""
+}

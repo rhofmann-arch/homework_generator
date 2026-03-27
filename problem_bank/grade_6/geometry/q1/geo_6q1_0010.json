@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Finding base of triangle given area and height",
+  "latex": "The area of the triangle below is $6.75$ square meters. What is the length of the base?\n\n[DIAGRAM]\n\nThe triangle has a height of $2.7$ m.",
+  "answer_latex": "b = 5 \\text{ m}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0116",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Distributive property with multiple terms",
+  "latex": "Use the distributive property to write an equivalent expression.\n$$2(4h + 4k - 2)$$",
+  "answer_latex": "$8h + 8k - 4$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 41,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0087",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying parts of expressions (terms, operations)",
+  "latex": "Choose the answer choice which \\textit{best} describes the expression below.\n$$y \\cdot 17$$\n\nA. The difference of two terms\n\nB. The product of two factors\n\nC. The quotient of two quantities\n\nD. The sum of two terms",
+  "answer_latex": "B",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 12,
+  "approved": false,
+  "notes": ""
+}

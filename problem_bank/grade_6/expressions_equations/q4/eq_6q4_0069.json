@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0069",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Multi-step equations with distributive property and combining like terms",
+  "latex": "Solve for $x$.\n$$3(-x + 2) + 5x - 5 = -17$$",
+  "answer_latex": "x = -9",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 69,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q1_0016",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Mean and median with whole numbers",
+  "latex": "Find the median and mean of the data set below:\n$$46, 22, 30, 12$$",
+  "answer_latex": "\\text{Median} = 26, \\text{Mean} = 27.5",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 16,
+  "approved": false,
+  "notes": ""
+}

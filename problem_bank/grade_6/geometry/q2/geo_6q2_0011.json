@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q2_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Area of composite figures made of rectangles",
+  "latex": "Find the area of the figure made up of rectangles below.\n\n[DIAGRAM]\n\nThe composite figure has dimensions: $6$, $3$, $7$, $12$, $15$, and $13$.",
+  "answer_latex": "174 \\text{ square units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "notes": ""
+}

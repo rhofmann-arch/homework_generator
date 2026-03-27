@@ -1,0 +1,13 @@
+{
+  "id": "fd_6q1_0042",
+  "domain": "fractions_decimals",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Decimal division with money, counting coins",
+  "latex": "How many dimes are in $\\$2.10$?",
+  "answer_latex": "21 dimes",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 42,
+  "approved": false,
+  "notes": ""
+}

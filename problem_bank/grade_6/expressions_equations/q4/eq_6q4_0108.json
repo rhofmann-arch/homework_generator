@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0108",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Combining like terms with constants",
+  "latex": "Which expression is equivalent to $5t + 2 + 4t + 3$?\n\nA. $9t - 1$ \\quad B. $t - 1$ \\quad C. $9t + 5$ \\quad D. $t + 5$",
+  "answer_latex": "C. $9t + 5$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 33,
+  "approved": false,
+  "notes": ""
+}

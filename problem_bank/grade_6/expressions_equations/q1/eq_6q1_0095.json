@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0095",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words - division",
+  "latex": "Represent the following sentence as an algebraic expression, where \"a number\" is the letter $x$.\n\n\\textbf{The quotient of 2 and a number.}",
+  "answer_latex": "2/x",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 20,
+  "approved": false,
+  "notes": ""
+}

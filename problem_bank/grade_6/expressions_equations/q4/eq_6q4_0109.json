@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0109",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Perimeter expressions with combining like terms",
+  "latex": "A triangle has side lengths of $(3c + 4d)$ centimeters, $(f + 9c)$ centimeters, and $(f + 4d)$ centimeters. Which expression represents the perimeter, in centimeters, of the triangle?\n\nA. $8d + 2f + 12c$\n\nB. $9df + 13cf$\n\nC. $10cf + 5df + 7cd$\n\nD. $5d + 5f + 12c$",
+  "answer_latex": "A. $8d + 2f + 12c$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 34,
+  "approved": false,
+  "notes": ""
+}

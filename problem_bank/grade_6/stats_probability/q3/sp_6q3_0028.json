@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q3_0028",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "counting principle, multiplication rule for combinations",
+  "latex": "Boubacar is trying to pick out an outfit for the first day of school. He can choose from $3$ pairs of pants, $3$ t-shirts, and $4$ pairs of shoes. How many different outfits does Boubacar have to choose from?",
+  "answer_latex": "36",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 28,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0096",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Writing expressions from words - exponents and addition",
+  "latex": "Represent the following phrase as an algebraic expression, where \"a number\" is the letter $x$. You do not need to simplify.\n\n\\textbf{4 is added to the cube of a number.}",
+  "answer_latex": "x^3 + 4",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 21,
+  "approved": false,
+  "notes": ""
+}

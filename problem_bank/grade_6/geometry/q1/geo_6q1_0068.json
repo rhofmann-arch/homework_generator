@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0068",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of a triangle",
+  "latex": "Find the perimeter of the shape below.\n\n[DIAGRAM]\n\nA right triangle with sides labeled $6$, $8$, and $10$.",
+  "answer_latex": "24",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 68,
+  "approved": false,
+  "notes": ""
+}

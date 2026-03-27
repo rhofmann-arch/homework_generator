@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0038",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "One-step equation with fractions, multiplication/division",
+  "latex": "Solve for $x$ and simplify your answer.\n$$\\frac{2}{3}x = -9$$",
+  "answer_latex": "$x = -\\frac{27}{2}$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 38,
+  "approved": false,
+  "notes": ""
+}

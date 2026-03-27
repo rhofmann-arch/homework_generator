@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0113",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Identifying equivalent expressions",
+  "latex": "Which pair of expressions below are equivalent?\n\nA. $7(7h)$ and $14h$\n\nB. $h + h + h$ and $h^3$\n\nC. $4h + 2h$ and $8h$\n\nD. $7h + 7k$ and $7k + 7h$",
+  "answer_latex": "D. $7h + 7k$ and $7k + 7h$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 38,
+  "approved": false,
+  "notes": ""
+}

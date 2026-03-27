@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q4_0110",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Perimeter expressions with combining like terms",
+  "latex": "A triangle has side lengths of $(9u + 2)$ centimeters, $(5u + 5)$ centimeters, and $(5v - 2)$ centimeters. Which expression represents the perimeter, in centimeters, of the triangle?\n\nA. $7v + 14u + 3v$\n\nB. $21u + 3v$\n\nC. $14u + 5v + 5$\n\nD. $11u + 3v + 10$",
+  "answer_latex": "C. $14u + 5v + 5$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 35,
+  "approved": false,
+  "notes": ""
+}

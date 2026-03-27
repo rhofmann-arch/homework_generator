@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0059",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equations with fractions",
+  "latex": "Solve for $b$. Express your answer as a proper or improper fraction in simplest terms.\n$$\\frac{1}{2} = \\frac{1}{6} - \\frac{7}{12}b$$",
+  "answer_latex": "$-\\frac{4}{7} = b$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 59,
+  "approved": false,
+  "notes": ""
+}

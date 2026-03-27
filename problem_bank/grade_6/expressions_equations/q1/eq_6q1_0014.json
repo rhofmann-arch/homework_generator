@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0014",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step addition equation with integers",
+  "latex": "Solve for $y$.\n$$y + 3 = -3$$",
+  "answer_latex": "y = -6",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 14,
+  "approved": false,
+  "notes": ""
+}

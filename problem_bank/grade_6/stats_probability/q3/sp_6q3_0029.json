@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q3_0029",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "counting outcomes, repeated independent events",
+  "latex": "How many different possible outcomes are there if you spin a spinner labeled Red, Blue, Yellow three times?",
+  "answer_latex": "27",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 29,
+  "approved": false,
+  "notes": ""
+}

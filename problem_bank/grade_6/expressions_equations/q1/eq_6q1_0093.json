@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0093",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words - addition",
+  "latex": "Represent the following sentence as an algebraic expression, where \"a number\" is the letter $x$.\n\n\\textbf{A number is increased by 3.}",
+  "answer_latex": "x + 3",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 18,
+  "approved": false,
+  "notes": ""
+}

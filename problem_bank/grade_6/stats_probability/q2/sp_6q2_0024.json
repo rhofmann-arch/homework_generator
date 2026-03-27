@@ -1,0 +1,13 @@
+{
+  "id": "sp_6q2_0024",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Experimental probability with replacement, express as simplified fraction",
+  "latex": "Samantha has a bag that contains apple chews, cherry chews, and lime chews. She performs an experiment. Samantha randomly removes a chew from the bag, records the result, and returns the chew to the bag. Samantha performs the experiment 20 times. The results are shown below:\n\nAn apple chew was selected 3 times.\nA cherry chew was selected 15 times.\nA lime chew was selected 2 times.\n\nBased on these results, express the probability that the next chew Samantha removes from the bag will be cherry chew as a fraction in simplest form.",
+  "answer_latex": "\\frac{3}{4}",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 24,
+  "approved": false,
+  "notes": ""
+}

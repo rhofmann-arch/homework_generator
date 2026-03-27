@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q3_0048",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Plotting points and finding the fourth vertex of a rectangle on a coordinate plane",
+  "latex": "The coordinate pairs $(-3, -5)$, $(-3, 0)$, $(3, -5)$ correspond to three corners or vertices (plural of vertex) of a rectangle. Plot the $3$ points on the coordinate plane below and then plot the 4th vertex and state its coordinate.\n\n[DIAGRAM]",
+  "answer_latex": "(3, 0)",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 48,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fd_6q1_0051",
+  "domain": "fractions_decimals",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Choosing correct decimal operation for word problem",
+  "latex": "A recipe calls for $5.1$ grams of salt and $10.8$ grams of sugar. Which expression below represents the amount of salt and sugar, in grams, in the recipe in all?\n\n\\textbf{A.} $10.8 \\times 5.1$\n\n\\textbf{B.} $10.8 - 5.1$\n\n\\textbf{C.} $10.8 \\div 5.1$\n\n\\textbf{D.} $10.8 + 5.1$",
+  "answer_latex": "D",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 51,
+  "approved": false,
+  "notes": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0105",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from word problems with multiplication",
+  "latex": "Liam practices the piano every week for $30$ minutes.\n\nHow many minutes did he practice after $3$ weeks?\n\nAfter $w$ weeks?",
+  "answer_latex": "Minutes practiced after $3$ weeks: $90$\n\nMinutes practiced after $w$ weeks: $30w$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 30,
+  "approved": false,
+  "notes": ""
+}

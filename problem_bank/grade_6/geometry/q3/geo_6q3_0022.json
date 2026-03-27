@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q3_0022",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Plotting points on a coordinate plane",
+  "latex": "Plot the point $(5, 3)$.\n\n[DIAGRAM]",
+  "answer_latex": "(5, 3) \\text{ plotted on coordinate plane}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 22,
+  "approved": false,
+  "notes": ""
+}

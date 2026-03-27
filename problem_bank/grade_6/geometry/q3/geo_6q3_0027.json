@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q3_0027",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Coordinate geometry - plotting points and finding area of rectangle",
+  "latex": "Plot and connect the points listed below. When you are done, find the area of the rectangle. $A(3, 9)$, $B(5, 9)$, $C(5, 2)$, $D(3, 2)$\n\n[DIAGRAM]",
+  "answer_latex": "14 \\text{ square units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 27,
+  "approved": false,
+  "notes": ""
+}

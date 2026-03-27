@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0069",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of an irregular polygon",
+  "latex": "Find the perimeter of the shape below.\n\n[DIAGRAM]\n\nAn irregular polygon with sides labeled $2$, $5$, $10$, and $5$ (some sides unlabeled).",
+  "answer_latex": "22",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 69,
+  "approved": false,
+  "notes": ""
+}

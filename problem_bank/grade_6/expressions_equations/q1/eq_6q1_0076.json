@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0076",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words (division/quotient)",
+  "latex": "Write an expression for the quotient of some number $x$ and $2$.",
+  "answer_latex": "$x \\div 2$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "notes": ""
+}

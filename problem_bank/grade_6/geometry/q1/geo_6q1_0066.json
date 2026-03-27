@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0066",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of a polygon",
+  "latex": "Find the perimeter of the shape below.\n\n[DIAGRAM]\n\nA quadrilateral with sides labeled $5$, $10$, and $7$ (one side unlabeled).",
+  "answer_latex": "22 \\text{ units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 66,
+  "approved": false,
+  "notes": ""
+}

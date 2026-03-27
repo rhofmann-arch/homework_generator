@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q2_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Area using unit tiles with fractional side lengths",
+  "latex": "A section of a floor is covered by square tiles as shown in the image below. Each square tile has a side length of $\\frac{1}{4}$ foot. What is the area, in square feet, of the section of the floor shown? Express your answer as a fraction or mixed number.\n\n[DIAGRAM]\n\nThe diagram shows a grid of square tiles that is 10 tiles wide and 9 tiles tall, with each tile having side length $\\frac{1}{4}$ ft.",
+  "answer_latex": "6\\frac{3}{16}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "notes": ""
+}

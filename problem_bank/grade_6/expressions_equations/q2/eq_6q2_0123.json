@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q2_0123",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Evaluating expressions by substitution with two variables",
+  "latex": "What is the value of the expression $4z + w$ when $z = 4$ and $w = 4$?",
+  "answer_latex": "20",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 48,
+  "approved": false,
+  "notes": ""
+}

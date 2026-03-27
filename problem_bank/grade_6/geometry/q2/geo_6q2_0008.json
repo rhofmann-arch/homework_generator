@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q2_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding base of triangle given area and height",
+  "latex": "The area of the triangle below is $34.32$ square inches. What is the length of the base?\n\n[DIAGRAM]\n\nA triangle with height $7.8$ in and unknown base.",
+  "answer_latex": "b = 8.8 \\text{ in}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 8,
+  "approved": false,
+  "notes": ""
+}

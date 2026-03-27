@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q3_0041",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equation with integers",
+  "latex": "Solve for $x$.\n$$-7x + 30 = 58$$",
+  "answer_latex": "$x = -4$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 41,
+  "approved": false,
+  "notes": ""
+}

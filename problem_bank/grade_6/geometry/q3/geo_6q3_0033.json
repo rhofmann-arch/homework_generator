@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q3_0033",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "plotting points on a coordinate plane",
+  "latex": "Plot the point $(4, 4)$.\n\n[DIAGRAM]",
+  "answer_latex": "(4, 4)",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 33,
+  "approved": false,
+  "notes": ""
+}

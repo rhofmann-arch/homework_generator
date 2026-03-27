@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0079",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words (multiplication)",
+  "latex": "Write a multiplication expression with factors of some number $b$ and $12$.",
+  "answer_latex": "$12b$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "notes": ""
+}

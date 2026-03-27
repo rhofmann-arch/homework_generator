@@ -1,0 +1,13 @@
+{
+  "id": "eq_6q1_0086",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying parts of expressions (terms, operations)",
+  "latex": "Choose the answer choice which \\textit{best} describes the expression below.\n$$(14 - 5b) + (a + 11y)$$\n\nA. The sum of two terms\n\nB. The quotient of two quantities\n\nC. The product of two factors\n\nD. The difference of two terms",
+  "answer_latex": "A",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "notes": ""
+}

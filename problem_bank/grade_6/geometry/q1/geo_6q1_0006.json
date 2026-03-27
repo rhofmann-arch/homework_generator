@@ -1,0 +1,13 @@
+{
+  "id": "geo_6q1_0006",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "area of a right triangle with fractional side lengths",
+  "latex": "What is the area, in square centimeters, of the shape below? Express your answer as a fraction in simplest form.\n\n[DIAGRAM]\n\nA right triangle with legs of length $\\frac{3}{4}$ cm and $\\frac{3}{4}$ cm.",
+  "answer_latex": "A = \\frac{9}{32} \\text{ cm}^2",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 6,
+  "approved": false,
+  "notes": ""
+}
