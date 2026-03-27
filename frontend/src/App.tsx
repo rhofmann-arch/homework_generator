@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { generateHomework, checkHealth, fetchSchoolWeeks, type GenerateRequest, type SchoolWeek } from './api'
 import { getMonday, formatWeekRange, formatISO, shortDow } from './dates'
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+// --- Types ---
 
 type Grade = '5' | '6' | '7' | '8'
 type ClassType = 'grade_level' | 'honors'
@@ -17,7 +17,7 @@ interface Assignment {
   pdfUrl: string
 }
 
-// ─── Small components ─────────────────────────────────────────────────────────
+// --- Small components ---
 
 function Badge({ children, color = 'blue' }: { children: React.ReactNode; color?: 'blue' | 'green' | 'slate' }) {
   const cls = {
@@ -42,7 +42,7 @@ function StatusDot({ online }: { online: boolean | null }) {
   )
 }
 
-// ─── Week Picker ──────────────────────────────────────────────────────────────
+// --- Week Picker ---
 
 function WeekPicker({
   value,
@@ -54,7 +54,7 @@ function WeekPicker({
   schoolWeeks: SchoolWeek[]
 }) {
   if (schoolWeeks.length === 0) {
-    return <p className="text-sm text-slate-400">Loading calendar…</p>
+    return <p className="text-sm text-slate-400">Loading calendar...</p>
   }
 
   const currentIndex = schoolWeeks.findIndex(w => w.week_start === value)
@@ -62,14 +62,12 @@ function WeekPicker({
   return (
     <div className="flex items-center gap-2">
       <button
-        onClick={() => {
-          if (currentIndex > 0) onChange(schoolWeeks[currentIndex - 1].week_start)
-        }}
+        onClick={() => { if (currentIndex > 0) onChange(schoolWeeks[currentIndex - 1].week_start) }}
         disabled={currentIndex <= 0}
         className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition disabled:opacity-30"
         title="Previous week"
       >
-        ◀
+        &#9664;
       </button>
 
       <select
@@ -85,20 +83,18 @@ function WeekPicker({
       </select>
 
       <button
-        onClick={() => {
-          if (currentIndex < schoolWeeks.length - 1) onChange(schoolWeeks[currentIndex + 1].week_start)
-        }}
+        onClick={() => { if (currentIndex < schoolWeeks.length - 1) onChange(schoolWeeks[currentIndex + 1].week_start) }}
         disabled={currentIndex >= schoolWeeks.length - 1}
         className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition disabled:opacity-30"
         title="Next week"
       >
-        ▶
+        &#9654;
       </button>
     </div>
   )
 }
 
-// ─── Day Picker ───────────────────────────────────────────────────────────────
+// --- Day Picker ---
 
 function DayPicker({
   schoolWeeks,
@@ -149,7 +145,7 @@ function DayPicker({
   )
 }
 
-// ─── Assignment History Item ──────────────────────────────────────────────────
+// --- Assignment History Item ---
 
 function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => void }) {
   return (
@@ -164,7 +160,7 @@ function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => voi
         </div>
       </div>
       <div className="flex items-center gap-2 ml-3">
-        
+        <a
           href={item.pdfUrl}
           download={`hw_grade${item.grade}_${item.specificDate ?? item.weekStart}.pdf`}
           className="text-xs font-medium text-brand-600 hover:text-brand-800 underline"
@@ -176,14 +172,14 @@ function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => voi
           className="text-slate-300 hover:text-slate-500 text-lg leading-none"
           title="Remove"
         >
-          ×
+          x
         </button>
       </div>
     </div>
   )
 }
 
-// ─── Main App ─────────────────────────────────────────────────────────────────
+// --- Main App ---
 
 export default function App() {
   const [online, setOnline]               = useState<boolean | null>(null)
@@ -197,12 +193,10 @@ export default function App() {
   const [history, setHistory]             = useState<Assignment[]>([])
   const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null)
 
-  // Check backend health on mount
   useEffect(() => {
     checkHealth().then(setOnline)
   }, [])
 
-  // Load school weeks whenever grade changes
   useEffect(() => {
     setSchoolWeeks([])
     setSelectedWeek('')
@@ -210,15 +204,13 @@ export default function App() {
     fetchSchoolWeeks(grade)
       .then(weeks => {
         setSchoolWeeks(weeks)
-        // Default to the week closest to today
         const todayISO = formatISO(getMonday(new Date()))
         const best = weeks.find(w => w.week_start >= todayISO) ?? weeks[0]
         if (best) setSelectedWeek(best.week_start)
       })
-      .catch(() => {/* backend may be cold-starting; user can retry */})
+      .catch(() => {})
   }, [grade])
 
-  // Reset selected date when week changes
   useEffect(() => {
     setSelectedDate(null)
   }, [selectedWeek])
@@ -262,36 +254,26 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* ── Header ── */}
       <header className="bg-brand-600 text-white shadow-md">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold tracking-tight">Math Homework Generator</h1>
-            <p className="text-brand-100 text-sm mt-0.5">Grades 5–8 · Spiral Review + Lesson Practice</p>
+            <p className="text-brand-100 text-sm mt-0.5">Grades 5-8 · Spiral Review + Lesson Practice</p>
           </div>
           <StatusDot online={online} />
         </div>
       </header>
 
-      {/* ── Body ── */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-8 grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 items-start">
-
-        {/* ── Left: Form ── */}
         <div className="space-y-6">
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-6">
             <h2 className="text-base font-semibold text-slate-700">Generate Assignment</h2>
 
-            {/* Week picker */}
             <div>
               <SectionLabel>Week</SectionLabel>
-              <WeekPicker
-                value={selectedWeek}
-                onChange={setSelectedWeek}
-                schoolWeeks={schoolWeeks}
-              />
+              <WeekPicker value={selectedWeek} onChange={setSelectedWeek} schoolWeeks={schoolWeeks} />
             </div>
 
-            {/* Day picker */}
             {schoolWeeks.length > 0 && selectedWeek && (
               <DayPicker
                 schoolWeeks={schoolWeeks}
@@ -301,7 +283,6 @@ export default function App() {
               />
             )}
 
-            {/* Grade */}
             <div>
               <SectionLabel>Grade</SectionLabel>
               <div className="grid grid-cols-4 gap-2">
@@ -315,9 +296,7 @@ export default function App() {
                       grade === g
                         ? 'bg-brand-600 border-brand-600 text-white shadow-sm'
                         : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400 hover:text-brand-600',
-                      (g === '5' || g === '7' || g === '8')
-                        ? 'opacity-40 cursor-not-allowed'
-                        : '',
+                      (g === '5' || g === '7' || g === '8') ? 'opacity-40 cursor-not-allowed' : '',
                     ].join(' ')}
                   >
                     {g === '5' || g === '7' || g === '8' ? `${g} · soon` : `Grade ${g}`}
@@ -326,12 +305,11 @@ export default function App() {
               </div>
             </div>
 
-            {/* Class type */}
             <div>
               <SectionLabel>Class Type</SectionLabel>
               <div className="grid grid-cols-2 gap-3">
                 {[
-                  { val: 'grade_level' as ClassType, label: 'Grade Level', sub: '20 min · 10–12 problems' },
+                  { val: 'grade_level' as ClassType, label: 'Grade Level', sub: '20 min · 10-12 problems' },
                   { val: 'honors'      as ClassType, label: 'Honors',      sub: '30 min · challenge problems' },
                 ].map(({ val, label, sub }) => (
                   <button
@@ -340,9 +318,7 @@ export default function App() {
                     className={[
                       'text-left p-3 rounded-xl border-2 transition',
                       classType === val
-                        ? val === 'honors'
-                          ? 'border-honors-600 bg-honors-50'
-                          : 'border-brand-500 bg-brand-50'
+                        ? val === 'honors' ? 'border-honors-600 bg-honors-50' : 'border-brand-500 bg-brand-50'
                         : 'border-slate-200 bg-white hover:border-slate-300',
                     ].join(' ')}
                   >
@@ -355,11 +331,10 @@ export default function App() {
               </div>
             </div>
 
-            {/* Summary */}
             <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
               <span className="font-medium">Generating: </span>
               Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
-              {selectedWeek ? formatWeekRange(selectedWeek) : '…'}
+              {selectedWeek ? formatWeekRange(selectedWeek) : '...'}
               {selectedDate && (
                 <span className="ml-1 text-brand-600 font-medium">
                   · {schoolWeeks.find(w => w.week_start === selectedWeek)?.days.find(d => d.date === selectedDate)?.dow ?? selectedDate}
@@ -367,14 +342,12 @@ export default function App() {
               )}
             </div>
 
-            {/* Error */}
             {status === 'error' && (
               <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-sm text-red-700">
                 <span className="font-semibold">Error: </span>{errorMsg}
               </div>
             )}
 
-            {/* Generate button */}
             <button
               onClick={handleGenerate}
               disabled={status === 'loading' || !online || !selectedWeek}
@@ -393,76 +366,61 @@ export default function App() {
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
                   </svg>
-                  Generating PDF…
+                  Generating PDF...
                 </span>
               ) : 'Generate Homework PDF'}
             </button>
           </div>
 
-          {/* ── History ── */}
           {history.length > 0 && (
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
               <h2 className="text-base font-semibold text-slate-700 mb-3">Generated This Session</h2>
               <div className="space-y-2">
                 {history.map((item, i) => (
-                  <HistoryItem
-                    key={i}
-                    item={item}
-                    onRemove={() => setHistory(prev => prev.filter((_, j) => j !== i))}
-                  />
+                  <HistoryItem key={i} item={item} onRemove={() => setHistory(prev => prev.filter((_, j) => j !== i))} />
                 ))}
               </div>
             </div>
           )}
         </div>
 
-        {/* ── Right: PDF Preview ── */}
         <div className="lg:sticky lg:top-6">
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
               <h2 className="text-sm font-semibold text-slate-700">Preview</h2>
               {pdfPreviewUrl && (
-                
+                <a
                   href={pdfPreviewUrl}
                   download={`hw_grade${grade}_${selectedDate ?? selectedWeek}.pdf`}
                   className="text-xs font-medium text-brand-600 hover:text-brand-800 flex items-center gap-1"
                 >
-                  ↓ Download PDF
+                  &#8595; Download PDF
                 </a>
               )}
             </div>
 
             {pdfPreviewUrl ? (
-              <iframe
-                src={pdfPreviewUrl}
-                className="w-full"
-                style={{ height: '680px' }}
-                title="Homework PDF preview"
-              />
+              <iframe src={pdfPreviewUrl} className="w-full" style={{ height: '680px' }} title="Homework PDF preview" />
             ) : (
               <div className="flex flex-col items-center justify-center text-center py-16 px-8 text-slate-400">
-                <div className="text-5xl mb-4">📄</div>
+                <div className="text-5xl mb-4">&#128196;</div>
                 <p className="text-sm font-medium text-slate-500">No preview yet</p>
                 <p className="text-xs mt-1">
-                  {status === 'loading'
-                    ? 'Generating — this takes about 30 seconds…'
-                    : 'Configure options and click Generate'}
+                  {status === 'loading' ? 'Generating - this takes about 30 seconds...' : 'Configure options and click Generate'}
                 </p>
                 {status === 'loading' && (
                   <div className="mt-4 w-32 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-brand-400 rounded-full animate-[pulse_1.2s_ease-in-out_infinite]" style={{ width: '60%' }} />
+                    <div className="h-full bg-brand-400 rounded-full animate-pulse" style={{ width: '60%' }} />
                   </div>
                 )}
               </div>
             )}
           </div>
         </div>
-
       </main>
 
-      {/* ── Footer ── */}
       <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
-        Math Homework Generator · Grades 5–8 ·{' '}
+        Math Homework Generator · Grades 5-8 ·{' '}
         <a href="https://github.com" className="hover:text-brand-500">GitHub</a>
       </footer>
     </div>
