@@ -19,8 +19,6 @@ COURSE_NAMES = {
 PROBLEMS_PER_COL = 5   # front: always 5 per column = 10 total
 
 # Space reserved below back minipage for the challenge block.
-# Accounts for mdframed box: header line + 2 problems × 1.0in work
-# space + borders + padding ≈ 3.1in total.
 CHALLENGE_BLOCK_HT = "3.10in"
 
 
@@ -32,6 +30,21 @@ def _escape_tex(s: str) -> str:
         .replace("_",  r"\_")
         .replace("^",  r"\^{}")
     )
+
+
+def _normalize_problems(problems: list) -> list:
+    """
+    Ensure every problem is a dict with a 'latex' key.
+    Claude occasionally returns plain strings instead of {"latex": "..."} objects.
+    """
+    out = []
+    for p in problems:
+        if isinstance(p, str):
+            out.append({"latex": p})
+        elif isinstance(p, dict):
+            out.append(p)
+        # skip anything else (None, etc.)
+    return out
 
 
 def _last_problem(latex: str) -> str:
@@ -86,7 +99,7 @@ def _challenge_block(problems: list[dict]) -> str:
         parts.append(
             rf"\stepcounter{{prob}}"
             rf"\noindent\textbf{{\normalsize\theprob.}}\enspace\normalsize {latex}"
-            r"\par\vspace{1.0in}"   # fixed work space — keeps block height predictable
+            r"\par\vspace{1.0in}"
         )
     return rf"\challengeblock{{{chr(10).join(parts)}}}"
 
@@ -130,9 +143,9 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
     lesson_numbers = _escape_tex(", ".join(context.current_lessons[:4]))
     lesson_title   = _escape_tex(problems.get("lesson_title", context.lesson_title))
 
-    front_left, front_right = _render_front(problems["front_problems"])
-    back_block              = _render_back(problems["back_problems"], class_type)
-    challenge               = _challenge_block(problems.get("challenge_problems", []))
+    front_left, front_right = _render_front(_normalize_problems(problems["front_problems"]))
+    back_block              = _render_back(_normalize_problems(problems["back_problems"]), class_type)
+    challenge               = _challenge_block(_normalize_problems(problems.get("challenge_problems", [])))
     back_ht                 = _back_col_ht(class_type)
 
     filled = (template
