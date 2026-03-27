@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { generateHomework, checkHealth, type GenerateRequest } from './api'
-import {
+import { generateHomework, checkHealth, type GenerateRequest,
   fetchReviewQueue, approveProblem, fetchBankStats,
   type BankProblem, type Domain, type BankStats,
 } from './api'
@@ -62,7 +61,7 @@ function WeekPicker({ value, onChange }: { value: Date; onChange: (d: Date) => v
         onChange={e => { const d = new Date(e.target.value + 'T12:00:00'); onChange(getMonday(d)) }}
         className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
       >
-        {weeks.map(w => { const iso = formatISO(w); return <option key={iso} value={iso}>{formatWeekRange(w)}</option> })}
+        {weeks.map((w: Date) => { const iso = formatISO(w); return <option key={iso} value={iso}>{formatWeekRange(w)}</option> })}
       </select>
       <button onClick={() => onChange(nextWeek(value))} className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition" title="Next week">▶</button>
     </div>
@@ -171,7 +170,7 @@ function ReviewPage() {
 
   // Load stats once
   useEffect(() => {
-    fetchBankStats(6).then(setStats).catch(() => null)
+    fetchBankStats(6).then(s => setStats(s)).catch(() => {})
   }, [])
 
   // Load problems when domain or offset changes
@@ -211,7 +210,7 @@ function ReviewPage() {
       await approveProblem(current, selectedQ, notes)
       showToast(`✅ Approved: ${current.id}`)
       // Refresh stats
-      fetchBankStats(6).then(setStats).catch(() => null)
+      fetchBankStats(6).then(s => setStats(s)).catch(() => {})
       // Move to next problem (remove current from local list)
       const next = problems.filter((_, i) => i !== index)
       setProblems(next)
