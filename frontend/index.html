@@ -7,6 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- MathJax for rendering LaTeX in the problem bank review UI -->
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$']], displayMath: [['\\[', '\\]']] },
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea'] },
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,28 +1,11 @@
 const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 
+// ─── Homework generation ───────────────────────────────────────────────────────
+
 export interface GenerateRequest {
-  week_start: string
+  week_start: string         // "YYYY-MM-DD" — Monday of target week
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors'
-  specific_date?: string   // YYYY-MM-DD; if set, generates one day only
-}
-
-export interface SchoolDay {
-  date: string   // YYYY-MM-DD
-  dow: string    // e.g. "Monday"
-  day_num: string
-}
-
-export interface SchoolWeek {
-  week_start: string   // YYYY-MM-DD (Monday)
-  days: SchoolDay[]
-}
-
-export async function fetchSchoolWeeks(grade: string): Promise<SchoolWeek[]> {
-  const res = await fetch(`${API_URL}/api/weeks/${grade}`)
-  if (!res.ok) throw new Error('Failed to load school calendar')
-  const data = await res.json()
-  return data.weeks
 }
 
 export async function generateHomework(req: GenerateRequest): Promise<Blob> {
@@ -47,4 +30,86 @@ export async function checkHealth(): Promise<boolean> {
   } catch {
     return false
   }
+}
+
+// ─── Problem bank ──────────────────────────────────────────────────────────────
+
+export type Domain =
+  | 'fractions_decimals'
+  | 'expressions_equations'
+  | 'geometry'
+  | 'stats_probability'
+
+export interface BankProblem {
+  id: string
+  domain: Domain
+  grade: number
+  quarter: number
+  topic: string
+  latex: string
+  answer_latex: string
+  source_file: string
+  source_problem_number: number
+  approved: boolean
+  notes: string
+  _file_path?: string
+}
+
+export interface ReviewResponse {
+  total: number
+  offset: number
+  limit: number
+  problems: BankProblem[]
+}
+
+export interface BankStats {
+  grade: number
+  domains: Record<Domain, {
+    total: number
+    approved: number
+    by_quarter: Record<string, { total: number; approved: number }>
+  }>
+}
+
+export async function fetchReviewQueue(
+  domain: Domain,
+  grade = 6,
+  offset = 0,
+  limit = 20,
+): Promise<ReviewResponse> {
+  const params = new URLSearchParams({
+    domain,
+    grade: String(grade),
+    approved: 'false',
+    offset: String(offset),
+    limit: String(limit),
+  })
+  const res = await fetch(`${API_URL}/api/bank/review?${params}`)
+  if (!res.ok) throw new Error('Failed to fetch review queue')
+  return res.json()
+}
+
+export async function approveProblem(
+  problem: BankProblem,
+  finalQuarter: number,
+  notes = '',
+): Promise<void> {
+  const res = await fetch(`${API_URL}/api/bank/approve`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      problem_id: problem.id,
+      grade:      problem.grade,
+      domain:     problem.domain,
+      quarter:    finalQuarter,
+      notes,
+    }),
+  })
+  if (!res.ok) throw new Error('Failed to approve problem')
+}
+
+export async function fetchBankStats(grade = 6): Promise<BankStats> {
+  const res = await fetch(`${API_URL}/api/bank/stats?grade=${grade}`)
+  if (!res.ok) throw new Error('Failed to fetch bank stats')
+  return res.json()
 }
