@@ -78,7 +78,7 @@ LESSON PRACTICE RULES:
         f"Grade: {grade}\n"
         f"Current lessons: {current}\n"
         f"Class type: {class_type}\n"
-        "Generate lesson practice problems."
+        "Generate lesson practice problems. Your entire response must be a single JSON object starting with {"
     )
     return system, user
 
