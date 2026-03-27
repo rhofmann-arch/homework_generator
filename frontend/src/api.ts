@@ -3,7 +3,7 @@ const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 // ─── Homework generation ───────────────────────────────────────────────────────
 
 export interface GenerateRequest {
-  week_start: string         // "YYYY-MM-DD" — Monday of target week
+  week_start: string
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors'
 }
@@ -14,12 +14,10 @@ export async function generateHomework(req: GenerateRequest): Promise<Blob> {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(req),
   })
-
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: res.statusText }))
     throw new Error(err.detail ?? 'Generation failed')
   }
-
   return res.blob()
 }
 
@@ -51,6 +49,7 @@ export interface BankProblem {
   source_file: string
   source_problem_number: number
   approved: boolean
+  flagged: boolean
   notes: string
   _file_path?: string
 }
@@ -67,7 +66,8 @@ export interface BankStats {
   domains: Record<Domain, {
     total: number
     approved: number
-    by_quarter: Record<string, { total: number; approved: number }>
+    flagged: number
+    by_quarter: Record<string, { total: number; approved: number; flagged: number }>
   }>
 }
 
@@ -93,6 +93,7 @@ export async function approveProblem(
   problem: BankProblem,
   finalQuarter: number,
   notes = '',
+  flagged = false,
 ): Promise<void> {
   const res = await fetch(`${API_URL}/api/bank/approve`, {
     method: 'POST',
@@ -103,9 +104,23 @@ export async function approveProblem(
       domain:     problem.domain,
       quarter:    finalQuarter,
       notes,
+      flagged,
     }),
   })
   if (!res.ok) throw new Error('Failed to approve problem')
+}
+
+export async function deleteProblem(problem: BankProblem): Promise<void> {
+  const res = await fetch(`${API_URL}/api/bank/delete`, {
+    method: 'DELETE',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      problem_id: problem.id,
+      grade:      problem.grade,
+      domain:     problem.domain,
+    }),
+  })
+  if (!res.ok) throw new Error('Failed to delete problem')
 }
 
 export async function fetchBankStats(grade = 6): Promise<BankStats> {

@@ -3,8 +3,10 @@ backend/routes/bank.py
 
 API routes for the problem bank teacher review UI.
 
-GET  /api/bank/review   — list unapproved (or all) problems, with filters
-POST /api/bank/approve  — approve a problem, set final quarter + optional notes
+GET    /api/bank/review   — list unapproved (or all) problems, with filters
+POST   /api/bank/approve  — approve a problem, set final quarter + optional notes + flagged
+DELETE /api/bank/delete   — permanently delete a problem from the bank
+GET    /api/bank/stats    — summary counts by domain
 """
 
 import os
@@ -16,9 +18,6 @@ from pydantic import BaseModel
 
 router = APIRouter()
 
-# ── Bank root path ─────────────────────────────────────────────────────────────
-# In Docker: /problem_bank  (mounted volume)
-# Locally:   <repo_root>/problem_bank
 BANK_ROOT = os.environ.get(
     "PROBLEM_BANK_ROOT",
     os.path.join(os.path.dirname(__file__), "..", "..", "problem_bank"),
@@ -31,8 +30,6 @@ VALID_DOMAINS = [
     "stats_probability",
 ]
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────────
 
 def load_problem(path: str) -> Optional[dict]:
     try:
@@ -48,27 +45,23 @@ def save_problem(path: str, data: dict) -> None:
 
 
 def find_problem_file(grade: int, domain: str, problem_id: str) -> Optional[str]:
-    """Search all quarters for a problem by ID."""
     pattern = os.path.join(BANK_ROOT, f"grade_{grade}", domain, "q*", f"{problem_id}.json")
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
 
-# ── GET /api/bank/review ───────────────────────────────────────────────────────
-
 @router.get("/bank/review")
 def get_review_queue(
-    grade:    int  = Query(6,     description="Grade level"),
-    domain:   str  = Query(...,   description="Domain name"),
-    quarter:  Optional[int] = Query(None, description="Filter by quarter (1–4); omit for all"),
-    approved: bool = Query(False, description="If false, return only unapproved problems"),
-    offset:   int  = Query(0,     description="Pagination offset"),
-    limit:    int  = Query(20,    description="Max problems to return"),
+    grade:    int  = Query(6),
+    domain:   str  = Query(...),
+    quarter:  Optional[int] = Query(None),
+    approved: bool = Query(False),
+    offset:   int  = Query(0),
+    limit:    int  = Query(20),
 ):
     if domain not in VALID_DOMAINS:
         raise HTTPException(400, f"Invalid domain. Choose from: {VALID_DOMAINS}")
 
-    # Collect JSON files from the relevant quarter(s)
     if quarter:
         pattern = os.path.join(BANK_ROOT, f"grade_{grade}", domain, f"q{quarter}", "*.json")
         paths = sorted(glob.glob(pattern))
@@ -85,38 +78,30 @@ def get_review_queue(
             continue
         if not approved and p.get("approved", False):
             continue
-        p["_file_path"] = path   # pass through so approve endpoint can find file
+        p["_file_path"] = path
         problems.append(p)
 
     total = len(problems)
     page  = problems[offset : offset + limit]
+    return {"total": total, "offset": offset, "limit": limit, "problems": page}
 
-    return {
-        "total":    total,
-        "offset":   offset,
-        "limit":    limit,
-        "problems": page,
-    }
-
-
-# ── POST /api/bank/approve ─────────────────────────────────────────────────────
 
 class ApproveRequest(BaseModel):
     problem_id: str
     grade:      int  = 6
     domain:     str
-    quarter:    int                  # final confirmed quarter (may differ from auto-suggestion)
+    quarter:    int
     notes:      str  = ""
+    flagged:    bool = False
 
 
 @router.post("/bank/approve")
 def approve_problem(req: ApproveRequest):
     if req.domain not in VALID_DOMAINS:
-        raise HTTPException(400, f"Invalid domain.")
+        raise HTTPException(400, "Invalid domain.")
     if req.quarter not in (1, 2, 3, 4):
         raise HTTPException(400, "Quarter must be 1, 2, 3, or 4.")
 
-    # Find the file (may be in any quarter subfolder — the auto-suggested one)
     current_path = find_problem_file(req.grade, req.domain, req.problem_id)
     if not current_path:
         raise HTTPException(404, f"Problem not found: {req.problem_id}")
@@ -126,13 +111,11 @@ def approve_problem(req: ApproveRequest):
         raise HTTPException(500, "Could not read problem file.")
 
     old_quarter = problem.get("quarter", 0)
-
-    # Update fields
     problem["approved"] = True
+    problem["flagged"]  = req.flagged
     problem["quarter"]  = req.quarter
     problem["notes"]    = req.notes
 
-    # If quarter changed, move file to the correct subfolder
     if old_quarter != req.quarter:
         new_dir  = os.path.join(BANK_ROOT, f"grade_{req.grade}", req.domain, f"q{req.quarter}")
         os.makedirs(new_dir, exist_ok=True)
@@ -144,34 +127,45 @@ def approve_problem(req: ApproveRequest):
         save_problem(current_path, problem)
         final_path = current_path
 
-    return {
-        "ok":           True,
-        "problem_id":   req.problem_id,
-        "quarter":      req.quarter,
-        "quarter_moved": old_quarter != req.quarter,
-        "path":         final_path,
-    }
+    return {"ok": True, "problem_id": req.problem_id, "quarter": req.quarter,
+            "flagged": req.flagged, "quarter_moved": old_quarter != req.quarter}
 
 
-# ── GET /api/bank/stats ────────────────────────────────────────────────────────
-# Bonus: summary counts — useful for the review UI header
+class DeleteRequest(BaseModel):
+    problem_id: str
+    grade:      int = 6
+    domain:     str
+
+
+@router.delete("/bank/delete")
+def delete_problem(req: DeleteRequest):
+    if req.domain not in VALID_DOMAINS:
+        raise HTTPException(400, "Invalid domain.")
+    path = find_problem_file(req.grade, req.domain, req.problem_id)
+    if not path:
+        raise HTTPException(404, f"Problem not found: {req.problem_id}")
+    os.remove(path)
+    return {"ok": True, "problem_id": req.problem_id, "deleted": True}
+
 
 @router.get("/bank/stats")
 def get_bank_stats(grade: int = Query(6)):
     stats = {}
     for domain in VALID_DOMAINS:
-        stats[domain] = {"total": 0, "approved": 0, "by_quarter": {}}
+        stats[domain] = {"total": 0, "approved": 0, "flagged": 0, "by_quarter": {}}
         for q in range(1, 5):
             pattern = os.path.join(BANK_ROOT, f"grade_{grade}", domain, f"q{q}", "*.json")
             files   = glob.glob(pattern)
-            approved = sum(
-                1 for f in files
-                if (p := load_problem(f)) and p.get("approved", False)
-            )
+            approved = flagged = 0
+            for f in files:
+                p = load_problem(f)
+                if p:
+                    if p.get("approved", False): approved += 1
+                    if p.get("flagged",  False): flagged  += 1
             stats[domain]["by_quarter"][f"q{q}"] = {
-                "total":    len(files),
-                "approved": approved,
+                "total": len(files), "approved": approved, "flagged": flagged
             }
             stats[domain]["total"]    += len(files)
             stats[domain]["approved"] += approved
+            stats[domain]["flagged"]  += flagged
     return {"grade": grade, "domains": stats}

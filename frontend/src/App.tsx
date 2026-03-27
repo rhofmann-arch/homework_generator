@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { generateHomework, checkHealth, type GenerateRequest,
-  fetchReviewQueue, approveProblem, fetchBankStats,
+  fetchReviewQueue, approveProblem, deleteProblem, fetchBankStats,
   type BankProblem, type Domain, type BankStats,
 } from './api'
 import {
@@ -161,6 +161,7 @@ function ReviewPage() {
   const [index, setIndex]             = useState(0)   // position within current page
   const [loading, setLoading]         = useState(false)
   const [saving, setSaving]           = useState(false)
+  const [confirmDelete, setConfirmDelete] = useState(false)
   const [selectedQ, setSelectedQ]     = useState<number>(1)
   const [notes, setNotes]             = useState('')
   const [stats, setStats]             = useState<BankStats | null>(null)
@@ -203,24 +204,40 @@ function ReviewPage() {
     setTimeout(() => setToast(null), 2500)
   }
 
-  async function handleApprove() {
+  async function handleApprove(flagged = false) {
     if (!current) return
     setSaving(true)
     try {
-      await approveProblem(current, selectedQ, notes)
-      showToast(`✅ Approved: ${current.id}`)
-      // Refresh stats
+      await approveProblem(current, selectedQ, notes, flagged)
+      showToast(flagged ? `🚩 Flagged: ${current.id}` : `✅ Approved: ${current.id}`)
       fetchBankStats(6).then(s => setStats(s)).catch(() => {})
-      // Move to next problem (remove current from local list)
       const next = problems.filter((_, i) => i !== index)
       setProblems(next)
       setTotal(t => t - 1)
-      // Stay at same index (which now points to next problem), or go back
       if (index >= next.length && index > 0) setIndex(index - 1)
     } catch {
       showToast('❌ Failed to save — check backend connection')
     } finally {
       setSaving(false)
+    }
+  }
+
+  async function handleDelete() {
+    if (!current) return
+    setSaving(true)
+    try {
+      await deleteProblem(current)
+      showToast(`🗑 Deleted: ${current.id}`)
+      fetchBankStats(6).then(s => setStats(s)).catch(() => {})
+      const next = problems.filter((_, i) => i !== index)
+      setProblems(next)
+      setTotal(t => t - 1)
+      if (index >= next.length && index > 0) setIndex(index - 1)
+    } catch {
+      showToast('❌ Failed to delete — check backend connection')
+    } finally {
+      setSaving(false)
+      setConfirmDelete(false)
     }
   }
 
@@ -377,30 +394,67 @@ function ReviewPage() {
               </div>
 
               {/* Actions */}
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={handlePrev}
-                  disabled={!canPrev}
-                  className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
-                >
-                  ← Prev
-                </button>
+              <div className="space-y-3">
+                {/* Primary row: Prev / Approve / Next */}
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={handlePrev}
+                    disabled={!canPrev}
+                    className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                  >
+                    ← Prev
+                  </button>
+                  <button
+                    onClick={() => handleApprove(false)}
+                    disabled={saving}
+                    className="flex-1 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 disabled:opacity-60 transition"
+                  >
+                    {saving ? 'Saving…' : `Approve · Q${selectedQ}`}
+                  </button>
+                  <button
+                    onClick={handleNext}
+                    disabled={!canNext}
+                    className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                  >
+                    Next →
+                  </button>
+                </div>
 
-                <button
-                  onClick={handleApprove}
-                  disabled={saving}
-                  className="flex-1 py-2.5 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 disabled:opacity-60 transition"
-                >
-                  {saving ? 'Saving…' : `Approve · Q${selectedQ}`}
-                </button>
-
-                <button
-                  onClick={handleNext}
-                  disabled={!canNext}
-                  className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
-                >
-                  Next →
-                </button>
+                {/* Secondary row: Flag / Delete */}
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={() => handleApprove(true)}
+                    disabled={saving}
+                    className="flex-1 py-2 rounded-xl border-2 border-amber-400 text-amber-700 text-sm font-medium hover:bg-amber-50 disabled:opacity-60 transition"
+                  >
+                    🚩 Flag — needs review
+                  </button>
+                  {!confirmDelete ? (
+                    <button
+                      onClick={() => setConfirmDelete(true)}
+                      disabled={saving}
+                      className="flex-1 py-2 rounded-xl border-2 border-red-300 text-red-600 text-sm font-medium hover:bg-red-50 disabled:opacity-60 transition"
+                    >
+                      🗑 Delete
+                    </button>
+                  ) : (
+                    <div className="flex-1 flex gap-2">
+                      <button
+                        onClick={handleDelete}
+                        disabled={saving}
+                        className="flex-1 py-2 rounded-xl bg-red-600 text-white text-sm font-semibold hover:bg-red-700 disabled:opacity-60 transition"
+                      >
+                        Confirm delete
+                      </button>
+                      <button
+                        onClick={() => setConfirmDelete(false)}
+                        className="px-3 py-2 rounded-xl border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 transition"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  )}
+                </div>
               </div>
 
             </div>
