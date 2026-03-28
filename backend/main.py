@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import generate, health, bank
+from routes import generate, health, bank 
 
 app = FastAPI(title="Math Homework Generator API")
 
@@ -14,3 +14,4 @@ app.add_middleware(
 app.include_router(health.router)
 app.include_router(generate.router, prefix="/api")
 app.include_router(bank.router,     prefix="/api")
+app.include_router(bank.router)  

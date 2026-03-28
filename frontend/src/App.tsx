@@ -1,64 +1,39 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import {
-  generateHomework, checkHealth, type GenerateRequest,
-  fetchReviewQueue, approveProblem, deleteProblem, fetchBankStats,
-  type BankProblem, type Domain, type BankStats,
+  generateHomework, checkHealth, fetchReviewQueue, fetchBankStats,
+  approveProblem, flagProblem, deleteProblem,
+  DOMAINS,
+  type GenerateRequest, type BankProblem, type BankStats, type Domain,
 } from './api'
+import {
+  getMonday, formatWeekRange, formatISO,
+  nextWeek, prevWeek, schoolYearWeeks,
+} from './dates'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type Grade = '5' | '6' | '7' | '8'
 type ClassType = 'grade_level' | 'honors'
 type Status = 'idle' | 'loading' | 'done' | 'error'
-type Page = 'generate' | 'review'
-
-interface SchoolDay {
-  date: string   // YYYY-MM-DD
-  dow: string    // Mon/Tue/etc
-  day_num: string
-}
-
-interface SchoolWeek {
-  week_start: string
-  days: SchoolDay[]
-}
+type AppTab = 'generate' | 'review'
 
 interface Assignment {
-  date: string
+  weekStart: string
+  grade: Grade
+  classType: ClassType
   label: string
   pdfUrl: string
 }
 
-// ─── API helpers (inline to avoid touching api.ts) ────────────────────────────
-
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
-
-async function fetchWeeks(grade: Grade): Promise<SchoolWeek[]> {
-  const res = await fetch(`${API_URL}/api/weeks/${grade}`)
-  if (!res.ok) throw new Error('Failed to fetch weeks')
-  const data = await res.json()
-  return data.weeks as SchoolWeek[]
-}
-
-function formatWeekLabel(week: SchoolWeek): string {
-  const d = new Date(week.week_start + 'T12:00:00')
-  const fri = new Date(d)
-  fri.setDate(d.getDate() + 4)
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-  if (d.getMonth() === fri.getMonth()) {
-    return `${months[d.getMonth()]} ${d.getDate()} – ${fri.getDate()}, ${fri.getFullYear()}`
-  }
-  return `${months[d.getMonth()]} ${d.getDate()} – ${months[fri.getMonth()]} ${fri.getDate()}, ${fri.getFullYear()}`
-}
-
 // ─── Small components ─────────────────────────────────────────────────────────
 
-function Badge({ children, color = 'blue' }: { children: React.ReactNode; color?: 'blue'|'green'|'slate'|'amber' }) {
+function Badge({ children, color = 'blue' }: { children: React.ReactNode; color?: 'blue' | 'green' | 'slate' | 'amber' | 'red' }) {
   const cls = {
-    blue:  'bg-blue-100 text-blue-700',
-    green: 'bg-green-50 text-green-700',
+    blue:  'bg-brand-100 text-brand-700',
+    green: 'bg-honors-50 text-honors-700',
     slate: 'bg-slate-100 text-slate-600',
     amber: 'bg-amber-100 text-amber-700',
+    red:   'bg-red-100 text-red-700',
   }[color]
   return <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium ${cls}`}>{children}</span>
 }
@@ -72,8 +47,30 @@ function StatusDot({ online }: { online: boolean | null }) {
   return (
     <span className="flex items-center gap-1.5 text-xs text-slate-500">
       <span className={`w-2 h-2 rounded-full ${online ? 'bg-green-400' : 'bg-red-400'}`} />
-      {online ? 'Backend connected' : 'Backend offline'}
+      {online ? 'Backend connected' : 'Backend offline — check Render'}
     </span>
+  )
+}
+
+// ─── Week Picker ──────────────────────────────────────────────────────────────
+
+function WeekPicker({ value, onChange }: { value: Date; onChange: (d: Date) => void }) {
+  const weeks = schoolYearWeeks()
+  return (
+    <div className="flex items-center gap-2">
+      <button onClick={() => onChange(prevWeek(value))} className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition" title="Previous week">◀</button>
+      <select
+        value={formatISO(value)}
+        onChange={e => onChange(getMonday(new Date(e.target.value + 'T12:00:00')))}
+        className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500"
+      >
+        {weeks.map(w => {
+          const iso = formatISO(w)
+          return <option key={iso} value={iso}>{formatWeekRange(w)}</option>
+        })}
+      </select>
+      <button onClick={() => onChange(nextWeek(value))} className="p-1.5 rounded hover:bg-slate-200 text-slate-500 hover:text-slate-700 transition" title="Next week">▶</button>
+    </div>
   )
 }
 
@@ -82,530 +79,478 @@ function StatusDot({ online }: { online: boolean | null }) {
 function HistoryItem({ item, onRemove }: { item: Assignment; onRemove: () => void }) {
   return (
     <div className="flex items-center justify-between py-2.5 px-3 bg-white border border-slate-200 rounded-lg">
-      <p className="text-sm font-medium text-slate-700 truncate flex-1">{item.label}</p>
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium text-slate-700 truncate">{item.label}</p>
+        <div className="flex gap-1.5 mt-1">
+          <Badge color="slate">Grade {item.grade}</Badge>
+          <Badge color={item.classType === 'honors' ? 'green' : 'blue'}>
+            {item.classType === 'honors' ? 'Honors' : 'Grade Level'}
+          </Badge>
+        </div>
+      </div>
       <div className="flex items-center gap-2 ml-3">
-        <a href={item.pdfUrl} download={`hw_${item.date}.pdf`}
-           className="text-xs font-medium text-blue-600 hover:text-blue-800 underline">
-          Download
-        </a>
-        <button onClick={onRemove} className="text-slate-300 hover:text-slate-500 text-lg leading-none">×</button>
+        <a href={item.pdfUrl} download={`hw_grade${item.grade}_${item.weekStart}.pdf`} className="text-xs font-medium text-brand-600 hover:text-brand-800 underline">Download</a>
+        <button onClick={onRemove} className="text-slate-300 hover:text-slate-500 text-lg leading-none" title="Remove">×</button>
       </div>
     </div>
   )
 }
 
-// ─── Domain labels ────────────────────────────────────────────────────────────
+// ─── Review Bank Tab ──────────────────────────────────────────────────────────
 
-const DOMAIN_LABELS: Record<Domain, string> = {
-  fractions_decimals:    'Fractions & Decimals',
-  expressions_equations: 'Expressions & Equations',
-  geometry:              'Geometry',
-  stats_probability:     'Stats & Probability',
-}
-const DOMAINS = Object.keys(DOMAIN_LABELS) as Domain[]
-
-// ─── LaTeX renderer ───────────────────────────────────────────────────────────
-
-function LatexBlock({ latex }: { latex: string }) {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && (window as any).MathJax?.typesetPromise) {
-      setTimeout(() => { (window as any).MathJax.typesetPromise() }, 50)
-    }
-  }, [latex])
-  const processed = latex.replace(/\$\$([^$]+)\$\$/g, '\\[$1\\]')
-  return (
-    <div className="text-sm text-slate-800 leading-relaxed"
-         dangerouslySetInnerHTML={{ __html: processed }} />
-  )
-}
-
-// ─── Stats Summary ────────────────────────────────────────────────────────────
-
-function StatsSummary({ stats }: { stats: BankStats | null }) {
-  if (!stats) return null
-  const total    = Object.values(stats.domains).reduce((s, d) => s + d.total, 0)
-  const approved = Object.values(stats.domains).reduce((s, d) => s + d.approved, 0)
-  const pending  = total - approved
-  return (
-    <div className="grid grid-cols-3 gap-3 mb-6">
-      {[
-        { label: 'Total Problems', value: total,    color: 'text-slate-700' },
-        { label: 'Approved',       value: approved, color: 'text-green-600' },
-        { label: 'Pending Review', value: pending,  color: 'text-amber-600' },
-      ].map(({ label, value, color }) => (
-        <div key={label} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
-          <p className={`text-2xl font-bold ${color}`}>{value}</p>
-          <p className="text-xs text-slate-400 mt-0.5">{label}</p>
-        </div>
-      ))}
-    </div>
-  )
-}
-
-// ─── Review Page ──────────────────────────────────────────────────────────────
-
-function ReviewPage() {
-  const [domain, setDomain]               = useState<Domain>('expressions_equations')
-  const [problems, setProblems]           = useState<BankProblem[]>([])
-  const [total, setTotal]                 = useState(0)
-  const [offset, setOffset]               = useState(0)
-  const [index, setIndex]                 = useState(0)
-  const [loading, setLoading]             = useState(false)
-  const [saving, setSaving]               = useState(false)
-  const [selectedQ, setSelectedQ]         = useState(1)
-  const [notes, setNotes]                 = useState('')
-  const [stats, setStats]                 = useState<BankStats | null>(null)
-  const [toast, setToast]                 = useState<string | null>(null)
+function ReviewBank() {
+  const [stats, setStats] = useState<BankStats | null>(null)
+  const [problems, setProblems] = useState<BankProblem[]>([])
+  const [total, setTotal] = useState(0)
+  const [index, setIndex] = useState(0)       // current position in queue
+  const [loading, setLoading] = useState(false)
+  const [actionMsg, setActionMsg] = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
 
-  const PAGE_SIZE = 20
+  // Per-problem selections
+  const [selectedDomain, setSelectedDomain] = useState<Domain | ''>('')
+  const [selectedQuarter, setSelectedQuarter] = useState<number | ''>('')
+  const [notes, setNotes] = useState('')
 
-  useEffect(() => { fetchBankStats(6).then(s => setStats(s)).catch(() => {}) }, [])
+  const mathJaxRef = useRef<HTMLDivElement>(null)
 
+  const loadQueue = useCallback(async () => {
+    setLoading(true)
+    try {
+      const [queueRes, statsRes] = await Promise.all([
+        fetchReviewQueue({ inbox_only: true, limit: 200 }),
+        fetchBankStats(6),
+      ])
+      setProblems(queueRes.problems)
+      setTotal(queueRes.total)
+      setStats(statsRes)
+      setIndex(0)
+    } catch (e) {
+      setActionMsg('Failed to load queue')
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => { loadQueue() }, [loadQueue])
+
+  // Re-render MathJax when problem changes
   useEffect(() => {
-    setLoading(true); setIndex(0)
-    fetchReviewQueue(domain, 6, offset, PAGE_SIZE)
-      .then(res => { setProblems(res.problems); setTotal(res.total); setLoading(false) })
-      .catch(() => setLoading(false))
-  }, [domain, offset])
-
-  useEffect(() => {
-    const p = problems[index]
-    if (p) { setSelectedQ(p.quarter); setNotes(p.notes ?? '') }
+    if (typeof window !== 'undefined' && (window as any).MathJax?.typesetPromise && mathJaxRef.current) {
+      ;(window as any).MathJax.typesetPromise([mathJaxRef.current]).catch(() => {})
+    }
   }, [index, problems])
 
-  const current     = problems[index]
-  const globalIndex = offset + index
+  // Reset selections when moving to a new problem
+  useEffect(() => {
+    const p = problems[index]
+    if (p) {
+      setSelectedDomain(p.domain ?? '')
+      setSelectedQuarter(p.suggested_quarter ?? '')
+      setNotes(p.notes ?? '')
+    }
+    setConfirmDelete(false)
+    setActionMsg('')
+  }, [index, problems])
 
-  function showToast(msg: string) {
-    setToast(msg); setTimeout(() => setToast(null), 2500)
+  const current = problems[index]
+
+  const advance = () => {
+    if (index < problems.length - 1) setIndex(i => i + 1)
+    else loadQueue()  // refresh stats when queue exhausted
   }
 
-  function advanceAfterAction() {
-    fetchBankStats(6).then(s => setStats(s)).catch(() => {})
-    const next = problems.filter((_, i) => i !== index)
-    setProblems(next); setTotal(t => t - 1)
-    if (index >= next.length && index > 0) setIndex(index - 1)
-  }
-
-  async function handleApprove(flagged = false) {
-    if (!current) return
-    setSaving(true)
+  const handleApprove = async () => {
+    if (!current || !selectedDomain || !selectedQuarter) {
+      setActionMsg('Please select a domain and quarter before approving.')
+      return
+    }
     try {
-      await approveProblem(current, selectedQ, notes, flagged)
-      showToast(flagged ? `🚩 Flagged: ${current.id}` : `✅ Approved: ${current.id}`)
-      advanceAfterAction()
-    } catch { showToast('❌ Failed to save — check backend') }
-    finally { setSaving(false) }
+      await approveProblem({
+        problem_id: current.id,
+        domain: selectedDomain as Domain,
+        quarter: Number(selectedQuarter),
+        notes,
+        grade: current.grade,
+      })
+      setProblems(prev => prev.filter((_, i) => i !== index))
+      setTotal(t => t - 1)
+      setActionMsg('✓ Approved')
+      // Don't advance — stay at same index (next problem slides in)
+    } catch (e: any) {
+      setActionMsg(`Error: ${e.message}`)
+    }
   }
 
-  async function handleDelete() {
+  const handleFlag = async () => {
     if (!current) return
-    setSaving(true)
     try {
-      await deleteProblem(current)
-      showToast(`🗑 Deleted: ${current.id}`)
-      advanceAfterAction()
-    } catch { showToast('❌ Failed to delete — check backend') }
-    finally { setSaving(false); setConfirmDelete(false) }
+      await flagProblem(current.id, notes, current.grade)
+      setProblems(prev => prev.filter((_, i) => i !== index))
+      setTotal(t => t - 1)
+      setActionMsg('🚩 Flagged')
+    } catch (e: any) {
+      setActionMsg(`Error: ${e.message}`)
+    }
   }
 
-  function handleDomainChange(d: Domain) { setDomain(d); setOffset(0); setIndex(0) }
-
-  const canPrev = globalIndex > 0
-  const canNext = globalIndex < total - 1
-
-  function handlePrev() {
-    if (!canPrev) return
-    if (index > 0) { setIndex(index - 1) }
-    else { setOffset(Math.max(0, offset - PAGE_SIZE)); setIndex(PAGE_SIZE - 1) }
+  const handleDelete = async () => {
+    if (!current) return
+    if (!confirmDelete) { setConfirmDelete(true); return }
+    try {
+      await deleteProblem(current.id, current.grade)
+      setProblems(prev => prev.filter((_, i) => i !== index))
+      setTotal(t => t - 1)
+      setActionMsg('🗑 Deleted')
+      setConfirmDelete(false)
+    } catch (e: any) {
+      setActionMsg(`Error: ${e.message}`)
+    }
   }
-  function handleNext() {
-    if (!canNext) return
-    if (index < problems.length - 1) { setIndex(index + 1) }
-    else { setOffset(offset + PAGE_SIZE); setIndex(0) }
+
+  // ── Stats panel ──
+  const StatsPanel = () => (
+    <div className="bg-white rounded-xl border border-slate-200 p-4 mb-4">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-sm font-semibold text-slate-700">Bank Status</h3>
+        <button onClick={loadQueue} className="text-xs text-brand-600 hover:text-brand-800">↻ Refresh</button>
+      </div>
+      {stats ? (
+        <div className="space-y-2">
+          <div className="flex items-center justify-between text-sm">
+            <span className="text-slate-500">📥 Inbox (awaiting review)</span>
+            <span className="font-semibold text-amber-600">{stats.inbox.total}</span>
+          </div>
+          {DOMAINS.map(({ value, label }) => {
+            const d = stats.domains[value]
+            if (!d) return null
+            return (
+              <div key={value} className="flex items-center justify-between text-xs text-slate-500">
+                <span>{label}</span>
+                <span>
+                  <span className="text-green-600 font-medium">{d.approved} approved</span>
+                  {d.flagged > 0 && <span className="text-amber-500 ml-2">{d.flagged} flagged</span>}
+                  {d.pending > 0 && <span className="text-slate-400 ml-2">{d.pending} pending</span>}
+                </span>
+              </div>
+            )
+          })}
+        </div>
+      ) : (
+        <p className="text-xs text-slate-400">Loading stats…</p>
+      )}
+    </div>
+  )
+
+  if (loading) {
+    return (
+      <div className="space-y-4">
+        <StatsPanel />
+        <div className="text-center py-12 text-slate-400 text-sm">Loading queue…</div>
+      </div>
+    )
+  }
+
+  if (problems.length === 0) {
+    return (
+      <div className="space-y-4">
+        <StatsPanel />
+        <div className="bg-white rounded-xl border border-slate-200 p-8 text-center">
+          <p className="text-2xl mb-2">🎉</p>
+          <p className="text-sm font-medium text-slate-600">Inbox is empty</p>
+          <p className="text-xs text-slate-400 mt-1">All ingested problems have been reviewed.</p>
+          <p className="text-xs text-slate-400 mt-3">To add more: run <code className="bg-slate-100 px-1 rounded">python3 scripts/ingest_pdf.py --pdf yourfile.pdf</code></p>
+        </div>
+      </div>
+    )
   }
 
   return (
-    <div className="space-y-6">
-      <StatsSummary stats={stats} />
+    <div className="space-y-4">
+      <StatsPanel />
 
-      {/* Domain tabs */}
-      <div className="flex gap-2 flex-wrap">
-        {DOMAINS.map(d => (
-          <button key={d} onClick={() => handleDomainChange(d)}
-            className={['px-4 py-2 rounded-lg text-sm font-medium transition border',
-              domain === d ? 'bg-blue-600 text-white border-blue-600'
-                          : 'bg-white text-slate-600 border-slate-300 hover:border-blue-400 hover:text-blue-600',
-            ].join(' ')}>
-            {DOMAIN_LABELS[d]}
-            {stats && <span className="ml-2 text-xs opacity-70">({stats.domains[d].total - stats.domains[d].approved} left)</span>}
-          </button>
-        ))}
+      {/* Progress */}
+      <div className="flex items-center justify-between text-xs text-slate-500">
+        <span>Problem {index + 1} of {problems.length} in queue</span>
+        <div className="flex gap-2">
+          <button onClick={() => setIndex(i => Math.max(0, i - 1))} disabled={index === 0} className="px-2 py-1 rounded border border-slate-200 disabled:opacity-30 hover:bg-slate-50">← Prev</button>
+          <button onClick={() => setIndex(i => Math.min(problems.length - 1, i + 1))} disabled={index >= problems.length - 1} className="px-2 py-1 rounded border border-slate-200 disabled:opacity-30 hover:bg-slate-50">Next →</button>
+        </div>
       </div>
 
-      {/* Review card */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm">
-        <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-semibold text-slate-700">Problem Review</span>
-            {total > 0 && <Badge color="amber">{total} pending</Badge>}
+      {/* Problem card */}
+      {current && (
+        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+          {/* Meta */}
+          <div className="px-4 py-3 bg-slate-50 border-b border-slate-100 flex flex-wrap gap-2 items-center">
+            <Badge color="slate">{current.id}</Badge>
+            <Badge color="slate">📄 {current.source_file}</Badge>
+            {current.source_problem_number && <Badge color="slate">#{current.source_problem_number}</Badge>}
+            {current.suggested_quarter && <Badge color="amber">Suggested Q{current.suggested_quarter}</Badge>}
           </div>
-          {total > 0 && current && <span className="text-xs text-slate-400">{globalIndex + 1} of {total}</span>}
-        </div>
 
-        <div className="p-6">
-          {loading && <div className="text-center py-16 text-slate-400 text-sm">Loading problems…</div>}
-
-          {!loading && total === 0 && (
-            <div className="text-center py-16">
-              <div className="text-4xl mb-3">✅</div>
-              <p className="text-sm font-medium text-slate-600">All problems in this domain are approved!</p>
-            </div>
+          {/* Topic */}
+          {current.topic && (
+            <div className="px-4 pt-3 text-xs text-slate-500 italic">{current.topic}</div>
           )}
 
-          {!loading && current && (
-            <div className="space-y-6">
-              <div className="flex flex-wrap gap-2 items-center">
-                <Badge color="slate">#{current.source_problem_number} · {current.source_file}</Badge>
-                <Badge color="blue">Auto-suggested: Q{current.quarter}</Badge>
-                <span className="text-xs text-slate-400">{current.topic}</span>
+          {/* LaTeX */}
+          <div ref={mathJaxRef} className="px-4 py-4">
+            <div className="text-sm text-slate-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: current.latex }} />
+            {current.answer_latex && (
+              <div className="mt-3 pt-3 border-t border-slate-100">
+                <span className="text-xs font-medium text-slate-400 mr-2">Answer:</span>
+                <span className="text-sm text-slate-600" dangerouslySetInnerHTML={{ __html: current.answer_latex }} />
               </div>
+            )}
+          </div>
 
-              <div className="bg-slate-50 rounded-xl p-5 min-h-[100px]">
-                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Problem</p>
-                <LatexBlock latex={current.latex} />
-              </div>
+          {/* Review controls */}
+          <div className="px-4 pb-4 space-y-3 border-t border-slate-100 pt-3">
 
-              {current.answer_latex && (
-                <div className="bg-green-50 rounded-xl p-4">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-green-500 mb-2">Answer</p>
-                  <LatexBlock latex={current.answer_latex} />
-                </div>
-              )}
-
-              <div>
-                <SectionLabel>Confirm Quarter Placement</SectionLabel>
-                <div className="grid grid-cols-4 gap-2">
-                  {[1,2,3,4].map(q => (
-                    <button key={q} onClick={() => setSelectedQ(q)}
-                      className={['py-2.5 rounded-lg border text-sm font-medium transition',
-                        selectedQ === q ? 'bg-blue-600 border-blue-600 text-white'
-                                        : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
-                      ].join(' ')}>Q{q}</button>
-                  ))}
-                </div>
-                {selectedQ !== current.quarter && (
-                  <p className="text-xs text-amber-600 mt-2">⚠ Moving from Q{current.quarter} → Q{selectedQ}</p>
-                )}
-              </div>
-
-              <div>
-                <SectionLabel>Notes (optional)</SectionLabel>
-                <input type="text" value={notes} onChange={e => setNotes(e.target.value)}
-                  placeholder="e.g. 'has diagram placeholder — needs manual LaTeX'"
-                  className="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              </div>
-
-              <div className="space-y-3">
-                {/* Primary: Prev / Approve / Next */}
-                <div className="flex items-center gap-3">
-                  <button onClick={handlePrev} disabled={!canPrev}
-                    className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition">
-                    ← Prev
+            {/* Domain selector */}
+            <div>
+              <SectionLabel>Domain</SectionLabel>
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+                {DOMAINS.map(({ value, label }) => (
+                  <button
+                    key={value}
+                    onClick={() => setSelectedDomain(value)}
+                    className={[
+                      'py-1.5 px-2 rounded-lg border text-xs font-medium transition text-left',
+                      selectedDomain === value
+                        ? 'bg-brand-600 border-brand-600 text-white'
+                        : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400',
+                    ].join(' ')}
+                  >
+                    {label}
                   </button>
-                  <button onClick={() => handleApprove(false)} disabled={saving}
-                    className="flex-1 py-2.5 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 disabled:opacity-60 transition">
-                    {saving ? 'Saving…' : `Approve · Q${selectedQ}`}
-                  </button>
-                  <button onClick={handleNext} disabled={!canNext}
-                    className="px-4 py-2 rounded-lg border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition">
-                    Next →
-                  </button>
-                </div>
-
-                {/* Secondary: Flag / Delete */}
-                <div className="flex items-center gap-3">
-                  <button onClick={() => handleApprove(true)} disabled={saving}
-                    className="flex-1 py-2 rounded-xl border-2 border-amber-400 text-amber-700 text-sm font-medium hover:bg-amber-50 disabled:opacity-60 transition">
-                    🚩 Flag — needs review
-                  </button>
-                  {!confirmDelete ? (
-                    <button onClick={() => setConfirmDelete(true)} disabled={saving}
-                      className="flex-1 py-2 rounded-xl border-2 border-red-300 text-red-600 text-sm font-medium hover:bg-red-50 disabled:opacity-60 transition">
-                      🗑 Delete
-                    </button>
-                  ) : (
-                    <div className="flex-1 flex gap-2">
-                      <button onClick={handleDelete} disabled={saving}
-                        className="flex-1 py-2 rounded-xl bg-red-600 text-white text-sm font-semibold hover:bg-red-700 disabled:opacity-60 transition">
-                        Confirm delete
-                      </button>
-                      <button onClick={() => setConfirmDelete(false)}
-                        className="px-3 py-2 rounded-xl border border-slate-300 text-sm text-slate-600 hover:bg-slate-50 transition">
-                        Cancel
-                      </button>
-                    </div>
-                  )}
-                </div>
+                ))}
               </div>
             </div>
-          )}
-        </div>
-      </div>
 
-      {toast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-sm px-5 py-3 rounded-xl shadow-lg z-50">
-          {toast}
+            {/* Quarter selector */}
+            <div>
+              <SectionLabel>Quarter{current.suggested_quarter ? ` (suggested: Q${current.suggested_quarter})` : ''}</SectionLabel>
+              <div className="grid grid-cols-4 gap-2">
+                {[1, 2, 3, 4].map(q => (
+                  <button
+                    key={q}
+                    onClick={() => setSelectedQuarter(q)}
+                    className={[
+                      'py-1.5 rounded-lg border text-xs font-medium transition',
+                      selectedQuarter === q
+                        ? 'bg-brand-600 border-brand-600 text-white'
+                        : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400',
+                    ].join(' ')}
+                  >
+                    Q{q}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Notes */}
+            <div>
+              <SectionLabel>Notes (optional)</SectionLabel>
+              <input
+                type="text"
+                value={notes}
+                onChange={e => setNotes(e.target.value)}
+                placeholder="e.g. double check answer, unusual format…"
+                className="w-full border border-slate-300 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-brand-400"
+              />
+            </div>
+
+            {/* Action feedback */}
+            {actionMsg && (
+              <p className={`text-xs ${actionMsg.startsWith('Error') ? 'text-red-600' : 'text-green-600'}`}>
+                {actionMsg}
+              </p>
+            )}
+
+            {/* Action buttons */}
+            <div className="flex gap-2">
+              <button
+                onClick={handleApprove}
+                disabled={!selectedDomain || !selectedQuarter}
+                className="flex-1 py-2 rounded-lg bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700 disabled:opacity-40 disabled:cursor-not-allowed transition"
+              >
+                ✓ Approve
+              </button>
+              <button
+                onClick={handleFlag}
+                className="py-2 px-3 rounded-lg border border-amber-300 text-amber-700 text-sm font-medium hover:bg-amber-50 transition"
+                title="Keep but mark for review"
+              >
+                🚩 Flag
+              </button>
+              <button
+                onClick={handleDelete}
+                className={`py-2 px-3 rounded-lg border text-sm font-medium transition ${confirmDelete ? 'bg-red-600 border-red-600 text-white' : 'border-red-200 text-red-500 hover:bg-red-50'}`}
+                title={confirmDelete ? 'Click again to confirm delete' : 'Delete permanently'}
+              >
+                {confirmDelete ? 'Confirm?' : '🗑'}
+              </button>
+            </div>
+            {confirmDelete && (
+              <p className="text-xs text-red-500 text-center">This will permanently delete the problem. Click 🗑 Confirm again, or navigate away to cancel.</p>
+            )}
+          </div>
         </div>
       )}
     </div>
   )
 }
 
-// ─── Generate Page ────────────────────────────────────────────────────────────
+// ─── Generate Tab ─────────────────────────────────────────────────────────────
 
-function GeneratePage({ online }: { online: boolean | null }) {
-  const [grade, setGrade]             = useState<Grade>('6')
-  const [classType, setClassType]     = useState<ClassType>('grade_level')
-  const [weeks, setWeeks]             = useState<SchoolWeek[]>([])
-  const [selectedWeek, setSelectedWeek] = useState<SchoolWeek | null>(null)
-  const [selectedDay, setSelectedDay] = useState<SchoolDay | null>(null)  // null = full week
-  const [status, setStatus]           = useState<Status>('idle')
-  const [errorMsg, setErrorMsg]       = useState('')
-  const [history, setHistory]         = useState<Assignment[]>([])
+function GenerateTab() {
+  const [week, setWeek] = useState<Date>(() => getMonday(new Date()))
+  const [grade, setGrade] = useState<Grade>('6')
+  const [classType, setClassType] = useState<ClassType>('grade_level')
+  const [status, setStatus] = useState<Status>('idle')
+  const [errorMsg, setErrorMsg] = useState('')
+  const [history, setHistory] = useState<Assignment[]>([])
   const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null)
-  const [generatingDay, setGeneratingDay] = useState<string | null>(null)
-
-  // Load weeks from backend when grade changes
-  useEffect(() => {
-    setWeeks([]); setSelectedWeek(null); setSelectedDay(null)
-    fetchWeeks(grade)
-      .then(w => { setWeeks(w); setSelectedWeek(w[0] ?? null) })
-      .catch(() => {})
-  }, [grade])
-
-  // Reset day selection when week changes
-  useEffect(() => { setSelectedDay(null) }, [selectedWeek])
 
   const handleGenerate = useCallback(async () => {
-    if (!selectedWeek) return
-    setStatus('loading'); setErrorMsg(''); setPdfPreviewUrl(null)
+    setStatus('loading')
+    setErrorMsg('')
+    setPdfPreviewUrl(null)
 
-    const daysToGenerate: (SchoolDay | null)[] = selectedDay
-      ? [selectedDay]
-      : selectedWeek.days
+    const req: GenerateRequest = { week_start: formatISO(week), grade, class_type: classType }
 
     try {
-      let lastUrl: string | null = null
-      for (const day of daysToGenerate) {
-        setGeneratingDay(day?.dow ?? 'Full week')
-        const req: GenerateRequest = {
-          week_start:    selectedWeek.week_start,
-          grade,
-          class_type:    classType,
-          specific_date: day?.date,
-        }
-        const blob = await generateHomework(req)
-        const url  = URL.createObjectURL(blob)
-        lastUrl    = url
-
-        const dowLabel  = day ? day.dow : 'Full week'
-        const dateLabel = day ? day.date : selectedWeek.week_start
-        const label     = `${formatWeekLabel(selectedWeek)} · ${dowLabel} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
-        setHistory(prev => [{ date: dateLabel, label, pdfUrl: url }, ...prev])
-      }
-      if (lastUrl) setPdfPreviewUrl(lastUrl)
+      const blob = await generateHomework(req)
+      const url = URL.createObjectURL(blob)
+      setPdfPreviewUrl(url)
+      const label = `${formatWeekRange(week)} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+      setHistory(prev => [{ weekStart: formatISO(week), grade, classType, label, pdfUrl: url }, ...prev])
       setStatus('done')
     } catch (e: unknown) {
       setErrorMsg(e instanceof Error ? e.message : 'Unknown error')
       setStatus('error')
-    } finally {
-      setGeneratingDay(null)
     }
-  }, [selectedWeek, selectedDay, grade, classType])
-
-  const weekDays = selectedWeek?.days ?? []
+  }, [week, grade, classType])
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 items-start">
-
-      {/* Left: Form */}
       <div className="space-y-6">
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-6">
           <h2 className="text-base font-semibold text-slate-700">Generate Assignment</h2>
 
-          {/* Grade */}
+          <div>
+            <SectionLabel>Week</SectionLabel>
+            <WeekPicker value={week} onChange={setWeek} />
+          </div>
+
           <div>
             <SectionLabel>Grade</SectionLabel>
             <div className="grid grid-cols-4 gap-2">
-              {(['5','6','7','8'] as Grade[]).map(g => (
-                <button key={g} onClick={() => setGrade(g)}
-                  disabled={g !== '6'}
-                  className={['py-2 rounded-lg border text-sm font-medium transition',
-                    grade === g ? 'bg-blue-600 border-blue-600 text-white shadow-sm'
-                                : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400 hover:text-blue-600',
-                    g !== '6' ? 'opacity-40 cursor-not-allowed' : '',
-                  ].join(' ')}>
-                  {g !== '6' ? `${g} · soon` : `Grade ${g}`}
+              {(['5', '6', '7', '8'] as Grade[]).map(g => (
+                <button
+                  key={g}
+                  onClick={() => setGrade(g)}
+                  disabled={g === '5' || g === '7' || g === '8'}
+                  className={[
+                    'py-2 rounded-lg border text-sm font-medium transition',
+                    grade === g ? 'bg-brand-600 border-brand-600 text-white shadow-sm' : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400 hover:text-brand-600',
+                    (g === '5' || g === '7' || g === '8') ? 'opacity-40 cursor-not-allowed' : '',
+                  ].join(' ')}
+                >
+                  {g === '5' || g === '7' || g === '8' ? `${g} · soon` : `Grade ${g}`}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Week picker */}
-          <div>
-            <SectionLabel>Week</SectionLabel>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => {
-                  const i = weeks.findIndex(w => w.week_start === selectedWeek?.week_start)
-                  if (i > 0) setSelectedWeek(weeks[i - 1])
-                }}
-                disabled={!selectedWeek || weeks.indexOf(selectedWeek) === 0}
-                className="p-1.5 rounded hover:bg-slate-200 text-slate-500 disabled:opacity-30 transition">◀</button>
-              <select
-                value={selectedWeek?.week_start ?? ''}
-                onChange={e => setSelectedWeek(weeks.find(w => w.week_start === e.target.value) ?? null)}
-                className="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-                {weeks.map(w => (
-                  <option key={w.week_start} value={w.week_start}>{formatWeekLabel(w)}</option>
-                ))}
-              </select>
-              <button
-                onClick={() => {
-                  const i = weeks.findIndex(w => w.week_start === selectedWeek?.week_start)
-                  if (i < weeks.length - 1) setSelectedWeek(weeks[i + 1])
-                }}
-                disabled={!selectedWeek || weeks.indexOf(selectedWeek) === weeks.length - 1}
-                className="p-1.5 rounded hover:bg-slate-200 text-slate-500 disabled:opacity-30 transition">▶</button>
-            </div>
-          </div>
-
-          {/* Day selector */}
-          {weekDays.length > 0 && (
-            <div>
-              <SectionLabel>Day</SectionLabel>
-              <div className="flex gap-2 flex-wrap">
-                <button
-                  onClick={() => setSelectedDay(null)}
-                  className={['px-3 py-2 rounded-lg border text-sm font-medium transition',
-                    selectedDay === null
-                      ? 'bg-blue-600 border-blue-600 text-white'
-                      : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
-                  ].join(' ')}>
-                  Full Week
-                </button>
-                {weekDays.map(day => (
-                  <button key={day.date}
-                    onClick={() => setSelectedDay(day)}
-                    className={['px-3 py-2 rounded-lg border text-sm font-medium transition',
-                      selectedDay?.date === day.date
-                        ? 'bg-blue-600 border-blue-600 text-white'
-                        : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
-                    ].join(' ')}>
-                    {day.dow}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Class type */}
           <div>
             <SectionLabel>Class Type</SectionLabel>
             <div className="grid grid-cols-2 gap-3">
               {[
                 { val: 'grade_level' as ClassType, label: 'Grade Level', sub: '20 min · 10–12 problems' },
-                { val: 'honors'      as ClassType, label: 'Honors',      sub: '30 min · challenge problems' },
+                { val: 'honors' as ClassType, label: 'Honors', sub: '30 min · challenge problems' },
               ].map(({ val, label, sub }) => (
-                <button key={val} onClick={() => setClassType(val)}
-                  className={['text-left p-3 rounded-xl border-2 transition',
-                    classType === val
-                      ? val === 'honors' ? 'border-green-600 bg-green-50' : 'border-blue-500 bg-blue-50'
-                      : 'border-slate-200 bg-white hover:border-slate-300',
-                  ].join(' ')}>
-                  <p className={`text-sm font-semibold ${classType === val && val === 'honors' ? 'text-green-700' : classType === val ? 'text-blue-700' : 'text-slate-700'}`}>{label}</p>
+                <button
+                  key={val}
+                  onClick={() => setClassType(val)}
+                  className={[
+                    'text-left p-3 rounded-xl border-2 transition',
+                    classType === val ? (val === 'honors' ? 'border-honors-600 bg-honors-50' : 'border-brand-500 bg-brand-50') : 'border-slate-200 bg-white hover:border-slate-300',
+                  ].join(' ')}
+                >
+                  <p className={`text-sm font-semibold ${classType === val && val === 'honors' ? 'text-honors-700' : classType === val ? 'text-brand-700' : 'text-slate-700'}`}>{label}</p>
                   <p className="text-xs text-slate-400 mt-0.5">{sub}</p>
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Summary */}
-          {selectedWeek && (
-            <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
-              <span className="font-medium">Generating: </span>
-              Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
-              {selectedDay ? `${selectedDay.dow}, ${selectedDay.date}` : `Full week of ${formatWeekLabel(selectedWeek)}`}
-            </div>
-          )}
+          <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
+            <span className="font-medium">Generating: </span>
+            Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} · {formatWeekRange(week)}
+          </div>
 
-          {/* Error */}
           {status === 'error' && (
             <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-sm text-red-700">
               <span className="font-semibold">Error: </span>{errorMsg}
             </div>
           )}
 
-          {/* Generate button */}
-          <button onClick={handleGenerate}
-            disabled={status === 'loading' || !online || !selectedWeek}
-            className={['w-full py-3 rounded-xl text-sm font-semibold transition shadow-sm',
-              status === 'loading' ? 'bg-blue-400 text-white cursor-wait'
-              : !online || !selectedWeek ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-              : 'bg-blue-600 text-white hover:bg-blue-700 active:scale-[0.99]',
-            ].join(' ')}>
+          <button
+            onClick={handleGenerate}
+            disabled={status === 'loading'}
+            className={[
+              'w-full py-3 rounded-xl text-sm font-semibold transition shadow-sm',
+              status === 'loading' ? 'bg-brand-400 text-white cursor-wait' : 'bg-brand-600 text-white hover:bg-brand-700 active:scale-[0.99]',
+            ].join(' ')}
+          >
             {status === 'loading' ? (
               <span className="flex items-center justify-center gap-2">
                 <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
                 </svg>
-                {generatingDay ? `Generating ${generatingDay}…` : 'Generating PDF…'}
+                Generating PDF…
               </span>
-            ) : selectedDay ? 'Generate PDF' : `Generate Full Week (${weekDays.length} PDFs)`}
+            ) : 'Generate Homework PDF'}
           </button>
         </div>
 
-        {/* History */}
         {history.length > 0 && (
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
             <h2 className="text-base font-semibold text-slate-700 mb-3">Generated This Session</h2>
             <div className="space-y-2">
               {history.map((item, i) => (
-                <HistoryItem key={i} item={item}
-                  onRemove={() => setHistory(prev => prev.filter((_, j) => j !== i))} />
+                <HistoryItem key={i} item={item} onRemove={() => setHistory(prev => prev.filter((_, j) => j !== i))} />
               ))}
             </div>
           </div>
         )}
       </div>
 
-      {/* Right: Preview */}
       <div className="lg:sticky lg:top-6">
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
           <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
             <h2 className="text-sm font-semibold text-slate-700">Preview</h2>
             {pdfPreviewUrl && (
-              <a href={pdfPreviewUrl} download="homework.pdf"
-                 className="text-xs font-medium text-blue-600 hover:text-blue-800">↓ Download PDF</a>
+              <a href={pdfPreviewUrl} download={`hw_grade${grade}_${formatISO(week)}.pdf`} className="text-xs font-medium text-brand-600 hover:text-brand-800 flex items-center gap-1">↓ Download PDF</a>
             )}
           </div>
           {pdfPreviewUrl ? (
-            <iframe src={pdfPreviewUrl} className="w-full" style={{ height: '680px' }} title="Preview" />
+            <iframe src={pdfPreviewUrl} className="w-full" style={{ height: '680px' }} title="Homework PDF preview" />
           ) : (
             <div className="flex flex-col items-center justify-center text-center py-16 px-8 text-slate-400">
               <div className="text-5xl mb-4">📄</div>
               <p className="text-sm font-medium text-slate-500">No preview yet</p>
               <p className="text-xs mt-1">
-                {status === 'loading'
-                  ? 'Generating — this takes about 30 seconds…'
-                  : 'Configure options and click Generate'}
+                {status === 'loading' ? 'Generating — this takes about 30 seconds…' : 'Configure options and click Generate'}
               </p>
               {status === 'loading' && (
                 <div className="mt-4 w-32 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-blue-400 rounded-full animate-pulse" style={{ width: '60%' }} />
+                  <div className="h-full bg-brand-400 rounded-full animate-[pulse_1.2s_ease-in-out_infinite]" style={{ width: '60%' }} />
                 </div>
               )}
             </div>
@@ -620,41 +565,53 @@ function GeneratePage({ online }: { online: boolean | null }) {
 
 export default function App() {
   const [online, setOnline] = useState<boolean | null>(null)
-  const [page, setPage]     = useState<Page>('generate')
+  const [tab, setTab] = useState<AppTab>('generate')
 
   useEffect(() => { checkHealth().then(setOnline) }, [])
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-blue-700 text-white shadow-md">
+      {/* ── Header ── */}
+      <header className="bg-brand-600 text-white shadow-md">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold tracking-tight">Math Homework Generator</h1>
-            <p className="text-blue-100 text-sm mt-0.5">Grades 5–8 · Spiral Review + Lesson Practice</p>
+            <p className="text-brand-100 text-sm mt-0.5">Grades 5–8 · Spiral Review + Lesson Practice</p>
           </div>
-          <div className="flex items-center gap-6">
-            <nav className="flex gap-1">
-              {([['generate','Generate'],['review','Review Bank']] as [Page,string][]).map(([key,label]) => (
-                <button key={key} onClick={() => setPage(key)}
-                  className={['px-4 py-1.5 rounded-lg text-sm font-medium transition',
-                    page === key ? 'bg-white text-blue-700' : 'text-blue-100 hover:bg-blue-600',
-                  ].join(' ')}>
-                  {label}
-                </button>
-              ))}
-            </nav>
-            <StatusDot online={online} />
-          </div>
+          <StatusDot online={online} />
+        </div>
+
+        {/* ── Tabs ── */}
+        <div className="max-w-5xl mx-auto px-6 flex gap-1 pb-0">
+          {([
+            { id: 'generate', label: '📄 Generate' },
+            { id: 'review',   label: '📥 Review Bank' },
+          ] as { id: AppTab; label: string }[]).map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => setTab(id)}
+              className={[
+                'px-4 py-2 text-sm font-medium rounded-t-lg transition',
+                tab === id
+                  ? 'bg-white text-brand-700'
+                  : 'text-brand-100 hover:text-white hover:bg-brand-500',
+              ].join(' ')}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </header>
 
+      {/* ── Body ── */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-8">
-        {page === 'generate' && <GeneratePage online={online} />}
-        {page === 'review'   && <ReviewPage />}
+        {tab === 'generate' ? <GenerateTab /> : <ReviewBank />}
       </main>
 
+      {/* ── Footer ── */}
       <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
-        Math Homework Generator · Grades 5–8
+        Math Homework Generator · Grades 5–8 ·{' '}
+        <a href="https://github.com" className="hover:text-brand-500">GitHub</a>
       </footer>
     </div>
   )
