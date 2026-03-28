@@ -1,0 +1,13 @@
+{
+  "id": "fd_6q1_0055",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Decimal subtraction word problem, choosing correct expression",
+  "latex": "Lydia likes to take a $82.25$ mg dose of vitamin C and a $9.25$ mg dose of iron. Which expression below represents how much larger, in mg, the vitamin C dose is than the iron dose?\n\nA. $82.25 \\div 9.25$\n\nB. $82.25 \\times 9.25$\n\nC. $82.25 + 9.25$\n\nD. $82.25 - 9.25$",
+  "answer_latex": "D",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 55,
+  "approved": false,
+  "notes": ""
+}

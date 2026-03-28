@@ -1,0 +1,13 @@
+{
+  "id": "fd_6q2_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "decimal subtraction word problem",
+  "latex": "At the movie concession stand, a bag of popcorn costs $\\$2.87$, a drink costs $\\$2.23$, and a box of candy costs $\\$2.89$. Ava buys one bag of popcorn. How much change will she get if she pays with a twenty-dollar bill?",
+  "answer_latex": "\\$17.13",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 9,
+  "approved": false,
+  "notes": ""
+}

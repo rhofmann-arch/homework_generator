@@ -1,0 +1,13 @@
+{
+  "id": "fd_6q1_0046",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Decimal addition word problem",
+  "latex": "Magan ran $2.4$ miles on Saturday and $1.9$ miles on Sunday. In total, how far did Magan run on those days?",
+  "answer_latex": "4.3 miles",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 46,
+  "approved": false,
+  "notes": ""
+}
