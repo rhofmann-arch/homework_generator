@@ -1,3 +1,4 @@
+from __future__ import annotations
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import Response
 from pydantic import BaseModel
@@ -13,6 +14,13 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 router = APIRouter()
+
+
+# Maps (grade, class_type) → pacing guide key in GUIDE_FILES
+def _pacing_grade(grade: str, class_type: str) -> str:
+    if class_type == "honors" and grade == "6":
+        return "6_advanced"
+    return grade
 
 
 class GenerateRequest(BaseModel):
@@ -41,9 +49,10 @@ async def generate_homework(req: GenerateRequest):
             f"Request: {req.week_start} date={req.specific_date} "
             f"grade={req.grade} type={req.class_type}"
         )
+        pacing_grade = _pacing_grade(req.grade, req.class_type)
         context = get_week_context(
             week_start=req.week_start,
-            grade=req.grade,
+            grade=pacing_grade,
             specific_date=req.specific_date,
         )
         logger.info(f"Pacing loaded. Lessons: {context.current_lessons}")
