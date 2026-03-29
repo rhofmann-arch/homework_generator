@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0016",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "linear relationships with constant rate",
+  "latex": "A hot air balloon is 10 feet off the ground and is rising at a constant rate of 2 feet per second. What is the height of the balloon, in feet, after 25 more seconds?\n",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 11.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": " }  \\textbf{Answer:} During these 25 seconds, the balloon will rise $2\\cdot25=50$ feet. The total height is then $10+50=\\boxed{60}$ feet. }"
+}

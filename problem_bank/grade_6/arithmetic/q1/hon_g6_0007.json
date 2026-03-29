@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "linear relationships with constant rate",
+  "latex": "A hot air balloon is 10 feet off the ground and is rising at a constant rate of 2 feet per second. What is the height of the balloon, in feet, after 25 more seconds?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 11.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Between them, Allen and Ben are dividing the work into $8$ equal parts, $3$ of which Allen does and $5$ of which Ben does. Each part of the work requires $\\frac{240}{8} = 30$ square feet to be painted. Since Ben does $5$ parts of the work, he will paint $30 \\cdot 5 = \\boxed{150}$ square feet of the fence. }"
+}

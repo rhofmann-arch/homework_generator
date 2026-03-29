@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "proportional reasoning with weight",
+  "latex": "Seven identical bowling balls weigh the same as three identical canoes. If one of the canoes weighs a total of 28 pounds, how many pounds does one of the bowling balls weigh?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 12.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} If one canoe weighs 28 pounds, then three canoes weigh $3\\times 28$ pounds, and thus seven bowling balls weigh $3\\times 28$ pounds, and thus one bowling ball weighs $\\dfrac{3\\times 28}{7} = 3\\times 4 = \\boxed{12}$ pounds.       }"
+}

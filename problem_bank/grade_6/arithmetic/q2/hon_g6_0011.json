@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "proportional reasoning with rates",
+  "latex": "In a certain amount of time, a plane traveling at a constant $250$ miles per hour traveled $20,\\!000$ feet. In this same amount of time, how many feet would a plane traveling at a constant $400$ miles per hour travel?\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 1.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} $\\displaystyle \\frac{400}{250} \\cdot 20,000 = \\boxed{32,000}$ feet. }"
+}

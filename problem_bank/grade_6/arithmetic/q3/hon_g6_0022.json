@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0022",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratios and part-to-whole relationships",
+  "latex": "The ratio of dogs to cats at the pound is $4:3$. How many dogs were at the pound if a total of 280 dogs and cats were at the pound?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 13.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Let $4x$ be the number of dogs and $3x$ be the number of cats. Then $4x + 3x = 280$, or $7x = 280$. Solving, we get $x = 40$. Thus, the number of dogs is $4x = 4(40) = \\boxed{160}$. }"
+}
