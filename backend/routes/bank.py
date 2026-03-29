@@ -274,24 +274,37 @@ def edit_latex(req: EditRequest):
 
 # ── Sampler (used by generation pipeline) ────────────────────────────────────
 
-def sample_problems(domain: str, grade: int, max_quarter: int, n: int) -> list[dict]:
+def sample_problems(
+    domain: str | None,
+    grade: int,
+    max_quarter: int,
+    n: int,
+    honors_only: bool = False,
+) -> list[dict]:
     """
-    Return n randomly sampled approved problems from a domain,
-    drawing from Q1 through max_quarter (cumulative).
+    Return n randomly sampled approved problems.
+    - domain=None draws from all domains.
+    - honors_only=True filters to problems with honors=True.
+    - Draws from Q1 through max_quarter (cumulative).
     """
     gd = grade_dir(grade)
+    domains = VALID_DOMAINS if domain is None else [domain]
     pool = []
-    for q in range(1, max_quarter + 1):
-        folder = gd / domain / f"q{q}"
-        if not folder.exists():
-            continue
-        for f in folder.glob("*.json"):
-            try:
-                data = json.loads(f.read_text())
-                if data.get("approved") and not data.get("flagged"):
-                    pool.append(data)
-            except Exception:
+    for d in domains:
+        for q in range(1, max_quarter + 1):
+            folder = gd / d / f"q{q}"
+            if not folder.exists():
                 continue
+            for f in folder.glob("*.json"):
+                try:
+                    data = json.loads(f.read_text())
+                    if not data.get("approved") or data.get("flagged"):
+                        continue
+                    if honors_only and not data.get("honors"):
+                        continue
+                    pool.append(data)
+                except Exception:
+                    continue
 
     if len(pool) <= n:
         return pool
