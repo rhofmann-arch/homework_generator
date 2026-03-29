@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Problem bank review API routes.
 
@@ -76,6 +77,7 @@ class ApproveRequest(BaseModel):
     problem_id: str
     domain: str
     quarter: int
+    honors: Optional[bool] = False
     notes: Optional[str] = ""
     grade: Optional[int] = 6
 
@@ -212,6 +214,7 @@ def approve(req: ApproveRequest):
     data = read_problem(src)
     data["domain"] = req.domain
     data["quarter"] = req.quarter
+    data["honors"] = req.honors or False
     data["approved"] = True
     data["flagged"] = False
     data["notes"] = req.notes or data.get("notes", "")
@@ -247,6 +250,25 @@ def delete(req: DeleteRequest):
     if not src:
         raise HTTPException(404, f"Problem not found: {req.problem_id}")
     src.unlink()
+    return {"ok": True}
+
+# ── Edit endpoint (add to bank.py after the delete endpoint) ──────────────────
+
+class EditRequest(BaseModel):
+    problem_id: str
+    latex: str
+    grade: int = 6
+
+
+@router.post("/api/bank/edit")
+def edit_latex(req: EditRequest):
+    """Update the latex field of a problem in place (inbox or approved)."""
+    src = problem_path(req.problem_id, req.grade)
+    if not src:
+        raise HTTPException(404, f"Problem not found: {req.problem_id}")
+    data = read_problem(src)
+    data["latex"] = req.latex
+    write_problem(src, data)
     return {"ok": True}
 
 
