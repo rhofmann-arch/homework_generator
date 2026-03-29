@@ -4,7 +4,7 @@ from pathlib import Path
 import anthropic
 from services.pacing import WeekContext
 from services.lesson_pdf import find_lesson_pdf, pdf_to_base64
-from routes.bank import sample_problems
+from services.bank import sample_problems
 
 logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -151,6 +151,8 @@ Rules for lesson practice problems:
   same problem structure, same vocabulary, same level of scaffolding.
 - Vary problem types (computation, word problem, true/false, error analysis)
   but only as those types appear in the provided worksheet.
+- Do NOT include a challenge section, challenge block, or \\challengeblock macro.
+  Challenge problems are handled separately and must not appear here.
 """
 
     # Build content blocks — start with any lesson PDFs we can find
@@ -305,15 +307,25 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     front_sys, front_usr = _front_prompt(context.grade, covered, current_str)
 
     if class_type == "honors":
-        # Sample up to 4 approved honors problems from the bank as challenge models.
-        # Any domain is fine — we want structural variety. Falls back gracefully if empty.
+        grade_int = int(str(context.grade).split("_")[0])
+        # Prefer honors-flagged bank problems as challenge models.
+        # If none exist yet, fall back to any approved problems (still better
+        # than free generation — preserves structure and difficulty calibration).
         bank_challenge = sample_problems(
-            domain=None,       # any domain
-            grade=int(str(context.grade).split("_")[0]),
-            max_quarter=4,     # draw from all quarters
+            domain=None,
+            grade=grade_int,
+            max_quarter=4,
             n=4,
             honors_only=True,
         )
+        if not bank_challenge:
+            bank_challenge = sample_problems(
+                domain=None,
+                grade=grade_int,
+                max_quarter=4,
+                n=4,
+                honors_only=False,
+            )
         chal_sys, chal_usr = _challenge_prompt(
             current_topic=context.current_topic,
             current_lessons=current_lessons,
