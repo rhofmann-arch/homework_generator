@@ -309,7 +309,7 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
         # Any domain is fine — we want structural variety. Falls back gracefully if empty.
         bank_challenge = sample_problems(
             domain=None,       # any domain
-            grade=int(context.grade),
+            grade=int(str(context.grade).split("_")[0]),
             max_quarter=4,     # draw from all quarters
             n=4,
             honors_only=True,
