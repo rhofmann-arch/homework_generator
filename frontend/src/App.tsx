@@ -468,7 +468,7 @@ function BankReviewTab() {
 
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 space-y-2">
           <p className="font-semibold">Fixing Honors LaTeX</p>
-          <p>• Delete <code>\textbf{'{'Answer:{'}'}...</code> from problem text — move answer to notes or delete if shown</p>
+          <p>• Delete <code>\textbf{'{'}Answer:{'}'}</code> from problem text — move answer to notes or delete if shown</p>
           <p>• Remove <code>\vspace</code>, <code>\newpage</code>, <code>\paragraph</code> commands</p>
           <p>• If the problem has an image/diagram that can't be described in text, delete it</p>
           <p>• Keep edits to the math — don't need to preserve formatting commands</p>
