@@ -1,0 +1,15 @@
+{
+  "id": "sp_6q1_0010",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Describing probability using words based on experimental data",
+  "latex": "Through ten games of basketball this season, Ethan has made 4 out of 5 of his free-throws. Which word or phrase describes the probability that Ethan will hit his next free throw?\n\nA. unlikely\n\nB. an equal chance or 50-50\n\nC. likely\n\nD. certain",
+  "answer_latex": "C",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_geo1_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "area of circle given circumference",
+  "latex": "What is the number of square inches in the area of a circle that has a circumference of $12\\pi$ inches? Express your answer in terms of $\\pi$.",
+  "answer_latex": "36\\pi",
+  "suggested_quarter": 2,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

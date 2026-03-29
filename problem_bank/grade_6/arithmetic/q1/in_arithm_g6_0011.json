@@ -1,0 +1,16 @@
+{
+  "id": "in_arithm_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multi-step division word problem",
+  "latex": "A bottling plant fills 0.5-liter bottles from a 56-liter tank. A flat consists of 24 bottles. How many complete flats can be filled from a single tank?",
+  "answer_latex": "4 \\text{ flats}",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

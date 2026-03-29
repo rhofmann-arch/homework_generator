@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q4_0013",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Area of composite figures word problem",
+  "latex": "The figure below, made up of rectangles, represents a room in a house. Indigo wants to lay down carpeting. How much carpeting will she need? Note: All units are in terms of feet.\n\n[DIAGRAM]\n\nThe composite figure has dimensions: $9$, $3$, $6$, $12$, $9$, and $15$.",
+  "answer_latex": "162 \\text{ square feet}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

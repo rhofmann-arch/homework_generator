@@ -1,0 +1,16 @@
+{
+  "id": "in_algebr_g6_0001",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "proportional reasoning, unit rates",
+  "latex": "Using an exercise bike, Charlie burns 240 calories during 15 minutes of exercise. At this rate, what is the total number of calories Charlie burns during 20 minutes of exercise on the bike?",
+  "answer_latex": "320 \\text{ calories}",
+  "suggested_quarter": 1,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

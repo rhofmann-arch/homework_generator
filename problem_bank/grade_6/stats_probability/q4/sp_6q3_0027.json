@@ -1,0 +1,15 @@
+{
+  "id": "sp_6q3_0027",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "counting permutations, arrangements of objects",
+  "latex": "Three students, Lavaughn, Zahra, and Arianna, line up one behind the other. How many different ways can they stand in line?",
+  "answer_latex": "6",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 27,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

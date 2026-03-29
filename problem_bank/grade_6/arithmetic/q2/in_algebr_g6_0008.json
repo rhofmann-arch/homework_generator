@@ -1,0 +1,16 @@
+{
+  "id": "in_algebr_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "proportional reasoning, unit conversion, mixed numbers",
+  "latex": "Steve reads 20 pages in 50 minutes. At that rate, how many hours will it take him to read 50 pages? Express your answer as a mixed number.",
+  "answer_latex": "2\\frac{1}{12} \\text{ hours}",
+  "suggested_quarter": 2,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

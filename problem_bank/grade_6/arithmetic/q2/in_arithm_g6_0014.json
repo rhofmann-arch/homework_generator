@@ -1,0 +1,16 @@
+{
+  "id": "in_arithm_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "percent of a number, word problem",
+  "latex": "Ervin made $37.5\\%$ of the shots he took during his basketball game. If he took exactly 40 shots during the game, how many shots did he make?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

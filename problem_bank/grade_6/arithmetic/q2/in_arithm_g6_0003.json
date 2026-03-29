@@ -1,0 +1,16 @@
+{
+  "id": "in_arithm_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "converting mixed number percent to fraction",
+  "latex": "Express $3\\frac{3}{4}\\%$ as a common fraction.",
+  "answer_latex": "\\frac{3}{80}",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

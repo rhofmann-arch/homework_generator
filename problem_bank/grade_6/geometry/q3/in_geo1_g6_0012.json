@@ -1,0 +1,16 @@
+{
+  "id": "in_geo1_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "area of rectangle with unit conversion",
+  "latex": "How many square inches are in the area of a rectangle whose length is four inches and whose width is $\\frac{1}{2}$ foot?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_algebr_g6_0002",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "solving linear equations, order of operations",
+  "latex": "If $500 - 90 + 7 = 400 - 60 + 5 + N$, what is the value of $N$?",
+  "answer_latex": "72",
+  "suggested_quarter": 1,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

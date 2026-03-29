@@ -1,0 +1,16 @@
+{
+  "id": "in_prealg_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "median and mean, data analysis",
+  "latex": "What is the sum of the median and the mean of the set of numbers 12, 21, 6, 11 and 30?",
+  "answer_latex": "28",
+  "suggested_quarter": 2,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

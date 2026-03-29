@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q2_0015",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Perimeter of composite figures",
+  "latex": "The figure below, made up of rectangles, represents a room in a house. Wyatt wants to put in new baseboard all along the edges. (Baseboard is the board that runs along the bottom of a wall.) Assuming there are no doors, how much baseboard will he need? Note: All units are in terms of feet.\n\n[DIAGRAM]\n\nThe figure shows an L-shaped room with dimensions: top section is $13$ ft wide and $3$ ft tall. Below that, there's a $5$ ft section, then a $3$ ft by $5$ ft notch. The right side shows $10$ ft. The bottom section is $13$ ft wide and $4$ ft tall.",
+  "answer_latex": "56 \\text{ feet}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

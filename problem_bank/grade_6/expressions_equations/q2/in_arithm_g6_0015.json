@@ -1,0 +1,16 @@
+{
+  "id": "in_arithm_g6_0015",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "custom operators, order of operations",
+  "latex": "If $m \\blacktriangle n = 2m + n$ and $m \\blacktriangledown n = 4m - n$, what is the value of $(2 \\blacktriangle (5 \\blacktriangledown 3))$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

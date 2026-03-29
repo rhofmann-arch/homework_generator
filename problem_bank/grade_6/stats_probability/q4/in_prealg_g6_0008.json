@@ -1,0 +1,16 @@
+{
+  "id": "in_prealg_g6_0008",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "mean/average calculation",
+  "latex": "What is the mean of 8, 12, 16, 20 and 24?",
+  "answer_latex": "16",
+  "suggested_quarter": 1,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

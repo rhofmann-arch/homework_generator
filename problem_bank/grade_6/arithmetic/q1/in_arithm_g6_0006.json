@@ -1,0 +1,16 @@
+{
+  "id": "in_arithm_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "dividing fractions",
+  "latex": "Express the value of $\\frac{3}{14} \\div \\frac{9}{28}$ as a common fraction.",
+  "answer_latex": "\\frac{2}{3}",
+  "suggested_quarter": 1,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

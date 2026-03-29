@@ -1,0 +1,16 @@
+{
+  "id": "in_prealg_g6_0021",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "arithmetic mean, solving for unknown value",
+  "latex": "Joe's bowling scores were 112, 182 and 142. What does he need to score in his fourth game to get a mean score of 132?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

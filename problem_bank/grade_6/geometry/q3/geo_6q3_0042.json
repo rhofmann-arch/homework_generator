@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q3_0042",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Identifying coordinates of a point on a coordinate plane",
+  "latex": "State the coordinates of the point.\n\n[DIAGRAM]",
+  "answer_latex": "(-3, 7)",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 42,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

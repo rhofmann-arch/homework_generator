@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q3_0031",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "plotting points on a coordinate plane",
+  "latex": "Plot the point $(-5, -7)$.\n\n[DIAGRAM]",
+  "answer_latex": "(-5, -7)",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 31,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

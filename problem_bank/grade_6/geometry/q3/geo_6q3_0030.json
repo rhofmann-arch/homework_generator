@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q3_0030",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Coordinate geometry - plotting points and finding perimeter of rectangle",
+  "latex": "Plot and connect the points listed below. When you are done, find the perimeter of the rectangle. $A(1, 12)$, $B(3, 12)$, $C(3, 4)$, $D(1, 4)$\n\n[DIAGRAM]",
+  "answer_latex": "20 \\text{ units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 30,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

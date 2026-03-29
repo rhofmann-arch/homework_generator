@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed1_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "fraction addition, arithmetic series",
+  "latex": "What is the value of the sum $\\frac{1}{9} + \\frac{2}{9} + \\frac{3}{9} + \\frac{4}{9} + \\frac{5}{9} + \\frac{6}{9} + \\frac{7}{9} + \\frac{8}{9}$?",
+  "answer_latex": "4",
+  "suggested_quarter": 1,
+  "source_file": "Mixed1.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

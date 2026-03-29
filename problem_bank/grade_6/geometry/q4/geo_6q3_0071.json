@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q3_0071",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "volume of a rectangular prism",
+  "latex": "Find the volume in cubic centimeters of the right rectangular prism shown below.\n\n[DIAGRAM]\n\nA rectangular prism with dimensions $5$, $5$, and $4$.",
+  "answer_latex": "100 \\text{ cubic centimeters}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 71,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

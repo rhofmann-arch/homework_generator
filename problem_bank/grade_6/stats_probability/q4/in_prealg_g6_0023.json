@@ -1,0 +1,16 @@
+{
+  "id": "in_prealg_g6_0023",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "arithmetic mean, solving for unknown value",
+  "latex": "The arithmetic mean of 5, 5 and $x$ is 5.3. What is the value of $x$? Express your answer as a decimal to the nearest tenth.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

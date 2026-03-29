@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q3_0017",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Area of rectangle on coordinate plane",
+  "latex": "Plot and connect the points listed below. When you are done, find the area of the rectangle. $A(-1, 5)$, $B(4, 5)$, $C(4, 3)$, $D(-1, 3)$\n\n[DIAGRAM]",
+  "answer_latex": "\\text{Area} = 10 \\text{ square units}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "sp_6q2_0013",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Comparing probabilities of different events",
+  "latex": "Which event is \\textbf{least likely} to occur?\n\nA. Rolling a number less than or equal to 2 on a six-sided die, numbered from 1 to 6.\n\nB. Spinning a spinner divided into five equal-sized sections colored red/green/yellow/blue/purple and landing on some color.\n\nC. Winning a raffle that sold a total of 100 tickets, if you buy 98 tickets.\n\nD. Reaching into a bag full of 8 strawberry chews and 52 cherry chews without looking and pulling out a strawberry chew.",
+  "answer_latex": "D",
+  "source_file": "Statistics and Probability.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}
