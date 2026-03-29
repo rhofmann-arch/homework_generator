@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0068",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "multi-step unit conversion and rates (volume)",
+  "latex": "A basement has a 24-foot by 32-foot rectangular floor. The basement is flooded with water to a depth of 18 inches. Three pumps are used to pump the water out of the basement. Each pump will pump 8 gallons of water per minute. If a cubic foot of water contains 7.5 gallons, how many minutes will it take to pump all of the water out of the basement using the three pumps?\n",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 27.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} The height of the water initially in feet is$$(18 \\text{ inches})/(12 \\text{ inches/foot})=1.5\\text{ feet}.$$The amount of water in the basement initially is$$1.5\\cdot24\\cdot32=1152\\text{ cubic feet}.$$Converting this to gallons, we have$$(1152 \\text{ ft}^3)\\cdot(7.5 \\text { gallons/ft}^3)=8640 \\text{ gallons}.$$If each pump can pump out 8 gallons of water per minute, then three pumps can pump out $8\\cdot3=24$ gallons a minute. So it will take$$(8640 \\text{ gallons})/(24 \\text{ gallons/minute})=\\boxed{360}$$minutes to pump out all the water. }"
+}

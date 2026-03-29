@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0025",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "systems of linear equations with substitution",
+  "latex": "If $a + b = c$ and $b + c = 11$ and $c = 8$, what is the value of $a$?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 14.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Since $b+c=11$ and $c=8$, we can substitute for $c$ to have $b+8=11$ and $b=3$.  So $a+b=c$ becomes  $$a+3=8\\Rightarrow a=\\boxed{5}$$ }"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0080",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "proportions and similar figures (shadow problems)",
+  "latex": "Andrea notices that the 40-foot tree next to her is casting a 10-foot shadow. How tall, in inches, is Andrea if she is casting a 15-inch shadow at the same time?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 30.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} The ratio of the height of an object to the length of its shadow is $(40\\text{ feet})/(10\\text{ feet})=4$, so Andrea is $4\\times 15\\text{ inches}=\\boxed{60}$ inches tall. }"
+}

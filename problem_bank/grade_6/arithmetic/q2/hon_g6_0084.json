@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0084",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "proportions and scale models",
+  "latex": "Andrew is building a scale model of an elephant. He determines that a real elephant is 10 feet tall and 14 feet long. If Andrew wants his model to be 8 inches tall, how many inches long should his model be?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 31.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} We begin by setting up the proportion $\\dfrac{\\text{height of real elephant}}{\\text{length of real elephant}} = \\dfrac{\\text{height of model}}{\\text{length of model}}$. Letting $x$ be the length of the model in inches and plugging in the information from the problem, we have $\\dfrac{10\\;\\cancel{\\text{feet}}}{14\\;\\cancel{\\text{feet}}} = \\dfrac{8\\;\\cancel{\\text{inches}}}{x\\;\\cancel{\\text{inches}}}$. Multiplying each side by $14x$, we have\\begin{align*} 10x = 14\\times 8 \\\\ \\Rightarrow\\qquad 10x = 112 \\\\ \\Rightarrow\\quad x = \\boxed{11.2}. \\end{align*} }"
+}

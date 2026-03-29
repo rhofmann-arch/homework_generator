@@ -12,6 +12,6 @@
   "source_problem_number": null,
   "honors": true,
   "approved": false,
-  "flagged": false,
-  "notes": ""
+  "flagged": true,
+  "notes": "}  \\textbf{Answer:} Since $M = 2007 \\div 3$, then $M = 669$.  Since $N = M \\div 3$, then $N = 669 \\div 3 = 223$.  Since $X = M-N$, then $X = 669 - 223 = \\boxed{446}$. }"
 }

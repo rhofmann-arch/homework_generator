@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0058",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "mean with algebraic equation",
+  "latex": "The mean of 5, 8 and 17 is equal to the mean of 12 and $y$. What is the value of $y$?\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 24.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Recall that the order of operations says that the squares must be performed first, followed by the multiplication, and then the addition and subtraction. We get\\begin{align*}4^2+3^2\\cdot 2^2-5^2&=16+9\\cdot 4-25 \\\\ &=16+36-25 \\\\ &=52-25 \\\\ &=\\boxed{27}.\\end{align*} }"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0067",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "fractions and decimals on number line",
+  "latex": "On the number line, let $A=12.3$ and let $B=\\dfrac{25}{2}$. What is the value of $C$, as a decimal to the nearest hundredth, if $C$ is three-quarters of the way from $A$ to $B$?\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 27.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} In decimal form, $B=12.5$, so the length of $\\overline{AB}=12.5-12.3=0.2$. Three-quarters of $0.2$ is $\\dfrac{3}{4}(0.2)=0.15$. Since $C$ is three-quarters of the way from $A$ to $B$, we start at $A$ and add $0.15$, to find that $C=12.3+0.15=\\boxed{12.45}$. }"
+}

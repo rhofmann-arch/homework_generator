@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "unit conversion and proportional reasoning",
+  "latex": "A robot moving forward at a constant speed takes 2.5 hours to travel 1 kilometer. Moving forward at this same constant speed, it takes the robot 90 seconds to travel the length of a particular hallway. How many meters long is the hallway?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 10.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
