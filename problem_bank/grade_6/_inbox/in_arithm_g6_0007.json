@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "mean and total from average",
+  "latex": "Angelique averaged 14.4 points per game for 15 games. What is the total number of points that she scored during those 15 games?",
+  "answer_latex": "216 \\text{ points}",
+  "suggested_quarter": 1,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

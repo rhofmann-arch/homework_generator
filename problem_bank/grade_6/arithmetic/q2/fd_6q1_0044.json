@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0044",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Decimal division with money, counting coins",
+  "latex": "How many pennies are in $\\$1.50$?",
+  "answer_latex": "150 pennies",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 44,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

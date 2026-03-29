@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0010",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "surface area and volume of cube",
+  "latex": "The surface area of a cube is 150 cm$^2$. What is the volume, in cm$^3$, of the cube?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

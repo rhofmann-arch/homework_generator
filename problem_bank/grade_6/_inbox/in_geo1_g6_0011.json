@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0011",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "volume of open box from folded net",
+  "latex": "A square measures 6 centimeters on each side. A 1.5-centimeter square is cut from each corner. The sides are folded up to form a box. How many cubic centimeters are in the volume of the box formed? Express your answer as a decimal to the nearest tenth.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

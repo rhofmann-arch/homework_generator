@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0052",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Two-step equations with fractions",
+  "latex": "Solve for $b$.\n$$39 = -7 + \\frac{2}{3}b$$",
+  "answer_latex": "b = 69",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 52,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0022",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "decimal multiplication by powers of 10",
+  "latex": "Evaluate: $116.4 \\times 10$",
+  "answer_latex": "1164",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 22,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

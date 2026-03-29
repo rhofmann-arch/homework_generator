@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0050",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Two-step equations with decimals",
+  "latex": "Solve for $b$.\n$$-0.3b + 3.5 = 2.42$$",
+  "answer_latex": "b = 3.6",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 50,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q1_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step addition equation, whole numbers",
+  "latex": "Solve for $r$.\n$$10 = r + 8$$",
+  "answer_latex": "r = 2",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

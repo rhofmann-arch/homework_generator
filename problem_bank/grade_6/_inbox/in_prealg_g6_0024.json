@@ -1,0 +1,15 @@
+{
+  "id": "in_prealg_g6_0024",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "mean and mode, solving for unknown value",
+  "latex": "The mean and unique mode of the list $3, 4, 5, x$ are the same integer. What is the value of $x$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 24,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

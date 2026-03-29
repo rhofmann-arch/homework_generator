@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0016",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step multiplication word problem",
+  "latex": "There are 250 soldiers in a company, 4 companies in a battalion, 3 battalions in a regiment, 3 regiments in a brigade, and 3 brigades in a division. How many soldiers are in a division?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 16,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

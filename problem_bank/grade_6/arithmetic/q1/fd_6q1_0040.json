@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0040",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Rounding decimals to the nearest hundredth",
+  "latex": "Select ALL numbers that round to $5.82$ (when rounded to the nearest hundredth).\n\n$\\square$ $5.829$\n\n$\\square$ $5.815$\n\n$\\square$ $5.812$\n\n$\\square$ $5.825$\n\n$\\square$ $5.824$\n\n$\\square$ $5.818$",
+  "answer_latex": "$5.815$, $5.824$, $5.818$",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 40,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

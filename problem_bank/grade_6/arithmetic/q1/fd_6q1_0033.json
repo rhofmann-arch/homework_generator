@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0033",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "rounding decimals to the nearest whole number",
+  "latex": "Round $1.93$ to the nearest whole number.",
+  "answer_latex": "2",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 33,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

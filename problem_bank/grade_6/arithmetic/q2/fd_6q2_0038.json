@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q2_0038",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "identifying decimals that round to a given value",
+  "latex": "Select ALL numbers that round to $4$ (when rounded to the nearest whole number).\n\n$\\square$ $4.025$\n\n$\\square$ $3.836$\n\n$\\square$ $3.922$\n\n$\\square$ $4.514$\n\n$\\square$ $4.701$\n\n$\\square$ $3.556$",
+  "answer_latex": "4.025, 3.836, 3.922, 3.556",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 38,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

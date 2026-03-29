@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0049",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Two-step equations with decimals and division",
+  "latex": "Solve for $a$.\n$$0.6 + \\frac{a}{1.6} = 0.85$$",
+  "answer_latex": "a = 0.4",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 49,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

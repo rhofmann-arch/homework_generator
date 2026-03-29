@@ -1,0 +1,15 @@
+{
+  "id": "in_algebr_g6_0003",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "algebraic manipulation, linear expressions",
+  "latex": "If $2x + y = 8$, what is the value of $4x + 2y$?",
+  "answer_latex": "16",
+  "suggested_quarter": 2,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

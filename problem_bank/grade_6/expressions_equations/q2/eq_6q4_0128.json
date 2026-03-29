@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q4_0128",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Combining like terms",
+  "latex": "Find an expression which represents the sum of $(2x + 4)$ and $(8x + 6)$ in simplest terms.",
+  "answer_latex": "10x + 10",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 53,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

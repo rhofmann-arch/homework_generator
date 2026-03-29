@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0006",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "arc length given circumference and central angle",
+  "latex": "The circumference of a circle $A$ is 60 feet. How many feet long is $\\widehat{BC}$? [Diagram shows a circle with center $A$, points $B$ and $C$ on the circle, and a central angle of $60^\\circ$ at $A$]",
+  "answer_latex": "10 \\text{ feet}",
+  "suggested_quarter": 2,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 6,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

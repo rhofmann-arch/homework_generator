@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "volume of rectangular prism",
+  "latex": "A tissue box has a length of 9 inches, a width of 5 inches, and a height of 2 inches. What is the volume of the box, in cubic inches?",
+  "answer_latex": "90 \\text{ cubic inches}",
+  "suggested_quarter": 1,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

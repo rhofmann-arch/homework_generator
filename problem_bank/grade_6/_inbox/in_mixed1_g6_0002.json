@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed1_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "divisibility, factors, counting",
+  "latex": "A band has 72 members who will all be marching during halftime. They need to march in rows with the same number of students per row. If there must be between 5 and 20 students per row, in how many possible row-lengths can the band be arranged?",
+  "answer_latex": "5",
+  "suggested_quarter": 2,
+  "source_file": "Mixed1.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

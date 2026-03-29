@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0119",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Distributive property",
+  "latex": "Use the distributive property to write an equivalent expression.\n$$3(4m + 4)$$",
+  "answer_latex": "$12m + 12$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 44,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0061",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "Two-step equation with distributive property",
+  "latex": "Solve. $8(z - 6) = -96$",
+  "answer_latex": "z = -6",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 61,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q1_0062",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Perimeter of a square, word problem",
+  "latex": "Adam's school is painting a square mural on one of its walls. They want to put a string of blinking lights all around the sides. How long should their string be in feet if the mural measures $7$ feet long on each side?",
+  "answer_latex": "28 \\text{ feet}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 62,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

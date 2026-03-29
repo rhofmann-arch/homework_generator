@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q1_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "area of a rectangle with fractional side lengths",
+  "latex": "What is the area in square feet of the rectangle shown below? Express your answer as a fraction or mixed number.\n\n[DIAGRAM]\n\nA rectangle with length $3\\frac{2}{3}$ and width $1\\frac{1}{2}$.",
+  "answer_latex": "5\\frac{3}{6} \\text{ ft}^2",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_algebr_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratio and proportion, part-to-whole relationships",
+  "latex": "The ratio of the number of boys to the number of girls in Ms. Moore's class is $3 : 4$. There are 56 students in the class. How many students are girls?",
+  "answer_latex": "32 \\text{ students}",
+  "suggested_quarter": 2,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 9,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

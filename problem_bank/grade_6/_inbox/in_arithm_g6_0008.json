@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0008",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "solving equations with fractions",
+  "latex": "If 15 is $\\frac{3}{5}$ of $N$, what is the value of $N$?",
+  "answer_latex": "25",
+  "suggested_quarter": 1,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 8,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

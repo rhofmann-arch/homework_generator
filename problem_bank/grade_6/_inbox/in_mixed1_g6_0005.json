@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed1_g6_0005",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "averages, mean calculation",
+  "latex": "Arthur's scores on his first five tests were 86, 80, 85, 75 and 84. What score must he get on the next test so that his average will be exactly 85?",
+  "answer_latex": "100",
+  "suggested_quarter": 2,
+  "source_file": "Mixed1.pdf",
+  "source_problem_number": 5,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

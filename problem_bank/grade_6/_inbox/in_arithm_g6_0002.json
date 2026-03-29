@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "custom operations with exponents",
+  "latex": "If $a \\clubsuit b = a^b - b^a$, what is the value of $3 \\clubsuit 5$?",
+  "answer_latex": "118",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

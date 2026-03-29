@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q1_0064",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Perimeter of a rectangle, word problem",
+  "latex": "Arturo's school is painting a rectangular mural on one of its walls. They want to put a string of blinking lights all around the sides. How long should their string be in feet if the mural measures $6$ feet long by $11$ feet wide?",
+  "answer_latex": "34 \\text{ feet}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 64,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

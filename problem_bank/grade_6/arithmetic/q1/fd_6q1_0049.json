@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0049",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Decimal addition word problem",
+  "latex": "Cameron has a rabbit that weighs $9.92$ pounds and a guinea pig that weighs $1.54$ pounds. What do they weigh together?",
+  "answer_latex": "$11.46$ pounds",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 49,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

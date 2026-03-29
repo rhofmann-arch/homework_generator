@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q4_0126",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Combining like terms",
+  "latex": "Find an expression which represents the sum of $(x + 7)$ and $(3x + 1)$ in simplest terms.",
+  "answer_latex": "4x + 8",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 51,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

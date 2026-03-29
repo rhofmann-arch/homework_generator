@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q2_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "decimal subtraction word problem with money",
+  "latex": "At the movie concession stand, a bag of popcorn costs $\\$2.19$, a drink costs $\\$3.41$, and a box of candy costs $\\$3.11$. Easton buys one drink. How much change will he get if he pays with a ten-dollar bill?",
+  "answer_latex": "\\$6.59",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

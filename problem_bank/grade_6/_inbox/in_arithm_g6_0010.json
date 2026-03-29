@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0010",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "sequential fraction word problem",
+  "latex": "Four friends shared a bottle of water. The first drank $\\frac{1}{4}$ of the water. The second drank $\\frac{1}{3}$ of the remainder. The third drank $\\frac{1}{2}$ of what was left. The fourth friend drank the last six ounces. How many ounces of water were originally in the bottle?",
+  "answer_latex": "24 \\text{ ounces}",
+  "suggested_quarter": 3,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

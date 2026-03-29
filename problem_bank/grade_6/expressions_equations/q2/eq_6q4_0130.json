@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q4_0130",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "combining like terms",
+  "latex": "Find an expression which represents the sum of $(2x + 10)$ and $(7x + 7)$ in simplest terms.",
+  "answer_latex": "9x + 17",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 55,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

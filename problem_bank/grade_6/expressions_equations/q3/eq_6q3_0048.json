@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0048",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equations with decimals",
+  "latex": "Solve for $y$.\n$$0.58 = -1.1y - 0.3$$",
+  "answer_latex": "y = -0.8",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 48,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

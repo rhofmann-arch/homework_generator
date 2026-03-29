@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0045",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Decimal division with money, counting coins",
+  "latex": "How many pennies are in $\\$1.00$?",
+  "answer_latex": "100 pennies",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 45,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0008",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "volume of rectangular prism from face areas",
+  "latex": "A right, rectangular prism has three faces with areas of 6, 8 and 12 square inches. What is the volume of the prism, in cubic inches?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 8,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

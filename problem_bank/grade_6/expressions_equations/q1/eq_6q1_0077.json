@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q1_0077",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "Writing expressions from words (subtraction)",
+  "latex": "Write an expression for $36$ less than some number $y$.",
+  "answer_latex": "$y - 36$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

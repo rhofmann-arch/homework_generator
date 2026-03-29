@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0017",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "one-step multiplication equation with integers",
+  "latex": "Solve for $x$.\n$$-27 = -9x$$",
+  "answer_latex": "x = 3",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

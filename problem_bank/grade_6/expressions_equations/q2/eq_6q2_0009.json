@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0009",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "one-step addition equation with decimals",
+  "latex": "Find the value of $x$ in the equation below.\n$$15.4 = 5.2 + x$$",
+  "answer_latex": "x = 10.2",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q1_0084",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "identifying parts of expressions (variables)",
+  "latex": "Identify the variable in the expression below.\n$$7a + 10$$",
+  "answer_latex": "a",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

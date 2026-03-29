@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q4_0107",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Combining like terms",
+  "latex": "Which expression is equivalent to $3x + 7x + 9x$?\n\nA. $19x$ \\quad B. $13x$\n\nC. $1 + 16x$ \\quad D. $x + 16$",
+  "answer_latex": "A. $19x$",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 32,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

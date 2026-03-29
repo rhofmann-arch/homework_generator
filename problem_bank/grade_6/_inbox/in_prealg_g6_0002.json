@@ -1,0 +1,15 @@
+{
+  "id": "in_prealg_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "fraction operations, word problem",
+  "latex": "A round birthday cake was divided into 16 congruent slices, and $\\frac{3}{8}$ of the cake was eaten. The next day, five slices were eaten. How much of the original cake is left? Express your answer as a common fraction.",
+  "answer_latex": "\\frac{5}{16}",
+  "suggested_quarter": 2,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0031",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "one-step equation, division with negative integers",
+  "latex": "What value of $x$ is the solution to the equation below?\n$$-9 = \\frac{x}{-5}$$",
+  "answer_latex": "$x = 45$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 31,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

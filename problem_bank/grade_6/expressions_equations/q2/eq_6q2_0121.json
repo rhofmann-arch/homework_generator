@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0121",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Evaluating expressions by substitution",
+  "latex": "What is the value of the expression $8z - 4$ when $z = 7$?",
+  "answer_latex": "52",
+  "source_file": "Expressions.pdf",
+  "source_problem_number": 46,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

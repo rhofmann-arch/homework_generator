@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed1_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "profit and loss, arithmetic word problem",
+  "latex": "Jacob bought a CD for \\$15 and sold it for \\$20. He then bought it back for \\$25 and sold it again for \\$28. How many dollars profit did he make?",
+  "answer_latex": "8",
+  "suggested_quarter": 1,
+  "source_file": "Mixed1.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

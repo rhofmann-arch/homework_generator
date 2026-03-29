@@ -1,0 +1,15 @@
+{
+  "id": "in_algebr_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratios, simplifying fractions",
+  "latex": "If 75 seeds are planted and 15 of the seeds are germinating, what is the ratio of seeds germinating to seeds planted? Express your answer as a common fraction.",
+  "answer_latex": "\\frac{1}{5}",
+  "suggested_quarter": 1,
+  "source_file": "Algebra1.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

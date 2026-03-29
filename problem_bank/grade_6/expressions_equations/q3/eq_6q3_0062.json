@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0062",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equation with distributive property",
+  "latex": "Solve. $4(x - 10) = -12$",
+  "answer_latex": "x = 7",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 62,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

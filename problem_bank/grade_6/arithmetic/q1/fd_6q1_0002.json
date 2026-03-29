@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "placing decimals on a number line",
+  "latex": "Place $0.21$ on the number line below.\n\n[DIAGRAM]",
+  "answer_latex": "0.21",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

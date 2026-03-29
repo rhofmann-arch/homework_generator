@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0026",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "whole number division by powers of 10",
+  "latex": "Compute. Express your answer as a whole number or decimal.\n$$98000 \\div 100$$",
+  "answer_latex": "980",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 26,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

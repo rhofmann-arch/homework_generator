@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q1_0021",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "decimal division by powers of 10",
+  "latex": "Evaluate: $670.9 \\div 10$",
+  "answer_latex": "67.09",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

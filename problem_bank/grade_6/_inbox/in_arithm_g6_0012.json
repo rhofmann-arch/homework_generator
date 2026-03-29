@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0012",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "geometric sequences with fractions",
+  "latex": "Each bounce of a ball goes $\\frac{3}{4}$ as high as the previous bounce. The second bounce was 24 inches high. What was the height, in inches, of the first bounce?",
+  "answer_latex": "32 \\text{ inches}",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 12,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

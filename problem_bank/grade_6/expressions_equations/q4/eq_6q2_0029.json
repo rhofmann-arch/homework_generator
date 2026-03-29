@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0029",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "one-step equation, division with negative integers",
+  "latex": "Solve for $b$.\n$$-3 = \\frac{b}{-6}$$",
+  "answer_latex": "$b = 18$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 29,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

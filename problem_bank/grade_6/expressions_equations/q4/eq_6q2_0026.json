@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0026",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "one-step equation, division with integers",
+  "latex": "Solve for $t$.\n$$\\frac{t}{5} = -1$$",
+  "answer_latex": "$t = -5$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 26,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

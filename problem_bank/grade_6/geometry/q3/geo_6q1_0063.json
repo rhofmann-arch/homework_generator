@@ -1,0 +1,15 @@
+{
+  "id": "geo_6q1_0063",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Perimeter of a rectangle, word problem",
+  "latex": "At Santiago's school they're setting up a play space on an unused parking lot outside. They want to build a plastic fence for safety. How many one-foot lengths of plastic fence would they need to go all the way around a rectangular space $12$ feet long by $20$ feet wide?",
+  "answer_latex": "64 \\text{ one-foot lengths}",
+  "source_file": "Geometry.pdf",
+  "source_problem_number": 63,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

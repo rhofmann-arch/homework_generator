@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q1_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step addition equation, whole numbers",
+  "latex": "Solve for $s$.\n$$10 = 5 + s$$",
+  "answer_latex": "s = 5",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

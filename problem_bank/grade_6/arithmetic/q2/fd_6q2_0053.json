@@ -1,0 +1,15 @@
+{
+  "id": "fd_6q2_0053",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "Decimal division word problem, choosing correct expression",
+  "latex": "Nolan used $9.6$ grams of sugar in each loaf of bread he made. In all, he used $57.6$ grams of sugar. Which expression below represents how many loaves of bread Nolan made?\n\nA. $57.6 \\div 9.6$\n\nB. $57.6 - 9.6$\n\nC. $57.6 \\times 9.6$\n\nD. $57.6 + 9.6$",
+  "answer_latex": "A",
+  "source_file": "Decimal Practice.pdf",
+  "source_problem_number": 53,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

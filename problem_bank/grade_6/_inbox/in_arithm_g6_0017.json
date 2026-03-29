@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0017",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "adding fractions with unlike denominators",
+  "latex": "What is the sum $\\frac{2}{7} + \\frac{4}{13} + \\frac{4}{7} + \\frac{2}{13} + \\frac{1}{7} + \\frac{7}{13}$?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Arithmetic1.pdf",
+  "source_problem_number": 17,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

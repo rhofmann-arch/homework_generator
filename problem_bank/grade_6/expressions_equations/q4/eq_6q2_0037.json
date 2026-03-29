@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0037",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "One-step equation with fractions, multiplication/division",
+  "latex": "Solve for $a$ and simplify your answer.\n$$11 = -\\frac{3}{2}a$$",
+  "answer_latex": "$a = -\\frac{22}{3}$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 37,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}

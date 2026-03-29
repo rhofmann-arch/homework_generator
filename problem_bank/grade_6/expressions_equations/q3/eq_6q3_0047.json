@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q3_0047",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Two-step equations with decimals and division",
+  "latex": "Solve for $z$.\n$$-31.2 = 3.8 - \\frac{z}{0.1}$$",
+  "answer_latex": "z = 3.5",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 47,
+  "approved": true,
+  "notes": "",
+  "honors": true,
+  "flagged": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_geo1_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent change in volume of rectangular prism",
+  "latex": "The width, length, and height of a rectangular prism are each increased by $10\\%$. What is the percent increase in the volume of the prism? Express your answer to the nearest whole number.",
+  "answer_latex": "33 \\text{ percent}",
+  "suggested_quarter": 3,
+  "source_file": "geo1.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

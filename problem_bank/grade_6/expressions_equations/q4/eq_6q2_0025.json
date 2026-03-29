@@ -1,0 +1,15 @@
+{
+  "id": "eq_6q2_0025",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "one-step equation, multiplication/division with integers",
+  "latex": "Solve for $w$. You must write your answer in fully simplified form.\n$$-6w = 8$$",
+  "answer_latex": "$w = -\\frac{4}{3}$",
+  "source_file": "Equations.pdf",
+  "source_problem_number": 25,
+  "approved": true,
+  "notes": "",
+  "honors": false,
+  "flagged": false
+}
