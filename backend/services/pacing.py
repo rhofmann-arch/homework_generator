@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 Reads the pacing guide Excel and returns the context needed
 to generate one week (or one day) of homework.
@@ -16,7 +17,8 @@ PACING_DIR = (
 )
 
 GUIDE_FILES = {
-    "6": "6th_Grade_Math_Pacing_Guide_2026-2027.xlsx",
+    "6":          "grade_6.xlsx",
+    "6_advanced": "grade_6_advanced.xlsx",
 }
 
 COLS = ["day_num", "date", "dow", "notes", "lesson", "topic",
@@ -27,8 +29,9 @@ COLS = ["day_num", "date", "dow", "notes", "lesson", "topic",
 class WeekContext:
     grade: str
     week_start: str
-    hw_days: list
+    hw_days: list           # each dict now includes "topic"
     current_lessons: list
+    current_topic: str      # topic string for the current week's lesson (for Pool D / Option C)
     covered_lessons: list
     covered_topics: list
     lesson_title: str
@@ -69,6 +72,8 @@ def _load_full_df(grade: str) -> pd.DataFrame:
     xl = pd.ExcelFile(guide_file)
     frames = []
     for sheet_name in xl.sheet_names:
+        if sheet_name.lower() == "sheet1":  # skip empty placeholder sheets
+            continue
         df = _load_sheet(xl, sheet_name)
         df["_sheet"] = sheet_name
         frames.append(df)
@@ -105,6 +110,7 @@ def get_week_context(week_start: str, grade: str,
             "date":    str(row["date"]),
             "day_num": str(row["hw_front"]),
             "lesson":  str(row["lesson"]) if pd.notna(row["lesson"]) else "",
+            "topic":   str(row["topic"])  if pd.notna(row["topic"])  else "",
             "dow":     str(row["dow"])    if pd.notna(row["dow"])    else "",
         }
         for _, row in hw_week.iterrows()
@@ -139,6 +145,19 @@ def get_week_context(week_start: str, grade: str,
     if not covered_topics:
         covered_topics = covered_lessons[:]
 
+    # current_topic: the topic(s) being taught this week, for Pool D prompt
+    current_week_topics = []
+    seen_ct = set()
+    for _, r in week_rows.iterrows():
+        val = str(r["topic"]) if pd.notna(r["topic"]) else ""
+        if val and val not in ("nan", "None") and val not in seen_ct:
+            seen_ct.add(val)
+            current_week_topics.append(val)
+    # Fall back to lesson names if topics not filled in
+    if not current_week_topics:
+        current_week_topics = current_lessons[:]
+    current_topic = "; ".join(current_week_topics) if current_week_topics else "Lesson Practice"
+
     lesson_title = covered_topics[-1] if covered_topics else "Lesson Practice"
 
     hw_numbers = []
@@ -153,6 +172,7 @@ def get_week_context(week_start: str, grade: str,
         week_start=week_start,
         hw_days=hw_days,
         current_lessons=current_lessons,
+        current_topic=current_topic,
         covered_lessons=covered_lessons,
         covered_topics=covered_topics,
         lesson_title=lesson_title,
@@ -169,7 +189,6 @@ def get_all_weeks(grade: str) -> dict:
     df = _load_full_df(grade)
     hw_rows = df[df["hw_front"].notna()].copy()
 
-    # Group by the Monday of each week
     def _to_monday(d):
         return d - timedelta(days=d.weekday())
 
