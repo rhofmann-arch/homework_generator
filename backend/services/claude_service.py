@@ -4,7 +4,7 @@ from pathlib import Path
 import anthropic
 from services.pacing import WeekContext
 from services.lesson_pdf import find_lesson_pdf, pdf_to_base64
-from routes.bank import sample_problems
+from services.bank import sample_problems
 
 logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -71,7 +71,7 @@ BACK_TOOL = {
                     },
                     "required": ["latex"]
                 },
-                "minItems": 5,
+                "minItems": 10,
                 "maxItems": 10,
             },
         },
@@ -135,7 +135,7 @@ def _back_prompt(
     either [{"type": "text", ...}] alone, or with PDF document blocks prepended
     when a lesson PDF is available.
     """
-    n = "5-7" if class_type == "honors" else "8-10"
+    n = "10"
 
     system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
@@ -149,10 +149,13 @@ Rules for lesson practice problems:
 - Do not repeat topics from spiral_topics: {spiral_topics}
 - Match the style, format, and difficulty of the provided worksheet exactly —
   same problem structure, same vocabulary, same level of scaffolding.
-- Vary problem types (computation, word problem, true/false, error analysis)
-  but only as those types appear in the provided worksheet.
+- Vary problem types (computation, word problem, fill-in, true/false) but
+  do NOT include error analysis problems (e.g. "find the mistake", "a student
+  says... identify the error"). These are excluded from lesson practice.
 - Do NOT include a challenge section, challenge block, or \\challengeblock macro.
   Challenge problems are handled separately and must not appear here.
+- When a problem includes a tikz diagram, add \\vspace{{6pt}} immediately before
+  the \\begin{{tikzpicture}} so the diagram does not crowd the problem text.
 """
 
     # Build content blocks — start with any lesson PDFs we can find

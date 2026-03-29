@@ -19,6 +19,9 @@ COURSE_NAMES = {
 
 PROBLEMS_PER_COL = 5   # front: always 5 per column = 10 total
 
+# Space reserved below back minipage for the challenge block.
+CHALLENGE_BLOCK_HT = "3.10in"
+
 
 def _escape_tex(s: str) -> str:
     return (s
@@ -73,13 +76,18 @@ def _render_front(problems: list[dict]) -> tuple[str, str]:
 
 def _render_back(problems: list[dict], class_type: str) -> str:
     """
-    Two-column back problems via multicols — fixed work space per problem.
-    All problems use \backproblem (fixed \vspace, no vfill needed).
+    Single-column back problems inside a fixed-height [s] minipage.
+    - grade_level: last problem has no rule (page bottom is natural end).
+    - honors:      all problems have rule — challenge block follows below.
     """
     lines = []
-    for p in problems:
+    for i, p in enumerate(problems):
         latex = p["latex"].strip()
-        lines.append(rf"\backproblem{{{latex}}}")
+        is_last = (i == len(problems) - 1)
+        if is_last and class_type == "grade_level":
+            lines.append(_last_problem(latex))
+        else:
+            lines.append(rf"\backproblem{{{latex}}}")
     return "\n".join(lines)
 
 
@@ -94,7 +102,14 @@ def _challenge_block(problems: list[dict]) -> str:
             rf"\noindent\textbf{{\normalsize\theprob.}}\enspace\normalsize {latex}"
             r"\par\vspace{1.0in}"
         )
-    return r"\clearpage" + "\n" + rf"\challengeblock{{{chr(10).join(parts)}}}"
+    return rf"\challengeblock{{{chr(10).join(parts)}}}"
+
+
+def _back_col_ht(class_type: str) -> str:
+    """LaTeX dimension string for the back minipage height."""
+    if class_type == "honors":
+        return rf"\dimexpr\bodycolht-{CHALLENGE_BLOCK_HT}\relax"
+    return r"\bodycolht"
 
 
 def _compile(tmpdir: str, tex_path: str) -> str:
@@ -120,11 +135,10 @@ def _compile(tmpdir: str, tex_path: str) -> str:
 async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> str:
     template = TEMPLATE_PATH.read_text()
 
-    grade_key    = str(context.grade).split("_")[0]   # "6_advanced" → "6"
-    course_name  = COURSE_NAMES.get((grade_key, class_type), f"Grade {grade_key} Math")
+    course_name  = COURSE_NAMES.get((context.grade, class_type), f"Grade {context.grade} Math")
     display_date = context.hw_days[0]["date"] if context.hw_days else context.week_start
     d            = datetime.strptime(display_date, "%Y-%m-%d")
-    date_str     = f"Week of {d.strftime('%b %-d, %Y')}"
+    date_str     = d.strftime("%b %-d, %Y")
 
     hw_number      = str(context.hw_numbers[0]) if context.hw_numbers else "—"
     lesson_numbers = _escape_tex(", ".join(context.current_lessons[:4]))
@@ -133,6 +147,7 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
     front_left, front_right = _render_front(_normalize_problems(problems["front_problems"]))
     back_block              = _render_back(_normalize_problems(problems["back_problems"]), class_type)
     challenge               = _challenge_block(_normalize_problems(problems.get("challenge_problems", [])))
+    back_ht                 = _back_col_ht(class_type)
 
     filled = (template
         .replace("<<COURSE_NAME>>",    course_name)
@@ -142,6 +157,7 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
         .replace("<<FRONT_COL_RIGHT>>",front_right)
         .replace("<<LESSON_NUMBERS>>", lesson_numbers)
         .replace("<<LESSON_TITLE>>",   lesson_title)
+        .replace("<<BACK_COL_HT>>",    back_ht)
         .replace("<<BACK_PROBLEMS>>",  back_block)
         .replace("<<CHALLENGE_BLOCK>>",challenge)
     )
