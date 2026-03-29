@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0033",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of rectangles formed from subdivided square",
+  "latex": "The square shown is divided into 4 congruent rectangles. If the perimeter of the square is 144 units, what is the perimeter of one of the four congruent rectangles?\n\n\\begin{center}\n    \\begin{asy}\n    size(8cm);\ndefaultpen(linewidth(0.8));\ndraw(unitsquare);\ndraw((0,0.25)--(1,0.25)); draw((0,0.5)--(1,0.5)); draw((0,0.75)--(1,0.75));\n    \\end{asy}\n\\end{center}\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 16.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} $AB$ consists of 24 segments each of length 20 feet, and so it measures $24\\cdot20=480$ feet. Similarly, $DE=480$ feet. Each of $BC$, $CD$, $EF$, and $FA$ measure 62 feet. In total, the perimeter is $480+480+62+62+62+62=\\boxed{1208}$ feet. }"
+}

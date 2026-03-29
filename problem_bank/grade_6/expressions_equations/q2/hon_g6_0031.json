@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0031",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "two-step equations with substitution and negative numbers",
+  "latex": "If $2x+3y = 4$ and $y = 34$, what is the value of $x$?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 16.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Substituting $y$, we obtain $2x+3(34) = 4$. Solving for $x$, we obtain:  \\begin{align*} 2x+3(34) &= 4\\\\ \\Rightarrow \\qquad 2x + 102 &= 4\\\\ \\Rightarrow \\qquad 2x &= -98\\\\ \\Rightarrow \\qquad x &= \\boxed{-49} \\end{align*} }"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0056",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "fractions and rates word problem",
+  "latex": "A fuel tank holds 200 gallons of gasoline when full. The tank is currently $\\dispalystyle \\frac{4}{5}$\nfull. If fuel costs \\$5.50 per gallon, how many dollars worth of fuel are needed to fill the rest of the tank?\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 23.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} If the tank is $\\frac{4}{5}$ full, then it currently holds $\\frac{4}{5} \\times 200 = 160$ gallons of fuel, requiring 40 more gallons to fill the tank. This will cost $40 \\times \\$5.50 = \\boxed{\\$220}$. }"
+}

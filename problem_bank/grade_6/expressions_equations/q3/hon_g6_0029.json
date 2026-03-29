@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0029",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "systems of equations with fractions and percents",
+  "latex": "There are $81$ cars in the CMC parking lot, which are all Acuras, Beetles, or Camrys. There are half as many Acuras as Beetles. The number of Camrys is $80\\\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 15.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Let $B$ be the total number of Beetles in the parking lot. Then the number of Acuras is $\\frac{1}{2}B.$ Also, the number of Camrys is $80\\  Therefore, since the total number of cars in the parking lot is $81,$ we have $B + \\frac{1}{2}B + \\frac{6}{5}B = 81$ or $\\frac{27}{10}B = 81,$ or $B=\\frac{10}{27} \\times 81=30.$ Hence, the number of Beetles is $\\boxed{30}.$       }"
+}

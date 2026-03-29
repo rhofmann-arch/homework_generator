@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0044",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratio to percent conversion",
+  "latex": "The ratio of youths to adults at a skating rink is 13:7. What percent of these people are youths?\n",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 2.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Let the number of youths be $13x$. This means that the number of adults is $7x$, and the total number of people is $13x + 7x = 20x$. Thus, the percent of youths is $13x/20x = \\boxed{65\\ }"
+}

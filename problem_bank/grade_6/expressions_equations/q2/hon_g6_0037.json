@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0037",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "one-step equation manipulation",
+  "latex": "If $5x - 3 = 12$, what is the value of $5x + 3$?\n",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 18.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Adding 6 to both sides of $5x - 3 =12$ gives $5x -3 + 6 = 12 + 6$. Simplifying both sides gives $5x + 3 = \\boxed{18}$. }"
+}

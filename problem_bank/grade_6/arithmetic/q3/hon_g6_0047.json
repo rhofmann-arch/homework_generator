@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0047",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "percent increase and compound growth",
+  "latex": "The capacity of a school is 1100 students and the current enrollment is 980 students. If the student population increases at a rate of 5 percent per year, what is the smallest integer $n$ such that the enrollment will exceed the capacity in $n$ years?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 20.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Five percent of 980 is $980/20=49$, so after one year the enrollment will be $980+49=1029$. Five percent of 1029 is $49+5\\       }"
+}
