@@ -1,7 +1,8 @@
 % ============================================================
 %  MATH HOMEWORK — COMBINED 2-PAGE DOCUMENT
 %  Page 1 = Front (Spiral Review, two-column minipage)
-%  Page 2 = Back  (Lesson Practice, single-column minipage)
+%  Page 2 = Back  (Lesson Practice, two-column multicols)
+%  Page 3 = Challenge block (honors only, full-width, own page)
 %  All <<PLACEHOLDERS>> filled by latex_builder.py
 % ============================================================
 
@@ -21,10 +22,12 @@
 
 % --- Layout ---
 \usepackage[inline]{enumitem}
+\usepackage{multicol}
 \usepackage{array, tabularx, booktabs}
 \usepackage{graphicx, wrapfig}
 \usepackage{mdframed}
 \setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.9cm}
 
 % --- Color ---
 \usepackage{xcolor}
@@ -60,29 +63,27 @@
   \vspace{2pt}%
 }
 
-% Back problem: identical — vfill stretches in [s] minipage
+% Back problem: fixed work space — works in multicols (no vfill)
 \newcommand{\backproblem}[1]{%
   \stepcounter{prob}%
   \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
-  \vfill
+  \vspace{0.85in}%
   \noindent{\color{probrule}\hrule height 0.5pt}%
-  \vspace{2pt}%
+  \vspace{4pt}%
 }
 
-% Challenge block — sits below back minipage, full page width
-% Fixed 1.0in work space per problem so block height is predictable.
+% Challenge block — full page width, own page
 \newcommand{\challengeblock}[1]{%
-  \vspace{5pt}%
   \begin{mdframed}[
     backgroundcolor=challengebg,
     linecolor=honorsgreen,
     linewidth=1.0pt,
     roundcorner=3pt,
-    innertopmargin=5pt,
-    innerbottommargin=5pt,
+    innertopmargin=7pt,
+    innerbottommargin=8pt,
     innerleftmargin=9pt,
     innerrightmargin=9pt,
-    nobreak=true
+    nobreak=false
   ]%
     \noindent
     {\normalsize\textbf{\textcolor{honorsgreen}{$\bigstar$\ Challenge}}}%
@@ -90,13 +91,12 @@
     {\small\textit{\textcolor{honorsgreen}{Stretch your thinking}}}%
     \vspace{3pt}
     {\color{honorsgreen}\hrule height 0.5pt}%
-    \vspace{5pt}
+    \vspace{6pt}
     #1
   \end{mdframed}%
 }
 
-% Header band — bordered box, black text, B&W-safe
-% #1 = label   #2 = subtitle (pass {} to omit)
+% Header band
 \newcommand{\headerbar}[2]{%
   \noindent
   \fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
@@ -111,17 +111,13 @@
 }
 
 % ============================================================
-%  COLUMN HEIGHTS
-%  \textheight minus the fixed overhead shared by both pages:
-%  headheight + headsep + headerbar (~0.35in) + vspace (4pt)
-%  + bottom fudge to keep content off the margin edge.
-%  Tweak the subtracted constant if spacing looks off.
+%  COLUMN HEIGHTS (front page only)
 % ============================================================
 \newlength{\bodycolht}
 \setlength{\bodycolht}{\dimexpr\textheight-\headheight-\headsep-1.25in\relax}
 
 % ============================================================
-%  PAGE 1 — SPIRAL REVIEW (Front, two-column)
+%  PAGE 1 — SPIRAL REVIEW (Front, two-column minipage)
 % ============================================================
 
 \fancyhead[L]{%
@@ -135,8 +131,6 @@
 
 \headerbar{Spiral Review}{}
 
-% Two fixed-height [s] minipages — \vfill distributes work space
-% evenly among 5 problems per column.
 \noindent
 \begin{minipage}[t][\bodycolht][s]{0.464\linewidth}
 <<FRONT_COL_LEFT>>
@@ -149,7 +143,7 @@
 \end{minipage}
 
 % ============================================================
-%  PAGE 2 — LESSON PRACTICE (Back, single-column)
+%  PAGE 2 — LESSON PRACTICE (Back, two-column)
 % ============================================================
 \newpage
 
@@ -162,17 +156,14 @@
 
 \headerbar{Lesson Practice}{<<LESSON_TITLE>>}
 
-% Single-column fixed-height [s] minipage — \vfill distributes work
-% space evenly among back problems.
-% <<BACK_COL_HT>> is either \bodycolht (grade_level)
-%                        or \dimexpr\bodycolht-3.10in\relax (honors,
-%                           reserving ~3.1in for the challenge block).
-\begin{minipage}[t][<<BACK_COL_HT>>][s]{\linewidth}
+\begin{multicols}{2}
 <<BACK_PROBLEMS>>
-\end{minipage}
+\end{multicols}
 
-% Challenge block — honors only; empty string for grade_level.
-% Sits in the reserved space below the back minipage.
+% ============================================================
+%  PAGE 3 — CHALLENGE BLOCK (honors only, full-width)
+%  <<CHALLENGE_BLOCK>> is an empty string for grade_level.
+% ============================================================
 <<CHALLENGE_BLOCK>>
 
 \end{document}
