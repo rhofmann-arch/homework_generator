@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0222",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "distributive property and mental math",
+  "latex": "Albert is selling lemonade for $17$ cents a glass. On Monday, he sells $1323$ glasses of lemonade. On Tuesday, he sells $1677$ glasses of lemonade. How much money did Albert collect on Monday and Tuesday? Give your answer in cents.  No calculator!  Look for shortcuts.\n\n}\n\n\\textbf{Answer:} Albert collected $17 \\cdot 1323$ cents on Monday and $17 \\cdot 1677$ cents on Tuesday for a total of$$17 \\cdot 1323 + 17 \\cdot 1677$$cents. Using the distributive property of multiplication, we can rewrite this as$$17 \\cdot (1323 + 1677).$$Adding carefully gives us that $1323 + 1677 = 3000,$ so substitution gives$$17 \\cdot 3000 = 51000.$$We conclude that Albert collected $\\boxed{51000}$ cents.\n    \n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 8.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

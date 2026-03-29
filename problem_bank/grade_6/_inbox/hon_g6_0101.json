@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0101",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "arithmetic mean with unknown values",
+  "latex": "The arithmetic mean of four numbers is 15. Two of the numbers are 10 and 18 and the other two are equal. What is the product of the two equal numbers?\n\n}\n\n\\textbf{Answer:} If the mean of four numbers is $15$, then the sum of the four numbers is $15\\times4=60$. We subtract the two numbers we know to get $60-10-18=32$. So the sum of the two equal numbers is $32$ and their value is $\\frac{32}{2}=16$. The product of the two equal numbers is $16\\times16=\\boxed{256}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 37.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0194",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "function notation and substitution",
+  "latex": "If $a \\star b=2a+3b$ for all $a$ and $b$, then what is the value of $4 \\star 3$?\n\n}\n\n\\textbf{Answer:} Substituting 4 and 3 into the function gives\n\\begin{align*}\n4\\star3&=2(4)+3(3)\\\\\n&=8+9\\\\\n&=\\boxed{17}\n\\end{align*}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 65.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

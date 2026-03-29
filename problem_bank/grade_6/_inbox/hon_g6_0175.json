@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0175",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "average rate (harmonic mean)",
+  "latex": "A car gets 12 miles per gallon uphill and 24 miles per gallon downhill. If the car goes to the top of Pike's Peak and back (48 miles uphill followed by 48 miles downhill), what is the car's gas mileage, in miles per gallon, for the entire trip?\n\n}\n\n\\textbf{Answer:} The car takes 4 gallons uphill and 2 gallons downhill, for a total of 6 gallons. The car goes a total of 96 miles, leaving mileage at $\\frac{96}{6}=\\boxed{16}$ miles per gallon.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 6.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0040",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "mean of integers including negatives",
+  "latex": "The 5 a.m. temperatures for seven consecutive days were $-7^{\\circ}$, $-4^{\\circ}$, $-4^{\\circ}$, $-5^{\\circ}$, $1^{\\circ}$, $3^{\\circ}$ and $2^{\\circ}$ Celsius. What is the mean 5 a.m. temperature for the week in degrees Celsius?\n\n}\n\n\\textbf{Answer:} The sum of the data is $-14^\\circ$, so the mean is $\\frac{-14}{7} = \\boxed{-2}^\\circ$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 19.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

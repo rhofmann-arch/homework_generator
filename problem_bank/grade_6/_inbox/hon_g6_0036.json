@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0036",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perimeter of composite figure with squares on triangle sides",
+  "latex": "Squares are constructed on each of the sides of triangle $\\triangle ABC$, as shown. If the perimeter of $\\triangle ABC$ is 17, then what is the perimeter of the nine-sided figure that is composed of the remaining three sides of each of the squares?\n\n\\begin{center}\n\n        \\includegraphics[scale=0.5]{images/squares_rot.png}\n\n\\end{center}\n\n}\n\n\\textbf{Answer:} Since all sides of a square have the same length, the perimeter of the nine-sided figure is equal to\\[ AB + AB + AB + AC + AC + AC + BC + BC + BC. \\]But we know that $AB+AC+BC=17$, the perimeter of $\\triangle ABC$. Therefore the perimeter of the nine-sided figure is $3(17)=\\boxed{51}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 17.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

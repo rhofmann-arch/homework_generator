@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0168",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "fraction subtraction and division word problem",
+  "latex": "A wooden plank is $5$ feet long and $1\\frac{1}{2}$ inches thick. To make the plank $1\\frac{1}{8}$ inches thick, a carpenter removes the same thickness of wood from the top and bottom of the plank. How many inches does the carpenter remove from the top of the plank? Express your answer as a common fraction.\n\n}\n\n\\textbf{Answer:} To make the plank $1\\frac{1}{8}$ thick, $1\\frac{1}{2} - 1\\frac{1}{8}$ or $\\frac{3}{8}$ inches must be removed.  Half of that amount, or $\\boxed{\\frac{3}{16}}$ in\\, must be removed from the top.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 58.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

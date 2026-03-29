@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0082",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "circumference of inscribed circle",
+  "latex": "A circle is inscribed in a square with perimeter of 32 inches. What is the circumference of the circle, in inches? Express your answer in terms of $\\pi$.\n}\n\n\\textbf{Answer:} The length of the diameter of the circle is equal to the square's side length. The side length of the square is $(32\\text{ in.})/4=8$ inches. Therefore, the circumference of the circle is $\\pi\\cdot(8\\text{ in.})=\\boxed{8\\pi}$ inches.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 31.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

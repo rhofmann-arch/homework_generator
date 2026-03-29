@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed2_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "pattern recognition, triangular numbers",
+  "latex": "A staircase is built by stacking rectangular railroad ties that measure one foot by one foot by three feet. Continuing the pattern shown in the figure, how many ties must be used to make a staircase ten feet high?",
+  "answer_latex": "55 \\text{ ties}",
+  "suggested_quarter": 3,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0161",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "setting up and solving linear equations from word problems",
+  "latex": "Dawn has $\\$ $1.20 in nickels, dimes and quarters. For each nickel she has one dime and for each dime she has one quarter. How many total coins does she have?\n\n}\n\n\\textbf{Answer:} If Dawn has $x$ nickels, then she has $x$ dimes and $x$ quarters. In cents, we set up an equation for how much money she has.\\begin{align*}\n5x+10x+25x&=120\\quad\\Rightarrow\\\\\n40x&=120\\quad\\Rightarrow\\\\\nx&=3\n\\end{align*}She has $3$ of each coin for a total of $\\boxed{9}$ coins.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 55.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

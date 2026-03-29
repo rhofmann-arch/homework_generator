@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0096",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "working backwards with fractions",
+  "latex": "Boar Ring gave a speech to an assembly of students. After five minutes, half of the students left; 10 minutes later a third of the remaining audience left. After twenty more minutes, half of the remaining audience left, leaving only three people in the audience. How many people were in the audience at the beginning of Mr. Ring's speech?\n\n}\n\n\\textbf{Answer:} Let the number of people in the audience at the beginning be $x$. After five minutes, there are $\\frac{1}{2}x$ people left. Ten minutes later there are $\\frac{2}{3}\\cdot\\frac{1}{2}x=\\frac{1}{3}x$ people left. Twenty minutes later, there are $\\frac{1}{2}\\cdot\\frac{1}{3}x=\\frac{1}{6}x$ people left. Since we are given that at this time, there are only three people left, we have the equation $\\frac{1}{6}x=3$. Solving for $x$ yields $x=18$. Thus, there were $\\boxed{18}$ people in the audience at the beginning.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 35.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

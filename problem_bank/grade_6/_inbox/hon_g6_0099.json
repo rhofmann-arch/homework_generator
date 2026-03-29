@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0099",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "average speed - harmonic mean concept",
+  "latex": "Darius took a trip to his mother's house, which is 60 miles away.  On the way there, he drove 60 miles per hour.  But because of construction on the way home, he was able to drive only 30 miles per hour.  What was Darius' average speed for the entire trip?\n\n}\n\n\\textbf{Answer:} The average speed is total distance divided by total time.  The time for the first part of the trip was one hour, while the return journey took two hours.  The total distance was 120 miles.  $\\displaystyle \\frac{120}{3}=\\boxed{40}$ miles per hour.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 36.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

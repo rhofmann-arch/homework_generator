@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0173",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "combined rates and distance problems",
+  "latex": "Agents J and K work in a long hallway with 4000 equally-spaced, consecutive offices. The agents decide to walk toward each other so they can meet and have lunch together. Agent J has recently been relocated from office 2013 to office 1. His former office neighbor, Agent K, is still in office 2014. Assuming that Agent J can walk at a rate of 25 offices per minute, and Agent K walks at 36 offices per minute, what office will they meet at if they leave at the same time?\n\n}\n\n\\textbf{Answer:} The combined rate is $61$ offices/min (this is the rate at which the distance between the two is closing.) With 2013 office between them, will take $\\frac{2013}{61}=33$ minutes for the two agents to meet.  Multiplying Agent J`s rate of $25$ offices/minute by $33$ minutes gives 825 offices covered by J.  Since the agent started at office 1,  we can see that the agents will meet at office $\\boxed{826}$.",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 59.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

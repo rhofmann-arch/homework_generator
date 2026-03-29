@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0061",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent of a number (remaining quantity)",
+  "latex": "A candle 25 cm tall burns at the rate of 5 cm per hour. What percent of the original candle is left after it has burned for 2 hours?\n}\n\n\\textbf{Answer:} After two hours, the candle will have burned through $2 \u00d7 5 \\text{cm} = 10$ cm of wax, leaving 15 cm of the candle. This is $\\displaystyle \\frac{15 \\text{cm}}{25 \\text{cm}}\n= \\boxed{60\\\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 25.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

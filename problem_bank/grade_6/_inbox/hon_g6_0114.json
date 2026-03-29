@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0114",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "order of operations with simplification",
+  "latex": "Compute $a \\cdot b \\cdot c \\div d$ if\\begin{align*}\na&=15 \\\\\nb&=2002 \\\\\nc&=3 \\\\\nd&=1001.\n\\end{align*}\n\n}\n\n\\large\n\n\\textbf{Answer:} Substituting the given values, we find $15 \\cdot 2002 \\cdot 3 \\div 1001$. Notice that 2002 is twice 1001, so if we rewrite the division as multiplication, we can make the computation easier:\\begin{align*}\n15 \\cdot 2002 \\cdot 3 \\div 1001&=15 \\cdot 2002 \\cdot 3 \\cdot \\frac{1}{1001} \\\\\n&=15 \\cdot 2002 \\cdot \\frac{1}{1001} \\cdot 3 \\\\\n&=15 \\cdot \\left(2002 \\cdot \\frac{1}{1001}\\right) \\cdot 3 \\\\\n&=15 \\cdot (2002 \\div 1001) \\cdot 3 \\\\\n&=15 \\cdot 2 \\cdot 3 \\\\\n&=30 \\cdot 3 \\\\\n&=\\boxed{90}.\n\\end{align*}\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 40.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

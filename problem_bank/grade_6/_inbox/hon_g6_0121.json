@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0121",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multiplication with fractions in context",
+  "latex": "Arthur walks six blocks east and then 12 blocks north. If each block is one-third of a mile, how many miles did he walk?\n\n}\n\n\\textbf{Answer:} Arthur walked $6+12=18$ blocks. This is$$18\\left(\\frac{1}{3}\\right)=\\boxed{6}$$miles.",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 43.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

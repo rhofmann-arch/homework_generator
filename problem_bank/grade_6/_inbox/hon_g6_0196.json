@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0196",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "geometric probability on a number line",
+  "latex": "Yoshi picks a point on the number line between 2 and 8. What is the probability that it is closer to the point 4 than to either end?\n\n}\n\n\\textbf{Answer:} If the point is closer to 4 than 2, then it must be greater than 3.\n\nIf the point is closer to 4 than 8, then it must be less than 6.\n\nSo, the zone of success is between 3 and 6, which has length 3. Since the total zone has length 6, the probability is $\\displaystyle \\boxed{\\frac{1}{2}}$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 66.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

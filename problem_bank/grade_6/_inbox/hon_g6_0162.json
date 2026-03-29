@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0162",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of a triangle formula",
+  "latex": "The area of a triangle is 600 square feet. Find the height, in feet, of the triangle if the length of the corresponding base is 30 feet.\n\n}\n\n\\textbf{Answer:} We know that the area of a triangle is equal to $\\frac{1}{2}bh$ where $b$ is the length of the base and $h$ is the height of the triangle. Since we know that the area of the triangles is $600$ sq. feet and the base is $30$ feet, we have that $600 = \\frac{1}{2} (30)h$, so $600=15h$. Dividing both sides of the equation by $15$, we have that $h=40$. The height of the triangle is $\\boxed{40}$ feet.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 55.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

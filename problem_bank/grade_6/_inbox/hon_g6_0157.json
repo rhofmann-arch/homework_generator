@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0157",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "systems of linear relationships",
+  "latex": "A section of fence is shown below.  What is the length of the gap between each post?\n\n\\begin{center}\n\\includegraphics[scale=0.4]{images/ds_l2.png}\n\\end{center}\n}\n\n\\textbf{Answer:} One post and gap have a length of 57 cm, so two gaps and two posts have a length of 114 cm.  Subtracting 114 from 131 gives the length of a post: 17 cm.  Subtracting 17 from 57 gives a length of $\\boxed{40}$ cm for the gap.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 54.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

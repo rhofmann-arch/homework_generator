@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0134",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "splitting costs evenly and computing differences",
+  "latex": "Tom, Dorothy, and Sammy went on a vacation and agreed to split the costs evenly. During their trip Tom paid $\\$105$, Dorothy paid $\\$125$, and Sammy paid $\\$175$. In order to share costs equally, Tom gave Sammy $t$ dollars, and Dorothy gave Sammy $d$ dollars. What is $t-d$?\n\n}\n\n\\textbf{Answer:} The total amount paid is $\\$105 + \\$125 + \\$175 = \\$405$. Therefore, each person should have paid $\\tfrac{1}{3} \\cdot \\$405 = \\$135$.\n\nThus, Tom must have given Sammy $\\$135 - \\$105 = \\$30,$ and Dorothy must have given Sammy $\\$135 - \\$125 = \\$10.$ Thus, $t = 30$ and $d = 10,$ so $t - d = \\boxed{20}.$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 47.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

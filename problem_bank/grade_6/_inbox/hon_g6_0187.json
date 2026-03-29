@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0187",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "arithmetic sequences and linear equations",
+  "latex": "Russell ate several candies on Halloween, and each day after Halloween ate 6 fewer candies than the day before. His candies lasted exactly five days, and he ate 100 candies in total. How many did he eat on the third day?\n\n}\n\n\\textbf{Answer:} If we let $x$ stand for the number of candies eaten on the third day, then on the second day he ate $x+6$, on the first day he ate $x+12$, on the fourth day he ate $x-6$, and on the fifth day he ate $x-12$. In total $100 = (x+12) + (x+6) + x + (x-6) + (x-12)$, and so $100 = 5x$, and thus he ate $\\boxed{20}$ candies on the third day.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 63.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

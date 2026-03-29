@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0193",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "inclusion-exclusion with sets",
+  "latex": "Every student in the senior class is taking history or science and 85 of them are taking both. If there are 106 seniors taking history and 109 seniors taking science, how many students are in the senior class?\n\n}\n\n\\textbf{Answer:} We see 106 seniors are taking history and 109 seniors are taking science. If we add those numbers of seniors up, we still have to subtract the number of seniors that are taking both history and science because we counted them twice. So there is a total of $106+109-85=\\boxed{130}$ students in the senior class.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 65.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

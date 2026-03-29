@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0048",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "central angles and circle sectors",
+  "latex": "The vertex of the angle below is the center of the circle. Find $n$ if $n\\\n\n\\begin{center}\n\\includegraphics[scale=0.5]{images/circl3.png}\n\\end{center}\n\n}\n\n\\textbf{Answer:} There are $360$ degrees in a circle, so the portion of the circle that is shaded is\\[\\frac{120^\\circ}{360^\\circ} = \\frac13 =33\\frac13 \\\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 20.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0070",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "circles and diameter calculations with concentric rings",
+  "latex": "As shown in the figure below, a circular park consists of an outer-ring path for walkers and a ring-shaped flower garden surrounding a central circular fountain. The walking path is six feet wide in all places, the garden ring is eight feet wide in all places, and the fountain has a diameter of 10 feet. \n\n\\begin{center}\n\\begin{asy}\nsize(5cm);\ndraw(circle((0,0),19));\ndraw(circle((0,0),13));\ndraw(circle((0,0),5));\ndraw(\"$8'$\",(0,5)--(0,13));\ndraw(\"$6'$\",(13,0)--(19,0));\n\\end{asy}\n\\end{center}\nWhat is the diameter, in feet, of the circle that is the outer boundary of the walking path? (Source: AoPS)\n}\n\n\\textbf{Answer:} The diameter is $10 + 2\\cdot 6 + 2\\cdot 8$ or $\\boxed{38}$ feet.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 28.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

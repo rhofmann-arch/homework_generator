@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0126",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "computing the mean",
+  "latex": "Billy wants to determine the average number of cookies in a package of cookies. He purchases 7 packages of cookies, opens them, and counts the number of cookies in each one. He finds that the packages have 8, 10, 12, 15, 16, 17, and 20 cookies. Based on these observations, what is the average number of cookies in a package?\n\n}\n\n\\textbf{Answer:} To find the average number of cookies in a package, we find the total number of cookies and divide that number by the number of packages. Doing so, we get\\begin{align*}\n&\\frac{8+10+12+15+16+17+20}{7}\\\\\n&\\qquad=\\frac{(8+12)+10+15+16+17+20}{7}\\\\\n&\\qquad=\\frac{20+10+15+16+17+20}{7}\\\\\n&\\qquad=\\frac{98}{7}\\\\\n&\\qquad=14.\n\\end{align*}There is an average of $\\boxed{14}$ cookies in a package.\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 44.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

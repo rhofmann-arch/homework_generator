@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0190",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "arithmetic sequences and patterns in number tables",
+  "latex": "The lattice shown is continued for 100 rows. What will be the third number in the $100^{\\text{th}}$ row?\n\\[\\begin{array}{r|ccccccc}\n\\text{Row } 1 & 1   & 2 & 3 & 4 & 5 & 6 & 7  \\\\\n\\text{Row } 2 & 8   & 9 & 10 & 11 & 12 & 13 & 14  \\\\\n\\text{Row } 3 & 15 & 16 & 17 & 18 & 19 & 20 & 21  \\\\\n\\text{Row } 4 & 22 & 23 & 24 &25  & 26 & 27 & 28  \\\\\n\\end{array}\\]\n\n}\n\n\\textbf{Answer:} Looking at the third number in each row, we get the sequence:  $3,10,17,24,\\ldots$ This is an arithmetic sequence with common difference 7.\n\nThe third number in row 100 will the 100th number in this list. So, we begin at 3 and take 99 steps of 7 to reach the desired number: $3+99(7)=\\boxed{696}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 64.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0223",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percents and proportional reasoning (alloys/mixtures)",
+  "latex": "Brass is an alloy created using $80\\\n\n}\n\n\\textbf{Answer:} This means that the trumpet is $\\frac{4}{5}$ copper, and $\\frac{1}{5}$ zinc. Since there are 48 ounces of copper, and that represents $\\frac{4}{5}$ of the total, we can simply divide by 4 to find the corresponding amount of zinc, making for $\\frac{48}{4} = \\boxed{12}$ ounces of zinc.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 8.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

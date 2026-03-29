@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0215",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of trapezoid",
+  "latex": "Find the area of trapezoid $DUCK$ shown below.\n\\begin{center}\n\\includegraphics[scale=0.5]{images/duck.png}\n\\end{center}\n\n}\n\n\\textbf{Answer:} We have $(9-1)\\cdot2 + 4\\cdot3 +4$ faces showing. Each face has an area of 9.  The total surface area is $32\\cdot9=\\boxed{288}$ square centimeters.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 73.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

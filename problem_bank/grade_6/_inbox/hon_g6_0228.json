@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0228",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perimeter of spiral/pattern recognition",
+  "latex": "Bo draws a 1-by-1 square (green). He begins a spiral by adding on a 2-by-1 rectangle (blue), then a 3-by-1 rectangle (pink), etc. Each rectangle is one unit longer than the previous rectangle added. What will be the perimeter of the spiral after the 8th rectangle is added?\n\\begin{center}\n\\includegraphics[scale=0.25]{images/perimeter_pattern.png}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 69.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

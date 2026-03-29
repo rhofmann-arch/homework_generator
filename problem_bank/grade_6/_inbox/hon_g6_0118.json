@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0118",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "integer addition with negatives",
+  "latex": "James has a magic hat full of slips of paper with numbers on them. He gives the hat to his friend Anna who pulls 4 numbers out of the hat: $3$, $-4$, $-2$ and $0$. James then pulls 3 numbers out of the hat: $2$, $4$, and $1$. What is the sum of all of the numbers that James and Anna pulled out of the magic hat?\n\n}\n\n\\textbf{Answer:} The desired quantity is $3 + (-4) + (-2) + 0 + 2 + 4 + 1$. Addition is commutative, meaning that order doesn't matter, so we can rearrange the terms of the sum as follows: $3 + (-4) + 4 + (-2) + 2 + 0 + 1$. Because a number plus its negation equals zero, some terms cancel each other out, and we get $3 + 0 + 0 + 0 + 1 = 3 + 1 = \\boxed{4}$.",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 42.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0116",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "proportional reasoning with ratios",
+  "latex": "Kelly's art teacher asked him to draw a rectangle with a length of $6$ inches and a width of $10$ inches. After Kelly does so, his teacher changes her mind and asks him to draw a proportional rectangle that has a length of $9$ inches. How many inches wide is the new rectangle?\n}\n\n\\textbf{Answer:} Since the two rectangles are proportional, the ratio of the lengths will be equal to the ratio of the widths. The ratio of length of the new rectangle to the length of the old rectangle is $\\frac{9}{6}$ and thus the desired width is $10 \\times \\frac {9}{6}=\\boxed{15}$ inches.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 41.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

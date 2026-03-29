@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0023",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent change in area of square",
+  "latex": "The side length of a square is increased by $50\\\n\n}\n\n\\textbf{Answer:} Let the original side length of the square be $s$. The original area is then $s^2$. After increase, the side length becomes $1.5s$ and the area becomes $(1.5s)^2=2.25s^2$. The percent increase is $\\frac{2.25s^2-s^2}{s^2}=\\boxed{125\\\n    \n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 13.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

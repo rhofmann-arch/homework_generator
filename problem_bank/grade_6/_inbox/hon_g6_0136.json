@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0136",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perimeter of composite figures with semicircles",
+  "latex": "What is the total length of the red path shown below?  Use 3.14 for $\\pi$ and express your answer as a decimal to the nearest tenth.\n\\begin{center}\n    \\includegraphics[scale=0.32]{images/paperclip.png}\n\\end{center}\n}\n\n\\textbf{Answer:} The straight segments are 2.5, 1.4, 1.7, and 2.2 units long, for a total length of 7.8.  The diameters of the curved segments are 1.4, 1.2, and 1.6 units.  Dividing by 2 and multiplying by pi gives the length of these semicircles.  We have: $7.8 + (0.7+0.6+0.8)\\cdot \\pi = \\boxed{14.4}$ units.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 48.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

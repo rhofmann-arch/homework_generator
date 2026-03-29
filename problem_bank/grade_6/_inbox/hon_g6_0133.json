@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0133",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "two-step word problem with equations",
+  "latex": "John meant to divide a number by $2$, but he was careless and subtracted $2$ from the number instead. He got an answer of $22$. What would his answer have been had he actually divided by $2$ instead of subtracting $2$?\n\n}\n\n\\textbf{Answer:} Let the number John was supposed to divide by 2 be $x$. We have the equation $x-2=22$, from which we find that $x=24$. Had John divided by 2, he would have gotten $x/2=24/2=12$. Thus, the answer John should have gotten is $\\boxed{12}$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 47.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

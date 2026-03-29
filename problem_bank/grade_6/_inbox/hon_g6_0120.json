@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0120",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "basic probability with counting",
+  "latex": "A number is selected at random from 1 through 100, inclusive. What is the probability that the number is a perfect square?\n\n}\n\n\\textbf{Answer:} There are 100 numbers possible between 1 and 100. There are 10 perfect squares between 1 and 100: $1^2,2^2,\\ldots,10^2$. So the probability that a randomly selected number is a perfect square is $\\dfrac{10}{100} = \\boxed{\\dfrac{1}{10}}$.\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 42.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

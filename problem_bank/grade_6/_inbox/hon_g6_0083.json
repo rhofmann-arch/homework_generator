@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0083",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rounding decimals to nearest thousandth",
+  "latex": "How many of the numbers in the list$$\\left\\{25.34816, \\;\\; 84.3695, \\;\\; 2.54527\\cdot 10, \\;\\; 894.54332, \\;\\; \\frac{234.572}{100}, \\;\\; \\frac{162}{1000}\\right\\}$$are rounded up when rounded to the nearest thousandth?\n}\n\n\\textbf{Answer:} First simplify each number to a decimal:\\begin{align*}\n25.34816 &= 25.34816\\\\\n84.3695 &= 84.3695\\\\\n2.54527\\cdot 10 &= 25.4527\\\\\n894.54332 &= 894.54332\\\\\n\\frac{234.572}{100} &= 2.34572\\\\\n\\frac{162}{1000} &= 0.162.\n\\end{align*}Next, see which numbers have a ten-thousandth digit greater than or equal to 5.\\begin{align*}\n25&.34816 \\quad\\text{(no)}\\\\\n84&.3695 \\quad\\text{(yes)}\\\\\n25&.4527 \\quad\\text{(yes)}\\\\\n894&.54332 \\quad\\text{(no)}\\\\\n2&.34572 \\quad\\text{(yes)}\\\\\n0&.162 \\quad\\text{(no)}.\n\\end{align*}So $\\boxed 3$ of the numbers are rounded up when rounded to the nearest thousandth.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 31.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

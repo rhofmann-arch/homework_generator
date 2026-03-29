@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0034",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step substitution with multiple variables",
+  "latex": "What is the value of $x$ if\\begin{align*}x &= y+5,\\\\\ny &= z+10,\\\\\nz &= w+20,\\\\\n\\text{and }\\qquad w &= 80?\n\\end{align*}\n\n}\n\n\\textbf{Answer:} Plugging the known value of $w$ into the third given equation, we find that $z=100$. Plugging $z$ into the second given equation, we find that $y=110$. Plugging $y$ into the first given equation gives $x=\\boxed{115}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 17.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

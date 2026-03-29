@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0176",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "fraction multiplication and decimal conversion",
+  "latex": "What is $\\displaystyle \\frac{7}{20}$ times 5, expressed as a decimal?\n}\n\n\\textbf{Answer:} $\\frac{7}{20} \\cdot 5 = \\frac{7}{4}$. To find this in decimal form, we can divide 7 by 4. Alternatively, we can multiply numerator and denominator by 25, giving us $\\frac{175}{100}$. Since dividing by 100 shifts the decimal point two to the left, we obtain $\\boxed{1.75}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 6.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

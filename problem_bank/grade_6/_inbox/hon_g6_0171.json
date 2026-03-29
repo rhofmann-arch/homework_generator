@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0171",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent change with inverse relationships",
+  "latex": "If the base of a triangle is shortened by 60 percent, by what percent must the height be increased if the area is to remain the same?\n\n}\n\n\\textbf{Answer:} Algebraically, we can see that when we scale any factor, the other factor must be scaled by its reciprocal to preserve equality:  $$\\displaystyle \\frac{b\\cdot h}{2}=\\frac{b\\cdot \\frac{5}{2}\\cdot h\\cdot \\frac{2}{5}}{2}.$$  I expect most 6th-graders will solve by choosing a value for the base and height.  Multiplying by $\\frac{5}{2}$ increases the height by \\boxed{150\\",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 59.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

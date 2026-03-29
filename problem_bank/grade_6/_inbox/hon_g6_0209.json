@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0209",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "scale factor and area relationships",
+  "latex": "If the sides of a triangle are tripled, the area of the new triangle is what percent of the area of the old triangle?\n\n}\n\n\\textbf{Answer:} The area increases by the square of the scale factor.  In this case, since the side lengths are tripled, the area will increase by a factor of 9, or $\\boxed{900\\",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 70.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

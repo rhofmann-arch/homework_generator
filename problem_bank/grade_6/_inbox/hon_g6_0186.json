@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0186",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent markup and discount working backwards",
+  "latex": "In May, the price of a pair of jeans was 250\\\n\n}\n\n\\textbf{Answer:} Let $\\$x$ be the wholesale cost. Then the cost in May was $\\$2.5x$. The cost in June was $75\\\n\\[\\$.75(2.5x).\\]The cost in July was half of that, but was also $\\$22.50$, so\n\\[22.50=0.5(0.75(2.5x))=\\frac12\\cdot\\frac34\\cdot\\frac52x=\\frac{15x}{16}.\\]Noticing a perfect square we see that $22.50=15\\cdot 1.50$, so\n\\[1.50=\\frac{x}{16}.\\]This tells us $x=24$, so the jeans cost $\\boxed{\\$24}$.\n\nAs a check, note that the May price is $\\$60$, the June price is $\\$45$, and the July price is $\\$22.50$, as required.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 63.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

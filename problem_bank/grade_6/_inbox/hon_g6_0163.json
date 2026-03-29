@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0163",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "word problem with logical reasoning about wins and losses",
+  "latex": "The Mathletes won 2 of their first 10 meets. They went on to win all their remaining meets and finished the year with an equal number of wins and losses. What is the total number of meets in which the Mathletes competed?\n}\n\n\\textbf{Answer:} The Mathletes won 2 meets and lost 8 meets in their first 10 meets. So, they need to win ${6}$ more meets in order to have the same number of wins and losses, which means they have $6+10 = \\boxed{16}$ meets total.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 56.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

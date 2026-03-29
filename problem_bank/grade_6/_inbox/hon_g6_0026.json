@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0026",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent decrease and working backwards",
+  "latex": "In a spelling bee $50\\\n\n}\n\n\\textbf{Answer:} The first round reduced the number of students by $\\frac{1}{2}$ and the second round reduced the number of students by $\\frac{1}{3}$. After both reductions, $\\frac{1}{2}\\cdot\\frac{1}{3}=\\frac{1}{6}$ of the students who began the contest remain. Therefore, $24\\cdot6=\\boxed{144}$ students began the contest.\n    \n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 14.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

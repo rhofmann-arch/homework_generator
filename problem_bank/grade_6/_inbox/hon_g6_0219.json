@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0219",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "3D spatial reasoning from orthographic views",
+  "latex": "A figure is constructed from unit cubes. Each cube shares at least one face with another cube. What is the minimum number of cubes needed to build a figure with the front and side views shown?\n\n\\begin{center}\n    \\includegraphics[scale=0.5]{images/views1.png}\n\\end{center}\n\n}\n\n\\textbf{Answer:} There are only two ways to construct a solid from three cubes so that each cube shares a face with at least one other:\n\n\\begin{center}\n    \\includegraphics[scale=0.5]{images/views_soln1.png}\n\\end{center}\n\nNeither of these configurations has both the front and side views shown. The four-cube configuration has the required front and side views. Thus at least $\\boxed{4}$ cubes are necessary.\n\\begin{center}\n    \\includegraphics[scale=0.5]{images/views_soln2.png}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 74.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

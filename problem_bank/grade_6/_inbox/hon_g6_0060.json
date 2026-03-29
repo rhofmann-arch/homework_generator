@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0060",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent of a number (tip calculation)",
+  "latex": "Patty ordered a pizza to be delivered. The bill was $\\$$12.00. Patty pays $\\$$15 and tells the delivery person to keep the change as a tip. What percent tip did she give?\n\n}\n\n\\textbf{Answer:} The tip was $15 - 12 = 3$ dollars, which is $\\boxed{25}$ percent of 12.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 24.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

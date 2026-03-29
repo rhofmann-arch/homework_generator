@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0057",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perimeter of composite figure with congruent squares",
+  "latex": "The area of this region formed by six congruent squares is 294 square centimeters. What is the perimeter of the region, in centimeters?\n\\begin{center}\n\\begin{asy}\nsize(8cm);\ndraw((0,0)--(-10,0)--(-10,10)--(0,10)--cycle);\ndraw((0,10)--(0,20)--(-30,20)--(-30,10)--cycle);\ndraw((-10,10)--(-10,20));\ndraw((-20,10)--(-20,20));\ndraw((-20,20)--(-20,30)--(-40,30)--(-40,20)--cycle);\ndraw((-30,20)--(-30,30));\n\\end{asy}\n\\end{center}\n}\n\n\\textbf{Answer:} Since $MC = 8$ and $M$ is the midpoint of $\\overline{BC}$, we have $MB=MC = 8$, so $BC=8+8=16$. Since $B$ and $C$ trisect $\\overline{AD}$, we have $AB = CD = BC = 16$, so $AD =16+16+16=\\boxed{48}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 23.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

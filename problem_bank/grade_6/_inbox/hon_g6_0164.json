@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0164",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "proportional reasoning with fractions",
+  "latex": "$\\displaystyle \\frac{1}{6}$ of a ton of hay costs $\\displaystyle \\frac{4}{5}$ of an eagle. How many eagles does $\\displaystyle \\frac{2}{3}$ of a ton of hay cost?\n\n}\n\n\\textbf{Answer:} Scaling $\\displaystyle \\frac{1}{6}$ of a ton of hay by $4$ gives $\\displaystyle \\frac{2}{3}$ of a ton of hay.  Scaling the corresponding costs, we see that $\\displaystyle \\frac{4}{5}\\cdot 4 = \\boxed{\\frac{16}{5}}$ eagles.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 56.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

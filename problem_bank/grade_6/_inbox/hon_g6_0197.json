@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0197",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "distance-rate-time word problems with equations",
+  "latex": "Maria normally spends half an hour driving to work. When her average speed is ten miles per hour slower than usual, the trip takes ten minutes longer. How many miles does she drive to work?\n\n}\n\n\\textbf{Answer:} We know that distance is rate multiplied by time. On a normal day, her distance is equal to\n\\[d=\\left(r\\text{~mph}\\right)\\cdot\\left(\\frac12\\text{~hours}\\right)=\\frac r2\\text{~miles}.\\]\nOn a slow day she travels at $r-10\\text{~mph}$ for $\\frac{40}{60}=\\frac23$ of an hour. Her trip covers the same distance, so\n\\[\\frac r2\\text{~miles}=d=\\left(r-10\\text{~mph}\\right)\\cdot\\left(\\frac23\\text{~hours}\\right)=\\frac{2r-20}{3}\\text{~miles}.\\]\nCross-multiplying gives us the equation\n\\[3r=4r-40.\\]\nThis simplifies to $r=40$. Recall that we want $d,$ though, and $d=\\frac r2=\\boxed{20}\\text{~miles}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 66.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

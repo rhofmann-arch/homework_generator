@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0229",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "probability with inequalities",
+  "latex": "The number $n$ is randomly selected from the set $\\{1, 2,\\ldots, 10\\}$, with each number being equally likely. What is the probability that $2n - 4 > n$?\n\n\\textbf{Answer:} The inequality simplifies to $n > 4$ Thus $6/10 = \\boxed{3/5}$ of the numbers work.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 69.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

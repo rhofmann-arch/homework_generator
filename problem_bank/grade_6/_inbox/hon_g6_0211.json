@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0211",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "clock angle problems",
+  "latex": "How many degrees are in the smaller angle formed by the minute and hour hands on a clock at 2:45?\n\n    \\includegraphics[scale=0.2]{images/blank_clock.jpg}\n\n\\textbf{Answer:} At 12:30, the hour hand should be half way between the 12 and the 1.  This means it has moved 1/24th of a rotation clockwise. 1/24th of 360$^{\\circ}$ is 15$^{\\circ}$. The second hand will be pointing straight down at the 6. This is 180$^{\\circ}$ away from the 12, but let us recall that the hour hand has moved 15$^{\\circ}$ away from the 12 (towards the 6). So the smaller angle will be $180^{\\circ} - 15^{\\circ} = \\boxed{165^{\\circ}}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 71.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

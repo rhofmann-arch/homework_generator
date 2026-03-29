@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0055",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent of a whole from mixture",
+  "latex": "Barbara completely fills her mug with a mixture that is 15 mL of hot chocolate and 35 mL of\ncream. What percent of the mixture is hot chocolate?\n}\n\n\\textbf{Answer:} The total amount that Barbara poured into her mug is 15 mL + 35 mL = 50 mL. Thus, the hot chocolate is $\\frac{\\text{15 ml}}{\\text{50 ml}} = 0.30 = \\boxed{30\\\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 23.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

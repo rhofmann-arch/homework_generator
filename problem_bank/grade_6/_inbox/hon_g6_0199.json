@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0199",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "inclusion-exclusion with sets",
+  "latex": "Of the 50 students in the drama club, 36 take mathematics, 27 take physics and 20 students take both mathematics and physics. How many drama club students take neither mathematics nor physics?\n\n}\n\n\\textbf{Answer:} Of the 36 taking math, there are 20 taking both math and physics, so there are $36-20= 16$ students taking only math. Similarly, there are $27-20= 7$ taking only physics. There are 50 students total, 16 in just math, 7 in just physics, and 20 in both math and physics, so there are $50-16-7-20= \\boxed{7}$ students taking neither.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 67.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

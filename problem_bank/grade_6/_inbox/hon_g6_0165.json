@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0165",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "triangle area with base-height pairs",
+  "latex": "In the figure below, $AB=15,$ $AC=14,$ and $BY=12$. Compute $CX$.\n\\begin{center}\n\\begin{asy}\nsize(6cm);\npair a=(495/13,840/13); pair b=(0,0); pair c=(65,0);\ndot(a); dot(b); dot(c);\npair x=(33/75)*a;\npair y=(5/14)*(a-c)+c;\ndot(x); dot(y);\ndraw(c--b--a--c);\ndraw(x--c,dashed);\ndraw(b--y,dashed);\ndraw(x+(c-x)/11.2--x+(c-x)/11.2+(a-x)/8.4--x+(a-x)/8.4);\ndraw(y+(c-y)/5--y+(c-y)/5+(b-y)/12--y+(b-y)/12);\nlabel(\"$A$\",a,N);\nlabel(\"$B$\",b,SW);\nlabel(\"$C$\",c,SE);\nlabel(\"$X$\",x,WNW);\nlabel(\"$Y$\",y,ENE);\n\n\\end{asy}\n\\end{center}\n\n\\textbf{Answer:} $BY$ and $AC$ are a base and corresponding height of the triangle; $AB$ and $CX$ are another base-height pair.  Therefore, the product of $BY$ and $AC$ should be the same as the product of $AB$ and $CX$.  Assigning the variable $x$ to length $CX$, we have: $$14\\cdot12=15\\cdot x$$ and finally $x=\\boxed{11.2}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 57.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

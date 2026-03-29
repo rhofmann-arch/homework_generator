@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0063",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratios and proportional reasoning (rates)",
+  "latex": "Julian and Joshua each maintain a constant speed as they run laps around a 400-meter track. In the time it takes Julian to complete two laps, Joshua completes three laps. Julian runs each mile in 12 minutes. How many minutes does it take Joshua to run exactly one mile?\n\n}\n\n\\textbf{Answer:} Let $a$ be the amount of time it takes Julian to run one lap, and let $b$ be the amount of time it takes Joshua to run the same lap. We are given that $2a=3b$ (the amount of time it takes Julian to run two laps is equal to the amount of time it takes Joshua to run three). The length of the track does not matter as we only care about proportions. We can arbitrarily set the distance of each lap equal to whatever we wish. Let's set it equal to one mile. Then, we are given that $a=12 \\textnormal{ minutes}$. Solving for $b$, we get that $2 \\cdot 12 = 3b$, or $b=8$. Thus, it takes Joshua $\\boxed{8}$ minutes to run one mile.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 25.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0212",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "surface area of composite 3D figures",
+  "latex": "Eight cubes form the figure shown.\n\\begin{center}\n    \\begin{asy}\n    size(5cm);\n    import solids;\ncurrentprojection=orthographic(4,2.5,2.5);\ntriple A=(0,0,0), B=A+Y, C=B+Y, D=C+Y, E=D+Z, F=D+2Z, G=D+3Z, H=C+3Z,I=B+3Z,J=A+3Z,K=A+2Z,L=A+Z;\ntriple J2 = J-X, G2=G-X, D2=D-X;\ndraw(A--D--G--J--A^^L--E^^K--F^^B--I^^C--H);\ndraw(J--J2^^G--G2^^D--D2^^J2--G2--D2^^I--I-X^^H--H-X^^F--F-X^^E--E-X);\ndraw((0,1,1)--(-1,1,1)^^(-1,1,1)--(-1,1,1.38)^^(-1,1,1)--(-1,1.38,1));\n    \\end{asy}\n\\end{center}\n\nThe side length of each cube is 3 cm. How many square centimeters are in the surface area of the figure?\n\n}\n\n\\textbf{Answer:} We have $(9-1)\\cdot2 + 4\\cdot3 +4$ faces showing. Each face has an area of 9.  The total surface area is $32\\cdot9=\\boxed{288}$ square centimeters.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 72.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

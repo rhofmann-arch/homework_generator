@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0098",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "least common multiple application",
+  "latex": "A bell rings every 25 minutes while another bell rings every 40 minutes.  If the bells rang together at 6 A.M., at what time would they next ring together?\n\n}\n\n\\textbf{Answer:} The lowest common multiple of 25 and 40 is 200.  200 minutes is 3 hours and 20 minutes, which means the bells will ring together at $\\boxed{9:20}$ A.M.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 36.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

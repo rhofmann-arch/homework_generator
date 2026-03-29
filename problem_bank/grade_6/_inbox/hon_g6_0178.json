@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0178",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step ratio and proportion",
+  "latex": "Twelve bears eat five pounds of honey in one day. At the same rate, how many pounds of honey will 20 bears eat in three days?\n\n}\n\n\\textbf{Answer:} Assume that a bear eats $h$ pounds of honey in a given day. Then 12 bears will eat $12h$ pounds of honey in a day. Therefore\n\\[5=12h\\]\nso $h=\\frac5{12}.$ In three days, 20 bears eat 60 days worth of honey. Therefore 20 bears eat\n\\[60h=60\\cdot\\frac5{12}=\\boxed{25}\\]\npounds of honey in three days.\n\nMany students may find it easier to make a table, like this:\\\\\n\n\\begin{tabular}{c|c|c}\nBears & Days & Pounds of Honey\\\\\n\\hline\n12&5 & 1\\\\\n12&3 &15\\\\\n4&3&5\\\\\n20&3&25\\\\\n\\end{tabular}\\\\\n\\\\\nUsing either method, we have $\\boxed{25}$ days.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 60.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

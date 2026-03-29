@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0227",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perimeter patterns",
+  "latex": "If the perimeter of Figure \\#1 is 12, what is the perimeter of the Figure \\#10?\n\\begin{center}\n\\includegraphics[scale=0.2]{images/perimeter2.png}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 69.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

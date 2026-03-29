@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0205",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "midpoints on a number line",
+  "latex": "On a number line, the coordinates of $P$ and $Q$ are 8 and 48, respectively. The midpoint of $\\overline{PQ}$ is $B$, the midpoint of $\\overline{BQ}$ is $C$, and the midpoint of $\\overline{PC}$ is $D$. What is the coordinate of $D$?  (Hint: draw the number line!)\n\n}\n\n\\textbf{Answer:} Since $B$ is midpoint of $\\overline{PQ}$, the coordinate of $B$ is $(8+48)/2 = 4+24 = 28$. Since $C$ is the midpoint of $\\overline{BQ}$, the coordinate of $C$ is $(28+48)/2 = 14+24=38$. Since $D$ is the midpoint of $\\overline{PC}$, the coordinate of $D$ is $(8+38)/2 = 4 + 19 = \\boxed{23}$.\n\\begin{center}\n\\begin{asy}\n    size(9cm);\n    pair P, Q, B, C, D;\n\nP = (8,0);\nQ = (48,0);\nB = (P+Q)/2;\nC = (B+Q)/2;\nD = (P+C)/2;\n\ndot(P);\ndot(Q);\ndot(B);\ndot(C);\ndot(D);\n\ndraw(P--Q);\nlabel(\"$P$\",P,S);\nlabel(\"$Q$\",Q,S);\nlabel(\"$B$\",B,S);\nlabel(\"$C$\",C,S);\nlabel(\"$D$\",D,S);\n\\end{asy}\n    \n\\end{center}\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 7.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

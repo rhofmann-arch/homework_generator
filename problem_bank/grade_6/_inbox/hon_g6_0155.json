@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0155",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "solving equations and evaluating expressions with fractions",
+  "latex": "Joe multiplies a number by 4, adds 1, and then divides by 3, getting a result of 7. Sue divides the same original number by 3, adds 1, and multiplies by 4. What result does she get? Express your answer as a common fraction.\n\n}\n\n\\textbf{Answer:} Let Joe's number be $x$. $(4x + 1)/3 = 7$, so $4x + 1 = 21$, and $x = 5$. Sue's arithmetic gives $[(5/3) + 1]\\cdot 4 = (8/3)(4) = \\boxed{32/3}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 53.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

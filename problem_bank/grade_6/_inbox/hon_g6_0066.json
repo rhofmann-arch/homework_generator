@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0066",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "linear equation with fractions (word problem)",
+  "latex": "When Cedric walked into a party, two-thirds of those invited had already arrived. Six more people arrived just after Cedric, bringing the number at the party to $\\frac{5}{6}$ of those invited. What was the total number of invited guests?\n}\n\n\\textbf{Answer:} Let $P$ be the number of people invited to the party. Before Cedric arrived, there were $\\frac{2}{3}P$ people at the party. After Cedric and six others arrived, there are $\\frac{2}{3}P+7$ people at the party. Since this is the same as $\\frac{5}{6}P$, we solve $\\frac{2}{3}P+7=\\frac{5}{6}P$ to find that $P=\\boxed{42}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 26.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

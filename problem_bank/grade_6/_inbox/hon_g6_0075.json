@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0075",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "fractions of a quantity word problem",
+  "latex": "Carla spent two-fifths of her savings on a bracelet and had $\\$ 9$ left over. How many dollars did Carla's bracelet cost?\n\n}\n\n\\textbf{Answer:} Let $m$ be the original amount of Carla's savings, so that $\\$9 = \\frac{3m}{5}.$ It follows that $m= \\$15,$ and the bracelet cost $\\$15 - \\$9 = \\boxed{\\$6}.$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 29.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

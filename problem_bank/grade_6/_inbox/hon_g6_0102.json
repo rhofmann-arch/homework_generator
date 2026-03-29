@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0102",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of composite figures with circles",
+  "latex": "Two shaded quarter-circles, each with a radius of 4 units, are formed in the 4 by 8 rectangular region shown. What is the area of the non-shaded region, in square units? Express the area in the form $a-b\\pi$ where $a$ and $b$ are integers.\n\\begin{center}\n    \\begin{asy}\nsize(8cm);\n\npair A,B,C,D,a,b,X;\n\nA=(0,0);\nB=(8,0);\nC=(8,4);\nD=(0,4);\n\nX=(4,4);\n\ndraw(A--B--C--D--A);\n\na=(3,1.5);\n\nfill((A..a..X--D--A--cycle),gray);\n\ndraw(A..a..X);\n\nb=(5,1.5);\n\nfill((B..b..X--C--B--cycle),gray);\n\ndraw(B..b..X);\n\nlabel(\"$8$\",midpoint(A--B),S);\nlabel(\"$4$\",midpoint(B--C),E);\n    \\end{asy}\n\\end{center}\n\n}\n\n\\textbf{Answer:} The two shaded regions combine to form a semicircle. The area of this semicircle is half the area of a circle with radius 4, or $\\frac{1}{2}\\cdot\\pi\\cdot 4^2=8\\pi$. The area of the non-shaded region is equal to the area of the rectangle minus the area of the shaded region, or $8\\cdot4-8\\pi=\\boxed{32-8\\pi}$ square units.\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 37.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

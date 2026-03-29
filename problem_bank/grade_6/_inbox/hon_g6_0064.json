@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0064",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "substitution in linear equations",
+  "latex": "If $a + b = c$ and $b + c = 11$ and $c = 8$, what is the value of $a$?\n}\n\n\\textbf{Answer:} Since $b+c=11$ and $c=8$, we can substitute for $c$ to have $b+8=11$ and $b=3$.\n\nSo $a+b=c$ becomes\n\n$$a+3=8\\Rightarrow a=\\boxed{5}$$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 26.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

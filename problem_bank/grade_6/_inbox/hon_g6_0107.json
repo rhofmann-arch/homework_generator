@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0107",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratios and proportional reasoning",
+  "latex": "The ratio of butter:flour:sugar in a recipe is 1:9:6. When using 8 cups of sugar in this recipe, how many total cups of ingredients will be used? Express your answer as a common fraction.\n}\n\n\\textbf{Answer:} The ratio of sugar to the total ingredients is $\\frac{6}{1+9+6} = \\frac{6}{16} = \\frac38$. So, if there are $x$ total cups, the amount of sugar is $\\frac38x$. Therefore, we must have $\\frac38x = 8$, since there are 8 cups of sugar. Multiplying both sides by $\\frac83$ gives $x = 8\\cdot \\frac83 = \\boxed{\\frac{64}{3}}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 39.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

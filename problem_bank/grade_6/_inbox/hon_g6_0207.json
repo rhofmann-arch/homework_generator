@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0207",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "probability with divisibility and inclusion-exclusion",
+  "latex": "A number is randomly selected from the first 20 positive integers. What is the probability that it is divisible by 2, 3 or 4? Express your answer as a common fraction.\n\n}\n\n\\textbf{Answer:} All numbers divisible by 4 are also divisible by 2, so we can completely disregard divisibility by 4. Of the first 20 positive integers, 10 are divisible by 2. Six of them are divisible by 3. However, we've counted the three multiples of 6 twice. There are\n\\[10+6-3=13\\]\nnumbers divisible by 2 or 3. Therefore, $\\boxed{\\frac{13}{20}}$ of the numbers are divisible by 2, 3, or 4.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 70.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

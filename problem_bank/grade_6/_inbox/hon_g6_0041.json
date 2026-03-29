@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0041",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "chained ratios and proportions",
+  "latex": "If you can trade three apples for two oranges, and you can trade three oranges for five lemons, how many apples would you need to trade for $100$ lemons?\n\n}\n\n\\textbf{Answer:} We can equate ratios to figure out how many oranges we need and then how many apples we need.$$\\frac{3\\text{ oranges}}{5\\text{ lemons}}=\\frac{a\\text{ oranges}}{100\\text{ lemons}}\\qquad\\Rightarrow a=3\\cdot20=60\\text{ oranges}$$$$\\frac{3\\text{ apples}}{2\\text{ oranges}}=\\frac{b\\text{ apples}}{60\\text{ oranges}}\\qquad\\Rightarrow b=3\\cdot30=90\\text{ apples}$$We need $\\boxed{90}$ apples to trade for 100 lemons.\n    \n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 19.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

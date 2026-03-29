@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0159",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "two-step equations with context",
+  "latex": "Al gets the disease algebritis and must take one green pill and one pink pill each day for two weeks. A green pill costs $\\$1$ more than a pink pill, and Al's pills cost a total of $\\$546$ for the two weeks. How much does one green pill cost?\n\n}\n\n\\textbf{Answer:} The cost of each day's pills is $546/14 = 39$ dollars. If $x$ denotes the cost of one green pill, then $x + (x-1) = 39$, so $x= \\boxed{20}.$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 54.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

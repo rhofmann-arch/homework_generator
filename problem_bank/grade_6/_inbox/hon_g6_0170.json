@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0170",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "prime factorization and mode",
+  "latex": "Davie decides to factor the number 756 into primes. After doing so, he makes a list from this factorization, including each prime in the list as many times as it appears in the factorization. What is the mode of his list?\n\n}\n\n\\textbf{Answer:} The prime factorization of $756$ is $2^{2}\\cdot3^{3}\\cdot7$.  The list made from this factorization would be $2,2,3,3,3,7$.  The mode of the list is $\\boxed{3}$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 58.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

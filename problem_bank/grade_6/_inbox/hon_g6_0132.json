@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0132",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding a missing value given a target mean",
+  "latex": "Emily's quiz scores so far are: 92, 95, 87, 89 and 100. What score does she need to get on the sixth quiz to make the arithmetic mean of the six scores equal 93?\n\n}\n\n\\textbf{Answer:} Subtract 90 from every score to simplify the arithmetic. For the average of 6 scores to be 3, their sum must be $6\\times3=18$. The sum of her first five scores is $2+5-3-1+10=13$, so the sixth score should be $18-13=5$. Adding 90 back, her score should be $\\boxed{95}$.\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 46.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

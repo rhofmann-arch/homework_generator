@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0087",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "operations with fractions and decimals",
+  "latex": "What is $\\frac{1}{2} +\\frac{1}{3} +\\frac{1}{4} - (.2 +.3 +.4)$? Express your solution as a simplified fraction.\n\n}\n\n\\textbf{Answer:} Because out goal is to find a fractional answer, it seems best to work primarily in fractions. However, the decimal portion of the expression is very easy to combine, so it is worth combining this part before proceeding to find the answer:\\begin{align*}\n\\frac{1}{2} +\\frac{1}{3} +\\frac{1}{4} - (.2 +.3 +.4) &= \\frac{1}{2} +\\frac{1}{3} +\\frac{1}{4} - .9\\\\\n&= \\frac{1}{2} +\\frac{1}{3} +\\frac{1}{4} - \\frac{9}{10}\\\\\n&= \\frac{1 \\cdot 30}{2 \\cdot 30} +\\frac{1 \\cdot 20}{3 \\cdot 20} +\\frac{1 \\cdot 15}{4 \\cdot 15} - \\frac{9 \\cdot 6}{10 \\cdot 6}\\\\\n&= \\frac{30}{60} + \\frac{20}{60} + \\frac{15}{60} - \\frac{54}{60}\\\\\n&= \\frac{30+20+15-54}{60}\\\\\n&= \\boxed{\\frac{11}{60}}.\n\\end{align*}\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 32.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

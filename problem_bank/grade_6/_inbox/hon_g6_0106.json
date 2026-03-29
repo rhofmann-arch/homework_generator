@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0106",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "division word problems",
+  "latex": "Mary bought $5$ pizzas for her math class and her friends. There are $13$ students in Mary's math class, not including Mary. Mary also has $10$ friends that are not in her math class. There are $10$ slices in each pizza. If Mary wants to give an equal amount of pizza to each student in her math class, the teacher, each of her friends, and herself, how many slices should she give to each person?\n\n}\n\n\\textbf{Answer:} First, we must determine how many slices of pizza Mary has. Specifically, she has $5$ pizzas, and each one has $10$ slices: $5 \\times 10 = 50 \\text{ slices}$. There are $13$ students in her class, $1$ teacher, $10$ friends, and herself ($1$ person). Therefore, there are $13+1+10+1=25$ people that Mary wants to give pizza to. So, since we know that dividing a number by itself is always $1$, dividing the number of people by the number of slices of pizza we get\\begin{align*} 50\\div (13 + 1 + 10 + 1) &=50 \\div 25 \\\\ &=2.\\end{align*}Therefore, Mary can give $\\boxed{2}$ slices of pizza to each person.",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 39.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0103",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "division with remainders / circular track problems",
+  "latex": "On an indoor circular track of circumference 50 feet, Joneal starts at point $S$, runs in a counterclockwise direction, and then stops when he has run exactly one mile (5280 feet). On which quarter of the circle, $A$, $B$, $C$ or $D$, did Joneal stop?\n\\begin{center}\n\\begin{asy}\nsize(7cm);\nimport graph;\ndraw(Circle((0,0),20));\ndraw((-25,0)--(25,0));\ndraw((0,-25)--(0,25));\ndot((20,0));\nlabel(\"$S$\",(20,0),SE);\nlabel(\"$A$\",(17,17),E);\nlabel(\"$B$\",(-17,17),W);\nlabel(\"$C$\",(-17,-17),W);\nlabel(\"$D$\",(17,-17),E);\n\\end{asy}\n\\end{center}\n\n}\n\n\\textbf{Answer:} Since 5250 is divisible by 50, Joneal is back at point $S$ after running 5250 feet. For the next 12.5 feet, he is on the portion of the track marked $A$. For the next 12.5 feet after that, he is on the portion of the track marked $B$. At this point he has traveled $5250+12.5+12.5=5275$ feet. After traveling the final 5 feet, he is on the portion of the track marked $\\boxed{C}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 38.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

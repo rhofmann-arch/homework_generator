@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0015",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratio and proportion",
+  "latex": "Allen and Ben are painting a fence. The ratio of the amount of work Allen does to the amount of work Ben does is $3:5$. If the fence requires a total of $240$ square feet to be painted, how many square feet does Ben paint?\n\n}\n\n\\textbf{Answer:} Between them, Allen and Ben are dividing the work into $8$ equal parts, $3$ of which Allen does and $5$ of which Ben does. Each part of the work requires $\\frac{240}{8} = 30$ square feet to be painted. Since Ben does $5$ parts of the work, he will paint $30 \\cdot 5 = \\boxed{150}$ square feet of the fence.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 10.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

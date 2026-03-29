@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0158",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "solving equations with coin values",
+  "latex": "Jeff has an equal number of nickels, dimes and quarters, worth a total of $\\$1.20$. Anne has one more of each type of coin than Jeff has. How many coins does Anne have?\n\n}\n\n\\textbf{Answer:} If $c$ is the number of each type of coin that Jeff has, we know that $(5 + 10 + 25)c = 120$. So $40c = 120$, and solving for $c$ gives $c = 3$. Anne has $3$ types of coins and $3 + 1 = 4$ of each type, so she has $3\\cdot 4 = \\boxed{12}$ coins total.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 54.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

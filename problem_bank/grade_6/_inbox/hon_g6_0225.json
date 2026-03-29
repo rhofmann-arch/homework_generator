@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0225",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "adding fractions with unlike denominators",
+  "latex": "Erica made punch for a party. She used $\\frac{5}{2}$ cups of pineapple juice, $\\frac{11}{6}$ cups of ginger ale, and $\\frac{7}{3}$ cups of grape juice. How many cups of liquid did she use in the punch? Express your answer as a simplified fraction.\n\n}\n\n\\textbf{Answer:} To calculate how many cups of liquid Erica used in the punch, we must add the number of cups of pineapple juice, ginger ale, and grape juice she used. Since the denominators $2$, $6$, and $3$ have a common denominator of $6$.\\begin{align*}\n\\frac{5}{2} + \\frac{11}{6} + \\frac{7}{3} &= \\frac{5}{2} \\cdot \\frac{3}{3} + \\frac{11}{6} + \\frac{7}{3} \\cdot \\frac{2}{2} \\\\ &= \\frac{5 \\cdot 3}{6} + \\frac{11}{6} + \\frac{7 \\cdot 2}{6} \\\\ &= \\frac{15}{6} + \\frac{11}{6} + \\frac{14}{6} \\\\ &= \\frac{15 + 11 + 14}{6} \\\\ &= \\frac{40}{6}\n\\end{align*}Now, we have to simplify the fraction.\\[\n\\frac{40}{6} = \\frac{\\cancelto{20}{40}}{\\cancelto{3}{6}} \\hspace{4mm} = \\boxed{\\frac{20}{3}}.\n\\]\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 9.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

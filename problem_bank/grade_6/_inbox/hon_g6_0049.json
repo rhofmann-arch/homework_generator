@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0049",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent proportion solving",
+  "latex": "Calvin is 150 cm tall, which is $75\\\n}\n\n\\textbf{Answer:} If $150\\text{ cm}=\\frac{3}{4}D$, then $D=\\frac{4}{3}(150\\text{ cm})=4(50\\text{ cm})=\\boxed{200}$ centimeters.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 21.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

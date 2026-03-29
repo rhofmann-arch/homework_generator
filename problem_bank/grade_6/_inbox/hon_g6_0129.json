@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0129",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "weighted averages",
+  "latex": "The heights of $12$ boys and $10$ girls in a class are recorded. The average height of all $22$ students in the class is $103\\text{ cm}.$ If the average height of the boys is $108\\text{ cm},$ what is the the average height of the girls?\n\n}\n\n\\textbf{Answer:} Since the average height of all $22$ students is $103\\text{ cm},$ then the sum of the heights of all students in the class is $22\\times 103=2266\\text{ cm}.$\n\nSince the average height of the $12$ boys in the class is $108\\text{ cm},$ then the sum of the heights of all boys in the class is $12\\times 108=1296\\text{ cm}.$\n\nThe sum of the heights of all the girls in class is the combined height of all students in the class less the height of all the boys in the class, or $2266-1296=970\\text{ cm}.$ Since there are $10$ girls in the class, their average height is $970\\div10=\\boxed{97}\\text{ cm}.$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 45.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

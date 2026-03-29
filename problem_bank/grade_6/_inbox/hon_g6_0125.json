@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0125",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "proportional reasoning with chained ratios",
+  "latex": "At Frank's Fruit Market, 3 bananas cost as much as 2 apples, and 6 apples cost as much as 4 oranges. How many oranges cost as much as 18 bananas?\n\n}\n\n\\textbf{Answer:} Because 3 bananas cost as much as 2 apples, 18 bananas cost as much as 12 apples. Because 6 apples cost as much as 4 oranges, 12 apples cost as much as 8 oranges. Therefore 18 bananas cost as much as $\\boxed{8}$ oranges.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 44.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

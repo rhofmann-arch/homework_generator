@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0149",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent increase in area of circles",
+  "latex": "Pizzas are sized by diameter. What percent increase in area results if Chantel's pizza increases from a 10-inch pizza to a 12-inch pizza?\n\n}\n\n\\textbf{Answer:} The area of the 10-inch pizza is $5^2\\pi = 25\\pi$ square inches, while the area of the 12-inch pizza is $6^2\\pi = 36\\pi$ square inches. The increase is $36\\pi-25\\pi=11\\pi$. As a factor, this is an increase of $\\frac{11\\pi}{25\\pi} = \\frac{44}{100} = \\boxed{44\\",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 51.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

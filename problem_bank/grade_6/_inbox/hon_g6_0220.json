@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0220",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rates and proportional reasoning (work problems)",
+  "latex": "Six horses eat 12 bales of hay in 12 hours. At the same rate, how many hours will 36 bales of hay last 12 horses?\n\n}\n\n\\textbf{Answer:} From the original rate, we note that 12 horses will eat 12 bales of hay in 6 hours. (Double the number of horses, half the time) Therefore, 12 horses will eat 36 bales of hay in $\\boxed{18\\text{ hours}}$. (Triple the amount of hay, triple the time)",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 74.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

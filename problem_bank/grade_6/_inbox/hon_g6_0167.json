@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0167",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent increase and decrease with multiplication",
+  "latex": "A dose of a shrinking potion makes a person $50\\\n\n}\n\n\\textbf{Answer:} Alice's final height is $100\\cdot0.5\\cdot0.5\\cdot 1.5$, or $37.5$ cm.  Chester's height is $100 \\cdot 1.5 \\cdot 1.5 \\cdot 0.5$, or $112.5$ cm.  The difference is $\\boxed{75}$ cm.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 57.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

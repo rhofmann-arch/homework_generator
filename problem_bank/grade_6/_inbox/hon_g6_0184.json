@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0184",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "systems of linear equations",
+  "latex": "A puppy and two cats together weigh 24 pounds. The puppy and the larger cat together weigh exactly twice as much as the smaller cat, and the puppy and the smaller cat together weigh exactly the same as the larger cat. How many pounds does the puppy weigh?\n\n}\n\n\\textbf{Answer:} If $p$ is the weight of the puppy, $s$ the weight of the smaller cat, and $l$ the weight of the larger cat, we have:\n$$p+s+l=24$$\n$$p+l=2s$$\n$$p+s=l$$.\n\nSubstituting $2s$ for $p+l$ in the first equation, we find that $3s=24$ and therefore $s=8$.\\\\\nSubstituting $p+s$ for $l$ in the second equation, we have $p + (p+s) = 2s$.  Since we know $s=8$, we have $2p+8=16$.  Solving, we find that a puppy weighs $\\boxed{4}$ pounds.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 62.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

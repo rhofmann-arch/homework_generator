@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0166",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent problems with ratios",
+  "latex": "A jar contains 10 olives.  70\\\n\n\\includegraphics[scale=0.25]{images/jar_olives.png}\n\n\\textbf{Answer:} This could be solved algebraically, but that approach is beyond the scope of most 6th-graders.  Instead: using the initial information, we can establish that there are 3 non-green olives in the jar.  If these three olives will constitute 50\\",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 57.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

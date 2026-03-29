@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0218",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "volume of rectangular prism",
+  "latex": "Khali has to shovel snow off the sidewalk in front of his house. The sidewalk is 20 feet long and 2 feet wide. If the snow is $\\frac{1}{2}$ foot deep, how many cubic feet of snow does Khali have to shovel off the sidewalk?\n\n}\n\n\\textbf{Answer:} The snow on Khalil's sidewalk is in the shape of a rectangular prism whose dimensions are 20 feet by 2 feet by $\\frac{1}{2}$ feet. The volume of such a rectangular prism is $(20\\text{ ft.})(2\\text{ ft.})\\left(\\frac{1}{2}\\text{ ft.}\\right)=\\boxed{20}$ cubic feet.",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 74.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

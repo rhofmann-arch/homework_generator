@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0183",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "linear equations with fractions",
+  "latex": "Together Larry and Lenny have $\\$$35. Larry has two-fifths of Lenny's amount. How many more dollars than Larry does Lenny have?\n\n}\n\n\\textbf{Answer:} Lenny`s amount plus $\\displaystyle \\frac{2}{5}$ of Lenny`s amount is $35$.  If $x$ is Lenny's amount, we have $x+\\displaystyle \\frac{2}{5}x=35$.  Solving for $x$, we find that Lenny has \\$25 and therefore Larry has $\\displaystyle \\frac{2}{5} \\cdot 25$ or \\$10.  The difference is $\\boxed{\\$15}$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 62.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

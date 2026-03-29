@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0203",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step fraction operations",
+  "latex": "Joe receives a cake for his birthday. He eats $\\frac{1}{4}$ of the cake on the first day. On the second day, he eats $\\frac{3}{4}$ of the amount of cake that is left after the first day. What fraction of a whole cake is left for Joe to eat on the third day?\n\n}\n\n\\textbf{Answer:} Using the common denominator of $4$, we can determine that after the first day, Joe has$$1-\\frac{1}{4}=\\frac{4}{4}-\\frac{1}{4}=\\frac{4-1}{4}=\\frac{3}{4}$$of the cake left. On the second day, Joe eats $\\frac{3}{4}$ of the amount of cake that is left after the first day, or$$\\frac{3}{4}\\cdot \\frac{3}{4}=\\frac{9}{16}$$of the whole cake. Therefore, using a common denominator of $16$ we can see that$$\\frac{3}{4}-\\frac{9}{16}=\\frac{3}{4}\\cdot \\frac{4}{4}-\\frac{9}{16}=\\frac{12}{16}-\\frac{9}{16}=\\frac{12-9}{16}=\\boxed{\\frac{3}{16}}$$of the whole cake is left for Joe to eat on the third day.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 68.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

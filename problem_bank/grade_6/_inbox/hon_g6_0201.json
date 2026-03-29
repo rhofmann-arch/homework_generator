@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0201",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of triangle in a square using fractions",
+  "latex": "Two sides of a square are divided into fourths and another side of the square is trisected, as shown. A triangle is formed by connecting three of these points, as shown. What is the ratio of the area of the shaded triangle to the area of the square? Express your answer as a fraction.\n\\begin{center}\n    \\begin{asy}\nsize(5cm);\ndraw((0,0)--(12,0)--(12,12)--(0,12)--cycle,linewidth(1));\nfill((0,4)--(9,12)--(9,0)--cycle,gray(.7));\ndraw((0,4)--(9,12)--(9,0)--cycle,linewidth(1));\ndraw((-.5,4)--(.5,4),linewidth(1));\ndraw((-.5,8)--(.5,8),linewidth(1));\n\ndraw((3,-.5)--(3,.5),linewidth(1));\ndraw((6,-.5)--(6,.5),linewidth(1));\ndraw((9,-.5)--(9,.5),linewidth(1));\n\ndraw((3,11.5)--(3,12.5),linewidth(1));\ndraw((6,11.5)--(6,12.5),linewidth(1));\ndraw((9,11.5)--(9,12.5),linewidth(1));\n\n\\end{asy}\n\\end{center}\n\n}\n\n\\textbf{Answer:} Let one side of the square have length $s$. The area of the square is $s^2$. We can find the area of the triangle in terms of $s$. The right side of the triangle has length $s$, since it is parallel to a side of the square. Since the sides of the square have been divided into fourths along the top and bottom, the height of the triangle from this base is $\\frac{3}{4}s$. Thus, the area of the triangle is:$$\\frac{1}{2}\\cdot s\\cdot \\frac{3s}{4}=\\frac{3s^2}{8}$$The ratio of the area of the shaded triangle to the area of the square is:$$\\frac{\\frac{3s^2}{8}}{s^2}=\\boxed{\\frac{3}{8}}$$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 68.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

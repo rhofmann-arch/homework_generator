@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0147",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent discount and original price",
+  "latex": "A shirt's sale price is marked $\\$14.40$, which is $60\\\n\n}\n\n\\textbf{Answer:} If the shirt is $60\\\n\n$$\\frac{\\$14.40}{.4}=\\boxed{\\$36}$$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 50.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

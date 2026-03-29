@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0135",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratios and proportional reasoning",
+  "latex": "During my three-week stay in Walla Walla, Washington, it rained for 7 days, it was sunny for 11 days, and it was overcast without rain for 3 days. The next time I go to Walla Walla, I'm staying for a full leap year, or 366 days. If we assume Walla Walla will have the same ratio of rainy, sunny, and overcast days that I experienced on my last visit, how many days in my year should I expect it to rain?\n\n}\n\n\\textbf{Answer:} The last time I was in Walla Walla, it rained for 7 out 21 days, or $\\frac{7}{21}=\\frac{1}{3}$ of the days that I was there. If Walla Walla has the same proportion of sunny days on my next visit, and if my next visit lasts 366 days, then it should rain for $\\frac{1}{3}$ of those 366 days, or $\\frac{1}{3}\\cdot 366=\\boxed{122}$ days.\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 47.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

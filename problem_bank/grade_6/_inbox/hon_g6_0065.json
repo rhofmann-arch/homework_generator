@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0065",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of triangle in a square using subtraction",
+  "latex": "In square $ABCD$ with sides of length 4 cm, $N$ is the midpoint of side $BC$ and $M$ is the midpoint of side $CD$. What is the area of triangle $AMN$, in $\\text{cm}^2$?\n\n\\begin{center}\n    \\begin{asy}\n    size(6cm);\n    pair a,b,c,d,m,n;\na=(0,10);\nb=(10,10);\nc=(10,0);\nd=(0,0);\nm=(5,0);\nn=(10,5);\ndraw(a--b--c--d--cycle);\ndraw(a--m--n--cycle);\nlabel(\"4 cm\",(5,10),N);\nlabel(\"$A$\",a,N);\nlabel(\"$B$\",b,N);\nlabel(\"$C$\",c,S);\nlabel(\"$D$\",d,S);\nlabel(\"$M$\",m,S);\nlabel(\"$N$\",n,E);pair a,b,c,d,m,n;\na=(0,10);\nb=(10,10);\nc=(10,0);\nd=(0,0);\nm=(5,0);\nn=(10,5);\ndraw(a--b--c--d--cycle);\ndraw(a--m--n--cycle);\nlabel(\"4 cm\",(5,10),N);\nlabel(\"$A$\",a,N);\nlabel(\"$B$\",b,N);\nlabel(\"$C$\",c,S);\nlabel(\"$D$\",d,S);\nlabel(\"$M$\",m,S);\nlabel(\"$N$\",n,E);\n    \\end{asy}\n\\end{center}\n}\n\n\\textbf{Answer:} \\begin{align*}\n[AMN] &= [ABCD] - [ABN] - [ADM] - [MNC] \\\\\n&= 16 - (1/2)(4)(2) - (1/2)(4)(2) - (1/2)(2)(2)\\\\\n& = 16 - 4 - 4 - 2 = \\boxed{6}\n\\end{align*}\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 26.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

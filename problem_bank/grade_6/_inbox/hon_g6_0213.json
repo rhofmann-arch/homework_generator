@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0213",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "perfect squares and arithmetic with whole numbers",
+  "latex": "Louis received some money for his birthday. From his parents, the number of dollars he received was equal to the greatest perfect square less than $100$. From his aunt, the number of dollars he received was equal to five less than five squared. From his grandparents, the number of dollars he received was equal to the only perfect square between $40$ and $50$. Altogether, how much money did Louis receive?\n\n}\n\n\\textbf{Answer:} First, we will determine how much money Louis received from each source. We know that the least perfect square is $0$, so all of the perfect squares less than $100$ are $0$, $1$, $4$, $9$, $16$, $25$, $36$, $49$, $64$, and $81$. Of these, $81$ is the greatest, and the only one between $40$ and $50$ is $49$. Therefore, Louis received $81$ dollars from his parents and $49$ dollars from his grandparents. The amount of money that Louis received from his aunt can be expressed as $5^2-5=25-5=20$ dollars. Thus, we can add these amounts to find the total amount of money Louis received. We get\\begin{align*}81+20+49&=81+49+20 \\\\ &=130+20 \\\\ &=\\boxed{150}\\text{ dollars}.\\end{align*}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 72.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

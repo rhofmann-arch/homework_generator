@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0113",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "reciprocals and inverse operations",
+  "latex": "Beginning with an integer $n,$ Jake goes through the following steps:\n\n$\\bullet$ 1. Take the reciprocal of the starting number.\n\n$\\bullet$ 2. Double the number obtained in Step 1.\n\n$\\bullet$ 3. Take the reciprocal of the number obtained in Step 2.\n\nAt the end of the third step, Jake ends up with the number $16.$ What number did Jake start with?\n}\n\n\\textbf{Answer:} Let's make up our own starting number just to see what happens when we apply Jake's procedure. Let's start with $10.$ Taking the reciprocal gives $\\frac{1}{10}.$ Multiplying by $2$ gives $2\\cdot\\frac{1}{10}.$ Taking the reciprocal again gives\\begin{align*}\n\\frac{1}{2\\cdot \\frac{1}{10}} &= \\frac{1}{2} \\cdot \\frac{1}{\\frac{1}{10}} \\\\\n&= \\frac{1}{2} \\cdot 10 \\\\\n&= \\frac{1}{2} \\cdot 2 \\cdot 5 \\\\\n&= 1 \\cdot 5 \\\\\n&= 5.\n\\end{align*}Studying the steps, we see that Jake's procedure is equivalent to dividing a number by $2.$ Indeed, if the starting number is $n,$ then the final result is\\begin{align*}\n\\frac{1}{2\\cdot \\frac{1}{n}} &= \\frac{1}{2} \\cdot \\frac{1}{\\frac{1}{n}} \\\\\n&= \\frac{1}{2} \\cdot n \\\\\n&= n \\cdot \\frac{1}{2} \\\\\n&= n \\div 2.\n\\end{align*}If the result after dividing the original number by $2$ is $16,$ then the original number was $2\\cdot 16 = \\boxed{32}.$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 40.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

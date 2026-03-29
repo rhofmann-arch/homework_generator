@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed2_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step word problem with table data",
+  "latex": "A couple plans to attend two games at Turner Field and one game at Dodger Stadium. Assuming they will spend the average amount indicated in the table below, how many dollars can the couple expect to spend, in total, for the three games?\n\n\\begin{tabular}{cc}\n\\hline\nStadium & Average cost for two people for \\\\\n& Major League Baseball game \\\\\n\\hline\nYankee Stadium & \\$75.38 \\\\\nTurner Field & \\$66.56 \\\\\nDodger Stadium & \\$50.88 \\\\\nMetrodome & \\$36.66 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "184",
+  "suggested_quarter": 2,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

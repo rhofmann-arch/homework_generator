@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0142",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent application with multi-step reasoning",
+  "latex": "Each person in a ticket line gets either one or two tickets. You are the $51^{\\mathrm{st}}$ person in line. Forty percent of the people in front of you get one ticket each, and the rest of the people in front of you get two tickets each. How many tickets will have been given out when you reach the ticket booth?\n}\n\n\\textbf{Answer:} Forty percent of the 50 people in front of you is 20 people. So 30 people got an extra ticket, and the total of tickets given out by the time you reach the window is $50 + 30 = \\boxed{80}$ tickets.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 5.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

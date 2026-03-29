@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0216",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "surface area of composite 3D figures (cubes)",
+  "latex": "Two cubes of volumes $8 \\text{~cm}^3$ and $27 \\text{~cm}^3$ are glued together at their faces to form a solid with the smallest possible surface area. What is the number of square centimeters in the surface area of the resulting solid?\n\n}\n\n\\textbf{Answer:} First, we will determine how much money Louis received from each source. We know that the least perfect square is $0$, so all of the perfect squares less than $100$ are $0$, $1$, $4$, $9$, $16$, $25$, $36$, $49$, $64$, and $81$. Of these, $81$ is the greatest, and the only one between $40$ and $50$ is $49$. Therefore, Louis received $81$ dollars from his parents and $49$ dollars from his grandparents. The amount of money that Louis received from his aunt can be expressed as $5^2-5=25-5=20$ dollars. Thus, we can add these amounts to find the total amount of money Louis received. We get\\begin{align*}81+20+49&=81+49+20 \\\\ &=130+20 \\\\ &=\\boxed{150}\\text{ dollars}.\\end{align*}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 73.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

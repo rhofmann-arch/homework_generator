@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0109",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "order of operations with integers",
+  "latex": "Find $-(-(-5))(-3)+11$.\n}\n\n\\textbf{Answer:} Each negative sign in $-(-(-5))$ means to take the negation, so in $-(-(-5))$ we take the negation three times. Taking the negation once, we get $-5$. Taking the negation a second time, we get $-(-5)=5$. Finally, taking the negation a third time, we get $-5$ and $-(-(-5)))=-5$. So we get$$-(-(-5)))(-3)+11=(-5)(-3)+11.$$Recalling that a negative number times a negative number gives a positive number, we get$$(-5)(-3)+11=15+11=\\boxed{26}.$$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 4.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

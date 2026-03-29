@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0153",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step arithmetic with order of operations",
+  "latex": "Maria, Max, Molly, and Mitch are all picking apples at an orchard. The number of apples Max picks is the number of apples Maria picks squared. Molly picks the number of apples that Max and Maria pick combined. Mitch picks the number of apples Molly picks squared plus the number of apples that Maria picks. If Maria picks 3 apples, then how many apples does Mitch pick?\n\n}\n\n\\textbf{Answer:} Since Max picks the number of apples that Maria does but squared, then Max picks $3^2=3 \\cdot 3=9$ apples. Since Molly picks the number of apples that Maria picks plus the number that Max picks, Molly picks $3+9=12$ apples. Finally, Mitch picks the number Molly picks squared plus the number Maria picks, so Mitch picks $12^2+3=12\\cdot 12 +3=144+3=\\boxed{147}$ apples.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 52.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

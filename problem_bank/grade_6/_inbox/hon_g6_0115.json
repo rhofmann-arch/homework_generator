@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0115",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step multiplication word problem",
+  "latex": "Cantaloupes, watermelons, and honeydews are all types of melon. Carrie has 11 cantaloupes. Karen has 2 times as many cantaloupes as Carrie has. Sam has 3 times as many watermelons as Karen has cantaloupes. Finally, Bobby has 5 times as many honeydews as Sam has watermelons. How many melons does the group have total?\n\n}\n\n\\textbf{Answer:} Lizzie first made $6\\cdot18$ cookies, but Wyatt ate $2\\cdot18$ cookies, finally Lizzie baked $3\\cdot18$ more cookies. The proper expression for this problem would be$$(6\\cdot18)-(2\\cdot18)+(3\\cdot18)$$Now that we have a proper expression, we can rearrange the products using the commutative property and then use the distributive property to pull 18 away from the other values.\\begin{align*}\n(6\\cdot18)-(2\\cdot18)+(3\\cdot18)&=(18\\cdot6)-(18\\cdot2)+(18\\cdot3)\n\\\\&=18\\cdot(6-2+3)\n\\\\&=18\\cdot(7)\n\\\\&=\\boxed{126 \\text{ cookies}}\n\\end{align*}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 41.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

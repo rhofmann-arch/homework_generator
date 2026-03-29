@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0181",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rates and inverse proportions",
+  "latex": "If 6 chickens lay 48 eggs in 4 days, how many days will it take 10 chickens to lay 100 eggs?\n\n}\n\n\\textbf{Answer:} This is an inverse proportion problem. The general form of an inverse proportion equation is $xy =k$, where $k$ is a constant.  In this case, allowing $x$ to represent the number of chickens and $y$ the number of days, we have $6\\cdot4 = 48\\cdot k$.  $k=0.5$, meaning it takes 0.5 chicken-days to lay one egg. To find the number of days it would take 10 chickens to lay 100 eggs, we could solve $10y=0.5\\cdot 100$ for $y$.\\\\\n\nMany students may find it easier to make a table, like this:\\\\\n\n\\begin{tabular}{c|c|c}\nChickens & Days & Eggs\\\\\n\\hline\n6&4 & 48\\\\\n6&1 &12\\\\\n1&1&2\\\\\n1&50&100\\\\\n10&5&100\\\\\n\\end{tabular}\\\\\n\\\\\nUsing either method, we have $\\boxed{5}$ days.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 61.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

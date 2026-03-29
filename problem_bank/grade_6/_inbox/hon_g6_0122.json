@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0122",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "unit conversion with ratios",
+  "latex": "If a farmer can trade four chickens for a pig, three pigs for two sheep, and five sheep for two cows, what is the minimum number of cows he needs to trade for $20$ chickens?\n}\n\n\\textbf{Answer:} We can multiply the quantity of $20$ chickens by the conversion factors from the problem to change the units from chickens to cows:$$20\\ \\text{chickens} \\cdot \\frac{1\\ \\text{pig}}{4\\ \\text{chickens}} \\cdot \\frac{2 \\ \\text{sheep}}{3\\ \\text{pigs}} \\cdot \\frac{2\\ \\text{cows}}{5\\ \\text{sheep}}=\\frac{4}{3}\\ \\text{cows}.$$Hence the farmer needs at least $\\boxed{2}$ cows.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 43.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

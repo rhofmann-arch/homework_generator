@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0051",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "segment relationships with midpoints and trisection",
+  "latex": "$B$ and $C$ trisect $\\overline{AD}$ and $M$ is the midpoint of $\\overline{AD}$. $MC = 8$. How many units are in the length of $\\overline{AD}$?\n\\begin{center}\n\\includegraphics[scale=0.5]{images/ABMCD.png}\n\\end{center}\n}\n\n\\textbf{Answer:} Since $MC = 8$ and $M$ is the midpoint of $\\overline{BC}$, we have $MB=MC = 8$, so $BC=8+8=16$. Since $B$ and $C$ trisect $\\overline{AD}$, we have $AB = CD = BC = 16$, so $AD =16+16+16=\\boxed{48}$.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 21.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

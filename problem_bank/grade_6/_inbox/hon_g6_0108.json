@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0108",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "operations with fractions and reciprocals",
+  "latex": "Simplify $16\\cdot \\frac{1}{4}$ plus the reciprocal of $-\\frac{1}{2}$.\n\n}\n\n\\large\n\n\\textbf{Answer:} First, we simplify $16\\cdot \\frac{1}{4}$. Note that $16$ can be written as $16=4\\cdot 4$. Then, we can group the pair of reciprocals and multiply as follows:\\begin{align*}16\\cdot \\frac{1}{4}&=4\\cdot 4\\cdot \\frac{1}{4} \\\\ &=4\\cdot \\frac{1}{4}\\cdot 4 \\\\ &=\\left(4\\cdot \\frac{1}{4}\\right)\\cdot 4 \\\\ &=1\\cdot 4\\\\ &=4.\\end{align*}Next, recall that $-\\frac{1}{x}=\\frac{1}{-x}$, for any nonzero number $x$, the reciprocal of any nonzero number $x$ is $\\frac{1}{x}$, and $\\frac{1}{\\frac{1}{x}}=x$, for any nonzero number $x$. We find that the reciprocal of $-\\frac{1}{2}=\\frac{1}{-2}$ is $\\frac{1}{\\frac{1}{-2}}=-2$. Now, we just have to substitute back into the original equation and do the addition. We have\\begin{align*}16\\cdot \\frac{1}{4}+\\left(\\frac{1}{-\\frac{1}{2}}\\right)&=4+(-2) \\\\ &=4-2 \\\\ &=\\boxed{2}.\\end{align*}\n\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 39.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0131",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "weighted averages",
+  "latex": "In Mrs. Marsh's algebra class, 30 of the 36 students took the Chapter 4 test, and their mean score was 72\\\n\n}\n\n\\textbf{Answer:} To make this easier, you can scale all the student numbers down by a factor of 6: 5 students averaged a $72\\",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 46.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

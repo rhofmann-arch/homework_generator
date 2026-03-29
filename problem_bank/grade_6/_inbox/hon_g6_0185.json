@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0185",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rate problems and linear equations",
+  "latex": "Janene and Emily plan to go on a marathon training run. Emily arrives late, so Janene starts running 16 minutes before Emily. Janene runs at an average rate of 9 minutes per mile, and Emily runs at an average rate of 8 1/4 minutes per mile. Assuming that both girls started at the same location and ran the same route, how many minutes will Emily take to catch up to Janene?\n\n}\n\n\\textbf{Answer:} I solved this algebraicallly:\n\n$$\\displaystyle \\frac{1}{9} \\cdot t = \\frac{1}{8.25} \\cdot (t-16)$$\n\n$$9 \\cdot 8.25 \\cdot \\displaystyle \\frac{1}{9} \\cdot t = 9 \\cdot 8.25 \\cdot  \\frac{1}{8.25} \\cdot (t-16)$$\n\n$$8.25  \\cdot t = 9 \\cdot (t-16)$$\n$$8.25  \\cdot t = 9t - 144$$\n$$144  = 0.75\\cdot t$$\n$$192  =  t$$\n\nSince the question asked for the number of minutes needed to *catch up,* the final step is $192-15=\\boxed{176}$ minutes.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 62.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

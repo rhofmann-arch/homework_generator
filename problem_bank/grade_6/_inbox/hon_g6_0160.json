@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0160",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of composite figures with squares and rectangles",
+  "latex": "What is the area of each congruent rectangle in the figure below?\n\n\\begin{center}\n\\includegraphics[scale=0.25]{images/area_color.png}\n\\end{center}\n}\n\n\\textbf{Answer:} The area of the large square (outer perimeter) is $13^2$ or 169 sq. cm.  The area of the inner square is $5^2$ or 25 sq. cm.  Subtracting, we find the total area of the four congruent rectangles is $144$ sq. cm.  Each rectangle is $\\displaystyle \\frac{144}{4}=\\boxed{36}$ sq. cm.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 55.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

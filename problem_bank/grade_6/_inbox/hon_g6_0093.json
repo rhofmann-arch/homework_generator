@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0093",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step order of operations word problem",
+  "latex": "Megan has 12 pounds of cheesecake. On Monday, she and her friends eat 4 pounds. On Tuesday, she and her friends eat another 3 pounds. On Wednesday, her friend Mark gives her some more cheesecake so that she has 3 times as much as she had at the end of Tuesday. On Thursday, some of her cheesecake goes bad, so she has the amount that she had at the end of Wednesday, but divided by 5. On Friday, she gives 3 pounds to her dog. On Saturday, her mom gives her one more pound. On Sunday, how many pounds of cheesecake does Megan have left?\n}\n\n\\textbf{Answer:} The desired answer is $(((((12-4)-3)\\cdot 3)\\div 5)-3)+1$. We must do everything in parentheses first, so starting in the center of the parentheses and working our way out, we find\\begin{align*}\\\n(((((12-4)-3)\\cdot 3)\\div 5)-3)+1 &= ((((8-3)\\cdot 3)\\div 5)-3)+1 \\\\\n&= (((5\\cdot 3)\\div 5)-3)+1 \\\\\n&= ((15\\div 5)-3)+1 \\\\\n&= (3-3)+1 \\\\\n&= 0+1 \\\\\n&= \\boxed{1}\n\\end{align*}\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 34.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

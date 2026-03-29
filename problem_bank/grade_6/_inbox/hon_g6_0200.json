@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0200",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent change with fractions",
+  "latex": "A jar contains 10 olives.  80\\\n\n\\includegraphics[scale=0.25]{images/jar_olives.png}\n\n}\n\n\\textbf{Answer:} Initially, there are 2 non-green olives.  After eating, this represents 50\\",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 67.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0137",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding multiples using division with remainders",
+  "latex": "What is the smallest positive multiple of $13$ that is greater than $500?$\n\n}\n\n\\textbf{Answer:} Dividing $500$ by $13$ gives a quotient $38$ with a remainder of $6$. In other words,\\[500 \\div 13=13 \\cdot 38+6.\\]So, the smallest positive multiple of $13$ that is greater than $500$ is\\[13\\cdot39=\\boxed{507}.\\]",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 48.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

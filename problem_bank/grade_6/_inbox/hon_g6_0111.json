@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0111",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "odds and probability conversion",
+  "latex": "The odds of losing a certain card game is 7 to 13, which means that on average there are 7 losses for every 13 wins. What is the probability of losing the game? Express your answer as a percent.\n}\n\n\\textbf{Answer:} Let the number of losses be $7x$. It follows that the number of wins is $13x$ and the total number of games is $7x + 13x = 20x$. The probability of losing the game is thus $7x/20x = \\boxed{35\\\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "stats_probability",
+  "source_file": "Honors Math 6 4.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

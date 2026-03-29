@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0172",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step equation from word problem",
+  "latex": "I take half of Jeremy's money and divide it into 7 equal piles. Six of these piles blow away in the wind, but from the seventh pile, I take 2 dollars and hand Jeremy the rest, which is 8 dollars. How much money, in dollars, did Jeremy begin with?\n\n}\n\n\\textbf{Answer:} One method is to translate the problem into an equation: $$\\displaystyle \\frac{J}{2} \\cdot \\frac{1}{7} - 2 = 8,$$ where $J$ is Jeremy's initial amount.  Solving, we have $\\boxed{\\$140}$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 59.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0154",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "subtraction and division with measurements",
+  "latex": "A section of fence is shown below.  What is the length of the gap between each post?\n\n\\begin{center}\n\\includegraphics[scale=0.3]{images/ds_l1.png}\n\\end{center}\n}\n\n\\textbf{Answer:} Since the total length is 192 cm and the three posts have a combined length of $16\\cdot 3$ cm, the two gaps have a combined length of 144 cm.  Dividing by 2, we find that each gap is $\\boxed{72}$ cm.",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "arithmetic",
+  "source_file": "Honors Math 6 53.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

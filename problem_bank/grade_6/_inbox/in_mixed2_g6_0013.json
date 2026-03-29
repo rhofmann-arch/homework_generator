@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed2_g6_0013",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of triangles in composite figures",
+  "latex": "A garden is laid out in the fashion shown in the diagram. If only the shaded isosceles triangles are used for planting, what is the total area, in square feet, that is to be used for planting? [Figure shows a rectangle with dimensions 20 ft. by 16 ft. with an X pattern inside, where the shaded portions are the four isosceles triangles forming the X. The base of the rectangle is labeled 20 ft.]",
+  "answer_latex": "256",
+  "suggested_quarter": 3,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 13,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

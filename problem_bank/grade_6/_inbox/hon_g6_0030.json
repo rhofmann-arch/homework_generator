@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0030",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of squares and rectangles with relationships",
+  "latex": "A square has an area of $25.$ A rectangle has the same width as the square. The length of the rectangle is double its width. What is the area of the rectangle?\n\n}\n\n\\textbf{Answer:} The rectangle has the same width as the square but twice the length. Thus, the rectangle's area is twice that of the square or $2 \\times 25=\\boxed{50}.$\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 15.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

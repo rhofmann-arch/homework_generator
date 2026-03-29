@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0077",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "percent change in perimeter with composite figures",
+  "latex": "A square is changed into a pentagon by building an equilateral triangle on top of it, as shown. By what percent does the perimeter increase going from the square to the pentagon?\n\\begin{center}\n    \\begin{asy}\n    size(6cm);\n    defaultpen(linewidth(0.8));\ndraw(unitsquare);\n\ndraw((2,1)--(2,0)--(3,0)--(3,1));\n\ndraw((3,1)--(2,1),dashed);\n\ndraw((2,1)--(2.5,1.8)--(3,1));\n\ndraw((1.2,0.5)--(1.8,0.5),Arrow(SimpleHead));\n    \\end{asy}\n\\end{center}\n\n}\n\n\\textbf{Answer:} Let a side length of the square be $x$. The original perimeter is $4x$. In adding the equilateral triangle, one of the side lengths of the square is eliminated while two congruent side lengths of the triangle are added. Thus, the final perimeter is $5x$. The increase in perimeter is $\\frac{5x-4x}{4x}=\\boxed{25\\\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 3.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

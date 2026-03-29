@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0052",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of square after percent reduction",
+  "latex": "A computer program reduces the length of each side of an 8'' by 8'' square photograph by $25\\\n}\n\n\\textbf{Answer:} Each side of the new photo is $0.75(8)=6$ inches. So the area is $6^2=\\boxed{36}$ square inches.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "suggested_domain": "geometry",
+  "source_file": "Honors Math 6 22.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

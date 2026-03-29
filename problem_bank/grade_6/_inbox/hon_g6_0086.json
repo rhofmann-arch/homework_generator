@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0086",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "one-step equation from ratio relationship",
+  "latex": "A piece of yarn is $60$ cm long. The yarn is cut so that one piece is five times the length of the other piece. How many centimeters long is the shorter piece?\n\n}\n\n\\textbf{Answer:} If the shorter piece has length $x$, then the longer piece has length $5x$. We require that $x + 5x = 6x = 60$. Thus, $x = \\boxed{10}$ cm.\n}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 32.zip",
+  "source_problem_number": null,
+  "honors": true,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}
