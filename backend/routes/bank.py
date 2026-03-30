@@ -1,4 +1,3 @@
-from __future__ import annotations
 """
 Problem bank review API routes.
 
@@ -77,7 +76,6 @@ class ApproveRequest(BaseModel):
     problem_id: str
     domain: str
     quarter: int
-    honors: Optional[bool] = False
     notes: Optional[str] = ""
     grade: Optional[int] = 6
 
@@ -214,7 +212,6 @@ def approve(req: ApproveRequest):
     data = read_problem(src)
     data["domain"] = req.domain
     data["quarter"] = req.quarter
-    data["honors"] = req.honors or False
     data["approved"] = True
     data["flagged"] = False
     data["notes"] = req.notes or data.get("notes", "")
@@ -252,25 +249,6 @@ def delete(req: DeleteRequest):
     src.unlink()
     return {"ok": True}
 
-# ── Edit endpoint (add to bank.py after the delete endpoint) ──────────────────
-
-class EditRequest(BaseModel):
-    problem_id: str
-    latex: str
-    grade: int = 6
-
-
-@router.post("/api/bank/edit")
-def edit_latex(req: EditRequest):
-    """Update the latex field of a problem in place (inbox or approved)."""
-    src = problem_path(req.problem_id, req.grade)
-    if not src:
-        raise HTTPException(404, f"Problem not found: {req.problem_id}")
-    data = read_problem(src)
-    data["latex"] = req.latex
-    write_problem(src, data)
-    return {"ok": True}
-
 
 # ── Sampler (used by generation pipeline) ────────────────────────────────────
 
@@ -282,29 +260,50 @@ def sample_problems(
     honors_only: bool = False,
 ) -> list[dict]:
     """
-    Return n randomly sampled approved problems.
-    - domain=None draws from all domains.
+    Return up to n randomly sampled approved problems.
+
+    - domain=None draws from all VALID_DOMAINS.
     - honors_only=True filters to problems with honors=True.
     - Draws from Q1 through max_quarter (cumulative).
+    - If the requested domain(s) have fewer than n problems, falls back to
+      arithmetic (if not already the domain) to fill the shortfall, then
+      to any approved problem regardless of domain.
     """
     gd = grade_dir(grade)
     domains = VALID_DOMAINS if domain is None else [domain]
-    pool = []
-    for d in domains:
-        for q in range(1, max_quarter + 1):
-            folder = gd / d / f"q{q}"
-            if not folder.exists():
-                continue
-            for f in folder.glob("*.json"):
-                try:
-                    data = json.loads(f.read_text())
-                    if not data.get("approved") or data.get("flagged"):
-                        continue
-                    if honors_only and not data.get("honors"):
-                        continue
-                    pool.append(data)
-                except Exception:
+
+    def _collect(search_domains: list[str]) -> list[dict]:
+        pool = []
+        for d in search_domains:
+            for q in range(1, max_quarter + 1):
+                folder = gd / d / f"q{q}"
+                if not folder.exists():
                     continue
+                for f in folder.glob("*.json"):
+                    try:
+                        data = json.loads(f.read_text())
+                        if not data.get("approved") or data.get("flagged"):
+                            continue
+                        if honors_only and not data.get("honors"):
+                            continue
+                        pool.append(data)
+                    except Exception:
+                        continue
+        return pool
+
+    pool = _collect(domains)
+
+    # Fallback 1: supplement with arithmetic if underfull
+    if len(pool) < n and "arithmetic" not in domains:
+        seen_ids = {p["id"] for p in pool}
+        extras = [p for p in _collect(["arithmetic"]) if p["id"] not in seen_ids]
+        pool += extras
+
+    # Fallback 2: supplement with anything approved if still underfull
+    if len(pool) < n:
+        seen_ids = {p["id"] for p in pool}
+        extras = [p for p in _collect(VALID_DOMAINS) if p["id"] not in seen_ids]
+        pool += extras
 
     if len(pool) <= n:
         return pool

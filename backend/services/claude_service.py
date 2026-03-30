@@ -4,7 +4,7 @@ from pathlib import Path
 import anthropic
 from services.pacing import WeekContext
 from services.lesson_pdf import find_lesson_pdf, pdf_to_base64
-from routes.bank import sample_problems
+from services.bank import sample_problems
 
 logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
@@ -71,7 +71,7 @@ BACK_TOOL = {
                     },
                     "required": ["latex"]
                 },
-                "minItems": 10,
+                "minItems": 5,
                 "maxItems": 10,
             },
         },
@@ -104,8 +104,40 @@ CHALLENGE_TOOL = {
 }
 
 
-def _front_prompt(grade, covered, current):
-    system = STYLE_NOTES + """
+def _front_prompt(grade, current, bank_problems: list[dict]):
+    """
+    Build the spiral review prompt using approved bank problems as templates.
+    Claude varies numbers/context but preserves structure — no free generation.
+    Falls back to topic-based generation if bank is empty.
+    """
+    if bank_problems:
+        system = STYLE_NOTES + """
+Rules for spiral review problems:
+- Exactly 10 problems total.
+- Use the bank problems below as your ONLY source of problem structures.
+  Change the numbers, names, and contexts — preserve the problem type exactly.
+- Do NOT invent new problem types not represented in the bank problems.
+- Do NOT include the current week's lesson topic.
+- No multi-step word problems. Each solvable in 60-90 seconds.
+- It is fine — even expected — for multiple problems to share the same structure
+  with different numbers. Repetition of structure is correct here.
+"""
+        bank_text = "\n\n".join(
+            f"[{p.get('domain','?')} Q{p.get('quarter','?')}] {p['latex']}"
+            for p in bank_problems
+        )
+        user = (
+            f"Grade: {grade}\n"
+            f"Current week topic (do NOT include): {current}\n\n"
+            f"Bank problems to use as templates (vary numbers/context only):\n\n"
+            f"{bank_text}\n\n"
+            "Generate exactly 10 spiral review problems by varying the bank problems above. "
+            "Use each bank problem as a structural template at least once. "
+            "If you have more than 10 templates, pick the most varied set."
+        )
+    else:
+        # Fallback: free generation when bank is empty (early in the year)
+        system = STYLE_NOTES + """
 Rules for spiral review problems:
 - Exactly 10 problems total.
 - Only use topics from covered_topics list.
@@ -113,12 +145,11 @@ Rules for spiral review problems:
 - Vary types: computation, explanation, fill-in, true/false.
 - No multi-step word problems. Each solvable in 60-90 seconds.
 """
-    user = (
-        f"Grade: {grade}\n"
-        f"Covered topics (oldest first): {covered}\n"
-        f"Current week (do NOT include): {current}\n"
-        "Generate 10 spiral review problems."
-    )
+        user = (
+            f"Grade: {grade}\n"
+            f"Current week (do NOT include): {current}\n"
+            "Generate 10 spiral review problems on covered arithmetic topics."
+        )
     return system, user
 
 
@@ -135,7 +166,7 @@ def _back_prompt(
     either [{"type": "text", ...}] alone, or with PDF document blocks prepended
     when a lesson PDF is available.
     """
-    n = "10"
+    n = "5-7" if class_type == "honors" else "8-10"
 
     system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
@@ -149,13 +180,8 @@ Rules for lesson practice problems:
 - Do not repeat topics from spiral_topics: {spiral_topics}
 - Match the style, format, and difficulty of the provided worksheet exactly —
   same problem structure, same vocabulary, same level of scaffolding.
-- Vary problem types (computation, word problem, fill-in, true/false) but
-  do NOT include error analysis problems (e.g. "find the mistake", "a student
-  says... identify the error"). These are excluded from lesson practice.
-- Do NOT include a challenge section, challenge block, or \\challengeblock macro.
-  Challenge problems are handled separately and must not appear here.
-- When a problem includes a tikz diagram, add \\vspace{{6pt}} immediately before
-  the \\begin{{tikzpicture}} so the diagram does not crowd the problem text.
+- Vary problem types (computation, word problem, true/false, error analysis)
+  but only as those types appear in the provided worksheet.
 """
 
     # Build content blocks — start with any lesson PDFs we can find
@@ -302,33 +328,85 @@ async def _call(
     return tool_block.input
 
 
+def _school_quarter(date_str: str) -> int:
+    """
+    Derive school quarter (1-4) from a date string (YYYY-MM-DD).
+    Approximate boundaries for a Sept-June school year:
+      Q1: Sept-Oct, Q2: Nov-Jan, Q3: Feb-Mar, Q4: Apr-Jun
+    """
+    try:
+        from datetime import date
+        d = date.fromisoformat(str(date_str)[:10])
+        m = d.month
+        if m in (9, 10):
+            return 1
+        elif m in (11, 12, 1):
+            return 2
+        elif m in (2, 3):
+            return 3
+        else:
+            return 4
+    except Exception:
+        return 1  # safe default
+
+
+# Pool config — edit here to rebalance spiral review counts.
+# Q1 school quarter uses arithmetic-only; later quarters use this config.
+SPIRAL_POOL_CONFIG = [
+    {"domain": "arithmetic",             "n": 4},
+    {"domain": "geometry",               "n": 2},
+    {"domain": "expressions_equations",  "n": 2},
+    {"domain": "stats_probability",      "n": 1},
+    {"domain": None,                     "n": 1},  # wildcard: any domain
+]
+
+
 async def generate_problems(context: WeekContext, class_type: str) -> dict:
-    covered = ", ".join(context.covered_topics[-20:])
     current_lessons = context.current_lessons
     current_str = ", ".join(current_lessons)
+    grade_int = int(str(context.grade).split("_")[0])
 
-    front_sys, front_usr = _front_prompt(context.grade, covered, current_str)
+    # Derive school quarter from request date to cap bank difficulty
+    date_str = getattr(context, "specific_date", None) or getattr(context, "week_start", None) or ""
+    school_q = _school_quarter(str(date_str))
+
+    # ── Spiral bank sampling ──────────────────────────────────────────────────
+    # Q1: arithmetic only — students haven't seen other domains yet.
+    # Later quarters: draw per SPIRAL_POOL_CONFIG with fallback built into sample_problems.
+    if school_q == 1:
+        spiral_bank = sample_problems(
+            domain="arithmetic",
+            grade=grade_int,
+            max_quarter=1,
+            n=10,
+        )
+    else:
+        spiral_bank = []
+        seen_ids: set[str] = set()
+        for pool in SPIRAL_POOL_CONFIG:
+            problems = sample_problems(
+                domain=pool["domain"],
+                grade=grade_int,
+                max_quarter=school_q,
+                n=pool["n"],
+            )
+            for p in problems:
+                if p["id"] not in seen_ids:
+                    spiral_bank.append(p)
+                    seen_ids.add(p["id"])
+
+    front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank)
 
     if class_type == "honors":
-        grade_int = int(str(context.grade).split("_")[0])
-        # Prefer honors-flagged bank problems as challenge models.
-        # If none exist yet, fall back to any approved problems (still better
-        # than free generation — preserves structure and difficulty calibration).
+        # Sample up to 4 approved honors problems from the bank as challenge models.
+        # Any domain is fine — we want structural variety. Falls back gracefully if empty.
         bank_challenge = sample_problems(
-            domain=None,
+            domain=None,       # any domain
             grade=grade_int,
-            max_quarter=4,
+            max_quarter=4,     # draw from all quarters
             n=4,
             honors_only=True,
         )
-        if not bank_challenge:
-            bank_challenge = sample_problems(
-                domain=None,
-                grade=grade_int,
-                max_quarter=4,
-                n=4,
-                honors_only=False,
-            )
         chal_sys, chal_usr = _challenge_prompt(
             current_topic=context.current_topic,
             current_lessons=current_lessons,
