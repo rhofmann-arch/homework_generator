@@ -135,7 +135,8 @@ def _compile(tmpdir: str, tex_path: str) -> str:
 async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> str:
     template = TEMPLATE_PATH.read_text()
 
-    course_name  = COURSE_NAMES.get((context.grade, class_type), f"Grade {context.grade} Math")
+    grade_key = str(context.grade).split("_")[0]
+    course_name  = COURSE_NAMES.get((grade_key, class_type), f"Grade {grade_key} Math")
     display_date = context.hw_days[0]["date"] if context.hw_days else context.week_start
     d            = datetime.strptime(display_date, "%Y-%m-%d")
     date_str     = d.strftime("%b %-d, %Y")
