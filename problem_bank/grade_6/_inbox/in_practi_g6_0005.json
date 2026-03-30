@@ -1,15 +1,15 @@
 {
   "id": "in_practi_g6_0005",
-  "domain": "arithmetic",
+  "domain": null,
   "grade": 6,
-  "quarter": 1,
+  "quarter": null,
   "topic": "decimal to fraction conversion",
   "latex": "Write 0.31 as a fraction.",
   "answer_latex": "\\frac{31}{100}",
   "suggested_quarter": 2,
   "source_file": "practicepages_test_page.pdf",
   "source_problem_number": 5,
-  "approved": true,
+  "approved": false,
   "flagged": false,
   "notes": "",
   "honors": false

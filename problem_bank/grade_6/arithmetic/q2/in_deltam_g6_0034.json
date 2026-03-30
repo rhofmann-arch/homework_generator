@@ -2,7 +2,7 @@
   "id": "in_deltam_g6_0034",
   "domain": "arithmetic",
   "grade": 6,
-  "quarter": 1,
+  "quarter": 2,
   "topic": "multiplying fractions and whole numbers by 2, doubling recipe quantities",
   "latex": "Corey's favorite drink is a Red Bean Tapioca Milkshake. He wants to make two batches. Fill in the following table for how much of each ingredient he will need.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\n\\textbf{Batches} & 1 & 2 \\\\\n\\hline\nvanilla ice cream (pints) & $\\frac{3}{2}$ & \\\\\n\\hline\nred beans (cups) & $\\frac{1}{2}$ & \\\\\n\\hline\nmilk (cups) & $\\frac{1}{3}$ & \\\\\n\\hline\nlemon juice (teaspoons) & $\\frac{5}{2}$ & \\\\\n\\hline\npearl tapioca (cups) & $\\frac{1}{4}$ & \\\\\n\\hline\n\\end{tabular}",
   "answer_latex": "vanilla ice cream: $3$, red beans: $1$, milk: $\\frac{2}{3}$, lemon juice: $5$, pearl tapioca: $\\frac{1}{2}$",
