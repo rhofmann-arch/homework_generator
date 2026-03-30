@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0071",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "simplifying ratios, part-to-whole",
+  "latex": "There are 8 squares and 4 circles. What is the simplest ratio of circles to total shapes?",
+  "answer_latex": "1:3",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 71,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

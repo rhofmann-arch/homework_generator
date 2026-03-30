@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed3_g6_0011",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "area of circles subtracted from rectangle, answer in terms of pi",
+  "latex": "Eight circular cookies are cut from a rectangle of dough measuring 4 inches by 8 inches. How many square inches of dough are left over? Express your answer in terms of $\\pi$.",
+  "answer_latex": "32 - 8\\pi",
+  "suggested_quarter": 3,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

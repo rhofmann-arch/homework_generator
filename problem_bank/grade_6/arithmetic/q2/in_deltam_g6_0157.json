@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0157",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding whole from a fractional part, multiplication",
+  "latex": "$4$ dogs are $\\frac{1}{8}$ of the dogs in the neighborhood. How many total dogs are in the neighborhood?",
+  "answer_latex": "32",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 157,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

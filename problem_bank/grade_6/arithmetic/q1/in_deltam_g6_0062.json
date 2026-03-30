@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0062",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "ratios with visual diagrams, simplifying ratios",
+  "latex": "Find the ratio of circles to triangles in the diagram below.\n\n\nRatio of circles to triangles (without simplifying): $\\underline{\\quad} : \\underline{\\quad}$\n\nFor every $1$ circle there are $\\underline{\\quad}$ triangles, therefore the simplified ratio of circles to triangles is $\\underline{\\quad} : \\underline{\\quad}$.",
+  "answer_latex": "4:4 \\text{ (unsimplified)}; \\text{ For every 1 circle there are 1 triangles, simplified ratio is } 1:1",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 62,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

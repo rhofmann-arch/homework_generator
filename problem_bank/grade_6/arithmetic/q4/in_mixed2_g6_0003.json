@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed2_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "multi-step word problem, multiplication and subtraction with decimals",
+  "latex": "A tanker carries $10,000$ gallons of gasoline. Gasoline weighs $5.99$ pounds per gallon at $60$ degrees Fahrenheit and $6.25$ pounds per gallon at zero degrees Fahrenheit. How many pounds heavier is the tanker when it carries a full load at the colder temperature than at the warmer temperature.",
+  "answer_latex": "2600",
+  "suggested_quarter": 2,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

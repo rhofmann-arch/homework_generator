@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0059",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations with multiplication and addition",
+  "latex": "Simplify the expression below using order of operations.\n$$9 + 4 \\times 2 + 2$$",
+  "answer_latex": "19",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 59,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

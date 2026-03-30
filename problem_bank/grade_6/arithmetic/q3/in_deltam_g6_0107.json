@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0107",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratio and proportion, scaling up",
+  "latex": "To make salad dressing, combine one tablespoon of oil for every two tablespoons of vinegar. If a batch of salad dressing has four tablespoons of oil, how many tablespoons of vinegar does it have?",
+  "answer_latex": "8 \\text{ tablespoons of vinegar}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 107,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

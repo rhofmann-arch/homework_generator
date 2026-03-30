@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0130",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "distance calculation with decimals, distance-time-rate",
+  "latex": "Joshua boards a plane to visit his grandparents in another city. How far does he travel if the plane flies at a rate of $816.7$ kph for $2.4$ hours?",
+  "answer_latex": "1,960.1 \\text{ kilometers}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 130,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

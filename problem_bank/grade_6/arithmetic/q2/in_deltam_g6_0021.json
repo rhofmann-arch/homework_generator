@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0021",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding missing fraction to make one whole",
+  "latex": "Find the missing fraction. $$\\frac{3}{4} + \\frac{?}{?} = 1$$",
+  "answer_latex": "\\frac{1}{4}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

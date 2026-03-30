@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed3_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "mean and median, difference as fraction",
+  "latex": "Lee took a survey for the school newspaper and received the following data about the number of hours classmates studied per week: $\\{1, 2, 4, 5, 6, 8, 9, 10, 10\\}$. Express as a common fraction the positive difference between the median and the mean of this set of data.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

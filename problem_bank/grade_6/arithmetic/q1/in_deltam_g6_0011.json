@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "converting improper fractions to mixed numbers",
+  "latex": "Convert $\\frac{5}{3}$ into a mixed number.",
+  "answer_latex": "1\\frac{2}{3}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

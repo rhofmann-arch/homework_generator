@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0112",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratio and proportion, unit rate with money",
+  "latex": "Four tubs of yogurt cost $\\$20$. How much does one tub of yogurt cost?",
+  "answer_latex": "\\$5",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 112,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding missing fraction to make one whole",
+  "latex": "Find the missing fraction. $$1 = \\frac{?}{?} + \\frac{4}{8}$$",
+  "answer_latex": "\\frac{4}{8}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0051",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "word problems, choosing correct operation (multiplication)",
+  "latex": "Mav read $47$ pages of a book on Thursday. She read $3$ times more pages on Friday. Which expression below represents the number of pages Mav read on Friday?\n\nA. $47 - 3$\n\nB. $47 \\times 3$\n\nC. $47 \\div 3$\n\nD. $47 + 3$",
+  "answer_latex": "B",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 51,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

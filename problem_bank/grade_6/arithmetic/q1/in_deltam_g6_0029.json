@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multiplying a whole number by a fraction",
+  "latex": "Rewrite the expression below as a single fraction. $$4 \\times \\frac{4}{6}$$",
+  "answer_latex": "\\frac{16}{6}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 29,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

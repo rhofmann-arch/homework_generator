@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0032",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multiplying fractions and whole numbers by 2, doubling recipe quantities",
+  "latex": "Annabelle's favorite drink is a Blended Mocha Drink. She wants to make two batches. Fill in the following table for how much of each ingredient she will need.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\n\\textbf{Batches} & 1 & 2 \\\\\n\\hline\nespresso (cups) & $\\frac{9}{4}$ & \\\\\n\\hline\ncondensed milk (cups) & $\\frac{3}{4}$ & \\\\\n\\hline\nwhole milk (cups) & 3 & \\\\\n\\hline\nice (pounds) & $\\frac{7}{4}$ & \\\\\n\\hline\nchocolate syrup (cups) & $\\frac{5}{8}$ & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "espresso: $4\\frac{1}{2}$, condensed milk: $1\\frac{1}{2}$, whole milk: $6$, ice: $3\\frac{1}{2}$, chocolate syrup: $1\\frac{1}{4}$",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 32,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

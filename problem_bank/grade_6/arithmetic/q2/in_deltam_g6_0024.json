@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0024",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding missing fraction to make one whole",
+  "latex": "Find the missing fraction. $$\\frac{3}{10} + \\frac{?}{?} + \\frac{3}{10} + \\frac{2}{10} = 1$$",
+  "answer_latex": "\\frac{2}{10}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 24,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0109",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "ratio and proportion, scaling up with money",
+  "latex": "The corner store sells a super-size granola bar for $\\$3$. How much do five super-size granola bars cost?",
+  "answer_latex": "15 \\text{ dollars}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 109,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

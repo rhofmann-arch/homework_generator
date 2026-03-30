@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "converting mixed numbers to improper fractions",
+  "latex": "Convert $2\\frac{8}{9}$ into an improper fraction.",
+  "answer_latex": "\\frac{26}{9}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

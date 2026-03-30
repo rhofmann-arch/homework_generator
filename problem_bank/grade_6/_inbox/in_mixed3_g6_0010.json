@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed3_g6_0010",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "surface area of open rectangular prism",
+  "latex": "The top base has been removed from a right rectangular prism as shown. The result is an open box that measures 6 inches by 5 inches by 2 inches. Each exterior face of the box is painted red, and each interior face of the box is painted blue. What is the total area of the box's painted surfaces in square inches?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

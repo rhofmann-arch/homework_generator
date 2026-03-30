@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0054",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "word problems, choosing correct operation (subtraction)",
+  "latex": "A librarian knows there are $360$ books in total on two shelves. She counts $195$ books on one of the shelves. Which expression below represents the number of books on the other shelf?\n\nA. $360 \\times 195$\n\nB. $360 \\div 195$\n\nC. $360 + 195$\n\nD. $360 - 195$",
+  "answer_latex": "D",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 54,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

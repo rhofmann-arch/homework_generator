@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0056",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations with parentheses and division",
+  "latex": "Simplify the expression below using order of operations.\n$$2 + (4 \\times 5) \\div 5$$",
+  "answer_latex": "6",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 56,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

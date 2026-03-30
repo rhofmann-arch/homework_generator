@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0068",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "simplifying ratios from diagrams",
+  "latex": "Find the ratio of triangles to squares in the diagram below.\n\nRatio of triangles to squares (without simplifying): $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$\n\nFor every $1$ triangle there are $\\underline{\\hspace{1cm}}$ squares, therefore the simplified ratio of triangles to squares is $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$.",
+  "answer_latex": "1:4",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 68,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

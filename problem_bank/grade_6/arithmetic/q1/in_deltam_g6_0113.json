@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0113",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "ratio and proportion, scaling up",
+  "latex": "In a recipe, for every tablespoon of sugar there are five teaspoons of salt. If a batch uses six tablespoons of sugar, how many teaspoons of salt does it use?",
+  "answer_latex": "30 \\text{ teaspoons}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 113,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

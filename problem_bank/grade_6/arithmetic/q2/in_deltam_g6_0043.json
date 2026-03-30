@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0043",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratio tables, finding missing values",
+  "latex": "Dominic is trying to solve a math problem with a ratio table. See if you can follow his strategy. Fill in the missing number in the space below.\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\negg cartons & 1 & 2 & 20 & 18 \\\\\n\\hline\neggs & 12 & 24 & 240 & \\underline{\\hspace{1cm}} \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "216",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 43,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

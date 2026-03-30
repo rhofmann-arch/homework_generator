@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0111",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "ratio and proportion, scaling up",
+  "latex": "A pancake recipe calls for one egg for every five cups of flour. How many cups of flour do you need for nine eggs?",
+  "answer_latex": "45 \\text{ cups}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 111,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

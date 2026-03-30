@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0058",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations with division and parentheses",
+  "latex": "Simplify the expression below using order of operations.\n$$2 \\div 2 + (9 - 1)$$",
+  "answer_latex": "9",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 58,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

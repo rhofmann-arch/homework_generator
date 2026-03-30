@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0134",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "distance-rate-time word problem, multi-step addition",
+  "latex": "Peyton and her family are visiting family in another part of the country. They decided that they would take the scenic route, taking a three-day road trip.\n\n\\begin{itemize}\n\\item On Wednesday they drove at an average speed of $55$ mph for $8$ hours.\n\\item On Thursday they drove at an average speed of $60$ mph for $6$ hours.\n\\item On Friday they drove at an average speed of $30$ mph for $5$ hours.\n\\end{itemize}\n\nWhat was the total distance traveled?",
+  "answer_latex": "950 \\text{ miles}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 134,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

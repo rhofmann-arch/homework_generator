@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0042",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratio tables, finding missing values",
+  "latex": "Grayson is trying to solve a math problem with a ratio table. See if you can follow his strategy. Fill in the missing number in the space below.\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\ntubs of yogurt & 1 & 2 & 4 \\\\\n\\hline\ndollars & 4 & 8 & \\underline{\\hspace{1cm}} \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "16",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 42,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

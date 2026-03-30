@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0052",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "word problems, choosing correct operation (division)",
+  "latex": "The third grade class collected $72$ cans for a food drive. They wanted to carry the cans in bags, so they put $9$ cans in each bag. Which expression below represents the number of bags they used?\n\nA. $72 + 9$\n\nB. $72 - 9$\n\nC. $72 \\times 9$\n\nD. $72 \\div 9$",
+  "answer_latex": "D",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 52,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

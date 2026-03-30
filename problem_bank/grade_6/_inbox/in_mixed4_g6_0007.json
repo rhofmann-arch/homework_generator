@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed4_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "capture-recapture proportion problem",
+  "latex": "At the beginning of a study 24 fish are caught, tagged and released back into a large pond containing fish. A few days later, 19 fish are caught from the pond and three of them have tags. Using this ratio, how many total fish would you expect to be living in the pond?",
+  "answer_latex": "152",
+  "suggested_quarter": 3,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

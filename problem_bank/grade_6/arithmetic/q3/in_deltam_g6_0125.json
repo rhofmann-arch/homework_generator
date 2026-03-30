@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0125",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "rate/speed calculation, distance-time-rate",
+  "latex": "Tanisha boards a plane to visit her grandparents in another city. How fast is the plane if it flies $2,200$ miles in $4$ hours?",
+  "answer_latex": "550 \\text{ miles per hour}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 125,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

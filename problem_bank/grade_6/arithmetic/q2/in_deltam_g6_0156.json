@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0156",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding whole from a fractional part, multiplication",
+  "latex": "$2$ lions are $\\frac{1}{7}$ of the lions in the jungle. How many total lions are in the jungle?",
+  "answer_latex": "14",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 156,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

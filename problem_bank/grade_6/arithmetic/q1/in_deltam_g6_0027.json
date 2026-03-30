@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0027",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multiplying a whole number by a fraction",
+  "latex": "Rewrite the expression below as a single fraction. $$10 \\times \\frac{1}{8}$$",
+  "answer_latex": "\\frac{10}{8}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 27,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

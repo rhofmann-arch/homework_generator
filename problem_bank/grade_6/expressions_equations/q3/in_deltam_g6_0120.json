@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0120",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "solving proportions, variable in denominator",
+  "latex": "Solve for $x$. $$\\frac{8}{x} = \\frac{2}{5}$$",
+  "answer_latex": "x = 20",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 120,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

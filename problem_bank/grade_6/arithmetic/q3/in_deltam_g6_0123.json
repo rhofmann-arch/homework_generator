@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0123",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "rate word problem, finding distance",
+  "latex": "A hot-air balloon rises in the air, or ascends, at a rate of $550$ feet/minute. How far does it ascend in $8$ minutes?",
+  "answer_latex": "4{,}400 \\text{ feet}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 123,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

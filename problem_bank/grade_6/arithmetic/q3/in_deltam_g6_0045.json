@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0045",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratio tables, finding missing values",
+  "latex": "Sarah is trying to solve a math problem with a ratio table. See if you can follow her strategy. Fill in the missing number in the space below.\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\nmovie tickets & 1 & 2 & 3 & 4 \\\\\n\\hline\ndollars & 15 & 30 & 45 & \\underline{\\hspace{1cm}} \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "60",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 45,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed4_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step word problem with decimals and unit rates",
+  "latex": "Midtown Taxi charges \\$1.60 plus \\$0.25 per one-eighth mile. The distance from the hotel to the airport is 16.25 miles. Two passengers will evenly split the fare. How many dollars will each passenger pay? Express your answer to the nearest hundredth.",
+  "answer_latex": "17.05 \\text{ dollars}",
+  "suggested_quarter": 3,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0091",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "double number lines, equivalent ratios",
+  "latex": "Taylor and Ashley are helping their friend move. Taylor can move three boxes for every five boxes that Ashley can move. Fill in the blank in the double number line below.\n\n\\begin{array}{c|c|c|c|c|c}\n\\text{Taylor boxes} & 3 & 6 & 9 & 12 & 15 \\\\\n\\hline\n\\text{Ashley boxes} & 5 & 10 & 15 & 20 & \\underline{\\quad}\n\\end{array}",
+  "answer_latex": "25",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 91,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0106",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratio and proportion, unit rate",
+  "latex": "A pancake recipe calls for $9$ eggs and $45$ cups of flour. How many cups of flour would you need for a single egg?",
+  "answer_latex": "5 \\text{ cups of flour}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 106,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

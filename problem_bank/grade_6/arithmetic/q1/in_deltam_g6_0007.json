@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "simplifying fractions",
+  "latex": "Simplify: $\\frac{4}{8}$",
+  "answer_latex": "\\frac{1}{2}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

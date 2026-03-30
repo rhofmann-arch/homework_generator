@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0115",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "unit rate word problem, ratios",
+  "latex": "To make a batch of rice, $14$ cups of water are combined with $7$ cups of rice. How many cups of water are needed for one cup of rice?",
+  "answer_latex": "2 \\text{ cups}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 115,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

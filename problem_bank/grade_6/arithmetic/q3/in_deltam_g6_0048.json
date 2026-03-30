@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0048",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratio tables, scaling by powers of 10",
+  "latex": "Alexander is trying to solve the following problem with a ratio table. Fill in the last column of the ratio table to answer the question.\n\nIf you order $1$ pizza, you will get $8$ slices of pizza. How many slices of pizza are there in $100$ pizzas?\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\npizzas & 1 & 10 & \\\\\n\\hline\nslices of pizza & 8 & 80 & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "100 \\text{ pizzas}, 800 \\text{ slices of pizza}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 48,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

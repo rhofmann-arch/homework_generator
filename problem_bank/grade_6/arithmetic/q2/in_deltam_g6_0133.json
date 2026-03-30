@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0133",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "distance-rate-time word problem, multi-step with relational information",
+  "latex": "Avani and her family are visiting family in another part of the country. They decided that they would take the scenic route, taking a three-day road trip.\n\n\\begin{itemize}\n\\item On Wednesday they drove at an average speed of $50$ mph for $2$ hours.\n\\item On Thursday they drove at an average speed of $35$ mph for $6$ hours.\n\\item On Friday they drove $20$ mph faster than on Thursday for $7$ hours.\n\\end{itemize}\n\nWhat was the total distance traveled?",
+  "answer_latex": "695 \\text{ miles}",
+  "suggested_quarter": 3,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 133,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

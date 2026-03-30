@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed4_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "arithmetic mean, solving for unknown value",
+  "latex": "Arthur wants to be certain his average is at least 90 for the first grading period. His first five test scores were 76, 95, 88, 99, and 83. The teacher plans one more test. What is the lowest score Arthur can get on this test and achieve his desired average?",
+  "answer_latex": "99",
+  "suggested_quarter": 2,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 9,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

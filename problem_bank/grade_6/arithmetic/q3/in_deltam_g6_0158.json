@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0158",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding whole from a fractional part, multiplication",
+  "latex": "$3$ tigers are $\\frac{1}{10}$ of the tigers in the forest. How many total tigers are in the forest?",
+  "answer_latex": "30",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 158,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}
