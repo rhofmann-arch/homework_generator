@@ -4,7 +4,7 @@ from pathlib import Path
 import anthropic
 from services.pacing import WeekContext
 from services.lesson_pdf import find_lesson_pdf, pdf_to_base64
-from routes.bank import sample_problems
+from services.bank import sample_problems
 
 logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
