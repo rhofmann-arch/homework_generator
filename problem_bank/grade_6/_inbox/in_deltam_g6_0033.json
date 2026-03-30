@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0033",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multiplying fractions and whole numbers by 2, doubling recipe quantities",
+  "latex": "Travis's favorite drink is a Pineapple Lemonade. He wants to make two batches. Fill in the following table for how much of each ingredient he will need.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\n\\textbf{Batches} & 1 & 2 \\\\\n\\hline\nlemons & 4 & \\\\\n\\hline\nwater (quarts) & 1 & \\\\\n\\hline\nsugar (cups) & $\\frac{1}{2}$ & \\\\\n\\hline\npineapple juice (cups) & $\\frac{3}{2}$ & \\\\\n\\hline\nlemon-lime soda (cups) & $\\frac{3}{4}$ & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "lemons: $8$, water: $2$, sugar: $1$, pineapple juice: $3$, lemon-lime soda: $1\\frac{1}{2}$",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 33,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

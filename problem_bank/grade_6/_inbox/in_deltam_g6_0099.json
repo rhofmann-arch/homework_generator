@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0099",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "equivalent ratios on double number lines",
+  "latex": "There are ten pennies in a dime. Fill in the blanks in the double number line below.\n\nPennies: $10, 20, \\underline{\\quad}, \\underline{\\quad}, \\underline{\\quad}, 60, 70$\n\nDimes: $1, 2, 3, \\underline{\\quad}, 5, 6, 7$",
+  "answer_latex": "30, 40, 50, 4",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 99,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

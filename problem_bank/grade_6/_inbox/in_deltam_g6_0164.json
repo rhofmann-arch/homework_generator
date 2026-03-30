@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0164",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding the whole given a part and fraction",
+  "latex": "The $32$ tigers shown are $\\frac{8}{9}$ of the tigers in the forest. How many total tigers are in the forest?\n\nThere are _____ total tigers.",
+  "answer_latex": "36",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 164,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

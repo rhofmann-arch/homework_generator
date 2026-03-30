@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0122",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rate word problem, finding time",
+  "latex": "A hot-air balloon rises in the air, or ascends, at a speed of $140$ meters per minute. How long does it take for the balloon to ascend $980$ meters?",
+  "answer_latex": "7 \\text{ minutes}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 122,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

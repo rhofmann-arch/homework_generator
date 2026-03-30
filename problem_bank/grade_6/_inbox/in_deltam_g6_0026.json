@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0026",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multiplying a whole number by a fraction",
+  "latex": "Rewrite the expression below as a single fraction. $$6 \\times \\frac{2}{8}$$",
+  "answer_latex": "\\frac{12}{8}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 26,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

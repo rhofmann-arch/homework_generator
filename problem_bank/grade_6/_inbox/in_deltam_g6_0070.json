@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0070",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "simplifying ratios from diagrams",
+  "latex": "Find the ratio of squares to triangles in the diagram below.\n\n[Diagram shows 3 rows with 3 squares and 5 triangles each, totaling 9 squares and 15 triangles]\n\nRatio of squares to triangles (without simplifying): $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$\n\nFor every $3$ squares there are $\\underline{\\hspace{1cm}}$ triangles, therefore the simplified ratio of squares to triangles is $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$.",
+  "answer_latex": "3:5",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 70,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

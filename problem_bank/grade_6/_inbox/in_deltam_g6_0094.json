@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0094",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "double number lines, equivalent ratios with money",
+  "latex": "There are ten dimes in a dollar. Fill in the blank in the double number line below.\n\n\\begin{array}{c|c|c|c|c|c}\n\\text{dimes} & 10 & 20 & 30 & 40 & \\underline{\\quad} \\\\\n\\hline\n\\text{dollars} & 1 & 2 & 3 & 4 & 5\n\\end{array}",
+  "answer_latex": "50",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 94,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

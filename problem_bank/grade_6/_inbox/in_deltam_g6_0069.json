@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0069",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "simplifying ratios from diagrams, part-to-whole",
+  "latex": "Find the ratio of circles to total shapes in the diagram below.\n\n[Diagram shows 4 rows with 3 circles and 5 squares each, totaling 12 circles and 20 squares]\n\nRatio of circles to total shapes (without simplifying): $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$\n\nFor every $3$ circles there are $\\underline{\\hspace{1cm}}$ total shapes, therefore the simplified ratio of circles to total shapes is $\\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}$.",
+  "answer_latex": "3:8",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 69,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

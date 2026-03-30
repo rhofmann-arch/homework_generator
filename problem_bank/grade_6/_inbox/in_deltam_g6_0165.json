@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0165",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding the whole given a part and fraction",
+  "latex": "The $28$ dogs shown are $\\frac{7}{10}$ of the dogs in the neighborhood. How many total dogs are in the neighborhood?\n\nThere are _____ total dogs.",
+  "answer_latex": "40",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 165,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

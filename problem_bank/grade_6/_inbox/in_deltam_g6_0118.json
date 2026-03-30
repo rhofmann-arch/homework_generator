@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0118",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "solving proportions, cross multiplication",
+  "latex": "Solve for $x$. $$\\frac{2}{5} = \\frac{x}{10}$$",
+  "answer_latex": "x = 4",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 118,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

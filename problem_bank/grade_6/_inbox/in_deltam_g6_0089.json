@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0089",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "three-part ratios and part-to-whole ratios with fractions",
+  "latex": "A certain mix of paint calls for $5$ gallons of blue paint, $2$ gallons of yellow paint, and $3$ gallons of black paint. Write a three-part ratio representing the mix. Then write a part-to-whole ratio of black paint to the total mixed paint. Finally, write a fraction in simplest form to express the proportion of black paint to the whole.\n\nblack paint : blue paint : yellow paint $=$ \\_\\_\\_\\_ : \\_\\_\\_\\_ : \\_\\_\\_\\_\n\nblack paint : mixed paint $=$ \\_\\_\\_\\_ : \\_\\_\\_\\_\n\nProportion of black paint (out of whole) $=$ \\_\\_\\_\\_",
+  "answer_latex": "3:5:2; \\quad 3:10; \\quad \\frac{3}{10}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 89,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

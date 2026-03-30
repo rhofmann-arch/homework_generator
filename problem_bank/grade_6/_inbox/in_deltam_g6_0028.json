@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0028",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multiplying a whole number by a fraction",
+  "latex": "Rewrite the expression below as a single fraction. $$4 \\times \\frac{2}{3}$$",
+  "answer_latex": "\\frac{8}{3}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 28,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

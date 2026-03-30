@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0084",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "identifying equivalent ratios",
+  "latex": "Choose \\textbf{all} the ratios below that are equivalent to $1 : 5$.\n\n$\\square$ $3:15$\n\n$\\square$ $3:7$\n\n$\\square$ $4:20$\n\n$\\square$ $2:10$\n\n$\\square$ $25:5$",
+  "answer_latex": "$3:15$, $4:20$, $2:10$",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 84,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

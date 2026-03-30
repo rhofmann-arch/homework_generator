@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0047",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratio tables, extending patterns",
+  "latex": "Jamal is trying to solve the following problem with a ratio table. Fill in the last column of the ratio table to answer the question.\n\nOne chocolate bar has $10$ squares. How many squares are there in $5$ chocolate bars?\n\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\nchocolate bars & 1 & 2 & 3 & 4 & \\\\\n\\hline\nsquares & 10 & 20 & 30 & 40 & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "5 \\text{ chocolate bars}, 50 \\text{ squares}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 47,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

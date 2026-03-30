@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding length and width of rectangles using unit squares",
+  "latex": "Each of the small squares on the grid below has a length and width of $1$. Find the length and width of the rectangle.",
+  "answer_latex": "4 and 5",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 4,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0086",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "part-to-part and part-to-whole ratios, word problem",
+  "latex": "A certain recipe for fruit salad calls for $3$ cups of pears, $2$ cups of bananas, and $1$ cup of watermelons. Write a three-part ratio representing the mix. Then write a part-to-whole ratio of watermelons to the total fruit salad. Finally, write a fraction in simplest form to express the proportion of watermelons to the whole.\n\nwatermelons : pears : bananas = \\_\\_\\_\\_ : \\_\\_\\_\\_ : \\_\\_\\_\\_\n\nwatermelons : fruit salad = \\_\\_\\_\\_ : \\_\\_\\_\\_\n\nProportion of watermelons (out of whole) = \\_\\_\\_\\_",
+  "answer_latex": "$1:3:2$; $1:6$; $\\frac{1}{6}$",
+  "suggested_quarter": 3,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 86,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

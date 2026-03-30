@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0097",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "double number lines, equivalent ratios with multiple blanks",
+  "latex": "One car has four wheels. Fill in the blanks in the double number line below.\n\n\\begin{array}{c|c|c|c|c|c|c|c}\n\\text{cars} & 1 & 2 & \\underline{\\quad} & 4 & 5 & \\underline{\\quad} & 7 \\\\\n\\hline\n\\text{wheels} & 4 & 8 & 12 & \\underline{\\quad} & 20 & 24 & \\underline{\\quad}\n\\end{array}",
+  "answer_latex": "3, 6, 16, 28",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 97,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0124",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rate/speed calculation, distance-time-rate",
+  "latex": "An alien space monster named Mathzilla is destroying the city! Alexander manages to run $70$ meters in $10$ seconds before getting flattened like a pancake. What rate is Alexander moving at?",
+  "answer_latex": "7 \\text{ meters per second}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 124,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

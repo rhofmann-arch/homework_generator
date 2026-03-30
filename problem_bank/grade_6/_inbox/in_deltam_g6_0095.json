@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0095",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "double number lines, equivalent ratios",
+  "latex": "One pack of soda has six cans. Fill in the blank in the double number line below.\n\n\\begin{array}{c|c|c|c|c|c}\n\\text{packs of soda} & 1 & 2 & 3 & 4 & 5 \\\\\n\\hline\n\\text{cans} & 6 & 12 & 18 & 24 & \\underline{\\quad}\n\\end{array}",
+  "answer_latex": "30",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 95,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

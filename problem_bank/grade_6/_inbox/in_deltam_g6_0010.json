@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0010",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "simplifying fractions",
+  "latex": "Simplify: $\\frac{24}{64}$",
+  "answer_latex": "\\frac{3}{8}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

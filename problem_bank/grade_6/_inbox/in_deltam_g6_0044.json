@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0044",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratio tables, finding missing values",
+  "latex": "Idil is trying to solve a math problem with a ratio table. See if you can follow her strategy. Fill in the missing number in the space below.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\ngranola bars & 1 & 6 \\\\\n\\hline\ndollars & 4 & \\underline{\\hspace{1cm}} \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "24",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 44,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0049",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratio tables, unit rate multiplication",
+  "latex": "Jocelyn is trying to solve the following problem with a ratio table. Fill in the last column of the ratio table to answer the question.\n\nAt the corner store, you can buy $1$ granola bar for $\\$5$. How much do $8$ granola bars cost?\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\ngranola bars & 1 & 10 & 2 & \\\\\n\\hline\ndollars & 5 & 50 & 10 & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "8 \\text{ granola bars}, 40 \\text{ dollars}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 49,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

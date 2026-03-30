@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0128",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "rate/speed calculation with decimals, distance-time-rate",
+  "latex": "Ellie's grandfather told her that when he was a boy, he had to walk to school. Uphill. Both ways! How fast could they walk if Ellie's grandfather used to walk $62.9$ kilometers in $12.5$ hours?",
+  "answer_latex": "5.0 \\text{ kilometers per hour}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 128,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

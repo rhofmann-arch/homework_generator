@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0055",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "word problems, choosing correct operation (multiplication)",
+  "latex": "An ice cream shop has $3$ tubs of vanilla ice cream that are each filled with $11$ quarts of ice cream. Which expression below represents the number of quarts of vanilla ice cream the shop has in total?\n\nA. $11 - 3$\n\nB. $11 + 3$\n\nC. $11 \\div 3$\n\nD. $11 \\times 3$",
+  "answer_latex": "D",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 55,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

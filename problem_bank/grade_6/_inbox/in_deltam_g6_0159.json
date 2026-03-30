@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0159",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding whole from a fractional part, multiplication",
+  "latex": "The $5$ lions shown are $\\frac{1}{3}$ of the lions in the jungle. How many total lions are in the jungle?",
+  "answer_latex": "15",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 159,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

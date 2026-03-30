@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0022",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "finding missing fraction to make one whole",
+  "latex": "Find the missing fraction. $$\\frac{4}{7} + \\frac{1}{7} + \\frac{?}{?} = 1$$",
+  "answer_latex": "\\frac{2}{7}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 22,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0075",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "simplifying ratios, part-to-part",
+  "latex": "There are 12 triangles and 15 circles. What is the simplest ratio of triangles to circles?",
+  "answer_latex": "4:5",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 75,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

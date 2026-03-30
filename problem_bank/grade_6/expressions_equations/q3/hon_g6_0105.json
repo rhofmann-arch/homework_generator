@@ -1,0 +1,17 @@
+{
+  "id": "hon_g6_0105",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "multi-step linear equations with constraints",
+  "latex": "In an election, $1200$ total votes were cast for the $3$ candidates. The second-place candidate received $125$ fewer votes than the winner and $200$ votes more than the third-place candidate. How many votes did the winner receive?\n\n",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "suggested_domain": "expressions_equations",
+  "source_file": "Honors Math 6 38.zip",
+  "source_problem_number": null,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "}  \\textbf{Answer:} Let the number of votes the winner received be $x$. The second-place candidate received $x-125$ votes and the third-place candidate received $x-125-200=x-325$ votes. The total number of votes is 1200, so we have the equation $x+(x-125)+(x-325)=1200$. Simplifying the left side gives $3x - 450 = 1200$, from which we have $x=550$. Thus, the winner received $\\boxed{550}$ votes.  }"
+}

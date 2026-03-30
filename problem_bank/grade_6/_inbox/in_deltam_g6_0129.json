@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0129",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "distance calculation with decimals, distance-time-rate",
+  "latex": "During migration, a certain species of goose can fly at a speed of $101.8$ km/hour. How far will the geese fly in $9.9$ hours?",
+  "answer_latex": "1,007.8 \\text{ kilometers}",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 129,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

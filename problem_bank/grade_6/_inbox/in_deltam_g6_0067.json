@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0067",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "ratios with visual diagrams, part-to-whole ratios, simplifying ratios",
+  "latex": "Find the ratio of squares to total shapes in the diagram below.\n\n[Diagram shows 6 squares and 10 circles arranged in 2 rows, totaling 16 shapes]\n\nRatio of squares to total shapes (without simplifying): $\\underline{\\quad} : \\underline{\\quad}$\n\nFor every $3$ squares there are $\\underline{\\quad}$ total shapes, therefore the simplified ratio of squares to total shapes is $\\underline{\\quad} : \\underline{\\quad}$.",
+  "answer_latex": "6:16 \\text{ (unsimplified)}; \\text{ For every 3 squares there are 8 total shapes, simplified ratio is } 3:8",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 67,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

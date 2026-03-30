@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0014",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "converting improper fractions to mixed numbers",
+  "latex": "Convert $\\frac{18}{5}$ into a mixed number.",
+  "answer_latex": "3\\frac{3}{5}",
+  "suggested_quarter": 1,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 14,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}
