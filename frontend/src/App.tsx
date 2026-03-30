@@ -227,6 +227,7 @@ function BankReviewTab() {
   const [selectedDomain, setSelectedDomain] = useState('')
   const [selectedQuarter, setSelectedQuarter] = useState('')
   const [notes, setNotes]           = useState('')
+  const [isHonors, setIsHonors]     = useState(false)
   const [editingLatex, setEditingLatex] = useState(false)
   const [latexDraft, setLatexDraft] = useState('')
   const [actionMsg, setActionMsg]   = useState('')
@@ -261,6 +262,7 @@ function BankReviewTab() {
     setSelectedQuarter(current.suggested_quarter ? String(current.suggested_quarter) : '')
     setNotes(current.notes ?? '')
     setLatexDraft(current.latex ?? '')
+    setIsHonors(current.honors ?? false)
     setEditingLatex(false)
     setActionMsg('')
     setConfirmDelete(false)
@@ -278,6 +280,7 @@ function BankReviewTab() {
       await approveProblem({
         problem_id: current.id, domain: selectedDomain,
         quarter: Number(selectedQuarter), notes, grade: current.grade,
+        honors: isHonors,
       })
       setProblems(prev => prev.filter((_, i) => i !== index))
       setTotal(t => t - 1)
@@ -410,6 +413,18 @@ function BankReviewTab() {
                 </select>
               </div>
             </div>
+
+            {/* Honors toggle */}
+            <label className="flex items-center gap-2 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={isHonors}
+                onChange={e => setIsHonors(e.target.checked)}
+                className="w-4 h-4 rounded accent-honors-600"
+              />
+              <span className="text-sm font-medium text-slate-700">⭐ Honors</span>
+              <span className="text-xs text-slate-400">(challenge bank)</span>
+            </label>
 
             <div>
               <SectionLabel>Notes (optional)</SectionLabel>
