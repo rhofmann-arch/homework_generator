@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0170",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "fraction division word problem, reasoning about operations",
+  "latex": "An art teacher has $3$ gallons of paint to pour into containers. If each container holds $\\frac{3}{4}$ gallon, how many containers can they fill? ",
+  "answer_latex": "To solve, we'll need to \\textbf{divide 3 by 3/4}, because we know the SIZE of the groups and the \\textbf{TOTAL gallons of paint}, but we don't know the \\textbf{NUMBER of groups}.",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 170,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

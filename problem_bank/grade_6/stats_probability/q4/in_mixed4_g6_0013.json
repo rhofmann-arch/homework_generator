@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed4_g6_0013",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "median, prime numbers",
+  "latex": "What is the median of the first seven prime numbers?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

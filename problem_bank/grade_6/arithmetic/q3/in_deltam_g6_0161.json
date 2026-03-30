@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0161",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding the whole given a part and fraction",
+  "latex": "$12$ pigs are $\\frac{4}{7}$ of the pigs on the farm. How many total pigs are on the farm?\n\nThere are _____ total pigs.",
+  "answer_latex": "21",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 161,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

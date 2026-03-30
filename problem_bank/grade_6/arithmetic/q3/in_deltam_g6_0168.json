@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0168",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "fraction multiplication word problem, reasoning about operations",
+  "latex": "Gavin plans to repaint some classroom bookcases. All of the bookcases are the same size and each requires $\\frac{13}{16}$ gallon of paint. If he's going to paint $5$ bookcases, how many gallons of paint does he need? ",
+  "answer_latex": "To solve, we'll need to \\textbf{multiply 13/16 by 5}, because we know the SIZE of the groups and the \\textbf{NUMBER of groups}, but we don't know the \\textbf{TOTAL gallons of paint}.",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 168,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

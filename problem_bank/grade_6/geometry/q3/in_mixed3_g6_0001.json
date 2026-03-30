@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed3_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "area and division word problem",
+  "latex": "Terry needs at least four square feet of floor space per bird in his chicken coop. Terry plans to build a 30-foot by 20-foot chicken coop. What is the maximum number of chickens he can house?",
+  "answer_latex": "150 \\text{ chickens}",
+  "suggested_quarter": 1,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

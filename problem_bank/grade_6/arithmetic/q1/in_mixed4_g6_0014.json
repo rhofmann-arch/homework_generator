@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed4_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "inequalities with fractions, whole numbers",
+  "latex": "A whole number, $N$, is chosen so that $\\frac{N}{3}$ is strictly between 7.5 and 8. What is the value of $N$?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

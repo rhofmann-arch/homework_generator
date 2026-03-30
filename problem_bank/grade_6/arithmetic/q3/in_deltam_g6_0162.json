@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0162",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding the whole given a part and fraction",
+  "latex": "$40$ lions are $\\frac{4}{5}$ of the lions in the jungle. How many total lions are in the jungle?\n\nThere are _____ total lions.",
+  "answer_latex": "50",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 162,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

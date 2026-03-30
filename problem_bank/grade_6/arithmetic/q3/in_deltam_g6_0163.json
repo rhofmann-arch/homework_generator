@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0163",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding the whole given a part and fraction",
+  "latex": "$12$ tigers are $\\frac{2}{5}$ of the tigers in the forest. How many total tigers are in the forest?\n\nThere are _____ total tigers.",
+  "answer_latex": "30",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 163,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

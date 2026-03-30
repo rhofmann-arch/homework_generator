@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed2_g6_0008",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "mean calculation with unit conversion",
+  "latex": "The heights of the five starts of a college basketball team are $6'6''$, $6'7''$, $6'9''$, $6'11''$ and $7'$. What is the mean height of these players, in inches?",
+  "answer_latex": "81",
+  "suggested_quarter": 2,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

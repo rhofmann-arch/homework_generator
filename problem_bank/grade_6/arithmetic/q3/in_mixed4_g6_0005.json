@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed4_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratio word problem with multiple quantities",
+  "latex": "Charlie has a basket full of fruit. The numbers of oranges, apples and bananas are in the ratio of $1 : 2 : 3$, respectively. If Charlie has 15 total apples and bananas, how many oranges does he have?",
+  "answer_latex": "3 \\text{ oranges}",
+  "suggested_quarter": 2,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

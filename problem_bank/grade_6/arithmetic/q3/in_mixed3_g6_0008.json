@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed3_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "distance-rate-time problem, unit conversion",
+  "latex": "At a speed of 70 miles per hour, how many minutes will it take you to travel 30 miles? Express your answer rounded to the nearest whole number.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

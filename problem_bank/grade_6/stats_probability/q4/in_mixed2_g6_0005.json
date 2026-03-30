@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed2_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "systems of equations, mean/average",
+  "latex": "The mean of $a$ and $b$ is $8$. The mean of $b$ and $c$ is $16$. The mean of $a$ and $c$ is $14$. What is the value of $a + b + c$?",
+  "answer_latex": "38",
+  "suggested_quarter": 3,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

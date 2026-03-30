@@ -1,0 +1,16 @@
+{
+  "id": "in_practi_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "volume of rectangular prism",
+  "latex": "What is the volume of the prism? (Prism with dimensions 3 m $\\times$ 2 m $\\times$ 3 m shown as unit cubes)",
+  "answer_latex": "18 \\text{ m}^3",
+  "suggested_quarter": 2,
+  "source_file": "practicepages_test_page.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

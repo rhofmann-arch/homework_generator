@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed3_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "profit calculation word problem",
+  "latex": "An antique dealer buys a chair for \\$20 and sells it for \\$85. The dealer later buys back the same chair for \\$110 and sells it for \\$135. How many dollars total profit did the dealer make on this chair?",
+  "answer_latex": "90 \\text{ dollars}",
+  "suggested_quarter": 2,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

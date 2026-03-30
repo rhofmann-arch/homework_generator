@@ -1,0 +1,16 @@
+{
+  "id": "in_deltam_g6_0167",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "fraction division word problem, reasoning about operations",
+  "latex": "Austin purchased $4$ pints of ice cream for a party. If each guest will be served exactly $\\frac{2}{3}$ pint of ice cream, how many guests can Austin serve? \n\n",
+  "answer_latex": "To solve, we'll need to \\textbf{divide 4 by 2/3}, because we know the SIZE of the groups and the \\textbf{TOTAL pints of ice cream}, but we don't know the \\textbf{NUMBER of groups}.",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 167,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

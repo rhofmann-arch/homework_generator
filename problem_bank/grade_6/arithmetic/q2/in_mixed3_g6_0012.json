@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed3_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "unit rate and proportion, distance and time",
+  "latex": "It takes 24 minutes for Jana to walk one mile. At that rate, how far in miles will she walk in 10 minutes? Express your answer as a decimal to the nearest tenth.",
+  "answer_latex": "0.4",
+  "suggested_quarter": 2,
+  "source_file": "Mixed3.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

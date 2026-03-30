@@ -1,0 +1,16 @@
+{
+  "id": "in_practi_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "arithmetic sequences, pattern recognition",
+  "latex": "What number comes next in the sequence? 1,475; 1,575; 1,675; ______",
+  "answer_latex": "1775",
+  "suggested_quarter": 2,
+  "source_file": "practicepages_test_page.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

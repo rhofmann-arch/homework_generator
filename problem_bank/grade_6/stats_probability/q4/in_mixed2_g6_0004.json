@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed2_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "median, statistics, working backwards",
+  "latex": "On the first five math quizzes of the school year, Maurice's scores were $80, 84, 99, 92$, and $100$. After the sixth quiz, Maurice's median score for all six quizzes was $90$. What was Maurice's score on the sixth quiz?",
+  "answer_latex": "88",
+  "suggested_quarter": 3,
+  "source_file": "Mixed2.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

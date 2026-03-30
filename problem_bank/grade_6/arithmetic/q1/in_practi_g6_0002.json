@@ -1,0 +1,16 @@
+{
+  "id": "in_practi_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "single-digit multiplication facts",
+  "latex": "$7 \\times 8 = $ ______",
+  "answer_latex": "56",
+  "suggested_quarter": 1,
+  "source_file": "practicepages_test_page.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false
+}

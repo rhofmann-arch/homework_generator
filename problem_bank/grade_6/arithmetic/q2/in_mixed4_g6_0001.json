@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed4_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "segment lengths with fractions on a number line",
+  "latex": "In the diagram shown, $PS = \\frac{1}{3}PR$, $PR = \\frac{3}{4}PQ$, and $PQ = 40$ cm. What is the number of centimeters in the length of $\\overline{SQ}$?",
+  "answer_latex": "30 \\text{ cm}",
+  "suggested_quarter": 2,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "in_mixed4_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multiplication word problem",
+  "latex": "Parker and his three friends went trick-or-treating together. If Parker got 11 pieces of candy, and each of his friends got twice as much candy as he did, how many pieces of candy did Parker and his friends get in all?",
+  "answer_latex": "77 \\text{ pieces}",
+  "suggested_quarter": 1,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true
+}
