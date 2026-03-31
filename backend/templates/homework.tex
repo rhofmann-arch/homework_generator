@@ -1,9 +1,9 @@
 % ============================================================
 %  MATH HOMEWORK — COMBINED 2-PAGE DOCUMENT
 %  Page 1 = Front (Spiral Review, two-column minipage)
-%  Page 2 = Back  (Lesson Practice, two-column multicols)
-%  Page 3 = Challenge block (honors only, full-width, own page)
+%  Page 2 = Back  (Lesson Practice + Challenge block on same page)
 %  All <<PLACEHOLDERS>> filled by latex_builder.py
+%  NOTE: latex_builder.py must NOT prepend \clearpage before <<CHALLENGE_BLOCK>>
 % ============================================================
 
 \documentclass[11pt]{article}
@@ -67,12 +67,13 @@
 \newcommand{\backproblem}[1]{%
   \stepcounter{prob}%
   \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
-  \vspace{0.85in}%
+  \vspace{0.70in}%
   \noindent{\color{probrule}\hrule height 0.5pt}%
   \vspace{4pt}%
 }
 
-% Challenge block — full page width, own page
+% Challenge block — honors only, placed on page 2 directly after back problems.
+% IMPORTANT: latex_builder.py must NOT prepend \clearpage before <<CHALLENGE_BLOCK>>.
 \newcommand{\challengeblock}[1]{%
   \begin{mdframed}[
     backgroundcolor=challengebg,
@@ -83,7 +84,9 @@
     innerbottommargin=8pt,
     innerleftmargin=9pt,
     innerrightmargin=9pt,
-    nobreak=false
+    nobreak=false,
+    splitbottomskip=6pt,
+    splittopskip=12pt
   ]%
     \noindent
     {\normalsize\textbf{\textcolor{honorsgreen}{$\bigstar$\ Challenge}}}%
@@ -161,7 +164,8 @@
 \end{multicols}
 
 % Challenge block — honors only. Empty string for grade_level.
-% \clearpage is prepended by latex_builder.py when challenge exists.
+% DO NOT prepend \clearpage in latex_builder.py — challenge stays on page 2.
+\vspace{0.20in}
 <<CHALLENGE_BLOCK>>
 
 \end{document}
