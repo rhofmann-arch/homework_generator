@@ -23,6 +23,7 @@
 % --- Layout ---
 \usepackage[inline]{enumitem}
 \usepackage{multicol}
+\usepackage{needspace}
 \usepackage{array, tabularx, booktabs}
 \usepackage{graphicx, wrapfig}
 \usepackage{mdframed}
@@ -63,8 +64,10 @@
   \vspace{2pt}%
 }
 
-% Back problem: fixed work space — works in multicols (no vfill)
+% Back problem: needspace guard keeps problem+workspace in the same column.
+% If < 1.3in remains in the current column, problem moves to next column intact.
 \newcommand{\backproblem}[1]{%
+  \needspace{1.3in}%
   \stepcounter{prob}%
   \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
   \vspace{0.70in}%

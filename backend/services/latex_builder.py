@@ -3,7 +3,7 @@ from __future__ import annotations
 Fills homework.tex with generated content, compiles with pdflatex.
 """
 
-import asyncio, os, subprocess, tempfile
+import asyncio, math, os, subprocess, tempfile
 from datetime import datetime
 from pathlib import Path
 from services.pacing import WeekContext
@@ -17,7 +17,6 @@ COURSE_NAMES = {
     ("5", "honors"):      "Honors Math 5",
 }
 
-PROBLEMS_PER_COL = 5   # front: always 5 per column = 10 total
 
 # Space reserved below back minipage for the challenge block.
 CHALLENGE_BLOCK_HT = "3.10in"
@@ -57,9 +56,12 @@ def _last_problem(latex: str) -> str:
 
 
 def _render_front(problems: list[dict]) -> tuple[str, str]:
-    """Split 10 front problems into left (1-5) and right (6-10) columns."""
-    left  = problems[:PROBLEMS_PER_COL]
-    right = problems[PROBLEMS_PER_COL:PROBLEMS_PER_COL * 2]
+    """Split front problems evenly: ceil(n/2) left, floor(n/2) right.
+    Works for grade-level (10 -> 5+5) and honors (8 -> 4+4).
+    """
+    split = math.ceil(len(problems) / 2)
+    left  = problems[:split]
+    right = problems[split:]
 
     def _col(probs: list[dict]) -> str:
         lines = []
