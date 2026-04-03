@@ -18,7 +18,8 @@ FORMATTING:
 - Do NOT include problem numbers.
 - Do NOT include answer blanks or solution steps.
 - Multi-part: use \\textbf{a.}\\ \\textbf{b.}\\ inline.
-- Diagrams: use tikz, compact (under 4cm tall).
+- Diagrams: use tikz, compact (under 4cm tall). Always add \\vspace{10pt} on its own line immediately before \\begin{tikzpicture}.
+- Multiple choice: always add \\vspace{10pt} on its own line immediately before the first answer option (\\textbf{A.} or similar).
 - Problems must be solvable without a calculator.
 - One unambiguous correct answer per problem.
 """

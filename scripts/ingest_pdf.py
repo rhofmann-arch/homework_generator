@@ -1,3 +1,4 @@
+from __future__ import annotations
 #!/usr/bin/env python3
 """
 Ingests a DeltaMath (or practice pages) PDF into the problem bank.

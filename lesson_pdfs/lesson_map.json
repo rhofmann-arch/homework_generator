@@ -1,67 +1,18 @@
 {
-  "_comment": "PDF files are named by Advanced pacing guide chapter numbers (e.g. 6_8_1.pdf = Adv Ch8 L1 = Ratios). Honors class looks up PDFs directly by its own lesson numbers — no mapping needed. Grade-level class uses different chapter numbers for the same content, so its lessons must be remapped to the advanced chapter numbers where the PDFs live. Null means no PDF exists; lesson_pdf.py falls back to text-only generation.",
-
   "honors": {},
-
   "grade_level": {
-    "_comment_ch1_2": "Chapters 1-2 identical in both courses — direct lookup works, no mapping needed",
-
-    "_comment_ch3": "GL Ch3 = Ratios/Rates — content lives in Adv Ch8 PDFs",
-    "3.1": "8.1",
-    "3.2": "8.2",
-    "3.3": "8.3",
-    "3.4": "8.4",
-    "3.5": "8.5",
-    "3.6": "8.6",
-
-    "_comment_ch4": "GL Ch4 = Percents — content lives in Adv Ch9 PDFs (9.1-9.3 match; 4.4 closest to 9.3)",
-    "4.1": "9.1",
-    "4.2": "9.2",
-    "4.3": "9.3",
-    "4.4": "9.3",
-
-    "_comment_ch5": "GL Ch5 = Expressions — content lives in Adv Ch6 PDFs (5.4 Factoring -> 6.5)",
-    "5.1": "6.1",
-    "5.2": "6.2",
-    "5.3": "6.3",
-    "5.4": "6.5",
-
-    "_comment_ch6": "GL Ch6 = Equations — content lives in Adv Ch7 PDFs",
-    "6.1": "7.1",
-    "6.2": "7.2",
-    "6.3": "7.3",
-    "6.4": "7.4",
-
-    "_comment_ch7": "GL Ch7 = Geometry — content lives in Adv Ch10 PDFs",
-    "7.1": "10.1",
-    "7.2": "10.2",
-    "7.3": "10.3",
-    "7.4": "10.4",
-    "7.5": "10.5",
-    "7.6": "10.6",
-    "7.7": "10.7",
-
-    "_comment_ch8": "GL Ch8 = Integers/Coordinate Plane — content lives in Adv Ch3 PDFs (8.7 Inequalities -> Adv 7.5)",
-    "8.1": "3.1",
-    "8.2": "3.2",
-    "8.3": "3.3",
-    "8.4": "3.4",
-    "8.5": "3.5",
-    "8.6": "3.6",
-    "8.7": "7.5",
-
-    "_comment_ch9": "GL Ch9 = Statistics — content lives in Adv Ch12 PDFs",
-    "9.1": "12.1",
-    "9.2": "12.2",
-    "9.3": "12.3",
-    "9.4": "12.4",
-    "9.5": "12.5",
-
-    "_comment_ch10": "GL Ch10 = Stats part 2 — content lives in Adv Ch13 PDFs",
-    "10.1": "13.1",
-    "10.2": "13.2",
-    "10.3": "13.3",
-    "10.4": "13.4",
-    "10.5": "13.5"
+    "3.1": "6_8_1.pdf", "3.2": "6_8_2.pdf", "3.3": "6_8_3.pdf",
+    "3.4": "6_8_4.pdf", "3.5": "6_8_5.pdf", "3.6": "6_8_6.pdf",
+    "4.1": "6_9_1.pdf", "4.2": "6_9_2.pdf", "4.3": "6_9_3.pdf", "4.4": "6_9_3.pdf",
+    "5.1": "6_6_1.pdf", "5.2": "6_6_2.pdf", "5.3": "6_6_3.pdf", "5.4": "6_6_5.pdf",
+    "6.1": "6_7_1.pdf", "6.2": "6_7_2.pdf", "6.3": "6_7_3.pdf", "6.4": "6_7_4.pdf",
+    "7.1": "6_10_1.pdf", "7.2": "6_10_2.pdf", "7.3": "6_10_3.pdf",
+    "7.4": "6_10_4.pdf", "7.5": "6_10_5.pdf", "7.6": "6_10_6.pdf", "7.7": "6_10_7.pdf",
+    "8.1": "6_3_1.pdf", "8.2": "6_3_2.pdf", "8.3": "6_3_3.pdf",
+    "8.4": "6_3_4.pdf", "8.5": "6_3_5.pdf", "8.6": "6_3_6.pdf", "8.7": "6_7_5.pdf",
+    "9.1": "6_12_1.pdf", "9.2": "6_12_2.pdf", "9.3": "6_12_3.pdf",
+    "9.4": "6_12_4.pdf", "9.5": "6_12_5.pdf",
+    "10.1": "6_13_1.pdf", "10.2": "6_13_2.pdf", "10.3": "6_13_3.pdf",
+    "10.4": "6_13_4.pdf", "10.5": "6_13_5.pdf"
   }
 }
