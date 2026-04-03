@@ -282,7 +282,7 @@ def _school_quarter(date_str: str) -> int:
         from datetime import date
         d = date.fromisoformat(str(date_str)[:10])
         m = d.month
-        if m in (9, 10):
+        if m in (8, 9, 10):
             return 1
         elif m in (11, 12, 1):
             return 2
@@ -378,6 +378,16 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
                         spiral_bank.append(p)
                         seen_ids.add(p["id"])
         n_spiral = 10
+
+    # Cap n_spiral to however many bank problems were actually found.
+    # If the bank can't fill the quota, reduce the target rather than letting
+    # Claude free-generate the shortfall with unapproved problem types.
+    if len(spiral_bank) < n_spiral:
+        logger.warning(
+            f"Spiral bank shortfall: requested {n_spiral}, got {len(spiral_bank)} "
+            f"(class={class_type}, school_q={school_q}). Generating {len(spiral_bank)} problems."
+        )
+        n_spiral = len(spiral_bank)
 
     front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank, n_spiral)
 
