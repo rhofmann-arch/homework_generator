@@ -258,52 +258,37 @@ def sample_problems(
     max_quarter: int,
     n: int,
     honors_only: bool = False,
+    exclude_honors: bool = False,
 ) -> list[dict]:
     """
-    Return up to n randomly sampled approved problems.
+    Return n randomly sampled approved problems, drawing from Q1 through max_quarter.
 
-    - domain=None draws from all VALID_DOMAINS.
-    - honors_only=True filters to problems with honors=True.
-    - Draws from Q1 through max_quarter (cumulative).
-    - If the requested domain(s) have fewer than n problems, falls back to
-      arithmetic (if not already the domain) to fill the shortfall, then
-      to any approved problem regardless of domain.
+    domain:         specific domain string, or None to draw from all domains.
+    honors_only:    if True, only return problems with honors=True.
+    exclude_honors: if True, skip problems with honors=True (use for grade-level sets).
     """
     gd = grade_dir(grade)
-    domains = VALID_DOMAINS if domain is None else [domain]
+    domains = [domain] if domain is not None else VALID_DOMAINS
+    pool = []
 
-    def _collect(search_domains: list[str]) -> list[dict]:
-        pool = []
-        for d in search_domains:
-            for q in range(1, max_quarter + 1):
-                folder = gd / d / f"q{q}"
-                if not folder.exists():
-                    continue
-                for f in folder.glob("*.json"):
-                    try:
-                        data = json.loads(f.read_text())
-                        if not data.get("approved") or data.get("flagged"):
-                            continue
-                        if honors_only and not data.get("honors"):
-                            continue
-                        pool.append(data)
-                    except Exception:
+    for d in domains:
+        for q in range(1, max_quarter + 1):
+            folder = gd / d / f"q{q}"
+            if not folder.exists():
+                continue
+            for f in folder.glob("*.json"):
+                try:
+                    data = json.loads(f.read_text())
+                    if not data.get("approved") or data.get("flagged"):
                         continue
-        return pool
-
-    pool = _collect(domains)
-
-    # Fallback 1: supplement with arithmetic if underfull
-    if len(pool) < n and "arithmetic" not in domains:
-        seen_ids = {p["id"] for p in pool}
-        extras = [p for p in _collect(["arithmetic"]) if p["id"] not in seen_ids]
-        pool += extras
-
-    # Fallback 2: supplement with anything approved if still underfull
-    if len(pool) < n:
-        seen_ids = {p["id"] for p in pool}
-        extras = [p for p in _collect(VALID_DOMAINS) if p["id"] not in seen_ids]
-        pool += extras
+                    is_honors = bool(data.get("honors"))
+                    if honors_only and not is_honors:
+                        continue
+                    if exclude_honors and is_honors:
+                        continue
+                    pool.append(data)
+                except Exception:
+                    continue
 
     if len(pool) <= n:
         return pool

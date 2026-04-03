@@ -87,7 +87,7 @@ def _front_prompt(grade, current, bank_problems: list[dict], n_problems: int = 1
     Build the spiral review prompt using approved bank problems as templates.
     Claude varies numbers/context but preserves structure — no free generation.
     Falls back to topic-based generation if bank is empty.
-    n_problems: 8 for honors (4 honors + 4 regular), 10 for grade-level.
+    n_problems: 8 for honors (5 honors + 3 regular), 10 for grade-level.
     """
     if bank_problems:
         system = STYLE_NOTES + f"""
@@ -313,13 +313,13 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
 
     # ── Spiral bank sampling ──────────────────────────────────────────────────
     if class_type == "honors":
-        # Honors front: 8 problems — 4 honors-flagged + 4 from the general bank.
+        # Honors front: 8 problems — 5 honors-flagged + 3 from the general bank.
         # Honors problems are drawn first; regular problems fill the remaining slots.
         honors_problems = sample_problems(
             domain=None,
             grade=grade_int,
             max_quarter=school_q,
-            n=4,
+            n=5,
             honors_only=True,
         )
         seen_ids: set[str] = {p["id"] for p in honors_problems}
@@ -329,7 +329,8 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
                 domain="arithmetic",
                 grade=grade_int,
                 max_quarter=1,
-                n=4,
+                n=3,
+                exclude_honors=True,
             )
         else:
             regular_problems = []
@@ -339,9 +340,10 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
                     grade=grade_int,
                     max_quarter=school_q,
                     n=pool["n"],
+                    exclude_honors=True,
                 )
                 for p in batch:
-                    if p["id"] not in seen_ids and len(regular_problems) < 4:
+                    if p["id"] not in seen_ids and len(regular_problems) < 3:
                         regular_problems.append(p)
                         seen_ids.add(p["id"])
 
@@ -355,6 +357,7 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
                 grade=grade_int,
                 max_quarter=1,
                 n=10,
+                exclude_honors=True,
             )
         else:
             spiral_bank = []
@@ -365,6 +368,7 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
                     grade=grade_int,
                     max_quarter=school_q,
                     n=pool["n"],
+                    exclude_honors=True,
                 )
                 for p in problems:
                     if p["id"] not in seen_ids:
