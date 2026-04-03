@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0058",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "measuring and classifying angles",
+  "latex": "Use a protractor to measure the angle. Then identify it as either \\textit{acute}, \\textit{reflex}, \\textit{obtuse}, or \\textit{straight}.\n\n[Angle diagram shown]\n\n\\begin{tabular}{|l|l|}\\hline Size & \\\\ \\hline Name & \\\\ \\hline\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

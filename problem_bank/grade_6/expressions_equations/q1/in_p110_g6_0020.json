@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0020",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "missing subtrahend, subtraction equation",
+  "latex": "$65 - \\square = 46$",
+  "answer_latex": "19",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

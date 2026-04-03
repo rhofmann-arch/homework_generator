@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0109",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "integer addition with negative numbers",
+  "latex": "$-5 + 10 = $ ______",
+  "answer_latex": "5",
+  "suggested_quarter": 1,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

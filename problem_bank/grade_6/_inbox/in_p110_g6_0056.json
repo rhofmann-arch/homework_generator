@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0056",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "one-step addition equation, solving for variable",
+  "latex": "Solve for $x$ when $x + 9 = 49$.\n\n$x = $ ______",
+  "answer_latex": "40",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 8,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

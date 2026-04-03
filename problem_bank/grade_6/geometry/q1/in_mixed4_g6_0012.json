@@ -1,0 +1,15 @@
+{
+  "id": "in_mixed4_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "area of composite figures with right angles",
+  "latex": "All of the angles in the figure shown are right angles. What is the total area of the figure? [Figure shows an L-shaped composite figure with dimensions: top portion has width 4 and heights 3 and 3, with a 4 step down; left side is 10; bottom has segments of 6 and 6 with a 4 extension; right side has steps of 2 and 2 with widths of 4]",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Mixed4.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

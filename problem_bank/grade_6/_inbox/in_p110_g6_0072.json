@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0072",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "3D geometry, properties of polyhedra",
+  "latex": "Compare a triangular pyramid with a triangular prism. Fill in the table with the number of Faces, Edges, and Vertices for each shape.",
+  "answer_latex": "Triangular Pyramid: 4 faces, 6 edges, 4 vertices; Triangular Prism: 5 faces, 9 edges, 6 vertices",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 12,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

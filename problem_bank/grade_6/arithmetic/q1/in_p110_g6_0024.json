@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0024",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "proportional reasoning, word problem",
+  "latex": "A welder can make 2 cuts in a metal bar in 6 minutes. At the same speed, how long will it take him to make 5 cuts in the bar?",
+  "answer_latex": "15 minutes",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

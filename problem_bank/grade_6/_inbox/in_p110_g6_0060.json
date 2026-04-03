@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0060",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "multi-step word problem, logical reasoning",
+  "latex": "A snail is climbing a brick wall that is 15 m high. It climbs up 3 m every day but slides down 1 m every night. How many days will it take to reach the top of the wall?",
+  "answer_latex": "7",
+  "suggested_quarter": 4,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 12,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

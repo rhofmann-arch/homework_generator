@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0101",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "equivalent ratios on double number lines",
+  "latex": "A hot chocolate recipe calls for three teaspoons of cocoa for every cup of milk. Fill in the blank in the double number line below.\n\nTsp of cocoa: $3, 6, 9, \\underline{\\quad}$\n\nCups of milk: $1, 2, 3, 8$",
+  "answer_latex": "24",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 101,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

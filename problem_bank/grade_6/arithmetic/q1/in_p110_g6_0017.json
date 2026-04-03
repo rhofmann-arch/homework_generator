@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "understanding fractions, tenths",
+  "latex": "How many tenths are in $\\frac{3}{10}$?",
+  "answer_latex": "3",
+  "suggested_quarter": 1,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

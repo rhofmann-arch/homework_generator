@@ -1,0 +1,15 @@
+{
+  "id": "in_deltam_g6_0103",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "equivalent ratios on double number lines",
+  "latex": "To make salad dressing, combine two tablespoons of oil for every three tablespoons of vinegar. Fill in the blank in the double number line below.\n\nTbsps oil: $2, 4, 6, \\underline{\\quad}$\n\nTbsps vinegar: $3, 6, 9, 33$",
+  "answer_latex": "22",
+  "suggested_quarter": 2,
+  "source_file": "DeltaMixedQ1.pdf",
+  "source_problem_number": 103,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

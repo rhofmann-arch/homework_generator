@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "number patterns and sequences",
+  "latex": "What number comes next in the sequence? $1,475; 1,575; 1,675;$ \\_\\_\\_\\_\\_\\_",
+  "answer_latex": "1775",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

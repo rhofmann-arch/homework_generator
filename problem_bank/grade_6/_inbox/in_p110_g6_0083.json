@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0083",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "simple probability",
+  "latex": "Two red cubes, two green cylinders, and three yellow rectangular prisms were put in a bag. If you reach into the bag and pull out an object, what is the probability that you will pull out a green cylinder?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0102",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "identifying patterns, multiplication rule",
+  "latex": "Write the rule for this pattern. 5, 20, 80, 320",
+  "answer_latex": "Multiply by 4",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 6,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

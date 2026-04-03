@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0095",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "identifying outliers in data sets",
+  "latex": "Which number is the outlier in this data set? 9, 12, 32, 8, 11",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 11,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

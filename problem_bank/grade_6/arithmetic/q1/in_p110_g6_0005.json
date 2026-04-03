@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "decimal to fraction conversion",
+  "latex": "Write 0.31 as a fraction.",
+  "answer_latex": "31/100",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
