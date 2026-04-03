@@ -36,7 +36,7 @@ FRONT_TOOL = {
             },
             "problems": {
                 "type": "array",
-                "description": "Exactly 10 spiral review problems.",
+                "description": "Spiral review problems — exactly 8 for honors, exactly 10 for grade-level.",
                 "items": {
                     "type": "object",
                     "properties": {
@@ -44,7 +44,7 @@ FRONT_TOOL = {
                     },
                     "required": ["latex"]
                 },
-                "minItems": 10,
+                "minItems": 8,
                 "maxItems": 10,
             },
         },
@@ -80,48 +80,26 @@ BACK_TOOL = {
     },
 }
 
-CHALLENGE_TOOL = {
-    "name": "submit_challenge_problems",
-    "description": "Submit the honors challenge problems for the bottom of the back page.",
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "problems": {
-                "type": "array",
-                "description": "Exactly 2 multi-step challenge problems.",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "latex": {"type": "string", "description": "Problem text in LaTeX."}
-                    },
-                    "required": ["latex"]
-                },
-                "minItems": 2,
-                "maxItems": 2,
-            },
-        },
-        "required": ["problems"],
-    },
-}
 
 
-def _front_prompt(grade, current, bank_problems: list[dict]):
+def _front_prompt(grade, current, bank_problems: list[dict], n_problems: int = 10):
     """
     Build the spiral review prompt using approved bank problems as templates.
     Claude varies numbers/context but preserves structure — no free generation.
     Falls back to topic-based generation if bank is empty.
+    n_problems: 8 for honors (4 honors + 4 regular), 10 for grade-level.
     """
     if bank_problems:
-        system = STYLE_NOTES + """
+        system = STYLE_NOTES + f"""
 Rules for spiral review problems:
-- Exactly 10 problems total.
+- Exactly {n_problems} problems total.
 - Use the bank problems below as your ONLY source of problem structures.
   Change the numbers, names, and contexts — preserve the problem type exactly.
 - Do NOT invent new problem types not represented in the bank problems.
 - Do NOT include the current week's lesson topic.
 - No multi-step word problems. Each solvable in 60-90 seconds.
 - STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
-  Do NOT use \\textbf{a.} or \\textbf{b.} in spiral problems.
+  Do NOT use \\textbf{{a.}} or \\textbf{{b.}} in spiral problems.
 - It is fine — even expected — for multiple problems to share the same structure
   with different numbers. Repetition of structure is correct here.
 """
@@ -134,26 +112,26 @@ Rules for spiral review problems:
             f"Current week topic (do NOT include): {current}\n\n"
             f"Bank problems to use as templates (vary numbers/context only):\n\n"
             f"{bank_text}\n\n"
-            "Generate exactly 10 spiral review problems by varying the bank problems above. "
+            f"Generate exactly {n_problems} spiral review problems by varying the bank problems above. "
             "Use each bank problem as a structural template at least once. "
-            "If you have more than 10 templates, pick the most varied set."
+            f"If you have more than {n_problems} templates, pick the most varied set."
         )
     else:
         # Fallback: free generation when bank is empty (early in the year)
-        system = STYLE_NOTES + """
+        system = STYLE_NOTES + f"""
 Rules for spiral review problems:
-- Exactly 10 problems total.
+- Exactly {n_problems} problems total.
 - Only use topics from covered_topics list.
 - Weight toward 8 most recently covered topics.
 - Vary types: computation, explanation, fill-in, true/false.
 - No multi-step word problems. Each solvable in 60-90 seconds.
 - STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
-  Do NOT use \\textbf{a.} or \\textbf{b.} in spiral problems.
+  Do NOT use \\textbf{{a.}} or \\textbf{{b.}} in spiral problems.
 """
         user = (
             f"Grade: {grade}\n"
             f"Current week (do NOT include): {current}\n"
-            "Generate 10 spiral review problems on covered arithmetic topics."
+            f"Generate {n_problems} spiral review problems on covered arithmetic topics."
         )
     return system, user
 
@@ -171,7 +149,7 @@ def _back_prompt(
     either [{"type": "text", ...}] alone, or with PDF document blocks prepended
     when a lesson PDF is available.
     """
-    n = "5-7" if class_type == "honors" else "8-10"
+    n = "8-10"  # same count for both honors and grade-level
 
     system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
@@ -255,65 +233,6 @@ Rules for lesson practice problems:
     return system, content
 
 
-def _challenge_prompt(
-    current_topic: str,
-    current_lessons: list[str],
-    bank_problems: list[dict],
-    spiral_latex: list[str] | None = None,
-) -> tuple[str, str]:
-    """
-    Build the challenge prompt. If approved honors problems exist in the bank
-    for this topic area, pass them as structural models for Claude to vary.
-    Otherwise fall back to free generation.
-    spiral_latex: LaTeX strings of the already-generated spiral problems, passed
-    so Claude avoids duplicating their scenarios or structure.
-    """
-    system = STYLE_NOTES + f"""
-Rules for challenge problems:
-- Exactly 2 multi-step challenge problems.
-- Problems must be on the current lesson topic: {current_topic}.
-- Extend the lesson into non-routine territory — multi-step, real-world application,
-  or reasoning-heavy. Do NOT introduce concepts beyond the current lesson.
-- Solvable by a strong 6th grader in 3-5 minutes each.
-- Each problem should fit in roughly 60-80 words of prose. Sub-parts (a/b) are
-  allowed but limit to 2 parts maximum. Keep LaTeX concise.
-- Match the rigor and style of any example problems provided below.
-"""
-
-    spiral_avoid = ""
-    if spiral_latex:
-        spiral_list = "\n".join(f"- {s[:120]}" for s in spiral_latex[:10])
-        spiral_avoid = (
-            f"\n\nThe spiral review already contains these problems — "
-            f"do NOT reuse their scenarios, numbers, or structure:\n{spiral_list}\n"
-        )
-
-    if bank_problems:
-        examples = "\n\n".join(
-            f"Example {i+1}:\n{p['latex']}" for i, p in enumerate(bank_problems)
-        )
-        user = (
-            f"Current lesson: {', '.join(current_lessons)}\n"
-            f"Exact topic: {current_topic}\n"
-            f"{spiral_avoid}\n"
-            "Here are approved challenge problems from the bank that represent "
-            "the right difficulty and style. Use these as structural models — "
-            "change the numbers, context, and scenario, but preserve the multi-step "
-            "reasoning structure:\n\n"
-            f"{examples}\n\n"
-            "Generate 2 new challenge problems at this level, on the current topic."
-        )
-    else:
-        user = (
-            f"Current lesson: {', '.join(current_lessons)}\n"
-            f"Exact topic: {current_topic}\n"
-            f"{spiral_avoid}"
-            "Generate 2 challenge problems on this exact topic."
-        )
-
-    return system, user
-
-
 async def _call(
     system: str,
     user: str | list,
@@ -393,73 +312,85 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     school_q = _school_quarter(str(date_str))
 
     # ── Spiral bank sampling ──────────────────────────────────────────────────
-    # Q1: arithmetic only — students haven't seen other domains yet.
-    # Later quarters: draw per SPIRAL_POOL_CONFIG with fallback built into sample_problems.
-    if school_q == 1:
-        spiral_bank = sample_problems(
-            domain="arithmetic",
-            grade=grade_int,
-            max_quarter=1,
-            n=10,
-        )
-    else:
-        spiral_bank = []
-        seen_ids: set[str] = set()
-        for pool in SPIRAL_POOL_CONFIG:
-            problems = sample_problems(
-                domain=pool["domain"],
-                grade=grade_int,
-                max_quarter=school_q,
-                n=pool["n"],
-            )
-            for p in problems:
-                if p["id"] not in seen_ids:
-                    spiral_bank.append(p)
-                    seen_ids.add(p["id"])
-
-    front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank)
-
     if class_type == "honors":
-        # Front must resolve first so we can pass its problems to challenge,
-        # preventing duplicate scenarios between spiral and challenge sections.
-        front_data = await _call(front_sys, front_usr, FRONT_TOOL)
-        spiral_latex = [p["latex"] for p in front_data.get("problems", [])]
-
-        # Sample up to 4 approved honors problems from the bank as challenge models.
-        # Any domain is fine — we want structural variety. Falls back gracefully if empty.
-        bank_challenge = sample_problems(
-            domain=None,       # any domain
+        # Honors front: 8 problems — 4 honors-flagged + 4 from the general bank.
+        # Honors problems are drawn first; regular problems fill the remaining slots.
+        honors_problems = sample_problems(
+            domain=None,
             grade=grade_int,
-            max_quarter=4,     # draw from all quarters
+            max_quarter=school_q,
             n=4,
             honors_only=True,
         )
-        chal_sys, chal_usr = _challenge_prompt(
-            current_topic=context.current_topic,
-            current_lessons=current_lessons,
-            bank_problems=bank_challenge,
-            spiral_latex=spiral_latex,
-        )
-        challenge_data = await _call(chal_sys, chal_usr, CHALLENGE_TOOL)
+        seen_ids: set[str] = {p["id"] for p in honors_problems}
+
+        if school_q == 1:
+            regular_problems = sample_problems(
+                domain="arithmetic",
+                grade=grade_int,
+                max_quarter=1,
+                n=4,
+            )
+        else:
+            regular_problems = []
+            for pool in SPIRAL_POOL_CONFIG:
+                batch = sample_problems(
+                    domain=pool["domain"],
+                    grade=grade_int,
+                    max_quarter=school_q,
+                    n=pool["n"],
+                )
+                for p in batch:
+                    if p["id"] not in seen_ids and len(regular_problems) < 4:
+                        regular_problems.append(p)
+                        seen_ids.add(p["id"])
+
+        spiral_bank = honors_problems + regular_problems
+        n_spiral = 8
     else:
-        front_data     = await _call(front_sys, front_usr, FRONT_TOOL)
-        challenge_data = {"problems": []}
+        # Grade-level front: 10 problems from the general bank.
+        if school_q == 1:
+            spiral_bank = sample_problems(
+                domain="arithmetic",
+                grade=grade_int,
+                max_quarter=1,
+                n=10,
+            )
+        else:
+            spiral_bank = []
+            seen_ids = set()
+            for pool in SPIRAL_POOL_CONFIG:
+                problems = sample_problems(
+                    domain=pool["domain"],
+                    grade=grade_int,
+                    max_quarter=school_q,
+                    n=pool["n"],
+                )
+                for p in problems:
+                    if p["id"] not in seen_ids:
+                        spiral_bank.append(p)
+                        seen_ids.add(p["id"])
+        n_spiral = 10
 
-    spiral_topics = front_data.get("spiral_topics", "")
+    front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank, n_spiral)
 
+    # Front and back can always run concurrently — no challenge dependency.
     back_sys, back_content = _back_prompt(
         grade=context.grade,
         class_type=class_type,
         current_lessons=current_lessons,
         current_topic=context.current_topic,
-        spiral_topics=spiral_topics,
+        spiral_topics="",  # will be filled after front resolves; back doesn't need it at call time
     )
-    back_data = await _call(back_sys, back_content, BACK_TOOL)
+    front_data, back_data = await asyncio.gather(
+        _call(front_sys, front_usr, FRONT_TOOL),
+        _call(back_sys, back_content, BACK_TOOL),
+    )
 
     return {
-        "spiral_topics":      spiral_topics,
+        "spiral_topics":      front_data.get("spiral_topics", ""),
         "front_problems":     front_data.get("problems", []),
         "lesson_title":       back_data.get("lesson_title", context.lesson_title),
         "back_problems":      back_data.get("problems", []),
-        "challenge_problems": challenge_data.get("problems", []),
+        "challenge_problems": [],  # challenge section removed
     }
