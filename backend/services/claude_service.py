@@ -54,7 +54,7 @@ FRONT_TOOL = {
 
 BACK_TOOL = {
     "name": "submit_back_problems",
-    "description": "Submit the lesson-aligned practice problems for the back page of the homework sheet.",
+    "description": "Submit the lesson-aligned practice problems for the back page of the homework sheet. NEVER include error analysis problems ('a student says X, identify the error') — skip this type even if it appears in the provided worksheet.",
     "input_schema": {
         "type": "object",
         "properties": {
@@ -120,6 +120,8 @@ Rules for spiral review problems:
 - Do NOT invent new problem types not represented in the bank problems.
 - Do NOT include the current week's lesson topic.
 - No multi-step word problems. Each solvable in 60-90 seconds.
+- STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
+  Do NOT use \\textbf{a.} or \\textbf{b.} in spiral problems.
 - It is fine — even expected — for multiple problems to share the same structure
   with different numbers. Repetition of structure is correct here.
 """
@@ -145,6 +147,8 @@ Rules for spiral review problems:
 - Weight toward 8 most recently covered topics.
 - Vary types: computation, explanation, fill-in, true/false.
 - No multi-step word problems. Each solvable in 60-90 seconds.
+- STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
+  Do NOT use \\textbf{a.} or \\textbf{b.} in spiral problems.
 """
         user = (
             f"Grade: {grade}\n"
@@ -181,8 +185,10 @@ Rules for lesson practice problems:
 - Do not repeat topics from spiral_topics: {spiral_topics}
 - Match the style, format, and difficulty of the provided worksheet exactly —
   same problem structure, same vocabulary, same level of scaffolding.
-- Vary problem types (computation, word problem, true/false, error analysis)
-  but only as those types appear in the provided worksheet.
+- Vary problem types (computation, word problem, true/false) but only as those types
+  appear in the provided worksheet.
+- NEVER generate error analysis problems ("a student says X, identify the error").
+  Skip this type even if it appears in the provided worksheet.
 """
 
     # Build content blocks — start with any lesson PDFs we can find
@@ -253,11 +259,14 @@ def _challenge_prompt(
     current_topic: str,
     current_lessons: list[str],
     bank_problems: list[dict],
+    spiral_latex: list[str] | None = None,
 ) -> tuple[str, str]:
     """
     Build the challenge prompt. If approved honors problems exist in the bank
     for this topic area, pass them as structural models for Claude to vary.
     Otherwise fall back to free generation.
+    spiral_latex: LaTeX strings of the already-generated spiral problems, passed
+    so Claude avoids duplicating their scenarios or structure.
     """
     system = STYLE_NOTES + f"""
 Rules for challenge problems:
@@ -266,8 +275,18 @@ Rules for challenge problems:
 - Extend the lesson into non-routine territory — multi-step, real-world application,
   or reasoning-heavy. Do NOT introduce concepts beyond the current lesson.
 - Solvable by a strong 6th grader in 3-5 minutes each.
+- Each problem should fit in roughly 60-80 words of prose. Sub-parts (a/b) are
+  allowed but limit to 2 parts maximum. Keep LaTeX concise.
 - Match the rigor and style of any example problems provided below.
 """
+
+    spiral_avoid = ""
+    if spiral_latex:
+        spiral_list = "\n".join(f"- {s[:120]}" for s in spiral_latex[:10])
+        spiral_avoid = (
+            f"\n\nThe spiral review already contains these problems — "
+            f"do NOT reuse their scenarios, numbers, or structure:\n{spiral_list}\n"
+        )
 
     if bank_problems:
         examples = "\n\n".join(
@@ -275,7 +294,8 @@ Rules for challenge problems:
         )
         user = (
             f"Current lesson: {', '.join(current_lessons)}\n"
-            f"Exact topic: {current_topic}\n\n"
+            f"Exact topic: {current_topic}\n"
+            f"{spiral_avoid}\n"
             "Here are approved challenge problems from the bank that represent "
             "the right difficulty and style. Use these as structural models — "
             "change the numbers, context, and scenario, but preserve the multi-step "
@@ -287,6 +307,7 @@ Rules for challenge problems:
         user = (
             f"Current lesson: {', '.join(current_lessons)}\n"
             f"Exact topic: {current_topic}\n"
+            f"{spiral_avoid}"
             "Generate 2 challenge problems on this exact topic."
         )
 
@@ -399,6 +420,11 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank)
 
     if class_type == "honors":
+        # Front must resolve first so we can pass its problems to challenge,
+        # preventing duplicate scenarios between spiral and challenge sections.
+        front_data = await _call(front_sys, front_usr, FRONT_TOOL)
+        spiral_latex = [p["latex"] for p in front_data.get("problems", [])]
+
         # Sample up to 4 approved honors problems from the bank as challenge models.
         # Any domain is fine — we want structural variety. Falls back gracefully if empty.
         bank_challenge = sample_problems(
@@ -412,11 +438,9 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
             current_topic=context.current_topic,
             current_lessons=current_lessons,
             bank_problems=bank_challenge,
+            spiral_latex=spiral_latex,
         )
-        front_data, challenge_data = await asyncio.gather(
-            _call(front_sys, front_usr, FRONT_TOOL),
-            _call(chal_sys,  chal_usr,  CHALLENGE_TOOL),
-        )
+        challenge_data = await _call(chal_sys, chal_usr, CHALLENGE_TOOL)
     else:
         front_data     = await _call(front_sys, front_usr, FRONT_TOOL)
         challenge_data = {"problems": []}
