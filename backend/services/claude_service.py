@@ -14,11 +14,14 @@ STYLE_NOTES = """
 You are generating LaTeX math problems for a 6th-grade homework sheet.
 
 FORMATTING:
-- All math must be valid LaTeX (amsmath). Use \\dfrac for displayed fractions.
+- All math must be valid LaTeX (amsmath). Use \\dfrac for displayed fractions EXCEPT inside
+  table/tabular cells — use \\tfrac there so fractions fit within the row height.
 - Do NOT include problem numbers.
 - Do NOT include answer blanks or solution steps.
 - Multi-part: use \\textbf{a.}\\ \\textbf{b.}\\ inline.
-- Diagrams: use tikz, compact (under 4cm tall). Always add \\vspace{10pt} on its own line immediately before \\begin{tikzpicture}.
+- Diagrams: use tikz, compact (under 4cm tall). Always add \\vspace{8pt} on its own line
+  immediately before \\begin{tikzpicture}.
+- Tables: always add \\vspace{8pt} on its own line immediately before \\begin{tabular}.
 - Multiple choice: always add \\vspace{10pt} on its own line immediately before the first answer option (\\textbf{A.} or similar).
 - Problems must be solvable without a calculator.
 - One unambiguous correct answer per problem.
