@@ -80,6 +80,56 @@ function WeekPicker({ value, onChange }: { value: Date; onChange: (d: Date) => v
   )
 }
 
+// ─── Day Picker ───────────────────────────────────────────────────────────────
+// !! HIGH IMPORTANCE — DO NOT REMOVE !!
+// Each day Mon–Thu gets its own separate homework PDF.
+// specificDate (YYYY-MM-DD) is sent to the backend; the pacing guide maps it
+// to that day's lesson. This must always be present — do not collapse back to
+// week-only generation.
+
+const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu']
+
+function DayPicker({
+  week,
+  value,
+  onChange,
+}: {
+  week: Date
+  value: string | null   // YYYY-MM-DD or null
+  onChange: (iso: string | null) => void
+}) {
+  // Build Mon–Thu dates for this week
+  const days = Array.from({ length: 4 }, (_, i) => {
+    const d = new Date(week)
+    d.setDate(week.getDate() + i)
+    return d
+  })
+
+  return (
+    <div className="grid grid-cols-4 gap-2">
+      {days.map((d, i) => {
+        const iso = formatISO(d)
+        const selected = value === iso
+        return (
+          <button
+            key={iso}
+            onClick={() => onChange(selected ? null : iso)}
+            className={[
+              'py-1.5 rounded-lg border text-sm font-medium transition',
+              selected
+                ? 'bg-brand-600 border-brand-600 text-white shadow-sm'
+                : 'bg-white border-slate-300 text-slate-600 hover:border-brand-400',
+            ].join(' ')}
+          >
+            <span className="block text-xs">{DAY_LABELS[i]}</span>
+            <span className="block text-xs opacity-70">{d.getDate()}</span>
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
 // ─── History Item ─────────────────────────────────────────────────────────────
 
 function HistoryItem({
@@ -454,6 +504,7 @@ function EditorHeader({
 export default function App() {
   const [online,        setOnline]        = useState<boolean | null>(null)
   const [week,          setWeek]          = useState<Date>(() => getMonday(new Date()))
+  const [specificDate,  setSpecificDate]  = useState<string | null>(null)
   const [grade,         setGrade]         = useState<Grade>('6')
   const [classType,     setClassType]     = useState<ClassType>('grade_level')
   const [status,        setStatus]        = useState<Status>('idle')
@@ -464,15 +515,22 @@ export default function App() {
 
   useEffect(() => { checkHealth().then(setOnline) }, [])
 
+  // Clear day selection when week changes
+  const handleWeekChange = useCallback((d: Date) => {
+    setWeek(d)
+    setSpecificDate(null)
+  }, [])
+
   const handleGenerate = useCallback(async () => {
     setStatus('loading')
     setErrorMsg('')
     setEditorItem(null)
 
     const req: GenerateRequest = {
-      week_start:  formatISO(week),
+      week_start:    formatISO(week),
       grade,
-      class_type:  classType,
+      class_type:    classType,
+      specific_date: specificDate ?? undefined,
     }
 
     try {
@@ -481,13 +539,17 @@ export default function App() {
       const keyUrl = URL.createObjectURL(keyBlob)
       setPdfPreviewUrl(hwUrl)
 
-      const label = `${formatWeekRange(week)} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+      const dayLabel = specificDate
+        ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
+        : formatWeekRange(week)
+      const label = `${dayLabel} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
       const item: Assignment = {
-        weekStart:  formatISO(week),
+        weekStart:    formatISO(week),
+        specificDate: specificDate ?? undefined,
         grade,
         classType,
         label,
-        pdfUrl:     hwUrl,
+        pdfUrl:  hwUrl,
         keyUrl,
         sessionKey,
       }
@@ -497,7 +559,7 @@ export default function App() {
       setErrorMsg(e instanceof Error ? e.message : 'Unknown error')
       setStatus('error')
     }
-  }, [week, grade, classType])
+  }, [week, specificDate, grade, classType])
 
   // When recompile completes: update urls in history + preview, keep editor open
   const handleRecompiled = useCallback((itemKey: string, newPdfUrl: string, newKeyUrl: string) => {
@@ -538,7 +600,16 @@ export default function App() {
             {/* Week picker */}
             <div>
               <SectionLabel>Week</SectionLabel>
-              <WeekPicker value={week} onChange={setWeek} />
+              <WeekPicker value={week} onChange={handleWeekChange} />
+            </div>
+
+            {/* Day picker — REQUIRED: generates one homework per day, not per week */}
+            <div>
+              <SectionLabel>Day</SectionLabel>
+              <DayPicker week={week} value={specificDate} onChange={setSpecificDate} />
+              {!specificDate && (
+                <p className="text-xs text-amber-600 mt-1.5">Select a day to generate that day's assignment.</p>
+              )}
             </div>
 
             {/* Grade */}
@@ -594,7 +665,10 @@ export default function App() {
             {/* Summary */}
             <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
               <span className="font-medium">Generating: </span>
-              Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} · {formatWeekRange(week)}
+              Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
+              {specificDate
+                ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
+                : formatWeekRange(week)}
             </div>
 
             {/* Error */}
@@ -607,14 +681,16 @@ export default function App() {
             {/* Generate button */}
             <button
               onClick={handleGenerate}
-              disabled={status === 'loading' || !online}
+              disabled={status === 'loading' || !online || !specificDate}
               className={[
                 'w-full py-3 rounded-xl text-sm font-semibold transition shadow-sm',
                 status === 'loading'
                   ? 'bg-brand-400 text-white cursor-wait'
                   : !online
                     ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                    : 'bg-brand-600 text-white hover:bg-brand-700 active:scale-[0.99]',
+                    : !specificDate
+                      ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
+                      : 'bg-brand-600 text-white hover:bg-brand-700 active:scale-[0.99]',
               ].join(' ')}
             >
               {status === 'loading' ? (

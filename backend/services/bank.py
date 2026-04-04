@@ -8,8 +8,6 @@ POST /api/bank/flag          — flag a problem (keep but mark for review)
 DELETE /api/bank/delete      — permanently delete a problem
 """
 
-from __future__ import annotations
-
 import json
 import os
 import random
@@ -102,7 +100,6 @@ def review(
     quarter: Optional[int] = Query(None),
     approved: Optional[bool] = Query(None),
     flagged: Optional[bool] = Query(None),
-    high_priority: Optional[bool] = Query(None),
     inbox_only: bool = Query(True),   # default: show inbox problems
     limit: int = Query(50),
     offset: int = Query(0),
@@ -138,8 +135,6 @@ def review(
                     continue
                 if flagged is not None and data.get("flagged") != flagged:
                     continue
-                if high_priority is not None and bool(data.get("high_priority")) != high_priority:
-                    continue
                 problems.append(data)
             except Exception:
                 continue
@@ -154,9 +149,9 @@ def review(
 def stats(grade: int = Query(6)):
     gd = grade_dir(grade)
     result = {
-        "inbox": {"total": 0, "high_priority": 0},
+        "inbox": {"total": 0},
         "domains": {},
-        "totals": {"total": 0, "approved": 0, "flagged": 0, "pending": 0, "high_priority": 0},
+        "totals": {"total": 0, "approved": 0, "flagged": 0, "pending": 0},
     }
 
     if not gd.exists():
@@ -167,22 +162,12 @@ def stats(grade: int = Query(6)):
     if ib.exists():
         inbox_files = list(ib.glob("*.json"))
         result["inbox"]["total"] = len(inbox_files)
-        hp_count = 0
-        for f in inbox_files:
-            try:
-                data = json.loads(f.read_text())
-                if data.get("high_priority"):
-                    hp_count += 1
-            except Exception:
-                continue
-        result["inbox"]["high_priority"] = hp_count
 
     # Per-domain stats
     for domain in VALID_DOMAINS:
         domain_total = 0
         domain_approved = 0
         domain_flagged = 0
-        domain_hp = 0
         for q in VALID_QUARTERS:
             folder = gd / domain / f"q{q}"
             if not folder.exists():
@@ -195,8 +180,6 @@ def stats(grade: int = Query(6)):
                         domain_approved += 1
                     if data.get("flagged"):
                         domain_flagged += 1
-                    if data.get("high_priority"):
-                        domain_hp += 1
                 except Exception:
                     continue
         result["domains"][domain] = {
@@ -204,12 +187,10 @@ def stats(grade: int = Query(6)):
             "approved": domain_approved,
             "flagged": domain_flagged,
             "pending": domain_total - domain_approved - domain_flagged,
-            "high_priority": domain_hp,
         }
         result["totals"]["total"] += domain_total
         result["totals"]["approved"] += domain_approved
         result["totals"]["flagged"] += domain_flagged
-        result["totals"]["high_priority"] += domain_hp
 
     result["totals"]["pending"] = (
         result["totals"]["total"] - result["totals"]["approved"] - result["totals"]["flagged"]
@@ -272,34 +253,25 @@ def delete(req: DeleteRequest):
 # ── Sampler (used by generation pipeline) ────────────────────────────────────
 
 def sample_problems(
-    domain: str | None,
+    domain: Optional[str],          # None = any domain
     grade: int,
     max_quarter: int,
     n: int,
-    honors_only: bool = False,
-    exclude_honors: bool = False,
-    high_priority_only: bool = False,
-    exclude_high_priority: bool = False,
+    honors_only: bool = False,          # only problems with honors=true
+    exclude_honors: bool = False,        # only problems without honors=true
+    high_priority_only: bool = False,    # only problems with high_priority=true
+    exclude_high_priority: bool = False, # only problems without high_priority=true
 ) -> list[dict]:
     """
     Return up to n randomly sampled approved problems.
-
-    Filters:
-      domain            — None draws from all domains
-      max_quarter       — only include problems from Q1 through max_quarter
-      honors_only       — only problems with honors=True
-      exclude_honors    — skip problems with honors=True
-      high_priority_only   — only problems with high_priority=True
-      exclude_high_priority — skip problems with high_priority=True
-
-    If the pool is smaller than n, returns the whole pool (no error).
-    Callers should check len(result) < n and handle shortfalls.
+    domain=None draws from all domains.
+    Draws from Q1 through max_quarter (cumulative).
     """
     gd = grade_dir(grade)
-    domains_to_search = [domain] if domain else VALID_DOMAINS
+    domains = [domain] if domain else VALID_DOMAINS
     pool = []
 
-    for d in domains_to_search:
+    for d in domains:
         for q in range(1, max_quarter + 1):
             folder = gd / d / f"q{q}"
             if not folder.exists():
