@@ -8,6 +8,7 @@ export interface GenerateRequest {
   week_start: string
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors'
+  specific_date?: string
 }
 
 export interface GenerateResult {
@@ -62,6 +63,7 @@ export interface BankProblem {
   domain: string | null
   grade: number
   quarter: number | null
+  suggested_quarter?: number
   topic: string
   latex: string
   answer_latex: string
