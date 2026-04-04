@@ -184,6 +184,18 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
         .replace("<<CHALLENGE_BLOCK>>",challenge)
     )
 
+    tmpdir_  = tempfile.mkdtemp(prefix="hw_")
+    tex_path = os.path.join(tmpdir_, "homework.tex")
+
+    # Stash key rendering data for build_key_pdf (same tmpdir, shared context)
+    _key_render_cache[tmpdir_] = dict(
+        course_name=course_name, hw_number=hw_number, date_str=date_str,
+        key_front_left=key_front_left, key_front_right=key_front_right,
+        lesson_numbers=lesson_numbers, lesson_title=lesson_title,
+        key_back_block=key_back_block,
+    )
+
+    with open(tex_path, "w") as f:
         f.write(filled)
 
     return await asyncio.to_thread(_compile, tmpdir_, tex_path)
