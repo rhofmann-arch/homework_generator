@@ -1,0 +1,156 @@
+% ============================================================
+%  MATH HOMEWORK — ANSWER KEY
+%  Page 1 = Spiral Review answers (two-column)
+%  Page 2 = Lesson Practice answers (two-column)
+%  Mirrors homework.tex structure exactly — same header, same
+%  problem numbering. No work space; answers shown inline.
+%  All <<PLACEHOLDERS>> filled by latex_builder.py
+% ============================================================
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  top=0.80in,
+  bottom=0.45in,
+  left=0.60in,
+  right=0.60in
+]{geometry}
+
+% --- Math ---
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, shapes.geometric, patterns, positioning}
+
+% --- Layout ---
+\usepackage[inline]{enumitem}
+\usepackage{multicol}
+\usepackage{needspace}
+\usepackage{array, tabularx, booktabs}
+\usepackage{graphicx, wrapfig}
+\usepackage{mdframed}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.9cm}
+
+% --- Color ---
+\usepackage{xcolor}
+\definecolor{headerblue}{RGB}{30, 70, 140}
+\definecolor{honorsgreen}{RGB}{20, 110, 60}
+\definecolor{colrule}{RGB}{190, 190, 190}
+\definecolor{probrule}{RGB}{220, 220, 220}
+\definecolor{answerbg}{RGB}{255, 251, 230}
+\definecolor{answerborder}{RGB}{180, 140, 30}
+\colorlet{medgray}{colrule}
+
+% --- Header / footer ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{40pt}
+\setlength{\headsep}{8pt}
+\renewcommand{\headrulewidth}{1.2pt}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{headerblue}\leaders\hrule height \headrulewidth\hfill}}
+\cfoot{}
+
+% ============================================================
+%  MACROS
+% ============================================================
+
+\newcounter{prob}
+
+% Answer pill: amber background box for the answer value
+\newcommand{\answerpill}[1]{%
+  \colorbox{answerbg}{\color{answerborder}\textbf{\normalsize #1}}%
+}
+
+% Key problem — spiral page.
+% Two-line layout: problem text on line 1, answer pill on line 2.
+% vfill stretches evenly in the [s] minipage just like \frontproblem.
+\newcommand{\keyproblemfront}[2]{%
+  \stepcounter{prob}%
+  \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
+  \par\vspace{3pt}%
+  \noindent\hspace{1.1em}\answerpill{#2}%
+  \vfill
+  \noindent{\color{probrule}\hrule height 0.5pt}%
+  \vspace{2pt}%
+}
+
+% Key problem — back page (lesson practice).
+% Compact: problem text + answer pill on next line + thin rule.
+% needspace keeps the pair together inside multicols.
+\newcommand{\keyproblemback}[2]{%
+  \needspace{0.55in}%
+  \stepcounter{prob}%
+  \noindent\textbf{\normalsize\theprob.}\enspace{\normalsize #1}%
+  \par\vspace{3pt}%
+  \noindent\hspace{1.1em}\answerpill{#2}%
+  \vspace{6pt}%
+  \noindent{\color{probrule}\hrule height 0.5pt}%
+  \vspace{4pt}%
+}
+
+% Header band — identical to homework.tex
+\newcommand{\headerbar}[2]{%
+  \noindent
+  \fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+    \vspace{2pt}\centering
+    {\normalsize\bfseries #1}%
+    \if\relax\detokenize{#2}\relax\else
+      \enspace{\normalsize|}\enspace{\small #2}%
+    \fi
+    \vspace{2pt}%
+  }}%
+  \vspace{4pt}%
+}
+
+% ============================================================
+%  COLUMN HEIGHTS
+% ============================================================
+\newlength{\bodycolht}
+\setlength{\bodycolht}{\dimexpr\textheight-\headheight-\headsep-1.25in\relax}
+
+% ============================================================
+%  PAGE 1 — SPIRAL REVIEW KEY
+% ============================================================
+
+\fancyhead[L]{%
+  \textbf{\textcolor{headerblue}{\small <<COURSE_NAME>>}}\\[-1pt]
+  {\small Homework \#\,<<HW_NUMBER>>\hspace{8pt}<<DATE>>}}
+\fancyhead[R]{%
+  {\small \textcolor{answerborder}{\textbf{Answer Key}}}\\[-1pt]
+  {\small\textit{\textcolor{medgray}{Not for student distribution}}}}
+
+\begin{document}
+
+\headerbar{Spiral Review --- Answer Key}{}
+
+\noindent
+\begin{minipage}[t][\bodycolht][s]{0.464\linewidth}
+<<KEY_FRONT_COL_LEFT>>
+\end{minipage}%
+\hfill%
+{\color{colrule}\vrule}%
+\hfill%
+\begin{minipage}[t][\bodycolht][s]{0.464\linewidth}
+<<KEY_FRONT_COL_RIGHT>>
+\end{minipage}
+
+% ============================================================
+%  PAGE 2 — LESSON PRACTICE KEY
+% ============================================================
+\newpage
+
+\fancyhead[L]{%
+  \textbf{\textcolor{headerblue}{\small <<COURSE_NAME>>}}\\[-1pt]
+  {\small Homework \#\,<<HW_NUMBER>>\hspace{8pt}<<DATE>>}}
+\fancyhead[R]{%
+  {\small Lesson(s):\;\textbf{<<LESSON_NUMBERS>>}}\\[-1pt]
+  {\small \textcolor{answerborder}{\textbf{Answer Key}}}}
+
+\headerbar{Lesson Practice --- Answer Key}{<<LESSON_TITLE>>}
+
+\begin{multicols}{2}
+<<KEY_BACK_PROBLEMS>>
+\end{multicols}
+
+\end{document}

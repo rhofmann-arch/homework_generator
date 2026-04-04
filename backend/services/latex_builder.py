@@ -3,12 +3,13 @@ from __future__ import annotations
 Fills homework.tex with generated content, compiles with pdflatex.
 """
 
-import asyncio, math, os, subprocess, tempfile
+import asyncio, os, subprocess, tempfile
 from datetime import datetime
 from pathlib import Path
 from services.pacing import WeekContext
 
-TEMPLATE_PATH = Path(__file__).parent.parent / "templates" / "homework.tex"
+TEMPLATE_PATH     = Path(__file__).parent.parent / "templates" / "homework.tex"
+KEY_TEMPLATE_PATH = Path(__file__).parent.parent / "templates" / "homework_key.tex"
 
 COURSE_NAMES = {
     ("6", "grade_level"): "6th Grade Math",
@@ -17,9 +18,13 @@ COURSE_NAMES = {
     ("5", "honors"):      "Honors Math 5",
 }
 
+PROBLEMS_PER_COL = 5   # front: always 5 per column = 10 total
 
 # Space reserved below back minipage for the challenge block.
 CHALLENGE_BLOCK_HT = "3.10in"
+
+# Cache for sharing render data between build_pdf and build_key_pdf
+_key_render_cache: dict = {}
 
 
 def _escape_tex(s: str) -> str:
@@ -55,15 +60,16 @@ def _last_problem(latex: str) -> str:
     )
 
 
-def _render_front(problems: list[dict]) -> tuple[str, str]:
+def _render_front(problems: list[dict]) -> tuple[str, str, str, str]:
     """Split front problems evenly: ceil(n/2) left, floor(n/2) right.
     Works for grade-level (10 -> 5+5) and honors (8 -> 4+4).
+    Returns (hw_left, hw_right, key_left, key_right).
     """
     split = math.ceil(len(problems) / 2)
     left  = problems[:split]
     right = problems[split:]
 
-    def _col(probs: list[dict]) -> str:
+    def _hw_col(probs: list[dict]) -> str:
         lines = []
         for i, p in enumerate(probs):
             latex = p["latex"].strip()
@@ -73,24 +79,34 @@ def _render_front(problems: list[dict]) -> tuple[str, str]:
                 lines.append(rf"\frontproblem{{{latex}}}")
         return "\n".join(lines)
 
-    return _col(left), _col(right)
+    def _key_col(probs: list[dict]) -> str:
+        lines = []
+        for p in probs:
+            latex  = p["latex"].strip()
+            answer = p.get("answer_latex", "---").strip() or "---"
+            lines.append(rf"\keyproblemfront{{{latex}}}{{{answer}}}")
+        return "\n".join(lines)
+
+    return _hw_col(left), _hw_col(right), _key_col(left), _key_col(right)
 
 
-def _render_back(problems: list[dict], class_type: str) -> str:
+def _render_back(problems: list[dict], class_type: str) -> tuple[str, str]:
     """
-    Single-column back problems inside a fixed-height [s] minipage.
-    - grade_level: last problem has no rule (page bottom is natural end).
-    - honors:      all problems have rule — challenge block follows below.
+    Back problems for both homework and key.
+    Returns (hw_block, key_block).
     """
-    lines = []
+    hw_lines  = []
+    key_lines = []
     for i, p in enumerate(problems):
-        latex = p["latex"].strip()
+        latex  = p["latex"].strip()
+        answer = p.get("answer_latex", "---").strip() or "---"
         is_last = (i == len(problems) - 1)
         if is_last and class_type == "grade_level":
-            lines.append(_last_problem(latex))
+            hw_lines.append(_last_problem(latex))
         else:
-            lines.append(rf"\backproblem{{{latex}}}")
-    return "\n".join(lines)
+            hw_lines.append(rf"\backproblem{{{latex}}}")
+        key_lines.append(rf"\keyproblemback{{{latex}}}{{{answer}}}")
+    return "\n".join(hw_lines), "\n".join(key_lines)
 
 
 def _challenge_block(problems: list[dict]) -> str:
@@ -147,10 +163,12 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
     lesson_numbers = _escape_tex(", ".join(context.current_lessons[:4]))
     lesson_title   = _escape_tex(problems.get("lesson_title", context.lesson_title))
 
-    front_left, front_right = _render_front(_normalize_problems(problems["front_problems"]))
-    back_block              = _render_back(_normalize_problems(problems["back_problems"]), class_type)
-    challenge               = _challenge_block(_normalize_problems(problems.get("challenge_problems", [])))
-    back_ht                 = _back_col_ht(class_type)
+    front_left, front_right, key_front_left, key_front_right = \
+        _render_front(_normalize_problems(problems["front_problems"]))
+    back_block, key_back_block = \
+        _render_back(_normalize_problems(problems["back_problems"]), class_type)
+    challenge = _challenge_block(_normalize_problems(problems.get("challenge_problems", [])))
+    back_ht   = _back_col_ht(class_type)
 
     filled = (template
         .replace("<<COURSE_NAME>>",    course_name)
@@ -165,9 +183,71 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
         .replace("<<CHALLENGE_BLOCK>>",challenge)
     )
 
+    # Stash key rendering data for build_key_pdf (same tmpdir, shared context)
+    _key_render_cache[tmpdir_] = dict(
+        course_name=course_name, hw_number=hw_number, date_str=date_str,
+        key_front_left=key_front_left, key_front_right=key_front_right,
+        lesson_numbers=lesson_numbers, lesson_title=lesson_title,
+        key_back_block=key_back_block,
+    )
+
     tmpdir_  = tempfile.mkdtemp(prefix="hw_")
     tex_path = os.path.join(tmpdir_, "homework.tex")
     with open(tex_path, "w") as f:
         f.write(filled)
 
     return await asyncio.to_thread(_compile, tmpdir_, tex_path)
+
+
+async def build_key_pdf(hw_pdf_path: str) -> str:
+    """
+    Build the answer key PDF for the homework at hw_pdf_path.
+    Must be called after build_pdf() — relies on cached render data
+    stored in _key_render_cache keyed by the same tmpdir.
+    """
+    tmpdir_ = str(Path(hw_pdf_path).parent)
+    cache = _key_render_cache.get(tmpdir_)
+    if cache is None:
+        raise RuntimeError(
+            "build_key_pdf called before build_pdf, or tmpdir mismatch."
+        )
+
+    template = KEY_TEMPLATE_PATH.read_text()
+
+    filled = (template
+        .replace("<<COURSE_NAME>>",        cache["course_name"])
+        .replace("<<HW_NUMBER>>",           cache["hw_number"])
+        .replace("<<DATE>>",                cache["date_str"])
+        .replace("<<KEY_FRONT_COL_LEFT>>",  cache["key_front_left"])
+        .replace("<<KEY_FRONT_COL_RIGHT>>", cache["key_front_right"])
+        .replace("<<LESSON_NUMBERS>>",      cache["lesson_numbers"])
+        .replace("<<LESSON_TITLE>>",        cache["lesson_title"])
+        .replace("<<KEY_BACK_PROBLEMS>>",   cache["key_back_block"])
+    )
+
+    tex_path = os.path.join(tmpdir_, "homework_key.tex")
+    with open(tex_path, "w") as f:
+        f.write(filled)
+
+    return await asyncio.to_thread(_compile_key, tmpdir_, tex_path)
+
+
+def _compile_key(tmpdir: str, tex_path: str) -> str:
+    """Compile the key tex file; returns path to key PDF."""
+    pdf_path = os.path.join(tmpdir, "homework_key.pdf")
+    for _ in range(2):
+        result = subprocess.run(
+            ["pdflatex", "-interaction=nonstopmode",
+             "-output-directory", tmpdir, tex_path],
+            capture_output=True, text=True, timeout=60,
+        )
+    if not os.path.exists(pdf_path):
+        error_lines = [
+            l for l in result.stdout.splitlines()
+            if l.startswith("!") or l.startswith("l.")
+        ]
+        summary = "\n".join(error_lines[:8]) if error_lines else result.stdout[-2000:]
+        raise RuntimeError(
+            f"Key LaTeX compilation failed.\n\n{summary}"
+        )
+    return pdf_path

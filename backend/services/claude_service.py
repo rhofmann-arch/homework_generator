@@ -43,9 +43,10 @@ FRONT_TOOL = {
                 "items": {
                     "type": "object",
                     "properties": {
-                        "latex": {"type": "string", "description": "Problem text in LaTeX."}
+                        "latex":        {"type": "string", "description": "Problem text in LaTeX."},
+                        "answer_latex": {"type": "string", "description": "The correct answer in LaTeX. Required — every problem must have an answer."}
                     },
-                    "required": ["latex"]
+                    "required": ["latex", "answer_latex"]
                 },
                 "minItems": 8,
                 "maxItems": 10,
@@ -71,9 +72,10 @@ BACK_TOOL = {
                 "items": {
                     "type": "object",
                     "properties": {
-                        "latex": {"type": "string", "description": "Problem text in LaTeX."}
+                        "latex":        {"type": "string", "description": "Problem text in LaTeX."},
+                        "answer_latex": {"type": "string", "description": "The correct answer in LaTeX. Required — every problem must have an answer."}
                     },
-                    "required": ["latex"]
+                    "required": ["latex", "answer_latex"]
                 },
                 "minItems": 5,
                 "maxItems": 10,
