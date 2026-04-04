@@ -304,7 +304,7 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     school_q = _school_quarter(current_month)
 
     # ── Sample 1 high-priority problem for the front spiral ──────────────────
-    hp_problem = _sample_high_priority_front(int(context.grade), school_q)
+    hp_problem = _sample_high_priority_front(int(str(context.grade).split("_")[0]), school_q)
     n_claude_front = 9 if hp_problem else 10  # Claude fills the remaining slots
 
     # Honors: 8-problem spiral (5 honors + 3 regular) → 7 if HP slot is filled
@@ -328,7 +328,7 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
         # (These feed the back page — separate from the HP front slot.)
         bank_honors = sample_problems(
             domain=None,
-            grade=int(context.grade),
+            grade=int(str(context.grade).split("_")[0]),
             max_quarter=school_q,
             n=4,
             honors_only=True,
