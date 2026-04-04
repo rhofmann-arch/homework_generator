@@ -1,15 +1,15 @@
 {
   "id": "in_prealg_g6_0045",
-  "domain": null,
+  "domain": "arithmetic",
   "grade": 6,
-  "quarter": null,
+  "quarter": 2,
   "topic": "fractions and money word problem",
   "latex": "Sun-Li sold candy bars for the glee club for \\$0.50 each. If she sold $\\frac{3}{4}$ of the candy bars that she had and has 12 candy bars left, how many dollars has she collected so far?",
   "answer_latex": "",
   "suggested_quarter": 2,
   "source_file": "preAlgebra1.pdf",
   "source_problem_number": 20,
-  "approved": false,
+  "approved": true,
   "flagged": false,
   "notes": ""
 }

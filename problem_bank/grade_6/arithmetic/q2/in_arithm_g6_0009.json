@@ -3,14 +3,13 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 2,
-  "topic": "money and division",
-  "latex": "How many coins are in \\$25 worth of quarters?",
-  "answer_latex": "100 \\text{ coins}",
-  "suggested_quarter": 1,
-  "source_file": "Arithmetic1.pdf",
+  "topic": "multiplication and addition word problem",
+  "latex": "Parker and his three friends went trick-or-treating together. If Parker got 11 pieces of candy, and each of his friends got twice as much candy as he did, how many pieces of candy did Parker and his friends get in all?",
+  "answer_latex": "77 \\text{ pieces}",
+  "suggested_quarter": 2,
+  "source_file": "arithmetic2.pdf",
   "source_problem_number": 9,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }

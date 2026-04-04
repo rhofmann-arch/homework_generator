@@ -3,7 +3,7 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 2,
-  "topic": "fractions of a whole and subtraction",
+  "topic": "fraction operations and subtraction word problem",
   "latex": "One day, 60 flights departed Washington National Airport for five different destinations. One-quarter of the flights went to Atlanta, one-third went to Chicago, one-fifth to Miami, and one-sixth to New York. The remaining flights went to Pittsburgh. How many flights went to Pittsburgh?",
   "answer_latex": "3",
   "suggested_quarter": 2,

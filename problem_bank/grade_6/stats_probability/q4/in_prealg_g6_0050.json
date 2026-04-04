@@ -1,15 +1,15 @@
 {
   "id": "in_prealg_g6_0050",
-  "domain": null,
+  "domain": "stats_probability",
   "grade": 6,
-  "quarter": null,
+  "quarter": 4,
   "topic": "arithmetic mean, finding missing value",
   "latex": "The average of five numbers is 10.6. Four of the numbers are 10, 4, 5 and 20. What is the value of the fifth number?",
   "answer_latex": "",
   "suggested_quarter": 2,
   "source_file": "preAlgebra1.pdf",
   "source_problem_number": 25,
-  "approved": false,
+  "approved": true,
   "flagged": false,
   "notes": ""
 }

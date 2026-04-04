@@ -3,7 +3,7 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 1,
-  "topic": "multi-digit multiplication and addition",
+  "topic": "arithmetic with multiplication and addition",
   "latex": "What is the value of $29 \\times 31 + 19 \\times 21$?",
   "answer_latex": "1298",
   "suggested_quarter": 1,
