@@ -97,7 +97,8 @@ def _school_quarter(month: int) -> int:
         return 4
 
 
-def _front_prompt(grade, covered, current, n_to_generate: int):
+def _front_prompt(grade, covered, current, n_to_generate: int,
+                  bank_templates: list | None = None):
     system = STYLE_NOTES + f"""
 Rules for spiral review problems:
 - Exactly {n_to_generate} problems total.
@@ -107,12 +108,23 @@ Rules for spiral review problems:
 - No multi-step word problems. Each solvable in 60-90 seconds.
 - Every problem must include an answer_latex field with the correct answer.
 """
+    if bank_templates:
+        system += """
+- Bank template problems are provided. Use each as a structural model —
+  preserve the problem type and reasoning structure, but change all numbers,
+  names, and contexts. Do not copy any problem verbatim.
+"""
     user = (
         f"Grade: {grade}\n"
         f"Covered topics (oldest first): {covered}\n"
         f"Current week (do NOT include): {current}\n"
-        f"Generate {n_to_generate} spiral review problems."
     )
+    if bank_templates:
+        template_block = "\n\n".join(
+            f"Template {i+1}:\n{p['latex']}" for i, p in enumerate(bank_templates)
+        )
+        user += f"\nBank templates to vary (change numbers/context, keep structure):\n{template_block}\n"
+    user += f"\nGenerate {n_to_generate} spiral review problems."
     return system, user
 
 
@@ -304,15 +316,35 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     school_q = _school_quarter(current_month)
 
     # ── Sample 1 high-priority problem for the front spiral ──────────────────
-    hp_problem = _sample_high_priority_front(int(str(context.grade).split("_")[0]), school_q)
-    n_claude_front = 9 if hp_problem else 10  # Claude fills the remaining slots
+    grade_int = int(str(context.grade).split("_")[0])
+    hp_problem = _sample_high_priority_front(grade_int, school_q)
+    hp_offset = 1 if hp_problem else 0  # reserve 1 slot for HP if available
 
-    # Honors: 8-problem spiral (5 honors + 3 regular) → 7 if HP slot is filled
-    # Grade-level: 10-problem spiral → 9 if HP slot is filled
+    # ── Sample bank templates for spiral review ───────────────────────────────
+    bank_templates: list | None = None
     if class_type == "honors":
-        n_claude_front = 7 if hp_problem else 8
+        # Honors spiral: 5 honors:true + 3 regular (exclude_honors), minus HP slot
+        honors_spiral = sample_problems(
+            domain=None, grade=grade_int, max_quarter=school_q,
+            n=5, honors_only=True, exclude_high_priority=True,
+        )
+        regular_spiral = sample_problems(
+            domain=None, grade=grade_int, max_quarter=school_q,
+            n=3, exclude_honors=True, exclude_high_priority=True,
+        )
+        raw_templates = honors_spiral + regular_spiral
+        if raw_templates:
+            # Remove HP slot from template count if HP is filling a slot
+            target = 8 - hp_offset
+            bank_templates = raw_templates[:target]
+        n_claude_front = max(0, (8 - hp_offset) - len(bank_templates or []))
+    else:
+        # Grade-level: 10-problem spiral → 9 if HP slot is filled, all generated
+        n_claude_front = 10 - hp_offset
 
-    front_sys, front_usr = _front_prompt(context.grade, covered, current_str, n_claude_front)
+    front_sys, front_usr = _front_prompt(
+        context.grade, covered, current_str, n_claude_front, bank_templates
+    )
 
     # ── Back page (fully generated, no HP slot) ──────────────────────────────
     back_sys, back_content = _back_prompt(
