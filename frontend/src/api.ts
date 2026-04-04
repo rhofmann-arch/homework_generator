@@ -40,6 +40,7 @@ export interface BankProblem {
   latex: string
   answer_latex?: string
   topic?: string
+  notes?: string
   domain?: Domain
   quarter?: number
   approved?: boolean
