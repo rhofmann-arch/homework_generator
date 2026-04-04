@@ -1,0 +1,15 @@
+{
+  "id": "in_prealg_g6_0044",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "topic": "sequential fraction operations",
+  "latex": "Jim eats two-fifths of a chocolate bar and leaves the remaining three-fifths in the kitchen. Marie comes in and eats one-third of the remaining bar, and then Sage finds it and eats one-fourth of what's left. What fraction of the original chocolate bar remains? Express your answer as a common fraction.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 19,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

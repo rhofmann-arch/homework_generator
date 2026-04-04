@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0059",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "calculating mean (average)",
+  "latex": "What is the mean of this set of data?\n\n$45, 31, 26, 46$",
+  "answer_latex": "37",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0065",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "comparing fractions, equivalent fractions",
+  "latex": "Is $\\frac{3}{5}$ greater than, less than, or equal to $\\frac{6}{10}$?",
+  "answer_latex": "equal to",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

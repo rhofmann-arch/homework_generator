@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0047",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "basic probability",
+  "latex": "Imagine that you write each letter of the word \\textit{EXCELLENT} on a different card and then shuffle the cards. You turn the deck facedown on a table and turn over the top card. What is the probability that you will turn over a $T$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

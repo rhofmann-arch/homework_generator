@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0068",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "equivalent fractions, simplifying fractions",
+  "latex": "$\\frac{12}{20} = \\frac{3}{\\square}$",
+  "answer_latex": "5",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
