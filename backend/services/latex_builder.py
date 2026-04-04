@@ -1,4 +1,5 @@
 from __future__ import annotations
+import math
 """
 Fills homework.tex with generated content, compiles with pdflatex.
 """
