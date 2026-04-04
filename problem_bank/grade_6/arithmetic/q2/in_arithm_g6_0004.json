@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "elapsed time calculation",
+  "latex": "A play has three acts that are 80 minutes, 50 minutes, and 45 minutes long, respectively. There are also two 15-minute intermissions. If the play starts at 5:30 p.m., at what time p.m. does it end?",
+  "answer_latex": "8:55 \\text{ p.m.}",
+  "suggested_quarter": 2,
+  "source_file": "arithmetic2.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,9 +1,9 @@
 {
-  "id": "in_prealg_g6_0008",
-  "domain": "stats_probability",
+  "id": "in_prealg_g6_0033",
+  "domain": "arithmetic",
   "grade": 6,
-  "quarter": 4,
-  "topic": "mean/average, arithmetic",
+  "quarter": 3,
+  "topic": "calculating mean/average",
   "latex": "What is the mean of 8, 12, 16, 20 and 24?",
   "answer_latex": "16",
   "suggested_quarter": 1,

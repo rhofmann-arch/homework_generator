@@ -1,0 +1,15 @@
+{
+  "id": "in_prealg_g6_0042",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multi-step money arithmetic",
+  "latex": "Rebecca uses a \\$20 bill to pay for five notebooks that cost \\$3.97 each including tax. How many cents should Rebecca receive in change?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

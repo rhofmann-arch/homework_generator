@@ -3,14 +3,13 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 2,
-  "topic": "geometric sequences with fractions",
-  "latex": "Each bounce of a ball goes $\\frac{3}{4}$ as high as the previous bounce. The second bounce was 24 inches high. What was the height, in inches, of the first bounce?",
-  "answer_latex": "32 \\text{ inches}",
+  "topic": "decimal to fraction conversion",
+  "latex": "How many eighths are in 5.75?",
+  "answer_latex": "46 \\text{ eighths}",
   "suggested_quarter": 2,
-  "source_file": "Arithmetic1.pdf",
+  "source_file": "arithmetic2.pdf",
   "source_problem_number": 12,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }

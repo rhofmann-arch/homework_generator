@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations with exponents",
+  "latex": "What is the value of $5^2 - (10)(6) + 6^2$?",
+  "answer_latex": "1",
+  "suggested_quarter": 1,
+  "source_file": "arithmetic2.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

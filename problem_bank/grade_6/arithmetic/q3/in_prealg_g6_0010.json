@@ -3,7 +3,7 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 3,
-  "topic": "percent increase, real-world application",
+  "topic": "percent increase, word problem",
   "latex": "The cost of daily school lunch increased from \\$1.80 to \\$2.25. What was the percent increase?",
   "answer_latex": "25 \\text{ percent}",
   "suggested_quarter": 2,
@@ -11,6 +11,5 @@
   "source_problem_number": 10,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }

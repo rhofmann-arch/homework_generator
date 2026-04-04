@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0119",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "simple probability",
+  "latex": "A box of a dozen donuts contains 5 chocolate donuts, 4 sprinkled donuts, 2 lemon donuts, and 1 raspberry-filled donut. If you reach in a box and grab one donut, what is the probability that it will be a raspberry-filled donut?",
+  "answer_latex": "\\frac{1}{12}",
+  "suggested_quarter": 3,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

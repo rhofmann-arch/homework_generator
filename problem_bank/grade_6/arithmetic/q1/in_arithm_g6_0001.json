@@ -3,14 +3,13 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 1,
-  "topic": "division with remainder, finding the dividend",
-  "latex": "When a certain number is divided by 13, the quotient is 7 and the remainder is 9. What is the number?",
-  "answer_latex": "100",
+  "topic": "multi-digit multiplication and addition",
+  "latex": "What is the value of $29 \\times 31 + 19 \\times 21$?",
+  "answer_latex": "1298",
   "suggested_quarter": 1,
-  "source_file": "Arithmetic1.pdf",
+  "source_file": "arithmetic2.pdf",
   "source_problem_number": 1,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }

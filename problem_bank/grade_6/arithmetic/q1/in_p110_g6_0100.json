@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0100",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying multiples",
+  "latex": "List the first four multiples of 2.",
+  "answer_latex": "2, 4, 6, 8",
+  "suggested_quarter": 1,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

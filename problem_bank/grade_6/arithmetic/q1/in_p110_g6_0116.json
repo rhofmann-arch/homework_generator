@@ -1,0 +1,15 @@
+{
+  "id": "in_p110_g6_0116",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "missing operation problem",
+  "latex": "$160 \\square 10 = 16$",
+  "answer_latex": "\u00f7",
+  "suggested_quarter": 2,
+  "source_file": "p1_10.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

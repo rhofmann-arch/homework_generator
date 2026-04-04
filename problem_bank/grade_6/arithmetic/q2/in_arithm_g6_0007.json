@@ -1,0 +1,15 @@
+{
+  "id": "in_arithm_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "money value equation",
+  "latex": "The value of eight nickels and six dimes is the same as four nickels and how many dimes?",
+  "answer_latex": "8 \\text{ dimes}",
+  "suggested_quarter": 2,
+  "source_file": "arithmetic2.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

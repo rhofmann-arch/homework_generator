@@ -1,0 +1,15 @@
+{
+  "id": "in_prealg_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "average/mean, multiplication",
+  "latex": "The average of five numbers is 23. What is their sum?",
+  "answer_latex": "115",
+  "suggested_quarter": 1,
+  "source_file": "preAlgebra1.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -3,14 +3,13 @@
   "domain": "arithmetic",
   "grade": 6,
   "quarter": 1,
-  "topic": "multi-step division word problem",
-  "latex": "A bottling plant fills 0.5-liter bottles from a 56-liter tank. A flat consists of 24 bottles. How many complete flats can be filled from a single tank?",
-  "answer_latex": "4 \\text{ flats}",
-  "suggested_quarter": 2,
-  "source_file": "Arithmetic1.pdf",
+  "topic": "money conversion",
+  "latex": "Sally has 624 quarters in her piggy bank. In dollars, how much money is this?",
+  "answer_latex": "156 \\text{ dollars}",
+  "suggested_quarter": 1,
+  "source_file": "arithmetic2.pdf",
   "source_problem_number": 11,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }

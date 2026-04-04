@@ -1,9 +1,9 @@
 {
-  "id": "in_prealg_g6_0007",
-  "domain": "stats_probability",
+  "id": "in_prealg_g6_0032",
+  "domain": "arithmetic",
   "grade": 6,
-  "quarter": 4,
-  "topic": "median, mean, statistics",
+  "quarter": 3,
+  "topic": "median and mean calculations",
   "latex": "What is the sum of the median and the mean of the set of numbers 12, 21, 6, 11 and 30?",
   "answer_latex": "28",
   "suggested_quarter": 2,

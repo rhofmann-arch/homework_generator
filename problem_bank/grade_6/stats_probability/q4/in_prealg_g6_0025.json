@@ -3,7 +3,7 @@
   "domain": "stats_probability",
   "grade": 6,
   "quarter": 4,
-  "topic": "arithmetic mean, solving for unknown value",
+  "topic": "arithmetic mean, finding missing value",
   "latex": "The average of five numbers is 10.6. Four of the numbers are 10, 4, 5 and 20. What is the value of the fifth number?",
   "answer_latex": "",
   "suggested_quarter": 2,
@@ -11,6 +11,5 @@
   "source_problem_number": 25,
   "approved": true,
   "flagged": false,
-  "notes": "",
-  "honors": true
+  "notes": ""
 }
