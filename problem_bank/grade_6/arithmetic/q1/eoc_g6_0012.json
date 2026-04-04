@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "comparing integers and inequalities",
+  "latex": "Which of the following inequalities is true?",
+  "answer_latex": "$-3 < -2$",
+  "keep_mc": true,
+  "keep_mc_reason": "question stem says 'which of the following' - the choices are the content being evaluated",
+  "choices_latex": {
+    "A": "$-4 < -5$",
+    "B": "$-3 < -2$",
+    "C": "$0 < -4$",
+    "D": "$1 < -2$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.00\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0031",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratios and proportional relationships",
+  "latex": "The table below shows the number of bags of soil needed for raised garden beds of different sizes. At this rate, how many bags of soil are needed for a garden bed of $30$ cubic feet?\n\n\\begin{tabular}{|c|c|}\n\\hline\n\\textit{Garden Bed} & \\textit{Soil} \\\\\n\\textit{(cubic feet)} & \\textit{(number of bags)} \\\\\n\\hline\n15 & 10 \\\\\n\\hline\n21 & 14 \\\\\n\\hline\n30 & \\\\\n\\hline\n45 & 30 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "20",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - students can find the rate and calculate the answer independently",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.24.25\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

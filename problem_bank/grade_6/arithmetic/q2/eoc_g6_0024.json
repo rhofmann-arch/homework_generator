@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0024",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratios and multiplicative relationships",
+  "latex": "The table below shows the amount of blue and yellow paint needed to make green paint.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\n\\multicolumn{3}{|c|}{Amount of Paint} \\\\\n\\hline\nblue & yellow & green \\\\\n\\hline\n6 & 2 & 8 \\\\\n\\hline\n12 & 4 & 16 \\\\\n\\hline\n18 & 6 & 24 \\\\\n\\hline\n\\end{tabular}\n\nThe amount of blue paint is",
+  "answer_latex": "three times the amount of yellow paint.",
+  "keep_mc": false,
+  "keep_mc_reason": "The question asks for a relationship between blue and yellow paint amounts. Removing choices leaves a clean problem asking students to describe the multiplicative relationship.",
+  "choices_latex": {},
+  "needs_diagram": true,
+  "diagram_notes": "A table with 3 columns (blue, yellow, green) and 3 data rows. Header row shows 'Amount of Paint' spanning all columns. Data: Row 1: 6, 2, 8. Row 2: 12, 4, 16. Row 3: 18, 6, 24.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.58\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

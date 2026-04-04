@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "subtracting decimals",
+  "latex": "$10.08 - 2.6 =$",
+  "answer_latex": "$7.48$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean computation problem; students can calculate the subtraction directly.",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.23.15\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

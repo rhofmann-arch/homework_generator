@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0014",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "interpreting bar graphs and comparing changes",
+  "latex": "The number of students who participated in sports last year during each of five months is shown below. In which month did the number of participants increase the most from the number in the previous month?",
+  "answer_latex": "March",
+  "keep_mc": false,
+  "keep_mc_reason": "The question asks which month had the greatest increase; removing choices leaves a clean problem where students can determine the answer from the bar graph.",
+  "choices_latex": {},
+  "needs_diagram": true,
+  "diagram_notes": "Bar graph with vertical axis labeled \"Number of Students\" (scale: 0, 30, 60, 90, 120, 150, 180) and horizontal axis showing months Jan, Feb, Mar, Apr, May. Bar heights: Jan \u2248 30, Feb \u2248 45, Mar \u2248 120, Apr \u2248 135, May \u2248 175.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.41\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

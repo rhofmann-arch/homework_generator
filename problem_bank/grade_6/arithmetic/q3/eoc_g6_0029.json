@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ordering rational numbers (integers, decimals, fractions)",
+  "latex": "Which of the following shows the four numbers in the box listed in increasing order?\n\n$$0 \\quad -1 \\quad 1.7 \\quad \\frac{1}{2}$$",
+  "answer_latex": "$-1, 0, \\frac{1}{2}, 1.7$",
+  "keep_mc": true,
+  "keep_mc_reason": "The question asks to order four given numbers - removing choices leaves a clean 'order these numbers from least to greatest' problem.",
+  "choices_latex": {
+    "A": "$0, \\frac{1}{2}, -1, 1.7$",
+    "B": "$-1, 0, 1.7, \\frac{1}{2}$",
+    "C": "$-1, 0, \\frac{1}{2}, 1.7$",
+    "D": "$1.7, 0, \\frac{1}{2}, -1$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.23.09\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

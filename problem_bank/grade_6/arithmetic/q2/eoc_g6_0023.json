@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "reasoning about fractions with variables",
+  "latex": "A whole number $k$ is greater than $3$. Which of the following is true about $\\frac{k}{3}$?",
+  "answer_latex": "It is greater than $1$.",
+  "keep_mc": true,
+  "keep_mc_reason": "Question stem says 'Which of the following is true' - requires comparing given options",
+  "choices_latex": {
+    "A": "It is between $0$ and $\\frac{1}{3}$.",
+    "B": "It is between $\\frac{1}{3}$ and $1$.",
+    "C": "It is equal to $1$.",
+    "D": "It is greater than $1$."
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.06\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

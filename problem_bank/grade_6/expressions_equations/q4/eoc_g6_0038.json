@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0038",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "graphing inequalities on a number line",
+  "latex": "Which graph represents all the solutions of the inequality $x < 7$ on the number line?",
+  "answer_latex": "Number line with open circle at 7 and arrow pointing left (toward negative infinity)",
+  "keep_mc": true,
+  "keep_mc_reason": "Question asks \"Which graph represents...\" requiring students to select from given graphical options",
+  "choices_latex": {
+    "A": "Number line with open circle at 7 and arrow pointing left (toward negative infinity)",
+    "B": "Number line with closed circle at 7 and arrow pointing left (toward negative infinity)",
+    "C": "Number line with open circles at 0 and 7, with line segment between them and arrows pointing both directions",
+    "D": "Number line with open circles at -7 and 7, with line segment between them and arrows pointing both directions"
+  },
+  "needs_diagram": true,
+  "diagram_notes": "Four number lines labeled A-D, each showing marks at -7, 0, and 7. Option A: open circle at 7 with arrow extending left to negative infinity. Option B: closed/filled circle at 7 with arrow extending left to negative infinity. Option C: open circles at both 0 and 7 with a line segment between them and arrows on both ends. Option D: open circles at both -7 and 7 with a line segment between them and arrows on both ends.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.24.37\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

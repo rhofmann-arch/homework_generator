@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0034",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "converting percents to fractions",
+  "latex": "Which of the following is equal to $40\\%$?",
+  "answer_latex": "$\\frac{2}{5}$",
+  "keep_mc": true,
+  "keep_mc_reason": "Question stem says 'which of the following' - requires comparing given options",
+  "choices_latex": {
+    "A": "$\\frac{4}{5}$",
+    "B": "$\\frac{5}{8}$",
+    "C": "$\\frac{2}{5}$",
+    "D": "$\\frac{1}{25}$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.23\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

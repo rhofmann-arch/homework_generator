@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0027",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding a percent of a number",
+  "latex": "The dance club raised $\\$300$ during a fundraiser. They spent $25\\%$ of the raised funds to buy new speakers. How much money was spent on speakers?",
+  "answer_latex": "\\$75",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - find 25% of $300",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.21.49\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

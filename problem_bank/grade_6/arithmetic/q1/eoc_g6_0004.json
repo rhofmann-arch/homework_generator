@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations",
+  "latex": "$4 + 20 \\div 2 + 2 =$",
+  "answer_latex": "16",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem using order of operations",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.14\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

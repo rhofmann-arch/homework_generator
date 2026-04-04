@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "adding fractions and estimating decimal equivalents",
+  "latex": "Which of the following is closest to $\\frac{1}{2} + \\frac{1}{3}$?",
+  "answer_latex": "0.8",
+  "keep_mc": true,
+  "keep_mc_reason": "Question stem says 'which of the following' - the task is to select the closest value from given options",
+  "choices_latex": {
+    "A": "0.4",
+    "B": "0.5",
+    "C": "0.8",
+    "D": "1.2"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.18\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

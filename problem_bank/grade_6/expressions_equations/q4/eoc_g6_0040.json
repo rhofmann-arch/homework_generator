@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0040",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "combining like terms",
+  "latex": "Which of the following expressions is equivalent to $3x - 2x + 5$?",
+  "answer_latex": "$x + 5$",
+  "keep_mc": true,
+  "keep_mc_reason": "question stem says 'Which of the following expressions'",
+  "choices_latex": {
+    "A": "$x + 5$",
+    "B": "$3x + 3$",
+    "C": "$5x + 5$",
+    "D": "$6x$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.05\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

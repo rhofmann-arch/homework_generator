@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0026",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "comparing fractions",
+  "latex": "Which of the four numbers in the box is the smallest?\n\n$$\\frac{6}{5} \\quad \\frac{5}{6} \\quad \\frac{4}{3} \\quad \\frac{7}{8}$$",
+  "answer_latex": "$\\frac{7}{8}$",
+  "keep_mc": false,
+  "keep_mc_reason": "The fractions are provided in the question stem inside the box, so removing choices leaves a clean 'find the smallest' problem",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.31\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

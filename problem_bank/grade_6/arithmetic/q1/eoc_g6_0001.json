@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multi-digit multiplication",
+  "latex": "$104 \\times 88 =$",
+  "answer_latex": "9,152",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - just multiply 104 \u00d7 88",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.21.35\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

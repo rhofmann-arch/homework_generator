@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "converting mixed numbers to improper fractions",
+  "latex": "Which of the following is equal to $2\\frac{3}{7}$?",
+  "answer_latex": "$\\frac{17}{7}$",
+  "keep_mc": true,
+  "keep_mc_reason": "question stem says 'which of the following'",
+  "choices_latex": {
+    "A": "$\\frac{5}{7}$",
+    "B": "$\\frac{6}{7}$",
+    "C": "$\\frac{13}{7}$",
+    "D": "$\\frac{17}{7}$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.35\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

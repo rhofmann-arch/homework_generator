@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0021",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "solving one-step equations with fractions and plotting on a number line",
+  "latex": "If $x + \\frac{3}{4} = 1$, then which point on the number line could represent $x$?",
+  "answer_latex": "A",
+  "keep_mc": true,
+  "keep_mc_reason": "The question asks 'which point on the number line' and the answer choices reference labeled points A, B, C, D on the diagram. Without the diagram and labeled points, the question cannot function.",
+  "choices_latex": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "needs_diagram": true,
+  "diagram_notes": "A horizontal number line with arrows on both ends. Tick marks at: $-1$, $-\\frac{1}{2}$, $0$, $\\frac{1}{2}$, $1$, $1\\frac{1}{2}$, $2$. Four points are labeled: Point A is between $-\\frac{1}{2}$ and $0$ (at approximately $-\\frac{1}{4}$), Point B is between $0$ and $\\frac{1}{2}$ (at approximately $\\frac{1}{4}$), Point C is between $1$ and $1\\frac{1}{2}$ (at approximately $1\\frac{1}{4}$), Point D is between $1\\frac{1}{2}$ and $2$ (at approximately $1\\frac{3}{4}$).",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.23.58\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

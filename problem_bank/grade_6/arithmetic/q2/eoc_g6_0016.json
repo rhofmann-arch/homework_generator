@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "equivalent ratios",
+  "latex": "The ratio $2 : 7$ is equivalent to the ratio $6 : n$. What is the value of $n$?",
+  "answer_latex": "21",
+  "keep_mc": false,
+  "keep_mc_reason": "removing choices leaves a clean compute problem asking for the value of n",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.21.42\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0039",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "volume of a rectangular prism",
+  "latex": "What is the volume, in cubic units, of the rectangular box below?",
+  "answer_latex": "120",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - student can calculate volume directly from dimensions",
+  "choices_latex": {},
+  "needs_diagram": true,
+  "diagram_notes": "A 3D rectangular prism (box) shown in oblique/isometric view with dimensions labeled: length = 4, width = 6, height = 5. The back edges are shown as dashed lines to indicate hidden edges.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.50\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

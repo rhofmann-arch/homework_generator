@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0035",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "integers and opposites",
+  "latex": "Bex is thinking of an integer that is less than its opposite. The integer Bex is thinking of is",
+  "answer_latex": "less than zero.",
+  "keep_mc": true,
+  "keep_mc_reason": "The question asks for a classification/description of the integer rather than a specific value, and the answer choices provide categorical descriptions that complete the sentence.",
+  "choices_latex": {
+    "A": "less than zero.",
+    "B": "zero.",
+    "C": "between zero and one.",
+    "D": "greater than one."
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.24\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

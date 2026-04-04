@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding distance between integers and fractions on a number line",
+  "latex": "What is the distance between the points located at $7$ and $-1\\frac{1}{2}$ on the number line?",
+  "answer_latex": "$8\\frac{1}{2}$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - find distance between two points on number line",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.56\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

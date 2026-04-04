@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0030",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "writing ratios (part to whole)",
+  "latex": "There are $5$ black, $3$ red, and $6$ green pens in a box. What is the ratio of the number of red pens to the total number of pens in the box?",
+  "answer_latex": "$3 : 14$",
+  "keep_mc": false,
+  "keep_mc_reason": "removing choices leaves a clean compute problem - student can calculate the ratio directly",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.24.15\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0032",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "converting percents to decimals",
+  "latex": "Expressed as a decimal, $3\\%$ is",
+  "answer_latex": "$0.03$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem: convert 3% to a decimal",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.24.54\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

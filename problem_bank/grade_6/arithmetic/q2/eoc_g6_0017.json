@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "subtracting integers in context (temperature change)",
+  "latex": "The temperature at 3:00 PM was $35$ degrees. The temperature had dropped $45$ degrees by 9:00 PM. What was the temperature, in degrees, at 9:00 PM?",
+  "answer_latex": "$-10$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem about subtracting integers",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.28\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

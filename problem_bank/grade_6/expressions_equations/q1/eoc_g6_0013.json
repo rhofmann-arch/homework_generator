@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0013",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "evaluating expressions with exponents",
+  "latex": "$2^3 + 5^2 =$",
+  "answer_latex": "33",
+  "keep_mc": false,
+  "keep_mc_reason": "removing choices leaves a clean compute problem - evaluate the expression with exponents",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.28\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

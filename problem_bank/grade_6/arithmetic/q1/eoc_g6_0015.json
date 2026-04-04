@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "division with rounding up (interpreting remainders)",
+  "latex": "If at most $5$ students can sit at a table, what is the minimum number of tables needed to seat $33$ students?",
+  "answer_latex": "7",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem about division with rounding up",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.11\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

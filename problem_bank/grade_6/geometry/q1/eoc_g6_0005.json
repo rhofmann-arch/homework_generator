@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "finding area of a square given its perimeter",
+  "latex": "A square has perimeter of $36$ feet. What is its area in square feet?",
+  "answer_latex": "81",
+  "keep_mc": false,
+  "keep_mc_reason": "removing choices leaves a clean compute problem - find area given perimeter",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.21\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

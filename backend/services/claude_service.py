@@ -14,15 +14,11 @@ STYLE_NOTES = """
 You are generating LaTeX math problems for a 6th-grade homework sheet.
 
 FORMATTING:
-- All math must be valid LaTeX (amsmath). Use \\dfrac for displayed fractions EXCEPT inside
-  table/tabular cells — use \\tfrac there so fractions fit within the row height.
+- All math must be valid LaTeX (amsmath). Use \\dfrac for displayed fractions.
 - Do NOT include problem numbers.
 - Do NOT include answer blanks or solution steps.
 - Multi-part: use \\textbf{a.}\\ \\textbf{b.}\\ inline.
-- Diagrams: use tikz, compact (under 4cm tall). Always add \\vspace{8pt} on its own line
-  immediately before \\begin{tikzpicture}.
-- Tables: always add \\vspace{8pt} on its own line immediately before \\begin{tabular}.
-- Multiple choice: always add \\vspace{10pt} on its own line immediately before the first answer option (\\textbf{A.} or similar).
+- Diagrams: use tikz, compact (under 4cm tall).
 - Problems must be solvable without a calculator.
 - One unambiguous correct answer per problem.
 """
@@ -39,16 +35,16 @@ FRONT_TOOL = {
             },
             "problems": {
                 "type": "array",
-                "description": "Spiral review problems — exactly 8 for honors, exactly 10 for grade-level.",
+                "description": "Spiral review problems (count specified in prompt).",
                 "items": {
                     "type": "object",
                     "properties": {
-                        "latex":        {"type": "string", "description": "Problem text in LaTeX."},
-                        "answer_latex": {"type": "string", "description": "The correct answer in LaTeX. Required — every problem must have an answer."}
+                        "latex": {"type": "string", "description": "Problem text in LaTeX."},
+                        "answer_latex": {"type": "string", "description": "Answer in LaTeX."},
                     },
                     "required": ["latex", "answer_latex"]
                 },
-                "minItems": 8,
+                "minItems": 1,
                 "maxItems": 10,
             },
         },
@@ -58,7 +54,10 @@ FRONT_TOOL = {
 
 BACK_TOOL = {
     "name": "submit_back_problems",
-    "description": "Submit the lesson-aligned practice problems for the back page of the homework sheet. NEVER include error analysis problems ('a student says X, identify the error') — skip this type even if it appears in the provided worksheet.",
+    "description": (
+        "Submit the lesson-aligned practice problems for the back page of the homework sheet. "
+        "Do NOT generate error analysis problems."
+    ),
     "input_schema": {
         "type": "object",
         "properties": {
@@ -68,12 +67,12 @@ BACK_TOOL = {
             },
             "problems": {
                 "type": "array",
-                "description": "Lesson practice problems, ordered easier to harder.",
+                "description": "Lesson practice problems, ordered easier to harder. No error analysis problems.",
                 "items": {
                     "type": "object",
                     "properties": {
-                        "latex":        {"type": "string", "description": "Problem text in LaTeX."},
-                        "answer_latex": {"type": "string", "description": "The correct answer in LaTeX. Required — every problem must have an answer."}
+                        "latex": {"type": "string", "description": "Problem text in LaTeX."},
+                        "answer_latex": {"type": "string", "description": "Answer in LaTeX."},
                     },
                     "required": ["latex", "answer_latex"]
                 },
@@ -86,58 +85,34 @@ BACK_TOOL = {
 }
 
 
-
-def _front_prompt(grade, current, bank_problems: list[dict], n_problems: int = 10):
-    """
-    Build the spiral review prompt using approved bank problems as templates.
-    Claude varies numbers/context but preserves structure — no free generation.
-    Falls back to topic-based generation if bank is empty.
-    n_problems: 8 for honors (5 honors + 3 regular), 10 for grade-level.
-    """
-    if bank_problems:
-        system = STYLE_NOTES + f"""
-Rules for spiral review problems:
-- Exactly {n_problems} problems total.
-- Use the bank problems below as your ONLY source of problem structures.
-  Change the numbers, names, and contexts — preserve the problem type exactly.
-- Do NOT invent new problem types not represented in the bank problems.
-- Do NOT include the current week's lesson topic.
-- No multi-step word problems. Each solvable in 60-90 seconds.
-- STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
-  Do NOT use \\textbf{{a.}} or \\textbf{{b.}} in spiral problems.
-- It is fine — even expected — for multiple problems to share the same structure
-  with different numbers. Repetition of structure is correct here.
-"""
-        bank_text = "\n\n".join(
-            f"[{p.get('domain','?')} Q{p.get('quarter','?')}] {p['latex']}"
-            for p in bank_problems
-        )
-        user = (
-            f"Grade: {grade}\n"
-            f"Current week topic (do NOT include): {current}\n\n"
-            f"Bank problems to use as templates (vary numbers/context only):\n\n"
-            f"{bank_text}\n\n"
-            f"Generate exactly {n_problems} spiral review problems by varying the bank problems above. "
-            "Use each bank problem as a structural template at least once. "
-            f"If you have more than {n_problems} templates, pick the most varied set."
-        )
+def _school_quarter(month: int) -> int:
+    """Map calendar month to school quarter (Q1=Aug–Oct, Q2=Nov–Jan, Q3=Feb–Mar, Q4=Apr–Jun)."""
+    if month in (8, 9, 10):
+        return 1
+    elif month in (11, 12, 1):
+        return 2
+    elif month in (2, 3):
+        return 3
     else:
-        # Fallback: free generation when bank is empty (early in the year)
-        system = STYLE_NOTES + f"""
+        return 4
+
+
+def _front_prompt(grade, covered, current, n_to_generate: int):
+    system = STYLE_NOTES + f"""
 Rules for spiral review problems:
-- Exactly {n_problems} problems total.
+- Exactly {n_to_generate} problems total.
 - Only use topics from covered_topics list.
 - Weight toward 8 most recently covered topics.
 - Vary types: computation, explanation, fill-in, true/false.
 - No multi-step word problems. Each solvable in 60-90 seconds.
-- STRICT LENGTH: each problem must be under 30 words of prose. No sub-parts (a/b/c).
-  Do NOT use \\textbf{{a.}} or \\textbf{{b.}} in spiral problems.
+- Every problem must include an answer_latex field with the correct answer.
 """
-        user = (
-            f"Grade: {grade}\n"
-            f"Current week (do NOT include): {current}\n"
-            f"Generate {n_problems} spiral review problems on covered arithmetic topics."
-        )
+    user = (
+        f"Grade: {grade}\n"
+        f"Covered topics (oldest first): {covered}\n"
+        f"Current week (do NOT include): {current}\n"
+        f"Generate {n_to_generate} spiral review problems."
+    )
     return system, user
 
 
@@ -154,7 +129,7 @@ def _back_prompt(
     either [{"type": "text", ...}] alone, or with PDF document blocks prepended
     when a lesson PDF is available.
     """
-    n = "8-10"  # same count for both honors and grade-level
+    n = "5-7" if class_type == "honors" else "8-10"
 
     system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
@@ -165,13 +140,13 @@ Rules for lesson practice problems:
   problems — not trapezoids, rhombuses, or generic quadrilaterals.
 - The lesson_title you return must match the exact lesson topic. Do not broaden it.
 - Order easier to harder.
+- Do NOT generate error analysis problems under any circumstances.
 - Do not repeat topics from spiral_topics: {spiral_topics}
 - Match the style, format, and difficulty of the provided worksheet exactly —
   same problem structure, same vocabulary, same level of scaffolding.
-- Vary problem types (computation, word problem, true/false) but only as those types
-  appear in the provided worksheet.
-- NEVER generate error analysis problems ("a student says X, identify the error").
-  Skip this type even if it appears in the provided worksheet.
+- Vary problem types (computation, word problem, true/false)
+  but only as those types appear in the provided worksheet.
+- Every problem must include an answer_latex field with the correct answer.
 """
 
     # Build content blocks — start with any lesson PDFs we can find
@@ -254,7 +229,7 @@ async def _call(
 
     response = await client.messages.create(
         model=MODEL,
-        max_tokens=2000,
+        max_tokens=3000,
         system=system,
         tools=[tool],
         tool_choice={"type": "tool", "name": tool["name"]},
@@ -274,142 +249,146 @@ async def _call(
     return tool_block.input
 
 
-def _school_quarter(date_str: str) -> int:
+def _sample_high_priority_front(grade: int, max_quarter: int) -> dict | None:
     """
-    Derive school quarter (1-4) from a date string (YYYY-MM-DD).
-    Approximate boundaries for a Sept-June school year:
-      Q1: Sept-Oct, Q2: Nov-Jan, Q3: Feb-Mar, Q4: Apr-Jun
+    Draw 1 approved high-priority problem for the front spiral slot.
+    Returns the problem dict, or None if the HP bank is empty / not yet populated.
+    Logs a warning if None so the teacher knows to populate the bank.
     """
-    try:
-        from datetime import date
-        d = date.fromisoformat(str(date_str)[:10])
-        m = d.month
-        if m in (8, 9, 10):
-            return 1
-        elif m in (11, 12, 1):
-            return 2
-        elif m in (2, 3):
-            return 3
-        else:
-            return 4
-    except Exception:
-        return 1  # safe default
+    results = sample_problems(
+        domain=None,
+        grade=grade,
+        max_quarter=max_quarter,
+        n=1,
+        high_priority_only=True,
+        exclude_honors=False,   # HP bank is shared across tracks
+    )
+    if not results:
+        logger.warning(
+            "High-priority bank is empty or has no approved problems for "
+            f"grade={grade} max_quarter={max_quarter}. "
+            "Front spiral will be fully generated by Claude this week."
+        )
+        return None
+    return results[0]
 
 
-# Pool config — edit here to rebalance spiral review counts.
-# Q1 school quarter uses arithmetic-only; later quarters use this config.
-SPIRAL_POOL_CONFIG = [
-    {"domain": "arithmetic",             "n": 4},
-    {"domain": "geometry",               "n": 2},
-    {"domain": "expressions_equations",  "n": 2},
-    {"domain": "stats_probability",      "n": 1},
-    {"domain": None,                     "n": 1},  # wildcard: any domain
-]
+def _normalize_hp_for_front(hp_problem: dict) -> dict:
+    """
+    Convert a bank record to the {latex, answer_latex} shape expected by the
+    front-page renderer.
+
+    For open-ended problems (keep_mc=False): use latex as-is.
+    For MC problems (keep_mc=True): use latex as-is — the front-page renderer
+      will include choices_latex if present. If your renderer doesn't support
+      MC on the front page yet, set keep_mc=False during bank review for these.
+    """
+    return {
+        "latex": hp_problem.get("latex", ""),
+        "answer_latex": hp_problem.get("answer_latex", ""),
+        # Pass through MC fields so the renderer can decide what to do
+        "keep_mc": hp_problem.get("keep_mc", False),
+        "choices_latex": hp_problem.get("choices_latex", {}),
+        "high_priority": True,
+        "id": hp_problem.get("id", ""),
+    }
 
 
 async def generate_problems(context: WeekContext, class_type: str) -> dict:
+    covered = ", ".join(context.covered_topics[-20:])
     current_lessons = context.current_lessons
     current_str = ", ".join(current_lessons)
-    grade_int = int(str(context.grade).split("_")[0])
 
-    # Derive school quarter from request date to cap bank difficulty
-    date_str = getattr(context, "specific_date", None) or getattr(context, "week_start", None) or ""
-    school_q = _school_quarter(str(date_str))
+    import datetime
+    current_month = datetime.date.today().month
+    school_q = _school_quarter(current_month)
 
-    # ── Spiral bank sampling ──────────────────────────────────────────────────
+    # ── Sample 1 high-priority problem for the front spiral ──────────────────
+    hp_problem = _sample_high_priority_front(int(context.grade), school_q)
+    n_claude_front = 9 if hp_problem else 10  # Claude fills the remaining slots
+
+    # Honors: 8-problem spiral (5 honors + 3 regular) → 7 if HP slot is filled
+    # Grade-level: 10-problem spiral → 9 if HP slot is filled
     if class_type == "honors":
-        # Honors front: 8 problems — 5 honors-flagged + 3 from the general bank.
-        # Honors problems are drawn first; regular problems fill the remaining slots.
-        honors_problems = sample_problems(
-            domain=None,
-            grade=grade_int,
-            max_quarter=school_q,
-            n=5,
-            honors_only=True,
-        )
-        seen_ids: set[str] = {p["id"] for p in honors_problems}
+        n_claude_front = 7 if hp_problem else 8
 
-        if school_q == 1:
-            regular_problems = sample_problems(
-                domain="arithmetic",
-                grade=grade_int,
-                max_quarter=1,
-                n=3,
-                exclude_honors=True,
-            )
-        else:
-            regular_problems = []
-            for pool in SPIRAL_POOL_CONFIG:
-                batch = sample_problems(
-                    domain=pool["domain"],
-                    grade=grade_int,
-                    max_quarter=school_q,
-                    n=pool["n"],
-                    exclude_honors=True,
-                )
-                for p in batch:
-                    if p["id"] not in seen_ids and len(regular_problems) < 3:
-                        regular_problems.append(p)
-                        seen_ids.add(p["id"])
+    front_sys, front_usr = _front_prompt(context.grade, covered, current_str, n_claude_front)
 
-        spiral_bank = honors_problems + regular_problems
-        n_spiral = 8
-    else:
-        # Grade-level front: 10 problems from the general bank.
-        if school_q == 1:
-            spiral_bank = sample_problems(
-                domain="arithmetic",
-                grade=grade_int,
-                max_quarter=1,
-                n=10,
-                exclude_honors=True,
-            )
-        else:
-            spiral_bank = []
-            seen_ids = set()
-            for pool in SPIRAL_POOL_CONFIG:
-                problems = sample_problems(
-                    domain=pool["domain"],
-                    grade=grade_int,
-                    max_quarter=school_q,
-                    n=pool["n"],
-                    exclude_honors=True,
-                )
-                for p in problems:
-                    if p["id"] not in seen_ids:
-                        spiral_bank.append(p)
-                        seen_ids.add(p["id"])
-        n_spiral = 10
-
-    # Cap n_spiral to however many bank problems were actually found.
-    # If the bank can't fill the quota, reduce the target rather than letting
-    # Claude free-generate the shortfall with unapproved problem types.
-    if len(spiral_bank) < n_spiral:
-        logger.warning(
-            f"Spiral bank shortfall: requested {n_spiral}, got {len(spiral_bank)} "
-            f"(class={class_type}, school_q={school_q}). Generating {len(spiral_bank)} problems."
-        )
-        n_spiral = len(spiral_bank)
-
-    front_sys, front_usr = _front_prompt(context.grade, current_str, spiral_bank, n_spiral)
-
-    # Front and back can always run concurrently — no challenge dependency.
+    # ── Back page (fully generated, no HP slot) ──────────────────────────────
     back_sys, back_content = _back_prompt(
         grade=context.grade,
         class_type=class_type,
         current_lessons=current_lessons,
         current_topic=context.current_topic,
-        spiral_topics="",  # will be filled after front resolves; back doesn't need it at call time
-    )
-    front_data, back_data = await asyncio.gather(
-        _call(front_sys, front_usr, FRONT_TOOL),
-        _call(back_sys, back_content, BACK_TOOL),
+        spiral_topics="",  # front and back run concurrently
     )
 
+    if class_type == "honors":
+        # Sample honors bank problems as structural models for challenge generation.
+        # (These feed the back page — separate from the HP front slot.)
+        bank_honors = sample_problems(
+            domain=None,
+            grade=int(context.grade),
+            max_quarter=school_q,
+            n=4,
+            honors_only=True,
+            exclude_high_priority=False,  # honors HP problems are fine models too
+        )
+        if bank_honors:
+            # Append honor model examples to back content as a hint
+            examples = "\n\n".join(
+                f"Example {i+1}:\n{p['latex']}" for i, p in enumerate(bank_honors)
+            )
+            honors_note = (
+                "\n\nHere are approved honors-level problems from the bank that represent "
+                "appropriate difficulty and style. Use these as structural models only — "
+                "change numbers, context, and scenario:\n\n" + examples
+            )
+            back_content.append({"type": "text", "text": honors_note})
+
+        front_data, back_data = await asyncio.gather(
+            _call(front_sys, front_usr, FRONT_TOOL),
+            _call(back_sys, back_content, BACK_TOOL),
+        )
+    else:
+        front_data, back_data = await asyncio.gather(
+            _call(front_sys, front_usr, FRONT_TOOL),
+            _call(back_sys, back_content, BACK_TOOL),
+        )
+
+    spiral_topics = front_data.get("spiral_topics", "")
+    claude_front_problems = front_data.get("problems", [])
+
+    # ── Combine HP slot + Claude-generated front problems ────────────────────
+    if hp_problem:
+        hp_normalized = _normalize_hp_for_front(hp_problem)
+        # Insert HP problem at a random position so it doesn't always appear first
+        import random
+        insert_pos = random.randint(0, len(claude_front_problems))
+        front_problems = (
+            claude_front_problems[:insert_pos]
+            + [hp_normalized]
+            + claude_front_problems[insert_pos:]
+        )
+        logger.info(
+            f"High-priority problem {hp_problem.get('id')} inserted at front position {insert_pos + 1}"
+        )
+    else:
+        front_problems = claude_front_problems
+
+    # Shortfall cap: if HP bank was smaller than requested, log it
+    if hp_problem and len(front_problems) < (10 if class_type != "honors" else 8):
+        logger.warning(
+            f"Front spiral has only {len(front_problems)} problems "
+            f"(expected {'8' if class_type == 'honors' else '10'}). "
+            "Check that Claude returned the correct count."
+        )
+
     return {
-        "spiral_topics":      front_data.get("spiral_topics", ""),
-        "front_problems":     front_data.get("problems", []),
-        "lesson_title":       back_data.get("lesson_title", context.lesson_title),
-        "back_problems":      back_data.get("problems", []),
-        "challenge_problems": [],  # challenge section removed
+        "spiral_topics":  spiral_topics,
+        "front_problems": front_problems,
+        "lesson_title":   back_data.get("lesson_title", context.lesson_title),
+        "back_problems":  back_data.get("problems", []),
+        # challenge_problems removed — honors redesign uses same back format
+        "challenge_problems": [],
     }

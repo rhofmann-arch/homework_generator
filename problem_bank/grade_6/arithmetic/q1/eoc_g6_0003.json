@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "adding fractions with unlike denominators",
+  "latex": "$\\dfrac{11}{14} + \\dfrac{2}{7} =$",
+  "answer_latex": "$\\dfrac{15}{14}$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - add two fractions and find the sum",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.07\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

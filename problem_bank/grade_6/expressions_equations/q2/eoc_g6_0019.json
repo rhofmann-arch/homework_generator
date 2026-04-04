@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0019",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing algebraic expressions from word problems",
+  "latex": "Max earns $\\$15$ per hour at work. Last week, Max worked for $h$ hours. Which expression represents the number of dollars Max earned?",
+  "answer_latex": "$15h$",
+  "keep_mc": true,
+  "keep_mc_reason": "Question stem asks 'Which expression represents' implying selection from given options",
+  "choices_latex": {
+    "A": "$\\frac{15}{h}$",
+    "B": "$\\frac{h}{15}$",
+    "C": "$15 + h$",
+    "D": "$15h$"
+  },
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.23.22\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

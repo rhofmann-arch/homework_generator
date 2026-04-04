@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying fractions of a whole using circle models",
+  "latex": "Which of the shaded regions below represents $\\frac{3}{5}$ of the whole circle?",
+  "answer_latex": "B",
+  "keep_mc": true,
+  "keep_mc_reason": "Question asks 'which of the shaded regions below' requiring students to identify the correct diagram from the given options; removing choices would eliminate the core task.",
+  "choices_latex": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "needs_diagram": true,
+  "diagram_notes": "Four circles labeled A, B, C, D, each divided into 5 equal parts (shown with tick marks around the circumference). Circle A has 2 parts shaded. Circle B has 3 parts shaded (correct answer - represents 3/5). Circle C has 2 parts shaded. Circle D has 1 part shaded. All shading is gray and the circles have small tick marks on the outside edge to indicate the equal divisions.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.23.43\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

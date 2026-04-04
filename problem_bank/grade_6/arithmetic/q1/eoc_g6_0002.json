@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "dividing fractions by whole numbers",
+  "latex": "Four people equally share $\\frac{3}{4}$ of a whole pizza. What fractional part of the whole pizza does each person receive?",
+  "answer_latex": "$\\frac{3}{16}$",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - students can calculate the fractional part directly",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.21.58\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

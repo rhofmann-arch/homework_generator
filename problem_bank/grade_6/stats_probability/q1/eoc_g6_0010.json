@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0010",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "finding the mean/average of a data set",
+  "latex": "Juan has scores of $85$, $83$, and $93$ on three math tests. What is Juan's average score on these math tests?",
+  "answer_latex": "87",
+  "keep_mc": false,
+  "keep_mc_reason": "Removing choices leaves a clean compute problem - student can calculate the average directly",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.24.09\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

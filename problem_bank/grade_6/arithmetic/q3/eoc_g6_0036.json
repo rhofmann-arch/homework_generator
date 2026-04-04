@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0036",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "locating decimals on a number line",
+  "latex": "On the number line below, which point could represent $-1.2$?",
+  "answer_latex": "A",
+  "keep_mc": true,
+  "keep_mc_reason": "The question asks 'which point' and the answer choices directly reference labeled points on the diagram - removing the choices would not make sense without the diagram's labeled points.",
+  "choices_latex": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "needs_diagram": true,
+  "diagram_notes": "A horizontal number line with arrows on both ends, showing integer tick marks at -2, -1, 0, 1, and 2. Four points are labeled: Point A is slightly to the left of -1 (approximately at -1.2), Point B is slightly to the right of -1 (approximately at -0.8), Point C is slightly to the left of 1 (approximately at 0.8), and Point D is slightly to the right of 1 (approximately at 1.2).",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.26.39\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

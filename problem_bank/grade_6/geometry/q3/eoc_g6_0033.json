@@ -1,0 +1,25 @@
+{
+  "id": "eoc_g6_0033",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "identifying points on the coordinate plane",
+  "latex": "In the coordinate plane below, which point could have coordinates $(3, -2)$?",
+  "answer_latex": "$D$",
+  "keep_mc": true,
+  "keep_mc_reason": "The question asks 'which point' and requires students to select from labeled points on a diagram; removing choices would break the question.",
+  "choices_latex": {
+    "A": "$A$",
+    "B": "$B$",
+    "C": "$C$",
+    "D": "$D$"
+  },
+  "needs_diagram": true,
+  "diagram_notes": "A coordinate plane with x and y axes, origin labeled O. Four points are plotted: Point B is in quadrant II (negative x, positive y), Point A is in quadrant I (positive x, positive y), Point C is in quadrant III (negative x, negative y), and Point D is in quadrant IV (positive x, negative y). The axes have arrows indicating positive directions.",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.25.17\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

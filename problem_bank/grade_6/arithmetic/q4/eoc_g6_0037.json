@@ -1,0 +1,20 @@
+{
+  "id": "eoc_g6_0037",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "absolute value of negative fractions",
+  "latex": "$\\left| -\\frac{3}{5} \\right| =$",
+  "answer_latex": "$\\frac{3}{5}$",
+  "keep_mc": false,
+  "keep_mc_reason": "removing choices leaves a clean compute problem - find the absolute value of a fraction",
+  "choices_latex": {},
+  "needs_diagram": false,
+  "diagram_notes": "",
+  "high_priority": true,
+  "source": "eoc_review",
+  "source_file": "Screenshot 2026-04-03 at 6.22.42\u202fPM.png",
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
