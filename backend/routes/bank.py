@@ -250,66 +250,48 @@ def delete(req: DeleteRequest):
     return {"ok": True}
 
 
-# ── From-homework ingest ──────────────────────────────────────────────────────
-
-class FromHomeworkRequest(BaseModel):
-    latex: str
-    answer_latex: Optional[str] = ""
-    section: str          # "front" | "back" | "challenge"
-    topic: Optional[str] = ""
-    grade: Optional[int] = 6
-
-
-@router.post("/api/bank/from_homework")
-def from_homework(req: FromHomeworkRequest):
-    """
-    Create a new inbox entry from a problem edited in the homework editor.
-    Returns the new problem_id so the frontend can mark it as saved.
-    """
-    import uuid
-    from datetime import datetime
-
-    problem_id = f"hw_{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:6]}"
-
-    data = {
-        "id":           problem_id,
-        "latex":        req.latex,
-        "answer_latex": req.answer_latex or "",
-        "topic":        req.topic or "",
-        "approved":     False,
-        "flagged":      False,
-        "source":       "homework_edit",
-        "section":      req.section,
-        "high_priority": False,
-    }
-
-    out = inbox_dir(req.grade) / f"{problem_id}.json"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    write_problem(out, data)
-
-    return {"ok": True, "problem_id": problem_id}
-
-
 # ── Sampler (used by generation pipeline) ────────────────────────────────────
 
-def sample_problems(domain: str, grade: int, max_quarter: int, n: int) -> list[dict]:
+def sample_problems(
+    domain: Optional[str],          # None = any domain
+    grade: int,
+    max_quarter: int,
+    n: int,
+    honors_only: bool = False,          # only problems with honors=true
+    exclude_honors: bool = False,        # only problems without honors=true
+    high_priority_only: bool = False,    # only problems with high_priority=true
+    exclude_high_priority: bool = False, # only problems without high_priority=true
+) -> list[dict]:
     """
-    Return n randomly sampled approved problems from a domain,
-    drawing from Q1 through max_quarter (cumulative).
+    Return up to n randomly sampled approved problems.
+    domain=None draws from all domains.
+    Draws from Q1 through max_quarter (cumulative).
     """
     gd = grade_dir(grade)
+    domains = [domain] if domain else VALID_DOMAINS
     pool = []
-    for q in range(1, max_quarter + 1):
-        folder = gd / domain / f"q{q}"
-        if not folder.exists():
-            continue
-        for f in folder.glob("*.json"):
-            try:
-                data = json.loads(f.read_text())
-                if data.get("approved") and not data.get("flagged"):
-                    pool.append(data)
-            except Exception:
+
+    for d in domains:
+        for q in range(1, max_quarter + 1):
+            folder = gd / d / f"q{q}"
+            if not folder.exists():
                 continue
+            for f in folder.glob("*.json"):
+                try:
+                    data = json.loads(f.read_text())
+                    if not data.get("approved") or data.get("flagged"):
+                        continue
+                    if honors_only and not data.get("honors"):
+                        continue
+                    if exclude_honors and data.get("honors"):
+                        continue
+                    if high_priority_only and not data.get("high_priority"):
+                        continue
+                    if exclude_high_priority and data.get("high_priority"):
+                        continue
+                    pool.append(data)
+                except Exception:
+                    continue
 
     if len(pool) <= n:
         return pool
