@@ -334,10 +334,9 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
         )
         raw_templates = honors_spiral + regular_spiral
         if raw_templates:
-            # Remove HP slot from template count if HP is filling a slot
-            target = 8 - hp_offset
-            bank_templates = raw_templates[:target]
-        n_claude_front = max(0, (8 - hp_offset) - len(bank_templates or []))
+            bank_templates = raw_templates[:8]
+        # Templates are style guidance only — Claude still generates the full count
+        n_claude_front = 8 - hp_offset
     else:
         # Grade-level: 10-problem spiral → 9 if HP slot is filled, all generated
         n_claude_front = 10 - hp_offset
