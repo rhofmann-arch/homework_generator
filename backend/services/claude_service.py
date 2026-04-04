@@ -218,12 +218,33 @@ async def _call(system: str, user: str | list, tool: dict) -> dict:
     return tool_block.input
 
 
+# ── School quarter helper ─────────────────────────────────────────────────────
+
+def _school_quarter(date_str: str) -> int:
+    """
+    Derive school quarter (1–4) from a YYYY-MM-DD string.
+    Q1: Aug–Oct  Q2: Nov–Jan  Q3: Feb–Mar  Q4: Apr–Jun
+    Defaults to 1 on any parse error (safe for early-year).
+    """
+    try:
+        from datetime import date
+        d = date.fromisoformat(str(date_str)[:10])
+        m = d.month
+        if m in (8, 9, 10):   return 1
+        elif m in (11, 12, 1): return 2
+        elif m in (2, 3):      return 3
+        else:                  return 4
+    except Exception:
+        return 1
+
+
 # ── Front-page assembly ───────────────────────────────────────────────────────
 
-async def _assemble_front(grade_int: int, class_type: str) -> list[dict]:
+async def _assemble_front(grade_int: int, class_type: str, school_q: int) -> list[dict]:
     """
     Builds the front-page spiral review problem list from the bank.
-    Claude fills any shortfall without referencing the pacing guide.
+    max_quarter = school_q so only problems appropriate for this point
+    in the year are drawn. Claude fills any shortfall.
 
     Grade level — 10 problems:
       1 high_priority approved + 9 regular approved (not high_priority)
@@ -234,42 +255,36 @@ async def _assemble_front(grade_int: int, class_type: str) -> list[dict]:
     if class_type == "honors":
         target = 8
         honors_probs = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=5, honors_only=True
+            domain=None, grade=grade_int, max_quarter=school_q, n=5, honors_only=True
         )
         regular_probs = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=3, exclude_honors=True
+            domain=None, grade=grade_int, max_quarter=school_q, n=3, exclude_honors=True
         )
         bank_pool = honors_probs + regular_probs
         logger.info(
-            f"Honors front: {len(honors_probs)} honors + {len(regular_probs)} regular "
-            f"from bank (target {target})"
+            f"Honors front Q{school_q}: {len(honors_probs)} honors + {len(regular_probs)} regular"
         )
     else:
         target = 10
         hp_probs = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=1, high_priority_only=True
+            domain=None, grade=grade_int, max_quarter=school_q, n=1, high_priority_only=True
         )
         regular_probs = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=9, exclude_high_priority=True
+            domain=None, grade=grade_int, max_quarter=school_q, n=9, exclude_high_priority=True
         )
         bank_pool = hp_probs + regular_probs
         logger.info(
-            f"Grade-level front: {len(hp_probs)} HP + {len(regular_probs)} regular "
-            f"from bank (target {target})"
+            f"Grade-level front Q{school_q}: {len(hp_probs)} HP + {len(regular_probs)} regular"
         )
 
     shortfall = target - len(bank_pool)
-
     if shortfall > 0:
-        logger.warning(
-            f"Bank short by {shortfall} for {class_type} front — "
-            f"Claude filling {shortfall} problems."
-        )
+        logger.warning(f"Bank short by {shortfall} for {class_type} front — Claude filling.")
         fill_sys, fill_usr = _fill_prompt(grade_int, shortfall)
         fill_data = await _call(fill_sys, fill_usr, _fill_tool(shortfall))
         bank_pool += fill_data.get("problems", [])
     else:
-        logger.info("Front fully covered by bank.")
+        logger.info(f"Front fully covered by bank (Q1–Q{school_q}).")
 
     random.shuffle(bank_pool)
     return bank_pool[:target]
@@ -281,17 +296,25 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
     grade_int = int(str(context.grade).split("_")[0])
     current_lessons = context.current_lessons
 
-    # Front assembly (bank + optional Claude fill) and back generation run concurrently
+    # Derive school quarter from the specific date or week start
+    date_str = (
+        getattr(context, "specific_date", None)
+        or getattr(context, "week_start", None)
+        or ""
+    )
+    school_q = _school_quarter(str(date_str))
+    logger.info(f"School quarter derived: Q{school_q} from date '{date_str}'")
+
     back_sys, back_content = _back_prompt(
         grade=context.grade,
         class_type=class_type,
         current_lessons=current_lessons,
         current_topic=context.current_topic,
-        spiral_topics="",  # bank problems don't expose topics to exclude
+        spiral_topics="",
     )
 
     front_problems, back_data = await asyncio.gather(
-        _assemble_front(grade_int, class_type),
+        _assemble_front(grade_int, class_type, school_q),
         _call(back_sys, back_content, BACK_TOOL),
     )
 
@@ -300,5 +323,5 @@ async def generate_problems(context: WeekContext, class_type: str) -> dict:
         "front_problems":     front_problems,
         "lesson_title":       back_data.get("lesson_title", context.lesson_title),
         "back_problems":      back_data.get("problems", []),
-        "challenge_problems": [],   # honors no longer has a separate challenge block
+        "challenge_problems": [],
     }
