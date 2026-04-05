@@ -450,11 +450,12 @@ async def _assemble_front(
     if class_type == "honors":
         target = 8
         hp_slot     = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
-                                      n=1, high_priority_only=True)
+                                      n=1, high_priority_only=True, exclude_lesson=True)
         honors_rest = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
-                                      n=4, honors_only=True, exclude_high_priority=True)
+                                      n=4, honors_only=True, exclude_high_priority=True,
+                                      exclude_lesson=True)
         regular     = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
-                                      n=3, exclude_honors=True)
+                                      n=3, exclude_honors=True, exclude_lesson=True)
         bank_problems = hp_slot + honors_rest + regular
         slots = (["hp"] * len(hp_slot)
                  + ["honors"] * len(honors_rest)
@@ -462,9 +463,11 @@ async def _assemble_front(
     else:
         target = 10
         hp_slot = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
-                                  n=1, high_priority_only=True, exclude_honors=True)
+                                  n=1, high_priority_only=True, exclude_honors=True,
+                                  exclude_lesson=True)
         rest    = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
-                                  n=9, exclude_high_priority=True, exclude_honors=True)
+                                  n=9, exclude_high_priority=True, exclude_honors=True,
+                                  exclude_lesson=True)
         bank_problems = hp_slot + rest
         slots = ["hp"] * len(hp_slot) + ["regular"] * len(rest)
 
@@ -561,15 +564,16 @@ async def refresh_front_problem(
     bank_result: list[dict] = []
     if slot == "hp":
         bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
-                                      n=3, high_priority_only=True)
+                                      n=3, high_priority_only=True, exclude_lesson=True)
     elif slot == "honors":
         bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
-                                      n=3, honors_only=True, exclude_high_priority=True)
+                                      n=3, honors_only=True, exclude_high_priority=True,
+                                      exclude_lesson=True)
     elif slot == "regular":
         exclude_honors = (class_type != "honors")
         bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
                                       n=3, exclude_honors=exclude_honors,
-                                      exclude_high_priority=True)
+                                      exclude_high_priority=True, exclude_lesson=True)
 
     if bank_result:
         p = _random.choice(bank_result)

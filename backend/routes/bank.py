@@ -308,23 +308,27 @@ def sample_problems(
     exclude_high_priority: bool = False,
     lesson: str | None = None,
     class_type: str | None = None,
+    exclude_lesson: bool = False,
 ) -> list[dict]:
     """
     Return up to n randomly sampled approved problems from the bank.
 
-    domain        — specific domain string, or None to draw from all domains.
-    max_quarter   — include problems from Q1 through max_quarter (cumulative).
-    honors_only   — only return problems where honors=True.
-    exclude_honors— skip problems where honors=True (use for grade-level front).
+    domain         — specific domain string, or None to draw from all domains.
+    max_quarter    — include problems from Q1 through max_quarter (cumulative).
+    honors_only    — only return problems where honors=True.
+    exclude_honors — skip problems where honors=True (use for grade-level front).
     high_priority_only    — only return problems where high_priority=True.
     exclude_high_priority — skip problems where high_priority=True.
-    lesson        — if set, only return problems where lesson == this value
-                    (e.g. "2.5"). Ignores max_quarter when lesson is set since
-                    lesson problems are filed under whatever quarter was chosen
-                    at review time.
-    class_type    — "honors" or "grade_level". When "grade_level", translates
-                    GL lesson numbers to their honors equivalents before querying
-                    (e.g. GL "8.1" → also searches for bank tag "3.1").
+    lesson         — if set, only return problems where lesson == this value
+                     (e.g. "2.5"). Ignores max_quarter when lesson is set since
+                     lesson problems are filed under whatever quarter was chosen
+                     at review time.
+    class_type     — "honors" or "grade_level". When "grade_level", translates
+                     GL lesson numbers to their honors equivalents before querying
+                     (e.g. GL "8.1" → also searches for bank tag "3.1").
+    exclude_lesson — skip problems that have any lesson tag. Use for spiral
+                     review (front page) so lesson-practice problems never
+                     appear as spiral problems, and max_quarter is respected.
     """
     gd = grade_dir(grade)
     domains = [domain] if domain else VALID_DOMAINS
@@ -357,6 +361,8 @@ def sample_problems(
                     if exclude_high_priority and data.get("high_priority"):
                         continue
                     if lesson_tags is not None and data.get("lesson") not in lesson_tags:
+                        continue
+                    if exclude_lesson and data.get("lesson"):
                         continue
                     pool.append(data)
                 except Exception:
