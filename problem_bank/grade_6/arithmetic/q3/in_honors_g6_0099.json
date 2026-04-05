@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0099",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "repeated percent increase and decrease",
+  "latex": "A dose of a shrinking potion makes a person $50\\%$ smaller than they were before they drank it, and eating a growth cake makes a person $50\\%$ larger than they were before they ate it. Alice and Chester are both 100 cm tall. Alice drinks 2 doses of shrinking potion, then eats 1 growth cake. Chester eats 2 growth cakes, then drinks 1 dose of shrinking potion. What is the difference in their final heights?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_57.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

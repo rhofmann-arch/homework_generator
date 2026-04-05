@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0083",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "ratio and proportion word problem",
+  "latex": "I have a bag with only red, blue, and green marbles. The ratio of red marbles to blue marbles to green marbles is $1 : 5 : 3$. There are 27 green marbles in the bag. How many marbles are there in the bag?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_52a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

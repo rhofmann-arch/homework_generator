@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0034",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "prime numbers in a given range, rectangular arrays",
+  "latex": "Jon teaches a fourth grade class at an elementary school where class sizes are always at least 20 students and at most 28. One day Jon decides that he wants to arrange the students in their desks in a rectangular grid with no gaps. Unfortunately for Jon he discovers that doing so could only result in one straight line of desks. How many students does Jon have in his class?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_36a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

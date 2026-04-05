@@ -1,0 +1,18 @@
+{
+  "id": "les_4p2_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "4.2",
+  "topic": "converting percent to decimal",
+  "latex": "Write the percent as a decimal. $8\\%$",
+  "answer_latex": "0.08",
+  "suggested_quarter": 1,
+  "source_file": "6_9_2.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0053",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "proportional reasoning, rate and distance",
+  "latex": "I run at a constant pace, and it takes me 18 minutes to run to the store from my house. If the store is 2 miles away, and my friend's house is 1 mile away from my house, how many minutes will it take me to run from my house to my friend's house?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_42a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0067",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "algebraic reasoning, inverse operations",
+  "latex": "John meant to divide a number by 2, but he was careless and subtracted 2 from the number instead. He got an answer of 22. What would his answer have been had he actually divided by 2 instead of subtracting 2?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_47a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

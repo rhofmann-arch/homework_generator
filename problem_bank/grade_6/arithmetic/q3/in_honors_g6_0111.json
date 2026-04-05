@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0111",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "divisibility and fraction constraints word problem",
+  "latex": "A vendor has six jugs of punch with capacities of 13, 15, 16, 21, 21, and 22 gallons. One jug, which he keeps for himself, is full of blue punch. The other five jugs are full of red punch. Without opening any of the jugs, he sells $1/3$ of the red punch to Randy and the remaining $2/3$ of the red punch to Lisa. How many gallons of the blue punch did he keep for himself?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_63.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

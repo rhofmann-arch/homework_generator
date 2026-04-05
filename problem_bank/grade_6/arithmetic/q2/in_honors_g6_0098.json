@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0098",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "percent word problem with ratios",
+  "latex": "A jar contains 10 olives. $70\\%$ of them are green. After I eat some green olives, only $50\\%$ of the olives in the jar are green. How many green olives did I eat?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_57.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

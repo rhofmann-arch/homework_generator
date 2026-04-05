@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0089",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "systems of equations with coin values",
+  "latex": "Jeff has an equal number of nickels, dimes and quarters, worth a total of \\$1.20. Anne has one more of each type of coin than Jeff has. How many coins does Anne have?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_54a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

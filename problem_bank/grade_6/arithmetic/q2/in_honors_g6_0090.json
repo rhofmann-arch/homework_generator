@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0090",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "linear equations with real-world context, cost problems",
+  "latex": "Al gets the disease algebritis and must take one green pill and one pink pill each day for two weeks. A green pill costs \\$1 more than a pink pill, and Al's pills cost a total of \\$546 for the two weeks. How much does one green pill cost?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_54a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

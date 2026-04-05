@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0119",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "geometric probability on a number line",
+  "latex": "Yoshi picks a point on the number line between 2 and 8. What is the probability that it is closer to the point 4 than to either end?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_66a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

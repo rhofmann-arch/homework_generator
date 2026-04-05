@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0109",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "percent markup and successive discounts",
+  "latex": "In May, the price of a pair of jeans was $250\\%$ of its wholesale cost. In June, the price was reduced by $25\\%$. After an additional $50\\%$ discount in July, the jeans cost $\\$22.50$. What is the number of dollars in the wholesale cost of the jeans?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_63.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

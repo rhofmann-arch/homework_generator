@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "probability with linear inequalities",
+  "latex": "The number $n$ is randomly selected from the set $\\{1, 2, \\ldots, 10\\}$, with each number being equally likely. What is the probability that $2n - 4 > n$?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_69.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_4p1_g6_0018",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "4.1",
+  "topic": "converting percent to fraction",
+  "latex": "Of the students in your class, $25\\%$ walk to school. What fraction of the students in your class walk to school?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_9_1.pdf",
+  "source_problem_number": 18,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

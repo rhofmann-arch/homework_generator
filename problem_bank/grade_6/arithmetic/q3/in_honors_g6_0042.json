@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0042",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "system of linear equations word problem",
+  "latex": "In an election, 1200 total votes were cast for the 3 candidates. The second-place candidate received 125 fewer votes than the winner and 200 votes more than the third-place candidate. How many votes did the winner receive?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_38.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

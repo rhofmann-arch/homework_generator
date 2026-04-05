@@ -1,0 +1,18 @@
+{
+  "id": "les_4p2_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "4.2",
+  "topic": "converting decimal to percent (small decimal)",
+  "latex": "Write the decimal as a percent. $0.025$",
+  "answer_latex": "2.5\\%",
+  "suggested_quarter": 2,
+  "source_file": "6_9_2.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

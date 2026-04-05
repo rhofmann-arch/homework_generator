@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0029",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "area of rectangles, subtraction of areas",
+  "latex": "Ten pictures, each measuring 4 inches by 6 inches, are mounted on a piece of green poster board so that there is no overlap. The poster board measures 20 inches by 17 inches. All the shapes are rectangular. How many square inches of the green background will show after the pictures are mounted?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_34a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

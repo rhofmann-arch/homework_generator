@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0012",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "linear equations, profit and cost word problem",
+  "latex": "Billy purchased 100 shirts at a cost of \\$15 each and planned to resell them. The first week he sold some of them for \\$25 each. The second week he sold the rest for \\$20 each. If his total profit was \\$600, how many shirts did he sell the first week?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_28a (1).pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

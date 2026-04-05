@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0072",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "successive percent discounts",
+  "latex": "On Friday, a snowboard originally priced at $\\$100$ was discounted $50\\%$. On Monday, that sale price was reduced by $30\\%$. In dollars, what is the price of the snowboard after the Monday reduction?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_48a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

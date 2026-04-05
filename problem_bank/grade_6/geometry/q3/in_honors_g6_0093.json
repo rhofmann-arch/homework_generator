@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0093",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of triangle, solving for height",
+  "latex": "The area of a triangle is 600 square feet. Find the height, in feet, of the triangle if the length of the corresponding base is 30 feet.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_55a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

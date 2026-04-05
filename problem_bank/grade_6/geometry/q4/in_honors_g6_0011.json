@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of annulus, concentric circles",
+  "latex": "Two circles have the same center $C$. (Circles which have the same center are called concentric.) The larger circle has radius 10 and the smaller circle has radius 6. Determine the area of the ring between these two circles.\n\n\\begin{tikzpicture}[scale=0.35]\n\\draw (0,0) circle (3.5);\n\\draw (0,0) circle (2.1);\n\\fill (0,0) circle (0.08);\n\\node at (0.4,0) {$C$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_28a (1).pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

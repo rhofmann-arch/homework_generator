@@ -15,6 +15,40 @@ import random
 from pathlib import Path
 from typing import Optional
 
+_LESSON_MAP_PATH = Path(__file__).parent.parent.parent / "lesson_pdfs" / "lesson_map.json"
+_lesson_map_cache: dict | None = None
+
+
+def _load_lesson_map() -> dict:
+    global _lesson_map_cache
+    if _lesson_map_cache is None:
+        if _LESSON_MAP_PATH.exists():
+            _lesson_map_cache = json.loads(_LESSON_MAP_PATH.read_text())
+        else:
+            _lesson_map_cache = {}
+    return _lesson_map_cache
+
+
+def _equivalent_lessons(lesson: str, class_type: str) -> set[str]:
+    """
+    Return the set of lesson tags to search in the bank.
+
+    Bank problems are tagged with honors lesson numbers (since honors PDFs were
+    ingested first). GL classes need translation so they can find the same
+    content under the honors tag.
+
+    Examples:
+      GL lesson "8.1" (Integers) → also search "3.1" (honors tag for Integers)
+      Honors lesson "3.1" (Integers) → search "3.1" only (no translation needed)
+    """
+    lmap = _load_lesson_map()
+    lessons = {lesson}
+    if class_type == "grade_level":
+        h = lmap.get("gl_to_honors", {}).get(lesson)
+        if h:
+            lessons.add(h)
+    return lessons
+
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 
@@ -267,6 +301,7 @@ def sample_problems(
     high_priority_only: bool = False,
     exclude_high_priority: bool = False,
     lesson: str | None = None,
+    class_type: str | None = None,
 ) -> list[dict]:
     """
     Return up to n randomly sampled approved problems from the bank.
@@ -281,12 +316,20 @@ def sample_problems(
                     (e.g. "2.5"). Ignores max_quarter when lesson is set since
                     lesson problems are filed under whatever quarter was chosen
                     at review time.
+    class_type    — "honors" or "grade_level". When "grade_level", translates
+                    GL lesson numbers to their honors equivalents before querying
+                    (e.g. GL "8.1" → also searches for bank tag "3.1").
     """
     gd = grade_dir(grade)
     domains = [domain] if domain else VALID_DOMAINS
 
     # When filtering by lesson, search all quarters (lesson overrides max_quarter)
     max_q = 4 if lesson else max_quarter
+
+    # Compute the set of lesson tags to accept (includes cross-curriculum equivalent)
+    lesson_tags: set[str] | None = None
+    if lesson:
+        lesson_tags = _equivalent_lessons(lesson, class_type or "")
 
     pool = []
     for d in domains:
@@ -307,7 +350,7 @@ def sample_problems(
                         continue
                     if exclude_high_priority and data.get("high_priority"):
                         continue
-                    if lesson and data.get("lesson") != lesson:
+                    if lesson_tags is not None and data.get("lesson") not in lesson_tags:
                         continue
                     pool.append(data)
                 except Exception:

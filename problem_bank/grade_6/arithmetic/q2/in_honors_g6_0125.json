@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0125",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "successive percent increase, compound percentage",
+  "latex": "If one lens increases the size of an image by $80\\%$ and another increases the size by $50\\%$ by what percent will the image be increased if the two lenses are used together?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_68a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

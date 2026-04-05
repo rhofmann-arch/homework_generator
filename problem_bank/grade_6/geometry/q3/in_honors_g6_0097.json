@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0097",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "similar triangles and proportional segments",
+  "latex": "In the figure below, $AB = 15$, $AC = 14$, and $BY = 12$. Compute $CX$.\n\n\\begin{tikzpicture}[scale=0.8]\n% Triangle ABC with A at top, B at bottom left, C at bottom right\n\\coordinate (A) at (2, 4);\n\\coordinate (B) at (0, 0);\n\\coordinate (C) at (5, 0);\n% X on AB, Y on AC\n\\coordinate (X) at (0.8, 1.6);\n\\coordinate (Y) at (3.8, 1.2);\n% Draw triangle\n\\draw (A) -- (B) -- (C) -- cycle;\n% Draw line XY (dashed)\n\\draw[dashed] (X) -- (Y);\n% Right angle marks at X and Y\n\\draw (X) ++(0.15, 0.3) -- ++(0.15, -0.15) -- ++(-0.3, -0.15);\n\\draw (Y) ++(-0.2, 0.1) -- ++(0.1, 0.2) -- ++(0.2, -0.1);\n% Labels\n\\node[above] at (A) {$A$};\n\\node[below left] at (B) {$B$};\n\\node[below right] at (C) {$C$};\n\\node[left] at (X) {$X$};\n\\node[right] at (Y) {$Y$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_57.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

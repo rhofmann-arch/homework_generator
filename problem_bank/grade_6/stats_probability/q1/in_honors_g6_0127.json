@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0127",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "probability with divisibility and inclusion-exclusion",
+  "latex": "A number is randomly selected from the first 20 positive integers. What is the probability that it is divisible by 2, 3 or 4? Express your answer as a common fraction.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_70.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

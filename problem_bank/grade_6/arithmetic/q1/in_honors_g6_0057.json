@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0057",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "number properties, divisibility rules, multiples",
+  "latex": "Bob's favorite number is between 50 and 100. It is a multiple of 11, but not a multiple of 2. The sum of its digits is a multiple of 3. What is Bob's favorite number?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_43a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0105",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "rate problem, relative motion",
+  "latex": "Agents J and K work in a long hallway with 4000 equally-spaced, consecutive offices. The agents decide to walk toward each other so they can meet and have lunch together. Agent J has recently been relocated from office 2013 to office 1. His former office neighbor, Agent K, is still in office 2014. Assuming that Agent J can walk at a rate of 25 offices per minute, and Agent K walks at 36 offices per minute, what office will they meet at if they leave at the same time?",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "Honors_Math_6_59a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

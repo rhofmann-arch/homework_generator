@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "concentric circles, diameter and radius relationships",
+  "latex": "As shown in the figure below, a circular park consists of an outer-ring path for walkers and a ring-shaped flower garden surrounding a central circular fountain. The walking path is six feet wide in all places, the garden ring is eight feet wide in all places, and the fountain has a diameter of 10 feet.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw (0,0) circle (4.5);\n\\draw (0,0) circle (3.3);\n\\draw (0,0) circle (1.5);\n\\node at (1.2,2.8) {$8'$};\n\\draw[<->] (3.3,0.5) -- (4.5,0.5);\n\\node at (4.8,0) {$6'$};\n\\end{tikzpicture}\n\nWhat is the diameter, in feet, of the circle that is the outer boundary of the walking path? (Source: AoPS)",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_28a (1).pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0110",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "arithmetic sequences with constant difference",
+  "latex": "Russell ate several candies on Halloween, and each day after Halloween ate 6 fewer candies than the day before. His candies lasted exactly five days, and he ate 100 candies in total. How many did he eat on the third day?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_63.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

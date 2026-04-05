@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0096",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "exponent properties, simplifying expressions with powers",
+  "latex": "\\textbf{No calculator.} Compute $A$ divided by $B$ where $A = 66666^4$ and $B = 22222^4$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_56a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

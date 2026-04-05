@@ -1,0 +1,18 @@
+{
+  "id": "les_3p1_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.1",
+  "topic": "writing ratios from pictures",
+  "latex": "Write the ratio. notebooks : pencils (Image shows 6 notebooks and 2 pencils)",
+  "answer_latex": "6:2 or 3:1",
+  "suggested_quarter": 1,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

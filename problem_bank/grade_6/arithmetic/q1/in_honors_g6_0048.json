@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0048",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "order of operations with multiplication and division",
+  "latex": "Compute $a \\cdot b \\cdot c \\div d$ if\n$$a = 15$$\n$$b = 2002$$\n$$c = 3$$\n$$d = 1001.$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_40a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

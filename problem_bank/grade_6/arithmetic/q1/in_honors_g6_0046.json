@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0046",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "multi-step word problem with multiplication and subtraction",
+  "latex": "Lizzie made 6 batches of snicker-doodle cookies with 18 cookies per batch for a birthday party, but her hungry brother Wyatt ate 2 of the batches. To make up for the eaten cookies, Lizzie made 3 more batches with 18 cookies per batch. How many cookies does Lizzie have now?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_40a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

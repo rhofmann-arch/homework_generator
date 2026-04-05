@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0120",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "distance-rate-time word problem with algebraic reasoning",
+  "latex": "Maria normally spends half an hour driving to work. When her average speed is ten miles per hour slower than usual, the trip takes ten minutes longer. How many miles does she drive to work?",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "Honors_Math_6_66a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

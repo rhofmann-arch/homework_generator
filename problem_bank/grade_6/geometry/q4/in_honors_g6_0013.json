@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0013",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "geometry with semicircles and finding lengths using circle properties",
+  "latex": "In the diagram, $K$, $O$ and $M$ are the centers of the three semi-circles. Also, $OC = 32$ and $CB = 36$.\n\n\\begin{tikzpicture}[scale=0.6]\n% Draw the base line\n\\draw (0,0) -- (8,0);\n% Label points on the base\n\\node[below] at (0,0) {A};\n\\node[below] at (2,0) {K};\n\\node[below] at (2.8,0) {O};\n\\node[below] at (5,0) {C};\n\\node[below] at (6.5,0) {M};\n\\node[below] at (8,0) {B};\n% Draw dots at K, O, M\n\\fill (2,0) circle (2pt);\n\\fill (2.8,0) circle (2pt);\n\\fill (6.5,0) circle (2pt);\n% Draw large semi-circle from A to B (center around O area)\n\\draw (0,0) arc (180:0:4);\n% Draw smaller semi-circle on left (shaded region boundary)\n\\draw[fill=gray!50] (0,0) arc (180:0:2.8) -- (5.6,0) arc (0:180:1.5) -- cycle;\n% Draw small semi-circle on right from C to B\n\\draw (5,0) arc (180:0:1.5);\n\\end{tikzpicture}\n\nWhat is the length of $AC$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_29a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

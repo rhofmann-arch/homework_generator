@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0087",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of a triangle, solving for height given area and base",
+  "latex": "$\\triangle PQR$ has an area of $27\\,\\text{cm}^2$ and a base measuring 6 cm. What is the height, $h$, of $\\triangle PQR$?\n\n\\begin{tikzpicture}[scale=0.8]\n% Triangle PQR\n\\coordinate (Q) at (0,0);\n\\coordinate (R) at (3,0);\n\\coordinate (P) at (1.5,4);\n% Draw triangle\n\\draw (Q) -- (P) -- (R) -- cycle;\n% Height line\n\\coordinate (H) at (1.5,0);\n\\draw (P) -- (H);\n% Right angle mark\n\\draw (1.5,0.3) -- (1.8,0.3) -- (1.8,0);\n% Labels\n\\node[above] at (P) {$P$};\n\\node[below left] at (Q) {$Q$};\n\\node[below right] at (R) {$R$};\n\\node[right] at (1.5,2) {$h$};\n\\node[below] at (1.5,-0.3) {6 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_53a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

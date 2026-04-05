@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0128",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "clock angle problems",
+  "latex": "How many degrees are in the smaller angle formed by the minute and hour hands on a clock at 12:30?\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw (0,0) circle (2);\n\\foreach \\i in {1,...,12} {\n  \\pgfmathsetmacro{\\angle}{90 - \\i*30}\n  \\node at ({1.6*cos(\\angle)},{1.6*sin(\\angle)}) {\\i};\n}\n\\foreach \\i in {0,...,59} {\n  \\pgfmathsetmacro{\\angle}{90 - \\i*6}\n  \\draw ({1.9*cos(\\angle)},{1.9*sin(\\angle)}) -- ({2*cos(\\angle)},{2*sin(\\angle)});\n}\n\\fill (0,0) circle (0.08);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_70.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

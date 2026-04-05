@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0051",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "arithmetic sequence, finding nth term",
+  "latex": "Farmer Bob's dairy farm is ready for milking day. His 199 cows line up in the barn and he begins milking them. The first cow gives 4 pints of milk. The next cow gives 5 pints of milk. The next gives 6 pints, and so on, increasing by 1 pint each cow. How many pints of milk does the last cow give?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_41a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

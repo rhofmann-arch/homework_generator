@@ -501,7 +501,8 @@ async def generate_problems(
     lesson_templates: list[dict] = []
     for lesson in context.current_lessons:
         templates = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=6, lesson=lesson
+            domain=None, grade=grade_int, max_quarter=4, n=6, lesson=lesson,
+            class_type=class_type,
         )
         lesson_templates.extend(templates)
     if len(lesson_templates) > 6:
@@ -601,7 +602,8 @@ async def refresh_back_problem(
     templates: list[dict] = []
     for lesson in current_lessons:
         templates.extend(
-            sample_problems(domain=None, grade=grade, max_quarter=4, n=3, lesson=lesson)
+            sample_problems(domain=None, grade=grade, max_quarter=4, n=3, lesson=lesson,
+                            class_type=class_type)
         )
 
     if templates:

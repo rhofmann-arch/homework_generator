@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0032",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of composite figures with circular arcs",
+  "latex": "Three circular arcs of radius 5 units bound the region shown. Arcs $AB$ and $AD$ are quarter-circles, and arc $BCD$ is a semicircle. What is the area, in square units, of the region?\n\n\\begin{tikzpicture}[scale=0.8]\n% Draw the region bounded by three arcs\n% Quarter-circle AB (from A to B, curving left)\n\\draw (0,-2) arc[start angle=-90, end angle=180, radius=2] -- cycle;\n% Point labels\n\\node[above] at (0,2) {$C$};\n\\node[left] at (-2,0) {$B$};\n\\node[right] at (2,0) {$D$};\n\\node[below] at (0,-2) {$A$};\n% Draw the actual figure: semicircle BCD on top, quarter-circles AB and AD below\n\\draw (-2,0) arc[start angle=180, end angle=0, radius=2]; % semicircle BCD\n\\draw (-2,0) arc[start angle=90, end angle=0, radius=2]; % quarter-circle from B to A\n\\draw (2,0) arc[start angle=90, end angle=180, radius=2]; % quarter-circle from D to A\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_35a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

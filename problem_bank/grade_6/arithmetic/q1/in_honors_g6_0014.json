@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "word problem involving money, profit calculation, and arithmetic operations",
+  "latex": "A math club is having a bake sale as a fundraiser to raise money for an upcoming trip. They sell 54 cookies at three for \\$1, and 20 cupcakes at \\$2 each, and 35 brownies at \\$1 each. If it cost the math club \\$15 to bake these items, what was their profit?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_29a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

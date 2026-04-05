@@ -1,0 +1,18 @@
+{
+  "id": "les_3p6_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.6",
+  "topic": "Unit conversion from centimeters to inches",
+  "latex": "A book is 15 centimeters long and 6 centimeters wide. What are the length and width of the book in inches?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0039",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of composite figures with circles",
+  "latex": "Two shaded quarter-circles, each with a radius of 4 units, are formed in the 4 by 8 rectangular region shown. What is the area of the non-shaded region, in square units? Express the area in the form $a - b\\pi$ where $a$ and $b$ are integers.\n\n\\begin{tikzpicture}[scale=0.5]\n% Draw the rectangle\n\\draw (0,0) rectangle (8,4);\n% Fill the rectangle with gray\n\\fill[gray] (0,0) rectangle (8,4);\n% Draw white quarter circles (non-shaded regions)\n\\fill[white] (4,0) arc (0:90:4) -- (0,0) -- cycle;\n\\fill[white] (4,0) arc (180:90:4) -- (8,0) -- cycle;\n% Draw the arcs\n\\draw (4,0) arc (0:90:4);\n\\draw (4,0) arc (180:90:4);\n% Draw the rectangle outline\n\\draw (0,0) rectangle (8,4);\n% Labels\n\\node at (4,-0.5) {8};\n\\node at (8.5,2) {4};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_37a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

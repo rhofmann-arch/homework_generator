@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0060",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "mean/average of a data set",
+  "latex": "Billy wants to determine the average number of cookies in a package of cookies. He purchases 7 packages of cookies, opens them, and counts the number of cookies in each one. He finds that the packages have 8, 10, 12, 15, 16, 17, and 20 cookies. Based on these observations, what is the average number of cookies in a package?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "Honors_Math_6_44a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

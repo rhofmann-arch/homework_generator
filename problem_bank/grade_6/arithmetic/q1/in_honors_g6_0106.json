@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0106",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "fraction word problem, finding total from fractional parts",
+  "latex": "A gasoline tank is $\\frac{7}{8}$ full. After 12 gallons have been used, it is half full. How many gallons does this tank hold when it is full?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_60a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

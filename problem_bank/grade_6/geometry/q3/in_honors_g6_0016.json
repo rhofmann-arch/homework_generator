@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0016",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of a circle, algebraic reasoning",
+  "latex": "The diameter of a circle is 16. By what number must the radius be decreased in order to decrease the area of the circle by $48\\pi$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_30a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

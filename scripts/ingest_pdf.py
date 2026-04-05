@@ -61,7 +61,7 @@ EXTRACT_TOOL = {
                         },
                         "latex": {
                             "type": "string",
-                            "description": "Full problem in LaTeX. Use $...$ for inline math, $$...$$ for display math. Include any written instructions (e.g. 'Find the value of x.')."
+                            "description": "Full problem in LaTeX. Use $...$ for inline math, $$...$$ for display math. Include any written instructions (e.g. 'Find the value of x.'). If the problem contains a geometric figure, number line, coordinate plane, table, or any diagram, reproduce it using a TikZ environment (\\begin{tikzpicture}...\\end{tikzpicture}). Place the diagram where it appears relative to the problem text. Do not use \\includegraphics or reference external files."
                         },
                         "answer_latex": {
                             "type": "string",
@@ -143,7 +143,11 @@ def extract_problems_from_page(
             "Extract every math problem visible on this worksheet page. "
             "For each problem: capture the full problem in LaTeX (including any written instructions), "
             "suggest a difficulty quarter (Q1=simplest, Q4=hardest), "
-            "and write a brief topic description. "
+            "IMPORTANT: If any problem includes a diagram, figure, number line, coordinate plane, "
+            "table, or geometric shape, reproduce it faithfully using TikZ "
+            "(\\begin{tikzpicture}...\\end{tikzpicture}) placed inline with the problem text. "
+            "Do not skip diagrams or replace them with placeholder text. "
+            "Write a brief topic description for each problem. "
             "If an answer key was provided, fill in the answer. "
             "Return ALL problems — do not skip any."
         )
@@ -151,7 +155,7 @@ def extract_problems_from_page(
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=4096,
+        max_tokens=8192,
         tools=[EXTRACT_TOOL],
         tool_choice={"type": "tool", "name": "extract_problems"},
         messages=[{"role": "user", "content": content}]

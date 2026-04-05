@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0074",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "square roots and mean calculation",
+  "latex": "The areas of three squares are 16, 49 and 169. What is the average (mean) of their side lengths?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_49a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

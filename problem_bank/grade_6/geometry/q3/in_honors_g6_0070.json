@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0070",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "perimeter of composite figures with semicircles (track/stadium shape)",
+  "latex": "What is the total length of the red path shown below? Use $3.14$ for $\\pi$ and express your answer as a decimal to the nearest tenth.\n\n\\begin{tikzpicture}[scale=1.2]\n% Grid\n\\draw[gray, thin] (0,0) grid[step=0.1] (4,2.5);\n% Axis labels\n\\node at (0,-0.2) {0};\n\\node at (1,-0.2) {1};\n\\node at (2,-0.2) {2};\n\\node at (3,-0.2) {3};\n\\node at (4,-0.2) {4};\n% Tick marks on x-axis\n\\foreach \\x in {0,1,2,3,4} \\draw (\\x,0) -- (\\x,-0.1);\n% Inner black track (stadium shape)\n\\draw[thick, black] (1,0.5) -- (3,0.5);\n\\draw[thick, black] (1,2) -- (3,2);\n\\draw[thick, black] (1,0.5) arc (270:90:0.75);\n\\draw[thick, black] (3,0.5) arc (-90:90:0.75);\n% Outer red dashed path (larger stadium)\n\\draw[red, dashed, thick] (0.5,0.25) -- (3.5,0.25);\n\\draw[red, dashed, thick] (0.5,2.25) -- (3.5,2.25);\n\\draw[red, dashed, thick] (0.5,0.25) arc (270:90:1);\n\\draw[red, dashed, thick] (3.5,0.25) arc (-90:90:1);\n% Middle red dotted path\n\\draw[red, dotted, thick] (0.75,0.75) -- (3.25,0.75);\n\\draw[red, dotted, thick] (0.75,1.75) -- (3.25,1.75);\n\\draw[red, dotted, thick] (0.75,0.75) arc (270:90:0.5);\n\\draw[red, dotted, thick] (3.25,0.75) arc (-90:90:0.5);\n% Dots at corners of paths\n\\fill[red] (0.5,2.25) circle (0.05);\n\\fill[red] (3.5,2.25) circle (0.05);\n\\fill[red] (0.75,1.75) circle (0.05);\n\\fill[red] (3.25,1.75) circle (0.05);\n\\fill[red] (0.75,0.75) circle (0.05);\n\\fill[red] (3.25,0.75) circle (0.05);\n\\fill[red] (0.5,0.25) circle (0.05);\n\\fill[red] (3.5,0.25) circle (0.05);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_48a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

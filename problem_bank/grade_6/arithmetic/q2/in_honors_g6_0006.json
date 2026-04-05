@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "fraction word problem with algebraic reasoning",
+  "latex": "When Cedric walked into a party, two-thirds of those invited had already arrived. Six more people arrived just after Cedric, bringing the number at the party to $\\frac{5}{6}$ of those invited. What was the total number of invited guests?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_26a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

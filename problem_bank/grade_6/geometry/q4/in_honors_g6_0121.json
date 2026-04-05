@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0121",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of circles with inscribed semicircles",
+  "latex": "In the diagram, each circle is divided into two equal areas and $O$ is the center of the larger circle. The area of the larger circle is $64\\pi$. What is the total area of the shaded regions?\n\n\\begin{tikzpicture}\n% Large circle\n\\draw (0,0) circle (2);\n% Small circle with center at O (which is on the large circle's horizontal diameter)\n\\draw (0,0) circle (1);\n% Point O label\n\\node at (0.2,-0.2) {$O$};\n\\fill (0,0) circle (1.5pt);\n% Horizontal diameter of large circle\n\\draw (-2,0) -- (2,0);\n% Shading: top half of small circle\n\\fill[gray!50] (0,0) arc (0:180:1) -- cycle;\n% Shading: bottom half of large circle (excluding small circle)\n\\begin{scope}\n\\clip (0,0) circle (2);\n\\fill[gray!50] (-2,0) rectangle (2,-2);\n\\end{scope}\n\\fill[white] (0,0) arc (180:360:1) -- cycle;\n\\fill[gray!50] (0,0) arc (180:360:1) -- cycle;\n\\fill[white] (0,0) arc (0:-180:1) -- cycle;\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_67a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

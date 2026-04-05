@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0054",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "probability, counting perfect squares",
+  "latex": "A number is selected at random from 1 through 100, inclusive. What is the probability that the number is a perfect square?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_42a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

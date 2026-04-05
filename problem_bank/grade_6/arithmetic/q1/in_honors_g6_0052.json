@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0052",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "addition of integers, positive and negative numbers",
+  "latex": "James has a magic hat full of slips of paper with numbers on them. He gives the hat to his friend Anna who pulls 4 numbers out of the hat: $3$, $-4$, $-2$ and $0$. James then pulls 3 numbers out of the hat: $2$, $4$, and $1$. What is the sum of all of the numbers that James and Anna pulled out of the magic hat?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "Honors_Math_6_42a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

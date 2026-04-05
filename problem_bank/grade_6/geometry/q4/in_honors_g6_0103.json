@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0103",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "percent change, area of triangle",
+  "latex": "If the base of a triangle is shortened by 60 percent, by what percent must the height be increased if the area is to remain the same?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_59a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

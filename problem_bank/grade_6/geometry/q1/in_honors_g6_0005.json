@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "area of triangle in a square using midpoints",
+  "latex": "In square $ABCD$ with sides of length 4 cm, $N$ is the midpoint of side $BC$ and $M$ is the midpoint of side $CD$. What is the area of triangle $AMN$, in cm$^2$?\n\n\\begin{tikzpicture}[scale=0.8]\n\\coordinate (A) at (0,4);\n\\coordinate (B) at (4,4);\n\\coordinate (C) at (4,0);\n\\coordinate (D) at (0,0);\n\\coordinate (N) at (4,2);\n\\coordinate (M) at (2,0);\n\\draw (A) -- (B) -- (C) -- (D) -- cycle;\n\\draw (A) -- (M) -- (N) -- cycle;\n\\node[above left] at (A) {$A$};\n\\node[above right] at (B) {$B$};\n\\node[below right] at (C) {$C$};\n\\node[below left] at (D) {$D$};\n\\node[right] at (N) {$N$};\n\\node[below] at (M) {$M$};\n\\node[above] at (2,4) {4 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_26a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

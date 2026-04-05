@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0134",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "spatial reasoning, unit cubes, orthographic views",
+  "latex": "A figure is constructed from unit cubes. Each cube shares at least one face with another cube. What is the minimum number of cubes needed to build a figure with the front and side views shown?\n\n\\begin{tikzpicture}[scale=0.6]\n% Front view\n\\draw (0,0) rectangle (1,1);\n\\draw (0,1) rectangle (1,2);\n\\draw (1,1) rectangle (2,2);\n\\node at (0.5,-0.5) {FRONT};\n% Side view\n\\draw (4,0) rectangle (5,1);\n\\draw (4,1) rectangle (5,2);\n\\draw (5,1) rectangle (6,2);\n\\node at (5,-0.5) {SIDE};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_74a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

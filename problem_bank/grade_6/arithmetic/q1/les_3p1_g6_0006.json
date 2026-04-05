@@ -1,0 +1,18 @@
+{
+  "id": "les_3p1_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.1",
+  "topic": "writing and interpreting ratios from pictures",
+  "latex": "Write the ratio. Then find and interpret the value of the ratio. trumpets : tubas (Using image from problem 5: 3 trumpets and 2 tubas)",
+  "answer_latex": "3:2",
+  "suggested_quarter": 2,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

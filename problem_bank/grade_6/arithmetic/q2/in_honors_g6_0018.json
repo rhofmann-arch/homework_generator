@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0018",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "ratios and proportions, systems of equations",
+  "latex": "Round tables seating 8 people and rectangular tables seating 12 people are being used at a banquet for 8th graders. The ratio of round tables to rectangular tables is 2 to 1. How many tables are used to seat 336 students at the banquet, if no table has an empty seat?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_30a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

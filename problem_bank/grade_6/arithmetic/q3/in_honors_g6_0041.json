@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0041",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "percent increase and decrease, stock value calculations",
+  "latex": "Ajax buys 20 shares of stock at \\$20 per share. The shares increase in value by 20\\%. He then sells 10 shares. After the shares decrease in value by 10\\%, he buys another 20 shares. The shares then all increase by 50\\%. Determine the total dollar value of the 30 shares that Ajax now owns.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_38.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

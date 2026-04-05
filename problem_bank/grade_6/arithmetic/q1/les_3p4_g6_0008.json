@@ -1,0 +1,18 @@
+{
+  "id": "les_3p4_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.4",
+  "topic": "ratios and proportional relationships, graphing ratios",
+  "latex": "A fruit punch has a ratio of 3.5 cups of powder mix for every 5 gallons of water.\n\n**a.** Represent the ratio relationship using a graph.\n\n**b.** How many cups of powder mix are used with 15 gallons of water?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_4.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

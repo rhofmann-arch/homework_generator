@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0022",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of circle inscribed in square",
+  "latex": "A freshly-painted circular emblem on a football field is completely covered by the smallest possible square tarp. The tarp covers an area of 196 square feet. In square feet, what is the area of the circular emblem? Express your answer in terms of $\\pi$.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_32a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

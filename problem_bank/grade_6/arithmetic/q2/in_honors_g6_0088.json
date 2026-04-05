@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0088",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "linear equations with geometric context, finding unknown lengths",
+  "latex": "A section of fence is shown below. What is the length of the gap between each post?\n\n\\begin{tikzpicture}[scale=0.8]\n% Three fence posts with pointed tops\n% Left post\n\\draw (0,0) rectangle (0.8,4);\n\\draw (0,4) -- (0.4,4.8) -- (0.8,4);\n% Middle post\n\\draw (3,0) rectangle (3.8,4);\n\\draw (3,4) -- (3.4,4.8) -- (3.8,4);\n% Right post\n\\draw (6,0) rectangle (6.8,4);\n\\draw (6,4) -- (6.4,4.8) -- (6.8,4);\n% Horizontal rails\n\\draw (0.8,3.5) -- (3,3.5);\n\\draw (0.8,3.2) -- (3,3.2);\n\\draw (0.8,2.2) -- (3,2.2);\n\\draw (0.8,1.9) -- (3,1.9);\n\\draw (0.8,1.0) -- (3,1.0);\n\\draw (0.8,0.7) -- (3,0.7);\n\\draw (3.8,3.5) -- (6,3.5);\n\\draw (3.8,3.2) -- (6,3.2);\n\\draw (3.8,2.2) -- (6,2.2);\n\\draw (3.8,1.9) -- (6,1.9);\n\\draw (3.8,1.0) -- (6,1.0);\n\\draw (3.8,0.7) -- (6,0.7);\n% Dimension: 57cm for middle post width\n\\draw[<->] (0,5) -- (0.8,5);\n\\draw[dashed] (0,4.8) -- (0,5.2);\n\\draw[dashed] (0.8,4.8) -- (0.8,5.2);\n\\node[above] at (0.4,5) {57cm};\n% Labels for gaps\n\\node at (1.9,0.3) {gap};\n\\draw[<->] (0.8,-0.3) -- (3,-0.3);\n\\node at (4.9,0.3) {gap};\n\\draw[<->] (3.8,-0.3) -- (6,-0.3);\n% Labels for posts\n\\node[below] at (0.4,-0.5) {post};\n\\draw[<->] (0,-0.5) -- (0.8,-0.5);\n\\node[below] at (3.4,-0.5) {post};\n\\draw[<->] (3,-0.5) -- (3.8,-0.5);\n\\node[below] at (6.4,-0.5) {post};\n\\draw[<->] (6,-0.5) -- (6.8,-0.5);\n% Total dimension: 131cm\n\\draw[<->] (0,-1.2) -- (6.8,-1.2);\n\\node[below] at (3.4,-1.2) {131cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_54a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

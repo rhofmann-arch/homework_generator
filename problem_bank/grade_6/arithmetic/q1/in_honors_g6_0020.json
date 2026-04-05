@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "rounding decimals to the nearest thousandth",
+  "latex": "How many of the numbers in the list $$\\left\\{ 25.34816, \\ 84.3695, \\ 2.54527 \\cdot 10, \\ 894.54332, \\ \\frac{234.572}{100}, \\ \\frac{162}{1000} \\right\\}$$ are rounded up when rounded to the nearest thousandth?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_31a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

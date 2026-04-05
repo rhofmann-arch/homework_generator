@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0108",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "proportional reasoning, direct proportion with volume",
+  "latex": "A box with a volume of 16 cm$^3$ can hold 50 paperclips. How many paperclips could a box with a volume of 48 cm$^3$ hold?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_60a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

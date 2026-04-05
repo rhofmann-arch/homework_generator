@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0040",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "circular track distance and modular arithmetic",
+  "latex": "On an indoor circular track of circumference 50 feet, Joneal starts at point $S$, runs in a counterclockwise direction, and then stops when he has run exactly one mile (5280 feet). On which quarter of the circle, $A$, $B$, $C$ or $D$, did Joneal stop?\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw (0,0) circle (2);\n\\draw (-2,0) -- (2,0);\n\\draw (0,-2) -- (0,2);\n\\node at (1.2,1.2) {$A$};\n\\node at (-1.2,1.2) {$B$};\n\\node at (-1.2,-1.2) {$C$};\n\\node at (1.2,-1.2) {$D$};\n\\fill (2,0) circle (2pt);\n\\node at (2.3,0) {$S$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_38.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

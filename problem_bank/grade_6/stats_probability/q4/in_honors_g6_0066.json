@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0066",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "arithmetic mean, finding missing value",
+  "latex": "Emily's quiz scores so far are: 92, 95, 87, 89 and 100. What score does she need to get on the sixth quiz to make the arithmetic mean of the six scores equal 93?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_46a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

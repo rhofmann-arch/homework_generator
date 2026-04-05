@@ -1,0 +1,18 @@
+{
+  "id": "les_3p6_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.6",
+  "topic": "approximate unit conversion, feet to meters",
+  "latex": "Complete the statement. $10 \\text{ ft} \\approx \\underline{\\hspace{1cm}} \\text{ m}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

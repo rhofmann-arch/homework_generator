@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0084",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "multi-step algebraic word problem with exponents",
+  "latex": "Maria, Max, Molly, and Mitch are all picking apples at an orchard. The number of apples Max picks is the number of apples Maria picks squared. Molly picks the number of apples that Max and Maria pick combined. Mitch picks the number of apples Molly picks squared plus the number of apples that Maria picks. If Maria picks 3 apples, then how many apples does Mitch pick?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_52a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

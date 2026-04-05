@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0082",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "area of annulus (ring between two circles)",
+  "latex": "What is the area of the gray region, in square units, if the radius of the larger circle is four times the radius of the smaller circle and the diameter of the smaller circle is 2 units? Express your answer in terms of $\\pi$.\n\n\\begin{tikzpicture}\n\\fill[gray] (0,0) circle (2cm);\n\\fill[white] (0,0.5) circle (0.5cm);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_52a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

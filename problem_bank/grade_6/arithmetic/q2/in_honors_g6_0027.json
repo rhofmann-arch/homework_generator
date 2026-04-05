@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0027",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "ratio and proportion, splitting quantities",
+  "latex": "Amy, Betty, Cathy, and Daisy have 36 apples that they plan to split among themselves in a ratio of $2 : 3 : 3 : 4$, respectively. How many apples will Betty and Cathy have together?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_33a (1).pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

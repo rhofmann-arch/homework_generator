@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0086",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "multi-step algebraic reasoning, solving equations and applying operations",
+  "latex": "Joe multiplies a number by 4, adds 1, and then divides by 3, getting a result of 7. Sue divides the same original number by 3, adds 1, and multiplies by 4. What result does she get? Express your answer as a common fraction.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_53a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

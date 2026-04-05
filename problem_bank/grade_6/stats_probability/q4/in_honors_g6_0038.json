@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0038",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "arithmetic mean and solving for unknowns",
+  "latex": "The arithmetic mean of four numbers is 15. Two of the numbers are 10 and 18 and the other two are equal. What is the product of the two equal numbers?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_37a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

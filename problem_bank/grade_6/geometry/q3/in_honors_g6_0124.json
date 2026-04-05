@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0124",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "ratio of areas, triangles in squares with partitioned sides",
+  "latex": "Two sides of a square are divided into fourths and another side of the square is trisected, as shown. A triangle is formed by connecting three of these points, as shown. What is the ratio of the area of the shaded triangle to the area of the square? Express your answer as a fraction.\n\n\\begin{tikzpicture}[scale=0.8]\n% Draw the square\n\\draw (0,0) rectangle (3,3);\n% Tick marks on top side (divided into fourths)\n\\draw (0.75,3) -- (0.75,3.15);\n\\draw (1.5,3) -- (1.5,3.15);\n\\draw (2.25,3) -- (2.25,3.15);\n% Tick marks on bottom side (divided into fourths)\n\\draw (0.75,0) -- (0.75,-0.15);\n\\draw (1.5,0) -- (1.5,-0.15);\n\\draw (2.25,0) -- (2.25,-0.15);\n% Tick marks on left side (trisected)\n\\draw (0,1) -- (-0.15,1);\n\\draw (0,2) -- (-0.15,2);\n% Draw the shaded triangle\n\\fill[gray!40] (0,1) -- (1.5,3) -- (3,0) -- cycle;\n\\draw (0,1) -- (1.5,3) -- (3,0) -- cycle;\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_68a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

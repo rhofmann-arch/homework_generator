@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0047",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "working backwards with reciprocals and algebraic reasoning",
+  "latex": "Beginning with an integer $n$, Jake goes through the following steps:\n\\begin{itemize}\n\\item 1. Take the reciprocal of the starting number.\n\\item 2. Double the number obtained in Step 1.\n\\item 3. Take the reciprocal of the number obtained in Step 2.\n\\end{itemize}\nAt the end of the third step, Jake ends up with the number 16. What number did Jake start with?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_40a.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

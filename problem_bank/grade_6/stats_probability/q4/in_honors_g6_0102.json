@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0102",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "prime factorization and mode",
+  "latex": "Davie decides to factor the number $756$ into primes. After doing so, he makes a list from this factorization, including each prime in the list as many times as it appears in the factorization. What is the mode of his list?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_58a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

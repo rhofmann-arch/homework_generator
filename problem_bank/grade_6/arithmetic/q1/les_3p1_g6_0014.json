@@ -1,0 +1,18 @@
+{
+  "id": "les_3p1_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.1",
+  "topic": "comparing rates, hours per week",
+  "latex": "You work a total of 8 hours per week. Your friend works a total of 32 hours every 4 weeks. Do you and your friend work the same number of hours per week? If not, who works more hours per week?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

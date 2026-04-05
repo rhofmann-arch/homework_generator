@@ -1,0 +1,18 @@
+{
+  "id": "les_3p6_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "3.6",
+  "topic": "comparing units, centimeters and miles",
+  "latex": "Complete the statement using $<$ or $>$. $100{,}000 \\text{ cm} \\underline{\\hspace{1cm}} 1 \\text{ mi}$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
