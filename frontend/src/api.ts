@@ -46,6 +46,7 @@ export interface BankProblem {
   notes?: string
   domain?: Domain
   quarter?: number
+  lesson?: string | null
   approved?: boolean
   flagged?: boolean
   honors?: boolean
