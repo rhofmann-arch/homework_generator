@@ -71,8 +71,8 @@ BACK_TOOL = {
                     },
                     "required": ["latex"]
                 },
-                "minItems": 5,
-                "maxItems": 10,
+                "minItems": 1,
+                "maxItems": 20,
             },
         },
         "required": ["lesson_title", "problems"],
@@ -142,6 +142,7 @@ def _back_prompt(
     current_topic: str,
     spiral_topics: str,
     lesson_templates: list[dict] | None = None,
+    n_back: int | None = None,
 ) -> tuple[str, list]:
     """
     Returns (system_prompt, user_content_blocks).
@@ -152,7 +153,7 @@ def _back_prompt(
 
     If lesson_templates is empty/None, falls back to PDF context + free generation.
     """
-    n = "5-7" if class_type == "honors" else "8-10"
+    n = str(n_back) if n_back is not None else ("5-7" if class_type == "honors" else "8-10")
 
     # ── Template-locked path (bank problems exist for this lesson) ──────────────
     if lesson_templates:
@@ -488,6 +489,7 @@ async def generate_problems(
     context: WeekContext,
     class_type: str,
     specific_date: str | None = None,
+    n_back: int | None = None,
 ) -> dict:
     date_str = specific_date or context.week_start
 
@@ -517,6 +519,7 @@ async def generate_problems(
         current_topic=context.current_topic,
         spiral_topics=spiral_topics,
         lesson_templates=lesson_templates or None,
+        n_back=n_back,
     )
     back_data = await _call(back_sys, back_content, BACK_TOOL)
 

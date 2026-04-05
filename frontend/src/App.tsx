@@ -543,6 +543,7 @@ function GeneratePanel() {
   const [specificDate,  setSpecificDate]  = useState<string | null>(null)
   const [grade,         setGrade]         = useState<Grade>('6')
   const [classType,     setClassType]     = useState<ClassType>('grade_level')
+  const [nBack,         setNBack]         = useState<number>(10)
   const [status,        setStatus]        = useState<Status>('idle')
   const [errorMsg,      setErrorMsg]      = useState('')
   const [history,       setHistory]       = useState<Assignment[]>([])
@@ -558,6 +559,7 @@ function GeneratePanel() {
     const req: GenerateRequest = {
       week_start: formatISO(week), grade, class_type: classType,
       specific_date: specificDate ?? undefined,
+      n_back: nBack,
     }
     try {
       const { homeworkBlob, keyBlob, sessionKey } = await generateHomework(req)
@@ -571,7 +573,7 @@ function GeneratePanel() {
       setHistory(prev => [{ weekStart: formatISO(week), specificDate: specificDate ?? undefined, grade, classType, label, pdfUrl: hwUrl, keyUrl, sessionKey }, ...prev])
       setStatus('done')
     } catch (e: unknown) { setErrorMsg(e instanceof Error ? e.message : 'Unknown error'); setStatus('error') }
-  }, [week, specificDate, grade, classType])
+  }, [week, specificDate, grade, classType, nBack])
 
   const handleRecompiled = useCallback((key: string, newPdf: string, newKey: string) => {
     setPdfPreviewUrl(newPdf)
@@ -634,6 +636,24 @@ function GeneratePanel() {
                   <p className="text-xs text-slate-400 mt-0.5">{sub}</p>
                 </button>
               ))}
+            </div>
+          </div>
+
+          <div>
+            <SectionLabel>Lesson Practice Problems</SectionLabel>
+            <div className="flex items-center gap-3">
+              <button onClick={() => setNBack(n => Math.max(6, n - 1))}
+                disabled={nBack <= 6}
+                className="w-8 h-8 rounded-lg border border-slate-300 text-slate-600 text-base font-bold hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition">
+                −
+              </button>
+              <span className="w-6 text-center text-sm font-semibold text-slate-700">{nBack}</span>
+              <button onClick={() => setNBack(n => Math.min(20, n + 1))}
+                disabled={nBack >= 20}
+                className="w-8 h-8 rounded-lg border border-slate-300 text-slate-600 text-base font-bold hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition">
+                +
+              </button>
+              <span className="text-xs text-slate-400">problems on back page (6–20)</span>
             </div>
           </div>
 
