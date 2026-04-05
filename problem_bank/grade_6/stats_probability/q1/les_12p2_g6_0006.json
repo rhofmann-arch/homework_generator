@@ -1,0 +1,18 @@
+{
+  "id": "les_12p2_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.2",
+  "topic": "effect of outliers on mean, interpreting statistical questions",
+  "latex": "For ten school days, the numbers of bikes parked at the school bike rack are 10, 12, 8, 11, 13, 9, 2, 1, 9, and 12. Describe how the outliers affect the mean. Then use the data to answer the statistical question, ``About how many bikes are parked at the school each day?''",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_2.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

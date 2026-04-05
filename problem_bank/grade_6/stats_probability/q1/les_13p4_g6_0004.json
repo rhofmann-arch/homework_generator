@@ -1,0 +1,18 @@
+{
+  "id": "les_13p4_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.4",
+  "topic": "describing center and variation from a data table",
+  "latex": "The table shows the number of miles hiked per person on a weekend. Describe the center and variation of the data set.\n\n\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n\\multicolumn{5}{|c|}{\\textbf{Hiking Distance (km)}} \\\\\n\\hline\n1 & 2 & 4 & 5 & 3 \\\\\n\\hline\n3 & 3 & 4 & 2 & 3 \\\\\n\\hline\n5 & 4 & 3 & 5 & 4 \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_4.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

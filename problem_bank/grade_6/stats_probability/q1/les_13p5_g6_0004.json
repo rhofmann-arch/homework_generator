@@ -1,0 +1,18 @@
+{
+  "id": "les_13p5_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.5",
+  "topic": "analyzing and verifying box-and-whisker plots from data",
+  "latex": "Your friend makes a box-and-whisker plot for the data shown. Is your friend correct? Explain your reasoning.\n\n$37, 32, 26, 36, 28, 24, 34, 29, 30$\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[->] (0,0) -- (14,0);\n\\foreach \\x/\\label in {0/24, 1/25, 2/26, 3/27, 4/28, 5/29, 6/30, 7/31, 8/32, 9/33, 10/34, 11/35, 12/36, 13/37} {\n  \\draw (\\x,-0.2) -- (\\x,0.2);\n  \\node[below] at (\\x,-0.3) {\\label};\n}\n\\filldraw (1,1) circle (3pt);\n\\draw (4,0.5) rectangle (10,1.5);\n\\draw (7,0.5) -- (7,1.5);\n\\draw (1,1) -- (4,1);\n\\draw (10,1) -- (12,1);\n\\filldraw (12,1) circle (3pt);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_5.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_13p2_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.2",
+  "topic": "interpreting histograms and frequency distributions",
+  "latex": "The histogram shows the numbers of laps completed during a practice by the swimmers on a team.\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw[->] (0,0) -- (6.5,0) node[below] {};\n\\draw[->] (0,0) -- (0,4.5);\n\\node[above] at (3,4.2) {\\textbf{Swim Team}};\n\\node[rotate=90, left] at (-0.7,2) {Frequency};\n\\node[below] at (3,-0.5) {Laps};\n% Y-axis labels\n\\foreach \\y/\\label in {0/0, 0.5/3, 1/6, 1.5/9, 2/12, 2.5/15, 3/18, 3.5/21} {\n  \\node[left] at (0,\\y) {\\label};\n  \\draw (-0.1,\\y) -- (0.1,\\y);\n}\n% Bars\n\\fill[gray!50] (0.2,0) rectangle (1,1) node[midway, below=1cm] {0--4};\n\\fill[gray!50] (1.2,0) rectangle (2,3.5) node[midway, below=3.5cm] {5--9};\n\\fill[gray!50] (2.2,0) rectangle (3,2) node[midway, below=2cm] {10--14};\n\\fill[gray!50] (3.2,0) rectangle (4,1.5) node[midway, below=1.5cm] {15--19};\n\\fill[gray!50] (4.2,0) rectangle (5,0.5) node[midway, below=0.5cm] {20--24};\n% X-axis labels\n\\node[below] at (0.6,-0.1) {0--4};\n\\node[below] at (1.6,-0.1) {5--9};\n\\node[below] at (2.6,-0.1) {10--14};\n\\node[below] at (3.6,-0.1) {15--19};\n\\node[below] at (4.6,-0.1) {20--24};\n\\end{tikzpicture}\n\n\\textbf{a.} Which interval contains the most data values?\n\n\\textbf{b.} How many swimmers are on the team?\n\n\\textbf{c.} How many swimmers swam fewer than 5 laps?\n\n\\textbf{d.} Determine whether you can make the statement, ``There were 3 students who completed 22 laps during practice.'' Explain.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_2.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

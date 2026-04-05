@@ -1,0 +1,18 @@
+{
+  "id": "les_12p5_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.5",
+  "topic": "mean, median, and mean absolute deviation of a data set",
+  "latex": "The data set shows the numbers of fluid ounces of water consumed by 8 people in a day.\n$$62, 85, 72, 65, 57, 88, 68, 75$$\nFind the mean, median, and mean absolute deviation of the data.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_5.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

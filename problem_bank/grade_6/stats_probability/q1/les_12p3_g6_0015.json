@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0015",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "effect of transformation on mean, median, and mode",
+  "latex": "At a bookstore, the regular prices of 5 books are \\$16.99, \\$35.99, \\$27.99, \\$17.99, and \\$16.99. When they go on sale, the price of each book decreases by \\$3.50. How does this decrease affect the mean, median, and mode?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

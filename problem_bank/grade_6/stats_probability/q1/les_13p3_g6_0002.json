@@ -1,0 +1,18 @@
+{
+  "id": "les_13p3_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.3",
+  "topic": "describing shape of distribution from dot plot",
+  "latex": "Describe the shape of the distribution.\n\n\\textbf{Pairs of Shoes Worn Per Day}\n\n\\begin{tikzpicture}[scale=0.6]\n\\draw[->] (0,0) -- (5,0) node[right] {Pairs};\n\\foreach \\x in {1,2,3,4} \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\x};\n% Dot plot data\n% x=1: 7 dots\n\\foreach \\y in {0.5,1,1.5,2,2.5,3,3.5} \\fill (1,\\y) circle (4pt);\n% x=2: 7 dots\n\\foreach \\y in {0.5,1,1.5,2,2.5,3,3.5} \\fill (2,\\y) circle (4pt);\n% x=3: 5 dots\n\\foreach \\y in {0.5,1,1.5,2,2.5} \\fill (3,\\y) circle (4pt);\n% x=4: 2 dots\n\\fill (4,0.5) circle (4pt);\n\\fill (4,1) circle (4pt);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_3.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

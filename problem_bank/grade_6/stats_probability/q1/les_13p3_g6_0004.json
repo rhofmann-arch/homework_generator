@@ -1,0 +1,18 @@
+{
+  "id": "les_13p3_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.3",
+  "topic": "describing shape of distribution from histogram",
+  "latex": "Describe the shape of the distribution.\n\n\\textbf{Houses on Paper Routes}\n\n\\begin{tikzpicture}[scale=0.08]\n\\draw[->] (0,0) -- (0,70) node[above] {};\n\\draw[->] (0,0) -- (110,0) node[below] {};\n\\node[left] at (-5,60) {60};\n\\node[left] at (-5,50) {50};\n\\node[left] at (-5,40) {40};\n\\node[left] at (-5,30) {30};\n\\node[left] at (-5,20) {20};\n\\node[left] at (-5,10) {10};\n\\node[left] at (-5,0) {0};\n\\node[rotate=90] at (-18,35) {Frequency};\n\\node[below] at (55,-10) {Houses};\n% Bars\n\\draw[fill=gray!50] (5,0) rectangle (20,10);\n\\node[below] at (12.5,-2) {0--19};\n\\draw[fill=gray!50] (25,0) rectangle (40,20);\n\\node[below] at (32.5,-2) {20--39};\n\\draw[fill=gray!50] (45,0) rectangle (60,35);\n\\node[below] at (52.5,-2) {40--59};\n\\draw[fill=gray!50] (65,0) rectangle (80,35);\n\\node[below] at (72.5,-2) {60--79};\n\\draw[fill=gray!50] (85,0) rectangle (100,55);\n\\node[below] at (92.5,-2) {80--99};\n\\foreach \\y in {10,20,30,40,50,60} \\draw (-1,\\y) -- (1,\\y);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_3.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

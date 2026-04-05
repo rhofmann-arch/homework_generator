@@ -1,0 +1,18 @@
+{
+  "id": "les_12p5_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.5",
+  "topic": "mean absolute deviation calculation from data table",
+  "latex": "Find and interpret the mean absolute deviation of the data.\n\n\\textbf{Numbers of Fish in the Aquarium}\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n14 & 23 & 30 & 17 \\\\\n\\hline\n24 & 20 & 21 & 19 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_5.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

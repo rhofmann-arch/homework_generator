@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "range of a data set",
+  "latex": "Find the range of the data.\n\n$34, 31, 35, 36, 27, 33$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_13p5_g6_0008",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.5",
+  "topic": "creating data sets with specific distribution shapes",
+  "latex": "Write a data set with 12 values that has a skewed left box-and-whisker plot.",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "6_13_5.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

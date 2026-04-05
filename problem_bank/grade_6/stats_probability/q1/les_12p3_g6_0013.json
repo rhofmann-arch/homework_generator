@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0013",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "mean, median, mode and best measure of center",
+  "latex": "Find the mean, median, and mode of the data. Choose the measure that best represents the data. Explain your reasoning.\n\n$66, 57, 66, 16, 2, 35, 66, 114$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

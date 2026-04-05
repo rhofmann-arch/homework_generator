@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "median and mode of an unordered data set with repeated values",
+  "latex": "Find the median and mode of the data.\n\n$15, 22, 21, 22, 12, 16$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

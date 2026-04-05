@@ -1,0 +1,18 @@
+{
+  "id": "les_13p4_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.4",
+  "topic": "Frequency tables, histograms, measures of center and variation",
+  "latex": "The frequency table shows the completion times of several chefs in a Bake-Off contest.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (10,1.2);\n\\draw (0,0.6) -- (10,0.6);\n\\draw (3.2,0) -- (3.2,1.2);\n\\draw (4.5,0) -- (4.5,1.2);\n\\draw (5.8,0) -- (5.8,1.2);\n\\draw (7.1,0) -- (7.1,1.2);\n\\draw (8.4,0) -- (8.4,1.2);\n\\draw (9.2,0) -- (9.2,1.2);\n\\node[anchor=west] at (0.1,0.9) {\\textbf{Completion Times (minutes)}};\n\\node[anchor=west] at (0.1,0.3) {\\textbf{Frequency}};\n\\node at (3.85,0.9) {20--24};\n\\node at (5.15,0.9) {25--29};\n\\node at (6.45,0.9) {30--34};\n\\node at (7.75,0.9) {35--39};\n\\node at (8.8,0.9) {40--44};\n\\node at (9.6,0.9) {45--49};\n\\node at (3.85,0.3) {3};\n\\node at (5.15,0.3) {6};\n\\node at (6.45,0.3) {8};\n\\node at (7.75,0.3) {8};\n\\node at (8.8,0.3) {6};\n\\node at (9.6,0.3) {3};\n\\end{tikzpicture}\n\n\\textbf{a.} Display the data in a histogram.\n\n\\textbf{b.} What are the most appropriate measures to describe the center and variation?\n\n\\textbf{c.} Can you find the exact values of the measures of center and variation for data?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_4.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

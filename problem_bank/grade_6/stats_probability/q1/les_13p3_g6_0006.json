@@ -1,0 +1,18 @@
+{
+  "id": "les_13p3_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.3",
+  "topic": "Comparing histograms and analyzing distributions for two data sets",
+  "latex": "The frequency table shows the ages of the members of two local fitness clubs.\n\n\\begin{center}\n\\begin{tabular}{|l|c|c|c|c|c|c|}\n\\hline\n\\textbf{Ages of Members} & \\textbf{18--25} & \\textbf{26--33} & \\textbf{34--41} & \\textbf{42--49} & \\textbf{50--57} & \\textbf{58--65} \\\\\n\\hline\nFrequency for Fitness Club A & 14 & 19 & 13 & 8 & 6 & 3 \\\\\n\\hline\nFrequency for Fitness Club B & 4 & 9 & 12 & 13 & 8 & 5 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\n\\textbf{a.} Display the data for each fitness club in a histogram. Describe the shape of each distribution.\n\n\\textbf{b.} Which fitness club would appeal more to a young adult? Explain.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_3.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0008",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "identifying outliers using IQR",
+  "latex": "Use the interquartile range to identify any outliers in Exercises 4--7.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

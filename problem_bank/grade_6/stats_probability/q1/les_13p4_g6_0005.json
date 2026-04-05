@@ -1,0 +1,18 @@
+{
+  "id": "les_13p4_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.4",
+  "topic": "Comparing data sets using measures of center (mean, median, mode)",
+  "latex": "You are deciding what summer volleyball team you want to join. The tables show the number of games won over the past 12 seasons. What is the typical number of games won for each team? Which team would you join? Explain.\n\n\\begin{tikzpicture}\n\\node at (0,2) {\\textbf{Team A}};\n\\draw (-.8,1.5) rectangle (2.4,-.5);\n\\draw (0,1.5) -- (0,-.5);\n\\draw (.8,1.5) -- (.8,-.5);\n\\draw (1.6,1.5) -- (1.6,-.5);\n\\draw (-.8,1) -- (2.4,1);\n\\draw (-.8,.5) -- (2.4,.5);\n\\draw (-.8,0) -- (2.4,0);\n\\node at (-.4,1.25) {4};\n\\node at (.4,1.25) {5};\n\\node at (1.2,1.25) {6};\n\\node at (2,1.25) {5};\n\\node at (-.4,.75) {6};\n\\node at (.4,.75) {3};\n\\node at (1.2,.75) {4};\n\\node at (2,.75) {6};\n\\node at (-.4,.25) {5};\n\\node at (.4,.25) {4};\n\\node at (1.2,.25) {7};\n\\node at (2,.25) {5};\n\n\\node at (5.5,2) {\\textbf{Team B}};\n\\draw (4.7,1.5) -- (4.7,-.5);\n\\draw (5.5,1.5) -- (5.5,-.5);\n\\draw (6.3,1.5) -- (6.3,-.5);\n\\draw (7.1,1.5) -- (7.1,-.5);\n\\draw (3.9,1.5) rectangle (7.1,-.5);\n\\draw (3.9,1) -- (7.1,1);\n\\draw (3.9,.5) -- (7.1,.5);\n\\draw (3.9,0) -- (7.1,0);\n\\node at (4.3,1.25) {3};\n\\node at (5.1,1.25) {9};\n\\node at (5.9,1.25) {7};\n\\node at (6.7,1.25) {4};\n\\node at (4.3,.75) {8};\n\\node at (5.1,.75) {5};\n\\node at (5.9,.75) {4};\n\\node at (6.7,.75) {8};\n\\node at (4.3,.25) {6};\n\\node at (5.1,.25) {9};\n\\node at (5.9,.25) {6};\n\\node at (6.7,.25) {3};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_4.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0011",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "range, interquartile range, and identifying outliers",
+  "latex": "The table shows the numbers of students absent from your class for 12 days. Find and interpret the range and interquartile range of the data. Then determine whether there are any outliers.\n\n\\begin{center}\n\\begin{tikzpicture}\n\\node at (0,0) {\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\multicolumn{4}{|c|}{\\textbf{Numbers of Students}} \\\\\n\\hline\n1 & 0 & 1 & 2 \\\\\n\\hline\n1 & 1 & 2 & 5 \\\\\n\\hline\n0 & 3 & 1 & 0 \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0009",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "error analysis for median and mode calculation",
+  "latex": "Your friend finds the median and mode of the data. Is your friend correct? Explain your reasoning.\n\n\\begin{center}\n\\begin{tabular}{|l|}\n\\hline\n\\textbf{data:} 25, 28, 24, 22, 27, 24, 29, 26 \\\\\n\\textbf{ordered data:} 22, 24, 25, 26, 27, 28, 29 \\\\\n\\hspace{6cm} $\\uparrow$ \\\\\n\\hspace{4.5cm} The median is 26. \\\\\n\\hspace{4.5cm} There is no mode. \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0003",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "range of a data set, error analysis",
+  "latex": "Your friend finds the range of the data. Is your friend correct? Explain your reasoning.\n\n\\begin{tabular}{|l|}\n\\hline\n$3, 7, 12, 8, 30, 16, 24$ \\\\\nThe range is $30 - 3 = 27$. \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_13p3_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.3",
+  "topic": "Creating histograms from frequency tables and describing distributions",
+  "latex": "The frequency table shows the number of minutes spent reading by students in your class. Display the data in a histogram. Describe the shape of the distribution.\n\n\\begin{center}\n\\begin{tabular}{|c|c|}\n\\hline\n\\textbf{Minutes} & \\textbf{Frequency} \\\\\n\\hline\n$0$--$9$ & 3 \\\\\n\\hline\n$10$--$19$ & 6 \\\\\n\\hline\n$20$--$29$ & 10 \\\\\n\\hline\n$30$--$39$ & 6 \\\\\n\\hline\n$40$--$49$ & 3 \\\\\n\\hline\n$50$--$59$ & 2 \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_3.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

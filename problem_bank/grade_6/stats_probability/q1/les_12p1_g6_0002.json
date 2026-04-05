@@ -1,0 +1,18 @@
+{
+  "id": "les_12p1_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.1",
+  "topic": "identifying statistical vs non-statistical questions",
+  "latex": "Determine whether the question is a statistical question. Explain.\n\n\\textbf{2.} How many days are there in June?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_12_1.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

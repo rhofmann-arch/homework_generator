@@ -1,0 +1,18 @@
+{
+  "id": "les_12p1_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.1",
+  "topic": "analyzing data to answer a statistical question",
+  "latex": "You conduct a survey to answer, ``How many hours of sleep does a typical sixth-grade student get on a regular night?'' Use the data in the table to answer the question.\n\n\\textbf{Hours of Sleep}\n\n\\begin{tikzpicture}\n\\draw (0,0) grid (4,3);\n\\node at (0.5,2.5) {7};\n\\node at (1.5,2.5) {8};\n\\node at (2.5,2.5) {5};\n\\node at (3.5,2.5) {7};\n\\node at (0.5,1.5) {8};\n\\node at (1.5,1.5) {7};\n\\node at (2.5,1.5) {7};\n\\node at (3.5,1.5) {6};\n\\node at (0.5,0.5) {6};\n\\node at (1.5,0.5) {9};\n\\node at (2.5,0.5) {6};\n\\node at (3.5,0.5) {7};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

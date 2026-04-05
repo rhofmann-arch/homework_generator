@@ -1,0 +1,18 @@
+{
+  "id": "les_12p2_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.2",
+  "topic": "finding the mean from a tally chart",
+  "latex": "Find the mean of the data.\n\n\\begin{center}\n\\begin{tabular}{|l|c|}\n\\hline\n\\multicolumn{2}{|c|}{\\textbf{Students Absent}} \\\\\n\\hline\nMonday & $||||$ \\\\\n\\hline\nTuesday & $|$ \\\\\n\\hline\nWednesday & $|$ \\\\\n\\hline\nThursday & $||$ \\\\\n\\hline\nFriday & $|||$ \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_2.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

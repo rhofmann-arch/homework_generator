@@ -1,0 +1,18 @@
+{
+  "id": "les_12p2_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.2",
+  "topic": "finding the mean from a tally chart",
+  "latex": "Find the mean of the data.\n\n\\begin{center}\n\\begin{tabular}{|l|c|}\n\\hline\n\\multicolumn{2}{|c|}{\\textbf{Movies Watched in Class}} \\\\\n\\hline\nLanguage Arts & $||||$ \\\\\n\\hline\nSocial Studies & $\\not{||||} |$ \\\\\n\\hline\nMath & $|$ \\\\\n\\hline\nScience & $|||$ \\\\\n\\hline\nArt & $|$ \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_2.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

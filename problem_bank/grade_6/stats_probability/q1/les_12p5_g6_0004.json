@@ -1,0 +1,18 @@
+{
+  "id": "les_12p5_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.5",
+  "topic": "mean absolute deviation calculation with decimals",
+  "latex": "Find and interpret the mean absolute deviation of the data.\n\n\\textbf{Gallons of Gas in Container}\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n4.8 & 3.4 & 5 & 3.5 \\\\\n\\hline\n4.2 & 2.6 & 4.3 & 2.6 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_5.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

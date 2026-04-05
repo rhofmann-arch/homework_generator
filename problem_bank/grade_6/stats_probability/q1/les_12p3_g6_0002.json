@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "median and mode of a data set, even number of values",
+  "latex": "Find the median and mode of the data.\n\n$2, 2, 6, 8, 10, 14$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p5_g6_0008",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.5",
+  "topic": "reasoning about mean absolute deviation and data variability",
+  "latex": "Which data set would have the greater mean absolute deviation? Explain your reasoning.\n\nnumbers of cars parked in a driveway each day\n\nnumbers of cars parked at a supermarket each day",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_5.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

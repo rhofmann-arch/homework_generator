@@ -1,0 +1,18 @@
+{
+  "id": "les_13p1_g6_0003",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.1",
+  "topic": "creating stem-and-leaf plots from data",
+  "latex": "Make a stem-and-leaf plot of the data.\n\n\\textbf{Push-Ups Completed}\n\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\n48 & 56 & 20 & 24 & 28 & 35 \\\\\n\\hline\n46 & 52 & 59 & 48 & 39 & 31 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p5_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.5",
+  "topic": "error analysis and verification of mean absolute deviation calculation",
+  "latex": "Your friend finds and interprets the mean absolute deviation of the data set 5, 7, 10, 9, and 6. Is your friend correct? Explain your reasoning.\n\n\\begin{tabular}{|l|}\n\\hline\n$\\text{Mean} = \\dfrac{5 + 7 + 10 + 9 + 6}{5} = 7.4$ \\\\\n\\\\\n$\\text{MAD} = \\dfrac{2.4 + 0.4 + 2.6 + 1.6 + 1.4}{5} = 1.68$ \\\\\n\\\\\nSo, the data values differ from the mean by \\\\\nan average of 1.68. \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_5.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

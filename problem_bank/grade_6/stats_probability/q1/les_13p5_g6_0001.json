@@ -1,0 +1,18 @@
+{
+  "id": "les_13p5_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.5",
+  "topic": "creating box-and-whisker plots from data sets",
+  "latex": "Make a box-and-whisker plot for the data.\n\nMiles per gallon: 18, 30, 24, 19, 22, 34, 13, 12, 20, 25, 28, 17",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_5.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

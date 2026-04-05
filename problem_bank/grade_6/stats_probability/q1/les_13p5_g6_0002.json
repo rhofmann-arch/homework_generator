@@ -1,0 +1,18 @@
+{
+  "id": "les_13p5_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.5",
+  "topic": "creating box-and-whisker plots from data sets",
+  "latex": "Make a box-and-whisker plot for the data.\n\nNumbers of take-out orders: 26, 2, 17, 25, 18, 20, 21, 15, 29, 27, 22",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_5.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p2_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.2",
+  "topic": "mean from bar graph, comparing means of data subsets",
+  "latex": "The bar graph shows the number of text messages you sent each month for the last six months.\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw[thick] (0,0) -- (0,5.5);\n\\draw[thick] (0,0) -- (7,0);\n\\node[rotate=90, anchor=south] at (-0.8,2.75) {Number sent};\n\\node at (3.5,-1.2) {Month};\n\\node at (3.5,5.8) {\\textbf{Text Messages}};\n\\foreach \\y/\\label in {0/0, 1/100, 2/200, 3/300, 4/400, 5/500} {\n  \\draw (-0.1,\\y) -- (0.1,\\y);\n  \\node[left] at (-0.1,\\y) {\\label};\n}\n\\fill[gray!50] (0.3,0) rectangle (1,1.08);\n\\node at (0.65,1.3) {108};\n\\fill[gray!50] (1.3,0) rectangle (2,0.99);\n\\node at (1.65,1.2) {99};\n\\fill[gray!50] (2.3,0) rectangle (3,1.26);\n\\node at (2.65,1.5) {126};\n\\fill[gray!50] (3.3,0) rectangle (4,3.24);\n\\node at (3.65,3.5) {324};\n\\fill[gray!50] (4.3,0) rectangle (5,2.87);\n\\node at (4.65,3.1) {287};\n\\fill[gray!50] (5.3,0) rectangle (6,2.74);\n\\node at (5.65,3.0) {274};\n\\node at (0.65,-0.3) {June};\n\\node at (1.65,-0.3) {July};\n\\node at (2.65,-0.3) {Aug.};\n\\node at (3.65,-0.3) {Sept.};\n\\node at (4.65,-0.3) {Oct.};\n\\node at (5.65,-0.3) {Nov.};\n\\end{tikzpicture}\n\n\\textbf{a.} What is the mean monthly number of text messages sent?\n\n\\textbf{b.} Compare the mean monthly number of text messages sent in the first three months with the mean monthly number of text messages sent in the second three months.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_2.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

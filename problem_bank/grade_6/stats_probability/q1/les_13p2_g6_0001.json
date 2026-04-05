@@ -1,0 +1,18 @@
+{
+  "id": "les_13p2_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.2",
+  "topic": "creating histograms from frequency tables",
+  "latex": "Display the data in a histogram.\n\n\\begin{center}\n\\textbf{Free Throws Made}\n\n\\begin{tabular}{|c|c|}\n\\hline\n\\textbf{Free Throws} & \\textbf{Frequency} \\\\\n\\hline\n$0$--$2$ & 9 \\\\\n\\hline\n$3$--$5$ & 6 \\\\\n\\hline\n$6$--$8$ & 2 \\\\\n\\hline\n$9$--$11$ & 1 \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_2.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

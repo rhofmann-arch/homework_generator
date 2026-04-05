@@ -1,0 +1,18 @@
+{
+  "id": "les_13p5_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.5",
+  "topic": "comparing double box-and-whisker plots",
+  "latex": "The double box-and-whisker plot represents the prices of video games at two different stores.\n\n\\begin{tikzpicture}[scale=0.12]\n\\node[left] at (0,8) {Store A};\n\\node[left] at (0,4) {Store B};\n\\draw[->] (5,0) -- (78,0);\n\\foreach \\x in {5,10,15,20,25,30,35,40,45,50,55,60,65,70,75} {\n  \\draw (\\x,-0.8) -- (\\x,0.8);\n}\n\\node[below] at (5,-1.5) {5};\n\\node[below] at (10,-1.5) {10};\n\\node[below] at (15,-1.5) {15};\n\\node[below] at (20,-1.5) {20};\n\\node[below] at (25,-1.5) {25};\n\\node[below] at (30,-1.5) {30};\n\\node[below] at (35,-1.5) {35};\n\\node[below] at (40,-1.5) {40};\n\\node[below] at (45,-1.5) {45};\n\\node[below] at (50,-1.5) {50};\n\\node[below] at (55,-1.5) {55};\n\\node[below] at (60,-1.5) {60};\n\\node[below] at (65,-1.5) {65};\n\\node[below] at (70,-1.5) {70};\n\\node[below] at (75,-1.5) {75};\n\\node[right] at (78,-1) {Price of};\n\\node[right] at (78,-3) {video games};\n\\node[right] at (78,-5) {(dollars)};\n% Store A\n\\filldraw (15,8) circle (8pt);\n\\draw (30,6.5) rectangle (45,9.5);\n\\draw (37,6.5) -- (37,9.5);\n\\draw (15,8) -- (30,8);\n\\draw (45,8) -- (65,8);\n\\filldraw (65,8) circle (8pt);\n% Store B\n\\filldraw (10,4) circle (8pt);\n\\draw (35,2.5) rectangle (50,5.5);\n\\draw (42,2.5) -- (42,5.5);\n\\draw (10,4) -- (35,4);\n\\draw (50,4) -- (55,4);\n\\filldraw (55,4) circle (8pt);\n\\end{tikzpicture}\n\n\\textbf{a.} Which store's prices are more spread out?\n\n\\textbf{b.} You randomly buy one game from each store. Which game is more likely to cost more than \\$45? Explain",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_5.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

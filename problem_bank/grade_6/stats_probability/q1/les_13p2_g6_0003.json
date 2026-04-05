@@ -1,0 +1,18 @@
+{
+  "id": "les_13p2_g6_0003",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.2",
+  "topic": "analyzing and interpreting histograms for accuracy",
+  "latex": "Your friend displays the data in a histogram. Is your friend correct? Explain your reasoning.\n\n\\begin{center}\n\\textbf{Movies Watched Last Month}\n\n\\begin{tabular}{|c|c|}\n\\hline\n\\textbf{Number of Movies} & \\textbf{Frequency} \\\\\n\\hline\n$0$--$1$ & 5 \\\\\n\\hline\n$2$--$3$ & 8 \\\\\n\\hline\n$4$--$5$ & 3 \\\\\n\\hline\n$6$--$7$ & 1 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[thick] (0,0) -- (0,10.5);\n\\draw[thick] (0,0) -- (8.5,0);\n\\foreach \\y in {0,1,2,3,4,5,6,7,8,9,10} {\n  \\draw (-0.2,\\y) -- (0,\\y);\n  \\node[left] at (-0.2,\\y) {\\y};\n}\n\\node[rotate=90] at (-1.5,5) {Frequency};\n\\node at (4.25,-1.5) {Movies watched};\n\\node at (4.25,11.5) {\\textbf{Movies Watched Last Month}};\n\\fill[gray!50] (0.5,0) rectangle (2,5);\n\\fill[gray!50] (2,0) rectangle (3.5,8);\n\\fill[gray!50] (3.5,0) rectangle (5,3);\n\\fill[gray!50] (5,0) rectangle (6.5,1);\n\\node at (1.25,-0.5) {$0$--$1$};\n\\node at (2.75,-0.5) {$2$--$3$};\n\\node at (4.25,-0.5) {$4$--$5$};\n\\node at (5.75,-0.5) {$6$--$7$};\n\\draw[thick] (0.5,0) rectangle (2,5);\n\\draw[thick] (2,0) rectangle (3.5,8);\n\\draw[thick] (3.5,0) rectangle (5,3);\n\\draw[thick] (5,0) rectangle (6.5,1);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_13_2.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

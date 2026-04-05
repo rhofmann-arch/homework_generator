@@ -1,0 +1,18 @@
+{
+  "id": "les_12p2_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.2",
+  "topic": "calculating mean with repeated values",
+  "latex": "You spend 100 minutes on homework each night from Monday through Friday. You spend 190 minutes on homework on Saturday. What is your mean daily number of minutes spent on homework?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_2.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p3_g6_0011",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.3",
+  "topic": "mean, median, mode with and without outlier",
+  "latex": "The average number of hours 10 students spend on their phone a day are 1, 4, 5, 5, 6, 6, 6, 7, 7, and 8. Find the mean, median, and mode of the data with and without the outlier. Which measure does the outlier affect the most?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_3.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

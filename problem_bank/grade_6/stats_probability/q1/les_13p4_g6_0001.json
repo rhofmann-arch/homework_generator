@@ -1,0 +1,18 @@
+{
+  "id": "les_13p4_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.4",
+  "topic": "choosing appropriate measures of center and variation from dot plots",
+  "latex": "Choose the most appropriate measures to describe the center and variation.\n\n\\textbf{Daily Running Distances}\n\n\\begin{tikzpicture}\n\\draw[->] (0,0) -- (7.5,0) node[right] {Miles};\n\\foreach \\x in {1,2,3,4,5,6,7} \\draw (\\x,0) -- (\\x,-0.1) node[below] {\\x};\n% Data points (dot plot)\n\\fill (2,0.2) circle (2pt);\n\\fill (3,0.2) circle (2pt);\n\\fill (3,0.4) circle (2pt);\n\\fill (4,0.2) circle (2pt);\n\\fill (4,0.4) circle (2pt);\n\\fill (4,0.6) circle (2pt);\n\\fill (5,0.2) circle (2pt);\n\\fill (5,0.4) circle (2pt);\n\\fill (5,0.6) circle (2pt);\n\\fill (5,0.8) circle (2pt);\n\\fill (6,0.2) circle (2pt);\n\\fill (6,0.4) circle (2pt);\n\\fill (6,0.6) circle (2pt);\n\\fill (6,0.8) circle (2pt);\n\\fill (6,1.0) circle (2pt);\n\\fill (7,0.2) circle (2pt);\n\\fill (7,0.4) circle (2pt);\n\\fill (7,0.6) circle (2pt);\n\\fill (7,0.8) circle (2pt);\n\\fill (7,1.0) circle (2pt);\n\\fill (7,1.2) circle (2pt);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_4.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0010",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "finding missing data value given range, interquartile range",
+  "latex": "The table shows the ages of cars in a parking lot.\n\n\\begin{center}\n\\begin{tikzpicture}\n\\node at (0,0) {\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\multicolumn{4}{|c|}{\\textbf{Ages of Cars (years)}} \\\\\n\\hline\n5 & 3 & 1 & 8 \\\\\n\\hline\n10 & 6 & 9 & ? \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}\n\\end{center}\n\n\\textbf{a.} The range of the ages is 12 years. Find the missing age.\n\n\\textbf{b.} Find and interpret the interquartile range.\n\n\\textbf{c.} Another car enters the parking lot. The range and interquartile range of the automobiles does not change. Find a possible age of the car.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

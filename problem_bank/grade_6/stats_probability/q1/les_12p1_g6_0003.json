@@ -1,0 +1,18 @@
+{
+  "id": "les_12p1_g6_0003",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.1",
+  "topic": "identifying statistical vs non-statistical questions",
+  "latex": "Determine whether the question is a statistical question. Explain.\n\n\\textbf{3.} How many hours do sixth-grade students spend studying a week?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_12_1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_12p4_g6_0009",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "12.4",
+  "topic": "range and interquartile range from data in a table",
+  "latex": "The table shows the swim times for swimmers in the final heat.\n\n\\begin{center}\n\\begin{tikzpicture}\n\\node at (0,0) {\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\multicolumn{4}{|c|}{\\textbf{Swim Times (seconds)}} \\\\\n\\hline\n24.7 & 23 & 27.9 & 25.1 \\\\\n\\hline\n24 & 23.8 & 24.5 & 25 \\\\\n\\hline\n23.9 & 24.1 & 23.5 & 23.2 \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}\n\\end{center}\n\n\\textbf{a.} Find and interpret the range of the swim times.\n\n\\textbf{b.} Find and interpret the interquartile range of the swim times.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_12_4.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

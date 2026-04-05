@@ -1,0 +1,18 @@
+{
+  "id": "les_13p1_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.1",
+  "topic": "stem-and-leaf plots, data analysis",
+  "latex": "The table shows the average number of people in a store each hour that it is open.\n\n\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|c|}\n\\hline\n\\multicolumn{7}{|c|}{\\textbf{Average Number of People}} \\\\\n\\hline\n19 & 32 & 27 & 37 & 45 & 39 & \\\\\n\\hline\n35 & 29 & 31 & 30 & 32 & 28 & \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\n\\textbf{a.} Make a stem-and-leaf plot for the average number of people in the store.\n\n\\textbf{b.} Use the data to answer the question, ``What is the typical number of people in the store?''",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

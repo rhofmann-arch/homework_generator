@@ -1,0 +1,18 @@
+{
+  "id": "les_13p1_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "13.1",
+  "topic": "stem-and-leaf plots, data interpretation",
+  "latex": "The table shows the number of lawns you mowed each month for a year.\n\n\\begin{center}\n\\begin{tabular}{|c|c|c|c|c|c|}\n\\hline\n\\multicolumn{6}{|c|}{\\textbf{Lawns Mowed}} \\\\\n\\hline\n5 & 12 & 7 & 10 & 25 & 30 \\\\\n\\hline\n12 & 8 & 21 & 17 & 20 & 4 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\n\\textbf{a.} Make a stem-and-leaf plot for the lawns you mowed.\n\n\\textbf{b.} In how many months did you mow less than 12 lawns?\n\n\\textbf{c.} How are the data distributed?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_13_1.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
