@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "unit rate, distance-speed-time with unit conversion",
+  "latex": "A robot moving forward at a constant speed takes $2.5$ hours to travel $1$ kilometer. Moving forward at this same constant speed, it takes the robot $90$ seconds to travel the length of a particular hallway. How many meters long is the hallway?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_10a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

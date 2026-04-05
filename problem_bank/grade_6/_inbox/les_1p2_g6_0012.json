@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0012",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "probability as ratio of part to whole, percent conversion",
+  "latex": "Let the number of losses be $7x$. It follows that the number of wins is $13x$ and the total number of games is $7x + 13x = 20x$. Find the probability of losing the game.",
+  "answer_latex": "35\\%",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_4.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

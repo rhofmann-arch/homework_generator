@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0078",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "area and perimeter comparison, optimization",
+  "latex": "The area of the garden was 500 square feet $(50 \\times 10)$ and its perimeter was 120 feet, $2 \\times (50 + 10)$. The square garden is also enclosed by 120 feet of fence so its sides are each 30 feet long. The square garden's area is 900 square feet $(30 \\times 30)$. and this has increased the garden area by $\\boxed{?}$ square feet.",
+  "answer_latex": "400",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_5.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

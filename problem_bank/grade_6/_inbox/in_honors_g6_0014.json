@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0014",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent increase with area of squares",
+  "latex": "Let the original side length of the square be $s$. The original area is then $s^2$. After increase, the side length becomes $1.5s$ and the area becomes $(1.5s)^2 = 2.25s^2$. The percent increase is $\\frac{2.25s^2 - s^2}{s^2} = ?$",
+  "answer_latex": "125\\%",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_13.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

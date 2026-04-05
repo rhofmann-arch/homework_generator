@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0003",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "distance, rate, and time with multiple rates",
+  "latex": "After eating lunch together, Jay and Paul start walking in opposite directions. Jay walks $0.75$ miles every $15$ minutes and Paul power walks $2.5$ miles every $30$ minutes. In miles, how far apart are they after $1.5$ hours?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_3.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

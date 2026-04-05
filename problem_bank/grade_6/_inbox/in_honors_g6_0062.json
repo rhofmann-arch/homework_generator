@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0062",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent increase, perimeter of polygons",
+  "latex": "A square is changed into a pentagon by building an equilateral triangle on top of it, as shown. By what percent does the perimeter increase going from the square to the pentagon?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_3.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

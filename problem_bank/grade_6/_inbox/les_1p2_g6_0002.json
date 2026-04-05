@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "percent increase, perimeter of composite figures",
+  "latex": "A square is changed into a pentagon by building an equilateral triangle on top of it, as shown. By what percent does the perimeter increase going from the square to the pentagon?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_3.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

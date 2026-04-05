@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0003",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "ratio and proportion, part-to-whole",
+  "latex": "Allen and Ben are painting a fence. The ratio of the amount of work Allen does to the amount of work Ben does is $3 : 5$. If the fence requires a total of $240$ square feet to be painted, how many square feet does Ben paint?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_10a.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

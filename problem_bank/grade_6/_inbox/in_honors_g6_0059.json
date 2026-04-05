@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0059",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "perimeter and distance along a path, triangle geometry",
+  "latex": "Triangle $ABC$ has side lengths $AB = 5$, $BC = 6$, and $AC = 7$. Two bugs start simultaneously from $A$ and crawl along the perimeter of the triangle in opposite directions at the same speed. They meet at point $D$. What is $BD$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_25a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

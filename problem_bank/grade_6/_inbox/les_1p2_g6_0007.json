@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "order of operations with negative integers",
+  "latex": "Find $-(-(-5))(-3) + 11$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_4.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0008",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.2",
+  "topic": "percent and fraction word problem, working backwards",
+  "latex": "In a spelling bee $50\\%$ of the students were eliminated after the first round. Only $\\frac{1}{3}$ of the remaining students were still in the contest after the second round. If 24 students were still in the contest after the second round, how many students began the contest?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_14a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "linear relationship word problem, rate and distance",
+  "latex": "A hot air balloon is 10 feet off the ground and is rising at a constant rate of 2 feet per second. What is the height of the balloon, in feet, after 25 more seconds?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "Honors_Math_6_11a.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

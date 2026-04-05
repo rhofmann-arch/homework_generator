@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.2",
+  "topic": "percent increase with area of squares",
+  "latex": "The side length of a square is increased by $50\\%$. By what percent is the area increased?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_13.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

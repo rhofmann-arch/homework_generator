@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0053",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "multi-step word problem with fractions and money",
+  "latex": "A fuel tank holds $200$ gallons of gasoline when full. The tank is currently $\\frac{4}{5}$ full. If fuel costs $\\$5.50$ per gallon, how many dollars worth of fuel are needed to fill the rest of the tank?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_23a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0027",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "perimeter of composite figures with squares on triangle sides",
+  "latex": "Squares are constructed on each of the sides of triangle $\\triangle ABC$, as shown. If the perimeter of $\\triangle ABC$ is 17, then what is the perimeter of the nine-sided figure that is composed of the remaining three sides of each of the squares?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_17a.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

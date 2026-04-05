@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0071",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent calculations, fractions",
+  "latex": "The boys who chose blue account for 50 percent of 40 percent of the students. The girls who chose blue account for 20 percent of 60 percent of the students. What fraction of students who chose blue are boys?",
+  "answer_latex": "5/8",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_4.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

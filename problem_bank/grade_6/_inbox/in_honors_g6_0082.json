@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0082",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent word problem, solving equations with fractions",
+  "latex": "If $20\\%$ of the toys were put on the shelves, the $80\\%$ of the toys were left in storage. Therefore, we are given $80\\%T = 120$, where $T$ is the number of toys in the order. Rewriting $80\\%$ as $\\frac{4}{5}$ and multiplying both sides by $\\frac{5}{4}$, we find that $T = 120 \\cdot \\frac{5}{4} = 30 \\cdot 5 = ?$",
+  "answer_latex": "150",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_6.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

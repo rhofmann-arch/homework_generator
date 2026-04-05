@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0016",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "system of linear equations, substitution",
+  "latex": "If $a + b = c$ and $b + c = 11$ and $c = 8$, what is the value of $a$?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_14a.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

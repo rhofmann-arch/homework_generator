@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0030",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "perimeter of composite figures, geometry",
+  "latex": "Forty-eight congruent parallelograms with sides of length 62 feet and 20 feet are placed in a chevron pattern forming hexagon $ABCDEF$, as shown. What is the perimeter of hexagon $ABCDEF$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_18.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

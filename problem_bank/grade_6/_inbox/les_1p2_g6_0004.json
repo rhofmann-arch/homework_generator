@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0004",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "linear equation with percent (sales tax)",
+  "latex": "Let $x$ be the cost of the tie before tax. Since the sales tax is $3\\%$, this means that the price of the tie after tax is $1.03x = 9.27$. Dividing both sides by $1.03$ to solve for $x$, we see that $x = ?$.",
+  "answer_latex": "9",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_3.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

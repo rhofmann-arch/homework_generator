@@ -1,0 +1,18 @@
+{
+  "id": "les_1p6_g6_0001",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.6",
+  "topic": "percent proportion word problem",
+  "latex": "At lunch, $60\\%$ of the students selected soda while $20\\%$ selected milk. If 72 students selected soda, how many students selected milk?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_9.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

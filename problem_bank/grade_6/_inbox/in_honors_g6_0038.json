@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0038",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "exponential growth and inequalities",
+  "latex": "The capacity of a school is 1100 students and the current enrollment is 980 students. If the student population increases at a rate of 5 percent per year, what is the smallest integer $n$ such that the enrollment will exceed the capacity in $n$ years?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_20.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_2p3_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.3",
+  "topic": "system of linear equations word problem with percentages",
+  "latex": "There are 81 cars in the CMC parking lot, which are all Acuras, Beetles, or Camrys. There are half as many Acuras as Beetles. The number of Camrys is $80\\%$ of the number of Acuras and Beetles together. How many of the 81 cars are Beetles?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_15a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

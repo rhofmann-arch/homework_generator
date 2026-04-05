@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0093",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "fractions and proportional reasoning",
+  "latex": "This means that the trumpet is $\\frac{4}{5}$ copper, and $\\frac{1}{5}$ zinc. Since there are 48 ounces of copper, and that represents $\\frac{4}{5}$ of the total, we can simply divide by 4 to find the corresponding amount of zinc, making for $\\frac{48}{4} = $ how many ounces of zinc?",
+  "answer_latex": "12",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_8.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

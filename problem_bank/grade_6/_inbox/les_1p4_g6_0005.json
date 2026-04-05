@@ -1,0 +1,18 @@
+{
+  "id": "les_1p4_g6_0005",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.4",
+  "topic": "unit rate, miles per gallon calculation",
+  "latex": "The car takes 4 gallons uphill and 2 gallons downhill, for a total of 6 gallons. The car goes a total of 96 miles, leaving mileage at $\\frac{96}{6} = ?$ miles per gallon.",
+  "answer_latex": "16",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_6.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

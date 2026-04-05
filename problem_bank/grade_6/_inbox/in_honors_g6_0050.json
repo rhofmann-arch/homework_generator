@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0050",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "angle relationships in triangles, supplementary angles",
+  "latex": "Given $\\angle 1 + \\angle 2 = 180^\\circ$ and $\\angle 3 = \\angle 4$, find $\\angle 4$. Express your answer in degrees. [Figure shows a triangle with angles labeled: $40^\\circ$ at the top, and angles $70^\\circ$, $1$, $2$, and $3$ at the base, with $\\angle 4$ at another vertex.]",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_22a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

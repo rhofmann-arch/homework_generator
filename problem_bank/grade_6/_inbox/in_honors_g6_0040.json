@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0040",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "order of operations with exponents",
+  "latex": "Evaluate $4^2 + 3^2 \\cdot 2^2 - 5^2$ using the order of operations.",
+  "answer_latex": "27",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_20.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

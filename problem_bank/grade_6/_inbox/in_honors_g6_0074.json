@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0074",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent increase calculation",
+  "latex": "A tree grew from a height of 6 feet to 15 feet. By what percent did its height increase?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_5.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0041",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent increase, compound growth",
+  "latex": "A school has 980 students. Each year, enrollment increases by 5\\% of the previous year's enrollment. After how many years will the enrollment exceed 1100 students?",
+  "answer_latex": "3",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_20.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

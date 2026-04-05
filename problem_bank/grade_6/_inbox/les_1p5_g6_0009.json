@@ -1,0 +1,18 @@
+{
+  "id": "les_1p5_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.5",
+  "topic": "fractions, proportional reasoning with parts of a whole",
+  "latex": "The trumpet is $\\frac{4}{5}$ copper, and $\\frac{1}{5}$ zinc. Since there are 48 ounces of copper, and that represents $\\frac{4}{5}$ of the total, find the corresponding amount of zinc.",
+  "answer_latex": "12",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_8.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

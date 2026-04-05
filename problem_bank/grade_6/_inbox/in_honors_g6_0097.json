@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0097",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent ratio and fraction of a whole number",
+  "latex": "The number of students who selected milk will be $\\frac{20\\%}{60\\%} = \\frac{1}{3}$ of the number of students who selected soda. Therefore, $\\frac{1}{3} \\cdot 72 = ?$ students selected milk.",
+  "answer_latex": "24",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_9.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

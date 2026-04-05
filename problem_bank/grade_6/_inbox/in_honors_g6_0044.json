@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0044",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "triangle angle sum, solving for unknown angles",
+  "latex": "What, in degrees, is the measure of the largest angle in $\\triangle PQR$?\n\n[Triangle with angles labeled: $3x^\\circ$ at $P$, $6x^\\circ$ at $Q$, and $x^\\circ$ at $R$]",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_21 (1).pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

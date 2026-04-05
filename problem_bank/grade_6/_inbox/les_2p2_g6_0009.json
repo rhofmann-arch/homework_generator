@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.2",
+  "topic": "perimeter of composite figures with equilateral triangles, midpoints",
+  "latex": "Triangle $ABC$, $ADE$, and $EFG$ are all equilateral. Points $D$ and $G$ are midpoints of $\\overline{AC}$ and $\\overline{AE}$, respectively. If $AB = 4$, what is the perimeter of figure $ABCDEFG$?",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "Honors_Math_6_14a.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

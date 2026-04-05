@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0026",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "percent and rate word problem",
+  "latex": "Anna is reading a 300-page book. She can read a page in two minutes. If she has finished reading 75 percent of the pages, how many minutes of reading does she have left?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_17a.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

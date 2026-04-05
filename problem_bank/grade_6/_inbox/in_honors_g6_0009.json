@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "weighted average and percent calculations",
+  "latex": "Three bags of jelly beans contain $26$, $28$, and $30$ beans. The ratios of yellow beans to all beans in each of these bags are $50\\%$, $25\\%$, and $20\\%$, respectively. All three bags of candy are dumped into one bowl. To the nearest percent, what is the percentage of yellow jelly beans in the bowl?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_12a.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_1p2_g6_0009",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "1.2",
+  "topic": "converting odds to probability, percent",
+  "latex": "The odds of losing a certain card game is 7 to 13, which means that on average there are 7 losses for every 13 wins. What is the probability of losing the game? Express your answer as a percent.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_4.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

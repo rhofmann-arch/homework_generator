@@ -196,6 +196,8 @@ def ingest(
     bank_root: Path,
     dry_run: bool,
     lesson: str | None = None,
+    honors: bool = False,
+    high_priority: bool = False,
 ) -> None:
     client = anthropic.Anthropic()
 
@@ -206,6 +208,10 @@ def ingest(
     print(f"Rasterizing {pdf_path.name}...")
     if lesson:
         print(f"Lesson tag: {lesson}  (all problems will be tagged lesson='{lesson}')")
+    if honors:
+        print("Honors: True  (all problems will be tagged honors=True)")
+    if high_priority:
+        print("High Priority: True  (all problems will be tagged high_priority=True)")
     pages = rasterize_pdf(pdf_path)
 
     key_pages: list[Path | None] = [None] * len(pages)
@@ -252,6 +258,8 @@ def ingest(
             "source_problem_number": prob.get("problem_number"),
             "approved": False,
             "flagged": False,
+            "honors": honors,
+            "high_priority": high_priority,
             "notes": "",
         }
 
@@ -290,6 +298,8 @@ def main():
     parser.add_argument("--grade", type=int, default=GRADE_DEFAULT, help=f"Grade number (default: {GRADE_DEFAULT})")
     parser.add_argument("--bank-root", default=str(BANK_ROOT), help="Path to problem_bank directory")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
+    parser.add_argument("--honors", action="store_true", help="Tag all problems honors=True")
+    parser.add_argument("--high-priority", action="store_true", help="Tag all problems high_priority=True")
     args = parser.parse_args()
 
     ingest(
@@ -299,6 +309,8 @@ def main():
         bank_root=Path(args.bank_root),
         dry_run=args.dry_run,
         lesson=args.lesson,
+        honors=args.honors,
+        high_priority=args.high_priority,
     )
 
 

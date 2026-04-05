@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0024",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": null,
+  "topic": "perimeter of composite figures with congruent rectangles",
+  "latex": "The square shown is divided into 4 congruent rectangles. If the perimeter of the square is 144 units, what is the perimeter of one of the four congruent rectangles?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_16a.pdf",
+  "source_problem_number": 3,
+  "approved": false,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}
