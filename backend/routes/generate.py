@@ -96,9 +96,9 @@ async def generate_homework(req: GenerateRequest):
         )
         logger.info(f"Pacing loaded. Lessons: {context.current_lessons}")
 
-        if not context.current_lessons:
+        if not context.hw_days:
             raise ValueError(
-                f"No lessons found for "
+                f"No homework days found for "
                 f"{'the date ' + req.specific_date if req.specific_date else 'the week of ' + req.week_start}"
                 ". This may be a holiday or non-school day."
             )

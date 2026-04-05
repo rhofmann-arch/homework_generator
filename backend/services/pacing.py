@@ -156,6 +156,21 @@ def get_week_context(week_start: str, grade: str,
     # Fall back to lesson names if topics not filled in
     if not current_week_topics:
         current_week_topics = current_lessons[:]
+
+    # For review/test weeks: current_lessons is empty (SKIP-filtered), but we
+    # still have school days with homework. Use raw lesson names as context so
+    # Claude knows to generate review problems rather than a random lesson.
+    if not current_week_topics and not current_lessons:
+        for _, r in week_rows.iterrows():
+            raw = str(r["lesson"]) if pd.notna(r["lesson"]) else ""
+            if raw and raw not in ("nan", "None") and raw not in seen_ct:
+                seen_ct.add(raw)
+                current_week_topics.append(raw)
+
+    # Final fallback: use most recently covered topic
+    if not current_week_topics and covered_topics:
+        current_week_topics = [f"{covered_topics[-1]} (review)"]
+
     current_topic = "; ".join(current_week_topics) if current_week_topics else "Lesson Practice"
 
     lesson_title = covered_topics[-1] if covered_topics else "Lesson Practice"
