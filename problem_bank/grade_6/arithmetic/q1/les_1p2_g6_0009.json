@@ -1,0 +1,16 @@
+{
+  "id": "les_1p2_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.2",
+  "topic": "order of operations, nested operations with exponents",
+  "latex": "Evaluate the expression. $7^2 - 5(10 - 3^2)$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_1_2.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "les_1p6_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.6",
+  "topic": "LCM using prime factorization, two-digit numbers",
+  "latex": "Find the LCM of the numbers using prime factorizations. $26, 39$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_1_6.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

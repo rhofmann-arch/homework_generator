@@ -1,0 +1,16 @@
+{
+  "id": "les_1p1_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.1",
+  "topic": "evaluating powers with whole number exponents",
+  "latex": "Find the value of the power. $3^4$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_1_1.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

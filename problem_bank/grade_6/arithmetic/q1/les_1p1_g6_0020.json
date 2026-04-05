@@ -1,0 +1,16 @@
+{
+  "id": "les_1p1_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.1",
+  "topic": "square roots, square arrays",
+  "latex": "The following items are arranged in a square array. How many squares are in each row?\n\n\\textbf{a.} A waffle has 16 holes.\n\n\\textbf{b.} A puzzle has 49 pieces.\n\n\\textbf{c.} A board game has 100 spaces.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_1.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

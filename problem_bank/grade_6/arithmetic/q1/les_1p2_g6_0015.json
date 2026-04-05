@@ -1,0 +1,16 @@
+{
+  "id": "les_1p2_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.2",
+  "topic": "money word problem, counting coins",
+  "latex": "You have 8 dimes and 13 nickels. How many cents do you have?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_1_2.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

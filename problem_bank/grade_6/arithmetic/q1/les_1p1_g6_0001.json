@@ -1,0 +1,16 @@
+{
+  "id": "les_1p1_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.1",
+  "topic": "writing repeated multiplication as exponents",
+  "latex": "Write the product as a power. $6 \\times 6$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_1_1.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

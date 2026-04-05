@@ -1,0 +1,16 @@
+{
+  "id": "les_1p5_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "1.5",
+  "topic": "Greatest common factor of three numbers",
+  "latex": "Find the GCF of the numbers. $24, 40, 64$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_5.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
