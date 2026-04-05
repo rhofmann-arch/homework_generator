@@ -584,7 +584,7 @@ function GeneratePanel() {
   }, [])
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-8 items-start">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_520px] gap-8 items-start">
       {/* Left: form + history */}
       <div className="space-y-6">
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-6">
@@ -691,9 +691,9 @@ function GeneratePanel() {
       </div>
 
       {/* Right: preview or editor */}
-      {/* HEIGHT: maxHeight controls the outer container; iframe height controls the PDF viewer */}
+      {/* HEIGHT: height: 92vh gives ProblemEditor a fixed container so flex-1/overflow-y-auto works */}
       <div className="lg:sticky lg:top-6">
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: '92vh' }}>
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" style={{ height: '92vh' }}>
           {editorItem ? (
             <ProblemEditor assignment={editorItem} onClose={() => setEditorItem(null)}
               onRecompiled={(p, k) => handleRecompiled(editorItem.sessionKey, p, k)}/>
