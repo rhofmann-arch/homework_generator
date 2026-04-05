@@ -1,0 +1,16 @@
+{
+  "id": "les_2p5_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.5",
+  "topic": "adding and subtracting decimals in one expression",
+  "latex": "Evaluate the expression. $18.2 - 14.33 + 9.757$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_5.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}

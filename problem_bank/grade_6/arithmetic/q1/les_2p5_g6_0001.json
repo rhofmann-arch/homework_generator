@@ -1,0 +1,16 @@
+{
+  "id": "les_2p5_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.5",
+  "topic": "adding decimals with different decimal places",
+  "latex": "Find the sum or difference. $6.58 + 2.436$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_5.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "notes": ""
+}
