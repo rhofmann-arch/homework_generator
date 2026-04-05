@@ -6,7 +6,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import {
-  generateHomework, fetchHomeworkProblems, recompileHomework,
+  generateHomework, fetchHomeworkProblems, recompileHomework, refreshProblem,
   fetchBankStats, fetchReviewQueue, approveProblem, flagProblem, deleteProblem,
   saveProblemToBank, checkHealth,
   type GenerateRequest, type HomeworkProblems, type HomeworkProblem,
@@ -148,9 +148,10 @@ function HistoryItem({ item, isEditing, onEdit, onRemove }: {
 
 // ─── Problem Card (editor) ────────────────────────────────────────────────────
 
-function ProblemCard({ number, problem, section, grade, onUpdate }: {
+function ProblemCard({ number, problem, section, grade, onUpdate, onRefresh, isRefreshing }: {
   number: number; problem: HomeworkProblem; section: 'front' | 'back' | 'challenge'
   grade: Grade; onUpdate: (u: HomeworkProblem) => void
+  onRefresh?: () => Promise<void>; isRefreshing?: boolean
 }) {
   const [editing, setEditing]     = useState(false)
   const [draft, setDraft]         = useState(problem.latex)
@@ -180,7 +181,14 @@ function ProblemCard({ number, problem, section, grade, onUpdate }: {
     <div className="border border-slate-200 rounded-xl bg-white overflow-hidden">
       <div className="flex items-center justify-between px-3 py-2 bg-slate-50 border-b border-slate-100">
         <span className="text-xs font-semibold text-slate-500">#{number}</span>
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
+          {onRefresh && (
+            <button onClick={onRefresh} disabled={isRefreshing || editing}
+              title="Get a different problem"
+              className={`text-xs font-medium transition ${isRefreshing ? 'text-slate-300 cursor-wait' : 'text-slate-400 hover:text-blue-600'}`}>
+              {isRefreshing ? '↻…' : '↻'}
+            </button>
+          )}
           {!editing && <button onClick={() => { setDraft(problem.latex); setEditing(true) }}
             className="text-xs text-blue-600 hover:text-blue-800 font-medium">Edit LaTeX</button>}
           <button onClick={handleBank} disabled={savedToBank}
@@ -214,10 +222,12 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
   assignment: Assignment; onClose: () => void
   onRecompiled: (newPdf: string, newKey: string) => void
 }) {
-  const [problems,    setProblems]    = useState<HomeworkProblems | null>(null)
-  const [loadError,   setLoadError]   = useState('')
-  const [recompiling, setRecompiling] = useState(false)
-  const [msg,         setMsg]         = useState('')
+  const [problems,      setProblems]      = useState<HomeworkProblems | null>(null)
+  const [loadError,     setLoadError]     = useState('')
+  const [recompiling,   setRecompiling]   = useState(false)
+  const [msg,           setMsg]           = useState('')
+  // Track which problems are currently being refreshed: "front_0", "back_2", etc.
+  const [refreshing,    setRefreshing]    = useState<Set<string>>(new Set())
 
   useEffect(() => {
     fetchHomeworkProblems(assignment.sessionKey).then(setProblems)
@@ -230,6 +240,20 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
       const arr = [...(prev[section] as HomeworkProblem[])]; arr[idx] = updated
       return { ...prev, [section]: arr }
     })
+  }
+
+  const handleRefresh = async (section: 'front' | 'back', idx: number) => {
+    const key = `${section}_${idx}`
+    setRefreshing(prev => new Set(prev).add(key))
+    try {
+      const updated = await refreshProblem(assignment.sessionKey, section, idx)
+      const sectionKey = section === 'front' ? 'front_problems' : 'back_problems'
+      updateProblem(sectionKey, idx, updated)
+    } catch (e: unknown) {
+      setMsg(e instanceof Error ? e.message : 'Refresh failed')
+    } finally {
+      setRefreshing(prev => { const s = new Set(prev); s.delete(key); return s })
+    }
   }
 
   const handleRecompile = async () => {
@@ -274,7 +298,9 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
               <div className="space-y-2">
                 {problems.front_problems.map((p, i) => (
                   <ProblemCard key={i} number={i + 1} problem={p} section="front" grade={assignment.grade}
-                    onUpdate={u => updateProblem('front_problems', i, u)}/>
+                    onUpdate={u => updateProblem('front_problems', i, u)}
+                    onRefresh={() => handleRefresh('front', i)}
+                    isRefreshing={refreshing.has(`front_${i}`)}/>
                 ))}
               </div>
             </section>
@@ -283,7 +309,9 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
               <div className="space-y-2">
                 {problems.back_problems.map((p, i) => (
                   <ProblemCard key={i} number={problems.front_problems.length + i + 1} problem={p} section="back" grade={assignment.grade}
-                    onUpdate={u => updateProblem('back_problems', i, u)}/>
+                    onUpdate={u => updateProblem('back_problems', i, u)}
+                    onRefresh={() => handleRefresh('back', i)}
+                    isRefreshing={refreshing.has(`back_${i}`)}/>
                 ))}
               </div>
             </section>

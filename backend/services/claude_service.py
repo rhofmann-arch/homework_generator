@@ -103,6 +103,19 @@ CHALLENGE_TOOL = {
     },
 }
 
+SINGLE_PROBLEM_TOOL = {
+    "name": "submit_single_problem",
+    "description": "Submit exactly one replacement problem with its answer.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "latex":        {"type": "string", "description": "Problem text in LaTeX."},
+            "answer_latex": {"type": "string", "description": "Answer in LaTeX (e.g. $42$ or $\\dfrac{3}{4}$)."},
+        },
+        "required": ["latex", "answer_latex"],
+    },
+}
+
 
 def _front_prompt(grade, covered, current):
     system = STYLE_NOTES + """
@@ -412,12 +425,13 @@ async def _assemble_front(
     context: WeekContext,
     class_type: str,
     specific_date: str,
-) -> tuple[list[dict], str]:
+) -> tuple[list[dict], str, list[str]]:
     """
     Assemble the front-page spiral review using the problem bank as the
     primary source, with Claude filling any shortfall.
 
-    Returns (problems_list, spiral_topics_str).
+    Returns (problems_list, spiral_topics_str, slots_list).
+    slots_list entries: "hp", "honors", "regular", or "fill".
 
     Grade Level (10 problems):
       • 1  high_priority=True, approved=True, honors excluded
@@ -441,6 +455,9 @@ async def _assemble_front(
         regular     = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
                                       n=3, exclude_honors=True)
         bank_problems = hp_slot + honors_rest + regular
+        slots = (["hp"] * len(hp_slot)
+                 + ["honors"] * len(honors_rest)
+                 + ["regular"] * len(regular))
     else:
         target = 10
         hp_slot = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
@@ -448,6 +465,7 @@ async def _assemble_front(
         rest    = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
                                   n=9, exclude_high_priority=True, exclude_honors=True)
         bank_problems = hp_slot + rest
+        slots = ["hp"] * len(hp_slot) + ["regular"] * len(rest)
 
     bank_latex = [p["latex"] for p in bank_problems]
     shortfall  = target - len(bank_problems)
@@ -460,9 +478,10 @@ async def _assemble_front(
         fill_data      = await _call(fill_sys, fill_usr, FILL_FRONT_TOOL)
         generated_problems = fill_data.get("problems", [])
         spiral_topics      = fill_data.get("spiral_topics", spiral_topics)
+        slots += ["fill"] * len(generated_problems)
 
     all_problems = [{"latex": lat} for lat in bank_latex] + generated_problems
-    return all_problems, spiral_topics
+    return all_problems, spiral_topics, slots
 
 
 async def generate_problems(
@@ -472,7 +491,7 @@ async def generate_problems(
 ) -> dict:
     date_str = specific_date or context.week_start
 
-    front_problems, spiral_topics = await _assemble_front(context, class_type, date_str)
+    front_problems, spiral_topics, front_slots = await _assemble_front(context, class_type, date_str)
 
     # Sample approved bank problems for this lesson to use as templates.
     # Eliminates back-page topic drift — Claude varies numbers only, can't invent new types.
@@ -504,8 +523,107 @@ async def generate_problems(
     return {
         "spiral_topics":      spiral_topics,
         "front_problems":     front_problems,
+        "front_slots":        front_slots,
         "lesson_title":       back_data.get("lesson_title", context.lesson_title),
         "back_problems":      back_data.get("problems", []),
         "challenge_problems": [],   # challenge block removed — honors distinction
                                     # comes from honors-flagged bank problems on front
+        "_context": {
+            "week_start":       context.week_start,
+            "specific_date":    date_str,
+            "grade":            str(context.grade).split("_")[0],
+            "class_type":       class_type,
+            "current_lessons":  context.current_lessons,
+            "current_topic":    context.current_topic,
+        },
     }
+
+
+# ── Single-problem refresh helpers ────────────────────────────────────────────
+
+async def refresh_front_problem(
+    slot: str,
+    grade: int,
+    class_type: str,
+    school_q: int,
+) -> dict:
+    """
+    Return one replacement front problem {latex, answer_latex}.
+    Samples from the bank using the same slot filters as the original assembly.
+    Falls back to Claude if the bank returns nothing.
+    """
+    import random as _random
+
+    bank_result: list[dict] = []
+    if slot == "hp":
+        bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
+                                      n=3, high_priority_only=True)
+    elif slot == "honors":
+        bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
+                                      n=3, honors_only=True, exclude_high_priority=True)
+    elif slot == "regular":
+        exclude_honors = (class_type != "honors")
+        bank_result = sample_problems(domain=None, grade=grade, max_quarter=school_q,
+                                      n=3, exclude_honors=exclude_honors,
+                                      exclude_high_priority=True)
+
+    if bank_result:
+        p = _random.choice(bank_result)
+        return {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
+
+    # Fallback: Claude generates 1 problem
+    system = STYLE_NOTES + """
+Generate exactly 1 spiral review problem for 6th grade.
+Cover a topic already studied this year (arithmetic, fractions, ratios, expressions, basic geometry).
+The problem must be solvable in 60-90 seconds. Provide the answer.
+"""
+    user = f"Grade: {grade}\nGenerate 1 spiral review problem."
+    data = await _call(system, user, SINGLE_PROBLEM_TOOL)
+    return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}
+
+
+async def refresh_back_problem(
+    grade: int,
+    class_type: str,
+    current_lessons: list[str],
+    current_topic: str,
+    spiral_topics: str,
+) -> dict:
+    """
+    Return one replacement back problem {latex, answer_latex}.
+    Uses lesson bank templates if available, otherwise free generation.
+    """
+    import random as _random
+
+    templates: list[dict] = []
+    for lesson in current_lessons:
+        templates.extend(
+            sample_problems(domain=None, grade=grade, max_quarter=4, n=3, lesson=lesson)
+        )
+
+    if templates:
+        tmpl = _random.choice(templates)
+        system = STYLE_NOTES + f"""
+Generate exactly 1 lesson practice problem on the topic: {current_topic}.
+Use the provided template as your structural guide — keep the same problem TYPE and STRUCTURE,
+but change ALL numbers, names, units, and real-world context.
+Do not copy the template verbatim. Do not repeat topics from spiral_topics: {spiral_topics}.
+Provide the answer.
+"""
+        user = f"Template:\n{tmpl['latex']}\n\nGenerate 1 new problem by varying this template."
+        data = await _call(system, user, SINGLE_PROBLEM_TOOL)
+        return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}
+
+    # Fallback: free generation
+    system = STYLE_NOTES + f"""
+Generate exactly 1 lesson practice problem on the exact topic: {current_topic}.
+Stay strictly within this lesson's scope. Provide the answer.
+Do not repeat topics from spiral_topics: {spiral_topics}.
+"""
+    user = (
+        f"Grade: {grade}, Class: {class_type}\n"
+        f"Topic: {current_topic}\n"
+        "Generate 1 lesson practice problem."
+    )
+    data = await _call(system, user, SINGLE_PROBLEM_TOOL)
+    return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}

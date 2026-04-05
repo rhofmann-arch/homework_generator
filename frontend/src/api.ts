@@ -20,9 +20,11 @@ export interface HomeworkProblem {
 export interface HomeworkProblems {
   spiral_topics: string
   front_problems: HomeworkProblem[]
+  front_slots?: string[]
   lesson_title: string
   back_problems: HomeworkProblem[]
   challenge_problems: HomeworkProblem[]
+  _context?: Record<string, unknown>
 }
 
 export interface GenerateResult {
@@ -131,6 +133,15 @@ export async function recompileHomework(sessionKey: string, req: RecompileReques
   await throwIfError(res)
   const { hw, key } = await unzipResponse(res)
   return { homeworkBlob: hw, keyBlob: key, sessionKey }
+}
+
+export async function refreshProblem(
+  sessionKey: string,
+  section: 'front' | 'back',
+  index: number,
+): Promise<HomeworkProblem> {
+  const res = await postJSON(`/api/homework/${encodeURIComponent(sessionKey)}/refresh`, { section, index })
+  return res.json()
 }
 
 // ─── Bank API ─────────────────────────────────────────────────────────────────

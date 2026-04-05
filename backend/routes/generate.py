@@ -7,7 +7,9 @@ from pathlib import Path
 import io, json, traceback, logging, zipfile
 
 from services.pacing import get_week_context, get_all_weeks
-from services.claude_service import generate_problems
+from services.claude_service import (
+    generate_problems, refresh_front_problem, refresh_back_problem, _school_quarter,
+)
 from services.latex_builder import build_pdf, build_key_pdf
 
 logging.basicConfig(level=logging.INFO)
@@ -43,6 +45,11 @@ class RecompileRequest(BaseModel):
     grade: Literal["5", "6", "7", "8"]
     class_type: Literal["grade_level", "honors"]
     specific_date: Optional[str] = None
+
+
+class RefreshRequest(BaseModel):
+    section: Literal["front", "back"]
+    index: int
 
 
 @router.get("/weeks/{grade}")
@@ -176,4 +183,61 @@ async def recompile_homework(key: str, req: RecompileRequest):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         logger.error(f"Recompile failed: {traceback.format_exc()}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/homework/{key}/refresh")
+async def refresh_problem(key: str, req: RefreshRequest):
+    """
+    Re-sample one problem from the bank or Claude.
+    Updates the session JSON and returns {latex, answer_latex}.
+    """
+    path = SESSIONS_DIR / f"{key}.json"
+    if not path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail="Session not found — please regenerate the homework."
+        )
+
+    session = json.loads(path.read_text())
+    ctx = session.get("_context")
+    if not ctx:
+        raise HTTPException(
+            status_code=400,
+            detail="Session is missing context — please regenerate the homework."
+        )
+
+    try:
+        if req.section == "front":
+            slots     = session.get("front_slots", [])
+            slot      = slots[req.index] if req.index < len(slots) else "regular"
+            school_q  = _school_quarter(ctx["specific_date"])
+            result    = await refresh_front_problem(
+                slot=slot,
+                grade=int(ctx["grade"]),
+                class_type=ctx["class_type"],
+                school_q=school_q,
+            )
+        else:
+            result = await refresh_back_problem(
+                grade=int(ctx["grade"]),
+                class_type=ctx["class_type"],
+                current_lessons=ctx["current_lessons"],
+                current_topic=ctx["current_topic"],
+                spiral_topics=session.get("spiral_topics", ""),
+            )
+
+        # Update session storage with the new problem
+        section_key = "front_problems" if req.section == "front" else "back_problems"
+        probs = session.get(section_key, [])
+        if req.index < len(probs):
+            probs[req.index] = result
+            session[section_key] = probs
+            SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(session, indent=2))
+
+        return result
+
+    except Exception as e:
+        logger.error(f"Refresh failed: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=str(e))
