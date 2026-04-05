@@ -1,0 +1,16 @@
+{
+  "id": "les_2p8_g6_0017",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.8",
+  "topic": "error analysis in decimal division",
+  "latex": "Your friend evaluates the quotient. Is your friend correct? Explain your reasoning.\n\n$$\\begin{array}{r} 2.7 \\\\ 5\\overline{)1.35} \\\\ -10 \\\\ \\hline 35 \\\\ -35 \\\\ \\hline 0 \\end{array}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_8.pdf",
+  "source_problem_number": 17,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "les_2p6_g6_0013",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "2.6",
+  "topic": "error analysis in decimal multiplication",
+  "latex": "Your friend evaluates the product. Is your friend correct? Explain your reasoning.\n$$\\begin{array}{r} 0.0004 \\\\ \\times\\; 8 \\\\ \\hline 0.032 \\end{array}$$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_6.pdf",
+  "source_problem_number": 13,
+  "approved": false,
+  "flagged": false,
+  "notes": ""
+}
