@@ -1,0 +1,18 @@
+{
+  "id": "les_2p3_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": "2.3",
+  "topic": "Fraction word problem involving capacity and algebraic reasoning",
+  "latex": "A beverage dispenser is $\\frac{1}{5}$ full. The dispenser is $\\frac{4}{5}$ full when 6 gallons of water are added. How much water can the dispenser hold?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_3.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true,
+  "high_priority": false
+}

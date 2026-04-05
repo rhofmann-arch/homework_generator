@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "2.2",
+  "topic": "multiplying proper and improper fractions",
+  "latex": "Multiply. $\\frac{8}{9} \\times \\frac{24}{11}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_2.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

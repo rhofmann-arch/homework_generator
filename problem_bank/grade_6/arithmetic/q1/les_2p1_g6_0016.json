@@ -1,0 +1,18 @@
+{
+  "id": "les_2p1_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.1",
+  "topic": "subtracting mixed numbers with unlike denominators",
+  "latex": "Add or subtract. $6\\frac{2}{5} - 2\\frac{3}{8}$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_1.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

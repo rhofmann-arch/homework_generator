@@ -1,0 +1,18 @@
+{
+  "id": "les_2p1_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.1",
+  "topic": "subtracting fractions with unlike denominators",
+  "latex": "Add or subtract. $\\frac{11}{14} - \\frac{5}{7}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_1.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": true
+}

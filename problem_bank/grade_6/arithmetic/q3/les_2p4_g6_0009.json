@@ -1,0 +1,18 @@
+{
+  "id": "les_2p4_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "2.4",
+  "topic": "dividing mixed numbers by whole numbers",
+  "latex": "Divide. $9\\frac{3}{5} \\div 12$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_4.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

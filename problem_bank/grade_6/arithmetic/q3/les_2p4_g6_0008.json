@@ -1,0 +1,18 @@
+{
+  "id": "les_2p4_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "2.4",
+  "topic": "dividing whole numbers by mixed numbers",
+  "latex": "Divide. $21 \\div 5\\frac{1}{4}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_4.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_2p1_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.1",
+  "topic": "adding fractions with like denominators",
+  "latex": "Add or subtract. $\\frac{2}{5} + \\frac{3}{5}$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

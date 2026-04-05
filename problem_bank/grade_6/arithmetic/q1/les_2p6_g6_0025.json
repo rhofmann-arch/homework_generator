@@ -1,0 +1,18 @@
+{
+  "id": "les_2p6_g6_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.6",
+  "topic": "multi-step decimal word problem, multiplication and subtraction",
+  "latex": "You buy three baskets of fruit for $\\$5.65$ per basket. You hand the cashier a $\\$20$ bill. How much change will you get back?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_6.pdf",
+  "source_problem_number": 25,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": true,
+  "high_priority": false
+}

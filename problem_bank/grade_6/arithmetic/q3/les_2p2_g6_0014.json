@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "2.2",
+  "topic": "multiplying a mixed number by a fraction",
+  "latex": "Multiply. $5\\frac{3}{5} \\times \\frac{5}{7}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_2.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

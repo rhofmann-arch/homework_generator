@@ -1,0 +1,18 @@
+{
+  "id": "les_2p6_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.6",
+  "topic": "multiplying decimals, tenths",
+  "latex": "Multiply. $\\begin{array}{r} 0.3 \\\\ \\times\\ 0.4 \\\\ \\hline \\end{array}$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_6.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

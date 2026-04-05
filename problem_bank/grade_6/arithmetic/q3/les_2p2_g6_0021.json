@@ -1,0 +1,18 @@
+{
+  "id": "les_2p2_g6_0021",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "2.2",
+  "topic": "multiplying a mixed number by a fraction",
+  "latex": "Multiply. $4\\frac{2}{3} \\times \\frac{3}{14}$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_2.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}

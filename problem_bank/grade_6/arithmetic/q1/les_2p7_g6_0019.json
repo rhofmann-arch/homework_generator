@@ -1,0 +1,18 @@
+{
+  "id": "les_2p7_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "2.7",
+  "topic": "division word problem, money",
+  "latex": "You want to save a total of $\\$11{,}700$. You save $\\$325$ per month. How many months does it take you to reach your goal?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_7.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "notes": "",
+  "honors": false,
+  "high_priority": false
+}
