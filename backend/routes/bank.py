@@ -253,24 +253,29 @@ def delete(req: DeleteRequest):
 # ── Sampler (used by generation pipeline) ────────────────────────────────────
 
 def sample_problems(
-    domain: Optional[str],          # None = any domain
+    domain: str | None,
     grade: int,
     max_quarter: int,
     n: int,
-    honors_only: bool = False,          # only problems with honors=true
-    exclude_honors: bool = False,        # only problems without honors=true
-    high_priority_only: bool = False,    # only problems with high_priority=true
-    exclude_high_priority: bool = False, # only problems without high_priority=true
+    honors_only: bool = False,
+    exclude_honors: bool = False,
+    high_priority_only: bool = False,
+    exclude_high_priority: bool = False,
 ) -> list[dict]:
     """
-    Return up to n randomly sampled approved problems.
-    domain=None draws from all domains.
-    Draws from Q1 through max_quarter (cumulative).
+    Return up to n randomly sampled approved problems from the bank.
+
+    domain        — specific domain string, or None to draw from all domains.
+    max_quarter   — include problems from Q1 through max_quarter (cumulative).
+    honors_only   — only return problems where honors=True.
+    exclude_honors— skip problems where honors=True (use for grade-level front).
+    high_priority_only    — only return problems where high_priority=True.
+    exclude_high_priority — skip problems where high_priority=True.
     """
     gd = grade_dir(grade)
     domains = [domain] if domain else VALID_DOMAINS
-    pool = []
 
+    pool = []
     for d in domains:
         for q in range(1, max_quarter + 1):
             folder = gd / d / f"q{q}"
