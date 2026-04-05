@@ -224,22 +224,26 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
       .catch(e => setLoadError(e instanceof Error ? e.message : 'Failed to load'))
   }, [assignment.sessionKey])
 
-  const updateProblem = (section: 'front_problems' | 'back_problems', idx: number, updated: HomeworkProblem) => {
-    setProblems(prev => prev ? { ...prev, [section]: prev[section].map((p, i) => i === idx ? updated : p) } : prev)
+  const updateProblem = (section: keyof HomeworkProblems, idx: number, updated: HomeworkProblem) => {
+    setProblems(prev => {
+      if (!prev) return prev
+      const arr = [...(prev[section] as HomeworkProblem[])]; arr[idx] = updated
+      return { ...prev, [section]: arr }
+    })
   }
 
   const handleRecompile = async () => {
     if (!problems) return
     setRecompiling(true); setMsg('')
     try {
-      const { homeworkBlob, keyBlob } = await recompileHomework(assignment.sessionKey, {
-        week_start:    assignment.weekStart,
+      const result = await recompileHomework(assignment.sessionKey, {
+        problems,
+        week_start: assignment.weekStart,
+        grade: assignment.grade,
+        class_type: assignment.classType,
         specific_date: assignment.specificDate,
-        grade:         assignment.grade,
-        class_type:    assignment.classType,
-        ...problems,
       })
-      onRecompiled(URL.createObjectURL(homeworkBlob), URL.createObjectURL(keyBlob))
+      onRecompiled(URL.createObjectURL(result.homeworkBlob), URL.createObjectURL(result.keyBlob))
       setMsg('✓ PDF updated')
     } catch (e: unknown) { setMsg(e instanceof Error ? e.message : 'Recompile failed') }
     finally { setRecompiling(false) }
@@ -350,7 +354,7 @@ function ReviewBank() {
   const handleApprove = async () => {
     if (!current || !selectedDomain || !selectedQuarter) { setActionMsg('Select a domain and quarter first.'); return }
     try {
-      await approveProblem({ problem_id: current.id, domain: selectedDomain, quarter: selectedQuarter as number, notes, grade: 6 })
+      await approveProblem(current.id, selectedDomain as Domain, Number(selectedQuarter), notes)
       setActionMsg('✓ Approved'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
@@ -358,7 +362,7 @@ function ReviewBank() {
   const handleFlag = async () => {
     if (!current) return
     try {
-      await flagProblem({ problem_id: current.id, notes, grade: 6 })
+      await flagProblem(current.id, notes)
       setActionMsg('⚑ Flagged'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
@@ -367,7 +371,7 @@ function ReviewBank() {
     if (!current) return
     if (!confirmDelete) { setConfirmDelete(true); return }
     try {
-      await deleteProblem({ problem_id: current.id, grade: 6 })
+      await deleteProblem(current.id)
       setActionMsg('Deleted'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
