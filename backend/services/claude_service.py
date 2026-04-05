@@ -128,15 +128,50 @@ def _back_prompt(
     current_lessons: list[str],
     current_topic: str,
     spiral_topics: str,
+    lesson_templates: list[dict] | None = None,
 ) -> tuple[str, list]:
     """
     Returns (system_prompt, user_content_blocks).
-    user_content_blocks is a list suitable for the Claude messages API —
-    either [{"type": "text", ...}] alone, or with PDF document blocks prepended
-    when a lesson PDF is available.
+
+    If lesson_templates is provided (approved bank problems tagged with the
+    current lesson number), Claude is locked to those problem structures and
+    can only vary numbers/context. This eliminates topic drift entirely.
+
+    If lesson_templates is empty/None, falls back to PDF context + free generation.
     """
     n = "5-7" if class_type == "honors" else "8-10"
 
+    # ── Template-locked path (bank problems exist for this lesson) ──────────────
+    if lesson_templates:
+        templates_text = "\n\n".join(
+            f"Template {i+1}:\n{p['latex']}" for i, p in enumerate(lesson_templates)
+        )
+        system = STYLE_NOTES + f"""
+Rules for lesson practice problems:
+- Generate exactly {n} problems on the topic: {current_topic}.
+- You MUST use the provided templates as your structural guide.
+- For each problem you generate: keep the same problem TYPE and STRUCTURE as a
+  template, but change ALL numbers, names, units, and real-world context.
+- Do not introduce any concept, operation, or problem type not present in the templates.
+- Do not copy templates verbatim — every problem must use different values.
+- The lesson_title you return must match the exact topic. Do not broaden it.
+- Order easier to harder.
+- Do not repeat topics from spiral_topics: {spiral_topics}
+"""
+        content = [{
+            "type": "text",
+            "text": (
+                f"Grade: {grade}, Class: {class_type}\n"
+                f"Lesson: {', '.join(current_lessons)} — {current_topic}\n\n"
+                f"Approved bank problems for this lesson (use as structural templates):\n\n"
+                f"{templates_text}\n\n"
+                f"Generate {n} new problems by varying the templates above. "
+                "Change numbers, names, and context — preserve structure exactly."
+            )
+        }]
+        return system, content
+
+    # ── Free-generation path (no bank templates yet for this lesson) ────────────
     system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
 - Exactly {n} problems on the EXACT topic: {current_topic}.
@@ -149,8 +184,9 @@ Rules for lesson practice problems:
 - Do not repeat topics from spiral_topics: {spiral_topics}
 - Match the style, format, and difficulty of the provided worksheet exactly —
   same problem structure, same vocabulary, same level of scaffolding.
-- Vary problem types (computation, word problem, true/false, error analysis)
+- Vary problem types (computation, word problem, true/false, fill-in-the-blank)
   but only as those types appear in the provided worksheet.
+- NEVER generate error analysis problems ("a student says X, identify the error").
 """
 
     # Build content blocks — start with any lesson PDFs we can find
@@ -180,26 +216,18 @@ Rules for lesson practice problems:
 
         content.append({
             "type": "document",
-            "source": {
-                "type": "base64",
-                "media_type": "application/pdf",
-                "data": pdf_to_base64(lesson_pdf),
-            },
+            "source": {"type": "base64", "media_type": "application/pdf",
+                       "data": pdf_to_base64(lesson_pdf)},
             "title": f"Lesson {lesson} worksheet",
         })
-
         if key_pdf:
             content.append({
                 "type": "document",
-                "source": {
-                    "type": "base64",
-                    "media_type": "application/pdf",
-                    "data": pdf_to_base64(key_pdf),
-                },
+                "source": {"type": "base64", "media_type": "application/pdf",
+                           "data": pdf_to_base64(key_pdf)},
                 "title": f"Lesson {lesson} answer key",
             })
 
-    # Text instruction always goes last — repetition of topic constraint is intentional
     instruction = (
         f"Grade: {grade}, Class: {class_type}\n"
         f"Current lesson: {', '.join(current_lessons)}\n"
@@ -446,12 +474,30 @@ async def generate_problems(
 
     front_problems, spiral_topics = await _assemble_front(context, class_type, date_str)
 
+    # Sample approved bank problems for this lesson to use as templates.
+    # Eliminates back-page topic drift — Claude varies numbers only, can't invent new types.
+    grade_int = int(str(context.grade).split("_")[0])
+    lesson_templates: list[dict] = []
+    for lesson in context.current_lessons:
+        templates = sample_problems(
+            domain=None, grade=grade_int, max_quarter=4, n=6, lesson=lesson
+        )
+        lesson_templates.extend(templates)
+    if len(lesson_templates) > 6:
+        import random as _random
+        lesson_templates = _random.sample(lesson_templates, 6)
+    if lesson_templates:
+        logger.info(f"Found {len(lesson_templates)} bank templates for lesson(s) {context.current_lessons}")
+    else:
+        logger.info(f"No bank templates for lesson(s) {context.current_lessons} — using PDF/free generation")
+
     back_sys, back_content = _back_prompt(
         grade=context.grade,
         class_type=class_type,
         current_lessons=context.current_lessons,
         current_topic=context.current_topic,
         spiral_topics=spiral_topics,
+        lesson_templates=lesson_templates or None,
     )
     back_data = await _call(back_sys, back_content, BACK_TOOL)
 

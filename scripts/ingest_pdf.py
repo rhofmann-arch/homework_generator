@@ -1,4 +1,3 @@
-from __future__ import annotations
 #!/usr/bin/env python3
 """
 Ingests a DeltaMath (or practice pages) PDF into the problem bank.
@@ -195,6 +194,7 @@ def ingest(
     grade: int,
     bank_root: Path,
     dry_run: bool,
+    lesson: str | None = None,
 ) -> None:
     client = anthropic.Anthropic()
 
@@ -203,6 +203,8 @@ def ingest(
         inbox.mkdir(parents=True, exist_ok=True)
 
     print(f"Rasterizing {pdf_path.name}...")
+    if lesson:
+        print(f"Lesson tag: {lesson}  (all problems will be tagged lesson='{lesson}')")
     pages = rasterize_pdf(pdf_path)
 
     key_pages: list[Path | None] = [None] * len(pages)
@@ -223,10 +225,14 @@ def ingest(
     print(f"\nTotal extracted: {len(all_problems)} problems")
     print(f"Destination: {inbox}\n")
 
-    # Use a generic prefix since domain is unknown at ingest time
-    # We'll use source file stem as a loose hint in the ID
-    file_stem = re.sub(r"[^a-z0-9]", "", pdf_path.stem.lower())[:6]
-    id_prefix = f"in_{file_stem}_g{grade}"
+    # Use lesson number in ID when available (e.g. les_2p5_g6_0001)
+    # Otherwise fall back to source file stem
+    if lesson:
+        lesson_slug = re.sub(r"\.", "p", lesson)  # "2.5" → "2p5"
+        id_prefix = f"les_{lesson_slug}_g{grade}"
+    else:
+        file_stem = re.sub(r"[^a-z0-9]", "", pdf_path.stem.lower())[:6]
+        id_prefix = f"in_{file_stem}_g{grade}"
 
     for prob in all_problems:
         prob_id = next_id(inbox, id_prefix)
@@ -236,6 +242,7 @@ def ingest(
             "domain": None,           # Assigned during review
             "grade": grade,
             "quarter": None,          # Assigned during review
+            "lesson": lesson,         # e.g. "2.5" — None for non-lesson PDFs
             "topic": prob.get("topic_description", ""),
             "latex": prob.get("latex", ""),
             "answer_latex": prob.get("answer_latex", ""),
@@ -251,24 +258,34 @@ def ingest(
 
         if dry_run:
             print(f"[dry-run] Would write: {dest.name}")
+            print(f"          lesson: {record['lesson']}")
             print(f"          topic: {record['topic']}")
             print(f"          latex: {record['latex'][:60]}...")
         else:
             dest.write_text(json.dumps(record, indent=2))
-            print(f"Wrote: {dest.name}  |  Q{record['suggested_quarter']}  |  {record['topic']}")
+            lesson_tag = f"  lesson={lesson}" if lesson else ""
+            print(f"Wrote: {dest.name}  |  Q{record['suggested_quarter']}  |  {record['topic']}{lesson_tag}")
 
     if dry_run:
         print(f"\n[dry-run] Would write {len(all_problems)} files to {inbox}")
         print("Run without --dry-run to apply.")
     else:
         print(f"\nIngested {len(all_problems)} problems → {inbox}")
-        print("Next step: run the review UI to assign domain + quarter and approve.")
+        if lesson:
+            print(f"All problems tagged lesson='{lesson}'. After bank review/approval,")
+            print(f"they will appear as back-page templates when lesson {lesson} is current.")
+        else:
+            print("Next step: run the review UI to assign domain + quarter and approve.")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Ingest a PDF into the problem bank inbox")
     parser.add_argument("--pdf", required=True, help="Path to student worksheet PDF")
     parser.add_argument("--key-pdf", help="Path to answer key PDF (optional)")
+    parser.add_argument("--lesson", default=None,
+                        help="Lesson number to tag problems with, e.g. --lesson 2.5. "
+                             "When set, all problems are tagged lesson='2.5' and will "
+                             "be used as back-page templates when that lesson is current.")
     parser.add_argument("--grade", type=int, default=GRADE_DEFAULT, help=f"Grade number (default: {GRADE_DEFAULT})")
     parser.add_argument("--bank-root", default=str(BANK_ROOT), help="Path to problem_bank directory")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
@@ -280,6 +297,7 @@ def main():
         grade=args.grade,
         bank_root=Path(args.bank_root),
         dry_run=args.dry_run,
+        lesson=args.lesson,
     )
 
 
