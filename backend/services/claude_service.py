@@ -388,34 +388,52 @@ def _fill_front_prompt(
     n_needed: int,
     grade: str,
     bank_latex: list[str],
+    style_examples: list[dict] | None = None,
 ) -> tuple[str, str]:
     """
     Prompt Claude to generate n_needed additional spiral review problems
     when the bank doesn't have enough approved problems to fill the front.
-    No pacing guide / covered_topics reference — pure grade-level spiral.
+    style_examples: approved bank problems shown to Claude as style/difficulty guides.
     """
     system = STYLE_NOTES + f"""
-Rules for spiral review problems:
+You are generating spiral review problems to supplement an approved problem bank.
+You will be shown examples of approved problems from the bank — match their style,
+format, difficulty, and LaTeX conventions exactly.
+
+Rules:
 - Generate exactly {n_needed} problems.
 - Cover a broad variety of 6th-grade topics already studied this year
   (arithmetic, fractions, decimals, ratios, basic geometry, expressions).
 - Do NOT reference the current lesson topic.
-- Vary types: computation, word problem, fill-in, true/false.
+- Match the difficulty and format of the provided examples.
 - Each solvable in 60–90 seconds without a calculator.
 - No multi-step word problems.
 """
+
+    examples_text = ""
+    if style_examples:
+        examples_text = "\n\nHere are examples from the approved bank — match this style and difficulty:\n"
+        for i, ex in enumerate(style_examples[:6], 1):
+            topic = ex.get("topic", "")
+            latex = ex.get("latex", "")[:200]
+            answer = ex.get("answer_latex", "")
+            examples_text += f"\nExample {i} ({topic}):\n  Problem: {latex}\n"
+            if answer:
+                examples_text += f"  Answer: {answer}\n"
+
     already = ""
     if bank_latex:
         already = (
-            "\n\nThe following problems are already included from the bank — "
+            "\n\nThese problems are already on this assignment — "
             "do NOT repeat topics or problem structures:\n"
             + "\n".join(f"  • {lat[:120]}" for lat in bank_latex[:8])
         )
 
     user = (
         f"Grade: {grade}\n"
-        f"Generate {n_needed} spiral review problems."
+        + examples_text
         + already
+        + f"\n\nGenerate {n_needed} new spiral review problems in the same style as the examples above."
     )
     return system, user
 
@@ -478,7 +496,17 @@ async def _assemble_front(
     spiral_topics = "arithmetic, fractions, ratios, geometry, expressions"
 
     if shortfall > 0:
-        fill_sys, fill_usr = _fill_front_prompt(shortfall, context.grade, bank_latex)
+        # Sample extra approved bank problems as style examples for Claude.
+        # Use a larger n than needed, exclude already-selected problems.
+        used_latex = set(bank_latex)
+        style_pool = sample_problems(
+            domain=None, grade=grade_int, max_quarter=school_q,
+            n=12, exclude_lesson=True,
+        )
+        style_examples = [p for p in style_pool if p["latex"] not in used_latex][:6]
+
+        fill_sys, fill_usr = _fill_front_prompt(shortfall, context.grade, bank_latex,
+                                                style_examples=style_examples)
         fill_data      = await _call(fill_sys, fill_usr, FILL_FRONT_TOOL)
         generated_problems = fill_data.get("problems", [])
         spiral_topics      = fill_data.get("spiral_topics", spiral_topics)
