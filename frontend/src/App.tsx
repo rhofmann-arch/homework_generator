@@ -152,10 +152,10 @@ function ProblemCard({ number, problem, section, grade, onUpdate }: {
   number: number; problem: HomeworkProblem; section: 'front' | 'back' | 'challenge'
   grade: Grade; onUpdate: (u: HomeworkProblem) => void
 }) {
-  const [editing, setEditing] = useState(false)
-  const [draft, setDraft]     = useState(problem.latex)
-  const [savedToBank, setSaved] = useState(false)
-  const [bankMsg, setBankMsg]   = useState('')
+  const [editing, setEditing]     = useState(false)
+  const [draft, setDraft]         = useState(problem.latex)
+  const [savedToBank, setSaved]   = useState(false)
+  const [bankMsg, setBankMsg]     = useState('')
   const previewRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -165,8 +165,8 @@ function ProblemCard({ number, problem, section, grade, onUpdate }: {
     }
   }, [editing, problem.latex])
 
-  const handleSave  = () => { onUpdate({ ...problem, latex: draft }); setEditing(false) }
-  const handleCancel= () => { setDraft(problem.latex); setEditing(false) }
+  const handleSave   = () => { onUpdate({ ...problem, latex: draft }); setEditing(false) }
+  const handleCancel = () => { setDraft(problem.latex); setEditing(false) }
 
   const handleBank = async () => {
     setBankMsg('Saving…')
@@ -224,67 +224,67 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
       .catch(e => setLoadError(e instanceof Error ? e.message : 'Failed to load'))
   }, [assignment.sessionKey])
 
-  const updateProblem = (section: keyof HomeworkProblems, idx: number, updated: HomeworkProblem) => {
-    setProblems(prev => {
-      if (!prev) return prev
-      const arr = [...(prev[section] as HomeworkProblem[])]; arr[idx] = updated
-      return { ...prev, [section]: arr }
-    })
-    setMsg('')
+  const updateProblem = (section: 'front_problems' | 'back_problems', idx: number, updated: HomeworkProblem) => {
+    setProblems(prev => prev ? { ...prev, [section]: prev[section].map((p, i) => i === idx ? updated : p) } : prev)
   }
 
   const handleRecompile = async () => {
     if (!problems) return
     setRecompiling(true); setMsg('')
     try {
-      const result = await recompileHomework(assignment.sessionKey, {
-        problems, week_start: assignment.weekStart, grade: assignment.grade,
-        class_type: assignment.classType, specific_date: assignment.specificDate,
+      const { homeworkBlob, keyBlob } = await recompileHomework(assignment.sessionKey, {
+        week_start:    assignment.weekStart,
+        specific_date: assignment.specificDate,
+        grade:         assignment.grade,
+        class_type:    assignment.classType,
+        ...problems,
       })
-      onRecompiled(URL.createObjectURL(result.homeworkBlob), URL.createObjectURL(result.keyBlob))
+      onRecompiled(URL.createObjectURL(homeworkBlob), URL.createObjectURL(keyBlob))
       setMsg('✓ PDF updated')
-    } catch (e: unknown) { setMsg(e instanceof Error ? e.message : 'Failed') }
+    } catch (e: unknown) { setMsg(e instanceof Error ? e.message : 'Recompile failed') }
     finally { setRecompiling(false) }
   }
 
-  const header = (
-    <div className="px-4 py-3 border-b border-slate-100 bg-white flex items-center gap-3 shrink-0">
-      <button onClick={onClose} className="text-xs text-slate-400 hover:text-slate-600 shrink-0">← PDF</button>
-      <span className="text-sm font-semibold text-slate-700 flex-1 truncate">✏️ Edit Problems</span>
-      {msg && <span className={`text-xs shrink-0 ${msg.startsWith('✓') ? 'text-green-600' : 'text-red-500'}`}>{msg}</span>}
-      <button onClick={handleRecompile} disabled={recompiling}
-        className={`shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold transition ${
-          recompiling ? 'bg-blue-300 text-white cursor-wait' : 'bg-blue-600 text-white hover:bg-blue-700'}`}>
-        {recompiling ? 'Building…' : 'Recompile PDF'}
-      </button>
-    </div>
-  )
-
-  if (loadError) return <div className="flex flex-col h-full">{header}<div className="flex-1 flex items-center justify-center p-6 text-center"><p className="text-sm text-red-600">{loadError}</p></div></div>
-  if (!problems) return <div className="flex flex-col h-full">{header}<div className="flex-1 flex items-center justify-center"><span className="text-xs text-slate-400 animate-pulse">Loading…</span></div></div>
-
   return (
     <div className="flex flex-col h-full">
-      {header}
-      <div className="flex-1 overflow-y-auto p-4 space-y-5">
-        <section>
-          <SectionLabel>Spiral Review — Front</SectionLabel>
-          <div className="space-y-2">
-            {problems.front_problems.map((p, i) => (
-              <ProblemCard key={i} number={i+1} problem={p} section="front" grade={assignment.grade}
-                onUpdate={u => updateProblem('front_problems', i, u)}/>
-            ))}
-          </div>
-        </section>
-        <section>
-          <SectionLabel>Lesson Practice — Back{problems.lesson_title ? ` · ${problems.lesson_title}` : ''}</SectionLabel>
-          <div className="space-y-2">
-            {problems.back_problems.map((p, i) => (
-              <ProblemCard key={i} number={problems.front_problems.length+i+1} problem={p} section="back" grade={assignment.grade}
-                onUpdate={u => updateProblem('back_problems', i, u)}/>
-            ))}
-          </div>
-        </section>
+      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100 shrink-0">
+        <h2 className="text-sm font-semibold text-slate-700">✏️ Edit Problems</h2>
+        <div className="flex items-center gap-3">
+          {msg && <span className={`text-xs font-medium ${msg.startsWith('✓') ? 'text-green-600' : 'text-red-500'}`}>{msg}</span>}
+          <button onClick={handleRecompile} disabled={recompiling || !problems}
+            className="px-3 py-1.5 bg-blue-600 text-white text-xs font-semibold rounded-lg hover:bg-blue-700 transition disabled:opacity-40">
+            {recompiling ? 'Rebuilding…' : 'Recompile PDF'}
+          </button>
+          <button onClick={onClose} className="text-slate-400 hover:text-slate-600 text-lg leading-none">×</button>
+        </div>
+      </div>
+
+      <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
+        {loadError && <p className="text-sm text-red-500">{loadError}</p>}
+        {!problems && !loadError && <p className="text-sm text-slate-400">Loading…</p>}
+
+        {problems && (
+          <>
+            <section>
+              <SectionLabel>Spiral Review</SectionLabel>
+              <div className="space-y-2">
+                {problems.front_problems.map((p, i) => (
+                  <ProblemCard key={i} number={i + 1} problem={p} section="front" grade={assignment.grade}
+                    onUpdate={u => updateProblem('front_problems', i, u)}/>
+                ))}
+              </div>
+            </section>
+            <section>
+              <SectionLabel>Lesson Practice{problems.lesson_title ? ` · ${problems.lesson_title}` : ''}</SectionLabel>
+              <div className="space-y-2">
+                {problems.back_problems.map((p, i) => (
+                  <ProblemCard key={i} number={problems.front_problems.length + i + 1} problem={p} section="back" grade={assignment.grade}
+                    onUpdate={u => updateProblem('back_problems', i, u)}/>
+                ))}
+              </div>
+            </section>
+          </>
+        )}
       </div>
     </div>
   )
@@ -292,25 +292,23 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
 
 // ─── Bank Review Panel ────────────────────────────────────────────────────────
 // !! HIGH IMPORTANCE — DO NOT REMOVE !!
-// This panel allows reviewing/approving/flagging/deleting problems from the inbox.
 
 const DOMAINS: { value: Domain; label: string }[] = [
-  { value: 'arithmetic',           label: 'Arithmetic' },
-  { value: 'expressions_equations',label: 'Expressions & Eq.' },
-  { value: 'geometry',             label: 'Geometry' },
-  { value: 'stats_probability',    label: 'Stats & Prob.' },
-  { value: 'other',                label: 'Other' },
+  { value: 'arithmetic',            label: 'Arithmetic' },
+  { value: 'expressions_equations', label: 'Expressions & Eq.' },
+  { value: 'geometry',              label: 'Geometry' },
+  { value: 'stats_probability',     label: 'Stats & Prob.' },
+  { value: 'other',                 label: 'Other' },
 ]
 
 function ReviewBank() {
-  const [stats,    setStats]    = useState<BankStats | null>(null)
-  const [problems, setProblems] = useState<BankProblem[]>([])
-  const [total,    setTotal]    = useState(0)
-  const [index,    setIndex]    = useState(0)
-  const [loading,  setLoading]  = useState(false)
-  const [actionMsg,setActionMsg]= useState('')
+  const [stats,         setStats]         = useState<BankStats | null>(null)
+  const [problems,      setProblems]      = useState<BankProblem[]>([])
+  const [loading,       setLoading]       = useState(false)
+  const [index,         setIndex]         = useState(0)
+  const [actionMsg,     setActionMsg]     = useState('')
   const [confirmDelete, setConfirmDelete] = useState(false)
-  const [hpFilter, setHpFilter] = useState(false)
+  const [hpFilter,      setHpFilter]      = useState(false)
   const [selectedDomain,  setSelectedDomain]  = useState<Domain | ''>('')
   const [selectedQuarter, setSelectedQuarter] = useState<number | ''>('')
   const [notes, setNotes] = useState('')
@@ -323,7 +321,7 @@ function ReviewBank() {
         fetchReviewQueue({ inbox_only: true, limit: 200 }),
         fetchBankStats(6),
       ])
-      setProblems(qRes.problems); setTotal(qRes.total); setStats(sRes); setIndex(0)
+      setProblems(qRes.problems); setStats(sRes); setIndex(0)
     } catch { setActionMsg('Failed to load queue') }
     finally { setLoading(false) }
   }, [])
@@ -350,26 +348,28 @@ function ReviewBank() {
   }
 
   const handleApprove = async () => {
-    if (!current || !selectedDomain || !selectedQuarter) {
-      setActionMsg('Select a domain and quarter first.'); return
-    }
+    if (!current || !selectedDomain || !selectedQuarter) { setActionMsg('Select a domain and quarter first.'); return }
     try {
-      await approveProblem(current.id, selectedDomain as Domain, Number(selectedQuarter), notes)
+      await approveProblem({ problem_id: current.id, domain: selectedDomain, quarter: selectedQuarter as number, notes, grade: 6 })
       setActionMsg('✓ Approved'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
 
   const handleFlag = async () => {
     if (!current) return
-    try { await flagProblem(current.id, notes); setActionMsg('⚑ Flagged'); advance() }
-    catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
+    try {
+      await flagProblem({ problem_id: current.id, notes, grade: 6 })
+      setActionMsg('⚑ Flagged'); advance()
+    } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
 
   const handleDelete = async () => {
     if (!current) return
     if (!confirmDelete) { setConfirmDelete(true); return }
-    try { await deleteProblem(current.id); setActionMsg('Deleted'); setConfirmDelete(false); advance() }
-    catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
+    try {
+      await deleteProblem({ problem_id: current.id, grade: 6 })
+      setActionMsg('Deleted'); advance()
+    } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
 
   return (
@@ -377,24 +377,19 @@ function ReviewBank() {
       {/* Stats bar */}
       {stats && (
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-4">
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="text-sm font-semibold text-slate-700">Bank Status</h2>
-            <button onClick={loadQueue} className="text-xs text-blue-600 hover:text-blue-800">↻ Refresh</button>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <Badge color="amber">Inbox: {stats.inbox.total}</Badge>
-            {stats.inbox.high_priority != null && <Badge color="purple">⭐ HP: {stats.inbox.high_priority}</Badge>}
-            {Object.entries(stats.domains).map(([d, v]) => (
-              <Badge key={d} color="slate">{d.replace('_',' ')}: {v.approved}✓</Badge>
+          <div className="flex flex-wrap gap-3 text-xs text-slate-600">
+            <span className="font-semibold">Inbox: <span className="text-blue-600">{stats.inbox.total}</span></span>
+            {DOMAINS.map(({ value, label }) => (
+              <span key={value}>{label}: <span className="font-medium">{stats.domains[value]?.approved ?? 0}</span></span>
             ))}
           </div>
         </div>
       )}
 
-      {/* Filters */}
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm px-4 py-3 flex items-center gap-3">
+      {/* Filter bar */}
+      <div className="flex items-center gap-3">
         <button onClick={() => { setHpFilter(f => !f); setIndex(0) }}
-          className={`text-xs px-2 py-1 rounded-lg border font-medium transition ${
+          className={`px-3 py-1.5 rounded-lg border text-xs font-semibold transition ${
             hpFilter ? 'bg-purple-600 border-purple-600 text-white' : 'border-slate-300 text-slate-600 hover:border-purple-400'}`}>
           ⭐ HP only
         </button>
@@ -419,7 +414,6 @@ function ReviewBank() {
             {current.suggested_quarter && <Badge color="amber">Suggested Q{current.suggested_quarter}</Badge>}
           </div>
 
-          {/* Topic */}
           {current.topic && <div className="px-4 pt-3 text-xs text-slate-500 italic">{current.topic}</div>}
 
           {/* LaTeX preview */}
@@ -436,7 +430,6 @@ function ReviewBank() {
 
           {/* Controls */}
           <div className="px-4 pb-4 space-y-3 border-t border-slate-100 pt-3">
-            {/* Domain */}
             <div>
               <SectionLabel>Domain</SectionLabel>
               <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
@@ -453,11 +446,10 @@ function ReviewBank() {
               </div>
             </div>
 
-            {/* Quarter */}
             <div>
               <SectionLabel>Quarter{current.suggested_quarter ? ` (suggested Q${current.suggested_quarter})` : ''}</SectionLabel>
               <div className="grid grid-cols-4 gap-2">
-                {[1,2,3,4].map(q => (
+                {[1, 2, 3, 4].map(q => (
                   <button key={q} onClick={() => setSelectedQuarter(q)}
                     className={['py-1.5 rounded-lg border text-xs font-medium transition',
                       selectedQuarter === q
@@ -470,7 +462,6 @@ function ReviewBank() {
               </div>
             </div>
 
-            {/* Notes */}
             <div>
               <SectionLabel>Notes (optional)</SectionLabel>
               <input value={notes} onChange={e => setNotes(e.target.value)}
@@ -478,15 +469,13 @@ function ReviewBank() {
                 placeholder="Optional notes…"/>
             </div>
 
-            {/* Action buttons */}
             {actionMsg && (
               <p className={`text-xs font-medium ${actionMsg.startsWith('✓') ? 'text-green-600' : actionMsg.startsWith('⚑') ? 'text-amber-600' : 'text-red-500'}`}>
                 {actionMsg}
               </p>
             )}
             <div className="flex gap-2">
-              <button onClick={handleApprove}
-                disabled={!selectedDomain || !selectedQuarter}
+              <button onClick={handleApprove} disabled={!selectedDomain || !selectedQuarter}
                 className="flex-1 py-2 bg-green-600 text-white text-xs font-semibold rounded-lg hover:bg-green-700 transition disabled:opacity-40 disabled:cursor-not-allowed">
                 ✓ Approve
               </button>
@@ -540,8 +529,8 @@ function GeneratePanel() {
     }
     try {
       const { homeworkBlob, keyBlob, sessionKey } = await generateHomework(req)
-      const hwUrl = URL.createObjectURL(homeworkBlob)
-      const keyUrl= URL.createObjectURL(keyBlob)
+      const hwUrl  = URL.createObjectURL(homeworkBlob)
+      const keyUrl = URL.createObjectURL(keyBlob)
       setPdfPreviewUrl(hwUrl)
       const dayLabel = specificDate
         ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
@@ -556,6 +545,10 @@ function GeneratePanel() {
     setPdfPreviewUrl(newPdf)
     setHistory(prev => prev.map(a => a.sessionKey === key ? { ...a, pdfUrl: newPdf, keyUrl: newKey } : a))
     setEditorItem(prev => prev?.sessionKey === key ? { ...prev, pdfUrl: newPdf, keyUrl: newKey } : prev)
+  }, [])
+
+  const handleEditClick = useCallback((item: Assignment) => {
+    setEditorItem(prev => prev?.sessionKey === item.sessionKey ? null : item)
   }, [])
 
   return (
@@ -577,14 +570,14 @@ function GeneratePanel() {
           <div>
             <SectionLabel>Grade</SectionLabel>
             <div className="grid grid-cols-4 gap-2">
-              {(['5','6','7','8'] as Grade[]).map(g => (
-                <button key={g} onClick={() => setGrade(g)} disabled={g!=='6'}
+              {(['5', '6', '7', '8'] as Grade[]).map(g => (
+                <button key={g} onClick={() => setGrade(g)} disabled={g !== '6'}
                   className={['py-2 rounded-lg border text-sm font-medium transition',
-                    grade===g ? 'bg-blue-600 border-blue-600 text-white shadow-sm'
-                              : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
-                    g!=='6' ? 'opacity-40 cursor-not-allowed' : '',
+                    grade === g ? 'bg-blue-600 border-blue-600 text-white shadow-sm'
+                                : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
+                    g !== '6' ? 'opacity-40 cursor-not-allowed' : '',
                   ].join(' ')}>
-                  {g==='6' ? 'Grade 6' : `${g} · soon`}
+                  {g === '6' ? 'Grade 6' : `${g} · soon`}
                 </button>
               ))}
             </div>
@@ -599,43 +592,50 @@ function GeneratePanel() {
               ].map(({ val, label, sub }) => (
                 <button key={val} onClick={() => setClassType(val)}
                   className={['text-left p-3 rounded-xl border-2 transition',
-                    classType===val
-                      ? val==='honors' ? 'border-green-600 bg-green-50' : 'border-blue-500 bg-blue-50'
+                    classType === val
+                      ? val === 'honors' ? 'border-green-600 bg-green-50' : 'border-blue-500 bg-blue-50'
                       : 'border-slate-200 bg-white hover:border-slate-300',
                   ].join(' ')}>
-                  <p className={`text-sm font-semibold ${classType===val && val==='honors' ? 'text-green-700' : classType===val ? 'text-blue-700' : 'text-slate-700'}`}>{label}</p>
+                  <p className={`text-sm font-semibold ${classType === val && val === 'honors' ? 'text-green-700' : classType === val ? 'text-blue-700' : 'text-slate-700'}`}>
+                    {label}
+                  </p>
                   <p className="text-xs text-slate-400 mt-0.5">{sub}</p>
                 </button>
               ))}
             </div>
           </div>
 
+          {/* Summary */}
           <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
             <span className="font-medium">Generating: </span>
-            Grade {grade} · {classType==='honors' ? 'Honors' : 'Grade Level'} ·{' '}
+            Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
             {specificDate
-              ? new Date(specificDate+'T12:00:00').toLocaleDateString('en-US', { weekday:'long', month:'short', day:'numeric' })
+              ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
               : formatWeekRange(week)}
           </div>
 
-          {status==='error' && (
+          {status === 'error' && (
             <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-sm text-red-700">
               <span className="font-semibold">Error: </span>{errorMsg}
             </div>
           )}
 
-          <button onClick={handleGenerate} disabled={status==='loading' || !online || !specificDate}
+          <button onClick={handleGenerate}
+            disabled={status === 'loading' || !online || !specificDate}
             className={['w-full py-3 rounded-xl text-sm font-semibold transition shadow-sm',
-              status==='loading' ? 'bg-blue-400 text-white cursor-wait'
-                : (!online||!specificDate) ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
-                : 'bg-blue-600 text-white hover:bg-blue-700 active:scale-[0.99]',
+              status === 'loading'
+                ? 'bg-blue-400 text-white cursor-wait'
+                : !online || !specificDate
+                  ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
+                  : 'bg-blue-600 text-white hover:bg-blue-700 active:scale-[0.99]',
             ].join(' ')}>
-            {status==='loading' ? (
+            {status === 'loading' ? (
               <span className="flex items-center justify-center gap-2">
                 <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
-                </svg>Generating PDF…
+                </svg>
+                Generating PDF…
               </span>
             ) : 'Generate Homework PDF'}
           </button>
@@ -646,10 +646,12 @@ function GeneratePanel() {
             <h2 className="text-base font-semibold text-slate-700 mb-3">Generated This Session</h2>
             <div className="space-y-2">
               {history.map((item, i) => (
-                <HistoryItem key={item.sessionKey} item={item}
-                  isEditing={editorItem?.sessionKey===item.sessionKey}
-                  onEdit={() => setEditorItem(prev => prev?.sessionKey===item.sessionKey ? null : item)}
-                  onRemove={() => setHistory(prev => prev.filter((_,j)=>j!==i))}/>
+                <HistoryItem
+                  key={item.sessionKey}
+                  item={item}
+                  isEditing={editorItem?.sessionKey === item.sessionKey}
+                  onEdit={() => handleEditClick(item)}
+                  onRemove={() => setHistory(prev => prev.filter((_, j) => j !== i))}/>
               ))}
             </div>
           </div>
@@ -657,11 +659,12 @@ function GeneratePanel() {
       </div>
 
       {/* Right: preview or editor */}
+      {/* HEIGHT: maxHeight controls the outer container; iframe height controls the PDF viewer */}
       <div className="lg:sticky lg:top-6">
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" style={{ maxHeight:'85vh' }}>
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: '92vh' }}>
           {editorItem ? (
             <ProblemEditor assignment={editorItem} onClose={() => setEditorItem(null)}
-              onRecompiled={(p,k) => handleRecompiled(editorItem.sessionKey, p, k)}/>
+              onRecompiled={(p, k) => handleRecompiled(editorItem.sessionKey, p, k)}/>
           ) : (
             <>
               <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between shrink-0">
@@ -669,17 +672,17 @@ function GeneratePanel() {
                 <StatusDot online={online}/>
               </div>
               {pdfPreviewUrl ? (
-                <iframe src={pdfPreviewUrl} className="w-full flex-1" style={{ height:'680px' }} title="Preview"/>
+                <iframe src={pdfPreviewUrl} className="w-full flex-1" style={{ height: '82vh' }} title="Preview"/>
               ) : (
                 <div className="flex flex-col items-center justify-center text-center py-16 px-8 text-slate-400">
                   <div className="text-5xl mb-4">📄</div>
                   <p className="text-sm font-medium text-slate-500">No preview yet</p>
                   <p className="text-xs mt-1">
-                    {status==='loading' ? 'Generating — about 30 seconds…' : 'Select a day and click Generate'}
+                    {status === 'loading' ? 'Generating — about 30 seconds…' : 'Select a day and click Generate'}
                   </p>
-                  {status==='loading' && (
+                  {status === 'loading' && (
                     <div className="mt-4 w-32 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-400 rounded-full animate-pulse" style={{ width:'60%' }}/>
+                      <div className="h-full bg-blue-400 rounded-full animate-pulse" style={{ width: '60%' }}/>
                     </div>
                   )}
                 </div>
@@ -718,7 +721,7 @@ export default function App() {
               ]).map(({ id, label }) => (
                 <button key={id} onClick={() => setMode(id)}
                   className={`px-3 py-1.5 text-xs font-semibold transition ${
-                    mode===id ? 'bg-white text-blue-700' : 'text-blue-100 hover:bg-blue-600'}`}>
+                    mode === id ? 'bg-white text-blue-700' : 'text-blue-100 hover:bg-blue-600'}`}>
                   {label}
                 </button>
               ))}
@@ -728,7 +731,7 @@ export default function App() {
       </header>
 
       <main className="flex-1 max-w-5xl mx-auto w-full px-6 py-8">
-        {mode==='generate' ? <GeneratePanel/> : <ReviewBank/>}
+        {mode === 'generate' ? <GeneratePanel/> : <ReviewBank/>}
       </main>
 
       <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-400">
