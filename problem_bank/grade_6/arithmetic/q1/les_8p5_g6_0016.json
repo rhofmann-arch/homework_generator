@@ -1,0 +1,18 @@
+{
+  "id": "les_8p5_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.5",
+  "topic": "proportional reasoning, estimation",
+  "latex": "A school survey found that for every 100 middle school students, between 8 and 10 people were born in August. The number of students enrolled in the middle school is 550. Approximate the number of students in the middle school who were born in August.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_5.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

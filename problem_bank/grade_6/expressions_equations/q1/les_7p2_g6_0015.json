@@ -1,0 +1,18 @@
+{
+  "id": "les_7p2_g6_0015",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.2",
+  "topic": "one-step subtraction equation, word problem with measurement",
+  "latex": "The height of the desk is 11 inches shorter than the height of the chair. Write and solve an equation to find the height of the desk.\n\n\\begin{tikzpicture}\n% Chair with height label\n\\draw (0,0) rectangle (1.5,3);\n\\draw[<->] (1.7,0) -- (1.7,3);\n\\node[right] at (1.7,1.5) {41 in.};\n% Simple desk and chair representation\n\\node at (0.75,1.5) {\\small Chair};\n\\draw (2.5,0) rectangle (4.5,2);\n\\node at (3.5,1) {\\small Desk};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_2.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

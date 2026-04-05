@@ -1,0 +1,18 @@
+{
+  "id": "les_7p2_g6_0020",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.2",
+  "topic": "one-step addition equation, word problem with population",
+  "latex": "Belmont, Forkland, and Maplesville are three small towns in Alabama. Forkland has a population of 606 people, and Maplesville has a population of 705 people. The sum of the population of all three towns is 1,813 people. Solve $1{,}813 = b + (606 + 705)$. Interpret the solution.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_2.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

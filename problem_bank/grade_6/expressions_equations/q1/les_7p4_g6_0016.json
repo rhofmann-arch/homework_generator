@@ -1,0 +1,18 @@
+{
+  "id": "les_7p4_g6_0016",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.4",
+  "topic": "evaluating linear equations, finding y-coordinate",
+  "latex": "Fill in the blank so that the ordered pair is a solution of the equation.\n\n$y = 7x - 5$; $\\left(2, \\boxed{\\phantom{00}}\\right)$",
+  "answer_latex": "9",
+  "suggested_quarter": 1,
+  "source_file": "6_7_4.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

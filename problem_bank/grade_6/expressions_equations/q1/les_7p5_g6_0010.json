@@ -1,0 +1,18 @@
+{
+  "id": "les_7p5_g6_0010",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.5",
+  "topic": "checking solutions of inequalities with expressions",
+  "latex": "Tell whether the given value is a solution of the inequality.\n\n$q + 1 \\geq 7; \\, q = 3$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_5.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_8p1_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.1",
+  "topic": "writing ratios from pictures",
+  "latex": "Write the ratio.\n\nnotebooks : pencils\n\n\\begin{tikzpicture}\n% 6 notebooks arranged in 2 rows of 3\n\\draw (0,0) rectangle (0.5,0.7);\n\\draw (0.6,0) rectangle (1.1,0.7);\n\\draw (1.2,0) rectangle (1.7,0.7);\n\\draw (0,-0.8) rectangle (0.5,-0.1);\n\\draw (0.6,-0.8) rectangle (1.1,-0.1);\n\\draw (1.2,-0.8) rectangle (1.7,-0.1);\n% 2 pencils\n\\draw (2.2,-0.2) -- (2.8,-0.6);\n\\draw (2.4,-0.4) -- (3.0,-0.8);\n\\end{tikzpicture}\n\n(Image shows 6 notebooks and 2 pencils)",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

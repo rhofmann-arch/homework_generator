@@ -1,0 +1,18 @@
+{
+  "id": "les_8p6_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.6",
+  "topic": "unit conversion, inches per second to centimeters per second",
+  "latex": "Complete the statement.\n\n$2 \\text{ in./sec} \\approx \\_\\_\\_\\_\\_ \\text{ cm/sec}$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

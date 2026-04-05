@@ -1,0 +1,18 @@
+{
+  "id": "les_7p4_g6_0006",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.4",
+  "topic": "identifying independent and dependent variables, evaluating equations",
+  "latex": "The equation $k = 88p$ gives the total number of keys $k$ for $p$ pianos. Identify the independent and dependent variables. What is the total number of keys for 3 pianos?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_4.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

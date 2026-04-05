@@ -1,0 +1,18 @@
+{
+  "id": "les_7p4_g6_0002",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.4",
+  "topic": "verifying solutions of linear equations in two variables",
+  "latex": "Tell whether the ordered pair is a solution of the equation.\n\n$y = 8x$; $(0, 0)$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_7_4.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

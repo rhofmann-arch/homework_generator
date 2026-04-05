@@ -1,0 +1,18 @@
+{
+  "id": "les_8p1_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.1",
+  "topic": "writing ratios from pictures",
+  "latex": "Write the ratio.\n\nhamburgers to hot dogs\n\n\\begin{tikzpicture}\n% 4 hamburgers\n\\node at (0,0.5) {\\small burger};\n\\node at (1,0.5) {\\small burger};\n\\node at (0,-0.3) {\\small burger};\n\\node at (1,-0.3) {\\small burger};\n% 6 hot dogs\n\\node at (2.5,0.5) {\\small hotdog};\n\\node at (3.5,0.5) {\\small hotdog};\n\\node at (4.5,0.5) {\\small hotdog};\n\\node at (2.5,-0.3) {\\small hotdog};\n\\node at (3.5,-0.3) {\\small hotdog};\n\\node at (4.5,-0.3) {\\small hotdog};\n\\end{tikzpicture}\n\n(Image shows 4 hamburgers and 6 hot dogs)",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

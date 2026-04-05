@@ -1,0 +1,18 @@
+{
+  "id": "les_8p1_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.1",
+  "topic": "writing and interpreting ratios from pictures",
+  "latex": "Write the ratio. Then find and interpret the value of the ratio.\n\ntubas : clarinets\n\n\\begin{tikzpicture}\n% 2 tubas\n\\node at (0,1) {\\small tuba};\n\\node at (1.5,1) {\\small tuba};\n% 4 trumpets\n\\node at (0,0) {\\small trumpet};\n\\node at (1,0) {\\small trumpet};\n\\node at (2,0) {\\small trumpet};\n\\node at (3,0) {\\small trumpet};\n% 3 clarinets\n\\node at (4,1) {\\small clarinet};\n\\node at (5,1) {\\small clarinet};\n\\node at (4,0) {\\small clarinet};\n\\end{tikzpicture}\n\n(Image shows 2 tubas, 4 trumpets, and 3 clarinets)",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

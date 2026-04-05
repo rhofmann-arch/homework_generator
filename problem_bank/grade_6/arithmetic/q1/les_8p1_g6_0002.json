@@ -1,0 +1,18 @@
+{
+  "id": "les_8p1_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.1",
+  "topic": "writing ratios from pictures",
+  "latex": "Write the ratio.\n\ncars : trucks\n\n\\begin{tikzpicture}\n% Row 1: 2 cars and 2 trucks\n\\node at (0,1) {\\small car};\n\\node at (1,1) {\\small car};\n\\node at (2,1) {\\small truck};\n\\node at (3,1) {\\small truck};\n% Row 2: 1 car and 1 truck\n\\node at (0,0) {\\small car};\n\\node at (2,0) {\\small truck};\n\\end{tikzpicture}\n\n(Image shows 3 cars and 3 trucks)",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

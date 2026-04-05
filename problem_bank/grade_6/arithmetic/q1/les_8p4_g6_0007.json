@@ -1,0 +1,18 @@
+{
+  "id": "les_8p4_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.4",
+  "topic": "graphing and applying ratio relationships",
+  "latex": "You grow 3 centimeters in 2 months.\n\n\\textbf{a.} Represent the ratio relationship using a graph.\n\n\\textbf{b.} At this rate, how much do you grow in 5 months?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_4.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

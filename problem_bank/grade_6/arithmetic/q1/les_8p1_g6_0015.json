@@ -1,0 +1,18 @@
+{
+  "id": "les_8p1_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.1",
+  "topic": "ratio word problems, reasoning with ratios",
+  "latex": "There are 5 pennies for every 6 quarters in a purse. Could there be a total of 30 coins in the purse when the purse only contains pennies and quarters? Explain.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_1.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

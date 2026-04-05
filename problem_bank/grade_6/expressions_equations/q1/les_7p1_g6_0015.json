@@ -1,0 +1,18 @@
+{
+  "id": "les_7p1_g6_0015",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.1",
+  "topic": "writing addition equations with variables",
+  "latex": "You earn 4,070 points in level 1 of a video game and 2,710 points in level 2. After level 3, your point total is 8,180. Write an equation you can use to find the number of points $p$ you scored in level 3.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_1.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

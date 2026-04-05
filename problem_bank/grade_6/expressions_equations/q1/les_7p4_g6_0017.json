@@ -1,0 +1,18 @@
+{
+  "id": "les_7p4_g6_0017",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.4",
+  "topic": "solving linear equations, finding x-coordinate",
+  "latex": "Fill in the blank so that the ordered pair is a solution of the equation.\n\n$y = 15 - 3x$; $\\left(\\boxed{\\phantom{00}}, 6\\right)$",
+  "answer_latex": "3",
+  "suggested_quarter": 2,
+  "source_file": "6_7_4.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

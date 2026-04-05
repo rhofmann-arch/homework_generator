@@ -1,0 +1,18 @@
+{
+  "id": "les_7p5_g6_0024",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.5",
+  "topic": "verifying solutions of linear inequalities",
+  "latex": "Your friend says $x = 2$ is a solution of the inequality. Is your friend correct? Explain your reasoning.\n\n\\begin{align*}\n4x + 1 &< 9; \\quad x = 2 \\\\\n4(2) + 1 &< 9 \\\\\n8 + 1 &< 9 \\\\\n9 &< 9\n\\end{align*}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_5.pdf",
+  "source_problem_number": 24,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

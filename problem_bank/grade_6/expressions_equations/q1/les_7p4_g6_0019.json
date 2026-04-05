@@ -1,0 +1,18 @@
+{
+  "id": "les_7p4_g6_0019",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.4",
+  "topic": "writing and graphing linear equations from word problems",
+  "latex": "A makeup box subscription costs \\$16 per month for 5 samples each month. Each additional sample costs \\$2.\n\n\\textbf{a.} Write and graph an equation in two variables that represents the monthly cost of your subscription, including additional samples.\n\n\\textbf{b.} Identify the independent and dependent variables.\n\n\\textbf{c.} How much does it cost to order 7 samples in one month's box?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_7_4.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

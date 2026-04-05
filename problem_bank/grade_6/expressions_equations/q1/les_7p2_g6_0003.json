@@ -1,0 +1,18 @@
+{
+  "id": "les_7p2_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.2",
+  "topic": "checking solutions of multiplication equations",
+  "latex": "Tell whether the given value is a solution of the equation.\n\n$4w = 44; w = 10$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_7_2.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

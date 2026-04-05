@@ -1,0 +1,18 @@
+{
+  "id": "les_7p1_g6_0016",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "7.1",
+  "topic": "writing equations for perimeter of square",
+  "latex": "The perimeter of a square with a side length of $x$ centimeters is 36 centimeters. Write an equation you can use to find the value of $x$.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_7_1.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

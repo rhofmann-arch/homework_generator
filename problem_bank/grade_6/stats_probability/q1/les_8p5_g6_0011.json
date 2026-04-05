@@ -1,0 +1,18 @@
+{
+  "id": "les_8p5_g6_0011",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "8.5",
+  "topic": "rate problems, proportional reasoning",
+  "latex": "A hose pumps water into a pool at a rate of 48 gallons every three minutes.\n\n\\textbf{a.} How much water does the hose pump in nine minutes?\n\n\\textbf{b.} How many minutes does it take to pump 152 gallons of water into the pool?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_5.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
