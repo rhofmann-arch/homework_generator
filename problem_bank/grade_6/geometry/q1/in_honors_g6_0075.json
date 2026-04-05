@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0075",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "perimeter and area, optimization with fixed perimeter",
+  "latex": "A rectangular garden 50 feet long and 10 feet wide is enclosed by a fence. To make the garden larger, while using the same fence, its shape is changed to a square. By how many square feet does this enlarge the garden?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_5.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

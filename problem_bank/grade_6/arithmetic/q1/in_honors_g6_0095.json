@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0095",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "adding fractions with unlike denominators",
+  "latex": "Erica made punch for a party. She used $\\frac{5}{2}$ cups of pineapple juice, $\\frac{11}{6}$ cups of ginger ale, and $\\frac{7}{3}$ cups of grape juice. How many cups of liquid did she use in the punch? Express your answer as a simplified fraction.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_9.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

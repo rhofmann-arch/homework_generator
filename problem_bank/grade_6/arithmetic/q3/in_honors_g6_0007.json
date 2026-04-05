@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "ratio and proportion word problem",
+  "latex": "The ratio of girls to boys participating in intramural volleyball at Ashland Middle School is $7$ to $4$. There are $42$ girls in the program. What is the total number of participants?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_12a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

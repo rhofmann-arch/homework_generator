@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0049",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "percent decrease and area of squares",
+  "latex": "A computer program reduces the length of each side of an $8''$ by $8''$ square photograph by $25\\%$. What is the area, in square inches, of the reduced photo?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_22a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

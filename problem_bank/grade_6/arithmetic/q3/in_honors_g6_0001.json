@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "successive percent change, percent increase and decrease",
+  "latex": "Bill buys a stock that decreases by $20\\%$ on the first day, and then on the second day the stock increases by $30\\%$ of its value at the end of the first day. What was the overall percent increase in Bill's stock over the two days?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_10a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

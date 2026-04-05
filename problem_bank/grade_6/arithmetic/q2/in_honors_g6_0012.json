@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "area of triangles in composite figures",
+  "latex": "In the diagram, what is the area of the shaded triangle?\n\n[Diagram shows a rectangle with width 10 cm (top and bottom) and height 3 cm on each side, with a shaded triangle inside]",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_13.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

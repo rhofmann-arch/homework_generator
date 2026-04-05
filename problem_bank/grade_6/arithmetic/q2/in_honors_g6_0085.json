@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0085",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "percent word problem, finding the whole from a part",
+  "latex": "Koalas absorb only $25\\%$ of the fiber they eat. A koala absorbed $10.5$ ounces of fiber in one day. How many ounces of fiber did he eat that day?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_7a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0070",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "operations with negative numbers, order of operations",
+  "latex": "Evaluate $-(-(-5)))(-3) + 11$.",
+  "answer_latex": "26",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_4.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

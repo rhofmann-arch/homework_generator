@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0060",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "ratio and proportion, speed and distance",
+  "latex": "Julian and Joshua each maintain a constant speed as they run laps around a 400-meter track. In the time it takes Julian to complete two laps, Joshua completes three laps. Julian runs each mile in 12 minutes. How many minutes does it take Joshua to run exactly one mile?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "Honors_Math_6_25a.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

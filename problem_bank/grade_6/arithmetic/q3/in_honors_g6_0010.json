@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "ratio and proportion word problem",
+  "latex": "The ratio of dogs to cats at the pound is $4 : 3$. How many dogs were at the pound if a total of 280 dogs and cats were at the pound?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_13.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0052",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "percent of a total, part-to-whole ratio",
+  "latex": "Barbara completely fills her mug with a mixture that is $15$ mL of hot chocolate and $35$ mL of cream. What percent of the mixture is hot chocolate?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "Honors_Math_6_23a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}

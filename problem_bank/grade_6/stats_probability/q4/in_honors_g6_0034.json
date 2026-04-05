@@ -1,0 +1,18 @@
+{
+  "id": "in_honors_g6_0034",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "mean/average with negative integers",
+  "latex": "The 5 a.m. temperatures for seven consecutive days were $-7^\\circ$, $-4^\\circ$, $-4^\\circ$, $-5^\\circ$, $1^\\circ$, $3^\\circ$ and $2^\\circ$ Celsius. What is the mean 5 a.m. temperature for the week in degrees Celsius?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "Honors_Math_6_19a.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": true,
+  "high_priority": false,
+  "notes": ""
+}
