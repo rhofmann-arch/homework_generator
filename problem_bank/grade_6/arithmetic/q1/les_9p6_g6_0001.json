@@ -1,0 +1,18 @@
+{
+  "id": "les_9p6_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.6",
+  "topic": "calculating sale price using percent discount",
+  "latex": "Complete the table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (8,0.6);\n\\draw (2,0) -- (2,0.6);\n\\draw (4.5,0) -- (4.5,0.6);\n\\draw (6.5,0) -- (6.5,0.6);\n\\node at (1,0.3) {\\textbf{Original Price}};\n\\node at (3.25,0.3) {\\textbf{Percent of Discount}};\n\\node at (5.5,0.3) {\\textbf{Sale Price}};\n\\draw (0,-0.6) rectangle (8,0);\n\\draw (2,-0.6) -- (2,0);\n\\draw (4.5,-0.6) -- (4.5,0);\n\\draw (6.5,-0.6) -- (6.5,0);\n\\node at (0.2,-0.3) {\\textbf{1.}};\n\\node at (1,-0.3) {\\$75};\n\\node at (3.25,-0.3) {30\\%};\n\\node at (5.5,-0.3) {};\n\\end{tikzpicture}\n\nFind the Sale Price when Original Price is \\$75 and Percent of Discount is 30\\%.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_7.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

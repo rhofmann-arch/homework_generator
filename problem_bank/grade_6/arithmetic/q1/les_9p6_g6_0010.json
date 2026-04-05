@@ -1,0 +1,18 @@
+{
+  "id": "les_9p6_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.6",
+  "topic": "markup, discount, and profit/loss calculations",
+  "latex": "A store pays $\\$120$ for a bicycle.\n\n\\textbf{a.} What is the selling price of the bicycle when the markup is $60\\%$?\n\n\\textbf{b.} The store is now going out of business and is selling all of the bicycles at a $30\\%$ discount. What is the sale price of the bicycle?\n\n\\textbf{c.} Will the store make money or lose money on the bicycle? How much?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_7.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

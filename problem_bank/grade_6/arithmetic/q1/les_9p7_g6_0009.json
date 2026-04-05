@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, word problem finding balance",
+  "latex": "You deposit $\\$350$ in a savings account. The account earns $2.5\\%$ simple interest per year. What is the balance after $2$ years?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

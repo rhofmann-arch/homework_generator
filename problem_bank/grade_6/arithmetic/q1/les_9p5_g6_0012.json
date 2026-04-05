@@ -1,0 +1,18 @@
+{
+  "id": "les_9p5_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.5",
+  "topic": "percent error, acceptable tolerance",
+  "latex": "Two boards with a length of 24 feet are needed for a project. The acceptable percent error is 2\\%. Board A has a length of 23.12 feet and Board B is 24.37 feet. Is each board acceptable?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_6.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_9p1_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.1",
+  "topic": "percent word problem with complement",
+  "latex": "Only 6 of the 75 trees in a park are at least 30 feet tall. What percent of the trees are under 30 feet tall?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_1.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

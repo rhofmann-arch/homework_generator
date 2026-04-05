@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, finding account balance",
+  "latex": "An account earns simple interest. Find the balance of the account.\n\n$\\$200$ at $3\\%$ for $5$ years",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

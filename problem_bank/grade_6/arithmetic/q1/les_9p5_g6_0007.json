@@ -1,0 +1,18 @@
+{
+  "id": "les_9p5_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.5",
+  "topic": "percent of change, error analysis",
+  "latex": "Your friend finds the percent of increase from 140 to 203. Is your friend correct? Explain your reasoning.\n\n$$\\frac{203 - 140}{203} \\approx 0.31 = 31\\%$$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_6.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

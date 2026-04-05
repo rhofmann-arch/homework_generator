@@ -1,0 +1,18 @@
+{
+  "id": "les_9p3_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.3",
+  "topic": "comparing percents from ratios and given values",
+  "latex": "You use 8 fluid ounces of fruit juice in a recipe to make 64 fluid ounces of fruit punch. A fruit punch you can buy at the store has $10\\%$ real fruit juice. Which contains a greater percentage of fruit juice?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_3.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

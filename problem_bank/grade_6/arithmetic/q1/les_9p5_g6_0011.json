@@ -1,0 +1,18 @@
+{
+  "id": "les_9p5_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.5",
+  "topic": "percent increase, perimeter and area of squares",
+  "latex": "The sides of a square garden are 8 feet long.\n\n\\textbf{a.} You increase the side length of the garden by 25\\%. Find the new side length.\n\n\\textbf{b.} Find the percent of change in the perimeter of the garden.\n\n\\textbf{c.} Find the percent of change in the area of the garden.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_6.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

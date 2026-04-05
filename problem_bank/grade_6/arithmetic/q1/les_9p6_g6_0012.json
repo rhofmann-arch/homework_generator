@@ -1,0 +1,18 @@
+{
+  "id": "les_9p6_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.6",
+  "topic": "sales tax, discount, and percent change calculations",
+  "latex": "You buy a watch for $\\$60$.\n\n\\textbf{a.} There is a $6\\%$ sales tax. What is your total cost for the watch?\n\n\\textbf{b.} Your friend buys the same watch a month later. It is now sold at a discount of $15\\%$. What is the new sale price?\n\n\\textbf{c.} What is your friend's total cost for the watch including tax?\n\n\\textbf{d.} What is the percent of change in the total cost?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_7.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

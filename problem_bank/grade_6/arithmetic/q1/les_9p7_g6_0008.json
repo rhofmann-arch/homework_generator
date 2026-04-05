@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, finding time",
+  "latex": "Find the amount of time.\n\n$I = \\$174$, $P = \\$1{,}450$, $r = 8\\%$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_9p3_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.3",
+  "topic": "comparing fractions and percents, equivalent fractions",
+  "latex": "Your friend compares $0.7\\%$ and $\\dfrac{17}{25}$. Is your friend correct? Explain your reasoning.\n\n\\begin{tikzpicture}\n\\node[draw, rectangle, minimum width=5cm, minimum height=2.5cm] at (0,0) {\n\\begin{minipage}{4.5cm}\n\\centering\n$\\times 4$\\\\\n\\begin{tikzpicture}\n\\draw[->, bend left] (-0.3,0.3) to (0.3,0.3);\n\\end{tikzpicture}\\\\\n$\\dfrac{17}{25} = \\dfrac{68}{100} = 0.68\\%$\n\\end{minipage}\n};\n\\node at (4.5,0) {\\begin{minipage}{4cm}$0.7\\%$ is greater than $0.68\\%$,\\\\so $0.7\\%$ is the greater number.\\end{minipage}};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_3.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

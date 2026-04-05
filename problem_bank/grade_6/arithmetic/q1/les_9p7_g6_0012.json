@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, solving for time",
+  "latex": "You deposit $\\$2{,}000$ in a savings account earning $5\\%$ simple interest. How long will it take for the balance of the account to be $\\$3{,}800$?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest calculation, credit card charges",
+  "latex": "A payment of $\\$3{,}000$ for college classes is charged on a credit card.\n\n\\textbf{a.} The simple interest rate is $23\\%$. The charges are paid after 6 months. What is the amount of interest paid?\n\n\\textbf{b.} What is the total amount paid for the classes?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

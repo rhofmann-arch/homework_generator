@@ -1,0 +1,18 @@
+{
+  "id": "les_9p4_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.4",
+  "topic": "percent proportion, error analysis",
+  "latex": "Your friend uses the percent proportion to answer the question below. Is your friend correct? Explain your reasoning.\n\n``$20\\%$ of what number is $19$?''\n\n$$\\frac{a}{w} = \\frac{p}{100}$$\n$$\\frac{19}{w} = \\frac{20}{100}$$\n$$w = 95$$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_5.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

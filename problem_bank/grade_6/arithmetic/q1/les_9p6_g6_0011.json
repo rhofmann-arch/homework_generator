@@ -1,0 +1,18 @@
+{
+  "id": "les_9p6_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.6",
+  "topic": "finding original price given selling price and markup percent",
+  "latex": "The selling price of a skateboard is $\\$147$. The markup is $75\\%$. How much did the store pay for the skateboard?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_7.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

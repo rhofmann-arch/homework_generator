@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, loan comparison, monthly payments",
+  "latex": "A loan could have been taken out for the classes in Exercise 13.\n\n\\textbf{a.} The simple interest rate is $5\\%$ and the time for the loan is 2 years. What would have been the total amount paid for the $\\$3{,}000$ classes?\n\n\\textbf{b.} What is the monthly payment when each payment is the same amount?\n\n\\textbf{c.} Which option costs less, the credit card or the loan?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

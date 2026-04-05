@@ -1,0 +1,18 @@
+{
+  "id": "les_9p2_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.2",
+  "topic": "reading percent and decimal from multiple shaded grid models",
+  "latex": "Write the percent and the decimal shown by the model.\n\n\\begin{tikzpicture}[scale=0.3]\n\\draw[step=1, gray, thin] (0,0) grid (10,5);\n\\fill[gray!60] (0,0) rectangle (10,5);\n\\draw[step=1, gray, thin] (11,0) grid (21,5);\n\\fill[gray!60] (11,0) rectangle (16,5);\n\\draw[step=1, gray, thin] (22,0) grid (32,5);\n\\fill[gray!60] (22,0) rectangle (25,5);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_2.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

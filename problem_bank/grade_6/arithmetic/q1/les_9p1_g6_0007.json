@@ -1,0 +1,18 @@
+{
+  "id": "les_9p1_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.1",
+  "topic": "converting percent greater than 100 to mixed number",
+  "latex": "Write the percent as a fraction or mixed number.\n\n$250\\%$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

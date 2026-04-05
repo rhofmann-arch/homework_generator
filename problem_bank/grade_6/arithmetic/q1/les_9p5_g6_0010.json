@@ -1,0 +1,18 @@
+{
+  "id": "les_9p5_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.5",
+  "topic": "percent of change, multi-step percent problems",
+  "latex": "Yesterday, 270 concert tickets were sold. Today, 216 tickets were sold.\n\n\\textbf{a.} Find the percent of change in the number of tickets sold from yesterday to today.\n\n\\textbf{b.} Predict tomorrow's ticket sales when this pattern continues using the percent of change you found in part (a).\n\n\\textbf{c.} Predict the percent of change in the number of tickets sold from yesterday to tomorrow using your answer to part (b).",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_6.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

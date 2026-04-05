@@ -1,0 +1,18 @@
+{
+  "id": "les_9p7_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.7",
+  "topic": "simple interest, sequential deposits, account balance",
+  "latex": "You deposit $\\$1{,}200$ in an account earning $8\\%$ simple interest.\n\n\\textbf{a.} What is the account balance after 1 year?\n\n\\textbf{b.} At the end of the first year, you deposit the balance of the account in a CD (certificate of deposit) earning $8\\%$ simple interest. What is the account balance after another year?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_8.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

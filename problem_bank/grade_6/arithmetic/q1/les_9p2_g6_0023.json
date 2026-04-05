@@ -1,0 +1,18 @@
+{
+  "id": "les_9p2_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.2",
+  "topic": "converting decimals to percents, error analysis",
+  "latex": "Your friend converts the decimal to a percent. Is your friend correct? Explain your reasoning.\n\n\\begin{center}\n\\fbox{$1.8 = 1.8 = 18\\%$}\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_2.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

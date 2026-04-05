@@ -1,0 +1,18 @@
+{
+  "id": "les_9p4_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.4",
+  "topic": "percent proportion, finding the whole with decimal percent",
+  "latex": "Write and solve a proportion to answer the question.\n\n$24$ is $0.6\\%$ of what number?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_9_5.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

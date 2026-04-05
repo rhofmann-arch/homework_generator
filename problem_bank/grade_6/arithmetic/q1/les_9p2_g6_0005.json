@@ -1,0 +1,18 @@
+{
+  "id": "les_9p2_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.2",
+  "topic": "converting percent less than 1 to decimal",
+  "latex": "Write the percent as a decimal.\n\n$0.05\\%$",
+  "answer_latex": "0.0005",
+  "suggested_quarter": 2,
+  "source_file": "6_9_2.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

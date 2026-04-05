@@ -1,0 +1,18 @@
+{
+  "id": "les_9p5_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "9.5",
+  "topic": "percent of change, working backwards",
+  "latex": "This month a band has 6 musicians. This is a 50\\% increase from the number of musicians in the band last month. How many musicians were in the band last month?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_9_6.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
