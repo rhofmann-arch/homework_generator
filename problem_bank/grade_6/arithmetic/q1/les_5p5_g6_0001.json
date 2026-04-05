@@ -1,0 +1,18 @@
+{
+  "id": "les_5p5_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "5.5",
+  "topic": "dividing decimals with negative numbers",
+  "latex": "Find the quotient.\n\n$-7.5 \\div 3.75$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_5_5.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

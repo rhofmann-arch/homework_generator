@@ -1,0 +1,18 @@
+{
+  "id": "les_5p3_g6_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": "5.3",
+  "topic": "comparing mixed numbers, fractions, and decimals",
+  "latex": "A jogger runs five days and records the distance each day. On which days did the jogger run farther than they ran on day 1?\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (7,1.8);\n\\draw (0,0.9) -- (7,0.9);\n\\draw (1.2,0) -- (1.2,1.8);\n\\draw (2.4,0) -- (2.4,1.8);\n\\draw (3.6,0) -- (3.6,1.8);\n\\draw (4.8,0) -- (4.8,1.8);\n\\draw (5.9,0) -- (5.9,1.8);\n\\node at (0.6,1.35) {\\textbf{Day}};\n\\node at (1.8,1.35) {1};\n\\node at (3,1.35) {2};\n\\node at (4.2,1.35) {3};\n\\node at (5.35,1.35) {4};\n\\node at (6.45,1.35) {5};\n\\node[align=center] at (0.6,0.45) {\\textbf{Distance}\\\\\\textbf{(miles)}};\n\\node at (1.8,0.45) {3.25};\n\\node at (3,0.45) {$3\\frac{1}{5}$};\n\\node at (4.2,0.45) {$\\frac{25}{7}$};\n\\node at (5.35,0.45) {3.68};\n\\node at (6.45,0.45) {$3\\frac{1}{4}$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_5_3.pdf",
+  "source_problem_number": 28,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

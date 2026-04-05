@@ -1,0 +1,18 @@
+{
+  "id": "les_5p1_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "5.1",
+  "topic": "multiplying integers, negative times negative",
+  "latex": "Find the product.\n\n$-12(-3)$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_5_1.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

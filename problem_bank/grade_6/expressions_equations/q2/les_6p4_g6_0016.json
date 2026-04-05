@@ -1,0 +1,18 @@
+{
+  "id": "les_6p4_g6_0016",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": "6.4",
+  "topic": "writing and evaluating algebraic expressions from word problems",
+  "latex": "Admission to a local fair is \\$10.00 for each adult and \\$6.00 for each child. Each ride costs \\$1.50 for an adult and \\$1.00 for a child.\n\n\\textbf{a.} Write an expression that represents how much more an adult will spend at the fair when they go on $r$ rides.\n\n\\textbf{b.} An adult and a child each go on 7 rides. How much more did the adult spend?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_6_4.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

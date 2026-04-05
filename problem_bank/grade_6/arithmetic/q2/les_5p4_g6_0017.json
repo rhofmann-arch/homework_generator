@@ -1,0 +1,18 @@
+{
+  "id": "les_5p4_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": "5.4",
+  "topic": "multiplication of fractions, word problem",
+  "latex": "A meeting was attended by 15 people. Each person ate $\\frac{2}{3}$ of a pizza and there was no pizza left over. How many pizzas were there to begin with?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_5_4.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

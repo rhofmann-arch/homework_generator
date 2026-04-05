@@ -1,0 +1,18 @@
+{
+  "id": "les_5p4_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": "5.4",
+  "topic": "squaring a mixed number",
+  "latex": "Find the product.\n\n$\\left(-1\\frac{3}{8}\\right)^2$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_5_4.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

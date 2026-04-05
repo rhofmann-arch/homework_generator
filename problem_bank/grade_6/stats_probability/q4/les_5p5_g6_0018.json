@@ -1,0 +1,18 @@
+{
+  "id": "les_5p5_g6_0018",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": "5.5",
+  "topic": "mean of positive and negative decimals, real-world application",
+  "latex": "The price of a stock went up by \\$1.20 on Monday, down by \\$2.30 on Tuesday, down by \\$1.00 on Wednesday, down by \\$1.80 on Thursday, and up by \\$0.40 on Friday. What is the mean change of the stock price for those 5 days?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_5_5.pdf",
+  "source_problem_number": 18,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

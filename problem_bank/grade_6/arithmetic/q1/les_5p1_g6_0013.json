@@ -1,0 +1,18 @@
+{
+  "id": "les_5p1_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "5.1",
+  "topic": "multiplying three integers",
+  "latex": "Evaluate the expression.\n\n$-5(-4)(-1)$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_5_1.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
