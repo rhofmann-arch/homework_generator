@@ -389,9 +389,14 @@ function ReviewBank() {
   }
 
   const handleApprove = async () => {
-    if (!current || !selectedDomain || !selectedQuarter) { setActionMsg('Select a domain and quarter first.'); return }
+    const isLessonProblem = Boolean(current?.lesson)
+    if (!current || !selectedDomain || (!isLessonProblem && !selectedQuarter)) {
+      setActionMsg(isLessonProblem ? 'Select a domain first.' : 'Select a domain and quarter first.')
+      return
+    }
+    const quarter = isLessonProblem ? null : Number(selectedQuarter)
     try {
-      await approveProblem(current.id, selectedDomain as Domain, Number(selectedQuarter), notes, 6, isHonors, isHighPriority)
+      await approveProblem(current.id, selectedDomain as Domain, quarter, notes, 6, isHonors, isHighPriority)
       setActionMsg('✓ Approved'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
@@ -487,21 +492,27 @@ function ReviewBank() {
               </div>
             </div>
 
-            <div>
-              <SectionLabel>Quarter{current.suggested_quarter ? ` (suggested Q${current.suggested_quarter})` : ''}</SectionLabel>
-              <div className="grid grid-cols-4 gap-2">
-                {[1, 2, 3, 4].map(q => (
-                  <button key={q} onClick={() => setSelectedQuarter(q)}
-                    className={['py-1.5 rounded-lg border text-xs font-medium transition',
-                      selectedQuarter === q
-                        ? 'bg-blue-600 border-blue-600 text-white'
-                        : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
-                    ].join(' ')}>
-                    Q{q}
-                  </button>
-                ))}
+            {current.lesson ? (
+              <div className="text-xs text-slate-500 bg-slate-50 rounded-lg px-3 py-2 border border-slate-200">
+                Lesson <span className="font-semibold text-slate-700">{current.lesson}</span> — quarter auto-assigned (lesson practice problems are available to both classes regardless of quarter)
               </div>
-            </div>
+            ) : (
+              <div>
+                <SectionLabel>Quarter{current.suggested_quarter ? ` (suggested Q${current.suggested_quarter})` : ''}</SectionLabel>
+                <div className="grid grid-cols-4 gap-2">
+                  {[1, 2, 3, 4].map(q => (
+                    <button key={q} onClick={() => setSelectedQuarter(q)}
+                      className={['py-1.5 rounded-lg border text-xs font-medium transition',
+                        selectedQuarter === q
+                          ? 'bg-blue-600 border-blue-600 text-white'
+                          : 'bg-white border-slate-300 text-slate-600 hover:border-blue-400',
+                      ].join(' ')}>
+                      Q{q}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div>
               <SectionLabel>Notes (optional)</SectionLabel>
@@ -538,7 +549,7 @@ function ReviewBank() {
               </p>
             )}
             <div className="flex gap-2">
-              <button onClick={handleApprove} disabled={!selectedDomain || !selectedQuarter}
+              <button onClick={handleApprove} disabled={!selectedDomain || (!current?.lesson && !selectedQuarter)}
                 className="flex-1 py-2 bg-green-600 text-white text-xs font-semibold rounded-lg hover:bg-green-700 transition disabled:opacity-40 disabled:cursor-not-allowed">
                 ✓ Approve
               </button>

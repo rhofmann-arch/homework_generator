@@ -110,7 +110,7 @@ def dest_path(domain: str, quarter: int, problem_id: str, grade: int = 6) -> Pat
 class ApproveRequest(BaseModel):
     problem_id: str
     domain: str
-    quarter: int
+    quarter: Optional[int] = None   # omit for lesson-tagged problems; defaults to 1
     notes: Optional[str] = ""
     grade: Optional[int] = 6
     honors: bool = False
@@ -239,23 +239,29 @@ def stats(grade: int = Query(6)):
 def approve(req: ApproveRequest):
     if req.domain not in VALID_DOMAINS:
         raise HTTPException(400, f"Invalid domain. Must be one of: {VALID_DOMAINS}")
-    if req.quarter not in VALID_QUARTERS:
-        raise HTTPException(400, f"Invalid quarter. Must be 1–4.")
 
     src = problem_path(req.problem_id, req.grade)
     if not src:
         raise HTTPException(404, f"Problem not found: {req.problem_id}")
 
     data = read_problem(src)
+
+    # Lesson-tagged problems don't need a meaningful quarter — they are sampled
+    # by lesson tag across all quarters. Default to 1 so the file has a home.
+    has_lesson = bool(data.get("lesson"))
+    quarter = req.quarter if req.quarter is not None else (1 if has_lesson else None)
+    if quarter not in VALID_QUARTERS:
+        raise HTTPException(400, f"Invalid quarter. Must be 1–4.")
+
     data["domain"] = req.domain
-    data["quarter"] = req.quarter
+    data["quarter"] = quarter
     data["approved"] = True
     data["flagged"] = False
     data["notes"] = req.notes or data.get("notes", "")
     data["honors"] = req.honors
     data["high_priority"] = req.high_priority
 
-    target = dest_path(req.domain, req.quarter, req.problem_id, req.grade)
+    target = dest_path(req.domain, quarter, req.problem_id, req.grade)
     target.parent.mkdir(parents=True, exist_ok=True)
 
     # Move file: write to new location, remove old
