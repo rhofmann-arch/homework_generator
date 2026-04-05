@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "error analysis for area of a circle",
+  "latex": "Your friend finds the area of a circle with a diameter of 9 inches. Is your friend correct? Explain.\n\n\\begin{tabular}{|l|}\n\\hline\n$\\text{Area} = \\pi r^2$ \\\\\n$\\approx 3.14 \\cdot 4.5 \\cdot 2$ \\\\\n$= 28.26$ square inches \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

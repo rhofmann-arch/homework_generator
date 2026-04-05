@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "area of a triangle with height drawn",
+  "latex": "Find the area of the triangle.\n\n\\begin{tikzpicture}[scale=0.3]\n\\draw (0,0) -- (5,0) -- (3,14) -- cycle;\n\\draw[dashed] (3,14) -- (3,0);\n\\draw (3,0) rectangle (3.5,0.5);\n\\node[right] at (4,7) {14 cm};\n\\node[below right] at (4,0) {5 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

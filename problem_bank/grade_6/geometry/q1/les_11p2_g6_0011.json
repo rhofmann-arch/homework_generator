@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "area of circle given circumference",
+  "latex": "The circumference of a circular table top is $20\\pi$ centimeters. What is the area of the table top?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

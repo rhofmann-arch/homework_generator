@@ -1,0 +1,18 @@
+{
+  "id": "les_11p1_g6_0015",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.1",
+  "topic": "perimeter of semicircle",
+  "latex": "Find the perimeter of the semicircular tabletop.\n\n\\begin{tikzpicture}\n% Semicircular tabletop with legs\n\\draw[thick] (-1,0) -- (1,0);\n\\draw[thick] (-1,0) arc (180:360:1);\n% Table legs\n\\draw[thick, fill=gray] (-0.7,-0.1) rectangle (-0.5,-1);\n\\draw[thick, fill=gray] (0.5,-0.1) rectangle (0.7,-1);\n% Dimension line\n\\draw[|<->|] (-1,0.3) -- (1,0.3);\n\\node[above] at (0,0.3) {2 ft};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_1.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

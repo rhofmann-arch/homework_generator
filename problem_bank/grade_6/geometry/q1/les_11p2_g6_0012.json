@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "change in area of circle with radius increase",
+  "latex": "A circular patio has a radius of 4 yards. The patio is expanded so that the radius increases by 2 yards. By how many square yards does the area of the patio increase?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

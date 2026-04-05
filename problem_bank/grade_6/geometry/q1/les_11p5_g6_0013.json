@@ -1,0 +1,18 @@
+{
+  "id": "les_11p5_g6_0013",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.5",
+  "topic": "complementary angles, solving equations for unknown angle measures",
+  "latex": "Classify the pair of angles. Then find the value of $x$.\n\n\\begin{tikzpicture}\n\\draw[->] (0,-1) -- (0,1.5);\n\\draw[->] (0,0) -- (1.5,0);\n\\draw[->] (0,0) -- (1.2,0.8);\n\\node at (0.4,0.6) {$3x^\\circ$};\n\\node at (0.7,0.15) {$2x^\\circ$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_5.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

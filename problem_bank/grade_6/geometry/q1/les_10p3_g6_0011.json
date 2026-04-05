@@ -1,0 +1,18 @@
+{
+  "id": "les_10p3_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.3",
+  "topic": "area of trapezoid, solving for height",
+  "latex": "Find the height of the trapezoid.\n\nArea $= 836$ mm$^2$\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[fill=gray!30] (0,0) -- (5.1,0) -- (4.5,4) -- (0.7,4) -- cycle;\n\\draw (2.55,0) node[below] {51 mm};\n\\draw (2.6,4) node[above] {37 mm};\n\\draw (0.2,2) node[left] {$h$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_3.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_11p5_g6_0014",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.5",
+  "topic": "vertical angles, linear pair, finding unknown angle measures",
+  "latex": "Classify the pair of angles. Then find the value of $x$.\n\n\\begin{tikzpicture}\n\\draw[<->] (-1.5,0) -- (1.5,0);\n\\draw[<->] (-1,-0.8) -- (1,0.8);\n\\node at (-0.8,0.35) {$142^\\circ$};\n\\node at (-0.3,-0.35) {$x^\\circ$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_5.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

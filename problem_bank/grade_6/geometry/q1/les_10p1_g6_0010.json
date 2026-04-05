@@ -1,0 +1,18 @@
+{
+  "id": "les_10p1_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.1",
+  "topic": "area of parallelogram, word problem",
+  "latex": "The area of a parallelogram-shaped carpet is 216 square feet. The carpet has a base of 18 feet. What is the height of the carpet?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_1.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

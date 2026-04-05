@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0006",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "finding missing height of a triangle given area",
+  "latex": "Find the missing dimension of the triangle.\n\nArea $= 32$ m$^2$\n\n\\begin{tikzpicture}[scale=0.3]\n\\draw (0,0) -- (16,0) -- (4,6) -- cycle;\n\\draw[dashed] (4,6) -- (4,0);\n\\draw (4,0) rectangle (4.8,0.8);\n\\node[left] at (2,3) {$h$};\n\\node[below] at (8,0) {16 m};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

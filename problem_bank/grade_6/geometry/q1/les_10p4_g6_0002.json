@@ -1,0 +1,18 @@
+{
+  "id": "les_10p4_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.4",
+  "topic": "counting faces, edges, and vertices of a pentagonal pyramid",
+  "latex": "Find the numbers of faces, edges, and vertices of the solid.\n\n\\begin{tikzpicture}[scale=0.8]\n  % Pentagonal pyramid\n  \\coordinate (A) at (0,0.5);\n  \\coordinate (B) at (0.8,0);\n  \\coordinate (C) at (2,0.3);\n  \\coordinate (D) at (2.2,1.2);\n  \\coordinate (E) at (1,1.5);\n  \\coordinate (apex) at (1.2,2.8);\n  % Base\n  \\draw (A) -- (B) -- (C) -- (D) -- (E) -- cycle;\n  % Edges to apex\n  \\draw (A) -- (apex);\n  \\draw (B) -- (apex);\n  \\draw (C) -- (apex);\n  \\draw (D) -- (apex);\n  \\draw[dashed] (E) -- (apex);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_4.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

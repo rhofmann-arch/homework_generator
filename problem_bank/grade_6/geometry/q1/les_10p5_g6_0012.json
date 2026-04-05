@@ -1,0 +1,18 @@
+{
+  "id": "les_10p5_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.5",
+  "topic": "surface area of a triangular prism",
+  "latex": "A bakery is designing a new cardboard container for single slices of pie. The containers will be in the shape of a triangular prism to perfectly fit the slices. What is the least amount of cardboard needed to make a container for the slice shown?\n\n\\begin{tikzpicture}\n% Draw triangular prism\n\\draw (0,0) -- (3,0) -- (1.5,2) -- cycle;\n\\draw (3,0) -- (4.5,0.5) -- (3,2.5) -- (1.5,2);\n\\draw[dashed] (0,0) -- (1.5,0.5) -- (4.5,0.5);\n\\draw[dashed] (1.5,0.5) -- (1.5,2);\n\\draw (1.5,2) -- (3,2.5);\n% Labels\n\\node at (3.5,2.7) {12 cm};\n\\node at (-0.4,1) {7 cm};\n\\node at (4.2,1.5) {13 cm};\n\\node at (1.5,-0.3) {10 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_5.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

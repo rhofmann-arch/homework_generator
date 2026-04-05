@@ -1,0 +1,18 @@
+{
+  "id": "les_11p1_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.1",
+  "topic": "finding diameter from radius of a circle",
+  "latex": "Find the diameter of the circle.\n\n\\begin{tikzpicture}\n\\draw (0,0) circle (1cm);\n\\draw (0,0) -- (0.707,-0.707);\n\\node[right] at (0.4,-0.2) {2 m};\n\\fill (0,0) circle (1.5pt);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_11_1.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_10p5_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.5",
+  "topic": "surface area of a cube",
+  "latex": "A box is in the shape of a cube with edge lengths of 9 inches. Find the surface area of the box.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_5.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_10p3_g6_0014",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.3",
+  "topic": "area of trapezoid, population density application",
+  "latex": "You can use a trapezoid with bases of 45 miles and 80 miles and height 50 miles to approximate the shape of Lake County, Minnesota. The population of Lake County is about 11,000. About how many people are there per square mile?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_3.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

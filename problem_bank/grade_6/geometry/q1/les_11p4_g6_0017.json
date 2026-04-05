@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0017",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "Constructing quadrilaterals from given descriptions",
+  "latex": "Construct a quadrilateral with the given description.\n\na parallelogram with side lengths of 6 centimeters and 10 centimeters",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_11p1_g6_0016",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.1",
+  "topic": "circumference of a circle, rotations and distance",
+  "latex": "A carousel has a diameter of 8 yards.\n\n\\textbf{a.} What is the circumference of the carousel?\n\n\\textbf{b.} If a point on the edge of the carousel travels 100 yards, how many rotations does it make?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_1.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

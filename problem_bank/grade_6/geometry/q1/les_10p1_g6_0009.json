@@ -1,0 +1,18 @@
+{
+  "id": "les_10p1_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.1",
+  "topic": "area of parallelogram, finding missing dimension",
+  "latex": "Find the missing dimension of the parallelogram described.\n\n$b = ?$ mm, $h = 3$ mm, $A = 27$ mm$^2$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_1.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

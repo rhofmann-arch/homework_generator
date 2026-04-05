@@ -1,0 +1,18 @@
+{
+  "id": "les_10p7_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.7",
+  "topic": "finding missing dimension of rectangular prism given volume",
+  "latex": "Find the missing dimension of the prism.\n\nVolume $= 18{,}000$ cm$^3$\n\n\\begin{tikzpicture}[scale=1]\n% Draw a 3D rectangular prism\n\\draw (0,0,0) -- (0,2,0) -- (0.8,2.6,0) -- (0.8,0.6,0) -- cycle;\n\\draw (0,2,0) -- (3,2,0) -- (3.8,2.6,0) -- (0.8,2.6,0);\n\\draw (3,2,0) -- (3,0,0) -- (3.8,0.6,0) -- (3.8,2.6,0);\n\\draw[dashed] (0,0,0) -- (3,0,0);\n\\draw[dashed] (0.8,0.6,0) -- (3.8,0.6,0);\n% Labels\n\\node at (-0.3,1,0) {$\\ell$};\n\\node at (4.2,1.6,0) {8 cm};\n\\node at (2,2.9,0) {30 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_7.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

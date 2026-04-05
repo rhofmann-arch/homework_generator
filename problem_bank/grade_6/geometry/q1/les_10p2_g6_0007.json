@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0007",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "finding missing base of a triangle given area",
+  "latex": "Find the missing dimension of the triangle.\n\nArea $= 1.5$ in.$^2$\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw (0,0) -- (0,3) -- (1.5,0) -- cycle;\n\\draw (0,0) rectangle (0.3,0.3);\n\\node[right] at (0,1.5) {3 in.};\n\\node[below] at (0.75,0) {$b$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0019",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "Area of triangles using Heron's formula or right triangle recognition",
+  "latex": "You construct a triangular garden with side lengths that are 9 feet, 12 feet, and 15 feet. Estimate the enclosed area.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

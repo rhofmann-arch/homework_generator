@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "triangle angle sum theorem reasoning",
+  "latex": "Your friend determines whether he can draw a triangle with angle measures of $50^\\circ$, $60^\\circ$, and $70^\\circ$. Is your friend correct? Explain.\n\n\\begin{center}\n$50^\\circ + 60^\\circ + 70^\\circ = 180^\\circ$\n\nBecause the sum of the three angle measures is equal to $180^\\circ$, these angles will form a triangle.\n\\end{center}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

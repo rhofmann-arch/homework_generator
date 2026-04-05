@@ -1,0 +1,18 @@
+{
+  "id": "les_10p6_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.6",
+  "topic": "surface area of square pyramid",
+  "latex": "Find the surface area of the pyramid.\n\n\\begin{tikzpicture}[scale=0.8]\n% Square pyramid with square base\n\\coordinate (A) at (0,0);\n\\coordinate (B) at (2,0);\n\\coordinate (C) at (2.8,0.8);\n\\coordinate (D) at (0.8,0.8);\n\\coordinate (apex) at (1.4,2.5);\n% Draw base (with dashed hidden edges)\n\\draw[dashed] (A) -- (D);\n\\draw[dashed] (D) -- (C);\n\\draw (A) -- (B) -- (C);\n% Draw edges to apex\n\\draw (A) -- (apex);\n\\draw (B) -- (apex);\n\\draw (C) -- (apex);\n\\draw[dashed] (D) -- (apex);\n% Labels\n\\node[above right] at (apex) {4 in.};\n\\node[below] at (1,0) {5 in.};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_6.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

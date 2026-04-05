@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0003",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "area of a triangle",
+  "latex": "Find the area of the triangle.\n\n\\begin{tikzpicture}[scale=0.25]\n\\draw (0,0) -- (20,0) -- (7,7) -- cycle;\n\\draw[dashed] (7,7) -- (7,0);\n\\draw (7,0) rectangle (7.8,0.8);\n\\node[above] at (5,4) {7 m};\n\\node[below] at (10,0) {20 m};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

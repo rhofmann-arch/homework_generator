@@ -1,0 +1,18 @@
+{
+  "id": "les_10p7_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.7",
+  "topic": "volume of cube with percent application",
+  "latex": "A cube with side length 4 centimeters is 25\\% full of sand. What is the volume of the sand?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_7.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

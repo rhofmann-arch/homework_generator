@@ -1,0 +1,18 @@
+{
+  "id": "les_10p6_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.6",
+  "topic": "surface area comparison of triangular pyramids",
+  "latex": "You are painting sets of trees for a model of your town. Each tree is shaped like a triangular pyramid. The triangular faces of the first tree you paint have bases of 6 millimeters and heights of 13 millimeters, and the triangular faces of the second tree you paint have bases of 7 millimeters and heights of 12 millimeters. If you do not paint the base of either tree, which tree uses more paint? How much more?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_6.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

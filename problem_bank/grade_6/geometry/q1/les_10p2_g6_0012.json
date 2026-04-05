@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "area of triangles, comparing areas with proportional reasoning",
+  "latex": "Triangle A and Triangle B have the same base length. The height of Triangle B is twice the height of Triangle A. How many times greater is the area of Triangle B?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

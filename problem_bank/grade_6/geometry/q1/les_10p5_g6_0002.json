@@ -1,0 +1,18 @@
+{
+  "id": "les_10p5_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.5",
+  "topic": "surface area of triangular prism",
+  "latex": "Find the surface area of the prism.\n\n\\begin{tikzpicture}[scale=0.6]\n% Triangular prism\n\\draw[thick] (0,0) -- (1,0) -- (0,2.5) -- cycle;\n\\draw[thick] (0,0) -- (2.5,0.8) -- (3.5,0.8) -- (1,0);\n\\draw[thick] (0,2.5) -- (2.5,3.3) -- (3.5,0.8);\n\\draw[thick] (2.5,0.8) -- (2.5,3.3);\n\\draw[dashed] (1,0) -- (3.5,0.8);\n\\node[left] at (0,1.25) {5 ft};\n\\node[below] at (0.5,0) {2 ft};\n\\node[right] at (3,2) {5 ft};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_5.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

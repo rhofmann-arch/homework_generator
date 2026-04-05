@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "area of a triangle, word problem",
+  "latex": "You are making a triangle-shaped pennant out of fabric. The base of the pennant is 5 inches, and the height is 13 inches. How much fabric do you need to make the pennant?",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

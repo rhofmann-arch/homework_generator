@@ -1,0 +1,18 @@
+{
+  "id": "les_10p1_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.1",
+  "topic": "area of parallelogram with unit conversion consideration",
+  "latex": "Area $= \\_\\_\\_\\_\\_\\_$ cm$^2$\n\n\\begin{tikzpicture}\n\\draw (0,0) -- (2,0) -- (3.5,2.5) -- (1.5,2.5) -- cycle;\n\\draw[dashed] (1.5,2.5) -- (1.5,0);\n\\draw (1.5,0.2) -- (1.7,0.2) -- (1.7,0);\n\\node at (0.8,1.25) {7 m};\n\\node at (1,-0.3) {10 m};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_1.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

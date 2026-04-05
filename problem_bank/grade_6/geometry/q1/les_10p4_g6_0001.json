@@ -1,0 +1,18 @@
+{
+  "id": "les_10p4_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.4",
+  "topic": "counting faces, edges, and vertices of a square pyramid",
+  "latex": "Find the numbers of faces, edges, and vertices of the solid.\n\n\\begin{tikzpicture}[scale=0.8]\n  % Square pyramid\n  \\coordinate (A) at (0,0);\n  \\coordinate (B) at (2,0);\n  \\coordinate (C) at (2.5,1);\n  \\coordinate (D) at (0.5,1);\n  \\coordinate (apex) at (1.25,2.5);\n  % Base\n  \\draw (A) -- (B) -- (C);\n  \\draw[dashed] (C) -- (D) -- (A);\n  % Edges to apex\n  \\draw (A) -- (apex);\n  \\draw (B) -- (apex);\n  \\draw (C) -- (apex);\n  \\draw[dashed] (D) -- (apex);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_4.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

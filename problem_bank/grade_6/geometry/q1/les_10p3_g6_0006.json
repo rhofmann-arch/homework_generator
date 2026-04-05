@@ -1,0 +1,18 @@
+{
+  "id": "les_10p3_g6_0006",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.3",
+  "topic": "area of trapezoid",
+  "latex": "Find the area of the trapezoid.\n\n\\begin{tikzpicture}[scale=0.3]\n\\draw (0,0) -- (11,0) -- (8,8) -- (3,8) -- cycle;\n\\draw (0.5,0) -- (0.5,0.5) -- (0,0.5);\n\\draw (10.5,0) -- (10.5,0.5) -- (11,0.5);\n\\node[above] at (5.5,8) {5 m};\n\\node[right] at (9.5,4) {8 m};\n\\node[below] at (5.5,0) {11 m};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_3.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

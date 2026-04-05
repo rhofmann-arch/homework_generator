@@ -1,0 +1,18 @@
+{
+  "id": "les_11p1_g6_0017",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.1",
+  "topic": "circumference to radius, real-world application",
+  "latex": "A tree has a circumference of 94.25 centimeters. After one year, the circumference increases 6.28 centimeters. What is the radius of the tree after one year?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_1.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

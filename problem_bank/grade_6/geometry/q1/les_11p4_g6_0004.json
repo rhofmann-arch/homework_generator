@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "constructing triangles from given angle measures",
+  "latex": "Draw a triangle with the given angle measures, if possible.\n\n$15^\\circ, 30^\\circ, 135^\\circ$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

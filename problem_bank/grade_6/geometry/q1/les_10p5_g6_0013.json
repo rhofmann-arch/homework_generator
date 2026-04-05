@@ -1,0 +1,18 @@
+{
+  "id": "les_10p5_g6_0013",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.5",
+  "topic": "surface area of a rectangular prism, comparing surface areas",
+  "latex": "A shipping crate in the shape of a rectangular prism measures 5 feet by 4 feet by 3 feet.\n\n\\textbf{a.} Find the surface area of the crate.\n\n\\textbf{b.} By how much does the surface area of the crate increase when its length, width, and height are each increased by 1 foot?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_5.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

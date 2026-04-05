@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0016",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "Constructing quadrilaterals from given descriptions",
+  "latex": "Construct a quadrilateral with the given description.\n\na square with side lengths of 1 inch",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

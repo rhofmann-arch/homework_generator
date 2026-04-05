@@ -1,0 +1,18 @@
+{
+  "id": "les_10p3_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.3",
+  "topic": "area of triangle and trapezoid, equal areas",
+  "latex": "The triangle and the trapezoid have the same area. What is the base $b$ of the triangle?\n\n\\begin{tikzpicture}[scale=0.4]\n% Triangle\n\\draw[fill=gray!30] (0,0) -- (6,0) -- (0,7) -- cycle;\n\\draw (0,3.5) node[left] {7 cm};\n\\draw (3,0) node[below] {$b$};\n\\draw (0,0) rectangle (0.5,0.5);\n% Trapezoid\n\\begin{scope}[xshift=9cm]\n\\draw[fill=gray!30] (0,0) -- (4,0) -- (3.5,7) -- (0,7) -- cycle;\n\\draw (2,0) node[below] {12 cm};\n\\draw (1.75,7) node[above] {10 cm};\n\\draw (4,3.5) node[right] {7 cm};\n\\draw (3.75,0) rectangle (3.25,0.5);\n\\end{scope}\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_3.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

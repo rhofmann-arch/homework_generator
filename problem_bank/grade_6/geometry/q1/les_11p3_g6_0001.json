@@ -1,0 +1,18 @@
+{
+  "id": "les_11p3_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.3",
+  "topic": "estimating perimeter and area of composite figures on grid",
+  "latex": "Estimate the perimeter and the area of the shaded figure.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[step=1, gray, thin] (0,0) grid (6,6);\n\\fill[gray!30] (0,2) -- (0,5) -- (2,5) -- (2,6) -- (4,4) -- (4,3) -- (2,3) -- (2,2) -- cycle;\n\\draw[thick] (0,2) -- (0,5) -- (2,5) -- (2,6) -- (4,4) -- (4,3) -- (2,3) -- (2,2) -- cycle;\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_3.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

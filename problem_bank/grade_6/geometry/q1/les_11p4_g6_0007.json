@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0007",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "constructing triangles from side lengths and angles",
+  "latex": "Draw a triangle with the given description.\n\nside lengths of 3 centimeters and 4 centimeters that meet at a $110^\\circ$ angle",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

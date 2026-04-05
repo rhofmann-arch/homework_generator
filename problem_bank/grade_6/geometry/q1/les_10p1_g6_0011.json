@@ -1,0 +1,18 @@
+{
+  "id": "les_10p1_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.1",
+  "topic": "area of parallelogram, multi-step word problem",
+  "latex": "You buy a pack of 12 parallelogram-shaped wall lights for your bedroom. Each light has a base of 8 inches and a height of 6 inches. What is the total area of the wall that the lights can cover?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_1.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

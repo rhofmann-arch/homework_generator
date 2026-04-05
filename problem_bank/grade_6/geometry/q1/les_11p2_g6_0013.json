@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0013",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "area of circle with unit conversion",
+  "latex": "Find the area of the circle in square feet.\n\n\\begin{tikzpicture}\n\\fill[gray!20] (0,0) circle (1.2);\n\\draw (0,0) circle (1.2);\n\\fill (0,0) circle (0.05);\n\\draw (0,0) -- (1.2,0);\n\\node[above right] at (0.6,0) {5 yd};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

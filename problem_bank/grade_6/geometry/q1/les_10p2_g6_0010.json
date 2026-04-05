@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "area of a triangle, solving for base",
+  "latex": "A sail in the shape of a triangle has an area of 60 square feet. The height of the sail is 12 feet. Find the base of the sail.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "area of a semicircle given diameter",
+  "latex": "Find the area of the semicircle.\n\n\\begin{tikzpicture}\n\\draw (0,0) arc (180:360:1.5cm);\n\\draw (0,0) -- (3,0);\n\\draw[fill=black] (1.5,0) circle (1.5pt);\n\\draw[<->] (0,0.3) -- (3,0.3);\n\\node[above] at (1.5,0.3) {14 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

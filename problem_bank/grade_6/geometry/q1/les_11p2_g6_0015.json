@@ -1,0 +1,18 @@
+{
+  "id": "les_11p2_g6_0015",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.2",
+  "topic": "area of semicircle with unit conversion",
+  "latex": "You want to put a semicircle-shaped window above a door that is 3 feet wide and 6.5 feet tall. How much glass (in square inches) do you need if the window is as wide as the door?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_2.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

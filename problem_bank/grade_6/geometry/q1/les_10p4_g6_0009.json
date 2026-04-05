@@ -1,0 +1,18 @@
+{
+  "id": "les_10p4_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.4",
+  "topic": "orthographic views of a cylinder",
+  "latex": "Draw the front, side, and top views of the solid.\n\n\\begin{tikzpicture}[scale=0.7]\n  % Cylinder\n  % Top ellipse\n  \\draw (0,2.5) ellipse (1 and 0.4);\n  % Bottom ellipse (front half solid, back half dashed)\n  \\draw (-1,0) arc (180:360:1 and 0.4);\n  \\draw[dashed] (-1,0) arc (180:0:1 and 0.4);\n  % Vertical edges\n  \\draw (-1,0) -- (-1,2.5);\n  \\draw (1,0) -- (1,2.5);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_4.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

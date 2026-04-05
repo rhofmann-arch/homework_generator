@@ -1,0 +1,18 @@
+{
+  "id": "les_11p3_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.3",
+  "topic": "perimeter and area of composite figures (pentagon)",
+  "latex": "Find the perimeter and the area of the figure.\n\n\\begin{tikzpicture}[scale=0.3]\n\\draw[thick] (0,0) -- (20,0) -- (20,4) -- (17,8) -- (0,8) -- cycle;\n\\node[above] at (8.5,8) {17 cm};\n\\node[left] at (0,4) {8 cm};\n\\node[right] at (20,2) {4 cm};\n\\node[below] at (10,0) {20 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_3.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_11p4_g6_0020",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.4",
+  "topic": "Comparing areas of triangles given side lengths",
+  "latex": "A sailboat has two triangular sails. Which has a greater area?\n\n\\begin{itemize}\n\\item Sail A: 6 yd, 8 yd, 10 yd\n\\item Sail B: 5 yd, 12 yd, 13 yd\n\\end{itemize}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_4.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

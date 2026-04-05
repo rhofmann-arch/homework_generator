@@ -1,0 +1,18 @@
+{
+  "id": "les_11p5_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.5",
+  "topic": "evaluating claims about supplementary angles",
+  "latex": "Your friend names a pair of supplementary angles. Is your friend correct? Explain.\n\n\\begin{tikzpicture}[scale=0.8]\n\\coordinate (B) at (0,0);\n\\coordinate (A) at (-1.5,0);\n\\coordinate (C) at (0.8,1);\n\\coordinate (D) at (1.5,0);\n\\coordinate (E) at (-0.5,-1.2);\n\\draw[<->] (A) -- (B) -- (C);\n\\draw[<->] (E) -- (B) -- (D);\n\\node[above left] at (A) {$A$};\n\\node[above] at (B) {$B$};\n\\node[above right] at (C) {$C$};\n\\node[right] at (D) {$D$};\n\\node[below] at (E) {$E$};\n\\end{tikzpicture}\n\n$\\angle ABC$ and $\\angle EBD$ are supplementary angles.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_5.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

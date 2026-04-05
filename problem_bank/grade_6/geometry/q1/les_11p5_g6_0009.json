@@ -1,0 +1,18 @@
+{
+  "id": "les_11p5_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.5",
+  "topic": "classifying angle pairs as complementary, supplementary, or neither",
+  "latex": "Tell whether the angles are \\textit{complementary}, \\textit{supplementary}, or \\textit{neither}.\n\n\\begin{tikzpicture}[scale=0.7]\n\\coordinate (O) at (0,0);\n\\draw[<->] (-1.5,0) -- (1.5,0);\n\\draw[->] (0,0) -- (-0.8,1.2);\n\\node at (-0.5,0.3) {$65^\\circ$};\n\\node at (0.5,0.3) {$115^\\circ$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_5.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

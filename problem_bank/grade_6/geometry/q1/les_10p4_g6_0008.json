@@ -1,0 +1,18 @@
+{
+  "id": "les_10p4_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.4",
+  "topic": "orthographic views of a pentagonal prism",
+  "latex": "Draw the front, side, and top views of the solid.\n\n\\begin{tikzpicture}[scale=0.7]\n  % Pentagonal prism\n  \\coordinate (A1) at (0,0);\n  \\coordinate (B1) at (1.5,0);\n  \\coordinate (C1) at (2,1);\n  \\coordinate (D1) at (0.75,1.8);\n  \\coordinate (E1) at (-0.5,1);\n  \\coordinate (A2) at (0.6,-0.6);\n  \\coordinate (B2) at (2.1,-0.6);\n  \\coordinate (C2) at (2.6,0.4);\n  \\coordinate (D2) at (1.35,1.2);\n  \\coordinate (E2) at (0.1,0.4);\n  % Front pentagon\n  \\draw (A1) -- (B1) -- (C1) -- (D1) -- (E1) -- cycle;\n  % Back pentagon\n  \\draw[dashed] (A1) -- (A2);\n  \\draw (B1) -- (B2);\n  \\draw (C1) -- (C2);\n  \\draw[dashed] (D1) -- (D2);\n  \\draw[dashed] (E1) -- (E2);\n  \\draw[dashed] (A2) -- (B2) -- (C2);\n  \\draw[dashed] (C2) -- (D2) -- (E2) -- (A2);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_4.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

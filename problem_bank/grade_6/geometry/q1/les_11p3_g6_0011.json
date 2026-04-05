@@ -1,0 +1,18 @@
+{
+  "id": "les_11p3_g6_0011",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.3",
+  "topic": "perimeter of composite figures and unit cost calculations",
+  "latex": "The dimensions of a basketball court and bleachers is shown. A fence is to be installed that follows the edges of the court and bleachers (except for their shared edge). The fence costs \\$8.99 per foot. How much will the fence cost?\n\n\\begin{tikzpicture}[scale=0.04]\n% Basketball court (main rectangle)\n\\draw (0,0) rectangle (105,70);\n% Center circle\n\\draw (52.5,35) circle (8);\n% Left semicircle (three-point arc area)\n\\draw (0,20) arc (270:90:15);\n% Right semicircle\n\\draw (105,20) arc (-90:90:15);\n% Bleachers below the court\n\\draw (15,0) -- (15,-15) -- (90,-15) -- (90,0);\n% Dimension labels\n\\node at (52.5, 75) {105 ft};\n\\node at (112, 35) {70 ft};\n\\node at (7.5, -7.5) {15 ft};\n\\node at (52.5, -20) {75 ft};\n\\node at (97, -7.5) {30 ft};\n\\node at (100, -15) {15 ft};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 4,
+  "source_file": "6_11_3.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

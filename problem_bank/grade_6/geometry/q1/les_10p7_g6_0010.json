@@ -1,0 +1,18 @@
+{
+  "id": "les_10p7_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.7",
+  "topic": "volume of rectangular prism with given face area",
+  "latex": "The area of the shaded face is 72 square inches. What is the volume of the rectangular prism?\n\n\\begin{tikzpicture}[scale=0.8]\n% Draw the rectangular prism\n\\draw (0,0) -- (2,0) -- (2,2.5) -- (0,2.5) -- cycle; % front face\n\\draw (2,0) -- (2.8,0.8) -- (2.8,3.3) -- (2,2.5); % right face\n\\draw (0,2.5) -- (0.8,3.3) -- (2.8,3.3); % top face\n\\draw[dashed] (0,0) -- (0.8,0.8) -- (0.8,3.3);\n\\draw[dashed] (0.8,0.8) -- (2.8,0.8);\n% Shading on top face\n\\fill[gray!30] (0,2.5) -- (0.8,3.3) -- (2.8,3.3) -- (2,2.5) -- cycle;\n% Labels\n\\node[right] at (2.8,1.8) {$x$ in.};\n\\node[below] at (1.4,-0.1) {6 in.};\n\\node[right] at (2.5,0.3) {6 in.};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_7.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

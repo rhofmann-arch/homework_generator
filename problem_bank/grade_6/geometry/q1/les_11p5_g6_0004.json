@@ -1,0 +1,18 @@
+{
+  "id": "les_11p5_g6_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.5",
+  "topic": "identifying vertical angles from a diagram",
+  "latex": "Use the figure shown.\n\n\\begin{tikzpicture}[scale=0.8]\n\\coordinate (H) at (0,0);\n\\coordinate (G) at (-1.5,1.2);\n\\coordinate (I) at (0.3,1.5);\n\\coordinate (J) at (1.5,0.8);\n\\coordinate (K) at (1.5,-0.3);\n\\coordinate (L) at (0.5,-1.2);\n\\coordinate (M) at (-1.5,-0.8);\n\\coordinate (N) at (-1.8,0.3);\n\\draw[<->] (G) -- (H) -- (I);\n\\draw[<->] (N) -- (H) -- (J);\n\\draw[<->] (M) -- (H) -- (K);\n\\draw[->] (H) -- (L);\n\\node[above left] at (G) {$G$};\n\\node[above] at (I) {$I$};\n\\node[left] at (N) {$N$};\n\\node[right] at (J) {$J$};\n\\node[below left] at (M) {$M$};\n\\node[below right] at (K) {$K$};\n\\node[below] at (L) {$L$};\n\\node[below left] at (H) {$H$};\n\\end{tikzpicture}\n\nName a pair of vertical angles.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_11_5.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

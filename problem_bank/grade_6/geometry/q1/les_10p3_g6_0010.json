@@ -1,0 +1,18 @@
+{
+  "id": "les_10p3_g6_0010",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.3",
+  "topic": "area of trapezoid, solving for height",
+  "latex": "Find the height of the trapezoid.\n\nArea $= 42$ in.$^2$\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[fill=gray!30] (0,0) -- (3.3,0) -- (5,3) -- (0,3) -- cycle;\n\\draw (0,3) -- (0,0);\n\\draw (1.65,0) node[below] {3.3 in.};\n\\draw (2.5,3) node[above] {8.7 in.};\n\\draw (4.5,1.5) node[right] {$h$};\n\\draw[dashed] (3.3,0) -- (3.3,3);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_10_3.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

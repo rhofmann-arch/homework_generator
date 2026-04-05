@@ -1,0 +1,18 @@
+{
+  "id": "les_11p3_g6_0007",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.3",
+  "topic": "perimeter and area of composite figures with given dimensions",
+  "latex": "Find the perimeter and the area of the figure.\n\n\\begin{tikzpicture}[scale=0.6]\n\\draw[thick] (0,0) -- (3,0) -- (3,2) -- (3.5,2) -- (3.5,4) -- (2,4) -- (2,2) -- (0.5,2) -- (0.5,4) -- (0,4) -- cycle;\n\\node[above] at (1.5,4) {3 m};\n\\node[left] at (0,2) {4 m};\n\\node[left] at (0.5,3) {0.5 m};\n\\node[below] at (1,0) {2 m};\n\\node[right] at (3.5,3) {2 m};\n\\node[right] at (3.5,2.5) {0.5 m};\n\\node[below] at (2.75,2) {4 m};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_3.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

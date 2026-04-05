@@ -1,0 +1,18 @@
+{
+  "id": "les_10p6_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.6",
+  "topic": "surface area of a square pyramid, solving for unknown dimension",
+  "latex": "The surface area of the square pyramid shown is 120 square meters. What is the value of $x$?\n\n\\begin{tikzpicture}[scale=0.8]\n% Draw the square pyramid\n\\draw[thick] (0,0) -- (2,0) -- (2.5,0.8) -- (0.5,0.8) -- cycle;\n\\draw[thick] (1.25,3.5) -- (0,0);\n\\draw[thick] (1.25,3.5) -- (2,0);\n\\draw[thick] (1.25,3.5) -- (2.5,0.8);\n\\draw[thick, dashed] (1.25,3.5) -- (0.5,0.8);\n\\draw[thick] (2,0) -- (2.5,0.8);\n\\draw[thick] (0.5,0.8) -- (2.5,0.8);\n% Slant height indicator\n\\draw[thick] (1.25,3.5) -- (2.25,0.4);\n% Labels\n\\node[right] at (2.6,2) {$x$ m};\n\\node[below] at (1,-0.2) {4 m};\n% Dashed line for base\n\\draw[dashed] (0.5,0.8) -- (2,0);\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_6.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

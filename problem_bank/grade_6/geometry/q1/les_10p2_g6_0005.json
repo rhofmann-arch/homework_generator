@@ -1,0 +1,18 @@
+{
+  "id": "les_10p2_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.2",
+  "topic": "error analysis for area of a triangle",
+  "latex": "Your friend finds the area of the triangle. Is your friend correct? Explain your reasoning.\n\n\\begin{tikzpicture}[scale=0.25]\n\\draw (0,0) -- (20,0) -- (20,9) -- cycle;\n\\draw (20,0) rectangle (19,1);\n\\node[right] at (20,4.5) {9 ft};\n\\node[below] at (10,0) {20 ft};\n\\node[below] at (10,-3) {$A = \\frac{1}{2}(20)(9) = 90$ ft$^2$};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_2.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

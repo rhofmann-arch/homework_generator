@@ -1,0 +1,18 @@
+{
+  "id": "les_10p6_g6_0006",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "10.6",
+  "topic": "surface area of rectangular pyramid",
+  "latex": "Find the surface area of the pyramid.\n\n\\begin{tikzpicture}[scale=0.7]\n% Rectangular pyramid\n\\coordinate (A) at (0,0);\n\\coordinate (B) at (2.5,0);\n\\coordinate (C) at (3.3,0.8);\n\\coordinate (D) at (0.8,0.8);\n\\coordinate (apex) at (1.6,2.5);\n% Draw base (with dashed hidden edges)\n\\draw[dashed] (A) -- (D);\n\\draw[dashed] (D) -- (C);\n\\draw (A) -- (B) -- (C);\n% Draw edges to apex\n\\draw (A) -- (apex);\n\\draw (B) -- (apex);\n\\draw (C) -- (apex);\n\\draw[dashed] (D) -- (apex);\n% Labels\n\\node[above left] at (apex) {19 cm};\n\\node[right] at (2.9,0.4) {12.1 cm};\n\\node[below] at (1.25,0) {14 cm};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_10_6.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

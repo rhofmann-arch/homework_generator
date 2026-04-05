@@ -1,0 +1,18 @@
+{
+  "id": "les_11p3_g6_0012",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "11.3",
+  "topic": "area of composite figures, percent of area, and rate problems",
+  "latex": "A backyard that is 20 yards wide and 30 yards long contains a semicircle-shaped garden with a diameter of 6 yards. The rest of the yard is grass.\n\n\\textbf{a.} Find the percent of the yard that is grass.\n\n\\textbf{b.} If you mow the grass at a rate of 28 square yards per minute, how long (in minutes) does it take you to mow the grass?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_11_3.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
