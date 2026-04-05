@@ -343,7 +343,9 @@ function ReviewBank() {
   const [hpFilter,      setHpFilter]      = useState(false)
   const [selectedDomain,  setSelectedDomain]  = useState<Domain | ''>('')
   const [selectedQuarter, setSelectedQuarter] = useState<number | ''>('')
-  const [notes, setNotes] = useState('')
+  const [notes,        setNotes]        = useState('')
+  const [isHonors,     setIsHonors]     = useState(false)
+  const [isHighPriority, setIsHighPriority] = useState(false)
   const mathJaxRef = useRef<HTMLDivElement>(null)
 
   const loadQueue = useCallback(async () => {
@@ -366,10 +368,17 @@ function ReviewBank() {
   }, [index, problems])
 
   useEffect(() => {
-    const p = problems[index]
-    if (p) { setSelectedDomain(p.domain ?? ''); setSelectedQuarter(p.suggested_quarter ?? ''); setNotes(p.notes ?? '') }
+    const _filtered = hpFilter ? problems.filter(p => p.high_priority) : problems
+    const p = _filtered[index]
+    if (p) {
+      setSelectedDomain(p.domain ?? '')
+      setSelectedQuarter(p.suggested_quarter ?? '')
+      setNotes(p.notes ?? '')
+      setIsHonors(p.honors ?? false)
+      setIsHighPriority(p.high_priority ?? false)
+    }
     setConfirmDelete(false); setActionMsg('')
-  }, [index, problems])
+  }, [index, problems, hpFilter])
 
   const filtered = hpFilter ? problems.filter(p => p.high_priority) : problems
   const current  = filtered[index]
@@ -382,7 +391,7 @@ function ReviewBank() {
   const handleApprove = async () => {
     if (!current || !selectedDomain || !selectedQuarter) { setActionMsg('Select a domain and quarter first.'); return }
     try {
-      await approveProblem(current.id, selectedDomain as Domain, Number(selectedQuarter), notes)
+      await approveProblem(current.id, selectedDomain as Domain, Number(selectedQuarter), notes, 6, isHonors, isHighPriority)
       setActionMsg('✓ Approved'); advance()
     } catch (e: unknown) { setActionMsg(e instanceof Error ? e.message : 'Failed') }
   }
@@ -499,6 +508,28 @@ function ReviewBank() {
               <input value={notes} onChange={e => setNotes(e.target.value)}
                 className="w-full border border-slate-300 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-blue-400"
                 placeholder="Optional notes…"/>
+            </div>
+
+            <div>
+              <SectionLabel>Flags</SectionLabel>
+              <div className="flex gap-2">
+                <button onClick={() => setIsHighPriority(v => !v)}
+                  className={['flex-1 py-2 rounded-lg border text-xs font-semibold transition',
+                    isHighPriority
+                      ? 'bg-purple-600 border-purple-600 text-white'
+                      : 'bg-white border-slate-300 text-slate-600 hover:border-purple-400',
+                  ].join(' ')}>
+                  ⭐ High Priority
+                </button>
+                <button onClick={() => setIsHonors(v => !v)}
+                  className={['flex-1 py-2 rounded-lg border text-xs font-semibold transition',
+                    isHonors
+                      ? 'bg-green-600 border-green-600 text-white'
+                      : 'bg-white border-slate-300 text-slate-600 hover:border-green-400',
+                  ].join(' ')}>
+                  🎓 Honors
+                </button>
+              </div>
             </div>
 
             {actionMsg && (

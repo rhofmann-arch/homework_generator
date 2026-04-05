@@ -79,6 +79,8 @@ class ApproveRequest(BaseModel):
     quarter: int
     notes: Optional[str] = ""
     grade: Optional[int] = 6
+    honors: bool = False
+    high_priority: bool = False
 
 
 class FlagRequest(BaseModel):
@@ -216,6 +218,8 @@ def approve(req: ApproveRequest):
     data["approved"] = True
     data["flagged"] = False
     data["notes"] = req.notes or data.get("notes", "")
+    data["honors"] = req.honors
+    data["high_priority"] = req.high_priority
 
     target = dest_path(req.domain, req.quarter, req.problem_id, req.grade)
     target.parent.mkdir(parents=True, exist_ok=True)

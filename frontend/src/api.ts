@@ -169,9 +169,10 @@ export async function fetchReviewQueue(params: {
 }
 
 export async function approveProblem(
-  problem_id: string, domain: Domain, quarter: number, notes = '', grade = 6
+  problem_id: string, domain: Domain, quarter: number, notes = '', grade = 6,
+  honors = false, high_priority = false,
 ): Promise<void> {
-  await postJSON('/api/bank/approve', { problem_id, domain, quarter, notes, grade })
+  await postJSON('/api/bank/approve', { problem_id, domain, quarter, notes, grade, honors, high_priority })
 }
 
 export async function flagProblem(problem_id: string, notes = '', grade = 6): Promise<void> {
