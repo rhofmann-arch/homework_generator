@@ -1,0 +1,18 @@
+{
+  "id": "les_3p5_g6_0010",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.5",
+  "topic": "ratio tables, finding missing values",
+  "latex": "Find the missing values in the ratio table.\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\textbf{Tons} & 5 & 1 & 12 \\\\\n\\hline\n\\textbf{Days} & 3 & & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_5.pdf",
+  "source_problem_number": 10,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

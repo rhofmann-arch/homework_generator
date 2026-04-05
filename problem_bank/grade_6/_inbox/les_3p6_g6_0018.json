@@ -1,0 +1,18 @@
+{
+  "id": "les_3p6_g6_0018",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.6",
+  "topic": "Unit conversion of speed (km/h to mph, m/h, m/min)",
+  "latex": "The maximum sustained wind speed reached by a hurricane was 230 kilometers per hour.\n\n**a.** What is this speed in miles per hour?\n\n**b.** What is this speed in meters per hour?\n\n**c.** What is this speed in meters per minute?\n\n**d.** Use the Internet to determine the highest category attained by the hurricane.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 18,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

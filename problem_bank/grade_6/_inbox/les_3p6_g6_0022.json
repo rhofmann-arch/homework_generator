@@ -1,0 +1,18 @@
+{
+  "id": "les_3p6_g6_0022",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.6",
+  "topic": "Speed, distance, and time problem with unit conversion",
+  "latex": "Your goal is to bike 6 kilometers in 10 minutes or less. You bike at a constant speed of 7 meters per second. Can you meet your goal? If not, how much faster should you be?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_8_6.pdf",
+  "source_problem_number": 22,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

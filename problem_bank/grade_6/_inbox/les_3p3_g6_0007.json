@@ -1,0 +1,18 @@
+{
+  "id": "les_3p3_g6_0007",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.3",
+  "topic": "unit conversion, yards to feet, ratio tables",
+  "latex": "Your friend says that there are 36 feet in 12 yards. Is your friend correct? Explain your reasoning.\n\n\\begin{tabular}{|c|c|}\n\\hline\n\\textbf{Yards} & \\textbf{Feet} \\\\\n\\hline\n1 & 3 \\\\\n\\hline\n4 & \\\\\n\\hline\n & 30 \\\\\n\\hline\n12 & \\\\\n\\hline\n\\end{tabular}\n\n$1 \\times 3 = 3$\n\n$4 \\times 3 = 12$\n\n$10 \\times 3 = 30$\n\n$12 \\times 3 = 36$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_3.pdf",
+  "source_problem_number": 7,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_3p3_g6_0008",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.3",
+  "topic": "double number line, equivalent ratios",
+  "latex": "Find the missing quantity in the double number line.\n\n\\text{Books: } 0 \\quad 40 \\quad ?\n\n\\text{Boxes: } 0 \\quad 2 \\quad 5",
+  "answer_latex": "100",
+  "suggested_quarter": 2,
+  "source_file": "6_8_3.pdf",
+  "source_problem_number": 8,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

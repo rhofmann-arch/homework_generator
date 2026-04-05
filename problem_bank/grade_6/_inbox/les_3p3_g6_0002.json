@@ -1,0 +1,18 @@
+{
+  "id": "les_3p3_g6_0002",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.3",
+  "topic": "equivalent ratios, ratio tables with multiple missing values",
+  "latex": "Find the missing value(s) in the ratio table. Then write the equivalent ratios.\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\textbf{TVs} & 2 & & 6 \\\\\n\\hline\n\\textbf{Computers} & 7 & 14 & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_3.pdf",
+  "source_problem_number": 2,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

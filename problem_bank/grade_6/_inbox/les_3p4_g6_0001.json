@@ -1,0 +1,18 @@
+{
+  "id": "les_3p4_g6_0001",
+  "domain": null,
+  "grade": 6,
+  "quarter": null,
+  "lesson": "3.4",
+  "topic": "graphing ratio relationships from a table",
+  "latex": "Represent the ratio relationship using a graph.\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\textbf{Distance (miles)} & 20 & 80 & 140 \\\\\n\\hline\n\\textbf{Fuel (gallons)} & 1 & 4 & 7 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_8_4.pdf",
+  "source_problem_number": 1,
+  "approved": false,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
