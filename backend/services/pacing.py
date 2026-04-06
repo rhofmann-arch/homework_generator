@@ -185,13 +185,19 @@ def get_week_context(week_start: str, grade: str,
             pass
 
     # Detect review/test weeks and extract chapter number.
-    # Matches patterns like "Review Day Ch 3", "Ch 3 Review", "Chapter 3 Test".
+    # Matches:
+    #   - Pacing guide PDF references: "6_1_test", "6_2_mc", "6_3_deeper"
+    #   - Free-text patterns: "Review Day Ch 3", "Chapter 3 Test"
     review_chapter: str | None = None
     for _, r in week_rows.iterrows():
         raw = str(r["lesson"]) if pd.notna(r["lesson"]) else ""
         if not raw or raw in ("nan", "None"):
             continue
-        m = re.search(r'ch(?:apter)?\s*(\d+)', raw, re.IGNORECASE)
+        # "6_1_test", "6_2_mc", "6_3_deeper" etc. — PDF filename convention
+        m = re.match(r'6_(\d+)_', raw)
+        if not m:
+            # "Review Day Ch 3", "Chapter 3 Test", etc.
+            m = re.search(r'ch(?:apter)?\s*(\d+)', raw, re.IGNORECASE)
         if m:
             review_chapter = m.group(1)
             break
