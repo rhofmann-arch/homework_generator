@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "multi-step word problem with decimals and division",
+  "latex": "A pitcher contains $17.5$ cups of iced tea. You drink $0.75$ cup of the tea each morning and $1.75$ cups of the tea each evening. When will you run out of iced tea?\n\n\\underline{\\hspace{1cm}} days",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

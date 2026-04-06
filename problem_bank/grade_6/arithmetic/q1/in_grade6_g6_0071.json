@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0071",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "subtraction of decimals, money word problem",
+  "latex": "You have \\$455.92 in your savings account. You buy a television for \\$157.23 and a game for \\$41.56. How much money do you have left in your savings account?\n\na. \\$198.79\n\nb. \\$257.13\n\nc. \\$298.69\n\nd. \\$414.36",
+  "answer_latex": "b. \\$257.13",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

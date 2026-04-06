@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0037",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Volume of a cube and unit conversion",
+  "latex": "A tank is in the shape of a cube with edge lengths of 12 feet. Find the number of cubic feet of water needed to fill the tank. Then find the number of cubic yards of water needed to fill the tank.\n\n\\underline{\\hspace{1cm}} cubic feet\n\n\\underline{\\hspace{1cm}} cubic yards",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

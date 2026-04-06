@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0031",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "surface area of composite 3D figures",
+  "latex": "A zoo is designing a ramp to the giraffe observation deck. A blueprint of the ramp is shown. All shaded surfaces will be exposed and will be covered with anti-skid paint.\n\n\\begin{tikzpicture}[scale=0.08]\n% Left rectangle (shaded)\n\\fill[gray!40] (0,0) rectangle (17,15);\n\\draw (0,0) rectangle (17,15);\n\\node at (8.5,-2) {17 ft};\n\\node at (-3,7.5) {17 ft};\n\\node at (8.5,16.5) {15 ft};\n\n% Top rectangle (shaded)\n\\fill[gray!40] (17,15) -- (17+17,15) -- (17+17,15+8) -- (17,15+8) -- cycle;\n\\draw (17,15) -- (17+17,15) -- (17+17,15+8) -- (17,15+8) -- cycle;\n\\node at (25.5,15+9.5) {17 ft};\n\\node at (17+17+3,15+4) {8 ft};\n\n% Right slanted rectangle (unshaded)\n\\fill[white] (17+17,15+8) -- (17+17+8,15+8) -- (17+17+8,15+8-15) -- (17+17,15+8-15) -- cycle;\n\\draw (17+17,15+8) -- (17+17+8,15+8) -- (17+17+8,15+8-15) -- (17+17,15+8-15) -- cycle;\n\\node at (17+17+4,15+9.5) {15 ft};\n\n% Right triangle (shaded)\n\\fill[gray!40] (17+17,15) -- (17+17+8,15) -- (17+17+8,15-15) -- cycle;\n\\draw (17+17,15) -- (17+17+8,15) -- (17+17+8,15-15) -- cycle;\n\\node at (17+17+10,7.5) {19 ft};\n\n% Bottom right small rectangle (unshaded)\n\\fill[white] (17+17,0) -- (17+17+8,0) -- (17+17+8,-8) -- (17+17,-8) -- cycle;\n\\draw (17+17,0) -- (17+17+8,0) -- (17+17+8,-8) -- (17+17,-8) -- cycle;\n\\node at (17+17-2,-4) {17ft};\n\\node at (17+17+10,-2) {8 ft};\n\\node at (17+17+10,-6) {8 ft};\n\n\\end{tikzpicture}\n\n\\textbf{Part A} What is the total surface area of the ramp?\n\nThe total surface area of the ramp is \\underline{\\hspace{1cm}} square feet.\n\n\\textbf{Part B} How much of the surface area will \\textit{not} be painted?\n\nThe surface area that will \\textit{not} be painted is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "Part A: 896; Part B: 285",
+  "suggested_quarter": 4,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 31,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

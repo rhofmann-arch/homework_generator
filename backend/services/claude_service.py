@@ -530,25 +530,47 @@ async def generate_problems(
     # Eliminates back-page topic drift — Claude varies numbers only, can't invent new types.
     grade_int = int(str(context.grade).split("_")[0])
     lesson_templates: list[dict] = []
-    for lesson in context.current_lessons:
-        templates = sample_problems(
-            domain=None, grade=grade_int, max_quarter=4, n=6, lesson=lesson,
+
+    if context.review_chapter:
+        # Review/test week: pull ch{N}_test tagged problems as back-page templates
+        review_tag = f"ch{context.review_chapter}_test"
+        lesson_templates = sample_problems(
+            domain=None, grade=grade_int, max_quarter=4, n=6, lesson=review_tag,
             class_type=class_type,
         )
-        lesson_templates.extend(templates)
-    if len(lesson_templates) > 6:
-        import random as _random
-        lesson_templates = _random.sample(lesson_templates, 6)
-    if lesson_templates:
-        logger.info(f"Found {len(lesson_templates)} bank templates for lesson(s) {context.current_lessons}")
+        logger.info(
+            f"Review week (ch {context.review_chapter}): "
+            f"found {len(lesson_templates)} bank templates tagged '{review_tag}'"
+        )
     else:
-        logger.info(f"No bank templates for lesson(s) {context.current_lessons} — using PDF/free generation")
+        for lesson in context.current_lessons:
+            templates = sample_problems(
+                domain=None, grade=grade_int, max_quarter=4, n=6, lesson=lesson,
+                class_type=class_type,
+            )
+            lesson_templates.extend(templates)
+        if len(lesson_templates) > 6:
+            import random as _random
+            lesson_templates = _random.sample(lesson_templates, 6)
+        if lesson_templates:
+            logger.info(f"Found {len(lesson_templates)} bank templates for lesson(s) {context.current_lessons}")
+        else:
+            logger.info(f"No bank templates for lesson(s) {context.current_lessons} — using PDF/free generation")
+
+    # For review weeks, use the review tag as the "lesson" label so the back
+    # prompt describes the correct context to Claude.
+    if context.review_chapter:
+        back_lessons = [f"ch{context.review_chapter}_test"]
+        back_topic = context.current_topic  # e.g. "Review Day Ch 3"
+    else:
+        back_lessons = context.current_lessons
+        back_topic = context.current_topic
 
     back_sys, back_content = _back_prompt(
         grade=context.grade,
         class_type=class_type,
-        current_lessons=context.current_lessons,
-        current_topic=context.current_topic,
+        current_lessons=back_lessons,
+        current_topic=back_topic,
         spiral_topics=spiral_topics,
         lesson_templates=lesson_templates or None,
         n_back=n_back,

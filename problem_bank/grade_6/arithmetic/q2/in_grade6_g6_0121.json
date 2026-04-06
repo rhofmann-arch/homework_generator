@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0121",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "graphing ratio relationships on a coordinate plane",
+  "latex": "Represent the ratio relationship using a graph.\n\n\\begin{center}\n\\begin{tabular}{|l|c|c|c|}\n\\hline\n\\textbf{Time (minutes)} & 1 & 2 & 4 \\\\\n\\hline\n\\textbf{Climber's Descent (meters)} & 20 & 40 & 80 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[->] (0,0) -- (6,0) node[right] {$x$};\n\\draw[->] (0,0) -- (0,7) node[above] {$y$};\n\\node[left] at (0,0) {0};\n\\node[below] at (1,0) {1};\n\\node[below] at (2,0) {2};\n\\node[below] at (3,0) {3};\n\\node[below] at (4,0) {4};\n\\node[below] at (5,0) {5};\n\\node[left] at (0,1) {20};\n\\node[left] at (0,2) {40};\n\\node[left] at (0,3) {60};\n\\node[left] at (0,4) {80};\n\\node[left] at (0,5) {100};\n\\node[left] at (0,6) {120};\n\\draw[gray,very thin] (0,1) -- (5.5,1);\n\\draw[gray,very thin] (0,2) -- (5.5,2);\n\\draw[gray,very thin] (0,3) -- (5.5,3);\n\\draw[gray,very thin] (0,4) -- (5.5,4);\n\\draw[gray,very thin] (0,5) -- (5.5,5);\n\\draw[gray,very thin] (0,6) -- (5.5,6);\n\\draw[gray,very thin] (1,0) -- (1,6.5);\n\\draw[gray,very thin] (2,0) -- (2,6.5);\n\\draw[gray,very thin] (3,0) -- (3,6.5);\n\\draw[gray,very thin] (4,0) -- (4,6.5);\n\\draw[gray,very thin] (5,0) -- (5,6.5);\n\\node[rotate=90] at (-1.5,3) {Descent (meters)};\n\\node at (3,-1) {Time (minutes)};\n\\end{tikzpicture}",
+  "answer_latex": "Points plotted at $(1, 20)$, $(2, 40)$, and $(4, 80)$",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 54,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

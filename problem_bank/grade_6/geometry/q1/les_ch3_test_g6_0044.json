@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0044",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "polygons in the coordinate plane, identifying shapes",
+  "latex": "Use the blueprint above for Exercises 1--7.\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[->] (0,0) -- (11,0) node[right] {$x$};\n\\draw[->] (0,0) -- (0,11) node[above] {$y$};\n\\foreach \\x in {1,2,...,10} \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\x};\n\\foreach \\y in {1,2,...,10} \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\y};\n% House outline\n\\draw (0,0) -- (10,0) -- (10,10) -- (0,10) -- cycle;\n% Living Room (top left)\n\\draw (0,7) -- (4,7) -- (4,10);\n\\node at (2,8.5) {LIVING};\n\\node at (2,8) {ROOM};\n% Entrance (top middle)\n\\draw (4,10) -- (4,7) -- (7,7) -- (7,10);\n\\node at (5.5,8.5) {ENTRANCE};\n% Family Room (top right, irregular)\n\\draw (7,7) -- (7,10) -- (10,10) -- (10,4) -- (7,4) -- (7,7);\n\\node at (8.5,6.5) {FAMILY};\n\\node at (8.5,6) {ROOM};\n% Storage (left side)\n\\draw (0,4) -- (1,4) -- (1,7) -- (0,7);\n\\node[rotate=90] at (0.5,5.5) {STORAGE};\n% Dining Room\n\\draw (1,4) -- (4,4) -- (4,7) -- (1,7) -- cycle;\n\\node at (2.5,5.5) {DINING};\n\\node at (2.5,5) {ROOM};\n% Kitchen\n\\draw (1,0) -- (1,4) -- (4,4) -- (4,3) -- (4,0);\n\\node at (2.5,2.5) {KITCHEN};\n% Bathroom\n\\draw (7,4) -- (7,7);\n\\node[rotate=90] at (6.5,5.5) {BATHROOM};\n% Bedroom (lower middle)\n\\draw (4,0) -- (4,4) -- (7,4) -- (7,0);\n\\node at (5.5,3) {BEDROOM};\n% Bedroom (bottom right)\n\\draw (4,0) -- (4,2) -- (7,2) -- (7,0);\n\\node at (5.5,1) {BEDROOM};\n\\end{tikzpicture}\n\nDraw a line by connecting points $(4, 9)$ and $(7, 9)$. Do the same for points $(4, 6)$ and $(7, 6)$. Name the shapes the Entrance and Family Room are now broken into.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_3_deeper.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

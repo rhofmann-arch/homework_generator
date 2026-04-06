@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0050",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "division word problem with money",
+  "latex": "You make 12 equal payments. You pay a total of \\$1440. How much is each payment?\n\nEach payment is \\$ \\underline{\\hspace{1cm}} .",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

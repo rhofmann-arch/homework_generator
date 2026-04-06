@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0033",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "area of composite figures, word problem",
+  "latex": "A square vegetable garden has side lengths of $8$ feet. You plant flowers in the center portion of the garden, a square that has side lengths of $2$ feet. You divide the remaining space into $4$ equal sections and plant tomatoes, onions, zucchini, and peppers. What is the area of the zucchini section?\n\nThe area of the zucchini section is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

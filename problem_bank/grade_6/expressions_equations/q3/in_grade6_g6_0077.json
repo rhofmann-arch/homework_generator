@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0077",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "counting terms in algebraic expressions",
+  "latex": "Identify the number of terms in each expression.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (8,4);\n\\draw (4,0) -- (4,4);\n\\draw (5.5,0) -- (5.5,4);\n\\draw (6.75,0) -- (6.75,4);\n\\draw (0,3.2) -- (8,3.2);\n\\draw (0,2.4) -- (8,2.4);\n\\draw (0,1.6) -- (8,1.6);\n\\draw (0,0.8) -- (8,0.8);\n\\node at (4.75,3.6) {2};\n\\node at (6.125,3.6) {3};\n\\node at (7.375,3.6) {4};\n\\node[anchor=west] at (0.1,2.8) {$4 + x - 6x^3$};\n\\node[anchor=west] at (0.1,2.0) {$\\dfrac{2}{7x} + 3x^2 - 14$};\n\\node[anchor=west] at (0.1,1.2) {$4b^3 + 8$};\n\\node[anchor=west] at (0.1,0.4) {$7x^5 + 3x - x^2 + 9$};\n\\end{tikzpicture}",
+  "answer_latex": "$4 + x - 6x^3$: 3; $\\dfrac{2}{7x} + 3x^2 - 14$: 3; $4b^3 + 8$: 2; $7x^5 + 3x - x^2 + 9$: 4",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

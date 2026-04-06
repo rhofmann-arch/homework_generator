@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0103",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "identifying equivalent integer expressions and opposites",
+  "latex": "Which one is different?\n\n\\begin{enumerate}\n\\item[a.] $7$\n\\item[b.] $-(-7)$\n\\item[c.] opposite of $-7$\n\\item[d.] opposite of $7$\n\\end{enumerate}",
+  "answer_latex": "d",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 36,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

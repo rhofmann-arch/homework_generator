@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0023",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "distance on coordinate plane, absolute value equations",
+  "latex": "A map of a farm is shown in a coordinate plane in which the coordinates are measured in yards. The map shows the barn at $(-5, 4)$. A well is dug at $(-5, y)$. What are two values of $y$ such that the barn is 40 yards from the barn.\n\n$y = \\underline{\\hspace{1cm}}$ and $y = \\underline{\\hspace{1cm}}$",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

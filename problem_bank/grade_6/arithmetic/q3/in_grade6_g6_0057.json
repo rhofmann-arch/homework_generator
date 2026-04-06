@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0057",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "multiplication of decimals, money word problem",
+  "latex": "You have a piece of copper pipe that weighs $2.25$ ounces. Copper is worth $\\$3.92$ per ounce. How much is the copper in the pipe worth, in dollars?\n\nThe pipe worth is $\\$$ \\_\\_\\_\\_\\_ .",
+  "answer_latex": "8.82",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 57,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0016",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "plotting points and drawing quadrilaterals on the coordinate plane",
+  "latex": "The vertices of a quadrilateral are $A(8, 9)$, $B(3, 9)$, $C(1, 2)$, and $D(7, 2)$. Draw the quadrilateral in the coordinate plane.\n\n\\begin{tikzpicture}[scale=0.45]\n\\draw[->] (-1,0) -- (12,0) node[right] {};\n\\draw[->] (0,-1) -- (0,12) node[above] {$y$};\n\\foreach \\x in {1,2,3,4,5,6,7,8,9,10,11}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\x};\n\\foreach \\y in {1,2,3,4,5,6,7,8,9,10,11}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\y};\n\\draw[help lines, gray!50] (0,0) grid (11,11);\n\\node[below left] at (0,0) {0};\n\\node[below] at (-1,-0.5) {-1};\n\\node[left] at (-0.5,-1) {-1};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

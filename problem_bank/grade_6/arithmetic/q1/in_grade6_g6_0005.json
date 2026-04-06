@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "evaluating expressions with exponents",
+  "latex": "Which expression has the greatest value?\n\na. $4^3 + 6$\n\nb. $6^3 \\div 9$\n\nc. $6 \\times 1^8$\n\nd. $56 - 4^2$",
+  "answer_latex": "a. $4^3 + 6$",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

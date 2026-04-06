@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0062",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "least common multiple with decimals word problem",
+  "latex": "Two computers just scanned for viruses at the same time. Computer A runs a virus scan every $2.25$ days. Computer B runs a virus scan every $3.5$ days. How long will it be until both computers run a virus scan at the same time again?\n\n\\underline{\\hspace{1cm}} days",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

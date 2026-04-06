@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0018",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "absolute value of fractions",
+  "latex": "Find the absolute value.\n\n$$\\left| \\frac{1}{5} \\right| = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "\\frac{1}{5}",
+  "suggested_quarter": 1,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

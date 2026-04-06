@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "greatest common factor of two numbers",
+  "latex": "Find the GCF of $88$ and $68$.\n\nGCF $= $ \\_\\_\\_\\_\\_",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

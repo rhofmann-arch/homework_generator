@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0131",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "finding median of a data set",
+  "latex": "Which value describes the median of the data?\n\n$$11, 20, 20, 23, 29, 42, 23$$\n\na. $7$\n\nb. $20$\n\nc. $23$\n\nd. $31$",
+  "answer_latex": "c",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 64,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

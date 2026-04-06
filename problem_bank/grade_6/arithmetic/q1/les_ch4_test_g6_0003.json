@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "addition of negative integers",
+  "latex": "Find the sum.\n\n$$-5 + (-10) = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "-15",
+  "suggested_quarter": 1,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

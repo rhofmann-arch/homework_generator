@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0036",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Least common multiple (LCM) word problem",
+  "latex": "Stoplight A changes color every 15 seconds and Stoplight B changes color every 45 seconds. Both stoplights changed color 12 seconds ago. After how many seconds will the stoplights change color at the same time again?\n\n\\underline{\\hspace{1cm}} seconds",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

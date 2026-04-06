@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0036",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "multi-step fraction multiplication word problem",
+  "latex": "You run $3\\frac{1}{4}$ miles as a part of an exercise routine. You run $\\frac{2}{5}$ of that distance on a hill. You run down a slope for the last $\\frac{1}{2}$ of the hill. On how many miles of your run do you run down the slope? Write your answer as a fraction or mixed number in simplest form.\n\n\\underline{\\hspace{1cm}} mile(s)",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

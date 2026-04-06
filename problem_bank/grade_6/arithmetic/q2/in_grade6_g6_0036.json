@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0036",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "identifying equivalent expressions involving opposites of integers",
+  "latex": "Which one is different?\n\na. $7$\n\nb. $-(-7)$\n\nc. opposite of $-7$\n\nd. opposite of $7$",
+  "answer_latex": "d",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 36,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

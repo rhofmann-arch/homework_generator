@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0090",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "identifying independent and dependent variables in linear equations",
+  "latex": "The cost of a phone plan is represented by the equation $c = 0.1t + 5$, where $c$ is the cost per month and $t$ is the number of texts sent and received per month.\n\nIdentify the independent and dependent variables.\n\nThe independent variable is \\underline{\\hspace{3cm}} and the dependent variable is \\underline{\\hspace{3cm}}.\n\n\\begin{tabular}{|c|c|}\n\\hline\nnumber of texts sent and received & total monthly cost \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "The independent variable is number of texts sent and received and the dependent variable is total monthly cost.",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

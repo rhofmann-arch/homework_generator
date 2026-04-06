@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0120",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "completing a ratio table, equivalent ratios",
+  "latex": "A store sent $66$ cans of food that were equally distributed in $6$ boxes to a local fundraiser. Complete the ratio table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (8,1.5);\n\\draw (0,0.75) -- (8,0.75);\n\\draw (2,0) -- (2,1.5);\n\\draw (3,0) -- (3,1.5);\n\\draw (4,0) -- (4,1.5);\n\\draw (5,0) -- (5,1.5);\n\\draw (6,0) -- (6,1.5);\n\\draw (7,0) -- (7,1.5);\n\\node at (1,1.125) {Number of boxes};\n\\node at (2.5,1.125) {1};\n\\node at (3.5,1.125) {2};\n\\node at (4.5,1.125) {3};\n\\node at (5.5,1.125) {4};\n\\node at (6.5,1.125) {5};\n\\node at (7.5,1.125) {6};\n\\node at (1,0.375) {Cans of food};\n\\node at (2.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (3.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (4.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (5.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (6.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (7.5,0.375) {66};\n\\end{tikzpicture}",
+  "answer_latex": "11, 22, 33, 44, 55",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 53,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0084",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "writing algebraic expressions with multiplication and addition",
+  "latex": "Write an expression that represents $11$ times the sum of $6$ and a number $r$.\n\nExpression: \\_\\_\\_\\_\\_\\_\\_",
+  "answer_latex": "$11(6 + r)$",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

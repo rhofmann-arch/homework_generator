@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Identifying perfect squares",
+  "latex": "Determine whether $25$ is a perfect square.\n\na. $\\bigcirc$ Perfect square\n\nb. $\\bigcirc$ Not a perfect square",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

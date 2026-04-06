@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0016",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "verifying solutions to linear inequalities",
+  "latex": "Complete the table.\n\n\\begin{tikzpicture}\n\\node at (0, 0) {\n\\begin{tabular}{|l|c|c|}\n\\hline\n & \\textbf{True} & \\textbf{False} \\\\\n\\hline\nA solution of the inequality $3x + 6 \\leq 28$ is $-3$. & & \\\\\n\\hline\nA solution of the inequality $5 + x > -2$ is $-7$. & & \\\\\n\\hline\nA solution of the inequality $6z \\div 3 \\geq 4$ is $2$. & & \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}",
+  "answer_latex": "True, False, True",
+  "suggested_quarter": 3,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 16,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

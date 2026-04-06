@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0035",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Greatest common factor (GCF) word problem",
+  "latex": "You are filling bags with cookies to give to your friends. The list shows the cookies you are putting into the bags. You want identical groups of cookies in each bag with no cookies left over. What is the greatest number of bags you can make?\n\n\\begin{itemize}\n\\item 18 chocolate chip cookies\n\\item 42 peanut butter cookies\n\\item 48 oatmeal cookies\n\\end{itemize}\n\nYou can make at most \\underline{\\hspace{1cm}} bags.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 13,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

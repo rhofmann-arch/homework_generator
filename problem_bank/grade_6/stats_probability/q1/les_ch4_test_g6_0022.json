@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0022",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "addition of decimals with negatives",
+  "latex": "Find the sum. Write your answer as a decimal.\n\n$$-9.2 + 5.4 = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "-3.8",
+  "suggested_quarter": 2,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

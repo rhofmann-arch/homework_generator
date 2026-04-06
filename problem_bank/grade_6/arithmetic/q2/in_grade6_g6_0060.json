@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0060",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "unit conversion, kilograms to pounds",
+  "latex": "You have $5$ kilograms of rock. How many pounds of rock do you have?\n\nYou have \\_\\_\\_\\_\\_ pounds of rock.",
+  "answer_latex": "2.25",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 60,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

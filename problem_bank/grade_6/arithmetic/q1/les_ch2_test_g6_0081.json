@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0081",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "multi-step fraction multiplication, word problem",
+  "latex": "You bike $5\\frac{1}{2}$ miles from your house to a state park. You travel $\\frac{1}{2}$ of that distance in the woods. You bike along the bank of a stream for the last $\\frac{1}{2}$ of the woods. On how many miles of your trip do you bike along the bank of the stream? Write your answer as a fraction or mixed number in simplest form.\n\n\\underline{\\hspace{1cm}} mile(s)",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_mcp.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

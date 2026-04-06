@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "surface area of a cube",
+  "latex": "Each face of a cube is a square with a side length of $3$ meters. What is the total area of all the faces of the cube?\n\n\\_\\_\\_\\_\\_ square meters",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

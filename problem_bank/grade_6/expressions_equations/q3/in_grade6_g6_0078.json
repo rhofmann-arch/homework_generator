@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0078",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "evaluating algebraic expressions with exponents",
+  "latex": "Evaluate the expression $x^3 + 3x$ when $x = 2$.\n\n$x^3 + 3x = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "14",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

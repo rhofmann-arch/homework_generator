@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0118",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "division word problem",
+  "latex": "You pack $840$ muffins into containers. There are $12$ muffins in each container. How many containers of muffins are there?\n\nThere are \\underline{\\hspace{1cm}} containers of muffins.",
+  "answer_latex": "70",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 51,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

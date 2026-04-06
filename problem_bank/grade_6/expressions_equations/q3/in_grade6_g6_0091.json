@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0091",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "linear equations, rate/distance relationship, completing a table",
+  "latex": "On a road trip, you travel $55$ miles every hour.\n\n\\textbf{Part A} Select an equation to represent the relationship.\n\n\\begin{enumerate}\n\\item[a.] $y = x + 55$\n\\item[b.] $y = 55x$\n\\item[c.] $y = x - 55$\n\\item[d.] $y = 5(5x)$\n\\end{enumerate}\n\n\\textbf{Part B} Use the equation to complete the table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (5,3.5);\n\\draw (0,3) -- (5,3);\n\\draw (2.5,0) -- (2.5,3.5);\n\\node at (1.25,3.25) {\\textbf{Time (hours)}};\n\\node at (3.75,3.25) {\\textbf{Distance (miles)}};\n\\draw (0,2.5) -- (5,2.5);\n\\draw (0,2) -- (5,2);\n\\draw (0,1.5) -- (5,1.5);\n\\draw (0,1) -- (5,1);\n\\draw (0,0.5) -- (5,0.5);\n\\node at (1.25,2.75) {1};\n\\node at (1.25,2.25) {2};\n\\node at (1.25,1.75) {3};\n\\node at (1.25,1.25) {4};\n\\node at (1.25,0.75) {5};\n\\end{tikzpicture}",
+  "answer_latex": "Part A: b. $y = 55x$; Part B: 55, 110, 165, 220, 275",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 24,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

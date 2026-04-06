@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0039",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "arithmetic sequence with decimals",
+  "latex": "Find the next three numbers in the pattern. Write your answers as decimals.\n\n$$5.9, \\ 5.6, \\ 5.3, \\ 5.0, \\ \\underline{\\hspace{1cm}}, \\ \\underline{\\hspace{1cm}}, \\ \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

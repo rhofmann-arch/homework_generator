@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0062",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "identifying statistical questions",
+  "latex": "Which word change makes the question a statistical question?\n\nHow many days are there each April?\n\n\\begin{enumerate}\n\\item[a.] Change ``days'' to ``sunsets''\n\\item[b.] Change ``days'' to ``concerts''.\n\\item[c.] Change ``April'' to ``week''.\n\\item[d.] Change ``each April'' to ``this month''\n\\end{enumerate}",
+  "answer_latex": "b",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 62,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

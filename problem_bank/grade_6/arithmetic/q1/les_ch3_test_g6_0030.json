@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0030",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "comparing negative mixed numbers",
+  "latex": "Compare using $<$, $=$, or $>$.\n\n$$-2\\frac{1}{5} \\;\\;\\framebox{\\hspace{0.5cm}}\\;\\; -2\\frac{4}{5}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

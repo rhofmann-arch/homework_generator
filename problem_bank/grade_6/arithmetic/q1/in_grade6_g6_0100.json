@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0100",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "factoring using greatest common factor",
+  "latex": "Factor the expression $80 - 24$ using the GCF.\n\n$80 - 24 = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "8(10 - 3)",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 33,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

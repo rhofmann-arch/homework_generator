@@ -4,10 +4,11 @@ Reads the pacing guide Excel and returns the context needed
 to generate one week (or one day) of homework.
 """
 
+import re
 import pandas as pd
 from pathlib import Path
 from datetime import datetime, timedelta
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 _REPO_ROOT = Path(__file__).parent.parent.parent
 PACING_DIR = (
@@ -36,6 +37,7 @@ class WeekContext:
     covered_topics: list
     lesson_title: str
     hw_numbers: list
+    review_chapter: str | None = None  # e.g. "3" for "Review Day Ch 3" weeks
 
 
 def _load_sheet(xl: pd.ExcelFile, sheet_name: str) -> pd.DataFrame:
@@ -182,6 +184,18 @@ def get_week_context(week_start: str, grade: str,
         except ValueError:
             pass
 
+    # Detect review/test weeks and extract chapter number.
+    # Matches patterns like "Review Day Ch 3", "Ch 3 Review", "Chapter 3 Test".
+    review_chapter: str | None = None
+    for _, r in week_rows.iterrows():
+        raw = str(r["lesson"]) if pd.notna(r["lesson"]) else ""
+        if not raw or raw in ("nan", "None"):
+            continue
+        m = re.search(r'ch(?:apter)?\s*(\d+)', raw, re.IGNORECASE)
+        if m:
+            review_chapter = m.group(1)
+            break
+
     return WeekContext(
         grade=grade,
         week_start=week_start,
@@ -192,6 +206,7 @@ def get_week_context(week_start: str, grade: str,
         covered_topics=covered_topics,
         lesson_title=lesson_title,
         hw_numbers=hw_numbers,
+        review_chapter=review_chapter,
     )
 
 

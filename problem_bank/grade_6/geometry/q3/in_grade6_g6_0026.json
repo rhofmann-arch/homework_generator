@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0026",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of composite figures (square and triangle)",
+  "latex": "A square piece of glass and a triangular piece of glass are joined to make a window. The area of the triangular piece of glass is $40$ square feet. Find the total area of the window.\n\n\\begin{tikzpicture}\n% Square\n\\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;\n% Triangle on top\n\\draw (0,2) -- (1,3) -- (2,2);\n% Labels\n\\node[above left] at (0,2) {8 ft};\n\\node[below] at (1,0) {10 ft};\n\\end{tikzpicture}\n\nThe total area of the window is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "104",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 26,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

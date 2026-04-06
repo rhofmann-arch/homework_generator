@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "total area calculation from coordinate plane blueprint",
+  "latex": "What is the total area of the labeled rooms?",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_3_deeper.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

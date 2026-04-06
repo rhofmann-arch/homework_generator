@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "comparing negative integers",
+  "latex": "Which temperature is colder?\n\na. $\\bigcirc$ $-175^{\\circ}C$\n\nb. $\\bigcirc$ $-173^{\\circ}C$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

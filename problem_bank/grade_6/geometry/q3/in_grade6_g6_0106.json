@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0106",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "writing ordered pairs from verbal descriptions",
+  "latex": "Point $A$ is 3 units left and 1 unit down from the origin. Write the ordered pair that represents the location of Point $A$.\n\nOrdered pair: $\\left( \\underline{\\hspace{1cm}}, \\underline{\\hspace{1cm}} \\right)$",
+  "answer_latex": "$(-3, -1)$",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 39,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

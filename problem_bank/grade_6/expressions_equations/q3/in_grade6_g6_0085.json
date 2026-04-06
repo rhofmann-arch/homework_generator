@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0085",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "writing expressions for real-world situations with multiple variables",
+  "latex": "You have \\$45 to spend on snacks for a hike. You buy $2$ sports drinks that cost $y$ dollars each and $3$ protein bars that cost $z$ dollars each. Which expression represents the amount of money you have left over?\n\na. $\\bigcirc$ $45 + (2y + 3z)$\n\nb. $\\bigcirc$ $45 - (2y + 3z)$\n\nc. $\\bigcirc$ $45 - 2y + 3z$\n\nd. $\\bigcirc$ $45 + 2y - 3z$",
+  "answer_latex": "b",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 18,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0081",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "matching equivalent algebraic expressions",
+  "latex": "Match the equivalent expressions.\n\n\\begin{tikzpicture}\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 3) {$4(x+5)$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 2) {$3x + 15 + x - 5$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 1) {$(4x + 2) \\times 3$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 0) {$9x - 20 - 5x$};\n\\node at (6, 3) {$\\bigcirc$ \\quad $4x + 20$};\n\\node at (6, 2) {$\\bigcirc$ \\quad $4x + 10$};\n\\node at (6, 1) {$\\bigcirc$ \\quad $12x + 6$};\n\\node at (6, 0) {$\\bigcirc$ \\quad $4x - 20$};\n\\end{tikzpicture}",
+  "answer_latex": "$4(x+5) \\to 4x+20$; $3x+15+x-5 \\to 4x+10$; $(4x+2) \\times 3 \\to 12x+6$; $9x-20-5x \\to 4x-20$",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

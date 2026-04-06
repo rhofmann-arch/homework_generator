@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0114",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "distance between points on a coordinate plane",
+  "latex": "The location of your house is represented by the point $(-2, 7)$ on a map. The location of your friend's house is represented by the point $(4, 7)$ on the map. If each unit square has a side length of $1$ mile, how many miles do you live from your friend's house?\n\n\\underline{\\hspace{1cm}} miles",
+  "answer_latex": "6",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 47,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

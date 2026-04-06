@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0069",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "multiplying mixed numbers, comparing quantities",
+  "latex": "A bottle contains $65$ fluid ounces of syrup. Each day, you use $4\\frac{1}{2}$ fluid ounces of syrup from the bottle. Is there enough syrup in the bottle for $14$ days?\n\na. $\\bigcirc$ Yes\n\nb. $\\bigcirc$ No",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_mc.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0108",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "Plotting points and identifying quadrants on the coordinate plane",
+  "latex": "Complete the following.\n\n\\textbf{Part A} Plot A $(2.5, -3)$.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[->] (-8.5,0) -- (8.5,0) node[right] {};\n\\draw[->] (0,-8.5) -- (0,8.5) node[above] {};\n\\foreach \\x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\tiny \\x};\n\\foreach \\y in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\tiny \\y};\n\\draw (0,0) node[below left] {\\tiny 0};\n\\end{tikzpicture}\n\n\\textbf{Part B} Identify the location of point A.\n\na. $\\bigcirc$ Quadrant $I$\n\nb. $\\bigcirc$ Quadrant $II$\n\nc. $\\bigcirc$ Quadrant $III$\n\nd. $\\bigcirc$ Quadrant $IV$\n\ne. $\\bigcirc$ on the $x$-axis\n\nf. $\\bigcirc$ on the $y$-axis\n\n\\textbf{Part C} Plot B $(0, -3)$.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[->] (-8.5,0) -- (8.5,0) node[right] {};\n\\draw[->] (0,-8.5) -- (0,8.5) node[above] {};\n\\foreach \\x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\tiny \\x};\n\\foreach \\y in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\tiny \\y};\n\\draw (0,0) node[below left] {\\tiny 0};\n\\end{tikzpicture}\n\n\\textbf{Part D} Identify the location of point B.\n\na. $\\bigcirc$ Quadrant $I$\n\nb. $\\bigcirc$ Quadrant $II$\n\nc. $\\bigcirc$ Quadrant $III$\n\nd. $\\bigcirc$ Quadrant $IV$\n\ne. $\\bigcirc$ on the $x$-axis\n\nf. $\\bigcirc$ on the $y$-axis",
+  "answer_latex": "Part A: Point plotted at $(2.5, -3)$; Part B: d. Quadrant $IV$; Part C: Point plotted at $(0, -3)$; Part D: f. on the $y$-axis",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 41,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0098",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "surface area of composite 3D figures",
+  "latex": "A zoo is designing a ramp to the giraffe observation deck. A blueprint of the ramp is shown. All shaded surfaces will be exposed and will be covered with anti-skid paint.\n\n\\begin{tikzpicture}[scale=0.12]\n% Top rectangle (shaded)\n\\fill[gray!40] (0,15) -- (17,15) -- (17,30) -- (0,30) -- cycle;\n\\draw (0,15) -- (17,15) -- (17,30) -- (0,30) -- cycle;\n\\node at (8.5,32) {17 ft};\n\\node at (-2,22.5) {15 ft};\n\n% Top right triangle (shaded)\n\\fill[gray!40] (17,15) -- (25,15) -- (17,30) -- cycle;\n\\draw (17,15) -- (25,15) -- (17,30) -- cycle;\n\\node at (22,32) {8 ft};\n\\node at (27,22.5) {19 ft};\n\n% Bottom rectangle (white)\n\\draw (0,0) -- (17,0) -- (17,15) -- (0,15) -- cycle;\n\\node at (-2,7.5) {17 ft};\n\\node at (8.5,12) {15 ft};\n\n% Bottom middle rectangle (white)\n\\draw (17,0) -- (25,0) -- (25,8) -- (17,8) -- cycle;\n\\node at (14,3) {17ft};\n\\node at (21,-2) {8 ft};\n\\node at (27,4) {8 ft};\n\\end{tikzpicture}\n\n\\textbf{Part A} What is the total surface area of the ramp?\n\nThe total surface area of the ramp is \\underline{\\hspace{1cm}} square feet.\n\n\\textbf{Part B} How much of the surface area will \\textit{not} be painted?\n\nThe surface area that will \\textit{not} be painted is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "Part A: 896; Part B: 285",
+  "suggested_quarter": 4,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 31,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

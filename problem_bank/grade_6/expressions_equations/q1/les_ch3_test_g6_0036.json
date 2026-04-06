@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0036",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "writing inequalities from word sentences",
+  "latex": "Write the word sentence as an inequality.\n\nA number $c$ is more than $20$.\n\nAn inequality is $\\underline{\\hspace{2cm}}$ .",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

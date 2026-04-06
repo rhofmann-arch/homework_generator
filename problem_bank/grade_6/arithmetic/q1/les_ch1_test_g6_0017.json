@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "evaluating exponents and comparing values",
+  "latex": "Which power has a value greater than $620$ and less than $630$?\n\na. $5^4$\n\nb. $3^6$\n\nc. $4^5$\n\nd. $10^3$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

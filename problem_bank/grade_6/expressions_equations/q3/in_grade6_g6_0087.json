@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0087",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "writing and solving one-step equations from word problems",
+  "latex": "A group of friends are taking a road trip from Seattle, Washington, to San Fransisco, California. They drive for $4$ hours and stop in Portland, Oregon. It takes $h$ hours to drive the rest of the way to San Fransisco. Write and solve an equation to determine how long the drive from Portland to San Fransisco takes when the total time spent driving is $9$ hours.\n\nEquation: \\_\\_\\_\\_\\_\\_\\_ $= 9$\n\n\\_\\_\\_\\_ hours",
+  "answer_latex": "Equation: $4 + h = 9$; $5$ hours",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

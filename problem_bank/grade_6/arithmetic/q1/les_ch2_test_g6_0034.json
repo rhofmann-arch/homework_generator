@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0034",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "multi-step word problem with fractions",
+  "latex": "A pot contains 25 ounces of soil. You use $4\\frac{1}{4}$ ounces of soil to plant 1 herb. Is there enough soil in the pot to plant 5 herbs?\n\na. $\\bigcirc$ Yes\n\nb. $\\bigcirc$ No",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

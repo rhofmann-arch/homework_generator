@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0134",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "calculating mean and mean absolute deviation (MAD)",
+  "latex": "You score $6, 11, 7, 13, 10, 5,$ and $16$ points in seven basketball games.\n\nPart A Find the mean of the data to the nearest hundredth.\n\nMean: \\underline{\\hspace{1cm}}\n\nPart B Find the MAD of the data to the nearest hundredth.\n\nMAD: \\underline{\\hspace{1cm}}",
+  "answer_latex": "Part A: 9.71 \\quad Part B: 3.18",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 67,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

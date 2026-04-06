@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0063",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "identifying statistical questions",
+  "latex": "Which is a statistical question?\n\na. How many paintings are on this wall?\n\nb. What is the largest state in the United States?\n\nc. How many hours did I sleep last night?\n\nd. What city has the best ocean views?",
+  "answer_latex": "d",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 63,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

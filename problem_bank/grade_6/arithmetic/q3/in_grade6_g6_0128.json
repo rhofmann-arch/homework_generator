@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0128",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "unit conversion, ounces and pounds",
+  "latex": "Complete the statement.\n\n\\_\\_\\_\\_\\_ oz $= 4.5$ lb",
+  "answer_latex": "72",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 61,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0086",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "one-step addition equation, whole numbers",
+  "latex": "Solve.\n\n$$y + 18 = 26$$\n\nSolution: $y =$ \\_\\_\\_\\_",
+  "answer_latex": "$8$",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

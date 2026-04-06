@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "dividing mixed numbers by whole numbers",
+  "latex": "You have $3\\frac{2}{5}$ books to read to complete a series. You equally divide the reading over the next 5 weeks. What portion of a book do you read each week?\n\nYou read \\underline{\\hspace{1cm}} of a book each week.",
+  "answer_latex": "\\frac{17}{25}",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

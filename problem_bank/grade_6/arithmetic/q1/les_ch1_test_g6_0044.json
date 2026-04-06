@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0044",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "evaluating exponents and comparing values",
+  "latex": "Which power has a value greater than $255$ and less than $260$?\n\na. $7^3$\n\nb. $16^2$\n\nc. $2^4$\n\nd. $17^2$",
+  "answer_latex": "b. $16^2$",
+  "suggested_quarter": 2,
+  "source_file": "mid_1.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

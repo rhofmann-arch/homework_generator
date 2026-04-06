@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0059",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "perimeter of rectangle with decimals, rounding",
+  "latex": "A patio is rectangular. Its length is $6.21$ meters, and its width is $5.7$ meters. What is the approximate perimeter of the patio? Round your answer to the nearest whole number.\n\nThe perimeter of the patio is about \\underline{\\hspace{1cm}} meters.",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 18,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

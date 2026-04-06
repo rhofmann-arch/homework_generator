@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0050",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "area of unlabeled region in coordinate plane",
+  "latex": "Find the area of the space near the center of the house that is not labeled.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_3_deeper.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

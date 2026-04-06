@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0041",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "order of operations with exponents",
+  "latex": "Evaluate the expression.\n\n$$1 - 2(14 + 4) \\div 6^2 = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "0",
+  "suggested_quarter": 2,
+  "source_file": "mid_1.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

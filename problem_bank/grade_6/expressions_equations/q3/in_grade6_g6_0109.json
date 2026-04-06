@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0109",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "writing inequalities from verbal statements",
+  "latex": "Write an inequality to represent the statement.\n\n\\$60 is more than \\$25.\n\nInequality: \\underline{\\hspace{1cm}}",
+  "answer_latex": "\\$60 > \\$25",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 42,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

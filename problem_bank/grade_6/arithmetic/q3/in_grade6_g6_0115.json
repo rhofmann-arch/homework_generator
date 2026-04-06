@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0115",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "ratios with visual representation of coins",
+  "latex": "What is the ratio of pennies to the total number of coins?\n\n\\begin{tikzpicture}\n% Row 1: 2 pennies, 2 nickels, 1 dime\n\\node at (0,2) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (1,2) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (2,2) {\\includegraphics[width=0.8cm]{nickel}};\n\\node at (3,2) {\\includegraphics[width=0.8cm]{nickel}};\n\\node at (4,2) {\\includegraphics[width=0.8cm]{dime}};\n% Row 2: 3 quarters\n\\node at (0.5,1) {\\includegraphics[width=1cm]{quarter}};\n\\node at (1.5,1) {\\includegraphics[width=1cm]{quarter}};\n\\node at (2.5,1) {\\includegraphics[width=1cm]{quarter}};\n% Row 3: 2 quarters, 2 pennies, 1 nickel\n\\node at (0,0) {\\includegraphics[width=1cm]{quarter}};\n\\node at (1,0) {\\includegraphics[width=1cm]{quarter}};\n\\node at (2,0) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (3,0) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (4,0) {\\includegraphics[width=0.8cm]{nickel}};\n\\end{tikzpicture}\n\nRatio: \\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}",
+  "answer_latex": "4 : 15",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 48,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

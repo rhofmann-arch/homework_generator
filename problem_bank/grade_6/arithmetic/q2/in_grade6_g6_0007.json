@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "translating verbal expressions to algebraic expressions",
+  "latex": "Complete the table.\n\n\\begin{tabular}{|p{7cm}|c|c|}\n\\hline\n & True & False \\\\\n\\hline\nThe expression for ``32 increased by a number $c$'' is $32 + c$. & & \\\\\n\\hline\nThe expression for ``13 more than a number $v$'' is $13v$. & & \\\\\n\\hline\nThe expression for ``4 more than a number $x$ squared'' is $4 + x^2$. & & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "True, False, True",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

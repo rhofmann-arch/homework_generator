@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0052",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "decimal division",
+  "latex": "Divide. Write the answer as a decimal.\n\n$$4.705 \\div 25 = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 11,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

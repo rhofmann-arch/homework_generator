@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "addition of negative fractions",
+  "latex": "Find the sum. Write your answer in simplest form as a fraction or mixed number.\n\n$$-\\frac{2}{5} + \\left( -\\frac{7}{5} \\right) = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "-\\frac{9}{5} \\text{ or } -1\\frac{4}{5}",
+  "suggested_quarter": 2,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0040",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "decimal subtraction and addition word problem",
+  "latex": "A container can hold a maximum of $8.95$ pounds. There are two objects in the container. The first object weighs $2.6$ pounds and the second object weighs $4.12$ pounds. How many more pounds can the container hold? Write your answer as a decimal.\n\n\\underline{\\hspace{1cm}} pounds",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 20,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

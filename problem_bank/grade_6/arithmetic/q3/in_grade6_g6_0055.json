@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0055",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "completing ratio tables with fractions",
+  "latex": "Find the missing values in the ratio table.\n\n\\begin{center}\n\\begin{tabular}{|l|c|c|c|c|}\n\\hline\n\\textbf{Oats (cups)} & $\\dfrac{3}{2}$ & 3 & $\\dfrac{9}{2}$ & \\underline{\\hspace{1cm}} \\\\\n\\hline\n\\textbf{Nuts (cups)} & $\\dfrac{5}{4}$ & \\underline{\\hspace{1cm}} & \\underline{\\hspace{1cm}} & 5 \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "Oats: $6$; Nuts: $\\dfrac{5}{2}$, $\\dfrac{15}{4}$",
+  "suggested_quarter": 3,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 55,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

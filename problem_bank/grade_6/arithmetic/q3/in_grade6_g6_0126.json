@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0126",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "percent equation, finding the whole",
+  "latex": "$10\\%$ of what number is $17,000$?\n\n$10\\%$ of \\_\\_\\_\\_\\_ is $17,000$.",
+  "answer_latex": "170{,}000",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 59,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

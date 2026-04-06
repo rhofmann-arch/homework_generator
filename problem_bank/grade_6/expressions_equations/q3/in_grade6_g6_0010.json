@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0010",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "counting terms in algebraic expressions",
+  "latex": "Identify the number of terms in each expression.\n\n\\begin{center}\n\\begin{tabular}{|p{5cm}|c|c|c|}\n\\hline\n & 2 & 3 & 4 \\\\\n\\hline\n$4 + x - 6x^3$ & & & \\\\\n\\hline\n$\\dfrac{2}{7x} + 3x^2 - 14$ & & & \\\\\n\\hline\n$4b^3 + 8$ & & & \\\\\n\\hline\n$7x^5 + 3x - x^2 + 9$ & & & \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "$4 + x - 6x^3$: 3; $\\dfrac{2}{7x} + 3x^2 - 14$: 3; $4b^3 + 8$: 2; $7x^5 + 3x - x^2 + 9$: 4",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

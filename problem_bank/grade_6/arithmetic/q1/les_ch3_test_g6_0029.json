@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "graphing decimals and their opposites on a number line",
+  "latex": "Graph $-0.4$ and its opposite.\n\n\\begin{tikzpicture}\n\\draw[<->] (-6.5,0) -- (6.5,0);\n\\foreach \\x/\\label in {-6/-0.6, -5/-0.5, -4/-0.4, -3/-0.3, -2/-0.2, -1/-0.1, 0/0, 1/0.1, 2/0.2, 3/0.3, 4/0.4, 5/0.5, 6/0.6}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\tiny \\label};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

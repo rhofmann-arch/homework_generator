@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0042",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "compound inequalities, graphing on number line",
+  "latex": "Graph the numbers that are solutions to both $x > 1$ and $x \\leq 4$.\n\n\\begin{tikzpicture}\n\\draw[<->] (-4.5,0) -- (4.5,0);\n\\foreach \\x in {-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8}\n  \\draw ({\\x/2},0.1) -- ({\\x/2},-0.1) node[below] {\\footnotesize \\x};\n\\end{tikzpicture}",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 17,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

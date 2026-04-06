@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0123",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "unit rate word problems",
+  "latex": "A scooter moving at a constant speed traveled $18$ miles in $3$ hours. How many miles did the scooter travel in one hour?\n\nThe scooter traveled \\underline{\\hspace{1cm}} miles in one hour.",
+  "answer_latex": "6",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 56,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

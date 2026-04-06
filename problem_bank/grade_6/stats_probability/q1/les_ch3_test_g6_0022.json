@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0022",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "absolute value, comparing changes",
+  "latex": "The table shows the changes in the value of a toy on a website over a period of three weeks. During which week does the value of the toy change the most?\n\n\\begin{tabular}{|c|c|c|c|}\n\\hline\n\\textbf{Week} & 1 & 2 & 3 \\\\\n\\hline\n\\textbf{Change (dollars)} & $-1.50$ & $2.50$ & $-0.75$ \\\\\n\\hline\n\\end{tabular}\n\na. \\quad Week 1\n\nb. \\quad Week 2\n\nc. \\quad Week 3",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0105",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "reflection of a point across the x-axis",
+  "latex": "Write the ordered pair that represents a reflection of the point $(-1, 7)$ in the $x$-axis.\n\nOrdered pair: $\\left( \\underline{\\hspace{1cm}}, \\underline{\\hspace{1cm}} \\right)$",
+  "answer_latex": "$(-1, -7)$",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 38,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

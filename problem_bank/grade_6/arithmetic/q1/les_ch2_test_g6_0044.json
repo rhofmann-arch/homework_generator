@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0044",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "multiplying mixed numbers",
+  "latex": "Multiply. Write the answer as a mixed number in simplest form.\n$$1\\frac{3}{4} \\cdot 2\\frac{3}{8} = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

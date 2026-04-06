@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0031",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "reasoning about signs of algebraic expressions with negative numbers",
+  "latex": "Consider the expression $5a + (-4b)$, where $b$ is a negative number and $a < b$. Is the sum \\textit{positive} or \\textit{negative}?\n\na. $\\bigcirc$ Positive\n\nb. $\\bigcirc$ Negative",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

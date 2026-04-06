@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0113",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "distance between points on coordinate plane",
+  "latex": "Find the distance between the points $(2, -3)$ and $(2, -24)$.\n\nThe distance is \\underline{\\hspace{1cm}}.",
+  "answer_latex": "21",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 46,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

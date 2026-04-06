@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0008",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "writing algebraic expressions from word problems",
+  "latex": "You are buying balloons for a party. Each pack of balloons costs \\$3. Write an expression that represents the total cost for $n$ packs of balloons.\n\nExpression: \\underline{\\hspace{1cm}}",
+  "answer_latex": "$3n$",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

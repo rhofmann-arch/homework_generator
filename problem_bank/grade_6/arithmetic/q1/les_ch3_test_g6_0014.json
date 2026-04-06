@@ -1,0 +1,18 @@
+{
+  "id": "les_ch3_test_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch3_test",
+  "topic": "absolute value of integers",
+  "latex": "Find the absolute value.\n\n$|75| = $ \\_\\_\\_\\_\\_",
+  "answer_latex": "75",
+  "suggested_quarter": 1,
+  "source_file": "6_3_test.pdf",
+  "source_problem_number": 7,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0080",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "division of fractions, word problem",
+  "latex": "A mug is $\\frac{2}{3}$ full. The mug contains $\\frac{5}{6}$ of a cup of water. Find the capacity of the mug. Write the answer as a fraction or mixed number in simplest form.\n\nThe capacity of the mug is \\underline{\\hspace{1cm}} cups.",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_2_mcp.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

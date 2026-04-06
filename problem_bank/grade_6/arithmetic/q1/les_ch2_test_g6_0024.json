@@ -1,0 +1,18 @@
+{
+  "id": "les_ch2_test_g6_0024",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch2_test",
+  "topic": "dividing fractions",
+  "latex": "Divide. Write the answer in simplest form.\n$$\\frac{1}{2} \\div \\frac{5}{6} = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_2_test.pdf",
+  "source_problem_number": 4,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

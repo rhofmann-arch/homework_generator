@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "subtracting negative decimals",
+  "latex": "Find the difference. Write your answer as a decimal.\n\n$$-6.82 - (-8.88) = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

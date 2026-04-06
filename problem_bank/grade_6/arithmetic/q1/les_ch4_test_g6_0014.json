@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "rate of change with fractions, word problem",
+  "latex": "A glider begins its flight $1\\frac{1}{2}$ miles above the ground. After $60$ minutes, it is $\\frac{9}{10}$ mile above the ground.\n\nFind the change in height of the glider.\n\nThe change in height is \\underline{\\hspace{1cm}} mile(s).\n\nIf it continues to descend at this rate, how long does the entire descent last?\n\nThe entire descent lasts \\underline{\\hspace{1cm}} hour(s).",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 14,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

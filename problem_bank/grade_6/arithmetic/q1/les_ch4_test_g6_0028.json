@@ -1,0 +1,18 @@
+{
+  "id": "les_ch4_test_g6_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch4_test",
+  "topic": "adding fractions, mixed numbers, and decimals",
+  "latex": "Find the value of the expression.\n$$-\\frac{2}{5} + 2.7 + 1\\frac{3}{10} = \\underline{\\hspace{1cm}}$$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_4_test.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

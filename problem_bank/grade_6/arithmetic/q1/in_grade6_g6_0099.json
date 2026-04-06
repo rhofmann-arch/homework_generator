@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0099",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "least common multiple",
+  "latex": "Find the LCM of $9$ and $6$.\n\nThe LCM is \\underline{\\hspace{1cm}}.",
+  "answer_latex": "18",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 32,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

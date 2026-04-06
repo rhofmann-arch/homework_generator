@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Writing repeated multiplication as exponential notation",
+  "latex": "Write the product as a power.\n\n$14 \\cdot 14 \\cdot 14 \\cdot 14 \\cdot 14 = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "",
+  "suggested_quarter": 1,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

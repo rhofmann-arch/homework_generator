@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0050",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "unit rates",
+  "latex": "You pay $\\$32$ for $8$ pounds of asparagus. Write a unit rate for the situation.\n\nThe unit rate is $\\$$ \\underline{\\hspace{1cm}} per pound.",
+  "answer_latex": "4",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 50,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

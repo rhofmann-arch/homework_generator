@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Identifying factor pairs of a number",
+  "latex": "Identify the factor pairs of $30$.\n\na. $\\square$ 1, 20 \\quad g. $\\square$ 2, 14 \\quad m. $\\square$ 3, 14 \\quad s. $\\square$ 4, 8\n\nb. $\\square$ 1, 28 \\quad h. $\\square$ 2, 15 \\quad n. $\\square$ 3, 18 \\quad t. $\\square$ 5, 6\n\nc. $\\square$ 1, 30 \\quad i. $\\square$ 2, 16 \\quad o. $\\square$ 3, 21 \\quad u. $\\square$ 5, 10\n\nd. $\\square$ 1, 32 \\quad j. $\\square$ 2, 21 \\quad p. $\\square$ 4, 5 \\quad v. $\\square$ 6, 7\n\ne. $\\square$ 1, 38 \\quad k. $\\square$ 3, 8 \\quad q. $\\square$ 4, 6 \\quad w. $\\square$ 6, 9\n\nf. $\\square$ 2, 10 \\quad l. $\\square$ 3, 10 \\quad r. $\\square$ 4, 7 \\quad x. $\\square$ 7, 9",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 5,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

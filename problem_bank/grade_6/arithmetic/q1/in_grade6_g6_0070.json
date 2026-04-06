@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0070",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "division of whole numbers",
+  "latex": "Find the quotient.\n\n$21{,}630 \\div 5 = \\underline{\\hspace{1cm}}$",
+  "answer_latex": "4{,}326",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

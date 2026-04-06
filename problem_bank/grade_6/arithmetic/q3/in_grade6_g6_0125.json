@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0125",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "percent discount, finding original price",
+  "latex": "You pay $\\$11.55$ for an audio book that is on sale for $45\\%$ off the original price. What was the original price of the audio book?\n\nThe original price of the audio book was $\\$$ \\_\\_\\_\\_\\_ .",
+  "answer_latex": "21.00",
+  "suggested_quarter": 3,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 58,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

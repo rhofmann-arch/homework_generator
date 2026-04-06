@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0025",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of composite figures",
+  "latex": "A machinist creates a milling template that is composed of two shapes, as shown.\n\n\\begin{itemize}\n\\item A rectangle with a length of $13$ centimeters and a height of $4$ centimeters.\n\\item A square with side length $5$ centimeters.\n\\end{itemize}\n\nFind the total area, in centimeters, of the template.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (3.25,1);\n\\draw (2,1) rectangle (3.25,2.25);\n\\node at (3.5,0.5) {4 cm};\n\\node at (1.625,-0.3) {13 cm};\n\\node at (2.625,2.5) {5 cm};\n\\end{tikzpicture}\n\n\\begin{enumerate}\n\\item[a.] $22$ square centimeters\n\\item[b.] $25$ square centimeters\n\\item[c.] $77$ square centimeters\n\\item[d.] $260$ square centimeters\n\\end{enumerate}",
+  "answer_latex": "c. $77$ square centimeters",
+  "suggested_quarter": 2,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 25,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0133",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "interpreting data values and units",
+  "latex": "You keep track of your test scores one semester. Your results are:\n\n$93, 87, 92, 88, 90$\n\nPart A Find and interpret the number of data values.\n\nThere are \\underline{\\hspace{1cm}} data values. So, you had \\underline{\\hspace{1cm}} tests in one semester.\n\nPart B What are the units?\n\na. $\\bigcirc$ inches\n\nb. $\\bigcirc$ Richter magnitudes\n\nc. $\\bigcirc$ percents\n\nd. $\\bigcirc$ liters",
+  "answer_latex": "Part A: 5; 5 \\quad Part B: c. percents",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 66,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

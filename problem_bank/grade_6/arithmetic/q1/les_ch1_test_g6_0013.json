@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "Prime factorization",
+  "latex": "Identify the prime factorization of $135$.\n\na. $\\bigcirc$ $3 \\times 5 \\times 9$\n\nb. $\\bigcirc$ $5 \\times 27$\n\nc. $\\bigcirc$ $3 \\times 3 \\times 3 \\times 5$\n\nd. $\\bigcirc$ $3^2 \\times 15$",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 6,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0028",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "volume of rectangular prism, multi-step word problem",
+  "latex": "The base area of a building shaped like a rectangular prism is $36,000$ square feet. The building is $10$ stories high, and each story is a total of $13\\frac{1}{2}$ feet high. What is the total volume, in cubic feet, of the building?\n\nThe total volume is \\underline{\\hspace{1cm}} cubic feet.",
+  "answer_latex": "4,860,000",
+  "suggested_quarter": 3,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 28,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "in_grade6_g6_0035",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "understanding opposites and absolute value with integers",
+  "latex": "The road in a tunnel is 17 feet below ground. The road on a bridge is an equal distance above ground. How far above ground is the road on the bridge?\n\n\\underline{\\hspace{1cm}} feet above ground",
+  "answer_latex": "17",
+  "suggested_quarter": 1,
+  "source_file": "grade6_EOC.pdf",
+  "source_problem_number": 35,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "notes": ""
+}

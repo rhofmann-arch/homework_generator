@@ -1,0 +1,18 @@
+{
+  "id": "les_ch1_test_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": "ch1_test",
+  "topic": "perfect squares and factors",
+  "latex": "What is the greatest perfect square that is a factor of $243$?\n\nThe greatest perfect square is \\_\\_\\_\\_\\_ .",
+  "answer_latex": "",
+  "suggested_quarter": 3,
+  "source_file": "6_1_test.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": false,
+  "notes": ""
+}
