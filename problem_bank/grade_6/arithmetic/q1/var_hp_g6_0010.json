@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "division with rounding up (interpreting remainders)",
+  "latex": "If at most $8$ players can ride in a van, what is the minimum number of vans needed to transport $58$ players?",
+  "answer_latex": "8",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0015",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0015"
+}

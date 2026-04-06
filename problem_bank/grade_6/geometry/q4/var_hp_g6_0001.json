@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "volume of a rectangular prism",
+  "latex": "What is the volume, in cubic units, of the rectangular box below?",
+  "answer_latex": "210",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0039",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0039",
+  "needs_diagram": true,
+  "diagram_notes": "A 3D rectangular prism (box) shown in oblique/isometric view with dimensions labeled: length = 7, width = 5, height = 6. The back edges are shown as dashed lines to indicate hidden edges."
+}

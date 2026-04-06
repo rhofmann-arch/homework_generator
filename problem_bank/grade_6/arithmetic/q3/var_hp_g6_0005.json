@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratios and proportional relationships",
+  "latex": "The table below shows the number of gallons of water needed to fill fish tanks of different sizes. At this rate, how many gallons of water are needed to fill a tank of $40$ cubic inches?\n\n\\begin{tabular}{|c|c|}\n\\hline\n\\textit{Tank Size} & \\textit{Water} \\\\\n\\textit{(cubic inches)} & \\textit{(gallons)} \\\\\n\\hline\n10 & 6 \\\\\n\\hline\n25 & 15 \\\\\n\\hline\n40 & \\\\\n\\hline\n60 & 36 \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "24",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0031",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0031"
+}

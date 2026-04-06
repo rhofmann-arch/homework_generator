@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "dividing mixed numbers by fractions",
+  "latex": "A craft project uses $\\frac{3}{4}$ yard of ribbon for every decoration. How many decorations can be made with $9\\frac{1}{2}$ yards?\n\n\\underline{\\hspace{1cm}} decorations can be made with $9\\frac{1}{2}$ yards.",
+  "answer_latex": "$12\\frac{2}{3}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0002",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0002"
+}

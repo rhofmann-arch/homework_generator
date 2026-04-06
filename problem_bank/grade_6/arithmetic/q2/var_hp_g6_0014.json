@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0014",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "finding the whole given a percent",
+  "latex": "$25\\%$ of what number is $3{,}500$?\n\n$25\\%$ of \\_\\_\\_\\_\\_ is $3{,}500$.",
+  "answer_latex": "14{,}000",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0059",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0059"
+}

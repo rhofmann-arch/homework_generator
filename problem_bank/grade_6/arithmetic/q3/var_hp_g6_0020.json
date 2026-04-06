@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "ratios with visual representation of coins",
+  "latex": "What is the ratio of dimes to the total number of coins?\n\n\\begin{tikzpicture}\n% Row 1: 3 dimes, 2 nickels\n\\node at (0,2) {\\includegraphics[width=0.8cm]{dime}};\n\\node at (1,2) {\\includegraphics[width=0.8cm]{dime}};\n\\node at (2,2) {\\includegraphics[width=0.8cm]{dime}};\n\\node at (3,2) {\\includegraphics[width=0.8cm]{nickel}};\n\\node at (4,2) {\\includegraphics[width=0.8cm]{nickel}};\n% Row 2: 4 quarters\n\\node at (0.5,1) {\\includegraphics[width=1cm]{quarter}};\n\\node at (1.5,1) {\\includegraphics[width=1cm]{quarter}};\n\\node at (2.5,1) {\\includegraphics[width=1cm]{quarter}};\n\\node at (3.5,1) {\\includegraphics[width=1cm]{quarter}};\n% Row 3: 2 pennies, 2 nickels\n\\node at (0,0) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (1,0) {\\includegraphics[width=0.8cm]{penny}};\n\\node at (2,0) {\\includegraphics[width=0.8cm]{nickel}};\n\\node at (3,0) {\\includegraphics[width=0.8cm]{nickel}};\n\\end{tikzpicture}\n\nRatio: \\underline{\\hspace{1cm}} : \\underline{\\hspace{1cm}}",
+  "answer_latex": "3 : 13",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0115",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0115",
+  "needs_diagram": true,
+  "diagram_notes": "Three rows of coins: Row 1 has 3 dimes and 2 nickels. Row 2 has 4 quarters. Row 3 has 2 pennies and 2 nickels. Total: 3 dimes, 4 nickels, 4 quarters, 2 pennies = 13 coins."
+}

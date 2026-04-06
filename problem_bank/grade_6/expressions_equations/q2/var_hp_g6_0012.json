@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0012",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing algebraic expressions with multiplication and addition",
+  "latex": "Write an expression that represents $9$ times the sum of $5$ and a number $w$.\n\nExpression: \\_\\_\\_\\_\\_\\_\\_",
+  "answer_latex": "$9(5 + w)$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0084",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0084"
+}

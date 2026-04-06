@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "integers and opposites",
+  "latex": "Maya is thinking of an integer that is greater than its opposite. The integer Maya is thinking of is",
+  "answer_latex": "greater than one.",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0035",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0035",
+  "choices_latex": {
+    "A": "less than zero.",
+    "B": "zero.",
+    "C": "between zero and one.",
+    "D": "greater than one."
+  },
+  "keep_mc": true
+}

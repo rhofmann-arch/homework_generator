@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "ratios and multiplicative relationships",
+  "latex": "The table below shows the amount of red and white paint needed to make pink paint.\n\n\\begin{tabular}{|c|c|c|}\n\\hline\n\\multicolumn{3}{|c|}{Amount of Paint} \\\\\n\\hline\nred & white & pink \\\\\n\\hline\n3 & 9 & 12 \\\\\n\\hline\n6 & 18 & 24 \\\\\n\\hline\n9 & 27 & 36 \\\\\n\\hline\n\\end{tabular}\n\nThe amount of white paint is",
+  "answer_latex": "three times the amount of red paint.",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0024",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0024",
+  "needs_diagram": true,
+  "diagram_notes": "A table with 3 columns (red, white, pink) and 3 data rows. Header row shows 'Amount of Paint' spanning all columns. Data: Row 1: 3, 9, 12. Row 2: 6, 18, 24. Row 3: 9, 27, 36."
+}

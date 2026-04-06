@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "verifying solutions to linear inequalities",
+  "latex": "Complete the table.\n\n\\begin{tikzpicture}\n\\node at (0, 0) {\n\\begin{tabular}{|l|c|c|}\n\\hline\n & \\textbf{True} & \\textbf{False} \\\\\n\\hline\nA solution of the inequality $4x + 5 \\leq 21$ is $-2$. & & \\\\\n\\hline\nA solution of the inequality $8 + x > -1$ is $-9$. & & \\\\\n\\hline\nA solution of the inequality $8z \\div 4 \\geq 6$ is $3$. & & \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}",
+  "answer_latex": "True, False, False",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0016",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0016"
+}

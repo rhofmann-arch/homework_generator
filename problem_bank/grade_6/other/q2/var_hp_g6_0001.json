@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "identifying equivalent integer expressions and opposites",
+  "latex": "Which one is different?\n\n\\begin{enumerate}\n\\item[a.] $-(-9)$\n\\item[b.] opposite of $9$\n\\item[c.] $9$\n\\item[d.] opposite of $-9$\n\\end{enumerate}",
+  "answer_latex": "b",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0103",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0103"
+}

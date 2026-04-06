@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "multi-digit multiplication",
+  "latex": "$123 \\times 76 =$",
+  "answer_latex": "9,348",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0001",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0001"
+}

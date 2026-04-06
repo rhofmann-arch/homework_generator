@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "finding distance between integers and fractions on a number line",
+  "latex": "What is the distance between the points located at $5\\frac{1}{4}$ and $-3$ on the number line?",
+  "answer_latex": "$8\\frac{1}{4}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0028",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0028"
+}

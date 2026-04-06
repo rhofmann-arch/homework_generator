@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "subtracting decimals",
+  "latex": "$13.05 - 4.7 =$",
+  "answer_latex": "$8.35$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0007",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0007"
+}

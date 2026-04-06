@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "absolute value and negative numbers",
+  "latex": "Select \\textbf{all} values that represent a negative number that has a distance of 9 from 0 on the number line.\n\na. $\\square$ $-9$\n\nb. $\\square$ $9$\n\nc. $\\square$ $|-9|$\n\nd. $\\square$ $-|9|$\n\ne. $\\square$ $-|-9|$",
+  "answer_latex": "a, d, e",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0112",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0112"
+}

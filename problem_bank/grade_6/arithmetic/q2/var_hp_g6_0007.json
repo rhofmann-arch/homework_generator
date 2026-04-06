@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "adding fractions and estimating decimal equivalents",
+  "latex": "Which of the following is closest to $\\frac{1}{4} + \\frac{1}{5}$?",
+  "answer_latex": "0.4",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0025",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0025",
+  "choices_latex": {
+    "A": "0.2",
+    "B": "0.4",
+    "C": "0.7",
+    "D": "1.0"
+  },
+  "keep_mc": true
+}

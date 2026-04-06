@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0024",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "percent equation, finding the whole",
+  "latex": "$10\\%$ of what number is $4{,}300$?\n\n$10\\%$ of \\_\\_\\_\\_\\_ is $4{,}300$.",
+  "answer_latex": "43{,}000",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0126",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0126"
+}

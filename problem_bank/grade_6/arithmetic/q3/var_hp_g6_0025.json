@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "unit conversion, kilograms to pounds",
+  "latex": "You have $8$ kilograms of flour. How many pounds of flour do you have?\n\nYou have \\_\\_\\_\\_\\_ pounds of flour.",
+  "answer_latex": "3.6",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0127",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0127"
+}

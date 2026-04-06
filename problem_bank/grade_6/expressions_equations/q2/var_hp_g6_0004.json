@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing algebraic expressions from word problems",
+  "latex": "You are buying notebooks for school. Each notebook costs $\\$4$. Write an expression that represents the total cost for $n$ notebooks.\n\nExpression: \\underline{\\hspace{1cm}}",
+  "answer_latex": "$4n$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0008",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0008"
+}

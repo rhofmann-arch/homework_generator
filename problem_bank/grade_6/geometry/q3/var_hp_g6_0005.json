@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "volume of rectangular prism, multi-step word problem",
+  "latex": "The base area of a warehouse shaped like a rectangular prism is $24{,}000$ square feet. The warehouse is $8$ stories high, and each story is a total of $11\\frac{1}{2}$ feet high. What is the total volume, in cubic feet, of the warehouse?\n\nThe total volume is \\underline{\\hspace{1cm}} cubic feet.",
+  "answer_latex": "2{,}208{,}000",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0028",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0028"
+}

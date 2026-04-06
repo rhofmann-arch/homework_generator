@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "finding the median of a data set",
+  "latex": "Which value describes the median of the data?\n\n$$14, 31, 18, 25, 31, 47, 25$$\n\na. $7$\n\nb. $25$\n\nc. $27$\n\nd. $34$",
+  "answer_latex": "b",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0064",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0064",
+  "choices_latex": [
+    "a. $7$",
+    "b. $25$",
+    "c. $27$",
+    "d. $34$"
+  ],
+  "keep_mc": true
+}

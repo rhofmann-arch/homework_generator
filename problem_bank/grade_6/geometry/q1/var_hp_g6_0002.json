@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "perimeter of composite figures",
+  "latex": "What is the perimeter, in centimeters, of the figure below?",
+  "answer_latex": "20",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0011",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0011",
+  "needs_diagram": true,
+  "diagram_notes": "An L-shaped (rectilinear) polygon formed by a rectangle with a rectangular notch cut from the upper right corner. The right side is labeled 4 cm (full height). There is a horizontal step at the top where the notch is - the horizontal part of the step is labeled 3 cm, and the vertical drop is labeled 2 cm. The top horizontal edge (to the left of the notch) is labeled 4 cm. Right angles are marked at all corners with small squares. The bottom edge and remaining left side are not labeled but can be inferred."
+}

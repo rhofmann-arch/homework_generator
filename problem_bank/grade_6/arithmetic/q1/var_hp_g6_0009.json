@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "comparing integers and inequalities",
+  "latex": "Which of the following inequalities is true?",
+  "answer_latex": "$-6 < -1$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0012",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0012",
+  "choices_latex": {
+    "A": "$-2 < -7$",
+    "B": "$0 < -3$",
+    "C": "$-6 < -1$",
+    "D": "$2 < -5$"
+  },
+  "keep_mc": true
+}

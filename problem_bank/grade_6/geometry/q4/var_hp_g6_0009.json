@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "distance between points on a coordinate plane",
+  "latex": "The location of a library is represented by the point $(-5, -3)$ on a map. The location of a school is represented by the point $(-5, 6)$ on the map. If each unit square has a side length of $1$ mile, how many miles is the library from the school?\n\n\\underline{\\hspace{1cm}} miles",
+  "answer_latex": "9",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0114",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0114"
+}

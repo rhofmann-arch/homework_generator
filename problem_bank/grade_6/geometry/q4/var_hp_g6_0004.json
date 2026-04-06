@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "area of composite figures (square and triangle)",
+  "latex": "A rectangular piece of glass and a triangular piece of glass are joined to make a window. The area of the triangular piece of glass is $30$ square feet. Find the total area of the window.\n\n\\begin{tikzpicture}\n% Triangle on top\n\\draw (0,0) -- (2,0) -- (1,2) -- cycle;\n\\node[above] at (1,2) {6 ft};\n% Rectangle below\n\\draw (0,0) -- (2,0) -- (2,-2.5) -- (0,-2.5) -- cycle;\n\\node[below] at (1,-2.5) {9 ft};\n\\node[left] at (0,-1.25) {7 ft};\n\\end{tikzpicture}\n\nThe total area of the window is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "93",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0093",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0093",
+  "needs_diagram": true,
+  "diagram_notes": "A composite window shape with a rectangle on the bottom (9 ft wide, 7 ft tall) and a triangle on top. Triangle area is given as 30 sq ft. Rectangle area = 9 x 7 = 63. Total = 63 + 30 = 93 square feet."
+}

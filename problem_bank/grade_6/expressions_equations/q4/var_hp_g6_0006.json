@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "linear equations, rate problems, completing tables",
+  "latex": "A cyclist rides $12$ miles every hour.\n\n\\textbf{Part A} Select an equation to represent the relationship.\n\n\\begin{enumerate}\n\\item[a.] $y = x + 12$\n\\item[b.] $y = x - 12$\n\\item[c.] $y = 12x$\n\\item[d.] $y = 2(6 + x)$\n\\end{enumerate}\n\n\\textbf{Part B} Use the equation to complete the table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (5,3.5);\n\\draw (0,3) -- (5,3);\n\\draw (2.5,0) -- (2.5,3.5);\n\\node at (1.25,3.25) {\\textbf{Time (hours)}};\n\\node at (3.75,3.25) {\\textbf{Distance (miles)}};\n\\draw (0,2.4) -- (5,2.4);\n\\draw (0,1.8) -- (5,1.8);\n\\draw (0,1.2) -- (5,1.2);\n\\draw (0,0.6) -- (5,0.6);\n\\node at (1.25,2.7) {1};\n\\node at (1.25,2.1) {2};\n\\node at (1.25,1.5) {3};\n\\node at (1.25,0.9) {4};\n\\node at (1.25,0.3) {5};\n\\end{tikzpicture}",
+  "answer_latex": "Part A: c. $y = 12x$; Part B: 12, 24, 36, 48, 60",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0024",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0024"
+}

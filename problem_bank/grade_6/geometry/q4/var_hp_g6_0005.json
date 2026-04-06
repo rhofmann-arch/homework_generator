@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "volume of rectangular prism with fractions",
+  "latex": "Find the total volume, in cubic feet, of the rectangular prism.\n\n\\begin{tikzpicture}\n% 3D rectangular prism\n\\draw (0,0) -- (2,0) -- (2,1) -- (0,1) -- cycle;\n\\draw (2,0) -- (2.8,0.6) -- (2.8,1.6) -- (2,1);\n\\draw (0,1) -- (0.8,1.6) -- (2.8,1.6);\n\\draw[dashed] (0,0) -- (0.8,0.6) -- (2.8,0.6);\n\\draw[dashed] (0.8,0.6) -- (0.8,1.6);\n\\node[left] at (0,0.5) {$\\frac{3}{4}$ ft};\n\\node[right] at (2.8,1.1) {$\\frac{2}{5}$ ft};\n\\node[above right] at (2.4,1.6) {$\\frac{1}{3}$ ft};\n\\end{tikzpicture}\n\nThe total volume is \\underline{\\hspace{1cm}} cubic feet.",
+  "answer_latex": "\\frac{1}{10}",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0094",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0094",
+  "needs_diagram": true,
+  "diagram_notes": "A 3D rectangular prism with dimensions 3/4 ft, 2/5 ft, and 1/3 ft. Volume = (3/4) x (2/5) x (1/3) = 6/60 = 1/10 cubic feet."
+}

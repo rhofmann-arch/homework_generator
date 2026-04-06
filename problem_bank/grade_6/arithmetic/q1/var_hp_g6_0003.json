@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "adding fractions with unlike denominators",
+  "latex": "$\\dfrac{5}{6} + \\dfrac{3}{4} =$",
+  "answer_latex": "$\\dfrac{19}{12}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0003",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0003"
+}

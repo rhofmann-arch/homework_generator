@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0010",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "matching equivalent algebraic expressions",
+  "latex": "Match the equivalent expressions.\n\n\\begin{tikzpicture}\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 3) {$5(x+3)$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 2) {$6x + 14 - 2x - 4$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 1) {$(3x + 4) \\times 2$};\n\\node[draw, minimum width=3cm, minimum height=0.8cm] at (0, 0) {$10x - 9 - 7x$};\n\\node at (6, 3) {$\\bigcirc$ \\quad $5x+15$};\n\\node at (6, 2) {$\\bigcirc$ \\quad $4x+10$};\n\\node at (6, 1) {$\\bigcirc$ \\quad $6x+8$};\n\\node at (6, 0) {$\\bigcirc$ \\quad $3x-9$};\n\\end{tikzpicture}",
+  "answer_latex": "$5(x+3) \\to 5x+15$; $6x+14-2x-4 \\to 4x+10$; $(3x+4) \\times 2 \\to 6x+8$; $10x-9-7x \\to 3x-9$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0081",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0081",
+  "needs_diagram": true,
+  "diagram_notes": "Matching diagram with four expressions on the left and four simplified expressions on the right to be connected"
+}

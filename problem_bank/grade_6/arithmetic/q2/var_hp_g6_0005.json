@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "reasoning about fractions with variables",
+  "latex": "A whole number $m$ is greater than $5$. Which of the following is true about $\\frac{m}{5}$?",
+  "answer_latex": "It is greater than $1$.",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0023",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0023",
+  "choices_latex": {
+    "A": "It is between $0$ and $\\frac{1}{5}$.",
+    "B": "It is between $\\frac{1}{5}$ and $1$.",
+    "C": "It is equal to $1$.",
+    "D": "It is greater than $1$."
+  },
+  "keep_mc": true
+}

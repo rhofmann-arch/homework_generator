@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "surface area of composite 3D figures",
+  "latex": "A community center is designing a storage shed. A blueprint of the shed is shown. All shaded surfaces will be painted.\n\n\\begin{tikzpicture}[scale=0.12]\n% Top rectangle (shaded)\n\\fill[gray!40] (0,15) -- (20,15) -- (20,30) -- (0,30) -- cycle;\n\\draw (0,15) -- (20,15) -- (20,30) -- (0,30) -- cycle;\n\\node at (10,32) {20 ft};\n\\node at (-2,22.5) {12 ft};\n\n% Top right triangle (shaded)\n\\fill[gray!40] (20,15) -- (29,15) -- (20,30) -- cycle;\n\\draw (20,15) -- (29,15) -- (20,30) -- cycle;\n\\node at (25,32) {9 ft};\n\\node at (31,22.5) {15 ft};\n\n% Bottom rectangle (white)\n\\draw (0,0) -- (20,0) -- (20,15) -- (0,15) -- cycle;\n\\node at (-2,7.5) {14 ft};\n\\node at (10,12) {20 ft};\n\n% Bottom middle rectangle (white)\n\\draw (20,0) -- (29,0) -- (29,9) -- (20,9) -- cycle;\n\\node at (17,3) {14 ft};\n\\node at (24,-2) {9 ft};\n\\node at (31,4) {9 ft};\n\\end{tikzpicture}\n\n\\textbf{Part A} What is the total surface area of the shed?\n\nThe total surface area of the shed is \\underline{\\hspace{1cm}} square feet.\n\n\\textbf{Part B} How much of the surface area will \\textit{not} be painted?\n\nThe surface area that will \\textit{not} be painted is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "Part A: 1,054.5; Part B: 407",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0098",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0098",
+  "needs_diagram": true,
+  "diagram_notes": "Blueprint of a shed showing a composite shape with two shaded regions (top rectangle 20x12 ft = 240 sq ft, and top right triangle with legs 9 ft and 12 ft, hypotenuse 15 ft = area 54 sq ft; shaded total = 294 sq ft) and two unshaded regions (bottom rectangle 20x14 = 280 ft and bottom right rectangle 9x14 = 126 sq ft; unshaded = 406 sq ft). Total surface area includes all faces."
+}

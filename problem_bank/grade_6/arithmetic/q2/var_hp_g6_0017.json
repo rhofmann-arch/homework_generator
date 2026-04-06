@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "solving one-step multiplication equations with integers",
+  "latex": "Fill in the blank to make the equation true.\n\n$-6 \\times \\underline{\\hspace{1cm}} = 42$",
+  "answer_latex": "-7",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0082",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0082"
+}

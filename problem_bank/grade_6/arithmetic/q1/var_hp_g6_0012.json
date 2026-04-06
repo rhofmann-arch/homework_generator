@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "long division with whole numbers",
+  "latex": "Find the quotient.\n\n$34{,}440 \\div 6 =$ \\underline{\\hspace{1cm}}",
+  "answer_latex": "5{,}740",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0003",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0003"
+}

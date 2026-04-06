@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "evaluating algebraic expressions by substitution",
+  "latex": "Evaluate the expression $y^2 + 5y$ when $y = 4$.\n\n$y^2 + 5y = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "36",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0011",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0011"
+}

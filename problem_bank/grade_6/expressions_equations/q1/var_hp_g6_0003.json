@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "one-step addition equation, whole numbers",
+  "latex": "Solve.\n\n$$k + 27 = 45$$\n\nSolution: $k =$ \\_\\_\\_\\_",
+  "answer_latex": "$18$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0086",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0086"
+}

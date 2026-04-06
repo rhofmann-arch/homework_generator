@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "dividing mixed numbers by whole numbers",
+  "latex": "You have $4\\frac{1}{3}$ meters of ribbon to cut for a project. You equally divide the ribbon into 6 pieces. What is the length of each piece?\n\nEach piece is \\underline{\\hspace{1cm}} of a meter.",
+  "answer_latex": "\\frac{13}{18}",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0001",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0001"
+}

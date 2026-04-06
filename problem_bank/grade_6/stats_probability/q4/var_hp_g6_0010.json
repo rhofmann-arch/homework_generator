@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0010",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "calculating mean and mean absolute deviation (MAD)",
+  "latex": "You record $4, 9, 15, 7, 11, 3,$ and $13$ miles biked over seven days.\n\nPart A Find the mean of the data to the nearest hundredth.\n\nMean: \\underline{\\hspace{1cm}}\n\nPart B Find the MAD of the data to the nearest hundredth.\n\nMAD: \\underline{\\hspace{1cm}}",
+  "answer_latex": "Part A: $8.86$ \\quad Part B: $3.67$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0134",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0134"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "division of mixed numbers by fractions",
+  "latex": "A recipe uses $\\frac{3}{4}$ cup of sugar for every batch. How many batches can be made with $6\\frac{3}{8}$ cups?\n\n$\\underline{\\hspace{1cm}}$ batches can be made with $6\\frac{3}{8}$ cups.",
+  "answer_latex": "8\\frac{1}{2}",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0069",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0069"
+}

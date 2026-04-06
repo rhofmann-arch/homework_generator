@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "area of composite figures (square and triangle)",
+  "latex": "A rectangular piece of fabric and a triangular piece of fabric are sewn together to make a banner. The area of the triangular piece of fabric is $24$ square inches. Find the total area of the banner.\n\n\\begin{tikzpicture}\n% Rectangle\n\\draw (0,0) -- (2.5,0) -- (2.5,2) -- (0,2) -- cycle;\n% Triangle on top\n\\draw (0,2) -- (1.25,3) -- (2.5,2);\n% Labels\n\\node[above left] at (0,2) {6 in};\n\\node[below] at (1.25,0) {9 in};\n\\end{tikzpicture}\n\nThe total area of the banner is \\underline{\\hspace{1cm}} square inches.",
+  "answer_latex": "78",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0026",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0026"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0009",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "interpreting data values and units",
+  "latex": "You keep track of the daily high temperatures (in degrees Fahrenheit) for one week. Your results are:\n\n$72, 68, 75, 70, 66$\n\nPart A Find and interpret the number of data values.\n\nThere are \\underline{\\hspace{1cm}} data values. So, you recorded temperatures for \\underline{\\hspace{1cm}} days.\n\nPart B What are the units?\n\na. $\\bigcirc$ miles\n\nb. $\\bigcirc$ degrees Fahrenheit\n\nc. $\\bigcirc$ pounds\n\nd. $\\bigcirc$ gallons",
+  "answer_latex": "Part A: 5; 5 \\quad Part B: b. degrees Fahrenheit",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0133",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0133"
+}

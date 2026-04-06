@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "finding the mean/average of a data set",
+  "latex": "Mia has scores of $78$, $91$, and $86$ on three science tests. What is Mia's average score on these science tests?",
+  "answer_latex": "85",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0010",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0010"
+}

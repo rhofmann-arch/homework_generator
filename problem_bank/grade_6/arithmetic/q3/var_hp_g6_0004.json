@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "writing ratios (part to whole)",
+  "latex": "There are $8$ blue, $5$ yellow, and $7$ orange marbles in a bag. What is the ratio of the number of yellow marbles to the total number of marbles in the bag?",
+  "answer_latex": "$5 : 20$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0030",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0030"
+}

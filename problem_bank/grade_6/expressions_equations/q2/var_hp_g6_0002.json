@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing algebraic expressions from word problems",
+  "latex": "Sofia earns $\\$12$ per hour babysitting. Last weekend, Sofia worked for $h$ hours. Which expression represents the number of dollars Sofia earned?",
+  "answer_latex": "$12h$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0019",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0019",
+  "choices_latex": {
+    "A": "$\\frac{12}{h}$",
+    "B": "$12h$",
+    "C": "$12 + h$",
+    "D": "$\\frac{h}{12}$"
+  },
+  "keep_mc": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0021",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "equivalent ratios",
+  "latex": "Complete the statement.\n\nThe ratio $4$ : \\underline{\\hspace{1cm}} is equivalent to the ratio $20 : 30$.",
+  "answer_latex": "6",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0116",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0116"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "unit conversion, ounces to pounds",
+  "latex": "Complete the statement.\n\n\\_\\_\\_\\_\\_ oz $= 3.25$ lb",
+  "answer_latex": "52",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0061",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0061"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "writing algebraic expressions with parentheses",
+  "latex": "Write an expression that represents $7$ times the sum of $3$ and a number $k$.\n\nExpression: \\_\\_\\_\\_\\_\\_\\_",
+  "answer_latex": "$7(3 + k)$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0017",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0017"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "multiplication of decimals, money word problem",
+  "latex": "You have a piece of silver wire that weighs $3.75$ ounces. Silver is worth $\\$5.48$ per ounce. How much is the silver in the wire worth, in dollars?\n\nThe wire worth is $\\$$ \\_\\_\\_\\_\\_ .",
+  "answer_latex": "20.55",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0057",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0057"
+}

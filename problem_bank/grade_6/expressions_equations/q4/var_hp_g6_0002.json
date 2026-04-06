@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "combining like terms",
+  "latex": "Which of the following expressions is equivalent to $6y - 4y + 9$?",
+  "answer_latex": "$2y + 9$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0040",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0040",
+  "choices_latex": {
+    "A": "$2y + 9$",
+    "B": "$10y + 9$",
+    "C": "$2y - 9$",
+    "D": "$11y$"
+  },
+  "keep_mc": true
+}

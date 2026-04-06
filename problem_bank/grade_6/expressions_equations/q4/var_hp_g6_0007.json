@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0007",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "identifying independent and dependent variables in linear equations",
+  "latex": "The amount earned at a bake sale is represented by the equation $e = 2.5b + 10$, where $e$ is the total earnings and $b$ is the number of baked goods sold.\n\nIdentify the independent and dependent variables.\n\nThe independent variable is \\underline{\\hspace{3cm}} and the dependent variable is \\underline{\\hspace{3cm}}.\n\n\\begin{tabular}{|c|c|}\n\\hline\nnumber of baked goods sold & total earnings \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "The independent variable is number of baked goods sold and the dependent variable is total earnings.",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0090",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0090"
+}

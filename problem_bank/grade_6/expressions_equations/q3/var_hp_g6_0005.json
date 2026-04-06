@@ -1,0 +1,25 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Inequalities and graphing on a number line",
+  "latex": "The melting point of mercury is $-39^\\circ$C.\n\n\\textbf{Part A} Choose an inequality to represent the temperatures at which mercury will be in a liquid state (above its melting point).\n\n\\begin{tabular}{ll}\na. & $x \\ge -39$ \\\\\nb. & $x \\le -39$ \\\\\nc. & $x > -39$ \\\\\nd. & $x < -39$\n\\end{tabular}\n\n\\textbf{Part B} Graph the inequality.\n\n\\begin{tikzpicture}\n\\draw[->] (0,0) -- (9.5,0);\n\\draw[<-] (-0.5,0) -- (0,0);\n\\foreach \\x/\\label in {0/-90, 0.5/-80, 1/-70, 1.5/-60, 2/-50, 2.5/-40, 3/-30, 3.5/-20, 4/-10, 4.5/0, 5/10, 5.5/20, 6/30, 6.5/40, 7/50, 7.5/60, 8/70, 8.5/80, 9/90} {\n  \\draw (\\x,0.1) -- (\\x,-0.1);\n  \\node[below] at (\\x,-0.1) {\\tiny \\label};\n}\n\\end{tikzpicture}",
+  "answer_latex": "Part A: c. $x > -39$; Part B: Number line with open circle at $-39$ and arrow extending to the right",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0022",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0022",
+  "choices_latex": [
+    "a. $x \\ge -39$",
+    "b. $x \\le -39$",
+    "c. $x > -39$",
+    "d. $x < -39$"
+  ],
+  "keep_mc": true,
+  "needs_diagram": true,
+  "diagram_notes": "Number line ranging from -90 to 90 with open circle at -39 and arrow pointing right"
+}

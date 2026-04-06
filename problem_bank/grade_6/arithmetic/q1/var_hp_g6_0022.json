@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0022",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "subtraction of decimals, money word problem",
+  "latex": "You have \\$632.47 in your checking account. You pay a phone bill for \\$89.95 and a grocery bill for \\$74.38. How much money do you have left in your checking account?\n\na. \\$164.33\n\nb. \\$468.14\n\nc. \\$542.52\n\nd. \\$558.09",
+  "answer_latex": "b. \\$468.14",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0071",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0071"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "division word problem",
+  "latex": "You pack $TEX672$ pencils into boxes. There are $16$ pencils in each box. How many boxes of pencils are there?\n\nThere are \\underline{\\hspace{1cm}} boxes of pencils.",
+  "answer_latex": "42",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0118",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0118"
+}

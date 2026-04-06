@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "evaluating algebraic expressions by substitution",
+  "latex": "The length of a bamboo plant is $(10 + 8t)$ centimeters after $t$ weeks. Find the length of the bamboo plant after 5 weeks.\n\nThe length of the bamboo plant after 5 weeks is $\\underline{\\hspace{1cm}}$ centimeters.",
+  "answer_latex": "50",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0012",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0012"
+}

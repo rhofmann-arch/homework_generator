@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "reflection of a point across the x-axis",
+  "latex": "Write the ordered pair that represents a reflection of the point $(5, -3)$ in the $y$-axis.\n\nOrdered pair: $( \\underline{\\hspace{1cm}} , \\underline{\\hspace{1cm}} )$",
+  "answer_latex": "(-5, -3)",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0038",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0038"
+}

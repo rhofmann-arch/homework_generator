@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "comparing fractions",
+  "latex": "Which of the four numbers in the box is the smallest?\n\n$$\\frac{7}{4} \\quad \\frac{3}{4} \\quad \\frac{5}{3} \\quad \\frac{9}{8}$$",
+  "answer_latex": "$\\frac{3}{4}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0026",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0026"
+}

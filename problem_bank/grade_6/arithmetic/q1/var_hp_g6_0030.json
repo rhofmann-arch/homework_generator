@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0030",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "completing a ratio table, equivalent ratios",
+  "latex": "A school donated $\\mathbf{TEX}$ wait \u2014 a school collected $84$ books that were equally distributed in $7$ boxes for a library drive. Complete the ratio table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (8,1.5);\n\\draw (0,0.75) -- (8,0.75);\n\\draw (2,0) -- (2,1.5);\n\\draw (3,0) -- (3,1.5);\n\\draw (4,0) -- (4,1.5);\n\\draw (5,0) -- (5,1.5);\n\\draw (6,0) -- (6,1.5);\n\\draw (7,0) -- (7,1.5);\n\\node at (1,1.125) {Number of boxes};\n\\node at (2.5,1.125) {1};\n\\node at (3.5,1.125) {2};\n\\node at (4.5,1.125) {3};\n\\node at (5.5,1.125) {4};\n\\node at (6.5,1.125) {6};\n\\node at (7.5,1.125) {7};\n\\node at (1,0.375) {Books};\n\\node at (2.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (3.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (4.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (5.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (6.5,0.375) {\\underline{\\hspace{0.5cm}}};\n\\node at (7.5,0.375) {84};\n\\end{tikzpicture}",
+  "answer_latex": "12, 24, 36, 48, 72",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0120",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0120",
+  "needs_diagram": true,
+  "diagram_notes": "Ratio table with 'Number of boxes' row (1,2,3,4,6,7) and 'Books' row with blanks except last value 84."
+}

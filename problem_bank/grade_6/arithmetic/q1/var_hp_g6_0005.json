@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "converting mixed numbers to improper fractions",
+  "latex": "Which of the following is equal to $3\\frac{2}{5}$?",
+  "answer_latex": "$\\frac{17}{5}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0006",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0006",
+  "choices_latex": {
+    "A": "$\\frac{5}{5}$",
+    "B": "$\\frac{9}{5}$",
+    "C": "$\\frac{13}{5}$",
+    "D": "$\\frac{17}{5}$"
+  },
+  "keep_mc": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "distance between points on coordinate plane (horizontal)",
+  "latex": "Find the distance between point $P\\,(-4, 3)$ and point $Q\\,(6, 3)$.\n\nThe distance is \\underline{\\hspace{1cm}} units.",
+  "answer_latex": "10",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0029",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0029"
+}

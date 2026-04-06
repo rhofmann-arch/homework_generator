@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "Plotting points and drawing polygons on coordinate plane, finding distance between points",
+  "latex": "Complete the following.\n\n\\textbf{Part A} Draw a polygon with vertices $P(-4, -3)$, $Q(-4, 3)$, $R(0, 5)$, $S(4, 3)$, and $T(4, -3)$ in the coordinate plane.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[->] (-8.5,0) -- (8.5,0) node[right] {$x$};\n\\draw[->] (0,-8.5) -- (0,8.5) node[above] {$y$};\n\\foreach \\x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\tiny \\x};\n\\foreach \\y in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\tiny \\y};\n\\end{tikzpicture}\n\n\\textbf{Part B} What is the distance between point S and point T?\n\n\\begin{enumerate}\n\\item[a.] 4 units\n\\item[b.] 5 units\n\\item[c.] 6 units\n\\item[d.] 8 units\n\\end{enumerate}",
+  "answer_latex": "Part A: Polygon with vertices $P(-4,-3)$, $Q(-4,3)$, $R(0,5)$, $S(4,3)$, $T(4,-3)$ connected in order; Part B: c. 6 units",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0097",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0097",
+  "needs_diagram": true,
+  "diagram_notes": "Coordinate plane with axes from -8 to 8. Plot and connect vertices P(-4,-3), Q(-4,3), R(0,5), S(4,3), T(4,-3) to form a pentagon."
+}

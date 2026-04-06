@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "identifying statistical questions",
+  "latex": "Which word change makes the question a statistical question?\n\nHow many students are there in each math class?\n\na. Change ``students'' to ``teachers''\n\nb. Change ``math class'' to ``school building''\n\nc. Change ``each math class'' to ``this class''\n\nd. Change ``students'' to ``books''",
+  "answer_latex": "d",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0129",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0129"
+}

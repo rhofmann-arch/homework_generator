@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "matching equivalent algebraic expressions",
+  "latex": "Match the equivalent expressions.\n\n\\begin{tikzpicture}\n\\node[draw, minimum width=3cm, minimum height=0.7cm] at (0, 3) {$5(x+4)$};\n\\node[draw, minimum width=3cm, minimum height=0.7cm] at (0, 2) {$6x + 18 + 2x - 8$};\n\\node[draw, minimum width=3cm, minimum height=0.7cm] at (0, 1) {$(3x + 4) \\times 2$};\n\\node[draw, minimum width=3cm, minimum height=0.7cm] at (0, 0) {$11x - 30 - 6x$};\n\\node at (6, 3) {$\\bigcirc \\quad 5x + 20$};\n\\node at (6, 2) {$\\bigcirc \\quad 8x + 10$};\n\\node at (6, 1) {$\\bigcirc \\quad 6x + 8$};\n\\node at (6, 0) {$\\bigcirc \\quad 5x - 30$};\n\\end{tikzpicture}",
+  "answer_latex": "$5(x+4) \\leftrightarrow 5x+20$, $6x+18+2x-8 \\leftrightarrow 8x+10$, $(3x+4) \\times 2 \\leftrightarrow 6x+8$, $11x-30-6x \\leftrightarrow 5x-30$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0014",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0014"
+}

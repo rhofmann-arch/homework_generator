@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "interpreting data sets, counting data values, identifying units",
+  "latex": "You keep track of the number of pages you read each day for one week. Your results are:\n\n$45, 30, 52, 38, 41$\n\n\\textbf{Part A} Find and interpret the number of data values.\n\nThere are \\underline{\\hspace{1cm}} data values. So, you tracked reading for \\underline{\\hspace{1cm}} days.\n\n\\textbf{Part B} What are the units?\n\n\\begin{enumerate}\n\\item[a.] $\\bigcirc$ miles\n\\item[b.] $\\bigcirc$ pages\n\\item[c.] $\\bigcirc$ minutes\n\\item[d.] $\\bigcirc$ kilograms\n\\end{enumerate}",
+  "answer_latex": "Part A: 5 data values, 5 days; Part B: b. pages",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0066",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0066",
+  "choices_latex": [
+    "a. $\\bigcirc$ miles",
+    "b. $\\bigcirc$ pages",
+    "c. $\\bigcirc$ minutes",
+    "d. $\\bigcirc$ kilograms"
+  ],
+  "keep_mc": true
+}

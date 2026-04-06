@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0007",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "identifying statistical questions",
+  "latex": "Which is a statistical question?\n\na. How many floors does the Empire State Building have?\n\nb. What time does the school day start?\n\nc. How long does it take students to walk to school?\n\nd. What is the boiling point of water?",
+  "answer_latex": "c",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0130",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0130"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "distance between points on coordinate plane",
+  "latex": "Find the distance between the points $(-5, 7)$ and $(-5, -11)$.\n\nThe distance is \\underline{\\hspace{1cm}}.",
+  "answer_latex": "18",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0113",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0113"
+}

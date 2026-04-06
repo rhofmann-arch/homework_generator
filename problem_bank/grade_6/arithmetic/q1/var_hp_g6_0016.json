@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "unit rates",
+  "latex": "You pay $\\$45$ for $9$ kilograms of salmon. Write a unit rate for the situation.\n\nThe unit rate is $\\$$ \\underline{\\hspace{1cm}} per kilogram.",
+  "answer_latex": "5",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0050",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0050"
+}

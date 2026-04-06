@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "absolute value of negative fractions",
+  "latex": "$\\left| -\\dfrac{7}{9} \\right| =$",
+  "answer_latex": "$\\dfrac{7}{9}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0037",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0037"
+}

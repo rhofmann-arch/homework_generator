@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "counting terms in algebraic expressions",
+  "latex": "Identify the number of terms in each expression.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (8,4);\n\\draw (4,0) -- (4,4);\n\\draw (5.5,0) -- (5.5,4);\n\\draw (6.75,0) -- (6.75,4);\n\\draw (0,3.2) -- (8,3.2);\n\\draw (0,2.4) -- (8,2.4);\n\\draw (0,1.6) -- (8,1.6);\n\\draw (0,0.8) -- (8,0.8);\n\\node at (4.75,3.6) {2};\n\\node at (6.125,3.6) {3};\n\\node at (7.375,3.6) {4};\n\\node[anchor=west] at (0.1,2.8) {$5a^2 - 3a + 7$};\n\\node[anchor=west] at (0.1,2.0) {$\\dfrac{3}{4y} + 6$};\n\\node[anchor=west] at (0.1,1.2) {$2m^4 - 9m^2 + m - 1$};\n\\node[anchor=west] at (0.1,0.4) {$8n^3 + 5n$};\n\\end{tikzpicture}",
+  "answer_latex": "$5a^2 - 3a + 7$: 3; $\\dfrac{3}{4y} + 6$: 2; $2m^4 - 9m^2 + m - 1$: 4; $8n^3 + 5n$: 2",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0077",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0077",
+  "needs_diagram": true,
+  "diagram_notes": "Table with expressions in the left column and checkboxes under columns labeled 2, 3, and 4 for number of terms"
+}

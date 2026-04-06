@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0026",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "factoring using greatest common factor",
+  "latex": "Factor the expression $54 - 36$ using the GCF.\n\n$54 - 36 = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "18(3 - 2)",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0100",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0100"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0011",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "simplifying algebraic expressions with distribution",
+  "latex": "Simplify the expression.\n\n$0.4(10y + 5y - 20) = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "$6y - 8$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0080",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0080"
+}

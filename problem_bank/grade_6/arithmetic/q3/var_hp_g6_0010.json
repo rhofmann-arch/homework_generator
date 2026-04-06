@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "understanding opposites and absolute value with integers",
+  "latex": "A submarine is 43 meters below sea level. A helicopter is flying an equal distance above sea level. How far above sea level is the helicopter?\n\n\\underline{\\hspace{1cm}} meters above sea level",
+  "answer_latex": "43",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0035",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0035"
+}

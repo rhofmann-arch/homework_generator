@@ -1,0 +1,25 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "graphing inequalities on a number line",
+  "latex": "Which graph represents all the solutions of the inequality $x < 4$ on the number line?",
+  "answer_latex": "Number line with open circle at 4 and arrow pointing left (toward negative infinity)",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0038",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0038",
+  "choices_latex": {
+    "A": "Number line with open circle at 4 and arrow pointing left (toward negative infinity)",
+    "B": "Number line with closed circle at 4 and arrow pointing left (toward negative infinity)",
+    "C": "Number line with open circles at 0 and 4, with line segment between them and arrows pointing both directions",
+    "D": "Number line with open circles at -4 and 4, with line segment between them and arrows pointing both directions"
+  },
+  "keep_mc": true,
+  "needs_diagram": true,
+  "diagram_notes": "Four number lines labeled A-D, each showing marks at -4, 0, and 4. Option A: open circle at 4 with arrow extending left to negative infinity. Option B: closed/filled circle at 4 with arrow extending left to negative infinity. Option C: open circles at both 0 and 4 with a line segment between them and arrows on both ends. Option D: open circles at both -4 and 4 with a line segment between them and arrows on both ends."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "identifying statistical questions",
+  "latex": "Which is a statistical question?\n\na. How many windows are in my classroom?\n\nb. What is the tallest mountain in the world?\n\nc. How old am I?\n\nd. How tall are the students in 6th grade?",
+  "answer_latex": "d",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0063",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0063",
+  "choices_latex": [
+    "a. How many windows are in my classroom?",
+    "b. What is the tallest mountain in the world?",
+    "c. How old am I?",
+    "d. How tall are the students in 6th grade?"
+  ],
+  "keep_mc": true
+}

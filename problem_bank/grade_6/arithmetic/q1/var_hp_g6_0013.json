@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "evaluating expressions with exponents",
+  "latex": "Which expression has the greatest value?\n\na. $3^4 - 5$\n\nb. $5^3 \\div 25$\n\nc. $7 \\times 1^{10}$\n\nd. $72 - 5^2$",
+  "answer_latex": "a. $3^4 - 5$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0005",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0005"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "checking solutions of linear inequalities",
+  "latex": "Complete the table.\n\n\\begin{tikzpicture}\n\\node at (0, 0) {\n\\begin{tabular}{|l|c|c|}\n\\hline\n & \\textbf{True} & \\textbf{False} \\\\\n\\hline\nA solution of the inequality $4x + 2 \\leq 18$ is $3$. & & \\\\\n\\hline\nA solution of the inequality $7 + x > -4$ is $-11$. & & \\\\\n\\hline\nA solution of the inequality $8z \\div 4 \\geq 6$ is $3$. & & \\\\\n\\hline\n\\end{tabular}\n};\n\\end{tikzpicture}",
+  "answer_latex": "True, False, False",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0083",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0083"
+}

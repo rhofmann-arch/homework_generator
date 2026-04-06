@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "evaluating algebraic expressions with substitution",
+  "latex": "If $a = 7$ and $b = 5$, what is the value of $3a - b$?",
+  "answer_latex": "16",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0018",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0018"
+}

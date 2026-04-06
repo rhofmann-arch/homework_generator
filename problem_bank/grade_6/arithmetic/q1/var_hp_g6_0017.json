@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "division word problems",
+  "latex": "You pack $1{,}560$ cookies into boxes. There are $24$ cookies in each box. How many boxes of cookies are there?\n\nThere are \\underline{\\hspace{1cm}} boxes of cookies.",
+  "answer_latex": "65",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0051",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0051"
+}

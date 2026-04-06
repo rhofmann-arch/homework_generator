@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0031",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "unit rate word problems",
+  "latex": "A cyclist moving at a constant speed traveled $45$ miles in $3$ hours. How many miles did the cyclist travel in one hour?\n\nThe cyclist traveled \\underline{\\hspace{1cm}} miles in one hour.",
+  "answer_latex": "15",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0123",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0123"
+}

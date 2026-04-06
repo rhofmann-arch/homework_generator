@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "volume of rectangular prism with fractional dimensions",
+  "latex": "Find the total volume, in cubic feet, of the rectangular prism.\n\n\\begin{tikzpicture}\n% Rectangular prism\n\\draw (0,0) -- (2,0) -- (2,1) -- (0,1) -- cycle;\n\\draw (0,1) -- (0.5,1.5) -- (2.5,1.5) -- (2,1);\n\\draw (2,0) -- (2.5,0.5) -- (2.5,1.5);\n\\draw[dashed] (0,0) -- (0.5,0.5) -- (0.5,1.5);\n\\draw[dashed] (0.5,0.5) -- (2.5,0.5);\n% Labels\n\\node[left] at (0,0.5) {$\\frac{3}{4}$ ft};\n\\node[right] at (2.5,1) {$\\frac{5}{6}$ ft};\n\\node[above right] at (2.5,1.5) {$\\frac{2}{3}$ ft};\n\\end{tikzpicture}\n\nThe total volume is \\underline{\\hspace{1cm}} cubic feet.",
+  "answer_latex": "\\frac{5}{12}",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0027",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0027"
+}

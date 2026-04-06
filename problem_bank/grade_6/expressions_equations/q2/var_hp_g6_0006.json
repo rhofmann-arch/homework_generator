@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing expressions for real-world situations",
+  "latex": "You have $\\$60$ to spend on supplies for a camping trip. You buy $4$ water bottles that cost $p$ dollars each and $5$ granola bars that cost $q$ dollars each. Which expression represents the amount of money you have left over?\n\na. $\\bigcirc$ $60 + (4p + 5q)$\n\nb. $\\bigcirc$ $60 - 4p + 5q$\n\nc. $\\bigcirc$ $60 - (4p + 5q)$\n\nd. $\\bigcirc$ $60 + 4p - 5q$",
+  "answer_latex": "c",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0018",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0018"
+}

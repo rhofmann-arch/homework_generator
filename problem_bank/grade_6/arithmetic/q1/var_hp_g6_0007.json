@@ -1,0 +1,25 @@
+{
+  "id": "var_hp_g6_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "identifying fractions of a whole using circle models",
+  "latex": "Which of the shaded regions below represents $\\frac{4}{7}$ of the whole circle?",
+  "answer_latex": "C",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0008",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0008",
+  "choices_latex": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "keep_mc": true,
+  "needs_diagram": true,
+  "diagram_notes": "Four circles labeled A, B, C, D, each divided into 7 equal parts (shown with tick marks around the circumference). Circle A has 2 parts shaded. Circle B has 6 parts shaded. Circle C has 4 parts shaded (correct answer - represents 4/7). Circle D has 1 part shaded. All shading is gray and the circles have small tick marks on the outside edge to indicate the equal divisions."
+}

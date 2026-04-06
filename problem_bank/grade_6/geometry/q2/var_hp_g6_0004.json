@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "writing ordered pairs from verbal description",
+  "latex": "Point $B$ is 5 units right and 4 units down from the origin. Write the ordered pair that represents the location of Point $B$.\n\nOrdered pair: $( \\underline{\\hspace{1cm}} , \\underline{\\hspace{1cm}} )$",
+  "answer_latex": "(5, -4)",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0039",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0039"
+}

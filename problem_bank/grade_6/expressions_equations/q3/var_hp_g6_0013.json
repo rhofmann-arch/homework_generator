@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0013",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "linear equations, rate/distance relationship, completing a table",
+  "latex": "On a hiking trail, you walk $3$ miles every hour.\n\n\\textbf{Part A} Select an equation to represent the relationship.\n\n\\begin{enumerate}\n\\item[a.] $y = x + 3$\n\\item[b.] $y = x - 3$\n\\item[c.] $y = 3x$\n\\item[d.] $y = 3(3x)$\n\\end{enumerate}\n\n\\textbf{Part B} Use the equation to complete the table.\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (5,3.5);\n\\draw (0,3) -- (5,3);\n\\draw (2.5,0) -- (2.5,3.5);\n\\node at (1.25,3.25) {\\textbf{Time (hours)}};\n\\node at (3.75,3.25) {\\textbf{Distance (miles)}};\n\\draw (0,2.5) -- (5,2.5);\n\\draw (0,2) -- (5,2);\n\\draw (0,1.5) -- (5,1.5);\n\\draw (0,1) -- (5,1);\n\\draw (0,0.5) -- (5,0.5);\n\\node at (1.25,2.75) {1};\n\\node at (1.25,2.25) {2};\n\\node at (1.25,1.75) {3};\n\\node at (1.25,1.25) {4};\n\\node at (1.25,0.75) {5};\n\\end{tikzpicture}",
+  "answer_latex": "Part A: c. $y = 3x$; Part B: 3, 6, 9, 12, 15",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0091",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0091"
+}

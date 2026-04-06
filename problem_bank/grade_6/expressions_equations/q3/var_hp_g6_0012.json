@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0012",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "writing and solving one-step equations from word problems",
+  "latex": "A family is driving from Chicago, Illinois, to Nashville, Tennessee. They drive for $3$ hours and stop in Indianapolis, Indiana. It takes $h$ hours to drive the rest of the way to Nashville. Write and solve an equation to determine how long the drive from Indianapolis to Nashville takes when the total time spent driving is $7$ hours.\n\nEquation: \\_\\_\\_\\_\\_\\_\\_ $= 7$\n\n\\_\\_\\_\\_ hours",
+  "answer_latex": "Equation: $3 + h = 7$; $4$ hours",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0087",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0087"
+}

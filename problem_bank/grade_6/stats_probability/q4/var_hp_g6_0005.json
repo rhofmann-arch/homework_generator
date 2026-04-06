@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0005",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "calculating mean and mean absolute deviation (MAD)",
+  "latex": "You score $3, 8, 14, 9, 12, 6,$ and $11$ points in seven soccer games.\n\n\\textbf{Part A} Find the mean of the data to the nearest hundredth.\n\nMean: \\underline{\\hspace{1cm}}\n\n\\textbf{Part B} Find the MAD of the data to the nearest hundredth.\n\nMAD: \\underline{\\hspace{1cm}}",
+  "answer_latex": "Part A: Mean: $9.00$; Part B: MAD: $3.14$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0067",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0067"
+}

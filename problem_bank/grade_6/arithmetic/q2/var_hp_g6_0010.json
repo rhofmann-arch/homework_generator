@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "subtracting decimals, money word problem",
+  "latex": "You have \\$623.47 in your savings account. You buy a jacket for \\$89.99 and a pair of shoes for \\$74.15. How much money do you have left in your savings account?\n\na. \\$164.14\n\nb. \\$459.33\n\nc. \\$533.48\n\nd. \\$549.32",
+  "answer_latex": "b. \\$459.33",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0004",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0004",
+  "choices_latex": [
+    "a. \\$164.14",
+    "b. \\$459.33",
+    "c. \\$533.48",
+    "d. \\$549.32"
+  ],
+  "keep_mc": true
+}

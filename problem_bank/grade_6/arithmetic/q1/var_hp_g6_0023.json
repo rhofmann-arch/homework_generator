@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "evaluating expressions with exponents",
+  "latex": "Which expression has the greatest value?\n\na. $5^3 - 4$\n\nb. $8^2 \\div 4$\n\nc. $7 \\times 1^9$\n\nd. $72 - 3^3$",
+  "answer_latex": "a. $5^3 - 4$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0072",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0072"
+}

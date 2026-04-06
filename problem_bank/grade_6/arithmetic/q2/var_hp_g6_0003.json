@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "solving proportions with rates",
+  "latex": "Sofia can pack $20$ boxes in $36$ minutes. At this rate, how many minutes will it take Sofia to pack $60$ boxes?",
+  "answer_latex": "$108$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0020",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0020"
+}

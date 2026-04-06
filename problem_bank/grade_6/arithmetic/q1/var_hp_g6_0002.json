@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "dividing fractions by whole numbers",
+  "latex": "Six people equally share $\\frac{2}{3}$ of a whole cake. What fractional part of the whole cake does each person receive?",
+  "answer_latex": "$\\frac{1}{9}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0002",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0002"
+}

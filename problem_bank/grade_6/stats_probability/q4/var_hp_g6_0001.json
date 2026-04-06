@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "identifying statistical questions",
+  "latex": "Which word change makes the question a statistical question?\n\nHow many chapters are there in each book?\n\n\\begin{enumerate}\n\\item[a.] Change ``chapters'' to ``pages''\n\\item[b.] Change ``each book'' to ``this book''\n\\item[c.] Change ``chapters'' to ``sentences''\n\\item[d.] Change ``book'' to ``novels in the library''\n\\end{enumerate}",
+  "answer_latex": "d",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0062",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0062",
+  "choices_latex": [
+    "a. Change ``chapters'' to ``pages''",
+    "b. Change ``each book'' to ``this book''",
+    "c. Change ``chapters'' to ``sentences''",
+    "d. Change ``book'' to ``novels in the library''"
+  ],
+  "keep_mc": true
+}

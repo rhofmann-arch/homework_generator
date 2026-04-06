@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "topic": "surface area of composite 3D figures",
+  "latex": "A contractor is designing a loading dock ramp. A blueprint of the ramp is shown. All shaded surfaces will be exposed and will be covered with non-slip coating.\n\n\\begin{tikzpicture}[scale=0.08]\n% Left rectangle (shaded)\n\\fill[gray!40] (0,0) rectangle (20,12);\n\\draw (0,0) rectangle (20,12);\n\\node at (10,-2) {20 ft};\n\\node at (-3,6) {12 ft};\n\\node at (10,13.5) {20 ft};\n\n% Top rectangle (shaded)\n\\fill[gray!40] (20,12) -- (20+20,12) -- (20+20,12+10) -- (20,12+10) -- cycle;\n\\draw (20,12) -- (20+20,12) -- (20+20,12+10) -- (20,12+10) -- cycle;\n\\node at (30,12+11.5) {20 ft};\n\\node at (20+20+3,12+5) {10 ft};\n\n% Right slanted rectangle (unshaded)\n\\fill[white] (20+20,12+10) -- (20+20+10,12+10) -- (20+20+10,12+10-12) -- (20+20,12+10-12) -- cycle;\n\\draw (20+20,12+10) -- (20+20+10,12+10) -- (20+20+10,12+10-12) -- (20+20,12+10-12) -- cycle;\n\\node at (20+20+5,12+11.5) {12 ft};\n\n% Right triangle (shaded)\n\\fill[gray!40] (20+20,12) -- (20+20+10,12) -- (20+20+10,12-12) -- cycle;\n\\draw (20+20,12) -- (20+20+10,12) -- (20+20+10,12-12) -- cycle;\n\\node at (20+20+12,6) {17 ft};\n\n% Bottom right small rectangle (unshaded)\n\\fill[white] (20+20,0) -- (20+20+10,0) -- (20+20+10,-10) -- (20+20,-10) -- cycle;\n\\draw (20+20,0) -- (20+20+10,0) -- (20+20+10,-10) -- (20+20,-10) -- cycle;\n\\node at (20+20-2,-5) {20 ft};\n\\node at (20+20+12,-2) {10 ft};\n\\node at (20+20+12,-8) {10 ft};\n\\end{tikzpicture}\n\n\\textbf{Part A} What is the total surface area of the ramp?\n\nThe total surface area of the ramp is \\underline{\\hspace{1cm}} square feet.\n\n\\textbf{Part B} How much of the surface area will \\textit{not} be painted?\n\nThe surface area that will \\textit{not} be painted is \\underline{\\hspace{1cm}} square feet.",
+  "answer_latex": "Part A: 1{,}284; Part B: 344",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0031",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0031"
+}

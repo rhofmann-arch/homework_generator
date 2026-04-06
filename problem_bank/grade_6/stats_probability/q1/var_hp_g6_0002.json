@@ -1,0 +1,18 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "interpreting bar graphs and comparing changes",
+  "latex": "The number of visitors to a community park during each of five weeks is shown below. In which week did the number of visitors increase the most from the number in the previous week?",
+  "answer_latex": "Week 3",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0014",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0014",
+  "needs_diagram": true,
+  "diagram_notes": "Bar graph with vertical axis labeled 'Number of Visitors' (scale: 0, 20, 40, 60, 80, 100, 120) and horizontal axis showing Week 1, Week 2, Week 3, Week 4, Week 5. Bar heights: Week 1 \u2248 20, Week 2 \u2248 35, Week 3 \u2248 95, Week 4 \u2248 105, Week 5 \u2248 115."
+}

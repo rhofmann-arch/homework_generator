@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "counting terms in algebraic expressions",
+  "latex": "Identify the number of terms in each expression.\n\n\\begin{center}\n\\begin{tabular}{|p{5cm}|c|c|c|}\n\\hline\n & 2 & 3 & 4 \\\\\n\\hline\n$5 + 2y - 3y^2$ & & & \\\\\n\\hline\n$\\dfrac{3}{4m} + 6m^3 - 9$ & & & \\\\\n\\hline\n$8c^4 + 12$ & & & \\\\\n\\hline\n$2x^4 + 7x - 3x^3 + 1$ & & & \\\\\n\\hline\n\\end{tabular}\n\\end{center}",
+  "answer_latex": "$5 + 2y - 3y^2$: 3; $\\dfrac{3}{4m} + 6m^3 - 9$: 3; $8c^4 + 12$: 2; $2x^4 + 7x - 3x^3 + 1$: 4",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0010",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0010"
+}

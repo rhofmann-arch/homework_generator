@@ -1,0 +1,23 @@
+{
+  "id": "var_hp_g6_0011",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "writing expressions for real-world situations with multiple variables",
+  "latex": "You have \\$60 to spend at a craft store. You buy $3$ spools of ribbon that cost $p$ dollars each and $4$ paint brushes that cost $q$ dollars each. Which expression represents the amount of money you have left over?\n\na. $\\bigcirc$ $60 + (3p + 4q)$\n\nb. $\\bigcirc$ $60 - 3p + 4q$\n\nc. $\\bigcirc$ $60 - (3p + 4q)$\n\nd. $\\bigcirc$ $60 + 3p - 4q$",
+  "answer_latex": "c",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0085",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0085",
+  "choices_latex": [
+    "a. $60 + (3p + 4q)$",
+    "b. $60 - 3p + 4q$",
+    "c. $60 - (3p + 4q)$",
+    "d. $60 + 3p - 4q$"
+  ],
+  "keep_mc": true
+}

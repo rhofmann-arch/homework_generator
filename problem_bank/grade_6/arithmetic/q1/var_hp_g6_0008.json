@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "prime factorization",
+  "latex": "Expressed as a product of primes, the number $45$ equals",
+  "answer_latex": "$3 \\times 3 \\times 5$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0009",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0009"
+}

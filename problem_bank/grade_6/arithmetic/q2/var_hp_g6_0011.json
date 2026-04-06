@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "translating verbal expressions to algebraic expressions",
+  "latex": "Complete the table.\n\n\\begin{tabular}{|p{7cm}|c|c|}\n\\hline\n & True & False \\\\\n\\hline\nThe expression for ``18 decreased by a number $k$'' is $18 - k$. & & \\\\\n\\hline\nThe expression for ``9 less than a number $w$'' is $9w$. & & \\\\\n\\hline\nThe expression for ``5 more than a number $y$ cubed'' is $5 + y^3$. & & \\\\\n\\hline\n\\end{tabular}",
+  "answer_latex": "True, False, True",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0007",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0007"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "percent discount, finding original price",
+  "latex": "You pay $\\$8.40$ for a board game that is on sale for $30\\%$ off the original price. What was the original price of the board game?\n\nThe original price of the board game was $\\$$ \\_\\_\\_\\_\\_ .",
+  "answer_latex": "12.00",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0125",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0125"
+}

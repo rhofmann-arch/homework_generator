@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0015",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "interpreting inequality statements",
+  "latex": "Select \\textbf{all} statements that represent $54 > 23$.\n\na. $\\square$ 23 is greater than 54.\n\nb. $\\square$ 54 is greater than 23.\n\nc. $\\square$ 23 equals 54.\n\nd. $\\square$ 23 is less than 54.\n\ne. $\\square$ 54 is less than 23.",
+  "answer_latex": "b, d",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0110",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0110"
+}

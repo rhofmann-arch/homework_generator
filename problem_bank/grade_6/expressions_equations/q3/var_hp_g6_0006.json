@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "absolute value of integers",
+  "latex": "Find the absolute value.\n\n$|-53| = $ \\underline{\\hspace{1cm}}",
+  "answer_latex": "53",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0044",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0044"
+}

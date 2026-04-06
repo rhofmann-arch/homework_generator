@@ -1,0 +1,25 @@
+{
+  "id": "var_hp_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "solving one-step equations with fractions and plotting on a number line",
+  "latex": "If $x + \\frac{2}{3} = 1$, then which point on the number line could represent $x$?",
+  "answer_latex": "B",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0021",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0021",
+  "choices_latex": {
+    "A": "A",
+    "B": "B",
+    "C": "C",
+    "D": "D"
+  },
+  "keep_mc": true,
+  "needs_diagram": true,
+  "diagram_notes": "A horizontal number line with arrows on both ends. Tick marks at: $-1$, $-\\frac{1}{2}$, $0$, $\\frac{1}{2}$, $1$, $1\\frac{1}{2}$, $2$. Four points are labeled: Point A is between $-1$ and $-\\frac{1}{2}$ (at approximately $-\\frac{3}{4}$), Point B is between $0$ and $\\frac{1}{2}$ (at approximately $\\frac{1}{3}$), Point C is between $1$ and $1\\frac{1}{2}$ (at approximately $1\\frac{1}{3}$), Point D is between $1\\frac{1}{2}$ and $2$ (at approximately $1\\frac{2}{3}$)."
+}

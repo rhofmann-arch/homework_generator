@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "topic": "order of operations",
+  "latex": "$3 + 18 \\div 3 + 5 =$",
+  "answer_latex": "14",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0004",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0004"
+}

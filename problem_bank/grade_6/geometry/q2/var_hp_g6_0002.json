@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0002",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "plotting points and drawing polygons on the coordinate plane, finding distance between points",
+  "latex": "Complete the following.\n\n\\textbf{Part A} Draw a polygon with vertices $P(-4, -1)$, $Q(-4, 3)$, $R(0, 5)$, $S(4, 3)$, and $T(4, -1)$ in the coordinate plane.\n\n\\begin{tikzpicture}[scale=0.4]\n\\draw[->] (-8.5,0) -- (8.5,0) node[right] {$x$};\n\\draw[->] (0,-8.5) -- (0,8.5) node[above] {$y$};\n\\foreach \\x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\tiny \\x};\n\\foreach \\y in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\tiny \\y};\n\\end{tikzpicture}\n\n\\textbf{Part B} What is the distance between point $P$ and point $T$?\n\n\\begin{enumerate}\n\\item[a.] 3 units\n\\item[b.] 4 units\n\\item[c.] 8 units\n\\item[d.] 6 units\n\\end{enumerate}",
+  "answer_latex": "Part A: Polygon with vertices connected: $P(-4,-1) \\to Q(-4,3) \\to R(0,5) \\to S(4,3) \\to T(4,-1) \\to P(-4,-1)$; Part B: c. 8 units",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of in_grade6_g6_0030",
+  "source": "generated",
+  "source_variation_of": "in_grade6_g6_0030"
+}

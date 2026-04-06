@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "topic": "dividing fractions",
+  "latex": "$\\frac{5}{6} \\div \\frac{2}{3} =$",
+  "answer_latex": "$\\frac{5}{4}$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0022",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0022"
+}

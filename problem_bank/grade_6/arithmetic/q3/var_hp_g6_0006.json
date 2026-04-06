@@ -1,0 +1,16 @@
+{
+  "id": "var_hp_g6_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "topic": "converting percents to decimals",
+  "latex": "Expressed as a decimal, $8\\%$ is",
+  "answer_latex": "$0.08$",
+  "high_priority": true,
+  "honors": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Generated variation of eoc_g6_0032",
+  "source": "generated",
+  "source_variation_of": "eoc_g6_0032"
+}
