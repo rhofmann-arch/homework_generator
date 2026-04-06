@@ -143,6 +143,7 @@ def _back_prompt(
     spiral_topics: str,
     lesson_templates: list[dict] | None = None,
     n_back: int | None = None,
+    review_chapter: str | None = None,
 ) -> tuple[str, list]:
     """
     Returns (system_prompt, user_content_blocks).
@@ -151,16 +152,33 @@ def _back_prompt(
     current lesson number), Claude is locked to those problem structures and
     can only vary numbers/context. This eliminates topic drift entirely.
 
-    If lesson_templates is empty/None, falls back to PDF context + free generation.
+    If lesson_templates is empty/None, falls back to PDF context + free generation,
+    or — for review weeks — to a chapter-review-specific generation prompt.
     """
     n = str(n_back) if n_back is not None else ("5-7" if class_type == "honors" else "8-10")
 
-    # ── Template-locked path (bank problems exist for this lesson) ──────────────
+    # ── Template-locked path (bank problems exist for this lesson/review) ────────
     if lesson_templates:
         templates_text = "\n\n".join(
             f"Template {i+1}:\n{p['latex']}" for i, p in enumerate(lesson_templates)
         )
-        system = STYLE_NOTES + f"""
+        if review_chapter:
+            system = STYLE_NOTES + f"""
+Rules for chapter review problems:
+- Generate exactly {n} problems reviewing Chapter {review_chapter} material.
+- You MUST use the provided templates as your structural guide — they are real
+  problems from the chapter test and practice materials.
+- For each problem you generate: keep the same problem TYPE and STRUCTURE as a
+  template, but change ALL numbers, names, units, and real-world context.
+- Cover the variety of problem types shown in the templates (do not repeat the
+  same structure more than twice).
+- Do not introduce any concept not present in the templates.
+- Do not copy templates verbatim — every problem must use different values.
+- The lesson_title you return should be "Chapter {review_chapter} Review".
+- Order easier to harder.
+"""
+        else:
+            system = STYLE_NOTES + f"""
 Rules for lesson practice problems:
 - Generate exactly {n} problems on the topic: {current_topic}.
 - You MUST use the provided templates as your structural guide.
@@ -176,11 +194,32 @@ Rules for lesson practice problems:
             "type": "text",
             "text": (
                 f"Grade: {grade}, Class: {class_type}\n"
-                f"Lesson: {', '.join(current_lessons)} — {current_topic}\n\n"
-                f"Approved bank problems for this lesson (use as structural templates):\n\n"
+                f"{'Chapter ' + review_chapter + ' Review' if review_chapter else ', '.join(current_lessons) + ' — ' + current_topic}\n\n"
+                f"Approved bank problems {'from the chapter test/practice materials' if review_chapter else 'for this lesson'} "
+                f"(use as structural templates):\n\n"
                 f"{templates_text}\n\n"
                 f"Generate {n} new problems by varying the templates above. "
                 "Change numbers, names, and context — preserve structure exactly."
+            )
+        }]
+        return system, content
+
+    # ── Review-day fallback: no approved ch_test problems yet ───────────────────
+    if review_chapter:
+        system = STYLE_NOTES + f"""
+Rules for chapter review problems:
+- Generate exactly {n} problems reviewing Chapter {review_chapter} material.
+- Problems should cover the key skills from Chapter {review_chapter} at a 6th grade level.
+- Include a mix of: computation, word problems, and short-answer questions.
+- Order easier to harder.
+- Do not repeat topics from spiral_topics: {spiral_topics}
+- NEVER generate error analysis problems ("a student says X, identify the error").
+"""
+        content = [{
+            "type": "text",
+            "text": (
+                f"Grade: {grade}, Class: {class_type}\n"
+                f"Generate {n} Chapter {review_chapter} review problems for 6th grade math."
             )
         }]
         return system, content
@@ -574,6 +613,7 @@ async def generate_problems(
         spiral_topics=spiral_topics,
         lesson_templates=lesson_templates or None,
         n_back=n_back,
+        review_chapter=context.review_chapter,
     )
     back_data = await _call(back_sys, back_content, BACK_TOOL)
 
@@ -590,8 +630,9 @@ async def generate_problems(
             "specific_date":    date_str,
             "grade":            str(context.grade).split("_")[0],
             "class_type":       class_type,
-            "current_lessons":  context.current_lessons,
-            "current_topic":    context.current_topic,
+            "current_lessons":  back_lessons,   # ch{N}_test on review weeks
+            "current_topic":    back_topic,
+            "review_chapter":   context.review_chapter,
         },
     }
 
@@ -646,10 +687,12 @@ async def refresh_back_problem(
     current_lessons: list[str],
     current_topic: str,
     spiral_topics: str,
+    review_chapter: str | None = None,
 ) -> dict:
     """
     Return one replacement back problem {latex, answer_latex}.
     Uses lesson bank templates if available, otherwise free generation.
+    On review weeks (review_chapter set), samples ch{N}_test problems as templates.
     """
     import random as _random
 
@@ -662,7 +705,15 @@ async def refresh_back_problem(
 
     if templates:
         tmpl = _random.choice(templates)
-        system = STYLE_NOTES + f"""
+        if review_chapter:
+            system = STYLE_NOTES + f"""
+Generate exactly 1 Chapter {review_chapter} review problem.
+Use the provided template as your structural guide — keep the same problem TYPE and STRUCTURE,
+but change ALL numbers, names, units, and real-world context.
+Do not copy the template verbatim. Provide the answer.
+"""
+        else:
+            system = STYLE_NOTES + f"""
 Generate exactly 1 lesson practice problem on the topic: {current_topic}.
 Use the provided template as your structural guide — keep the same problem TYPE and STRUCTURE,
 but change ALL numbers, names, units, and real-world context.
@@ -674,6 +725,16 @@ Provide the answer.
         return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}
 
     # Fallback: free generation
+    if review_chapter:
+        system = STYLE_NOTES + f"""
+Generate exactly 1 Chapter {review_chapter} review problem for 6th grade math.
+Cover a key skill from Chapter {review_chapter}. Provide the answer.
+"""
+        user = f"Grade: {grade}, Class: {class_type}\nGenerate 1 Chapter {review_chapter} review problem."
+        data = await _call(system, user, SINGLE_PROBLEM_TOOL)
+        return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}
+
+    # Lesson fallback: free generation
     system = STYLE_NOTES + f"""
 Generate exactly 1 lesson practice problem on the exact topic: {current_topic}.
 Stay strictly within this lesson's scope. Provide the answer.

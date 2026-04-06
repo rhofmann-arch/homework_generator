@@ -226,6 +226,7 @@ async def refresh_problem(key: str, req: RefreshRequest):
                 current_lessons=ctx["current_lessons"],
                 current_topic=ctx["current_topic"],
                 spiral_topics=session.get("spiral_topics", ""),
+                review_chapter=ctx.get("review_chapter"),
             )
 
         # Update session storage with the new problem
