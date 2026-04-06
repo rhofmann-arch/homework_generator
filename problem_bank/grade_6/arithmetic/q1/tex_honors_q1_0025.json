@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "The lengths in feet of three pieces of timber are $48,$ $72,$ and $40.$ The sawmill operator needs to cut the timber into logs of equal length with no waste. How many feet long is the greatest possible length she can cut?",
+  "answer_latex": "8",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 26",
+  "source": "tex_import"
+}

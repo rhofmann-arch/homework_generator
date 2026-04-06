@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Find $3 \\cdot 5 \\cdot 7 + 15 \\div 3.",
+  "answer_latex": "110",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 4",
+  "source": "tex_import"
+}

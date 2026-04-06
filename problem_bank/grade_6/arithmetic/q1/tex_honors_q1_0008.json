@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Sauron has three nickels, five dimes and five quarters. How much money does he have in cents?",
+  "answer_latex": "190",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 8",
+  "source": "tex_import"
+}

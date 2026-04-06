@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0027",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "When a team of explorers arrived at a remote island, they found that $\\dfrac{11}{36}$ of the $180$ villagers wore ceremonial hats. How many villagers wore ceremonial hats?",
+  "answer_latex": "$55$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 28",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "The lengths in meters of three sections of rope are $60,$ $84,$ and $36.$ A sailor needs to cut the rope into pieces of equal length with no waste. How many meters long is the greatest possible length he can cut?",
+  "answer_latex": "$12$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 26",
+  "source": "tex_import"
+}

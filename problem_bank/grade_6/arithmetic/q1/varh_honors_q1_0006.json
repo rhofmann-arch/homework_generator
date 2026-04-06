@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Find $14 + 63 + 186 + 37 + 55 + 114 + 31$.",
+  "answer_latex": "$500$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 6",
+  "source": "tex_import"
+}

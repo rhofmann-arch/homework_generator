@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Flor and Sunny are making an omelet for breakfast. Flor looks at her recipe, which calls for \n of a teaspoon of salt, and adds that amount. Sunny, unaware that that Flor has already added salt, looks at his own recipe, which uses \n of a teaspoon of salt. He adds this into the mix. How many teaspoons of salt are now in the omelet?",
+  "answer_latex": "\\dfrac{7}{12}",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 30",
+  "source": "tex_import"
+}

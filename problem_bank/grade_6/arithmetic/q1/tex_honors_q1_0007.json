@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Steven owns a very orderly apple tree. The tree has $12$ main branches, and each main branch has exactly $3$ smaller branches. Each smaller branch has $3$ apples, and there are $5$ leaves surrounding each apple. How many leaves are on this apple tree?",
+  "answer_latex": "540",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 7",
+  "source": "tex_import"
+}

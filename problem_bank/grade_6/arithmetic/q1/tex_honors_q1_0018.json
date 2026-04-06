@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0018",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Grace bought $11$ tickets to a baseball game at $12$ dollars per ticket. Parker bought $3$ tickets to the same game and paid the same amount per ticket as Grace. How much did the two of them spend together?",
+  "answer_latex": "168",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 19",
+  "source": "tex_import"
+}

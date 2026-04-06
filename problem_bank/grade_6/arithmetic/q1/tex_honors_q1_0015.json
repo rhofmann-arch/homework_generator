@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "What is the result of multiplying the reciprocal of $\\frac{1}{4}$ by the reciprocal of $\\frac{1}{8}$?",
+  "answer_latex": "32",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 15",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Elara has four pennies, six nickels, and three quarters. How much money does she have in cents?",
+  "answer_latex": "$109$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 8",
+  "source": "tex_import"
+}

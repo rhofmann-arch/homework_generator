@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0020",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "There are $27$ students in Mr. Anderson's math class, $18$ students in Mr. LeBaron's math class, $15$ students in Mr. Spry's math class, and $24$ students in Mrs. Swanson's math class. All of these students are being split into groups for a field trip to the math museum, and each group must contain the same number of students. If there are $6$ chaperones for the field trip and each chaperone can take one group of students, how many students will be in each group?",
+  "answer_latex": "14",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 21",
+  "source": "tex_import"
+}

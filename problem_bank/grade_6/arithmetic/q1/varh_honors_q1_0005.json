@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0005",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "What is the value of $(5^3 + 3^3) - (4^3 + 2^3)$?",
+  "answer_latex": "$90$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 5",
+  "source": "tex_import"
+}

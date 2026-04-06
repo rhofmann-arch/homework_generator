@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute $2{,}096{,}831{,}344 \\div 8$.",
+  "answer_latex": "$262{,}103{,}918$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 16",
+  "source": "tex_import"
+}

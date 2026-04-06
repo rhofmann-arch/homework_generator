@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Each row of the Riverside Concert Hall has $25$ seats. Rows $8$ through $20$ are reserved for a school choir. How many seats are reserved for this group?",
+  "answer_latex": "$325$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 3",
+  "source": "tex_import"
+}

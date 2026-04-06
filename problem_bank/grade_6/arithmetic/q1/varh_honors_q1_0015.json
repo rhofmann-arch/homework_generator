@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "What is the result of multiplying the reciprocal of $\\dfrac{1}{5}$ by the reciprocal of $\\dfrac{1}{9}$?",
+  "answer_latex": "$45$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 15",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0022",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Each week, between $40$ and $60$ students show up for a pottery class run by Jerome and Keiko. Usually the students break up into groups of equal size for practice. However, this week, Jerome noticed that he could not break the students up into multiple groups of equal size. Keiko noticed that if she and Jerome both joined the students in practicing, they still could not break the class up into groups of equal size. How many students showed up to the pottery class this week?",
+  "answer_latex": "$41$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 23",
+  "source": "tex_import"
+}

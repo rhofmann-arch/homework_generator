@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0006",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Find $7+50+201+42+33+199+18$.",
+  "answer_latex": "550",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 6",
+  "source": "tex_import"
+}

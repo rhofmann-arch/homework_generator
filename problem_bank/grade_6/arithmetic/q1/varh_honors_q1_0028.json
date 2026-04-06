@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Maya was given $\\dfrac{1}{4}$ of the $96$ marbles in the bag. She gave away $\\dfrac{2}{3}$ of the marbles she received. How many marbles did Maya give away?",
+  "answer_latex": "$16$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 29",
+  "source": "tex_import"
+}

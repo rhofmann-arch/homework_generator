@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0027",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "When a spaceship full of scientists landed on Planet Q, they found that $\\frac{17}{40}$ of the $160$ aliens had $3$ eyes. How many aliens had $3$ eyes?",
+  "answer_latex": "68",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 28",
+  "source": "tex_import"
+}

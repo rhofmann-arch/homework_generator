@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0004",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Find $4 \\cdot 6 \\cdot 2 + 24 \\div 4$.",
+  "answer_latex": "$54$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 4",
+  "source": "tex_import"
+}

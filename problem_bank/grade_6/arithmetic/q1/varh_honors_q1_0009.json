@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0009",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Assuming $a=241, b=15,$ and $c=6,$ what is the value of $c(ab)$?",
+  "answer_latex": "$21690$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 9",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Maria's family must drive $136$ miles to reach the beach. $15$ miles after beginning, they stop for gas. $23$ miles after the gas station, they stop for lunch. Then, they backtrack $2$ miles to buy swimsuits. How many more miles must they drive to reach the beach?",
+  "answer_latex": "100",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 12",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0029",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Arlo and Bea are baking bread together. Arlo checks his recipe, which calls for $\\dfrac{3}{4}$ of a teaspoon of yeast, and adds that amount. Bea, not knowing that Arlo already added yeast, checks her own recipe, which calls for $\\dfrac{5}{6}$ of a teaspoon of yeast, and adds that amount. How many teaspoons of yeast are now in the dough?",
+  "answer_latex": "$\\dfrac{19}{12}$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 30",
+  "source": "tex_import"
+}

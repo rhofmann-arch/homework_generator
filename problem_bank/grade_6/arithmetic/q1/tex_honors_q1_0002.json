@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Kyle, Kate, and Kendall split the cost of a pizza evenly between the three of them. If Kyle paid $\\$3.24$, what was the total cost of the pizza in dollars?",
+  "answer_latex": "9.72",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 2",
+  "source": "tex_import"
+}

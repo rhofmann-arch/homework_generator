@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "A submarine traveled $9000$ meters in the first three hours. Then the submarine traveled $15000$ meters in the next five hours. What was the submarine's average speed, in meters per hour, for these $8$ hours?",
+  "answer_latex": "$3000$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 1",
+  "source": "tex_import"
+}

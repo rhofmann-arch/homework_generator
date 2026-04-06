@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0028",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Chris was given $\\frac{1}{3}$ of the $84$ cookies in the cookie jar. He ate $\\frac{3}{4}$ of the cookies that he was given. How many cookies did Chris eat?",
+  "answer_latex": "21",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 29",
+  "source": "tex_import"
+}

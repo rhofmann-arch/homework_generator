@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Aiden, Brianna, and Carlos split the cost of a birthday cake evenly between the three of them. If Aiden paid $\\$5.47$, what was the total cost of the cake in dollars?",
+  "answer_latex": "$\\$16.41$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 2",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute $a^2 + b^2 - c^2,$ where $a = 6,$ $b = 2,$ and $c = 4.$",
+  "answer_latex": "$24$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 18",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0016",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute $1{,}421{,}035{,}490\\div 7$.",
+  "answer_latex": "203005070",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 16",
+  "source": "tex_import"
+}

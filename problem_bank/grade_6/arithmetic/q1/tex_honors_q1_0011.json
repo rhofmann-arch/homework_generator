@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute: $(4\\times 19)\\times 25$.",
+  "answer_latex": "1900",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 11",
+  "source": "tex_import"
+}

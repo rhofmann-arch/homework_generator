@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Carlos must travel $210$ miles to reach his grandmother's house. $18$ miles after starting, he stops for coffee. $34$ miles after the coffee stop, he stops for gas. Then, he backtracks $5$ miles to pick up a forgotten package. How many more miles must he drive to reach his grandmother's house?",
+  "answer_latex": "$163$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 12",
+  "source": "tex_import"
+}

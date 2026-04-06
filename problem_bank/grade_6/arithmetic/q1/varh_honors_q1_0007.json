@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0007",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Maria owns a very orderly orange tree. The tree has $8$ main branches, and each main branch has exactly $4$ smaller branches. Each smaller branch has $2$ oranges, and there are $6$ leaves surrounding each orange. How many leaves are on this orange tree?",
+  "answer_latex": "$384$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 7",
+  "source": "tex_import"
+}

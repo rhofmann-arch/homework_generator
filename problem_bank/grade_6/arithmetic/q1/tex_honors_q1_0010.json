@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute: $55\\times1212-15\\times1212$ .",
+  "answer_latex": "48480",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 10",
+  "source": "tex_import"
+}

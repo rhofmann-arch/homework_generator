@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "What is the product of the reciprocal of $6$ and the reciprocal of $7$?",
+  "answer_latex": "\\dfrac{1}{42}",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 13",
+  "source": "tex_import"
+}

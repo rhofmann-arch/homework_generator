@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0019",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Find the reciprocal of $(3+4)$.",
+  "answer_latex": "\\dfrac{1}{7}",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 20",
+  "source": "tex_import"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0011",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute: $(8 \\times 125) \\times 13$.",
+  "answer_latex": "$13000$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 11",
+  "source": "tex_import"
+}

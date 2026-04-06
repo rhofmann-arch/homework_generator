@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0026",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Moons A, B, and C take $120$, $180$, and $270$ days, respectively, to orbit around the same planet. If the three moons are lined up in a ray having the planet as its endpoint, what is the minimum positive number of days before they are all in the exact same locations again?",
+  "answer_latex": "$540$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 27",
+  "source": "tex_import"
+}

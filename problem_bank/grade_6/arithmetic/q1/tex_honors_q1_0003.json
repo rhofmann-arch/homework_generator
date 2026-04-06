@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0003",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Each row of the Misty Moon Amphitheater has 30 seats. Rows 12 through 22 are reserved for a special group. How many seats are reserved for this group?",
+  "answer_latex": "330",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 3",
+  "source": "tex_import"
+}

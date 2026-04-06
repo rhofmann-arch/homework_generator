@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0018",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Sofia bought $8$ tickets to a concert at $15$ dollars per ticket. Marcus bought $5$ tickets to the same concert and paid the same amount per ticket as Sofia. How much did the two of them spend together?",
+  "answer_latex": "$195$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 19",
+  "source": "tex_import"
+}

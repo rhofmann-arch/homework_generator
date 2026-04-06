@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0017",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "How many perfect squares are there between $10$ and $120$?",
+  "answer_latex": "$7$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 17",
+  "source": "tex_import"
+}

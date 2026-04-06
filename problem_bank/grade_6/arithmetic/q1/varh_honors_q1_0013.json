@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0013",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "What is the product of the reciprocal of $9$ and the reciprocal of $11$?",
+  "answer_latex": "$\\dfrac{1}{99}$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 13",
+  "source": "tex_import"
+}

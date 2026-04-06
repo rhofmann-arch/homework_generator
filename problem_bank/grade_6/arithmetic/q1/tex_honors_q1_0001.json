@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0001",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "A rocket traveled $12000$ miles in the first four hours. Then the rocket traveled $8000$ miles in the next four hours. What was the rocket's average speed, in miles per hour, for these $8$ hours?",
+  "answer_latex": "2500",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 1",
+  "source": "tex_import"
+}

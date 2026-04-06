@@ -1,0 +1,14 @@
+{
+  "id": "tex_honors_q1_0001",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "Compute $a^2+b^2-c^2,$ where $a=3, b=4,$ and $c=5.",
+  "answer_latex": "0",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Imported from main.tex problem 18",
+  "source": "tex_import"
+}

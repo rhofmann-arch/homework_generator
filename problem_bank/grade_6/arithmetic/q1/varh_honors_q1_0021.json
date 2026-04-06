@@ -1,0 +1,14 @@
+{
+  "id": "varh_honors_q1_0021",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "latex": "The five-digit number $3{,}8\\underline{\\hspace{5pt}}52$ is divisible by $9$. What is the missing digit?",
+  "answer_latex": "$4$",
+  "honors": true,
+  "high_priority": false,
+  "approved": true,
+  "flagged": false,
+  "notes": "Variation of main.tex problem 22",
+  "source": "tex_import"
+}
