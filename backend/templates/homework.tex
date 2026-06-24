@@ -3,7 +3,7 @@
 %  Page 1 = Front (Spiral Review, two-column minipage)
 %  Page 2 = Back  (Lesson Practice + Challenge block on same page)
 %  All <<PLACEHOLDERS>> filled by latex_builder.py
-%  NOTE: latex_builder.py must NOT prepend \clearpage before <<CHALLENGE_BLOCK>>
+%  NOTE: latex_builder.py must NOT prepend \clearpage before the challenge block
 % ============================================================
 
 \documentclass[11pt]{article}
@@ -76,7 +76,7 @@
 }
 
 % Challenge block — honors only, placed on page 2 directly after back problems.
-% IMPORTANT: latex_builder.py must NOT prepend \clearpage before <<CHALLENGE_BLOCK>>.
+% IMPORTANT: latex_builder.py must NOT prepend \clearpage before the challenge block.
 \newcommand{\challengeblock}[1]{%
   \begin{mdframed}[
     backgroundcolor=challengebg,
