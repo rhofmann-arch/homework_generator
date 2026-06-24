@@ -25,6 +25,8 @@ SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
 def _pacing_grade(grade: str, class_type: str) -> str:
     if class_type == "honors" and grade == "6":
         return "6_advanced"
+    if class_type == "hybrid" and grade == "6":
+        return "6_hybrid"
     return grade
 
 
@@ -35,7 +37,7 @@ def _session_key(grade: str, class_type: str, date_part: str) -> str:
 class GenerateRequest(BaseModel):
     week_start: str
     grade: Literal["5", "6", "7", "8"]
-    class_type: Literal["grade_level", "honors"]
+    class_type: Literal["grade_level", "honors", "hybrid"]
     specific_date: Optional[str] = None
     n_back: Optional[int] = None
 
@@ -44,7 +46,7 @@ class RecompileRequest(BaseModel):
     problems: dict
     week_start: str
     grade: Literal["5", "6", "7", "8"]
-    class_type: Literal["grade_level", "honors"]
+    class_type: Literal["grade_level", "honors", "hybrid"]
     specific_date: Optional[str] = None
 
 

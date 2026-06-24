@@ -19,7 +19,13 @@ import {
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type Grade     = '5' | '6' | '7' | '8'
-type ClassType = 'grade_level' | 'honors'
+type ClassType = 'grade_level' | 'honors' | 'hybrid'
+
+const CLASS_LABELS: Record<ClassType, string> = {
+  grade_level: 'Grade Level',
+  honors:      'Honors',
+  hybrid:      'Hybrid',
+}
 type Status    = 'idle' | 'loading' | 'done' | 'error'
 type AppMode   = 'generate' | 'bank'
 
@@ -127,8 +133,8 @@ function HistoryItem({ item, isEditing, onEdit, onRemove }: {
         <p className="text-sm font-medium text-slate-700 truncate">{item.label}</p>
         <div className="flex gap-1.5 mt-1">
           <Badge color="slate">Grade {item.grade}</Badge>
-          <Badge color={item.classType === 'honors' ? 'green' : 'blue'}>
-            {item.classType === 'honors' ? 'Honors' : 'Grade Level'}
+          <Badge color={item.classType === 'honors' ? 'green' : item.classType === 'hybrid' ? 'amber' : 'blue'}>
+            {CLASS_LABELS[item.classType]}
           </Badge>
         </div>
       </div>
@@ -611,7 +617,7 @@ function GeneratePanel() {
       const dayLabel = specificDate
         ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
         : formatWeekRange(week)
-      const label = `${dayLabel} · Grade ${grade} · ${classType === 'honors' ? 'Honors' : 'Grade Level'}`
+      const label = `${dayLabel} · Grade ${grade} · ${CLASS_LABELS[classType]}`
       setHistory(prev => [{ weekStart: formatISO(week), specificDate: specificDate ?? undefined, grade, classType, label, pdfUrl: hwUrl, keyUrl, sessionKey }, ...prev])
       setStatus('done')
     } catch (e: unknown) { setErrorMsg(e instanceof Error ? e.message : 'Unknown error'); setStatus('error') }
@@ -661,19 +667,18 @@ function GeneratePanel() {
 
           <div>
             <SectionLabel>Class Type</SectionLabel>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               {[
-                { val: 'grade_level' as ClassType, label: 'Grade Level', sub: '20 min · 10 problems' },
-                { val: 'honors'      as ClassType, label: 'Honors',      sub: '30 min · 8 problems' },
-              ].map(({ val, label, sub }) => (
-                <button key={val} onClick={() => setClassType(val)}
+                { val: 'grade_level' as ClassType, sub: '20 min · 10 problems',     active: 'border-blue-500 bg-blue-50',   text: 'text-blue-700',   nback: 10 },
+                { val: 'honors'      as ClassType, sub: '30 min · 8 problems',      active: 'border-green-600 bg-green-50', text: 'text-green-700',  nback: 6  },
+                { val: 'hybrid'      as ClassType, sub: '20–25 min · 10 + challenge', active: 'border-amber-500 bg-amber-50', text: 'text-amber-700',  nback: 8  },
+              ].map(({ val, sub, active, text, nback }) => (
+                <button key={val} onClick={() => { setClassType(val); setNBack(nback) }}
                   className={['text-left p-3 rounded-xl border-2 transition',
-                    classType === val
-                      ? val === 'honors' ? 'border-green-600 bg-green-50' : 'border-blue-500 bg-blue-50'
-                      : 'border-slate-200 bg-white hover:border-slate-300',
+                    classType === val ? active : 'border-slate-200 bg-white hover:border-slate-300',
                   ].join(' ')}>
-                  <p className={`text-sm font-semibold ${classType === val && val === 'honors' ? 'text-green-700' : classType === val ? 'text-blue-700' : 'text-slate-700'}`}>
-                    {label}
+                  <p className={`text-sm font-semibold ${classType === val ? text : 'text-slate-700'}`}>
+                    {CLASS_LABELS[val]}
                   </p>
                   <p className="text-xs text-slate-400 mt-0.5">{sub}</p>
                 </button>
@@ -702,7 +707,7 @@ function GeneratePanel() {
           {/* Summary */}
           <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
             <span className="font-medium">Generating: </span>
-            Grade {grade} · {classType === 'honors' ? 'Honors' : 'Grade Level'} ·{' '}
+            Grade {grade} · {CLASS_LABELS[classType]} ·{' '}
             {specificDate
               ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
               : formatWeekRange(week)}

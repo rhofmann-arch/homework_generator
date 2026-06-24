@@ -20,6 +20,7 @@ PACING_DIR = (
 GUIDE_FILES = {
     "6":          "grade_6.xlsx",
     "6_advanced": "grade_6_advanced.xlsx",
+    "6_hybrid":   "grade_6_hybrid.xlsx",
 }
 
 COLS = ["day_num", "date", "dow", "notes", "lesson", "topic",

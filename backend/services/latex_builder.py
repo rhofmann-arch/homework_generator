@@ -15,6 +15,7 @@ KEY_TEMPLATE_PATH = Path(__file__).parent.parent / "templates" / "homework_key.t
 COURSE_NAMES = {
     ("6", "grade_level"): "6th Grade Math",
     ("6", "honors"):      "Honors Math 6",
+    ("6", "hybrid"):      "Math 6 (Hybrid)",
     ("5", "grade_level"): "5th Grade Math",
     ("5", "honors"):      "Honors Math 5",
 }
@@ -126,7 +127,7 @@ def _challenge_block(problems: list[dict]) -> str:
 
 def _back_col_ht(class_type: str) -> str:
     """LaTeX dimension string for the back minipage height."""
-    if class_type == "honors":
+    if class_type in ("honors", "hybrid"):
         return rf"\dimexpr\bodycolht-{CHALLENGE_BLOCK_HT}\relax"
     return r"\bodycolht"
 

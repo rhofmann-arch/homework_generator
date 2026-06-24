@@ -7,7 +7,7 @@ const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8000'
 export interface GenerateRequest {
   week_start: string
   grade: '5' | '6' | '7' | '8'
-  class_type: 'grade_level' | 'honors'
+  class_type: 'grade_level' | 'honors' | 'hybrid'
   specific_date?: string
   n_back?: number
 }
@@ -124,7 +124,7 @@ export interface RecompileRequest {
   problems: HomeworkProblems
   week_start: string
   grade: '5' | '6' | '7' | '8'
-  class_type: 'grade_level' | 'honors'
+  class_type: 'grade_level' | 'honors' | 'hybrid'
   specific_date?: string
 }
 

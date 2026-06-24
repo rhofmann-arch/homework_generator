@@ -87,7 +87,7 @@ CHALLENGE_TOOL = {
         "properties": {
             "problems": {
                 "type": "array",
-                "description": "Exactly 2 multi-step challenge problems.",
+                "description": "2-3 multi-step challenge problems.",
                 "items": {
                     "type": "object",
                     "properties": {
@@ -96,7 +96,7 @@ CHALLENGE_TOOL = {
                     "required": ["latex"]
                 },
                 "minItems": 2,
-                "maxItems": 2,
+                "maxItems": 3,
             },
         },
         "required": ["problems"],
@@ -155,7 +155,14 @@ def _back_prompt(
     If lesson_templates is empty/None, falls back to PDF context + free generation,
     or — for review weeks — to a chapter-review-specific generation prompt.
     """
-    n = str(n_back) if n_back is not None else ("5-7" if class_type == "honors" else "8-10")
+    if n_back is not None:
+        n = str(n_back)
+    elif class_type == "honors":
+        n = "5-7"
+    elif class_type == "hybrid":
+        n = "8"
+    else:
+        n = "8-10"
 
     # ── Template-locked path (bank problems exist for this lesson/review) ────────
     if lesson_templates:
@@ -246,8 +253,11 @@ Rules for lesson practice problems:
     content: list[dict] = []
     pdf_found = False
 
+    # PDFs live under grade_<base>/ and are named 6_<ch>_<les>.pdf — strip any
+    # pacing suffix ("6_advanced"/"6_hybrid" → "6") so lookup resolves.
+    base_grade = str(grade).split("_")[0]
     for lesson in current_lessons:
-        result = find_lesson_pdf(grade, lesson, class_type)
+        result = find_lesson_pdf(base_grade, lesson, class_type)
         if result is None:
             continue
         lesson_pdf, key_pdf = result
@@ -310,7 +320,7 @@ def _challenge_prompt(
     """
     system = STYLE_NOTES + f"""
 Rules for challenge problems:
-- Exactly 2 multi-step challenge problems.
+- Generate 2-3 multi-step challenge problems (use 3 only if each stays compact).
 - Problems must be on the current lesson topic: {current_topic}.
 - Extend the lesson into non-routine territory — multi-step, real-world application,
   or reasoning-heavy. Do NOT introduce concepts beyond the current lesson.
@@ -330,13 +340,13 @@ Rules for challenge problems:
             "change the numbers, context, and scenario, but preserve the multi-step "
             "reasoning structure:\n\n"
             f"{examples}\n\n"
-            "Generate 2 new challenge problems at this level, on the current topic."
+            "Generate 2-3 new challenge problems at this level, on the current topic."
         )
     else:
         user = (
             f"Current lesson: {', '.join(current_lessons)}\n"
             f"Exact topic: {current_topic}\n"
-            "Generate 2 challenge problems on this exact topic."
+            "Generate 2-3 challenge problems on this exact topic."
         )
 
     return system, user
@@ -517,6 +527,21 @@ async def _assemble_front(
         slots = (["hp"] * len(hp_slot)
                  + ["honors"] * len(honors_rest)
                  + ["regular"] * len(regular))
+    elif class_type == "hybrid":
+        # Hybrid: advanced content, gentler pace — 2 high-priority + 1 honors + 7 standard.
+        target = 10
+        hp_slot     = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
+                                      n=2, high_priority_only=True, exclude_lesson=True)
+        honors_rest = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
+                                      n=1, honors_only=True, exclude_high_priority=True,
+                                      exclude_lesson=True)
+        regular     = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
+                                      n=7, exclude_honors=True, exclude_high_priority=True,
+                                      exclude_lesson=True)
+        bank_problems = hp_slot + honors_rest + regular
+        slots = (["hp"] * len(hp_slot)
+                 + ["honors"] * len(honors_rest)
+                 + ["regular"] * len(regular))
     else:
         target = 10
         hp_slot = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
@@ -617,14 +642,29 @@ async def generate_problems(
     )
     back_data = await _call(back_sys, back_content, BACK_TOOL)
 
+    # Hybrid back page = 8 standard problems + divider + 2-3 honors-level challenge
+    # problems on the same lesson. Seed with honors-flagged bank problems for the
+    # lesson when available; otherwise _challenge_prompt free-generates.
+    challenge_problems: list[dict] = []
+    if class_type == "hybrid" and not context.review_chapter:
+        honors_models: list[dict] = []
+        for lesson in context.current_lessons:
+            honors_models.extend(
+                sample_problems(domain=None, grade=grade_int, max_quarter=4, n=3,
+                                lesson=lesson, class_type=class_type, honors_only=True)
+            )
+        ch_sys, ch_usr = _challenge_prompt(back_topic, context.current_lessons, honors_models[:3])
+        ch_data = await _call(ch_sys, ch_usr, CHALLENGE_TOOL)
+        challenge_problems = ch_data.get("problems", [])
+        logger.info(f"Hybrid challenge block: {len(challenge_problems)} problems generated")
+
     return {
         "spiral_topics":      spiral_topics,
         "front_problems":     front_problems,
         "front_slots":        front_slots,
         "lesson_title":       back_data.get("lesson_title", context.lesson_title),
         "back_problems":      back_data.get("problems", []),
-        "challenge_problems": [],   # challenge block removed — honors distinction
-                                    # comes from honors-flagged bank problems on front
+        "challenge_problems": challenge_problems,   # hybrid only; honors/GL = []
         "_context": {
             "week_start":       context.week_start,
             "specific_date":    date_str,
