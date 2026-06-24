@@ -10,6 +10,7 @@ export interface GenerateRequest {
   class_type: 'grade_level' | 'honors' | 'hybrid'
   specific_date?: string
   n_back?: number
+  n_challenge?: number
 }
 
 export interface HomeworkProblem {

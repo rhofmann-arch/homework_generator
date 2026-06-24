@@ -41,6 +41,7 @@ class GenerateRequest(BaseModel):
     class_type: Literal["grade_level", "honors", "hybrid"]
     specific_date: Optional[str] = None
     n_back: Optional[int] = None
+    n_challenge: Optional[int] = None
 
 
 class RecompileRequest(BaseModel):
@@ -106,7 +107,8 @@ async def generate_homework(req: GenerateRequest):
                 ". This may be a holiday or non-school day."
             )
 
-        problems  = await generate_problems(context=context, class_type=req.class_type, n_back=req.n_back)
+        problems  = await generate_problems(context=context, class_type=req.class_type,
+                                            n_back=req.n_back, n_challenge=req.n_challenge)
         pdf_path  = await build_pdf(context=context, problems=problems, class_type=req.class_type)
         key_path  = await build_key_pdf(pdf_path)
 

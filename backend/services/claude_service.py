@@ -608,8 +608,11 @@ async def generate_problems(
     class_type: str,
     specific_date: str | None = None,
     n_back: int | None = None,
+    n_challenge: int | None = None,
 ) -> dict:
     date_str = specific_date or context.week_start
+    # Number of challenge problems (hybrid only): teacher picks 2 or 3.
+    n_chal = max(2, min(3, n_challenge)) if n_challenge is not None else 3
 
     front_problems, spiral_topics, front_slots = await _assemble_front(context, class_type, date_str)
 
@@ -688,11 +691,11 @@ async def generate_problems(
                 {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
             )
             used.add(key)
-            if len(challenge_problems) >= 3:
+            if len(challenge_problems) >= n_chal:
                 break
         logger.info(
-            f"Hybrid challenge: {len(challenge_problems)} approved honors bank "
-            f"problems (Q{school_q}, deduped vs front)"
+            f"Hybrid challenge: {len(challenge_problems)}/{n_chal} approved honors "
+            f"bank problems (Q{school_q}, deduped vs front)"
         )
 
     return {

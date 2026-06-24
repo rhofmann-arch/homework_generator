@@ -608,6 +608,7 @@ function GeneratePanel() {
   const [grade,         setGrade]         = useState<Grade>('6')
   const [classType,     setClassType]     = useState<ClassType>('grade_level')
   const [nBack,         setNBack]         = useState<number>(10)
+  const [nChallenge,    setNChallenge]    = useState<number>(3)
   const [status,        setStatus]        = useState<Status>('idle')
   const [errorMsg,      setErrorMsg]      = useState('')
   const [history,       setHistory]       = useState<Assignment[]>([])
@@ -624,6 +625,7 @@ function GeneratePanel() {
       week_start: formatISO(week), grade, class_type: classType,
       specific_date: specificDate ?? undefined,
       n_back: nBack,
+      n_challenge: nChallenge,
     }
     try {
       const { homeworkBlob, keyBlob, sessionKey } = await generateHomework(req)
@@ -637,7 +639,7 @@ function GeneratePanel() {
       setHistory(prev => [{ weekStart: formatISO(week), specificDate: specificDate ?? undefined, grade, classType, label, pdfUrl: hwUrl, keyUrl, sessionKey }, ...prev])
       setStatus('done')
     } catch (e: unknown) { setErrorMsg(e instanceof Error ? e.message : 'Unknown error'); setStatus('error') }
-  }, [week, specificDate, grade, classType, nBack])
+  }, [week, specificDate, grade, classType, nBack, nChallenge])
 
   const handleRecompiled = useCallback((key: string, newPdf: string, newKey: string) => {
     setPdfPreviewUrl(newPdf)
@@ -719,6 +721,24 @@ function GeneratePanel() {
               <span className="text-xs text-slate-400">problems on back page (6–20)</span>
             </div>
           </div>
+
+          {classType === 'hybrid' && (
+            <div>
+              <SectionLabel>Challenge Problems (Optional)</SectionLabel>
+              <div className="flex items-center gap-2">
+                {[2, 3].map(n => (
+                  <button key={n} onClick={() => setNChallenge(n)}
+                    className={['px-4 py-1.5 rounded-lg border-2 text-sm font-semibold transition',
+                      nChallenge === n ? 'border-amber-500 bg-amber-50 text-amber-700'
+                        : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300',
+                    ].join(' ')}>
+                    {n}
+                  </button>
+                ))}
+                <span className="text-xs text-slate-400 ml-1">honors problems in the challenge box</span>
+              </div>
+            </div>
+          )}
 
           {/* Summary */}
           <div className="bg-slate-50 rounded-xl p-3 text-sm text-slate-600">
