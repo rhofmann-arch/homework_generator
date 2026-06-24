@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0044",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "range of a data set, finding missing value",
+  "latex": "The range of four numbers is 10. Three of the numbers are 8, 12, and 15. Which could be the fourth number?",
+  "answer_latex": "$5$",
+  "suggested_quarter": 3,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 44,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": true,
+  "notes": "kept as multiple-choice (not convertible)"
+}

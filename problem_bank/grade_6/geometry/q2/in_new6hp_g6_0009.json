@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0009",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "reading coordinates on coordinate plane",
+  "latex": "Which point is located at $(-2, -3)$ on the coordinate plane below?\n\n\\begin{tikzpicture}[scale=0.5]\n\\draw[->] (-6,0) -- (6,0) node[right] {$x$};\n\\draw[->] (0,-6) -- (0,6) node[above] {$y$};\n\\foreach \\x in {-5,-4,-3,-2,-1,1,2,3,4,5}\n  \\draw (\\x,0.1) -- (\\x,-0.1) node[below] {\\x};\n\\foreach \\y in {-5,-4,-3,-2,-1,1,2,3,4,5}\n  \\draw (0.1,\\y) -- (-0.1,\\y) node[left] {\\y};\n\\fill (-3,3.5) circle (4pt) node[right] {$W$};\n\\fill (-3,2) circle (4pt) node[right] {$X$};\n\\fill (-2,-2) circle (4pt) node[right] {$Y$};\n\\fill (-2,-3) circle (4pt) node[right] {$Z$};\n\\end{tikzpicture}\n\nA \\quad $W$ \\hspace{1cm} C \\quad $Y$\n\nB \\quad $X$ \\hspace{1cm} D \\quad $Z$",
+  "answer_latex": "$Z$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 9,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": true,
+  "notes": "kept as multiple-choice (not convertible)"
+}

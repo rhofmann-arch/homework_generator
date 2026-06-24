@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0062",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "algebraic expressions in geometry, finding unknown side lengths",
+  "latex": "The second-longest side of this triangle is 10 inches. How long are the other two sides, in inches?\n\n\\begin{tikzpicture}\n\\draw (0,0) -- (2,1.5) -- (4,0) -- cycle;\n\\node at (1,1) {$x-2$};\n\\node at (2,1.8) {$x$};\n\\node at (3,1) {$x+4$};\n\\end{tikzpicture}",
+  "answer_latex": "$8$ and $14$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 62,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

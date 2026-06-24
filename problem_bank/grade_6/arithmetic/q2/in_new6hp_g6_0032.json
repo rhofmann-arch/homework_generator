@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0032",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "reading integers on a number line",
+  "latex": "Which number is represented by the arrow on the number line below?\n\n\\begin{tikzpicture}\n\\draw[->] (-3,0) -- (3,0);\n\\draw (-2,0.1) -- (-2,-0.1) node[below] {$-10$};\n\\draw (0,0.1) -- (0,-0.1) node[below] {$0$};\n\\draw (2,0.1) -- (2,-0.1) node[below] {$10$};\n\\draw[->, thick] (-1,0.5) -- (-1,0.1);\n\\end{tikzpicture}",
+  "answer_latex": "$-5$",
+  "suggested_quarter": 1,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 32,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

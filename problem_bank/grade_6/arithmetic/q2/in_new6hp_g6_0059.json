@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0059",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "percent decrease and discount calculations",
+  "latex": "The sale price of a bracelet Lenae wants to buy is 20\\% off the regular price. \\textbf{One way} for Lenae to determine the sale price is to\n\n\\textbf{A} multiply the regular price by $(1 - 0.20)$.\n\n\\textbf{B} multiply the regular price by $0.20$.\n\n\\textbf{C} divide the regular price by $(1 - 0.20)$.\n\n\\textbf{D} divide the regular price by $0.20$.",
+  "answer_latex": "A",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 59,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": true,
+  "notes": "kept as multiple-choice (not convertible)"
+}

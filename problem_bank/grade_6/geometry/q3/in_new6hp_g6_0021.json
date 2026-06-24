@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0021",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "volume of rectangular prism",
+  "latex": "Bailey will find the volume of a rectangular prism by filling it with cubes that measure 1 cubic inch. She has not yet finished filling the prism. Her progress is shown in the figure below.\n\n\\begin{tikzpicture}[scale=0.6]\n% Draw the rectangular prism outline\n\\draw[thick] (0,0) -- (3,0) -- (3,4) -- (0,4) -- cycle;\n\\draw[thick] (0,4) -- (1.5,5.5) -- (4.5,5.5) -- (3,4);\n\\draw[thick] (3,0) -- (4.5,1.5) -- (4.5,5.5);\n% Draw the cubes at the bottom layer\n\\foreach \\x in {0,1,2} {\n  \\foreach \\y in {0,1,2,3} {\n    \\draw (\\x,\\y) rectangle (\\x+1,\\y+1);\n  }\n}\n% Labels\n\\node[left] at (0,2) {5 in.};\n\\node[below] at (1.5,0) {3 in.};\n\\node[right] at (4.5,3) {4 in.};\n\\end{tikzpicture}\n\nWhat is the total volume, in cubic inches, of the prism?",
+  "answer_latex": "$60$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 21,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

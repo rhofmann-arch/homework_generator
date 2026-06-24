@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0052",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "unit rates and proportional reasoning",
+  "latex": "Ethan walked 3 miles in 1 hour. At this rate, how many hours will it take him to walk 5 miles?",
+  "answer_latex": "$1\\frac{2}{3}$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 52,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0057",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "reading stacked bar graphs, calculating change between values",
+  "latex": "Use the information below to answer the question.\n\n\\begin{tikzpicture}[scale=0.8]\n% Bar chart: Advertising by the Toy Industry\n\\draw[thick] (0,0) -- (0,9) -- (10,9) -- (10,0) -- cycle;\n\\node[above] at (5,9) {\\textbf{Advertising by the Toy Industry}};\n\\draw[->] (0,0) -- (0,9.5);\n\\node[rotate=90, anchor=south] at (-1.2,4.5) {Spending (in millions of dollars)};\n\n% Y-axis labels\n\\foreach \\y/\\label in {0/0, 1/100, 2/200, 3/300, 4/400, 5/500, 6/600, 7/700, 8/800, 9/900} {\n  \\draw (-0.1,\\y) -- (0.1,\\y);\n  \\node[left] at (-0.1,\\y) {\\label};\n}\n\n% Year 1 stacked bar\n\\fill[black!70] (0.5,0) rectangle (2,2.5); % Magazine ~250\n\\fill[yellow!70] (0.5,2.5) rectangle (2,4.7); % Internet ~220\n\\fill[cyan!70] (0.5,4.7) rectangle (2,6.5); % Network TV ~180\n\\fill[red!50] (0.5,6.5) rectangle (2,8.5); % Cable TV ~200\n\n% Year 2 stacked bar\n\\fill[black!70] (2.5,0) rectangle (4,2.8); % Magazine ~280\n\\fill[yellow!70] (2.5,2.8) rectangle (4,5.0); % Internet ~220\n\\fill[cyan!70] (2.5,5.0) rectangle (4,6.6); % Network TV ~160\n\\fill[red!50] (2.5,6.6) rectangle (4,8.0); % Cable TV ~140\n\n% Year 3 stacked bar\n\\fill[black!70] (4.5,0) rectangle (6,2.8); % Magazine ~280\n\\fill[yellow!70] (4.5,2.8) rectangle (6,5.0); % Internet ~220\n\\fill[cyan!70] (4.5,5.0) rectangle (6,6.5); % Network TV ~150\n\\fill[red!50] (4.5,6.5) rectangle (6,7.8); % Cable TV ~130\n\n% Year 4 stacked bar\n\\fill[black!70] (6.5,0) rectangle (8,3.0); % Magazine ~300\n\\fill[yellow!70] (6.5,3.0) rectangle (8,5.2); % Internet ~220\n\\fill[cyan!70] (6.5,5.2) rectangle (8,6.7); % Network TV ~150\n\\fill[red!50] (6.5,6.7) rectangle (8,8.0); % Cable TV ~130\n\n% Year 5 stacked bar\n\\fill[black!70] (8.5,0) rectangle (10,3.2); % Magazine ~320\n\\fill[yellow!70] (8.5,3.2) rectangle (10,5.3); % Internet ~210\n\\fill[cyan!70] (8.5,5.3) rectangle (10,6.8); % Network TV ~150\n\\fill[red!50] (8.5,6.8) rectangle (10,8.0); % Cable TV ~120\n\n% X-axis labels\n\\node[below] at (1.25,-0.2) {Year 1};\n\\node[below] at (3.25,-0.2) {Year 2};\n\\node[below] at (5.25,-0.2) {Year 3};\n\\node[below] at (7.25,-0.2) {Year 4};\n\\node[below] at (9.25,-0.2) {Year 5};\n\n% Key\n\\node[right] at (11,6) {\\textbf{KEY}};\n\\fill[black!70] (11,5.2) rectangle (11.5,5.5); \\node[right] at (11.6,5.35) {Magazine};\n\\fill[yellow!70] (11,4.5) rectangle (11.5,4.8); \\node[right] at (11.6,4.65) {Internet};\n\\fill[cyan!70] (11,3.8) rectangle (11.5,4.1); \\node[right] at (11.6,3.95) {Network TV};\n\\fill[red!50] (11,3.1) rectangle (11.5,3.4); \\node[right] at (11.6,3.25) {Cable TV};\n\\end{tikzpicture}\n\nFor toy advertising on cable TV, what amount is closest to the increase in spending between Year 1 and Year 3?",
+  "answer_latex": "\\$60 \\text{ million}",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 57,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

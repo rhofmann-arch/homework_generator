@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0061",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "two-step linear equations with real-world context",
+  "latex": "Ms. Salazar charged \\$65 an hour to paint the exterior of a building. She also charged \\$350 for materials. The total bill was \\$2,300. How many hours did it take Ms. Salazar to paint the building?",
+  "answer_latex": "$30$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 61,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0063",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "writing linear equations from tables, direct variation",
+  "latex": "The table below shows the amount of material that can be taken from a construction site by different numbers of dump trucks.\n\n\\begin{center}\n\\begin{tabular}{|c|c|}\n\\hline\n\\textbf{Number of Trucks} & \\textbf{Cubic Yards of Materials} \\\\\n\\hline\n1 & 5 \\\\\n\\hline\n2 & 10 \\\\\n\\hline\n3 & 15 \\\\\n\\hline\n4 & 20 \\\\\n\\hline\n5 & 25 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\nWhat equation represents the relationship between the number of trucks, $t$, and the number of cubic yards of material, $m$, that can be taken away?",
+  "answer_latex": "$m = 5t$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 63,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

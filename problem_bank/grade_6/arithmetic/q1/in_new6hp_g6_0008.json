@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0008",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "powers of ten and multiplication",
+  "latex": "What numerical expression has the same value as $100 \\times 10{,}000$?",
+  "answer_latex": "$10^6$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 8,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

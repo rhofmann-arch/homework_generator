@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0023",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "converting ratios to decimals",
+  "latex": "On a survey, 6 out of 100 campers selected canoeing as their favorite camp activity. What is this ratio expressed as a decimal?",
+  "answer_latex": "$0.06$",
+  "suggested_quarter": 1,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 23,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

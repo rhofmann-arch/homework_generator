@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0058",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "dividing mixed numbers by whole numbers",
+  "latex": "Four friends are planning a hike. The hiking trail is $2\\frac{3}{4}$ miles long. The friends decide that each person should lead the group for equal parts of the trail. For how many miles will each person lead the group?",
+  "answer_latex": "$\\frac{11}{16}$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 58,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

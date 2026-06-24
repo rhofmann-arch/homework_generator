@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0065",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "unit rate and proportional reasoning",
+  "latex": "The price for a box of 36 apples is \\$18. At the same price per apple, what is the total number of apples Robin could buy for \\$8?",
+  "answer_latex": "$16$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 65,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

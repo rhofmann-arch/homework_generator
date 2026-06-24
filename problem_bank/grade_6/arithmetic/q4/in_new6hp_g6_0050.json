@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0050",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "extending patterns in a table, linear relationships",
+  "latex": "Use the information below to answer the question.\n\n\\begin{center}\n\\textbf{Cost for Shipping Video Games}\n\n\\begin{tabular}{|c|c|c|c|c|}\n\\hline\n\\textbf{Number of} & \\textbf{Game} & \\textbf{Games} & \\textbf{Media} & \\textbf{Games} \\\\\n\\textbf{Video Games} & \\textbf{Land} & \\textbf{to Go} & \\textbf{Express} & \\textbf{Galore} \\\\\n\\hline\n1 & \\$4.50 & \\$2.50 & \\$2.50 & \\$2.00 \\\\\n\\hline\n2 & \\$4.50 & \\$2.75 & \\$3.00 & \\$3.00 \\\\\n\\hline\n3 & \\$4.50 & \\$3.00 & \\$3.50 & \\$4.00 \\\\\n\\hline\n4 & \\$4.50 & \\$3.25 & \\$4.00 & \\$5.00 \\\\\n\\hline\n5 & \\$4.50 & \\$3.50 & \\$4.50 & \\$6.00 \\\\\n\\hline\n6 & \\$4.50 & \\$3.75 & \\$5.00 & \\$7.00 \\\\\n\\hline\n7 & \\$4.50 & \\$4.00 & \\$5.50 & \\$8.00 \\\\\n\\hline\n8 & \\$4.50 & \\$4.25 & \\$6.00 & \\$9.00 \\\\\n\\hline\n9 & \\$4.50 & \\$4.50 & \\$6.50 & \\$10.00 \\\\\n\\hline\n10 & \\$4.50 & \\$4.75 & \\$7.00 & \\$11.00 \\\\\n\\hline\n\\end{tabular}\n\\end{center}\n\nMedia Express shipping rates follow the same pattern for shipments of more than 10 video games. What is the cost for the store to ship 15 video games?",
+  "answer_latex": "\\$9.50",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 50,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

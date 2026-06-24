@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0043",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "map scale and proportional reasoning",
+  "latex": "The distance from Abigail's house to Brendan's house is 3.5 inches on a map with a scale of 1 inch to 6 miles. How many miles is the distance between the houses?",
+  "answer_latex": "$21$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 43,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

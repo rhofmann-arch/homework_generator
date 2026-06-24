@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0015",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "unit rate, proportional reasoning",
+  "latex": "Boat rentals cost \\$72 for 6 hours. At the same hourly rate, what is the cost of renting a boat for 4 hours?",
+  "answer_latex": "$\\$48$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 15,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0010",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "rounding decimals and estimation",
+  "latex": "Kimberly ran her first race in 3.15 hours. She ran her second race in 2.90 hours. Rounding each time to the nearest hour, about how many hours did it take Kimberly to run both races?",
+  "answer_latex": "$6$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 10,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

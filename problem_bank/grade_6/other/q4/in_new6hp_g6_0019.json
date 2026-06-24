@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0019",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "interpreting bar graphs, subtraction",
+  "latex": "Use the information below to answer the question.\n\nDependable Rentals gives customers information about how many miles per gallon (mpg) drivers can expect from its various rental vehicles. The graph below shows how many vehicles are available in each of several mileage ranges.\n\n\\begin{tikzpicture}\n\\begin{axis}[\n    title={Dependable Rentals},\n    ylabel={Number of Vehicles},\n    xlabel={Miles per Gallon (mpg)},\n    ymin=0, ymax=20,\n    ytick={0,2,4,6,8,10,12,14,16,18,20},\n    symbolic x coords={15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49},\n    xtick=data,\n    ybar,\n    bar width=20pt,\n    nodes near coords,\n    enlarge x limits=0.1,\n]\n\\addplot[fill=teal] coordinates {(15-19,2) (20-24,16) (25-29,6) (30-34,16) (35-39,4) (40-44,4) (45-49,2)};\n\\end{axis}\n\\end{tikzpicture}\n\nHow many more vehicles are available in the 20--24 mpg mileage range than in the 40--44 mpg mileage range?",
+  "answer_latex": "$12$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 19,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

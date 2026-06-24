@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0030",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "counting by multiples, common multiples",
+  "latex": "Jill started at 3 and counted out loud by 3s to 24. Ray started at 4 and counted out loud by 4s to 24. How many of the same numbers did Jill and Ray say out loud?",
+  "answer_latex": "",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 30,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

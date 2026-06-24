@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0053",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "mean (average) of a data set",
+  "latex": "The list below shows the number of points Jared's team scored during 5 football games.\n\n$$16, 15, 21, 14, 14$$\n\nWhat is the mean number of points Jared's team scored?",
+  "answer_latex": "$16$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 53,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0034",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "solids of revolution, 3D geometry",
+  "latex": "Spinning a triangle as shown below could create the image of which solid figure?\n\n\\begin{tikzpicture}\n\\draw (0,0) -- (1,0) -- (0.5,1.5) -- cycle;\n\\draw[->, red] (1.2,0.5) arc (0:60:0.3);\n\\end{tikzpicture}\n\nJ \\begin{tikzpicture}[scale=0.5]\n\\draw (0,1.5) -- (-0.7,0) -- (0.7,0) -- cycle;\n\\draw (0,0) ellipse (0.7 and 0.2);\n\\end{tikzpicture}\n\nK \\begin{tikzpicture}[scale=0.5]\n\\draw (0,0) -- (-0.7,1.5) -- (0.7,1.5) -- cycle;\n\\draw[dashed] (0,1.5) ellipse (0.7 and 0.2);\n\\end{tikzpicture}\n\nL \\begin{tikzpicture}[scale=0.5]\n\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\n\\draw (0,1) -- (0.3,1.3) -- (1.3,1.3) -- (1,1);\n\\draw (1,0) -- (1.3,0.3) -- (1.3,1.3);\n\\draw[dashed] (0,0) -- (0.3,0.3) -- (1.3,0.3);\n\\draw[dashed] (0.3,0.3) -- (0.3,1.3);\n\\end{tikzpicture}\n\nM \\begin{tikzpicture}[scale=0.5]\n\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\n\\draw (0,1) -- (0.3,1.3) -- (1.3,1.3) -- (1,1);\n\\draw (1,0) -- (1.3,0.3) -- (1.3,1.3);\n\\draw[dashed] (0,0) -- (0.3,0.3) -- (1.3,0.3);\n\\draw[dashed] (0.3,0.3) -- (0.3,1.3);\n\\end{tikzpicture}",
+  "answer_latex": "J",
+  "suggested_quarter": 3,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 34,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": true,
+  "notes": "kept as multiple-choice (not convertible)"
+}

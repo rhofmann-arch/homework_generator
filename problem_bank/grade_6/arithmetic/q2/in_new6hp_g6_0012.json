@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0012",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "integer operations, floor/elevator word problem",
+  "latex": "Mr. Holland delivers packages. He got on the elevator on the 5th floor of an office building. He went up 4 floors for a delivery, then he went down 2 floors for his next delivery, and finally he went up 4 floors for his last delivery. On which floor did Mr. Holland make his last delivery?",
+  "answer_latex": "$11$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 12,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

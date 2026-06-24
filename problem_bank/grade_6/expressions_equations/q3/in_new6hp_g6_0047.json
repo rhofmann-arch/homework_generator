@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0047",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "algebraic reasoning with inequalities and ratios",
+  "latex": "Given $a$ and $b$ are positive numbers and $a > b$, what is always true about the ratio below?\n$$\\frac{a+1}{b+1}$$\n\\textbf{A} It is greater than 1.\n\\textbf{B} It is less than 1.\n\\textbf{C} It is exactly 1.\n\\textbf{D} It is negative.",
+  "answer_latex": "It is greater than 1.",
+  "suggested_quarter": 3,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 47,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": true,
+  "notes": "kept as multiple-choice (not convertible)"
+}

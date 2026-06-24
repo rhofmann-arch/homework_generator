@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0049",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "percent problems, finding the whole",
+  "latex": "There are 18 tulips in a garden. This is 15\\% of the total number of flowers. How many flowers are in the garden?",
+  "answer_latex": "$120$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 49,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

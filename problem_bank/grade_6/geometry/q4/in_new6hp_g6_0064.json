@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0064",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "volume of a cube, expressions with mixed numbers",
+  "latex": "What expression represents the volume, in cubic meters, of a cube with a side length of $8\\frac{1}{2}$ meters?",
+  "answer_latex": "$\\left(8\\frac{1}{2}\\right)\\left(8\\frac{1}{2}\\right)\\left(8\\frac{1}{2}\\right)$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 64,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

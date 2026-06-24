@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0041",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "finding percentage from part and whole",
+  "latex": "On Tuesday, 90 of the 200 students in a school ate a salad for lunch. What percentage of the students ate a salad for lunch on Tuesday?",
+  "answer_latex": "45\\%",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 41,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

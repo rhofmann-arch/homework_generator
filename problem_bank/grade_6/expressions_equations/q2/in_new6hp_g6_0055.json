@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0055",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "perimeter with algebraic expressions",
+  "latex": "Charlotte drew the figure shown below, with side lengths in inches.\n\n\\begin{tikzpicture}[scale=0.8]\n\\draw (0,0) -- (2,0) -- (3,1) -- (2,2) -- (0,2) -- cycle;\n\\node at (1,-0.3) {6};\n\\node at (1,2.3) {6};\n\\node at (-0.3,1) {$y$};\n\\node at (2.7,0.3) {$y$};\n\\node at (2.7,1.7) {$y$};\n\\end{tikzpicture}\n\nWhat expression represents the perimeter, in inches, of Charlotte's figure?",
+  "answer_latex": "$12 + 3y$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 55,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

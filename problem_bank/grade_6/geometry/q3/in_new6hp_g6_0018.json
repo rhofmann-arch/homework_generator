@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0018",
+  "domain": "geometry",
+  "grade": 6,
+  "quarter": 3,
+  "lesson": null,
+  "topic": "area of a rectangle with fractional dimensions",
+  "latex": "What is the area of the rectangle shown below, in square inches?\n\n\\begin{tikzpicture}\n\\draw (0,0) rectangle (5,3.5);\n\\draw[step=1] (0,0) grid (5,3.5);\n\\node[above] at (2.5,3.5) {5 inches};\n\\node[left] at (0,1.75) {$3\\frac{1}{2}$ inches};\n\\end{tikzpicture}",
+  "answer_latex": "$17\\frac{1}{2}$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 18,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

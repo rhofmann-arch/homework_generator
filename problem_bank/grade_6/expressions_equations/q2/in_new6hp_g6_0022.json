@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0022",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "input-output tables, finding patterns",
+  "latex": "In the table below, a rule is applied to the ``In'' value to produce the ``Out'' value.\n\n\\begin{tikzpicture}\n\\draw (0,0) grid (2,4);\n\\node at (0.5,3.5) {\\textbf{In}};\n\\node at (1.5,3.5) {\\textbf{Out}};\n\\node at (0.5,2.5) {23};\n\\node at (1.5,2.5) {30};\n\\node at (0.5,1.5) {17};\n\\node at (1.5,1.5) {24};\n\\node at (0.5,0.5) {12};\n\\node at (1.5,0.5) {19};\n\\node at (0.5,-0.5) {?};\n\\node at (1.5,-0.5) {10};\n\\draw (0,-1) grid (2,0);\n\\end{tikzpicture}\n\nWhat is the value of the missing number?",
+  "answer_latex": "$3$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 22,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0002",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "exponents, expanded form",
+  "latex": "What expression is equal to $7^3$?",
+  "answer_latex": "$7 \\cdot 7 \\cdot 7$",
+  "suggested_quarter": 1,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 2,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

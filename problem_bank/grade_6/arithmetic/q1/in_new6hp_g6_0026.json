@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0026",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "subtracting mixed numbers and fractions",
+  "latex": "James walked $1\\frac{1}{2}$ miles to school. Brad walked $\\frac{5}{8}$ mile to school. How much farther, in miles, did James walk than Brad?",
+  "answer_latex": "$\\frac{7}{8}$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 26,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

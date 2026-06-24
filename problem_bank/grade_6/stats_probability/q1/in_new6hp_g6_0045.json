@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0045",
+  "domain": "stats_probability",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "finding the median of a data set",
+  "latex": "Hailey recorded the number of minutes it took her to complete her chores for 5 days in a row. It took her 40, 51, 33, 45, and 51 minutes. What is the median number of minutes it took Hailey to complete her chores?",
+  "answer_latex": "$45$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 45,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

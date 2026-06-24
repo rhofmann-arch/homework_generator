@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0003",
+  "domain": "expressions_equations",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "evaluating algebraic expressions",
+  "latex": "If $x = 7$, what is the value of $3x + 5$?",
+  "answer_latex": "$26$",
+  "suggested_quarter": 1,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 3,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0025",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 1,
+  "lesson": null,
+  "topic": "place value and expanded form with decimals",
+  "latex": "Which number is equivalent to the expression below?\n$$(3 \\times 1{,}000) + (5 \\times 10) + (6 \\times 0.01) + (9 \\times 0.001)$$",
+  "answer_latex": "$3{,}050.069$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 25,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

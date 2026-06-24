@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0001",
+  "domain": "other",
+  "grade": 6,
+  "quarter": 4,
+  "lesson": null,
+  "topic": "comparing temperatures, number comparison",
+  "latex": "Yesterday's high temperature was $30^\\circ\\text{F}$. Today will be warmer. What temperature could be today's high temperature?",
+  "answer_latex": "$35^\\circ\\text{F}$",
+  "suggested_quarter": 1,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 1,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "in_new6hp_g6_0038",
+  "domain": "arithmetic",
+  "grade": 6,
+  "quarter": 2,
+  "lesson": null,
+  "topic": "multi-step word problem with money, addition and subtraction",
+  "latex": "Mr. Miller started with \\$950.83 in his bank account. He made two purchases, spending \\$357.18 and \\$18.27 out of the account. He then deposited \\$400 into the account. How much money did he have in his account after the deposit?",
+  "answer_latex": "$\\$975.38$",
+  "suggested_quarter": 2,
+  "source_file": "new_6_HP.pdf",
+  "source_problem_number": 38,
+  "approved": true,
+  "flagged": false,
+  "honors": false,
+  "high_priority": true,
+  "keep_mc": false,
+  "notes": "converted from multiple-choice"
+}
