@@ -61,11 +61,19 @@ EXTRACT_TOOL = {
                         },
                         "latex": {
                             "type": "string",
-                            "description": "Full problem in LaTeX. Use $...$ for inline math, $$...$$ for display math. Include any written instructions (e.g. 'Find the value of x.'). If the problem contains a geometric figure, number line, coordinate plane, table, or any diagram, reproduce it using a TikZ environment (\\begin{tikzpicture}...\\end{tikzpicture}). Place the diagram where it appears relative to the problem text. Do not use \\includegraphics or reference external files."
+                            "description": "Full problem in LaTeX. Use $...$ for inline math, $$...$$ for display math. Include any written instructions (e.g. 'Find the value of x.'). If the problem contains a geometric figure, number line, coordinate plane, table, or any diagram, reproduce it using a TikZ environment (\\begin{tikzpicture}...\\end{tikzpicture}). Place the diagram where it appears relative to the problem text. Do not use \\includegraphics or reference external files. IMPORTANT: If the source problem is multiple-choice, CONVERT it to open-ended whenever possible — drop the lettered answer choices (A/B/C/D) and rephrase as a direct question that asks for the value/expression/answer outright (e.g. 'Which equals 25% of 80?  A) 10  B) 20  C) 40' becomes 'What is 25% of 80?'). Do NOT include the answer choices in the latex when converted. Keep it as multiple-choice ONLY when the question cannot stand without its choices (e.g. 'Which statement is true?', error-analysis, 'select all that apply', or interpreting given options) — in that case keep the choices in the latex."
+                        },
+                        "source_was_mc": {
+                            "type": "boolean",
+                            "description": "True if the original printed problem was multiple-choice (had lettered answer options)."
+                        },
+                        "kept_as_mc": {
+                            "type": "boolean",
+                            "description": "True only if the problem was multiple-choice AND could not be cleanly converted to open-ended, so the choices were kept. False for non-MC problems and for MC problems you converted to open-ended."
                         },
                         "answer_latex": {
                             "type": "string",
-                            "description": "Answer in LaTeX if known (from key PDF or clearly shown). Empty string if unknown."
+                            "description": "Answer in LaTeX if known (from key PDF or clearly shown). For converted multiple-choice problems, put the correct choice's value here (e.g. $20$). Empty string if unknown."
                         },
                         "suggested_quarter": {
                             "type": "integer",
@@ -77,7 +85,7 @@ EXTRACT_TOOL = {
                             "description": "Brief topic label, e.g. 'one-step addition equation, whole numbers' or 'area of composite figures'."
                         }
                     },
-                    "required": ["problem_number", "latex", "answer_latex", "suggested_quarter", "topic_description"]
+                    "required": ["problem_number", "latex", "source_was_mc", "kept_as_mc", "answer_latex", "suggested_quarter", "topic_description"]
                 }
             }
         },
@@ -142,6 +150,11 @@ def extract_problems_from_page(
         "text": (
             "Extract every math problem visible on this worksheet page. "
             "For each problem: capture the full problem in LaTeX (including any written instructions), "
+            "CONVERT multiple-choice problems to open-ended whenever possible: drop the lettered "
+            "answer choices and rephrase as a direct question asking for the answer outright, and put "
+            "the correct value in answer_latex. Only keep the choices when the question cannot stand "
+            "without them (e.g. 'which statement is true', error analysis, select-all). "
+            "Set source_was_mc and kept_as_mc accordingly. "
             "suggest a difficulty quarter (Q1=simplest, Q4=hardest), "
             "IMPORTANT: If any problem includes a diagram, figure, number line, coordinate plane, "
             "table, or geometric shape, reproduce it faithfully using TikZ "
@@ -202,6 +215,7 @@ def ingest(
     lesson: str | None = None,
     honors: bool = False,
     high_priority: bool = False,
+    max_pages: int | None = None,
 ) -> None:
     client = anthropic.Anthropic()
 
@@ -218,6 +232,10 @@ def ingest(
         print("High Priority: True  (all problems will be tagged high_priority=True)")
     pages = rasterize_pdf(pdf_path)
 
+    if max_pages is not None and max_pages > 0:
+        pages = pages[:max_pages]
+        print(f"Limiting to first {len(pages)} page(s) (--max-pages).")
+
     key_pages: list[Path | None] = [None] * len(pages)
     if key_pdf_path:
         print(f"Rasterizing key {key_pdf_path.name}...")
@@ -233,7 +251,11 @@ def ingest(
         print(f"{len(problems)} problems found")
         all_problems.extend(problems)
 
+    n_mc        = sum(1 for p in all_problems if p.get("source_was_mc"))
+    n_converted = sum(1 for p in all_problems if p.get("source_was_mc") and not p.get("kept_as_mc"))
+    n_kept_mc   = sum(1 for p in all_problems if p.get("kept_as_mc"))
     print(f"\nTotal extracted: {len(all_problems)} problems")
+    print(f"Multiple-choice: {n_mc}  ->  converted to open-ended: {n_converted}, kept as MC: {n_kept_mc}")
     print(f"Destination: {inbox}\n")
 
     # Use lesson number in ID when available (e.g. les_2p5_g6_0001)
@@ -264,7 +286,13 @@ def ingest(
             "flagged": False,
             "honors": honors,
             "high_priority": high_priority,
-            "notes": "",
+            "keep_mc": bool(prob.get("kept_as_mc")),
+            "notes": (
+                "converted from multiple-choice"
+                if prob.get("source_was_mc") and not prob.get("kept_as_mc")
+                else ("kept as multiple-choice (not convertible)"
+                      if prob.get("kept_as_mc") else "")
+            ),
         }
 
         dest = inbox / f"{prob_id}.json"
@@ -304,6 +332,8 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing files")
     parser.add_argument("--honors", action="store_true", help="Tag all problems honors=True")
     parser.add_argument("--high-priority", action="store_true", help="Tag all problems high_priority=True")
+    parser.add_argument("--max-pages", type=int, default=None,
+                        help="Only process the first N pages (useful with --dry-run to preview cheaply)")
     args = parser.parse_args()
 
     ingest(
@@ -315,6 +345,7 @@ def main():
         lesson=args.lesson,
         honors=args.honors,
         high_priority=args.high_priority,
+        max_pages=args.max_pages,
     )
 
 

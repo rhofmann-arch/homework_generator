@@ -6,6 +6,7 @@ venv/
 *.egg-info/
 dist/
 .env
+.anthropic_key*
 
 # Node
 node_modules/
