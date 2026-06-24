@@ -15,7 +15,7 @@ KEY_TEMPLATE_PATH = Path(__file__).parent.parent / "templates" / "homework_key.t
 COURSE_NAMES = {
     ("6", "grade_level"): "6th Grade Math",
     ("6", "honors"):      "Honors Math 6",
-    ("6", "hybrid"):      "Math 6 (Hybrid)",
+    ("6", "hybrid"):      "Math 6",
     ("5", "grade_level"): "5th Grade Math",
     ("5", "honors"):      "Honors Math 5",
 }

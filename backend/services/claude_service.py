@@ -643,20 +643,30 @@ async def generate_problems(
     back_data = await _call(back_sys, back_content, BACK_TOOL)
 
     # Hybrid back page = 8 standard problems + divider + 2-3 honors-level challenge
-    # problems on the same lesson. Seed with honors-flagged bank problems for the
-    # lesson when available; otherwise _challenge_prompt free-generates.
+    # problems. These come ONLY from the approved bank — never Claude-generated —
+    # drawn from any honors-flagged problem in the current school quarter (all Q1
+    # honors problems are eligible for every Q1 lesson, etc.). Deduped against the
+    # front so the same problem can't appear in both places. If the bank has no
+    # honors problems for the quarter, there is simply no challenge block.
     challenge_problems: list[dict] = []
     if class_type == "hybrid" and not context.review_chapter:
-        honors_models: list[dict] = []
-        for lesson in context.current_lessons:
-            honors_models.extend(
-                sample_problems(domain=None, grade=grade_int, max_quarter=4, n=3,
-                                lesson=lesson, class_type=class_type, honors_only=True)
+        school_q = _school_quarter(date_str)
+        used = {p["latex"] for p in front_problems}
+        pool = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
+                               n=12, honors_only=True)
+        for p in pool:
+            if p["latex"] in used:
+                continue
+            challenge_problems.append(
+                {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
             )
-        ch_sys, ch_usr = _challenge_prompt(back_topic, context.current_lessons, honors_models[:3])
-        ch_data = await _call(ch_sys, ch_usr, CHALLENGE_TOOL)
-        challenge_problems = ch_data.get("problems", [])
-        logger.info(f"Hybrid challenge block: {len(challenge_problems)} problems generated")
+            used.add(p["latex"])
+            if len(challenge_problems) >= 3:
+                break
+        logger.info(
+            f"Hybrid challenge: {len(challenge_problems)} approved honors bank "
+            f"problems (Q{school_q}, deduped vs front)"
+        )
 
     return {
         "spiral_topics":      spiral_topics,
