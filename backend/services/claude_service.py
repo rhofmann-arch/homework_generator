@@ -10,6 +10,12 @@ logger = logging.getLogger(__name__)
 client = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 MODEL  = "claude-sonnet-4-6"
 
+
+def _norm_latex(s: str) -> str:
+    """Whitespace-stripped, lowercased latex — used to detect near-identical
+    problem variations (same content, different spacing) when deduping."""
+    return "".join((s or "").split()).lower()
+
 STYLE_NOTES = """
 You are generating LaTeX math problems for a 6th-grade homework sheet.
 
@@ -572,11 +578,28 @@ async def _assemble_front(
         fill_sys, fill_usr = _fill_front_prompt(shortfall, context.grade, bank_latex,
                                                 style_examples=style_examples)
         fill_data      = await _call(fill_sys, fill_usr, FILL_FRONT_TOOL)
-        generated_problems = fill_data.get("problems", [])
+        # Cap to the actual shortfall — Claude can return more than requested,
+        # which would push the front past `target` and overflow the page.
+        generated_problems = fill_data.get("problems", [])[:max(0, shortfall)]
         spiral_topics      = fill_data.get("spiral_topics", spiral_topics)
         slots += ["fill"] * len(generated_problems)
 
-    all_problems = [{"latex": lat} for lat in bank_latex] + generated_problems
+    # Drop near-identical variations (same content, different spacing) so the
+    # same problem can't appear twice on the front, then hard-cap at target so
+    # the front-page minipages never overflow.
+    combined = [{"latex": lat} for lat in bank_latex] + generated_problems
+    deduped: list[dict] = []
+    deduped_slots: list[str] = []
+    seen: set[str] = set()
+    for p, slot in zip(combined, slots):
+        key = _norm_latex(p["latex"])
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(p)
+        deduped_slots.append(slot)
+    all_problems = deduped[:target]
+    slots = deduped_slots[:target]
     return all_problems, spiral_topics, slots
 
 
@@ -651,16 +674,20 @@ async def generate_problems(
     challenge_problems: list[dict] = []
     if class_type == "hybrid" and not context.review_chapter:
         school_q = _school_quarter(date_str)
-        used = {p["latex"] for p in front_problems}
+        # Dedupe on whitespace-stripped latex so near-identical variations of the
+        # same problem (e.g. "17·1323" vs "17 · 1323") can't appear in both the
+        # front and the challenge block.
+        used = {_norm_latex(p["latex"]) for p in front_problems}
         pool = sample_problems(domain=None, grade=grade_int, max_quarter=school_q,
                                n=12, honors_only=True)
         for p in pool:
-            if p["latex"] in used:
+            key = _norm_latex(p["latex"])
+            if key in used:
                 continue
             challenge_problems.append(
                 {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
             )
-            used.add(p["latex"])
+            used.add(key)
             if len(challenge_problems) >= 3:
                 break
         logger.info(
