@@ -248,12 +248,13 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
     })
   }
 
-  const handleRefresh = async (section: 'front' | 'back', idx: number) => {
+  const handleRefresh = async (section: 'front' | 'back' | 'challenge', idx: number) => {
     const key = `${section}_${idx}`
     setRefreshing(prev => new Set(prev).add(key))
     try {
       const updated = await refreshProblem(assignment.sessionKey, section, idx)
-      const sectionKey = section === 'front' ? 'front_problems' : 'back_problems'
+      const sectionKey = section === 'front' ? 'front_problems'
+        : section === 'challenge' ? 'challenge_problems' : 'back_problems'
       updateProblem(sectionKey, idx, updated)
     } catch (e: unknown) {
       setMsg(e instanceof Error ? e.message : 'Refresh failed')
@@ -321,6 +322,21 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
                 ))}
               </div>
             </section>
+            {problems.challenge_problems.length > 0 && (
+              <section>
+                <SectionLabel>★ Challenge</SectionLabel>
+                <div className="space-y-2">
+                  {problems.challenge_problems.map((p, i) => (
+                    <ProblemCard key={i}
+                      number={problems.front_problems.length + problems.back_problems.length + i + 1}
+                      problem={p} section="challenge" grade={assignment.grade}
+                      onUpdate={u => updateProblem('challenge_problems', i, u)}
+                      onRefresh={() => handleRefresh('challenge', i)}
+                      isRefreshing={refreshing.has(`challenge_${i}`)}/>
+                  ))}
+                </div>
+              </section>
+            )}
           </>
         )}
       </div>

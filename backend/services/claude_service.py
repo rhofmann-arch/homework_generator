@@ -824,3 +824,31 @@ Do not repeat topics from spiral_topics: {spiral_topics}.
     )
     data = await _call(system, user, SINGLE_PROBLEM_TOOL)
     return {"latex": data.get("latex", ""), "answer_latex": data.get("answer_latex", "")}
+
+
+async def refresh_challenge_problem(
+    grade: int,
+    school_q: int,
+    exclude_latex: list[str],
+) -> dict:
+    """
+    Return one replacement challenge problem {latex, answer_latex}.
+
+    Challenge problems are approved-bank-only (honors-flagged, current quarter),
+    matching how the hybrid challenge block is assembled. Skips any problem whose
+    normalized latex is already used (front + other challenge problems) so a
+    refresh never produces a duplicate.
+    """
+    used = {_norm_latex(l) for l in exclude_latex}
+    pool = sample_problems(domain=None, grade=grade, max_quarter=school_q,
+                           n=24, honors_only=True)
+    for p in pool:
+        if _norm_latex(p["latex"]) in used:
+            continue
+        return {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
+    # Pool exhausted (everything already on the sheet) — fall back to any honors
+    # problem so the refresh still returns something usable.
+    if pool:
+        p = pool[0]
+        return {"latex": p["latex"], "answer_latex": p.get("answer_latex", "")}
+    return {"latex": "", "answer_latex": ""}

@@ -8,7 +8,8 @@ import io, json, traceback, logging, zipfile
 
 from services.pacing import get_week_context, get_all_weeks
 from services.claude_service import (
-    generate_problems, refresh_front_problem, refresh_back_problem, _school_quarter,
+    generate_problems, refresh_front_problem, refresh_back_problem,
+    refresh_challenge_problem, _school_quarter,
 )
 from services.latex_builder import build_pdf, build_key_pdf
 
@@ -51,7 +52,7 @@ class RecompileRequest(BaseModel):
 
 
 class RefreshRequest(BaseModel):
-    section: Literal["front", "back"]
+    section: Literal["front", "back", "challenge"]
     index: int
 
 
@@ -221,6 +222,20 @@ async def refresh_problem(key: str, req: RefreshRequest):
                 class_type=ctx["class_type"],
                 school_q=school_q,
             )
+        elif req.section == "challenge":
+            # Bank-only (honors, current quarter), deduped against everything
+            # already on the sheet so a refresh never duplicates a problem.
+            front = session.get("front_problems", [])
+            chal  = session.get("challenge_problems", [])
+            exclude = (
+                [p["latex"] for p in front]
+                + [p["latex"] for j, p in enumerate(chal) if j != req.index]
+            )
+            result = await refresh_challenge_problem(
+                grade=int(ctx["grade"]),
+                school_q=_school_quarter(ctx["specific_date"]),
+                exclude_latex=exclude,
+            )
         else:
             result = await refresh_back_problem(
                 grade=int(ctx["grade"]),
@@ -232,7 +247,11 @@ async def refresh_problem(key: str, req: RefreshRequest):
             )
 
         # Update session storage with the new problem
-        section_key = "front_problems" if req.section == "front" else "back_problems"
+        section_key = {
+            "front":     "front_problems",
+            "back":      "back_problems",
+            "challenge": "challenge_problems",
+        }[req.section]
         probs = session.get(section_key, [])
         if req.index < len(probs):
             probs[req.index] = result

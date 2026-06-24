@@ -139,7 +139,7 @@ export async function recompileHomework(sessionKey: string, req: RecompileReques
 
 export async function refreshProblem(
   sessionKey: string,
-  section: 'front' | 'back',
+  section: 'front' | 'back' | 'challenge',
   index: number,
 ): Promise<HomeworkProblem> {
   const res = await postJSON(`/api/homework/${encodeURIComponent(sessionKey)}/refresh`, { section, index })
