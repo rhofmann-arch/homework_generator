@@ -11,6 +11,7 @@ export interface GenerateRequest {
   specific_date?: string
   n_back?: number
   n_challenge?: number
+  front_only?: boolean
 }
 
 export interface HomeworkProblem {
@@ -32,6 +33,7 @@ export interface HomeworkProblems {
 export interface GenerateResult {
   homeworkBlob: Blob
   keyBlob: Blob
+  texBlob: Blob | null
   sessionKey: string
 }
 
@@ -74,17 +76,19 @@ export interface BankQueue {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-async function unzipResponse(res: Response): Promise<{ hw: Blob; key: Blob; sessionKey: string }> {
+async function unzipResponse(res: Response): Promise<{ hw: Blob; key: Blob; tex: Blob | null; sessionKey: string }> {
   const sessionKey = res.headers.get('X-Session-Key') ?? ''
   const zip = await JSZip.loadAsync(await res.blob())
   let hwBlob: Blob | null = null
   let keyBlob: Blob | null = null
+  let texBlob: Blob | null = null
   for (const [name, file] of Object.entries(zip.files)) {
     if (name.endsWith('_KEY.pdf')) keyBlob = new Blob([await file.async('arraybuffer')], { type: 'application/pdf' })
     else if (name.endsWith('.pdf')) hwBlob = new Blob([await file.async('arraybuffer')], { type: 'application/pdf' })
+    else if (name.endsWith('.tex') && !name.endsWith('_KEY.tex')) texBlob = new Blob([await file.async('arraybuffer')], { type: 'application/x-tex' })
   }
   if (!hwBlob || !keyBlob) throw new Error('ZIP did not contain expected PDF files')
-  return { hw: hwBlob, key: keyBlob, sessionKey }
+  return { hw: hwBlob, key: keyBlob, tex: texBlob, sessionKey }
 }
 
 async function throwIfError(res: Response): Promise<void> {
@@ -111,8 +115,8 @@ export async function generateHomework(req: GenerateRequest): Promise<GenerateRe
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(req),
   })
   await throwIfError(res)
-  const { hw, key, sessionKey } = await unzipResponse(res)
-  return { homeworkBlob: hw, keyBlob: key, sessionKey }
+  const { hw, key, tex, sessionKey } = await unzipResponse(res)
+  return { homeworkBlob: hw, keyBlob: key, texBlob: tex, sessionKey }
 }
 
 export async function fetchHomeworkProblems(sessionKey: string): Promise<HomeworkProblems> {
@@ -127,6 +131,7 @@ export interface RecompileRequest {
   grade: '5' | '6' | '7' | '8'
   class_type: 'grade_level' | 'honors' | 'hybrid'
   specific_date?: string
+  front_only?: boolean
 }
 
 export async function recompileHomework(sessionKey: string, req: RecompileRequest): Promise<GenerateResult> {
@@ -134,8 +139,8 @@ export async function recompileHomework(sessionKey: string, req: RecompileReques
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(req),
   })
   await throwIfError(res)
-  const { hw, key } = await unzipResponse(res)
-  return { homeworkBlob: hw, keyBlob: key, sessionKey }
+  const { hw, key, tex } = await unzipResponse(res)
+  return { homeworkBlob: hw, keyBlob: key, texBlob: tex, sessionKey }
 }
 
 export async function refreshProblem(

@@ -152,7 +152,13 @@ def _compile(tmpdir: str, tex_path: str) -> str:
     return pdf_path
 
 
-async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> str:
+def _front_only_cut(filled: str) -> str:
+    """Truncate a filled template to the front page only."""
+    return filled.split("%%FRONT_ONLY_CUT%%")[0].rstrip() + "\n\\end{document}\n"
+
+
+async def build_pdf(context: WeekContext, problems: dict, class_type: str,
+                    front_only: bool = False) -> str:
     template = TEMPLATE_PATH.read_text()
 
     grade_key = str(context.grade).split("_")[0]
@@ -185,6 +191,9 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
         .replace("<<CHALLENGE_BLOCK>>",challenge)
     )
 
+    if front_only:
+        filled = _front_only_cut(filled)
+
     tmpdir_  = tempfile.mkdtemp(prefix="hw_")
     tex_path = os.path.join(tmpdir_, "homework.tex")
 
@@ -193,7 +202,7 @@ async def build_pdf(context: WeekContext, problems: dict, class_type: str) -> st
         course_name=course_name, hw_number=hw_number, date_str=date_str,
         key_front_left=key_front_left, key_front_right=key_front_right,
         lesson_numbers=lesson_numbers, lesson_title=lesson_title,
-        key_back_block=key_back_block,
+        key_back_block=key_back_block, front_only=front_only,
     )
 
     with open(tex_path, "w") as f:
@@ -227,6 +236,9 @@ async def build_key_pdf(hw_pdf_path: str) -> str:
         .replace("<<LESSON_TITLE>>",        cache["lesson_title"])
         .replace("<<KEY_BACK_PROBLEMS>>",   cache["key_back_block"])
     )
+
+    if cache.get("front_only"):
+        filled = _front_only_cut(filled)
 
     tex_path = os.path.join(tmpdir_, "homework_key.tex")
     with open(tex_path, "w") as f:

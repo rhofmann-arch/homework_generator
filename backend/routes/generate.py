@@ -42,6 +42,7 @@ class GenerateRequest(BaseModel):
     specific_date: Optional[str] = None
     n_back: Optional[int] = None
     n_challenge: Optional[int] = None
+    front_only: bool = False
 
 
 class RecompileRequest(BaseModel):
@@ -50,6 +51,7 @@ class RecompileRequest(BaseModel):
     grade: Literal["5", "6", "7", "8"]
     class_type: Literal["grade_level", "honors", "hybrid"]
     specific_date: Optional[str] = None
+    front_only: bool = False
 
 
 class RefreshRequest(BaseModel):
@@ -70,12 +72,18 @@ async def list_weeks(grade: str):
 
 
 def _build_zip(pdf_path: str, key_path: str, grade: str, class_type: str, date_part: str) -> bytes:
-    hw_name  = f"hw_grade{grade}_{class_type}_{date_part}.pdf"
-    key_name = f"hw_grade{grade}_{class_type}_{date_part}_KEY.pdf"
+    base     = f"hw_grade{grade}_{class_type}_{date_part}"
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
-        zf.writestr(hw_name,  Path(pdf_path).read_bytes())
-        zf.writestr(key_name, Path(key_path).read_bytes())
+        zf.writestr(f"{base}.pdf",      Path(pdf_path).read_bytes())
+        zf.writestr(f"{base}_KEY.pdf",  Path(key_path).read_bytes())
+        # Include the LaTeX source so the assignment can be downloaded as .tex.
+        tex     = Path(pdf_path).with_name("homework.tex")
+        key_tex = Path(pdf_path).with_name("homework_key.tex")
+        if tex.exists():
+            zf.writestr(f"{base}.tex",     tex.read_bytes())
+        if key_tex.exists():
+            zf.writestr(f"{base}_KEY.tex", key_tex.read_bytes())
     buf.seek(0)
     return buf.read()
 
@@ -108,8 +116,10 @@ async def generate_homework(req: GenerateRequest):
             )
 
         problems  = await generate_problems(context=context, class_type=req.class_type,
-                                            n_back=req.n_back, n_challenge=req.n_challenge)
-        pdf_path  = await build_pdf(context=context, problems=problems, class_type=req.class_type)
+                                            n_back=req.n_back, n_challenge=req.n_challenge,
+                                            front_only=req.front_only)
+        pdf_path  = await build_pdf(context=context, problems=problems,
+                                    class_type=req.class_type, front_only=req.front_only)
         key_path  = await build_key_pdf(pdf_path)
 
         date_part   = req.specific_date or req.week_start
@@ -165,7 +175,8 @@ async def recompile_homework(key: str, req: RecompileRequest):
             specific_date=req.specific_date,
         )
 
-        pdf_path = await build_pdf(context=context, problems=req.problems, class_type=req.class_type)
+        pdf_path = await build_pdf(context=context, problems=req.problems,
+                                   class_type=req.class_type, front_only=req.front_only)
         key_path = await build_key_pdf(pdf_path)
 
         # Update saved problems

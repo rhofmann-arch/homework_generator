@@ -37,6 +37,8 @@ interface Assignment {
   label:        string
   pdfUrl:       string
   keyUrl:       string
+  texUrl?:      string
+  frontOnly:    boolean
   sessionKey:   string
 }
 
@@ -141,6 +143,7 @@ function HistoryItem({ item, isEditing, onEdit, onRemove }: {
       <div className="flex items-center gap-2 ml-3 shrink-0">
         <a href={item.pdfUrl} download className="text-xs font-medium text-blue-600 hover:text-blue-800">HW</a>
         <a href={item.keyUrl} download className="text-xs font-medium text-slate-500 hover:text-slate-700">Key</a>
+        {item.texUrl && <a href={item.texUrl} download={`${item.label}.tex`} className="text-xs font-medium text-slate-500 hover:text-slate-700">TeX</a>}
         <button onClick={onEdit}
           className={`text-xs font-medium px-2 py-1 rounded transition ${
             isEditing ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-blue-100 hover:text-blue-700'}`}>
@@ -226,7 +229,7 @@ function ProblemCard({ number, problem, section, grade, onUpdate, onRefresh, isR
 
 function ProblemEditor({ assignment, onClose, onRecompiled }: {
   assignment: Assignment; onClose: () => void
-  onRecompiled: (newPdf: string, newKey: string) => void
+  onRecompiled: (newPdf: string, newKey: string, newTex?: string) => void
 }) {
   const [problems,      setProblems]      = useState<HomeworkProblems | null>(null)
   const [loadError,     setLoadError]     = useState('')
@@ -273,8 +276,13 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
         grade: assignment.grade,
         class_type: assignment.classType,
         specific_date: assignment.specificDate,
+        front_only: assignment.frontOnly,
       })
-      onRecompiled(URL.createObjectURL(result.homeworkBlob), URL.createObjectURL(result.keyBlob))
+      onRecompiled(
+        URL.createObjectURL(result.homeworkBlob),
+        URL.createObjectURL(result.keyBlob),
+        result.texBlob ? URL.createObjectURL(result.texBlob) : undefined,
+      )
       setMsg('✓ PDF updated')
     } catch (e: unknown) { setMsg(e instanceof Error ? e.message : 'Recompile failed') }
     finally { setRecompiling(false) }
@@ -311,6 +319,7 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
                 ))}
               </div>
             </section>
+            {problems.back_problems.length > 0 && (
             <section>
               <SectionLabel>Lesson Practice{problems.lesson_title ? ` · ${problems.lesson_title}` : ''}</SectionLabel>
               <div className="space-y-2">
@@ -322,6 +331,7 @@ function ProblemEditor({ assignment, onClose, onRecompiled }: {
                 ))}
               </div>
             </section>
+            )}
             {problems.challenge_problems.length > 0 && (
               <section>
                 <SectionLabel>★ Challenge</SectionLabel>
@@ -609,6 +619,7 @@ function GeneratePanel() {
   const [classType,     setClassType]     = useState<ClassType>('grade_level')
   const [nBack,         setNBack]         = useState<number>(10)
   const [nChallenge,    setNChallenge]    = useState<number>(3)
+  const [frontOnly,     setFrontOnly]     = useState<boolean>(false)
   const [status,        setStatus]        = useState<Status>('idle')
   const [errorMsg,      setErrorMsg]      = useState('')
   const [history,       setHistory]       = useState<Assignment[]>([])
@@ -626,25 +637,28 @@ function GeneratePanel() {
       specific_date: specificDate ?? undefined,
       n_back: nBack,
       n_challenge: nChallenge,
+      front_only: frontOnly,
     }
     try {
-      const { homeworkBlob, keyBlob, sessionKey } = await generateHomework(req)
+      const { homeworkBlob, keyBlob, texBlob, sessionKey } = await generateHomework(req)
       const hwUrl  = URL.createObjectURL(homeworkBlob)
       const keyUrl = URL.createObjectURL(keyBlob)
+      const texUrl = texBlob ? URL.createObjectURL(texBlob) : undefined
       setPdfPreviewUrl(hwUrl)
       const dayLabel = specificDate
         ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })
         : formatWeekRange(week)
-      const label = `${dayLabel} · Grade ${grade} · ${CLASS_LABELS[classType]}`
-      setHistory(prev => [{ weekStart: formatISO(week), specificDate: specificDate ?? undefined, grade, classType, label, pdfUrl: hwUrl, keyUrl, sessionKey }, ...prev])
+      const label = `${dayLabel} · Grade ${grade} · ${CLASS_LABELS[classType]}${frontOnly ? ' · Front only' : ''}`
+      setHistory(prev => [{ weekStart: formatISO(week), specificDate: specificDate ?? undefined, grade, classType, label, pdfUrl: hwUrl, keyUrl, texUrl, frontOnly, sessionKey }, ...prev])
       setStatus('done')
     } catch (e: unknown) { setErrorMsg(e instanceof Error ? e.message : 'Unknown error'); setStatus('error') }
-  }, [week, specificDate, grade, classType, nBack, nChallenge])
+  }, [week, specificDate, grade, classType, nBack, nChallenge, frontOnly])
 
-  const handleRecompiled = useCallback((key: string, newPdf: string, newKey: string) => {
+  const handleRecompiled = useCallback((key: string, newPdf: string, newKey: string, newTex?: string) => {
     setPdfPreviewUrl(newPdf)
-    setHistory(prev => prev.map(a => a.sessionKey === key ? { ...a, pdfUrl: newPdf, keyUrl: newKey } : a))
-    setEditorItem(prev => prev?.sessionKey === key ? { ...prev, pdfUrl: newPdf, keyUrl: newKey } : prev)
+    const patch = (a: Assignment) => ({ ...a, pdfUrl: newPdf, keyUrl: newKey, ...(newTex ? { texUrl: newTex } : {}) })
+    setHistory(prev => prev.map(a => a.sessionKey === key ? patch(a) : a))
+    setEditorItem(prev => prev?.sessionKey === key ? patch(prev) : prev)
   }, [])
 
   const handleEditClick = useCallback((item: Assignment) => {
@@ -705,6 +719,16 @@ function GeneratePanel() {
           </div>
 
           <div>
+            <SectionLabel>Assignment</SectionLabel>
+            <label className="flex items-center gap-2 cursor-pointer select-none">
+              <input type="checkbox" checked={frontOnly} onChange={e => setFrontOnly(e.target.checked)}
+                className="h-4 w-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"/>
+              <span className="text-sm text-slate-700">Front only — Spiral Review page (no lesson practice / challenge)</span>
+            </label>
+          </div>
+
+          {!frontOnly && (
+          <div>
             <SectionLabel>Lesson Practice Problems</SectionLabel>
             <div className="flex items-center gap-3">
               <button onClick={() => setNBack(n => Math.max(6, n - 1))}
@@ -721,8 +745,9 @@ function GeneratePanel() {
               <span className="text-xs text-slate-400">problems on back page (6–20)</span>
             </div>
           </div>
+          )}
 
-          {classType === 'hybrid' && (
+          {classType === 'hybrid' && !frontOnly && (
             <div>
               <SectionLabel>Challenge Problems (Optional)</SectionLabel>
               <div className="flex items-center gap-2">
@@ -747,6 +772,7 @@ function GeneratePanel() {
             {specificDate
               ? new Date(specificDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })
               : formatWeekRange(week)}
+            {frontOnly && <span className="font-medium text-blue-600"> · Front only</span>}
           </div>
 
           {status === 'error' && (
@@ -799,7 +825,7 @@ function GeneratePanel() {
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" style={{ height: '92vh' }}>
           {editorItem ? (
             <ProblemEditor assignment={editorItem} onClose={() => setEditorItem(null)}
-              onRecompiled={(p, k) => handleRecompiled(editorItem.sessionKey, p, k)}/>
+              onRecompiled={(p, k, t) => handleRecompiled(editorItem.sessionKey, p, k, t)}/>
           ) : (
             <>
               <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between shrink-0">

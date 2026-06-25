@@ -609,12 +609,35 @@ async def generate_problems(
     specific_date: str | None = None,
     n_back: int | None = None,
     n_challenge: int | None = None,
+    front_only: bool = False,
 ) -> dict:
     date_str = specific_date or context.week_start
     # Number of challenge problems (hybrid only): teacher picks 2 or 3.
     n_chal = max(2, min(3, n_challenge)) if n_challenge is not None else 3
 
     front_problems, spiral_topics, front_slots = await _assemble_front(context, class_type, date_str)
+
+    # Front-only assignment: spiral review page alone — skip the back page and
+    # challenge generation entirely (no Claude back call).
+    if front_only:
+        return {
+            "spiral_topics":      spiral_topics,
+            "front_problems":     front_problems,
+            "front_slots":        front_slots,
+            "lesson_title":       "",
+            "back_problems":      [],
+            "challenge_problems": [],
+            "_context": {
+                "week_start":      context.week_start,
+                "specific_date":   date_str,
+                "grade":           str(context.grade).split("_")[0],
+                "class_type":      class_type,
+                "current_lessons": context.current_lessons,
+                "current_topic":   context.current_topic,
+                "review_chapter":  context.review_chapter,
+                "front_only":      True,
+            },
+        }
 
     # Sample approved bank problems for this lesson to use as templates.
     # Eliminates back-page topic drift — Claude varies numbers only, can't invent new types.
@@ -713,6 +736,7 @@ async def generate_problems(
             "current_lessons":  back_lessons,   # ch{N}_test on review weeks
             "current_topic":    back_topic,
             "review_chapter":   context.review_chapter,
+            "front_only":       False,
         },
     }
 
