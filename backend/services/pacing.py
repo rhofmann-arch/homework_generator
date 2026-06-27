@@ -75,7 +75,10 @@ def _load_full_df(grade: str) -> pd.DataFrame:
     xl = pd.ExcelFile(guide_file)
     frames = []
     for sheet_name in xl.sheet_names:
-        if sheet_name.lower() == "sheet1":  # skip empty placeholder sheets
+        # Only the two semester sheets carry the calendar. Skip everything else
+        # (Sheet1, and helper/planning sheets like "chp1_pacing" that would
+        # otherwise duplicate calendar dates).
+        if "semester" not in sheet_name.lower():
             continue
         df = _load_sheet(xl, sheet_name)
         df["_sheet"] = sheet_name
@@ -178,12 +181,13 @@ def get_week_context(week_start: str, grade: str,
 
     lesson_title = covered_topics[-1] if covered_topics else "Lesson Practice"
 
+    # Extract the homework number from the HW-Front cell. Handles every format
+    # the guides use: "Day 2", "HW #2", a bare "2", etc.
     hw_numbers = []
     for d in hw_days:
-        try:
-            hw_numbers.append(int(str(d["day_num"]).replace("Day", "").strip()))
-        except ValueError:
-            pass
+        m = re.search(r"\d+", str(d["day_num"]))
+        if m:
+            hw_numbers.append(int(m.group()))
 
     # Detect review/test weeks and extract chapter number.
     # Matches:
